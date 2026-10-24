@@ -61,12 +61,13 @@ Commit `ce29887`
 
 ### Fase 5: Hout, beton en staalplaten
 
-Commit `a89c0f6`
+Commits `a89c0f6`, feedback verwerkt in `99ec1f7`
 
 - Hout (`/timber`): gezaagd en gelamineerd hout uit `content/timber/sections.json`. Je kiest b en h en ziet een doorsnede op schaal met A, Wy, Iy, Wz en Iz. Bij grote liggers schaalt de eenheid mee (×10⁶ of ×10⁹), zodat de getallen passen
 - Beton (`/concrete`): wapeningsoppervlakte uit `content/concrete/rebar.json`. Je kiest Ø en het aantal staven (1–10), plus de volledige tabel
 - Staalplaten (`/steel/sheets`, tegel op het staalscherm): h, t, Iy, Wy en σ uit `content/steel/sheets.json`. Iy, Wy en σ staan op Controleren zolang de eenhedenvraag open is
-- Nieuwe componenten: `ValueGrid` (waardentegels) en `ChoiceRow` (rij keuzepillen)
+- Nieuwe componenten: `ValueGrid` (waardentegels met uitlegkaart, zoals bij staal) en `ChoiceRow` (rij keuzepillen)
+- Houtdoorsnede met schematische arcering: schuin voor gezaagd, liggend voor gelamineerd. De echte tekenconventie volgt in fase 7
 - Precache na deze fase: 120 bestanden, 870 KiB
 
 **Te controleren door de gebruiker:**
