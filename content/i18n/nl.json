@@ -63,7 +63,8 @@
 	},
 	"stepper": {
 		"decrease": "{label} min {step}",
-		"increase": "{label} plus {step}"
+		"increase": "{label} plus {step}",
+		"edit": "{label} invoeren"
 	},
 	"home": {
 		"searchPlaceholder": "Zoek: HEA 200, trap, toilet",
