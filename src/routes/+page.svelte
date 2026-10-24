@@ -1,7 +1,8 @@
 <script lang="ts">
 	import ChevronRight from '@lucide/svelte/icons/chevron-right';
 	import Search from '@lucide/svelte/icons/search';
-	import SlidersHorizontal from '@lucide/svelte/icons/sliders-horizontal';
+	import HeartHandshake from '@lucide/svelte/icons/heart-handshake';
+	import MessageSquare from '@lucide/svelte/icons/message-square';
 	import { base, resolve } from '$app/paths';
 	import IconButton from '$lib/components/IconButton.svelte';
 	import InfoFab from '$lib/components/InfoFab.svelte';
@@ -28,7 +29,7 @@
 	<h1 class="t-heading brand">{t('app.name')}</h1>
 	<div class="actions">
 		<LanguageToggle />
-		<IconButton icon={SlidersHorizontal} label={t('common.settings')} href={resolve('/settings')} />
+		<IconButton icon={HeartHandshake} label={t('common.about')} href={resolve('/about')} />
 	</div>
 </header>
 
@@ -143,6 +144,16 @@
 		<p class="t-body-sm t-muted">{t('home.toolsSub')}</p>
 	</a>
 </div>
+
+<!-- eslint-disable-next-line svelte/no-navigation-without-resolve -- resolved path plus a fragment -->
+<a class="feedback" href={`${resolve('/about')}#feedback`}>
+	<span class="icon"><MessageSquare size={20} strokeWidth={1.5} aria-hidden="true" /></span>
+	<span class="feedback-text">
+		<span class="t-body">{t('home.feedback')}</span>
+		<span class="t-body-sm t-muted">{t('home.feedbackSub')}</span>
+	</span>
+	<ChevronRight size={20} strokeWidth={1.5} aria-hidden="true" />
+</a>
 
 <InfoFab sources={[source('vademecum')]}><p>{t('info.homeNote')}</p></InfoFab>
 
@@ -293,6 +304,34 @@
 		display: flex;
 		align-items: flex-start;
 		gap: var(--space-1);
+	}
+	.feedback {
+		display: flex;
+		align-items: center;
+		gap: var(--space-3);
+		min-height: var(--touch);
+		padding: var(--space-4);
+		border-radius: var(--radius-md);
+		background: var(--surface);
+	}
+	.feedback:hover {
+		background: var(--surface-raised);
+	}
+	.feedback .icon {
+		width: 40px;
+		height: 40px;
+		flex-shrink: 0;
+		border-radius: var(--radius-pill);
+		background: var(--surface-raised);
+		display: grid;
+		place-items: center;
+	}
+	.feedback-text {
+		flex: 1;
+		min-width: 0;
+		display: flex;
+		flex-direction: column;
+		gap: 2px;
 	}
 	.unit {
 		font: 500 16px/1 var(--font-sans);

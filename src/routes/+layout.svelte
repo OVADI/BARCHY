@@ -4,6 +4,8 @@
 	import { onMount, type Snippet } from 'svelte';
 	import { pwaInfo } from 'virtual:pwa-info';
 	import BottomNav from '$lib/components/BottomNav.svelte';
+	import Disclaimer from '$lib/components/Disclaimer.svelte';
+	import { initDisclaimer } from '$lib/disclaimer.svelte';
 	import { initLocale, t } from '$lib/i18n/index.svelte';
 	import { initSaved } from '$lib/storage/saved.svelte';
 
@@ -14,6 +16,7 @@
 	onMount(async () => {
 		// After hydration, so the prerendered (NL) markup is never mismatched.
 		initLocale();
+		initDisclaimer();
 		void initSaved();
 		if (pwaInfo) {
 			const { registerSW } = await import('virtual:pwa-register');
@@ -34,6 +37,8 @@
 </main>
 
 <BottomNav />
+
+<Disclaimer />
 
 <style>
 	.page {

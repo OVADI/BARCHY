@@ -143,18 +143,28 @@ describe('imported steel content', () => {
 		});
 	}
 
-	it('catches the known errors in the Vademecum', () => {
+	it('keeps the rows without an independent source flagged', () => {
 		const load = (name: string) =>
 			SteelFile.parse(JSON.parse(readFileSync(join(dir, name), 'utf8'))).sections;
 		const ipe = new Map(load('ipe.json').map((s) => [s.sourceName, s]));
-		const he = load('he.json');
-		const rhs = new Map(load('rhs.json').map((s) => [s.sourceName, s]));
-		for (const n of ['IPE 240', 'IPE 270', 'IPE 300'])
+		const he = new Map(load('he.json').map((s) => [s.sourceName, s]));
+		for (const n of ['IPE 240 R', 'IPE 270 R', 'IPE 300 R'])
 			expect(ipe.get(n)?.status, n).toBe('flagged');
-		for (const n of ['HE 360 A', 'HE 400 A'])
-			expect(he.find((s) => s.sourceName === n)?.status, n).toBe('flagged');
-		expect(rhs.get('50x30 3.2')?.status).toBe('flagged');
+		expect(he.get('HE 400 x107')?.status).toBe('flagged');
 		expect(ipe.get('IPE 200')?.status).toBe('auto_checked');
+	});
+
+	it('corrects the shifted Vademecum rows from the catalogue', () => {
+		const load = (name: string) =>
+			SteelFile.parse(JSON.parse(readFileSync(join(dir, name), 'utf8'))).sections;
+		const ipe = new Map(load('ipe.json').map((s) => [s.sourceName, s]));
+		const he = new Map(load('he.json').map((s) => [s.sourceName, s]));
+		const rhs = new Map(load('rhs.json').map((s) => [s.sourceName, s]));
+		expect(ipe.get('IPE 240')?.status).toBe('auto_checked');
+		expect(ipe.get('IPE 240')?.corrections.map((c) => c.field)).toEqual(['iy', 'iz']);
+		expect(he.get('HE 400 A')).toMatchObject({ status: 'auto_checked', b: 300, tw: 11, tf: 19 });
+		expect(he.get('HE 360 AA')).toMatchObject({ status: 'auto_checked', G: 83.7, h: 339 });
+		expect(rhs.get('50x30 3.2')).toMatchObject({ status: 'auto_checked', A: 460 });
 	});
 
 	it('applies the sourced corrections and then passes all checks', () => {

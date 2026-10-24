@@ -26,47 +26,26 @@
 				"RHS50x30x3.2"
 			],
 			"G": 3.61,
-			"A": 413,
+			"A": 460,
 			"Iy": 142000,
 			"Wy": 5680,
 			"iy": 17.6,
-			"issues": [
+			"issues": [],
+			"corrections": [
 				{
-					"check": "mass",
-					"severity": "error",
-					"field": "G",
-					"expected": 3.242,
-					"found": 3.61,
-					"message": "G wijkt 11.3 % af van A × 7850 kg/m³"
-				},
-				{
-					"check": "gyration",
-					"severity": "error",
-					"field": "iy",
-					"expected": 18.543,
-					"found": 17.6,
-					"message": "iy wijkt -5.1 % af van √(Iy/A)"
-				},
-				{
-					"check": "gyration",
-					"severity": "error",
-					"field": "iz",
-					"expected": 12.252,
-					"found": 11.6,
-					"message": "iz wijkt -5.3 % af van √(Iz/A)"
-				},
-				{
-					"check": "geometry",
-					"severity": "warning",
 					"field": "A",
-					"expected": 460.052,
-					"found": 413,
-					"message": "A wijkt -10.2 % af van de geometrie (hoekstralen 1,5t/1,0t aangenomen)"
+					"from": 413,
+					"to": 460,
+					"reason": "A = 4.13 cm² in de bron is gelijk aan Wz (of een andere kolom) en past niet bij de rest van de rij. Uit G = 3.61 kg/m volgt A = 4.6 cm² (G/ρ); dat komt overeen met √(Iy/A) = iy en √(Iz/A) = iz in dezelfde rij (afwijking < 2 %).",
+					"source": {
+						"title": "TU Delft Vademecum (TeachBooks)",
+						"ref": "RHS-HF-tabel: A volgt uit G (EN 10210, ρ = 7850 kg/m³)",
+						"url": "https://github.com/TeachBooks/vademecum"
+					}
 				}
 			],
-			"corrections": [],
 			"derived": [],
-			"status": "flagged",
+			"status": "auto_checked",
 			"shape": "box",
 			"h": 50,
 			"b": 30,
@@ -88,47 +67,26 @@
 				"RHS60x40x3"
 			],
 			"G": 4.35,
-			"A": 695,
+			"A": 554,
 			"Iy": 265000,
 			"Wy": 8820,
 			"iy": 21.8,
-			"issues": [
+			"issues": [],
+			"corrections": [
 				{
-					"check": "mass",
-					"severity": "error",
-					"field": "G",
-					"expected": 5.456,
-					"found": 4.35,
-					"message": "G wijkt -20.3 % af van A × 7850 kg/m³"
-				},
-				{
-					"check": "gyration",
-					"severity": "error",
-					"field": "iy",
-					"expected": 19.527,
-					"found": 21.8,
-					"message": "iy wijkt 11.6 % af van √(Iy/A)"
-				},
-				{
-					"check": "gyration",
-					"severity": "error",
-					"field": "iz",
-					"expected": 14.142,
-					"found": 15.8,
-					"message": "iz wijkt 11.7 % af van √(Iz/A)"
-				},
-				{
-					"check": "geometry",
-					"severity": "warning",
 					"field": "A",
-					"expected": 554.343,
-					"found": 695,
-					"message": "A wijkt 25.4 % af van de geometrie (hoekstralen 1,5t/1,0t aangenomen)"
+					"from": 695,
+					"to": 554,
+					"reason": "A = 6.95 cm² in de bron is gelijk aan Wz (of een andere kolom) en past niet bij de rest van de rij. Uit G = 4.35 kg/m volgt A = 5.54 cm² (G/ρ); dat komt overeen met √(Iy/A) = iy en √(Iz/A) = iz in dezelfde rij (afwijking < 2 %).",
+					"source": {
+						"title": "TU Delft Vademecum (TeachBooks)",
+						"ref": "RHS-HF-tabel: A volgt uit G (EN 10210, ρ = 7850 kg/m³)",
+						"url": "https://github.com/TeachBooks/vademecum"
+					}
 				}
 			],
-			"corrections": [],
 			"derived": [],
-			"status": "flagged",
+			"status": "auto_checked",
 			"shape": "box",
 			"h": 60,
 			"b": 40,
@@ -150,47 +108,26 @@
 				"RHS60x40x4"
 			],
 			"G": 5.64,
-			"A": 852,
+			"A": 718,
 			"Iy": 328000,
 			"Wy": 10900,
 			"iy": 21.4,
-			"issues": [
+			"issues": [],
+			"corrections": [
 				{
-					"check": "mass",
-					"severity": "error",
-					"field": "G",
-					"expected": 6.688,
-					"found": 5.64,
-					"message": "G wijkt -15.7 % af van A × 7850 kg/m³"
-				},
-				{
-					"check": "gyration",
-					"severity": "error",
-					"field": "iy",
-					"expected": 19.621,
-					"found": 21.4,
-					"message": "iy wijkt 9.1 % af van √(Iy/A)"
-				},
-				{
-					"check": "gyration",
-					"severity": "error",
-					"field": "iz",
-					"expected": 14.126,
-					"found": 15.4,
-					"message": "iz wijkt 9.0 % af van √(Iz/A)"
-				},
-				{
-					"check": "geometry",
-					"severity": "warning",
 					"field": "A",
-					"expected": 718.832,
-					"found": 852,
-					"message": "A wijkt 18.5 % af van de geometrie (hoekstralen 1,5t/1,0t aangenomen)"
+					"from": 852,
+					"to": 718,
+					"reason": "A = 8.52 cm² in de bron is gelijk aan Wz (of een andere kolom) en past niet bij de rest van de rij. Uit G = 5.64 kg/m volgt A = 7.18 cm² (G/ρ); dat komt overeen met √(Iy/A) = iy en √(Iz/A) = iz in dezelfde rij (afwijking < 2 %).",
+					"source": {
+						"title": "TU Delft Vademecum (TeachBooks)",
+						"ref": "RHS-HF-tabel: A volgt uit G (EN 10210, ρ = 7850 kg/m³)",
+						"url": "https://github.com/TeachBooks/vademecum"
+					}
 				}
 			],
-			"corrections": [],
 			"derived": [],
-			"status": "flagged",
+			"status": "auto_checked",
 			"shape": "box",
 			"h": 60,
 			"b": 40,
@@ -212,47 +149,26 @@
 				"RHS60x40x5"
 			],
 			"G": 6.85,
-			"A": 977,
+			"A": 873,
 			"Iy": 381000,
 			"Wy": 12700,
 			"iy": 20.9,
-			"issues": [
+			"issues": [],
+			"corrections": [
 				{
-					"check": "mass",
-					"severity": "error",
-					"field": "G",
-					"expected": 7.669,
-					"found": 6.85,
-					"message": "G wijkt -10.7 % af van A × 7850 kg/m³"
-				},
-				{
-					"check": "gyration",
-					"severity": "error",
-					"field": "iy",
-					"expected": 19.748,
-					"found": 20.9,
-					"message": "iy wijkt 5.8 % af van √(Iy/A)"
-				},
-				{
-					"check": "gyration",
-					"severity": "error",
-					"field": "iz",
-					"expected": 14.128,
-					"found": 15,
-					"message": "iz wijkt 6.2 % af van √(Iz/A)"
-				},
-				{
-					"check": "geometry",
-					"severity": "warning",
 					"field": "A",
-					"expected": 873.175,
-					"found": 977,
-					"message": "A wijkt 11.9 % af van de geometrie (hoekstralen 1,5t/1,0t aangenomen)"
+					"from": 977,
+					"to": 873,
+					"reason": "A = 9.77 cm² in de bron is gelijk aan Wz (of een andere kolom) en past niet bij de rest van de rij. Uit G = 6.85 kg/m volgt A = 8.73 cm² (G/ρ); dat komt overeen met √(Iy/A) = iy en √(Iz/A) = iz in dezelfde rij (afwijking < 2 %).",
+					"source": {
+						"title": "TU Delft Vademecum (TeachBooks)",
+						"ref": "RHS-HF-tabel: A volgt uit G (EN 10210, ρ = 7850 kg/m³)",
+						"url": "https://github.com/TeachBooks/vademecum"
+					}
 				}
 			],
-			"corrections": [],
 			"derived": [],
-			"status": "flagged",
+			"status": "auto_checked",
 			"shape": "box",
 			"h": 60,
 			"b": 40,
@@ -274,47 +190,26 @@
 				"RHS80x40x3.2"
 			],
 			"G": 5.62,
-			"A": 946,
+			"A": 716,
 			"Iy": 572000,
 			"Wy": 14300,
 			"iy": 28.3,
-			"issues": [
+			"issues": [],
+			"corrections": [
 				{
-					"check": "mass",
-					"severity": "error",
-					"field": "G",
-					"expected": 7.426,
-					"found": 5.62,
-					"message": "G wijkt -24.3 % af van A × 7850 kg/m³"
-				},
-				{
-					"check": "gyration",
-					"severity": "error",
-					"field": "iy",
-					"expected": 24.59,
-					"found": 28.3,
-					"message": "iy wijkt 15.1 % af van √(Iy/A)"
-				},
-				{
-					"check": "gyration",
-					"severity": "error",
-					"field": "iz",
-					"expected": 14.135,
-					"found": 16.3,
-					"message": "iz wijkt 15.3 % af van √(Iz/A)"
-				},
-				{
-					"check": "geometry",
-					"severity": "warning",
 					"field": "A",
-					"expected": 716.052,
-					"found": 946,
-					"message": "A wijkt 32.1 % af van de geometrie (hoekstralen 1,5t/1,0t aangenomen)"
+					"from": 946,
+					"to": 716,
+					"reason": "A = 9.46 cm² in de bron is gelijk aan Wz (of een andere kolom) en past niet bij de rest van de rij. Uit G = 5.62 kg/m volgt A = 7.16 cm² (G/ρ); dat komt overeen met √(Iy/A) = iy en √(Iz/A) = iz in dezelfde rij (afwijking < 2 %).",
+					"source": {
+						"title": "TU Delft Vademecum (TeachBooks)",
+						"ref": "RHS-HF-tabel: A volgt uit G (EN 10210, ρ = 7850 kg/m³)",
+						"url": "https://github.com/TeachBooks/vademecum"
+					}
 				}
 			],
-			"corrections": [],
 			"derived": [],
-			"status": "flagged",
+			"status": "auto_checked",
 			"shape": "box",
 			"h": 80,
 			"b": 40,
@@ -336,47 +231,26 @@
 				"RHS80x40x4"
 			],
 			"G": 6.9,
-			"A": 1110,
+			"A": 879,
 			"Iy": 682000,
 			"Wy": 17100,
 			"iy": 27.9,
-			"issues": [
+			"issues": [],
+			"corrections": [
 				{
-					"check": "mass",
-					"severity": "error",
-					"field": "G",
-					"expected": 8.714,
-					"found": 6.9,
-					"message": "G wijkt -20.8 % af van A × 7850 kg/m³"
-				},
-				{
-					"check": "gyration",
-					"severity": "error",
-					"field": "iy",
-					"expected": 24.787,
-					"found": 27.9,
-					"message": "iy wijkt 12.6 % af van √(Iy/A)"
-				},
-				{
-					"check": "gyration",
-					"severity": "error",
-					"field": "iz",
-					"expected": 14.142,
-					"found": 15.9,
-					"message": "iz wijkt 12.4 % af van √(Iz/A)"
-				},
-				{
-					"check": "geometry",
-					"severity": "warning",
 					"field": "A",
-					"expected": 878.832,
-					"found": 1110,
-					"message": "A wijkt 26.3 % af van de geometrie (hoekstralen 1,5t/1,0t aangenomen)"
+					"from": 1110,
+					"to": 879,
+					"reason": "A = 11.1 cm² in de bron is gelijk aan Wz (of een andere kolom) en past niet bij de rest van de rij. Uit G = 6.9 kg/m volgt A = 8.79 cm² (G/ρ); dat komt overeen met √(Iy/A) = iy en √(Iz/A) = iz in dezelfde rij (afwijking < 2 %).",
+					"source": {
+						"title": "TU Delft Vademecum (TeachBooks)",
+						"ref": "RHS-HF-tabel: A volgt uit G (EN 10210, ρ = 7850 kg/m³)",
+						"url": "https://github.com/TeachBooks/vademecum"
+					}
 				}
 			],
-			"corrections": [],
 			"derived": [],
-			"status": "flagged",
+			"status": "auto_checked",
 			"shape": "box",
 			"h": 80,
 			"b": 40,
@@ -398,47 +272,26 @@
 				"RHS80x40x5"
 			],
 			"G": 8.42,
-			"A": 1290,
+			"A": 1070,
 			"Iy": 803000,
 			"Wy": 20100,
 			"iy": 27.4,
-			"issues": [
+			"issues": [],
+			"corrections": [
 				{
-					"check": "mass",
-					"severity": "error",
-					"field": "G",
-					"expected": 10.127,
-					"found": 8.42,
-					"message": "G wijkt -16.9 % af van A × 7850 kg/m³"
-				},
-				{
-					"check": "gyration",
-					"severity": "error",
-					"field": "iy",
-					"expected": 24.95,
-					"found": 27.4,
-					"message": "iy wijkt 9.8 % af van √(Iy/A)"
-				},
-				{
-					"check": "gyration",
-					"severity": "error",
-					"field": "iz",
-					"expected": 14.115,
-					"found": 15.5,
-					"message": "iz wijkt 9.8 % af van √(Iz/A)"
-				},
-				{
-					"check": "geometry",
-					"severity": "warning",
 					"field": "A",
-					"expected": 1073.175,
-					"found": 1290,
-					"message": "A wijkt 20.2 % af van de geometrie (hoekstralen 1,5t/1,0t aangenomen)"
+					"from": 1290,
+					"to": 1070,
+					"reason": "A = 12.9 cm² in de bron is gelijk aan Wz (of een andere kolom) en past niet bij de rest van de rij. Uit G = 8.42 kg/m volgt A = 10.7 cm² (G/ρ); dat komt overeen met √(Iy/A) = iy en √(Iz/A) = iz in dezelfde rij (afwijking < 2 %).",
+					"source": {
+						"title": "TU Delft Vademecum (TeachBooks)",
+						"ref": "RHS-HF-tabel: A volgt uit G (EN 10210, ρ = 7850 kg/m³)",
+						"url": "https://github.com/TeachBooks/vademecum"
+					}
 				}
 			],
-			"corrections": [],
 			"derived": [],
-			"status": "flagged",
+			"status": "auto_checked",
 			"shape": "box",
 			"h": 80,
 			"b": 40,
@@ -460,47 +313,26 @@
 				"RHS80x40x6.3"
 			],
 			"G": 10.3,
-			"A": 1460,
+			"A": 1310,
 			"Iy": 933000,
 			"Wy": 23300,
 			"iy": 26.7,
-			"issues": [
+			"issues": [],
+			"corrections": [
 				{
-					"check": "mass",
-					"severity": "error",
-					"field": "G",
-					"expected": 11.461,
-					"found": 10.3,
-					"message": "G wijkt -10.1 % af van A × 7850 kg/m³"
-				},
-				{
-					"check": "gyration",
-					"severity": "error",
-					"field": "iy",
-					"expected": 25.279,
-					"found": 26.7,
-					"message": "iy wijkt 5.6 % af van √(Iy/A)"
-				},
-				{
-					"check": "gyration",
-					"severity": "error",
-					"field": "iz",
-					"expected": 14.142,
-					"found": 14.9,
-					"message": "iz wijkt 5.4 % af van √(Iz/A)"
-				},
-				{
-					"check": "geometry",
-					"severity": "warning",
 					"field": "A",
-					"expected": 1310.652,
-					"found": 1460,
-					"message": "A wijkt 11.4 % af van de geometrie (hoekstralen 1,5t/1,0t aangenomen)"
+					"from": 1460,
+					"to": 1310,
+					"reason": "A = 14.6 cm² in de bron is gelijk aan Wz (of een andere kolom) en past niet bij de rest van de rij. Uit G = 10.3 kg/m volgt A = 13.1 cm² (G/ρ); dat komt overeen met √(Iy/A) = iy en √(Iz/A) = iz in dezelfde rij (afwijking < 2 %).",
+					"source": {
+						"title": "TU Delft Vademecum (TeachBooks)",
+						"ref": "RHS-HF-tabel: A volgt uit G (EN 10210, ρ = 7850 kg/m³)",
+						"url": "https://github.com/TeachBooks/vademecum"
+					}
 				}
 			],
-			"corrections": [],
 			"derived": [],
-			"status": "flagged",
+			"status": "auto_checked",
 			"shape": "box",
 			"h": 80,
 			"b": 40,
@@ -551,47 +383,26 @@
 				"RHS90x50x3.6"
 			],
 			"G": 7.4,
-			"A": 1550,
+			"A": 943,
 			"Iy": 983000,
 			"Wy": 21800,
 			"iy": 32.3,
-			"issues": [
+			"issues": [],
+			"corrections": [
 				{
-					"check": "mass",
-					"severity": "error",
-					"field": "G",
-					"expected": 12.168,
-					"found": 7.4,
-					"message": "G wijkt -39.2 % af van A × 7850 kg/m³"
-				},
-				{
-					"check": "gyration",
-					"severity": "error",
-					"field": "iy",
-					"expected": 25.183,
-					"found": 32.3,
-					"message": "iy wijkt 28.3 % af van √(Iy/A)"
-				},
-				{
-					"check": "gyration",
-					"severity": "error",
-					"field": "iz",
-					"expected": 15.801,
-					"found": 20.3,
-					"message": "iz wijkt 28.5 % af van √(Iz/A)"
-				},
-				{
-					"check": "geometry",
-					"severity": "warning",
 					"field": "A",
-					"expected": 942.254,
-					"found": 1550,
-					"message": "A wijkt 64.5 % af van de geometrie (hoekstralen 1,5t/1,0t aangenomen)"
+					"from": 1550,
+					"to": 943,
+					"reason": "A = 15.5 cm² in de bron is gelijk aan Wz (of een andere kolom) en past niet bij de rest van de rij. Uit G = 7.4 kg/m volgt A = 9.43 cm² (G/ρ); dat komt overeen met √(Iy/A) = iy en √(Iz/A) = iz in dezelfde rij (afwijking < 2 %).",
+					"source": {
+						"title": "TU Delft Vademecum (TeachBooks)",
+						"ref": "RHS-HF-tabel: A volgt uit G (EN 10210, ρ = 7850 kg/m³)",
+						"url": "https://github.com/TeachBooks/vademecum"
+					}
 				}
 			],
-			"corrections": [],
 			"derived": [],
-			"status": "flagged",
+			"status": "auto_checked",
 			"shape": "box",
 			"h": 90,
 			"b": 50,
@@ -613,47 +424,26 @@
 				"RHS90x50x5"
 			],
 			"G": 9.99,
-			"A": 1970,
+			"A": 1270,
 			"Iy": 1270000,
 			"Wy": 28300,
 			"iy": 31.6,
-			"issues": [
+			"issues": [],
+			"corrections": [
 				{
-					"check": "mass",
-					"severity": "error",
-					"field": "G",
-					"expected": 15.465,
-					"found": 9.99,
-					"message": "G wijkt -35.4 % af van A × 7850 kg/m³"
-				},
-				{
-					"check": "gyration",
-					"severity": "error",
-					"field": "iy",
-					"expected": 25.39,
-					"found": 31.6,
-					"message": "iy wijkt 24.5 % af van √(Iy/A)"
-				},
-				{
-					"check": "gyration",
-					"severity": "error",
-					"field": "iz",
-					"expected": 15.803,
-					"found": 19.7,
-					"message": "iz wijkt 24.7 % af van √(Iz/A)"
-				},
-				{
-					"check": "geometry",
-					"severity": "warning",
 					"field": "A",
-					"expected": 1273.175,
-					"found": 1970,
-					"message": "A wijkt 54.7 % af van de geometrie (hoekstralen 1,5t/1,0t aangenomen)"
+					"from": 1970,
+					"to": 1270,
+					"reason": "A = 19.7 cm² in de bron is gelijk aan Wz (of een andere kolom) en past niet bij de rest van de rij. Uit G = 9.99 kg/m volgt A = 12.7 cm² (G/ρ); dat komt overeen met √(Iy/A) = iy en √(Iz/A) = iz in dezelfde rij (afwijking < 2 %).",
+					"source": {
+						"title": "TU Delft Vademecum (TeachBooks)",
+						"ref": "RHS-HF-tabel: A volgt uit G (EN 10210, ρ = 7850 kg/m³)",
+						"url": "https://github.com/TeachBooks/vademecum"
+					}
 				}
 			],
-			"corrections": [],
 			"derived": [],
-			"status": "flagged",
+			"status": "auto_checked",
 			"shape": "box",
 			"h": 90,
 			"b": 50,
@@ -675,47 +465,26 @@
 				"RHS90x50x6.3"
 			],
 			"G": 12.3,
-			"A": 2280,
+			"A": 1570,
 			"Iy": 1500000,
 			"Wy": 33300,
 			"iy": 31,
-			"issues": [
+			"issues": [],
+			"corrections": [
 				{
-					"check": "mass",
-					"severity": "error",
-					"field": "G",
-					"expected": 17.898,
-					"found": 12.3,
-					"message": "G wijkt -31.3 % af van A × 7850 kg/m³"
-				},
-				{
-					"check": "gyration",
-					"severity": "error",
-					"field": "iy",
-					"expected": 25.649,
-					"found": 31,
-					"message": "iy wijkt 20.9 % af van √(Iy/A)"
-				},
-				{
-					"check": "gyration",
-					"severity": "error",
-					"field": "iz",
-					"expected": 15.811,
-					"found": 19.1,
-					"message": "iz wijkt 20.8 % af van √(Iz/A)"
-				},
-				{
-					"check": "geometry",
-					"severity": "warning",
 					"field": "A",
-					"expected": 1562.652,
-					"found": 2280,
-					"message": "A wijkt 45.9 % af van de geometrie (hoekstralen 1,5t/1,0t aangenomen)"
+					"from": 2280,
+					"to": 1570,
+					"reason": "A = 22.8 cm² in de bron is gelijk aan Wz (of een andere kolom) en past niet bij de rest van de rij. Uit G = 12.3 kg/m volgt A = 15.7 cm² (G/ρ); dat komt overeen met √(Iy/A) = iy en √(Iz/A) = iz in dezelfde rij (afwijking < 2 %).",
+					"source": {
+						"title": "TU Delft Vademecum (TeachBooks)",
+						"ref": "RHS-HF-tabel: A volgt uit G (EN 10210, ρ = 7850 kg/m³)",
+						"url": "https://github.com/TeachBooks/vademecum"
+					}
 				}
 			],
-			"corrections": [],
 			"derived": [],
-			"status": "flagged",
+			"status": "auto_checked",
 			"shape": "box",
 			"h": 90,
 			"b": 50,
@@ -737,47 +506,26 @@
 				"RHS100x50x3"
 			],
 			"G": 6.71,
-			"A": 1470,
+			"A": 855,
 			"Iy": 1100000,
 			"Wy": 21900,
 			"iy": 35.8,
-			"issues": [
+			"issues": [],
+			"corrections": [
 				{
-					"check": "mass",
-					"severity": "error",
-					"field": "G",
-					"expected": 11.54,
-					"found": 6.71,
-					"message": "G wijkt -41.9 % af van A × 7850 kg/m³"
-				},
-				{
-					"check": "gyration",
-					"severity": "error",
-					"field": "iy",
-					"expected": 27.355,
-					"found": 35.8,
-					"message": "iy wijkt 30.9 % af van √(Iy/A)"
-				},
-				{
-					"check": "gyration",
-					"severity": "error",
-					"field": "iz",
-					"expected": 15.822,
-					"found": 20.8,
-					"message": "iz wijkt 31.5 % af van √(Iz/A)"
-				},
-				{
-					"check": "geometry",
-					"severity": "warning",
 					"field": "A",
-					"expected": 854.343,
-					"found": 1470,
-					"message": "A wijkt 72.1 % af van de geometrie (hoekstralen 1,5t/1,0t aangenomen)"
+					"from": 1470,
+					"to": 855,
+					"reason": "A = 14.7 cm² in de bron is gelijk aan Wz (of een andere kolom) en past niet bij de rest van de rij. Uit G = 6.71 kg/m volgt A = 8.55 cm² (G/ρ); dat komt overeen met √(Iy/A) = iy en √(Iz/A) = iz in dezelfde rij (afwijking < 2 %).",
+					"source": {
+						"title": "TU Delft Vademecum (TeachBooks)",
+						"ref": "RHS-HF-tabel: A volgt uit G (EN 10210, ρ = 7850 kg/m³)",
+						"url": "https://github.com/TeachBooks/vademecum"
+					}
 				}
 			],
-			"corrections": [],
 			"derived": [],
-			"status": "flagged",
+			"status": "auto_checked",
 			"shape": "box",
 			"h": 100,
 			"b": 50,
@@ -799,47 +547,26 @@
 				"RHS100x50x3.2"
 			],
 			"G": 7.13,
-			"A": 1550,
+			"A": 908,
 			"Iy": 1160000,
 			"Wy": 23200,
 			"iy": 35.7,
-			"issues": [
+			"issues": [],
+			"corrections": [
 				{
-					"check": "mass",
-					"severity": "error",
-					"field": "G",
-					"expected": 12.168,
-					"found": 7.13,
-					"message": "G wijkt -41.4 % af van A × 7850 kg/m³"
-				},
-				{
-					"check": "gyration",
-					"severity": "error",
-					"field": "iy",
-					"expected": 27.357,
-					"found": 35.7,
-					"message": "iy wijkt 30.5 % af van √(Iy/A)"
-				},
-				{
-					"check": "gyration",
-					"severity": "error",
-					"field": "iz",
-					"expected": 15.822,
-					"found": 20.7,
-					"message": "iz wijkt 30.8 % af van √(Iz/A)"
-				},
-				{
-					"check": "geometry",
-					"severity": "warning",
 					"field": "A",
-					"expected": 908.052,
-					"found": 1550,
-					"message": "A wijkt 70.7 % af van de geometrie (hoekstralen 1,5t/1,0t aangenomen)"
+					"from": 1550,
+					"to": 908,
+					"reason": "A = 15.5 cm² in de bron is gelijk aan Wz (of een andere kolom) en past niet bij de rest van de rij. Uit G = 7.13 kg/m volgt A = 9.08 cm² (G/ρ); dat komt overeen met √(Iy/A) = iy en √(Iz/A) = iz in dezelfde rij (afwijking < 2 %).",
+					"source": {
+						"title": "TU Delft Vademecum (TeachBooks)",
+						"ref": "RHS-HF-tabel: A volgt uit G (EN 10210, ρ = 7850 kg/m³)",
+						"url": "https://github.com/TeachBooks/vademecum"
+					}
 				}
 			],
-			"corrections": [],
 			"derived": [],
-			"status": "flagged",
+			"status": "auto_checked",
 			"shape": "box",
 			"h": 100,
 			"b": 50,
@@ -861,47 +588,26 @@
 				"RHS100x50x5"
 			],
 			"G": 10.8,
-			"A": 2170,
+			"A": 1380,
 			"Iy": 1670000,
 			"Wy": 33300,
 			"iy": 34.8,
-			"issues": [
+			"issues": [],
+			"corrections": [
 				{
-					"check": "mass",
-					"severity": "error",
-					"field": "G",
-					"expected": 17.035,
-					"found": 10.8,
-					"message": "G wijkt -36.6 % af van A × 7850 kg/m³"
-				},
-				{
-					"check": "gyration",
-					"severity": "error",
-					"field": "iy",
-					"expected": 27.741,
-					"found": 34.8,
-					"message": "iy wijkt 25.4 % af van √(Iy/A)"
-				},
-				{
-					"check": "gyration",
-					"severity": "error",
-					"field": "iz",
-					"expected": 15.819,
-					"found": 19.9,
-					"message": "iz wijkt 25.8 % af van √(Iz/A)"
-				},
-				{
-					"check": "geometry",
-					"severity": "warning",
 					"field": "A",
-					"expected": 1373.175,
-					"found": 2170,
-					"message": "A wijkt 58.0 % af van de geometrie (hoekstralen 1,5t/1,0t aangenomen)"
+					"from": 2170,
+					"to": 1380,
+					"reason": "A = 21.7 cm² in de bron is gelijk aan Wz (of een andere kolom) en past niet bij de rest van de rij. Uit G = 10.8 kg/m volgt A = 13.8 cm² (G/ρ); dat komt overeen met √(Iy/A) = iy en √(Iz/A) = iz in dezelfde rij (afwijking < 2 %).",
+					"source": {
+						"title": "TU Delft Vademecum (TeachBooks)",
+						"ref": "RHS-HF-tabel: A volgt uit G (EN 10210, ρ = 7850 kg/m³)",
+						"url": "https://github.com/TeachBooks/vademecum"
+					}
 				}
 			],
-			"corrections": [],
 			"derived": [],
-			"status": "flagged",
+			"status": "auto_checked",
 			"shape": "box",
 			"h": 100,
 			"b": 50,
@@ -923,47 +629,26 @@
 				"RHS100x50x6.3"
 			],
 			"G": 13.3,
-			"A": 2520,
+			"A": 1690,
 			"Iy": 1970000,
 			"Wy": 39400,
 			"iy": 34.2,
-			"issues": [
+			"issues": [],
+			"corrections": [
 				{
-					"check": "mass",
-					"severity": "error",
-					"field": "G",
-					"expected": 19.782,
-					"found": 13.3,
-					"message": "G wijkt -32.8 % af van A × 7850 kg/m³"
-				},
-				{
-					"check": "gyration",
-					"severity": "error",
-					"field": "iy",
-					"expected": 27.96,
-					"found": 34.2,
-					"message": "iy wijkt 22.3 % af van √(Iy/A)"
-				},
-				{
-					"check": "gyration",
-					"severity": "error",
-					"field": "iz",
-					"expected": 15.811,
-					"found": 19.3,
-					"message": "iz wijkt 22.1 % af van √(Iz/A)"
-				},
-				{
-					"check": "geometry",
-					"severity": "warning",
 					"field": "A",
-					"expected": 1688.652,
-					"found": 2520,
-					"message": "A wijkt 49.2 % af van de geometrie (hoekstralen 1,5t/1,0t aangenomen)"
+					"from": 2520,
+					"to": 1690,
+					"reason": "A = 25.2 cm² in de bron is gelijk aan Wz (of een andere kolom) en past niet bij de rest van de rij. Uit G = 13.3 kg/m volgt A = 16.9 cm² (G/ρ); dat komt overeen met √(Iy/A) = iy en √(Iz/A) = iz in dezelfde rij (afwijking < 2 %).",
+					"source": {
+						"title": "TU Delft Vademecum (TeachBooks)",
+						"ref": "RHS-HF-tabel: A volgt uit G (EN 10210, ρ = 7850 kg/m³)",
+						"url": "https://github.com/TeachBooks/vademecum"
+					}
 				}
 			],
-			"corrections": [],
 			"derived": [],
-			"status": "flagged",
+			"status": "auto_checked",
 			"shape": "box",
 			"h": 100,
 			"b": 50,
@@ -985,47 +670,26 @@
 				"RHS100x50x8"
 			],
 			"G": 16.3,
-			"A": 3140,
+			"A": 2080,
 			"Iy": 2300000,
 			"Wy": 46000,
 			"iy": 33.3,
-			"issues": [
+			"issues": [],
+			"corrections": [
 				{
-					"check": "mass",
-					"severity": "error",
-					"field": "G",
-					"expected": 24.649,
-					"found": 16.3,
-					"message": "G wijkt -33.9 % af van A × 7850 kg/m³"
-				},
-				{
-					"check": "gyration",
-					"severity": "error",
-					"field": "iy",
-					"expected": 27.064,
-					"found": 33.3,
-					"message": "iy wijkt 23.0 % af van √(Iy/A)"
-				},
-				{
-					"check": "gyration",
-					"severity": "error",
-					"field": "iz",
-					"expected": 15.111,
-					"found": 18.6,
-					"message": "iz wijkt 23.1 % af van √(Iz/A)"
-				},
-				{
-					"check": "geometry",
-					"severity": "warning",
 					"field": "A",
-					"expected": 2075.327,
-					"found": 3140,
-					"message": "A wijkt 51.3 % af van de geometrie (hoekstralen 1,5t/1,0t aangenomen)"
+					"from": 3140,
+					"to": 2080,
+					"reason": "A = 31.4 cm² in de bron is gelijk aan Wz (of een andere kolom) en past niet bij de rest van de rij. Uit G = 16.3 kg/m volgt A = 20.8 cm² (G/ρ); dat komt overeen met √(Iy/A) = iy en √(Iz/A) = iz in dezelfde rij (afwijking < 2 %).",
+					"source": {
+						"title": "TU Delft Vademecum (TeachBooks)",
+						"ref": "RHS-HF-tabel: A volgt uit G (EN 10210, ρ = 7850 kg/m³)",
+						"url": "https://github.com/TeachBooks/vademecum"
+					}
 				}
 			],
-			"corrections": [],
 			"derived": [],
-			"status": "flagged",
+			"status": "auto_checked",
 			"shape": "box",
 			"h": 100,
 			"b": 50,
@@ -1047,47 +711,26 @@
 				"RHS100x50x10"
 			],
 			"G": 19.6,
-			"A": 3780,
+			"A": 2500,
 			"Iy": 2590000,
 			"Wy": 51800,
 			"iy": 32.2,
-			"issues": [
+			"issues": [],
+			"corrections": [
 				{
-					"check": "mass",
-					"severity": "error",
-					"field": "G",
-					"expected": 29.673,
-					"found": 19.6,
-					"message": "G wijkt -33.9 % af van A × 7850 kg/m³"
-				},
-				{
-					"check": "gyration",
-					"severity": "error",
-					"field": "iy",
-					"expected": 26.176,
-					"found": 32.2,
-					"message": "iy wijkt 23.0 % af van √(Iy/A)"
-				},
-				{
-					"check": "gyration",
-					"severity": "error",
-					"field": "iz",
-					"expected": 14.402,
-					"found": 17.7,
-					"message": "iz wijkt 22.9 % af van √(Iz/A)"
-				},
-				{
-					"check": "geometry",
-					"severity": "warning",
 					"field": "A",
-					"expected": 2492.699,
-					"found": 3780,
-					"message": "A wijkt 51.6 % af van de geometrie (hoekstralen 1,5t/1,0t aangenomen)"
+					"from": 3780,
+					"to": 2500,
+					"reason": "A = 37.8 cm² in de bron is gelijk aan Wz (of een andere kolom) en past niet bij de rest van de rij. Uit G = 19.6 kg/m volgt A = 25 cm² (G/ρ); dat komt overeen met √(Iy/A) = iy en √(Iz/A) = iz in dezelfde rij (afwijking < 2 %).",
+					"source": {
+						"title": "TU Delft Vademecum (TeachBooks)",
+						"ref": "RHS-HF-tabel: A volgt uit G (EN 10210, ρ = 7850 kg/m³)",
+						"url": "https://github.com/TeachBooks/vademecum"
+					}
 				}
 			],
-			"corrections": [],
 			"derived": [],
-			"status": "flagged",
+			"status": "auto_checked",
 			"shape": "box",
 			"h": 100,
 			"b": 50,
@@ -1109,47 +752,26 @@
 				"RHS100x60x3.6"
 			],
 			"G": 8.53,
-			"A": 2160,
+			"A": 1090,
 			"Iy": 1450000,
 			"Wy": 28900,
 			"iy": 36.5,
-			"issues": [
+			"issues": [],
+			"corrections": [
 				{
-					"check": "mass",
-					"severity": "error",
-					"field": "G",
-					"expected": 16.956,
-					"found": 8.53,
-					"message": "G wijkt -49.7 % af van A × 7850 kg/m³"
-				},
-				{
-					"check": "gyration",
-					"severity": "error",
-					"field": "iy",
-					"expected": 25.909,
-					"found": 36.5,
-					"message": "iy wijkt 40.9 % af van √(Iy/A)"
-				},
-				{
-					"check": "gyration",
-					"severity": "error",
-					"field": "iz",
-					"expected": 17.321,
-					"found": 24.4,
-					"message": "iz wijkt 40.9 % af van √(Iz/A)"
-				},
-				{
-					"check": "geometry",
-					"severity": "warning",
 					"field": "A",
-					"expected": 1086.254,
-					"found": 2160,
-					"message": "A wijkt 98.8 % af van de geometrie (hoekstralen 1,5t/1,0t aangenomen)"
+					"from": 2160,
+					"to": 1090,
+					"reason": "A = 21.6 cm² in de bron is gelijk aan Wz (of een andere kolom) en past niet bij de rest van de rij. Uit G = 8.53 kg/m volgt A = 10.9 cm² (G/ρ); dat komt overeen met √(Iy/A) = iy en √(Iz/A) = iz in dezelfde rij (afwijking < 2 %).",
+					"source": {
+						"title": "TU Delft Vademecum (TeachBooks)",
+						"ref": "RHS-HF-tabel: A volgt uit G (EN 10210, ρ = 7850 kg/m³)",
+						"url": "https://github.com/TeachBooks/vademecum"
+					}
 				}
 			],
-			"corrections": [],
 			"derived": [],
-			"status": "flagged",
+			"status": "auto_checked",
 			"shape": "box",
 			"h": 100,
 			"b": 60,
@@ -1171,47 +793,26 @@
 				"RHS100x60x5"
 			],
 			"G": 11.6,
-			"A": 2790,
+			"A": 1480,
 			"Iy": 1890000,
 			"Wy": 37800,
 			"iy": 35.8,
-			"issues": [
+			"issues": [],
+			"corrections": [
 				{
-					"check": "mass",
-					"severity": "error",
-					"field": "G",
-					"expected": 21.902,
-					"found": 11.6,
-					"message": "G wijkt -47.0 % af van A × 7850 kg/m³"
-				},
-				{
-					"check": "gyration",
-					"severity": "error",
-					"field": "iy",
-					"expected": 26.027,
-					"found": 35.8,
-					"message": "iy wijkt 37.5 % af van √(Iy/A)"
-				},
-				{
-					"check": "gyration",
-					"severity": "error",
-					"field": "iz",
-					"expected": 17.31,
-					"found": 23.8,
-					"message": "iz wijkt 37.5 % af van √(Iz/A)"
-				},
-				{
-					"check": "geometry",
-					"severity": "warning",
 					"field": "A",
-					"expected": 1473.175,
-					"found": 2790,
-					"message": "A wijkt 89.4 % af van de geometrie (hoekstralen 1,5t/1,0t aangenomen)"
+					"from": 2790,
+					"to": 1480,
+					"reason": "A = 27.9 cm² in de bron is gelijk aan Wz (of een andere kolom) en past niet bij de rest van de rij. Uit G = 11.6 kg/m volgt A = 14.8 cm² (G/ρ); dat komt overeen met √(Iy/A) = iy en √(Iz/A) = iz in dezelfde rij (afwijking < 2 %).",
+					"source": {
+						"title": "TU Delft Vademecum (TeachBooks)",
+						"ref": "RHS-HF-tabel: A volgt uit G (EN 10210, ρ = 7850 kg/m³)",
+						"url": "https://github.com/TeachBooks/vademecum"
+					}
 				}
 			],
-			"corrections": [],
 			"derived": [],
-			"status": "flagged",
+			"status": "auto_checked",
 			"shape": "box",
 			"h": 100,
 			"b": 60,
@@ -1233,47 +834,26 @@
 				"RHS100x60x6.3"
 			],
 			"G": 14.2,
-			"A": 3270,
+			"A": 1810,
 			"Iy": 2250000,
 			"Wy": 45000,
 			"iy": 35.2,
-			"issues": [
+			"issues": [],
+			"corrections": [
 				{
-					"check": "mass",
-					"severity": "error",
-					"field": "G",
-					"expected": 25.67,
-					"found": 14.2,
-					"message": "G wijkt -44.7 % af van A × 7850 kg/m³"
-				},
-				{
-					"check": "gyration",
-					"severity": "error",
-					"field": "iy",
-					"expected": 26.231,
-					"found": 35.2,
-					"message": "iy wijkt 34.2 % af van √(Iy/A)"
-				},
-				{
-					"check": "gyration",
-					"severity": "error",
-					"field": "iz",
-					"expected": 17.321,
-					"found": 23.3,
-					"message": "iz wijkt 34.5 % af van √(Iz/A)"
-				},
-				{
-					"check": "geometry",
-					"severity": "warning",
 					"field": "A",
-					"expected": 1814.652,
-					"found": 3270,
-					"message": "A wijkt 80.2 % af van de geometrie (hoekstralen 1,5t/1,0t aangenomen)"
+					"from": 3270,
+					"to": 1810,
+					"reason": "A = 32.7 cm² in de bron is gelijk aan Wz (of een andere kolom) en past niet bij de rest van de rij. Uit G = 14.2 kg/m volgt A = 18.1 cm² (G/ρ); dat komt overeen met √(Iy/A) = iy en √(Iz/A) = iz in dezelfde rij (afwijking < 2 %).",
+					"source": {
+						"title": "TU Delft Vademecum (TeachBooks)",
+						"ref": "RHS-HF-tabel: A volgt uit G (EN 10210, ρ = 7850 kg/m³)",
+						"url": "https://github.com/TeachBooks/vademecum"
+					}
 				}
 			],
-			"corrections": [],
 			"derived": [],
-			"status": "flagged",
+			"status": "auto_checked",
 			"shape": "box",
 			"h": 100,
 			"b": 60,
@@ -1295,47 +875,26 @@
 				"RHS100x60x8"
 			],
 			"G": 17.5,
-			"A": 3780,
+			"A": 2230,
 			"Iy": 2640000,
 			"Wy": 52800,
 			"iy": 34.4,
-			"issues": [
+			"issues": [],
+			"corrections": [
 				{
-					"check": "mass",
-					"severity": "error",
-					"field": "G",
-					"expected": 29.673,
-					"found": 17.5,
-					"message": "G wijkt -41.0 % af van A × 7850 kg/m³"
-				},
-				{
-					"check": "gyration",
-					"severity": "error",
-					"field": "iy",
-					"expected": 26.427,
-					"found": 34.4,
-					"message": "iy wijkt 30.2 % af van √(Iy/A)"
-				},
-				{
-					"check": "gyration",
-					"severity": "error",
-					"field": "iz",
-					"expected": 17.29,
-					"found": 22.5,
-					"message": "iz wijkt 30.1 % af van √(Iz/A)"
-				},
-				{
-					"check": "geometry",
-					"severity": "warning",
 					"field": "A",
-					"expected": 2235.327,
-					"found": 3780,
-					"message": "A wijkt 69.1 % af van de geometrie (hoekstralen 1,5t/1,0t aangenomen)"
+					"from": 3780,
+					"to": 2230,
+					"reason": "A = 37.8 cm² in de bron is gelijk aan Wz (of een andere kolom) en past niet bij de rest van de rij. Uit G = 17.5 kg/m volgt A = 22.3 cm² (G/ρ); dat komt overeen met √(Iy/A) = iy en √(Iz/A) = iz in dezelfde rij (afwijking < 2 %).",
+					"source": {
+						"title": "TU Delft Vademecum (TeachBooks)",
+						"ref": "RHS-HF-tabel: A volgt uit G (EN 10210, ρ = 7850 kg/m³)",
+						"url": "https://github.com/TeachBooks/vademecum"
+					}
 				}
 			],
-			"corrections": [],
 			"derived": [],
-			"status": "flagged",
+			"status": "auto_checked",
 			"shape": "box",
 			"h": 100,
 			"b": 60,

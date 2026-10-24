@@ -17,9 +17,9 @@ Dit is het vaste overzicht van de fases van BARCHY. Verwijs ernaar met "fase N".
 | 5    | Hout, beton en staalplaten            | Klaar, ter controle   |
 | 6    | Zoeken                                | Klaar, ter controle   |
 | 7    | Tekenen                               | Klaar, ter controle   |
-| 8    | Vuistregels hout, beton en metselwerk | Gepland               |
-| 9    | Presentatie-checklist                 | Gepland               |
-| 10   | Afronding                             | Gepland               |
+| 8    | Vuistregels hout, beton en metselwerk | Klaar, ter controle   |
+| 9    | Presentatie-checklist                 | On hold               |
+| 10   | Afronding                             | Klaar, ter controle   |
 
 ---
 
@@ -117,9 +117,9 @@ Commits `bb379e0`, feedback verwerkt in `2f30b7c` en `31a808d`
 - De aandachtspunten 1–7 in `reports/drawing-issues.md`, vooral de volgorde van de schalen bij beton en de arceringen die in de bron gelijk zijn (hout en metselwerk overige, hardhout en steenachtig)
 - Gelamineerd hout: dezelfde arcering als gezaagd hout, of lijmverbindingen tussen de lamellen?
 
-## Gepland
-
 ### Fase 8: Vuistregels hout, beton en metselwerk
+
+PR #9, merge `1a9485e`
 
 **Doel:** de ontwerp-vuistregels uit de Vademecum opnemen voor hout (hoofdstuk 7), beton (hoofdstuk 8) en metselwerk (hoofdstuk 9), zoals fase 2+3 dat voor staal (hoofdstuk 6) deed.
 
@@ -170,7 +170,44 @@ Alle onderdelen van fase 8 zijn gebouwd. Nog te doen: controle door de gebruiker
 - De vormschema's naast de figuren in het Vademecum
 - Is de offline-cache van 2203 KiB acceptabel, of moeten de vormpagina's pas laden als je ze opent?
 
+### Fase 10: Afronding
+
+Branch `claude/fase10-afronding`, gebaseerd op main met fase 8
+
+- **About in plaats van Instellingen.** De pagina Instellingen is weg: de taalknop stond al op Home, en het thema blijft altijd donker. Op die plek staat nu een hart-handdruk-icoon dat naar Over BARCHY (`/about`) gaat. Daar staan:
+  - waarom BARCHY bestaat, in de ik-vorm (concepttekst)
+  - de bronnen met hun licentie
+  - de disclaimer, met een knop om hem opnieuw te lezen
+  - open source, met links naar de code en de issue-formulieren
+  - het feedbackformulier
+  - versie en maker
+- **Disclaimer bij de eerste keer openen** (`Disclaimer.svelte`, een modale `<dialog>`). Wat je ziet, wordt onthouden in `localStorage` (`barchy.disclaimer`), met een versienummer. Een nieuwe tekst wordt dus weer één keer getoond.
+- **Feedback via Web3Forms** (`src/lib/feedback.ts`, `FeedbackForm.svelte`). Op Home staat een tegel "Wil je iets toevoegen of aanvragen?" die naar het formulier op About springt.
+  - Versturen werkt alleen online. Offline blijft de tekst staan en verschijnt er een melding.
+  - De key komt uit de repo-variabele `WEB3FORMS_KEY`. Zonder key toont About een link naar GitHub Issues.
+- **Open source en release:**
+  - `LICENSE` (MIT; ontbrak nog), `CONTRIBUTING.md` en `CHANGELOG.md`
+  - versie 1.0.0
+  - README met live-link, deploy en de licentie van de gegevens (CC BY 4.0)
+- **Hosting:** GitHub Pages op `barchy.ovadi.nl`. `static/CNAME` is toegevoegd, de deploy staat weer aan en `BASE_PATH` is leeg.
+- **Controleronde:** `npm run report:status` maakt `reports/controle.md`. Daarin staan nu 165 waarden op Controleren: 151 vuistregels en grafiekverwijzingen uit fase 8 (hout 67, beton 44, metselwerk 40), 10 tekenconventies en 4 staalprofielen (HE 1, IPE 3). De kop van `reports/bbl-issues.md` is bijgewerkt.
+- Geen extra rekentools in deze fase.
+- Precache na deze fase: 223 bestanden, 2285 KiB (was 2203 KiB na fase 8)
+
+**Te doen door de gebruiker:**
+
+- De About-tekst nalezen (`about.why` in `content/i18n/nl.json` en `en.json`)
+- De repo publiek maken. Let op: de commits tonen de e-mailadressen com@ovadi.nl en olivier@ovadi.nl
+- Settings → Pages → Source: GitHub Actions; daarna Custom domain `barchy.ovadi.nl` en Enforce HTTPS
+- DNS van ovadi.nl: `CNAME` `barchy` → `ovadi.github.io`
+- Een access key aanmaken op web3forms.com en die als repo-variabele `WEB3FORMS_KEY` zetten
+- `reports/controle.md` nalopen
+
+## On hold
+
 ### Fase 9: Presentatie-checklist
+
+> **On hold (24-10-2026):** eerst nagaan of de checklist echt nuttig is voordat hij gebouwd wordt.
 
 **Doel:** per presentatiemoment nalopen of je project compleet is: wat moet erin, wat moet je laten zien, en aan welke eisen heb je het ontwerp getoetst.
 
@@ -186,18 +223,6 @@ Alle onderdelen van fase 8 zijn gebouwd. Nog te doen: controle door de gebruiker
 - Komt dit onder Bewaard of krijgt het een eigen tab?
 - Is een voorbeeldlijst gewenst, of start elke lijst leeg?
 
-### Fase 10: Afronding
-
-- Instellingen uitbreiden, zoals licht/donker
-- Eventueel extra rekentools
-- De grootte van de offline-cache (PWA precache) meten en rapporteren
-- Volledige controleronde over alle [VERIFY]-waarden
-- Disclaimer, alleen bij de eerste keer openen: de informatie is overgenomen uit het Vademecum (en de Bbl), er kunnen kleine fouten in zitten, controleer altijd zelf
-- Feedback: een blok op Home ("Wil je iets toevoegen of aanvragen?") met een invulveld. Een verzonden bericht komt als e-mail bij de maker binnen. Versturen werkt alleen online
-- Release
-
-> **Notitie feedback:** de app heeft geen eigen server en kan dus zelf geen e-mail versturen. Daarvoor is een formulierdienst nodig, zoals Web3Forms of Formspree: het formulier stuurt het bericht naar de dienst, die het naar de maker mailt. De rest van de app blijft offline werken. Keuze van de dienst volgt bij de start van fase 9.
-
 ---
 
 ## Doorlopend: controle door de gebruiker
@@ -210,4 +235,4 @@ Op 24-10-2026 gecontroleerd met een externe controleronde:
 - [x] 14 houtmaten zonder passende tabelwaarde: de maten kloppen
 - [x] Correcties UNP 150 → 160, HE 160 M (iz) en HE 1000 AA
 - [x] Bronregel hout en beton aangepast
-- [ ] 42 staalprofielen staan nog op Controleren (IPE, HE, RHS); zie `reports/vademecum-issues.md`
+- [x] 38 van de 42 staalprofielen gecorrigeerd met een bron (zie `content/steel/corrections.json`). Nog op Controleren: IPE 240 R, 270 R, 300 R en HE 400 x107 (geen onafhankelijke bron); zie `reports/vademecum-issues.md`

@@ -7,21 +7,21 @@ Alle waarden hieronder in basiseenheden (mm, mm², mm³, mm⁴, kg/m); de bron g
 
 | Tabel | Rijen | Met fout (flagged) |
 |---|---|---|
-| IPE | 67 | 12 |
-| HE | 100 | 9 |
+| IPE | 67 | 3 |
+| HE | 100 | 1 |
 | CHS | 62 | 0 |
 | SHS | 84 | 0 |
-| RHS | 79 | 21 |
+| RHS | 79 | 0 |
 | UNP | 16 | 0 |
 | Platen | 10 | 0 |
 | Hout | 207 | 0 |
 | Betonstaal | 8 | 0 |
 
-- 157 fouten (blokkerend: het record krijgt status `flagged` in BARCHY)
+- 15 fouten (blokkerend: het record krijgt status `flagged` in BARCHY)
 - 0 waarschuwingen (geometrie, niet blokkerend)
 - 0 rijen niet geïmporteerd
 
-Rijen met drie of meer soorten fouten, vermoedelijk verschoven kolommen: `HE 360 AA`, `HE 360 A`, `HE 360 B`, `HE 360 M`, `HE 400 AA`, `HE 400 x107`, `HE 400 A`, `HE 400 B`, `HE 400 M`.
+Rijen met drie of meer soorten fouten, vermoedelijk verschoven kolommen: `HE 400 x107`.
 
 ## Vraag over herkomst en licentie
 
@@ -34,81 +34,109 @@ Deze rijen zijn in BARCHY gecorrigeerd met een externe bron. De fout zit nog in 
 
 | Tabel | Rij in bron | Veld | In Vademecum | Correctie | Reden | Gecontroleerd tegen |
 |---|---|---|---|---|---|---|
+| IPE | IPE 240 A | iy | 74,5 mm | 99,4 mm | In de bron staan iy en iz verschoven: onder iy staat Wpl,z (74.5) en onder iz staat iy; iz zelf ontbreekt. iy = 99.4 mm (bron onder iz); catalogus 9.9 cm. | ArcelorMittal Europe – Long Products, Sections and Merchant bars, Sales programme 2024-1, IPE, IPE A en IPE O, eigenschappen p. 51 |
+| IPE | IPE 240 A | iz | 99,4 mm | 26,8 mm | In de bron staan iy en iz verschoven: onder iy staat Wpl,z (74.5) en onder iz staat iy; iz zelf ontbreekt. iz = √(Iz/A) = 26.8 mm uit Iz en A uit de bron; de catalogus geeft 2.6 cm (afgekapt op één decimaal). | ArcelorMittal Europe – Long Products, Sections and Merchant bars, Sales programme 2024-1, IPE, IPE A en IPE O, eigenschappen p. 51 |
+| IPE | IPE 240 | iy | 74,4 mm | 99,7 mm | In de bron staan iy en iz verschoven: onder iy staat Wpl,z (74.4) en onder iz staat iy; iz zelf ontbreekt. iy = 99.7 mm (bron onder iz); catalogus 9.9 cm. | ArcelorMittal Europe – Long Products, Sections and Merchant bars, Sales programme 2024-1, IPE, IPE A en IPE O, eigenschappen p. 51 |
+| IPE | IPE 240 | iz | 99,7 mm | 27 mm | In de bron staan iy en iz verschoven: onder iy staat Wpl,z (74.4) en onder iz staat iy; iz zelf ontbreekt. iz = √(Iz/A) = 27.0 mm uit Iz en A uit de bron; de catalogus geeft 2.6 cm (afgekapt op één decimaal). | ArcelorMittal Europe – Long Products, Sections and Merchant bars, Sales programme 2024-1, IPE, IPE A en IPE O, eigenschappen p. 51 |
+| IPE | IPE 240 O | iy | 82,3 mm | 100 mm | In de bron staan iy en iz verschoven: onder iy staat Wpl,z (82.3) en onder iz staat iy; iz zelf ontbreekt. iy = 100 mm (bron onder iz); catalogus 9.9 cm. | ArcelorMittal Europe – Long Products, Sections and Merchant bars, Sales programme 2024-1, IPE, IPE A en IPE O, eigenschappen p. 51 |
+| IPE | IPE 240 O | iz | 100 mm | 27,4 mm | In de bron staan iy en iz verschoven: onder iy staat Wpl,z (82.3) en onder iz staat iy; iz zelf ontbreekt. iz = √(Iz/A) = 27.4 mm uit Iz en A uit de bron; de catalogus geeft 2.7 cm (afgekapt op één decimaal). | ArcelorMittal Europe – Long Products, Sections and Merchant bars, Sales programme 2024-1, IPE, IPE A en IPE O, eigenschappen p. 51 |
+| IPE | IPE 270 A | iy | 83,2 mm | 112 mm | In de bron staan iy en iz verschoven: onder iy staat Wpl,z (83.2) en onder iz staat iy; iz zelf ontbreekt. iy = 112 mm (bron onder iz); catalogus 11.2 cm. | ArcelorMittal Europe – Long Products, Sections and Merchant bars, Sales programme 2024-1, IPE, IPE A en IPE O, eigenschappen p. 51 |
+| IPE | IPE 270 A | iz | 112 mm | 30,3 mm | In de bron staan iy en iz verschoven: onder iy staat Wpl,z (83.2) en onder iz staat iy; iz zelf ontbreekt. iz = √(Iz/A) = 30.3 mm uit Iz en A uit de bron; de catalogus geeft 3.0 cm (afgekapt op één decimaal). | ArcelorMittal Europe – Long Products, Sections and Merchant bars, Sales programme 2024-1, IPE, IPE A en IPE O, eigenschappen p. 51 |
+| IPE | IPE 270 | iy | 83,5 mm | 112 mm | In de bron staan iy en iz verschoven: onder iy staat Wpl,z (83.5) en onder iz staat iy; iz zelf ontbreekt. iy = 112 mm (bron onder iz); catalogus 11.2 cm. | ArcelorMittal Europe – Long Products, Sections and Merchant bars, Sales programme 2024-1, IPE, IPE A en IPE O, eigenschappen p. 51 |
+| IPE | IPE 270 | iz | 112 mm | 30,2 mm | In de bron staan iy en iz verschoven: onder iy staat Wpl,z (83.5) en onder iz staat iy; iz zelf ontbreekt. iz = √(Iz/A) = 30.2 mm uit Iz en A uit de bron; de catalogus geeft 3.0 cm (afgekapt op één decimaal). | ArcelorMittal Europe – Long Products, Sections and Merchant bars, Sales programme 2024-1, IPE, IPE A en IPE O, eigenschappen p. 51 |
+| IPE | IPE 270 O | iy | 90,5 mm | 114 mm | In de bron staan iy en iz verschoven: onder iy staat Wpl,z (90.5) en onder iz staat iy; iz zelf ontbreekt. iy = 114 mm (bron onder iz); catalogus 11.3 cm. | ArcelorMittal Europe – Long Products, Sections and Merchant bars, Sales programme 2024-1, IPE, IPE A en IPE O, eigenschappen p. 51 |
+| IPE | IPE 270 O | iz | 114 mm | 30,9 mm | In de bron staan iy en iz verschoven: onder iy staat Wpl,z (90.5) en onder iz staat iy; iz zelf ontbreekt. iz = √(Iz/A) = 30.9 mm uit Iz en A uit de bron; de catalogus geeft 3.0 cm (afgekapt op één decimaal). | ArcelorMittal Europe – Long Products, Sections and Merchant bars, Sales programme 2024-1, IPE, IPE A en IPE O, eigenschappen p. 51 |
+| IPE | IPE 300 A | iy | 91,6 mm | 124 mm | In de bron staan iy en iz verschoven: onder iy staat Wpl,z (91.6) en onder iz staat iy; iz zelf ontbreekt. iy = 124 mm (bron onder iz); catalogus 12.4 cm. | ArcelorMittal Europe – Long Products, Sections and Merchant bars, Sales programme 2024-1, IPE, IPE A en IPE O, eigenschappen p. 51 |
+| IPE | IPE 300 A | iz | 124 mm | 33,4 mm | In de bron staan iy en iz verschoven: onder iy staat Wpl,z (91.6) en onder iz staat iy; iz zelf ontbreekt. iz = √(Iz/A) = 33.4 mm uit Iz en A uit de bron; de catalogus geeft 3.3 cm (afgekapt op één decimaal). | ArcelorMittal Europe – Long Products, Sections and Merchant bars, Sales programme 2024-1, IPE, IPE A en IPE O, eigenschappen p. 51 |
+| IPE | IPE 300 | iy | 92,9 mm | 125 mm | In de bron staan iy en iz verschoven: onder iy staat Wpl,z (92.9) en onder iz staat iy; iz zelf ontbreekt. iy = 125 mm (bron onder iz); catalogus 12.4 cm. | ArcelorMittal Europe – Long Products, Sections and Merchant bars, Sales programme 2024-1, IPE, IPE A en IPE O, eigenschappen p. 51 |
+| IPE | IPE 300 | iz | 125 mm | 33,5 mm | In de bron staan iy en iz verschoven: onder iy staat Wpl,z (92.9) en onder iz staat iy; iz zelf ontbreekt. iz = √(Iz/A) = 33.5 mm uit Iz en A uit de bron; de catalogus geeft 3.3 cm (afgekapt op één decimaal). | ArcelorMittal Europe – Long Products, Sections and Merchant bars, Sales programme 2024-1, IPE, IPE A en IPE O, eigenschappen p. 51 |
+| IPE | IPE 300 O | iy |  | 126 mm | In de bron staan iy en iz verschoven: onder iy staat Wpl,z (126.151) en onder iz staat iy; iz zelf ontbreekt. iy = 126 mm (bron onder iz); catalogus 12.6 cm. | ArcelorMittal Europe – Long Products, Sections and Merchant bars, Sales programme 2024-1, IPE, IPE A en IPE O, eigenschappen p. 51 |
+| IPE | IPE 300 O | iz | 126 mm | 34,5 mm | In de bron staan iy en iz verschoven: onder iy staat Wpl,z (126.151) en onder iz staat iy; iz zelf ontbreekt. iz = √(Iz/A) = 34.5 mm uit Iz en A uit de bron; de catalogus geeft 3.4 cm (afgekapt op één decimaal). | ArcelorMittal Europe – Long Products, Sections and Merchant bars, Sales programme 2024-1, IPE, IPE A en IPE O, eigenschappen p. 51 |
 | HE | HE 160 M | iz | 41,1 mm | 42,6 mm | √(Iz/A) met Iz = 1758 cm⁴ en A = 97,1 cm² uit de catalogus geeft 42,55 mm. De catalogus drukt iz af als 4,2 cm (afgekapt op één decimaal, zoals ook bij andere profielen); 41,1 mm uit het Vademecum past daar niet bij. | ArcelorMittal Europe – Long Products, Sections and Merchant bars, Sales programme 2024-1, HE M, p. 60–61 |
 | HE | HE 1000 A | variant | A | AA | De eerste van de twee rijen 'HE 1000 A' komt overeen met HE 1000 AA in de catalogus (G 222 kg/m, h 970, b 300, tw 16, tf 21 mm, A 282,2 cm², Iy 406 450 cm⁴). De tweede rij is de echte HE 1000 A. | ArcelorMittal Europe – Long Products, Sections and Merchant bars, Sales programme 2024-1, HE AA en HE A, p. 54–55 |
+| HE | HE 360 AA | G | 218 kg/m | 83,7 kg/m | Deze bronrij wijkt af: de eerste cel (218) komt niet in de catalogus voor, G staat als 837 (×10), b ontbreekt, en h, tw en tf staan één plaats te laag. G = 83,7 kg/m (bron: 837); catalogus komt overeen. | ArcelorMittal Europe – Long Products, Sections and Merchant bars, Sales programme 2024-1, HE AA, A, B en M, maten p. 56, eigenschappen p. 57 |
+| HE | HE 360 AA | h | 837 mm | 339 mm | Deze bronrij wijkt af: de eerste cel (218) komt niet in de catalogus voor, G staat als 837 (×10), b ontbreekt, en h, tw en tf staan één plaats te laag. h = 339 mm (bron onder b); catalogus komt overeen. | ArcelorMittal Europe – Long Products, Sections and Merchant bars, Sales programme 2024-1, HE AA, A, B en M, maten p. 56, eigenschappen p. 57 |
+| HE | HE 360 AA | b | 339 mm | 300 mm | Deze bronrij wijkt af: de eerste cel (218) komt niet in de catalogus voor, G staat als 837 (×10), b ontbreekt, en h, tw en tf staan één plaats te laag. b = 300 mm (ontbreekt in de bron); catalogus komt overeen. | ArcelorMittal Europe – Long Products, Sections and Merchant bars, Sales programme 2024-1, HE AA, A, B en M, maten p. 56, eigenschappen p. 57 |
+| HE | HE 360 AA | tw | 90 mm | 9 mm | Deze bronrij wijkt af: de eerste cel (218) komt niet in de catalogus voor, G staat als 837 (×10), b ontbreekt, en h, tw en tf staan één plaats te laag. tw = 9 mm (bron: 90); catalogus komt overeen. | ArcelorMittal Europe – Long Products, Sections and Merchant bars, Sales programme 2024-1, HE AA, A, B en M, maten p. 56, eigenschappen p. 57 |
+| HE | HE 360 AA | tf | 120 mm | 12 mm | Deze bronrij wijkt af: de eerste cel (218) komt niet in de catalogus voor, G staat als 837 (×10), b ontbreekt, en h, tw en tf staan één plaats te laag. tf = 12 mm (bron: 120); catalogus komt overeen. | ArcelorMittal Europe – Long Products, Sections and Merchant bars, Sales programme 2024-1, HE AA, A, B en M, maten p. 56, eigenschappen p. 57 |
+| HE | HE 360 AA | A | 1.070.000 mm² | 10.660 mm² | Deze bronrij wijkt af: de eerste cel (218) komt niet in de catalogus voor, G staat als 837 (×10), b ontbreekt, en h, tw en tf staan één plaats te laag. A = 106,6 cm² (bron: 107 cm², afgerond); catalogus komt overeen. | ArcelorMittal Europe – Long Products, Sections and Merchant bars, Sales programme 2024-1, HE AA, A, B en M, maten p. 56, eigenschappen p. 57 |
+| HE | HE 360 A | G | 143 kg/m | 112,1 kg/m | In de bron ontbreekt de kolom b en staan de kolommen één plaats verschoven: onder G staat A [cm²], onder h staat G, onder b staat h, en tw en tf zijn ×10. De kolomvolgorde is voor alle acht HE 360- en HE 400-rijen gelijk. De waarde is hersteld; G = 112.1 kg/m staat in de bron onder h; catalogus 112 kg/m (afgerond). | ArcelorMittal Europe – Long Products, Sections and Merchant bars, Sales programme 2024-1, HE AA, A, B en M, maten p. 56, eigenschappen p. 57 |
+| HE | HE 360 A | h | 112,1 mm | 350 mm | In de bron ontbreekt de kolom b en staan de kolommen één plaats verschoven: onder G staat A [cm²], onder h staat G, onder b staat h, en tw en tf zijn ×10. De kolomvolgorde is voor alle acht HE 360- en HE 400-rijen gelijk. De waarde is hersteld; h = 350 mm staat in de bron onder b; catalogus 350 mm. | ArcelorMittal Europe – Long Products, Sections and Merchant bars, Sales programme 2024-1, HE AA, A, B en M, maten p. 56, eigenschappen p. 57 |
+| HE | HE 360 A | b | 350 mm | 300 mm | In de bron ontbreekt de kolom b en staan de kolommen één plaats verschoven: onder G staat A [cm²], onder h staat G, onder b staat h, en tw en tf zijn ×10. De kolomvolgorde is voor alle acht HE 360- en HE 400-rijen gelijk. De waarde is hersteld; b = 300 mm ontbreekt in de bron; catalogus 300 mm. | ArcelorMittal Europe – Long Products, Sections and Merchant bars, Sales programme 2024-1, HE AA, A, B en M, maten p. 56, eigenschappen p. 57 |
+| HE | HE 360 A | tw | 100 mm | 10 mm | In de bron ontbreekt de kolom b en staan de kolommen één plaats verschoven: onder G staat A [cm²], onder h staat G, onder b staat h, en tw en tf zijn ×10. De kolomvolgorde is voor alle acht HE 360- en HE 400-rijen gelijk. De waarde is hersteld; tw = 10 mm staat in de bron als 100; catalogus 10 mm. | ArcelorMittal Europe – Long Products, Sections and Merchant bars, Sales programme 2024-1, HE AA, A, B en M, maten p. 56, eigenschappen p. 57 |
+| HE | HE 360 A | tf | 175 mm | 17,5 mm | In de bron ontbreekt de kolom b en staan de kolommen één plaats verschoven: onder G staat A [cm²], onder h staat G, onder b staat h, en tw en tf zijn ×10. De kolomvolgorde is voor alle acht HE 360- en HE 400-rijen gelijk. De waarde is hersteld; tf = 17.5 mm staat in de bron als 175; catalogus 17.5 mm. | ArcelorMittal Europe – Long Products, Sections and Merchant bars, Sales programme 2024-1, HE AA, A, B en M, maten p. 56, eigenschappen p. 57 |
+| HE | HE 360 A | A | 1.430.000 mm² | 14.280 mm² | In de bron ontbreekt de kolom b en staan de kolommen één plaats verschoven: onder G staat A [cm²], onder h staat G, onder b staat h, en tw en tf zijn ×10. De kolomvolgorde is voor alle acht HE 360- en HE 400-rijen gelijk. De waarde is hersteld; A = 142.8 cm² staat in de bron onder G; catalogus 142.8 cm². | ArcelorMittal Europe – Long Products, Sections and Merchant bars, Sales programme 2024-1, HE AA, A, B en M, maten p. 56, eigenschappen p. 57 |
+| HE | HE 360 B | G | 181 kg/m | 141,8 kg/m | In de bron ontbreekt de kolom b en staan de kolommen één plaats verschoven: onder G staat A [cm²], onder h staat G, onder b staat h, en tw en tf zijn ×10. De kolomvolgorde is voor alle acht HE 360- en HE 400-rijen gelijk. De waarde is hersteld; G = 141.8 kg/m staat in de bron onder h; catalogus 142 kg/m (afgerond). | ArcelorMittal Europe – Long Products, Sections and Merchant bars, Sales programme 2024-1, HE AA, A, B en M, maten p. 56, eigenschappen p. 57 |
+| HE | HE 360 B | h | 141,8 mm | 360 mm | In de bron ontbreekt de kolom b en staan de kolommen één plaats verschoven: onder G staat A [cm²], onder h staat G, onder b staat h, en tw en tf zijn ×10. De kolomvolgorde is voor alle acht HE 360- en HE 400-rijen gelijk. De waarde is hersteld; h = 360 mm staat in de bron onder b; catalogus 360 mm. | ArcelorMittal Europe – Long Products, Sections and Merchant bars, Sales programme 2024-1, HE AA, A, B en M, maten p. 56, eigenschappen p. 57 |
+| HE | HE 360 B | b | 360 mm | 300 mm | In de bron ontbreekt de kolom b en staan de kolommen één plaats verschoven: onder G staat A [cm²], onder h staat G, onder b staat h, en tw en tf zijn ×10. De kolomvolgorde is voor alle acht HE 360- en HE 400-rijen gelijk. De waarde is hersteld; b = 300 mm ontbreekt in de bron; catalogus 300 mm. | ArcelorMittal Europe – Long Products, Sections and Merchant bars, Sales programme 2024-1, HE AA, A, B en M, maten p. 56, eigenschappen p. 57 |
+| HE | HE 360 B | tw | 125 mm | 12,5 mm | In de bron ontbreekt de kolom b en staan de kolommen één plaats verschoven: onder G staat A [cm²], onder h staat G, onder b staat h, en tw en tf zijn ×10. De kolomvolgorde is voor alle acht HE 360- en HE 400-rijen gelijk. De waarde is hersteld; tw = 12.5 mm staat in de bron als 125; catalogus 12.5 mm. | ArcelorMittal Europe – Long Products, Sections and Merchant bars, Sales programme 2024-1, HE AA, A, B en M, maten p. 56, eigenschappen p. 57 |
+| HE | HE 360 B | tf | 225 mm | 22,5 mm | In de bron ontbreekt de kolom b en staan de kolommen één plaats verschoven: onder G staat A [cm²], onder h staat G, onder b staat h, en tw en tf zijn ×10. De kolomvolgorde is voor alle acht HE 360- en HE 400-rijen gelijk. De waarde is hersteld; tf = 22.5 mm staat in de bron als 225; catalogus 22.5 mm. | ArcelorMittal Europe – Long Products, Sections and Merchant bars, Sales programme 2024-1, HE AA, A, B en M, maten p. 56, eigenschappen p. 57 |
+| HE | HE 360 B | A | 1.810.000 mm² | 18.060 mm² | In de bron ontbreekt de kolom b en staan de kolommen één plaats verschoven: onder G staat A [cm²], onder h staat G, onder b staat h, en tw en tf zijn ×10. De kolomvolgorde is voor alle acht HE 360- en HE 400-rijen gelijk. De waarde is hersteld; A = 180.6 cm² staat in de bron onder G; catalogus 180.6 cm². | ArcelorMittal Europe – Long Products, Sections and Merchant bars, Sales programme 2024-1, HE AA, A, B en M, maten p. 56, eigenschappen p. 57 |
+| HE | HE 360 M | G | 319 kg/m | 250,3 kg/m | In de bron ontbreekt de kolom b en staan de kolommen één plaats verschoven: onder G staat A [cm²], onder h staat G, onder b staat h, en tw en tf zijn ×10. De kolomvolgorde is voor alle acht HE 360- en HE 400-rijen gelijk. De waarde is hersteld; G = 250.3 kg/m staat in de bron onder h; catalogus 250 kg/m (afgerond). | ArcelorMittal Europe – Long Products, Sections and Merchant bars, Sales programme 2024-1, HE AA, A, B en M, maten p. 56, eigenschappen p. 57 |
+| HE | HE 360 M | h | 250,3 mm | 395 mm | In de bron ontbreekt de kolom b en staan de kolommen één plaats verschoven: onder G staat A [cm²], onder h staat G, onder b staat h, en tw en tf zijn ×10. De kolomvolgorde is voor alle acht HE 360- en HE 400-rijen gelijk. De waarde is hersteld; h = 395 mm staat in de bron onder b; catalogus 395 mm. | ArcelorMittal Europe – Long Products, Sections and Merchant bars, Sales programme 2024-1, HE AA, A, B en M, maten p. 56, eigenschappen p. 57 |
+| HE | HE 360 M | b | 395 mm | 308 mm | In de bron ontbreekt de kolom b en staan de kolommen één plaats verschoven: onder G staat A [cm²], onder h staat G, onder b staat h, en tw en tf zijn ×10. De kolomvolgorde is voor alle acht HE 360- en HE 400-rijen gelijk. De waarde is hersteld; b = 308 mm ontbreekt in de bron; catalogus 308 mm. | ArcelorMittal Europe – Long Products, Sections and Merchant bars, Sales programme 2024-1, HE AA, A, B en M, maten p. 56, eigenschappen p. 57 |
+| HE | HE 360 M | tw | 210 mm | 21 mm | In de bron ontbreekt de kolom b en staan de kolommen één plaats verschoven: onder G staat A [cm²], onder h staat G, onder b staat h, en tw en tf zijn ×10. De kolomvolgorde is voor alle acht HE 360- en HE 400-rijen gelijk. De waarde is hersteld; tw = 21 mm staat in de bron als 210; catalogus 21 mm. | ArcelorMittal Europe – Long Products, Sections and Merchant bars, Sales programme 2024-1, HE AA, A, B en M, maten p. 56, eigenschappen p. 57 |
+| HE | HE 360 M | tf | 400 mm | 40 mm | In de bron ontbreekt de kolom b en staan de kolommen één plaats verschoven: onder G staat A [cm²], onder h staat G, onder b staat h, en tw en tf zijn ×10. De kolomvolgorde is voor alle acht HE 360- en HE 400-rijen gelijk. De waarde is hersteld; tf = 40 mm staat in de bron als 400; catalogus 40 mm. | ArcelorMittal Europe – Long Products, Sections and Merchant bars, Sales programme 2024-1, HE AA, A, B en M, maten p. 56, eigenschappen p. 57 |
+| HE | HE 360 M | A | 3.190.000 mm² | 31.880 mm² | In de bron ontbreekt de kolom b en staan de kolommen één plaats verschoven: onder G staat A [cm²], onder h staat G, onder b staat h, en tw en tf zijn ×10. De kolomvolgorde is voor alle acht HE 360- en HE 400-rijen gelijk. De waarde is hersteld; A = 318.8 cm² staat in de bron onder G; catalogus 318.8 cm². | ArcelorMittal Europe – Long Products, Sections and Merchant bars, Sales programme 2024-1, HE AA, A, B en M, maten p. 56, eigenschappen p. 57 |
+| HE | HE 400 AA | G | 118 kg/m | 92,4 kg/m | In de bron ontbreekt de kolom b en staan de kolommen één plaats verschoven: onder G staat A [cm²], onder h staat G, onder b staat h, en tw en tf zijn ×10. De kolomvolgorde is voor alle acht HE 360- en HE 400-rijen gelijk. De waarde is hersteld; G = 92.4 kg/m staat in de bron onder h; catalogus 92.4 kg/m (afgerond). | ArcelorMittal Europe – Long Products, Sections and Merchant bars, Sales programme 2024-1, HE AA, A, B en M, maten p. 56, eigenschappen p. 57 |
+| HE | HE 400 AA | h | 92,4 mm | 378 mm | In de bron ontbreekt de kolom b en staan de kolommen één plaats verschoven: onder G staat A [cm²], onder h staat G, onder b staat h, en tw en tf zijn ×10. De kolomvolgorde is voor alle acht HE 360- en HE 400-rijen gelijk. De waarde is hersteld; h = 378 mm staat in de bron onder b; catalogus 378 mm. | ArcelorMittal Europe – Long Products, Sections and Merchant bars, Sales programme 2024-1, HE AA, A, B en M, maten p. 56, eigenschappen p. 57 |
+| HE | HE 400 AA | b | 378 mm | 300 mm | In de bron ontbreekt de kolom b en staan de kolommen één plaats verschoven: onder G staat A [cm²], onder h staat G, onder b staat h, en tw en tf zijn ×10. De kolomvolgorde is voor alle acht HE 360- en HE 400-rijen gelijk. De waarde is hersteld; b = 300 mm ontbreekt in de bron; catalogus 300 mm. | ArcelorMittal Europe – Long Products, Sections and Merchant bars, Sales programme 2024-1, HE AA, A, B en M, maten p. 56, eigenschappen p. 57 |
+| HE | HE 400 AA | tw | 95 mm | 9,5 mm | In de bron ontbreekt de kolom b en staan de kolommen één plaats verschoven: onder G staat A [cm²], onder h staat G, onder b staat h, en tw en tf zijn ×10. De kolomvolgorde is voor alle acht HE 360- en HE 400-rijen gelijk. De waarde is hersteld; tw = 9.5 mm staat in de bron als 95; catalogus 9.5 mm. | ArcelorMittal Europe – Long Products, Sections and Merchant bars, Sales programme 2024-1, HE AA, A, B en M, maten p. 56, eigenschappen p. 57 |
+| HE | HE 400 AA | tf | 130 mm | 13 mm | In de bron ontbreekt de kolom b en staan de kolommen één plaats verschoven: onder G staat A [cm²], onder h staat G, onder b staat h, en tw en tf zijn ×10. De kolomvolgorde is voor alle acht HE 360- en HE 400-rijen gelijk. De waarde is hersteld; tf = 13 mm staat in de bron als 130; catalogus 13 mm. | ArcelorMittal Europe – Long Products, Sections and Merchant bars, Sales programme 2024-1, HE AA, A, B en M, maten p. 56, eigenschappen p. 57 |
+| HE | HE 400 AA | A | 1.270.000 mm² | 11.770 mm² | In de bron ontbreekt de kolom b en staan de kolommen één plaats verschoven: onder G staat A [cm²], onder h staat G, onder b staat h, en tw en tf zijn ×10. De kolomvolgorde is voor alle acht HE 360- en HE 400-rijen gelijk. De waarde is hersteld; A = 117.7 cm² staat in de bron onder G; catalogus 117.7 cm². | ArcelorMittal Europe – Long Products, Sections and Merchant bars, Sales programme 2024-1, HE AA, A, B en M, maten p. 56, eigenschappen p. 57 |
+| HE | HE 400 A | G | 159 kg/m | 124,8 kg/m | In de bron ontbreekt de kolom b en staan de kolommen één plaats verschoven: onder G staat A [cm²], onder h staat G, onder b staat h, en tw en tf zijn ×10. De kolomvolgorde is voor alle acht HE 360- en HE 400-rijen gelijk. De waarde is hersteld; G = 124.8 kg/m staat in de bron onder h; catalogus 125 kg/m (afgerond). | ArcelorMittal Europe – Long Products, Sections and Merchant bars, Sales programme 2024-1, HE AA, A, B en M, maten p. 56, eigenschappen p. 57 |
+| HE | HE 400 A | h | 124,8 mm | 390 mm | In de bron ontbreekt de kolom b en staan de kolommen één plaats verschoven: onder G staat A [cm²], onder h staat G, onder b staat h, en tw en tf zijn ×10. De kolomvolgorde is voor alle acht HE 360- en HE 400-rijen gelijk. De waarde is hersteld; h = 390 mm staat in de bron onder b; catalogus 390 mm. | ArcelorMittal Europe – Long Products, Sections and Merchant bars, Sales programme 2024-1, HE AA, A, B en M, maten p. 56, eigenschappen p. 57 |
+| HE | HE 400 A | b | 390 mm | 300 mm | In de bron ontbreekt de kolom b en staan de kolommen één plaats verschoven: onder G staat A [cm²], onder h staat G, onder b staat h, en tw en tf zijn ×10. De kolomvolgorde is voor alle acht HE 360- en HE 400-rijen gelijk. De waarde is hersteld; b = 300 mm ontbreekt in de bron; catalogus 300 mm. | ArcelorMittal Europe – Long Products, Sections and Merchant bars, Sales programme 2024-1, HE AA, A, B en M, maten p. 56, eigenschappen p. 57 |
+| HE | HE 400 A | tw | 110 mm | 11 mm | In de bron ontbreekt de kolom b en staan de kolommen één plaats verschoven: onder G staat A [cm²], onder h staat G, onder b staat h, en tw en tf zijn ×10. De kolomvolgorde is voor alle acht HE 360- en HE 400-rijen gelijk. De waarde is hersteld; tw = 11 mm staat in de bron als 110; catalogus 11 mm. | ArcelorMittal Europe – Long Products, Sections and Merchant bars, Sales programme 2024-1, HE AA, A, B en M, maten p. 56, eigenschappen p. 57 |
+| HE | HE 400 A | tf | 190 mm | 19 mm | In de bron ontbreekt de kolom b en staan de kolommen één plaats verschoven: onder G staat A [cm²], onder h staat G, onder b staat h, en tw en tf zijn ×10. De kolomvolgorde is voor alle acht HE 360- en HE 400-rijen gelijk. De waarde is hersteld; tf = 19 mm staat in de bron als 190; catalogus 19 mm. | ArcelorMittal Europe – Long Products, Sections and Merchant bars, Sales programme 2024-1, HE AA, A, B en M, maten p. 56, eigenschappen p. 57 |
+| HE | HE 400 A | A | 1.590.000 mm² | 15.900 mm² | In de bron ontbreekt de kolom b en staan de kolommen één plaats verschoven: onder G staat A [cm²], onder h staat G, onder b staat h, en tw en tf zijn ×10. De kolomvolgorde is voor alle acht HE 360- en HE 400-rijen gelijk. De waarde is hersteld; A = 159.0 cm² staat in de bron onder G; catalogus 159.0 cm². | ArcelorMittal Europe – Long Products, Sections and Merchant bars, Sales programme 2024-1, HE AA, A, B en M, maten p. 56, eigenschappen p. 57 |
+| HE | HE 400 B | G | 198 kg/m | 155,3 kg/m | In de bron ontbreekt de kolom b en staan de kolommen één plaats verschoven: onder G staat A [cm²], onder h staat G, onder b staat h, en tw en tf zijn ×10. De kolomvolgorde is voor alle acht HE 360- en HE 400-rijen gelijk. De waarde is hersteld; G = 155.3 kg/m staat in de bron onder h; catalogus 155 kg/m (afgerond). | ArcelorMittal Europe – Long Products, Sections and Merchant bars, Sales programme 2024-1, HE AA, A, B en M, maten p. 56, eigenschappen p. 57 |
+| HE | HE 400 B | h | 155,3 mm | 400 mm | In de bron ontbreekt de kolom b en staan de kolommen één plaats verschoven: onder G staat A [cm²], onder h staat G, onder b staat h, en tw en tf zijn ×10. De kolomvolgorde is voor alle acht HE 360- en HE 400-rijen gelijk. De waarde is hersteld; h = 400 mm staat in de bron onder b; catalogus 400 mm. | ArcelorMittal Europe – Long Products, Sections and Merchant bars, Sales programme 2024-1, HE AA, A, B en M, maten p. 56, eigenschappen p. 57 |
+| HE | HE 400 B | b | 400 mm | 300 mm | In de bron ontbreekt de kolom b en staan de kolommen één plaats verschoven: onder G staat A [cm²], onder h staat G, onder b staat h, en tw en tf zijn ×10. De kolomvolgorde is voor alle acht HE 360- en HE 400-rijen gelijk. De waarde is hersteld; b = 300 mm ontbreekt in de bron; catalogus 300 mm. | ArcelorMittal Europe – Long Products, Sections and Merchant bars, Sales programme 2024-1, HE AA, A, B en M, maten p. 56, eigenschappen p. 57 |
+| HE | HE 400 B | tw | 135 mm | 13,5 mm | In de bron ontbreekt de kolom b en staan de kolommen één plaats verschoven: onder G staat A [cm²], onder h staat G, onder b staat h, en tw en tf zijn ×10. De kolomvolgorde is voor alle acht HE 360- en HE 400-rijen gelijk. De waarde is hersteld; tw = 13.5 mm staat in de bron als 135; catalogus 13.5 mm. | ArcelorMittal Europe – Long Products, Sections and Merchant bars, Sales programme 2024-1, HE AA, A, B en M, maten p. 56, eigenschappen p. 57 |
+| HE | HE 400 B | tf | 240 mm | 24 mm | In de bron ontbreekt de kolom b en staan de kolommen één plaats verschoven: onder G staat A [cm²], onder h staat G, onder b staat h, en tw en tf zijn ×10. De kolomvolgorde is voor alle acht HE 360- en HE 400-rijen gelijk. De waarde is hersteld; tf = 24 mm staat in de bron als 240; catalogus 24 mm. | ArcelorMittal Europe – Long Products, Sections and Merchant bars, Sales programme 2024-1, HE AA, A, B en M, maten p. 56, eigenschappen p. 57 |
+| HE | HE 400 B | A | 2.180.000 mm² | 19.780 mm² | In de bron ontbreekt de kolom b en staan de kolommen één plaats verschoven: onder G staat A [cm²], onder h staat G, onder b staat h, en tw en tf zijn ×10. De kolomvolgorde is voor alle acht HE 360- en HE 400-rijen gelijk. De waarde is hersteld; A = 197.8 cm² staat in de bron onder G; catalogus 197.8 cm². | ArcelorMittal Europe – Long Products, Sections and Merchant bars, Sales programme 2024-1, HE AA, A, B en M, maten p. 56, eigenschappen p. 57 |
+| HE | HE 400 M | G | 326 kg/m | 255,7 kg/m | In de bron ontbreekt de kolom b en staan de kolommen één plaats verschoven: onder G staat A [cm²], onder h staat G, onder b staat h, en tw en tf zijn ×10. De kolomvolgorde is voor alle acht HE 360- en HE 400-rijen gelijk. De waarde is hersteld; G = 255.7 kg/m staat in de bron onder h; catalogus 256 kg/m (afgerond). | ArcelorMittal Europe – Long Products, Sections and Merchant bars, Sales programme 2024-1, HE AA, A, B en M, maten p. 56, eigenschappen p. 57 |
+| HE | HE 400 M | h | 255,7 mm | 432 mm | In de bron ontbreekt de kolom b en staan de kolommen één plaats verschoven: onder G staat A [cm²], onder h staat G, onder b staat h, en tw en tf zijn ×10. De kolomvolgorde is voor alle acht HE 360- en HE 400-rijen gelijk. De waarde is hersteld; h = 432 mm staat in de bron onder b; catalogus 432 mm. | ArcelorMittal Europe – Long Products, Sections and Merchant bars, Sales programme 2024-1, HE AA, A, B en M, maten p. 56, eigenschappen p. 57 |
+| HE | HE 400 M | b | 432 mm | 307 mm | In de bron ontbreekt de kolom b en staan de kolommen één plaats verschoven: onder G staat A [cm²], onder h staat G, onder b staat h, en tw en tf zijn ×10. De kolomvolgorde is voor alle acht HE 360- en HE 400-rijen gelijk. De waarde is hersteld; b = 307 mm ontbreekt in de bron; catalogus 307 mm. | ArcelorMittal Europe – Long Products, Sections and Merchant bars, Sales programme 2024-1, HE AA, A, B en M, maten p. 56, eigenschappen p. 57 |
+| HE | HE 400 M | tw | 210 mm | 21 mm | In de bron ontbreekt de kolom b en staan de kolommen één plaats verschoven: onder G staat A [cm²], onder h staat G, onder b staat h, en tw en tf zijn ×10. De kolomvolgorde is voor alle acht HE 360- en HE 400-rijen gelijk. De waarde is hersteld; tw = 21 mm staat in de bron als 210; catalogus 21 mm. | ArcelorMittal Europe – Long Products, Sections and Merchant bars, Sales programme 2024-1, HE AA, A, B en M, maten p. 56, eigenschappen p. 57 |
+| HE | HE 400 M | tf | 400 mm | 40 mm | In de bron ontbreekt de kolom b en staan de kolommen één plaats verschoven: onder G staat A [cm²], onder h staat G, onder b staat h, en tw en tf zijn ×10. De kolomvolgorde is voor alle acht HE 360- en HE 400-rijen gelijk. De waarde is hersteld; tf = 40 mm staat in de bron als 400; catalogus 40 mm. | ArcelorMittal Europe – Long Products, Sections and Merchant bars, Sales programme 2024-1, HE AA, A, B en M, maten p. 56, eigenschappen p. 57 |
+| HE | HE 400 M | A | 3.350.000 mm² | 32.580 mm² | In de bron ontbreekt de kolom b en staan de kolommen één plaats verschoven: onder G staat A [cm²], onder h staat G, onder b staat h, en tw en tf zijn ×10. De kolomvolgorde is voor alle acht HE 360- en HE 400-rijen gelijk. De waarde is hersteld; A = 325.8 cm² staat in de bron onder G; catalogus 325.8 cm². | ArcelorMittal Europe – Long Products, Sections and Merchant bars, Sales programme 2024-1, HE AA, A, B en M, maten p. 56, eigenschappen p. 57 |
+| RHS | 50x30 3.2 | A | 413 mm² | 460 mm² | A = 4.13 cm² in de bron is gelijk aan Wz (of een andere kolom) en past niet bij de rest van de rij. Uit G = 3.61 kg/m volgt A = 4.6 cm² (G/ρ); dat komt overeen met √(Iy/A) = iy en √(Iz/A) = iz in dezelfde rij (afwijking < 2 %). | TU Delft Vademecum (TeachBooks), RHS-HF-tabel: A volgt uit G (EN 10210, ρ = 7850 kg/m³) |
+| RHS | 60x40 3.0 | A | 695 mm² | 554 mm² | A = 6.95 cm² in de bron is gelijk aan Wz (of een andere kolom) en past niet bij de rest van de rij. Uit G = 4.35 kg/m volgt A = 5.54 cm² (G/ρ); dat komt overeen met √(Iy/A) = iy en √(Iz/A) = iz in dezelfde rij (afwijking < 2 %). | TU Delft Vademecum (TeachBooks), RHS-HF-tabel: A volgt uit G (EN 10210, ρ = 7850 kg/m³) |
+| RHS | 60x40 4.0 | A | 852 mm² | 718 mm² | A = 8.52 cm² in de bron is gelijk aan Wz (of een andere kolom) en past niet bij de rest van de rij. Uit G = 5.64 kg/m volgt A = 7.18 cm² (G/ρ); dat komt overeen met √(Iy/A) = iy en √(Iz/A) = iz in dezelfde rij (afwijking < 2 %). | TU Delft Vademecum (TeachBooks), RHS-HF-tabel: A volgt uit G (EN 10210, ρ = 7850 kg/m³) |
+| RHS | 60x40 5.0 | A | 977 mm² | 873 mm² | A = 9.77 cm² in de bron is gelijk aan Wz (of een andere kolom) en past niet bij de rest van de rij. Uit G = 6.85 kg/m volgt A = 8.73 cm² (G/ρ); dat komt overeen met √(Iy/A) = iy en √(Iz/A) = iz in dezelfde rij (afwijking < 2 %). | TU Delft Vademecum (TeachBooks), RHS-HF-tabel: A volgt uit G (EN 10210, ρ = 7850 kg/m³) |
+| RHS | 80x40 3.2 | A | 946 mm² | 716 mm² | A = 9.46 cm² in de bron is gelijk aan Wz (of een andere kolom) en past niet bij de rest van de rij. Uit G = 5.62 kg/m volgt A = 7.16 cm² (G/ρ); dat komt overeen met √(Iy/A) = iy en √(Iz/A) = iz in dezelfde rij (afwijking < 2 %). | TU Delft Vademecum (TeachBooks), RHS-HF-tabel: A volgt uit G (EN 10210, ρ = 7850 kg/m³) |
+| RHS | 80x40 4.0 | A | 1.110 mm² | 879 mm² | A = 11.1 cm² in de bron is gelijk aan Wz (of een andere kolom) en past niet bij de rest van de rij. Uit G = 6.9 kg/m volgt A = 8.79 cm² (G/ρ); dat komt overeen met √(Iy/A) = iy en √(Iz/A) = iz in dezelfde rij (afwijking < 2 %). | TU Delft Vademecum (TeachBooks), RHS-HF-tabel: A volgt uit G (EN 10210, ρ = 7850 kg/m³) |
+| RHS | 80x40 5.0 | A | 1.290 mm² | 1.070 mm² | A = 12.9 cm² in de bron is gelijk aan Wz (of een andere kolom) en past niet bij de rest van de rij. Uit G = 8.42 kg/m volgt A = 10.7 cm² (G/ρ); dat komt overeen met √(Iy/A) = iy en √(Iz/A) = iz in dezelfde rij (afwijking < 2 %). | TU Delft Vademecum (TeachBooks), RHS-HF-tabel: A volgt uit G (EN 10210, ρ = 7850 kg/m³) |
+| RHS | 80x40 6.3 | A | 1.460 mm² | 1.310 mm² | A = 14.6 cm² in de bron is gelijk aan Wz (of een andere kolom) en past niet bij de rest van de rij. Uit G = 10.3 kg/m volgt A = 13.1 cm² (G/ρ); dat komt overeen met √(Iy/A) = iy en √(Iz/A) = iz in dezelfde rij (afwijking < 2 %). | TU Delft Vademecum (TeachBooks), RHS-HF-tabel: A volgt uit G (EN 10210, ρ = 7850 kg/m³) |
+| RHS | 90x50 3.6 | A | 1.550 mm² | 943 mm² | A = 15.5 cm² in de bron is gelijk aan Wz (of een andere kolom) en past niet bij de rest van de rij. Uit G = 7.4 kg/m volgt A = 9.43 cm² (G/ρ); dat komt overeen met √(Iy/A) = iy en √(Iz/A) = iz in dezelfde rij (afwijking < 2 %). | TU Delft Vademecum (TeachBooks), RHS-HF-tabel: A volgt uit G (EN 10210, ρ = 7850 kg/m³) |
+| RHS | 90x50 5.0 | A | 1.970 mm² | 1.270 mm² | A = 19.7 cm² in de bron is gelijk aan Wz (of een andere kolom) en past niet bij de rest van de rij. Uit G = 9.99 kg/m volgt A = 12.7 cm² (G/ρ); dat komt overeen met √(Iy/A) = iy en √(Iz/A) = iz in dezelfde rij (afwijking < 2 %). | TU Delft Vademecum (TeachBooks), RHS-HF-tabel: A volgt uit G (EN 10210, ρ = 7850 kg/m³) |
+| RHS | 90x50 6.3 | A | 2.280 mm² | 1.570 mm² | A = 22.8 cm² in de bron is gelijk aan Wz (of een andere kolom) en past niet bij de rest van de rij. Uit G = 12.3 kg/m volgt A = 15.7 cm² (G/ρ); dat komt overeen met √(Iy/A) = iy en √(Iz/A) = iz in dezelfde rij (afwijking < 2 %). | TU Delft Vademecum (TeachBooks), RHS-HF-tabel: A volgt uit G (EN 10210, ρ = 7850 kg/m³) |
+| RHS | 100x50 3.0 | A | 1.470 mm² | 855 mm² | A = 14.7 cm² in de bron is gelijk aan Wz (of een andere kolom) en past niet bij de rest van de rij. Uit G = 6.71 kg/m volgt A = 8.55 cm² (G/ρ); dat komt overeen met √(Iy/A) = iy en √(Iz/A) = iz in dezelfde rij (afwijking < 2 %). | TU Delft Vademecum (TeachBooks), RHS-HF-tabel: A volgt uit G (EN 10210, ρ = 7850 kg/m³) |
+| RHS | 100x50 3.2 | A | 1.550 mm² | 908 mm² | A = 15.5 cm² in de bron is gelijk aan Wz (of een andere kolom) en past niet bij de rest van de rij. Uit G = 7.13 kg/m volgt A = 9.08 cm² (G/ρ); dat komt overeen met √(Iy/A) = iy en √(Iz/A) = iz in dezelfde rij (afwijking < 2 %). | TU Delft Vademecum (TeachBooks), RHS-HF-tabel: A volgt uit G (EN 10210, ρ = 7850 kg/m³) |
+| RHS | 100x50 5.0 | A | 2.170 mm² | 1.380 mm² | A = 21.7 cm² in de bron is gelijk aan Wz (of een andere kolom) en past niet bij de rest van de rij. Uit G = 10.8 kg/m volgt A = 13.8 cm² (G/ρ); dat komt overeen met √(Iy/A) = iy en √(Iz/A) = iz in dezelfde rij (afwijking < 2 %). | TU Delft Vademecum (TeachBooks), RHS-HF-tabel: A volgt uit G (EN 10210, ρ = 7850 kg/m³) |
+| RHS | 100x50 6.3 | A | 2.520 mm² | 1.690 mm² | A = 25.2 cm² in de bron is gelijk aan Wz (of een andere kolom) en past niet bij de rest van de rij. Uit G = 13.3 kg/m volgt A = 16.9 cm² (G/ρ); dat komt overeen met √(Iy/A) = iy en √(Iz/A) = iz in dezelfde rij (afwijking < 2 %). | TU Delft Vademecum (TeachBooks), RHS-HF-tabel: A volgt uit G (EN 10210, ρ = 7850 kg/m³) |
+| RHS | 100x50 8.0 | A | 3.140 mm² | 2.080 mm² | A = 31.4 cm² in de bron is gelijk aan Wz (of een andere kolom) en past niet bij de rest van de rij. Uit G = 16.3 kg/m volgt A = 20.8 cm² (G/ρ); dat komt overeen met √(Iy/A) = iy en √(Iz/A) = iz in dezelfde rij (afwijking < 2 %). | TU Delft Vademecum (TeachBooks), RHS-HF-tabel: A volgt uit G (EN 10210, ρ = 7850 kg/m³) |
+| RHS | 100x50 10.0 | A | 3.780 mm² | 2.500 mm² | A = 37.8 cm² in de bron is gelijk aan Wz (of een andere kolom) en past niet bij de rest van de rij. Uit G = 19.6 kg/m volgt A = 25 cm² (G/ρ); dat komt overeen met √(Iy/A) = iy en √(Iz/A) = iz in dezelfde rij (afwijking < 2 %). | TU Delft Vademecum (TeachBooks), RHS-HF-tabel: A volgt uit G (EN 10210, ρ = 7850 kg/m³) |
+| RHS | 100x60 3.6 | A | 2.160 mm² | 1.090 mm² | A = 21.6 cm² in de bron is gelijk aan Wz (of een andere kolom) en past niet bij de rest van de rij. Uit G = 8.53 kg/m volgt A = 10.9 cm² (G/ρ); dat komt overeen met √(Iy/A) = iy en √(Iz/A) = iz in dezelfde rij (afwijking < 2 %). | TU Delft Vademecum (TeachBooks), RHS-HF-tabel: A volgt uit G (EN 10210, ρ = 7850 kg/m³) |
+| RHS | 100x60 5.0 | A | 2.790 mm² | 1.480 mm² | A = 27.9 cm² in de bron is gelijk aan Wz (of een andere kolom) en past niet bij de rest van de rij. Uit G = 11.6 kg/m volgt A = 14.8 cm² (G/ρ); dat komt overeen met √(Iy/A) = iy en √(Iz/A) = iz in dezelfde rij (afwijking < 2 %). | TU Delft Vademecum (TeachBooks), RHS-HF-tabel: A volgt uit G (EN 10210, ρ = 7850 kg/m³) |
+| RHS | 100x60 6.3 | A | 3.270 mm² | 1.810 mm² | A = 32.7 cm² in de bron is gelijk aan Wz (of een andere kolom) en past niet bij de rest van de rij. Uit G = 14.2 kg/m volgt A = 18.1 cm² (G/ρ); dat komt overeen met √(Iy/A) = iy en √(Iz/A) = iz in dezelfde rij (afwijking < 2 %). | TU Delft Vademecum (TeachBooks), RHS-HF-tabel: A volgt uit G (EN 10210, ρ = 7850 kg/m³) |
+| RHS | 100x60 8.0 | A | 3.780 mm² | 2.230 mm² | A = 37.8 cm² in de bron is gelijk aan Wz (of een andere kolom) en past niet bij de rest van de rij. Uit G = 17.5 kg/m volgt A = 22.3 cm² (G/ρ); dat komt overeen met √(Iy/A) = iy en √(Iz/A) = iz in dezelfde rij (afwijking < 2 %). | TU Delft Vademecum (TeachBooks), RHS-HF-tabel: A volgt uit G (EN 10210, ρ = 7850 kg/m³) |
 | UNP | 150x65 | h | 150 mm | 160 mm | Alle waarden in deze rij (G 18,8 kg/m, A 24,0 cm², Iy 925 cm⁴, Wy 116 cm³, Iz 85,3 cm⁴, Wz 18,3 cm³) horen bij UPN 160; Wy = Iy/(h/2) klopt alleen met h = 160. Een UPN 150 komt in de catalogus niet voor. Alleen de maat is gecorrigeerd, niet de waarden. | ArcelorMittal Europe – Long Products, Sections and Merchant bars, Sales programme 2024-1, UPN, p. 100–101 |
 
 ## Fouten
 
 | Tabel | Rij | Check | Veld | Verwacht | Gevonden | Toelichting |
 |---|---|---|---|---|---|---|
-| IPE | IPE 240 A | i ≈ √(I/A) | iy | 99,4 mm | 74,5 mm | iy wijkt -25.0 % af van √(Iy/A). verwachte iy staat mogelijk in kolom iz (99.4) |
-| IPE | IPE 240 A | i ≈ √(I/A) | iz | 26,85 mm | 99,4 mm | iz wijkt 270.3 % af van √(Iz/A) |
-| IPE | IPE 240 A | Iy > Iz, iy > iz | iz |  | 99,4 mm | iy moet groter zijn dan iz |
-| IPE | IPE 240 | i ≈ √(I/A) | iy | 99,77 mm | 74,4 mm | iy wijkt -25.4 % af van √(Iy/A). verwachte iy staat mogelijk in kolom iz (99.7) |
-| IPE | IPE 240 | i ≈ √(I/A) | iz | 26,95 mm | 99,7 mm | iz wijkt 269.9 % af van √(Iz/A) |
-| IPE | IPE 240 | Iy > Iz, iy > iz | iz |  | 99,7 mm | iy moet groter zijn dan iz |
-| IPE | IPE 240 O | i ≈ √(I/A) | iy | 99,99 mm | 82,3 mm | iy wijkt -17.7 % af van √(Iy/A). verwachte iy staat mogelijk in kolom iz (100.0) |
-| IPE | IPE 240 O | i ≈ √(I/A) | iz | 27,44 mm | 100 mm | iz wijkt 264.5 % af van √(Iz/A) |
-| IPE | IPE 240 O | Iy > Iz, iy > iz | iz |  | 100 mm | iy moet groter zijn dan iz |
 | IPE | IPE 240 R | i ≈ √(I/A) | iy | 100,8 mm | 82,6 mm | iy wijkt -18.0 % af van √(Iy/A). verwachte iy staat mogelijk in kolom iz (101.0) |
 | IPE | IPE 240 R | i ≈ √(I/A) | iz | 26,71 mm | 101 mm | iz wijkt 278.1 % af van √(Iz/A) |
 | IPE | IPE 240 R | Iy > Iz, iy > iz | iz |  | 101 mm | iy moet groter zijn dan iz |
-| IPE | IPE 270 A | i ≈ √(I/A) | iy | 112,1 mm | 83,2 mm | iy wijkt -25.8 % af van √(Iy/A). verwachte iy staat mogelijk in kolom iz (112.0) |
-| IPE | IPE 270 A | i ≈ √(I/A) | iz | 30,26 mm | 112 mm | iz wijkt 270.1 % af van √(Iz/A) |
-| IPE | IPE 270 A | Iy > Iz, iy > iz | iz |  | 112 mm | iy moet groter zijn dan iz |
-| IPE | IPE 270 | i ≈ √(I/A) | iy | 112,3 mm | 83,5 mm | iy wijkt -25.7 % af van √(Iy/A). verwachte iy staat mogelijk in kolom iz (112.0) |
-| IPE | IPE 270 | i ≈ √(I/A) | iz | 30,25 mm | 112 mm | iz wijkt 270.3 % af van √(Iz/A) |
-| IPE | IPE 270 | Iy > Iz, iy > iz | iz |  | 112 mm | iy moet groter zijn dan iz |
-| IPE | IPE 270 O | i ≈ √(I/A) | iy | 113,6 mm | 90,5 mm | iy wijkt -20.4 % af van √(Iy/A). verwachte iy staat mogelijk in kolom iz (114.0) |
-| IPE | IPE 270 O | i ≈ √(I/A) | iz | 30,88 mm | 114 mm | iz wijkt 269.2 % af van √(Iz/A) |
-| IPE | IPE 270 O | Iy > Iz, iy > iz | iz |  | 114 mm | iy moet groter zijn dan iz |
 | IPE | IPE 270 R | i ≈ √(I/A) | iy | 114,3 mm | 91,1 mm | iy wijkt -20.3 % af van √(Iy/A). verwachte iy staat mogelijk in kolom iz (114.0) |
 | IPE | IPE 270 R | i ≈ √(I/A) | iz | 30,36 mm | 114 mm | iz wijkt 275.6 % af van √(Iz/A) |
 | IPE | IPE 270 R | Iy > Iz, iy > iz | iz |  | 114 mm | iy moet groter zijn dan iz |
-| IPE | IPE 300 A | i ≈ √(I/A) | iy | 124,2 mm | 91,6 mm | iy wijkt -26.2 % af van √(Iy/A). verwachte iy staat mogelijk in kolom iz (124.0) |
-| IPE | IPE 300 A | i ≈ √(I/A) | iz | 33,41 mm | 124 mm | iz wijkt 271.2 % af van √(Iz/A) |
-| IPE | IPE 300 A | Iy > Iz, iy > iz | iz |  | 124 mm | iy moet groter zijn dan iz |
-| IPE | IPE 300 | i ≈ √(I/A) | iy | 124,6 mm | 92,9 mm | iy wijkt -25.5 % af van √(Iy/A). verwachte iy staat mogelijk in kolom iz (125.0) |
-| IPE | IPE 300 | i ≈ √(I/A) | iz | 33,51 mm | 125 mm | iz wijkt 273.1 % af van √(Iz/A) |
-| IPE | IPE 300 | Iy > Iz, iy > iz | iz |  | 125 mm | iy moet groter zijn dan iz |
-| IPE | IPE 300 O | lege cel | iy |  |  | iy ontbreekt in de bron; berekend als √(Iy/A) |
-| IPE | IPE 300 O | i ≈ √(I/A) | iz | 34,47 mm | 126 mm | iz wijkt 265.6 % af van √(Iz/A) |
 | IPE | IPE 300 R | lege cel | iy |  |  | iy ontbreekt in de bron; berekend als √(Iy/A) |
 | IPE | IPE 300 R | i ≈ √(I/A) | iz | 33,24 mm | 126 mm | iz wijkt 279.1 % af van √(Iz/A) |
-| HE | HE 360 AA | G ≈ A·ρ | G | 8.400 kg/m | 218 kg/m | G wijkt -97.4 % af van A × 7850 kg/m³ |
-| HE | HE 360 AA | i ≈ √(I/A) | iy | 14,67 mm | 147 mm | iy wijkt 901.8 % af van √(Iy/A) |
-| HE | HE 360 AA | i ≈ √(I/A) | iz | 7,111 mm | 71,2 mm | iz wijkt 901.3 % af van √(Iz/A) |
-| HE | HE 360 AA | W ≈ I/(h/2) | Wy | 550.538 mm³ | 1.359.000 mm³ | Wy wijkt 146.8 % af van Iy/(h/2) |
-| HE | HE 360 AA | W ≈ I/(h/2) | Wz | 319.174 mm³ | 361.000 mm³ | Wz wijkt 13.1 % af van Iz/(b/2) |
-| HE | HE 360 A | plausibele maten | h | 175 mm | 112,1 mm | h moet groter zijn dan b/2. verwachte h staat mogelijk in kolom tf (175.0) |
-| HE | HE 360 A | plausibele maten | tf |  | 175 mm | 2·tf moet kleiner zijn dan h |
-| HE | HE 360 A | G ≈ A·ρ | G | 11.226 kg/m | 143 kg/m | G wijkt -98.7 % af van A × 7850 kg/m³ |
-| HE | HE 360 A | i ≈ √(I/A) | iy | 15,21 mm | 152 mm | iy wijkt 899.2 % af van √(Iy/A) |
-| HE | HE 360 A | i ≈ √(I/A) | iz | 7,427 mm | 74,3 mm | iz wijkt 900.5 % af van √(Iz/A) |
-| HE | HE 360 A | W ≈ I/(h/2) | Wy | 5.903.657 mm³ | 1.891.000 mm³ | Wy wijkt -68.0 % af van Iy/(h/2) |
-| HE | HE 360 A | W ≈ I/(h/2) | Wz | 450.686 mm³ | 526.000 mm³ | Wz wijkt 16.7 % af van Iz/(b/2) |
-| HE | HE 360 B | plausibele maten | h | 180 mm | 141,8 mm | h moet groter zijn dan b/2. verwachte h staat mogelijk in kolom G (181.0) |
-| HE | HE 360 B | plausibele maten | tf |  | 225 mm | 2·tf moet kleiner zijn dan h |
-| HE | HE 360 B | G ≈ A·ρ | G | 14.209 kg/m | 181 kg/m | G wijkt -98.7 % af van A × 7850 kg/m³ |
-| HE | HE 360 B | i ≈ √(I/A) | iy | 15,45 mm | 155 mm | iy wijkt 903.4 % af van √(Iy/A) |
-| HE | HE 360 B | i ≈ √(I/A) | iz | 7,485 mm | 74,9 mm | iz wijkt 900.7 % af van √(Iz/A) |
-| HE | HE 360 B | W ≈ I/(h/2) | Wy | 6.091.678 mm³ | 2.400.000 mm³ | Wy wijkt -60.6 % af van Iy/(h/2) |
-| HE | HE 360 B | W ≈ I/(h/2) | Wz | 563.333 mm³ | 676.000 mm³ | Wz wijkt 20.0 % af van Iz/(b/2) |
-| HE | HE 360 M | plausibele maten | tf |  | 400 mm | tf moet kleiner zijn dan b |
-| HE | HE 360 M | plausibele maten | tf |  | 400 mm | 2·tf moet kleiner zijn dan h |
-| HE | HE 360 M | G ≈ A·ρ | G | 25.042 kg/m | 319 kg/m | G wijkt -98.7 % af van A × 7850 kg/m³ |
-| HE | HE 360 M | i ≈ √(I/A) | iy | 16,31 mm | 163 mm | iy wijkt 899.3 % af van √(Iy/A) |
-| HE | HE 360 M | i ≈ √(I/A) | iz | 7,822 mm | 78,3 mm | iz wijkt 901.0 % af van √(Iz/A) |
-| HE | HE 360 M | W ≈ I/(h/2) | Wy | 6.781.462 mm³ | 4.297.000 mm³ | Wy wijkt -36.6 % af van Iy/(h/2) |
-| HE | HE 360 M | W ≈ I/(h/2) | Wz | 988.354 mm³ | 1.268.000 mm³ | Wz wijkt 28.3 % af van Iz/(b/2) |
-| HE | HE 400 AA | plausibele maten | h | 189 mm | 92,4 mm | h moet groter zijn dan b/2 |
-| HE | HE 400 AA | plausibele maten | tf |  | 130 mm | 2·tf moet kleiner zijn dan h |
-| HE | HE 400 AA | G ≈ A·ρ | G | 9.970 kg/m | 118 kg/m | G wijkt -98.8 % af van A × 7850 kg/m³ |
-| HE | HE 400 AA | i ≈ √(I/A) | iy | 15,69 mm | 163 mm | iy wijkt 939.1 % af van √(Iy/A) |
-| HE | HE 400 AA | i ≈ √(I/A) | iz | 6,793 mm | 70,6 mm | iz wijkt 939.3 % af van √(Iz/A) |
-| HE | HE 400 AA | W ≈ I/(h/2) | Wy | 6.764.069 mm³ | 1.654.000 mm³ | Wy wijkt -75.5 % af van Iy/(h/2) |
-| HE | HE 400 AA | W ≈ I/(h/2) | Wz | 310.106 mm³ | 391.000 mm³ | Wz wijkt 26.1 % af van Iz/(b/2) |
 | HE | HE 400 x107 | plausibele maten | h | 192 mm | 107,2 mm | h moet groter zijn dan b/2 |
 | HE | HE 400 x107 | plausibele maten | tf |  | 160 mm | 2·tf moet kleiner zijn dan h |
 | HE | HE 400 x107 | G ≈ A·ρ | G | 10.676 kg/m | 136 kg/m | G wijkt -98.7 % af van A × 7850 kg/m³ |
@@ -116,89 +144,6 @@ Deze rijen zijn in BARCHY gecorrigeerd met een externe bron. De fout zit nog in 
 | HE | HE 400 x107 | i ≈ √(I/A) | iz | 7,173 mm | 71,6 mm | iz wijkt 898.1 % af van √(Iz/A) |
 | HE | HE 400 x107 | W ≈ I/(h/2) | Wy | 7.022.388 mm³ | 1.960.000 mm³ | Wy wijkt -72.1 % af van Iy/(h/2). verwachte Wy staat mogelijk in kolom Iz (6998) |
 | HE | HE 400 x107 | W ≈ I/(h/2) | Wz | 364.479 mm³ | 471.000 mm³ | Wz wijkt 29.2 % af van Iz/(b/2) |
-| HE | HE 400 A | plausibele maten | h | 195 mm | 124,8 mm | h moet groter zijn dan b/2 |
-| HE | HE 400 A | plausibele maten | tf |  | 190 mm | 2·tf moet kleiner zijn dan h |
-| HE | HE 400 A | G ≈ A·ρ | G | 12.482 kg/m | 159 kg/m | G wijkt -98.7 % af van A × 7850 kg/m³ |
-| HE | HE 400 A | i ≈ √(I/A) | iy | 16,84 mm | 168 mm | iy wijkt 897.8 % af van √(Iy/A) |
-| HE | HE 400 A | i ≈ √(I/A) | iz | 7,339 mm | 73,4 mm | iz wijkt 900.1 % af van √(Iz/A) |
-| HE | HE 400 A | W ≈ I/(h/2) | Wy | 7.222.756 mm³ | 2.311.000 mm³ | Wy wijkt -68.0 % af van Iy/(h/2) |
-| HE | HE 400 A | W ≈ I/(h/2) | Wz | 439.179 mm³ | 571.000 mm³ | Wz wijkt 30.0 % af van Iz/(b/2) |
-| HE | HE 400 B | plausibele maten | h | 200 mm | 155,3 mm | h moet groter zijn dan b/2 |
-| HE | HE 400 B | plausibele maten | tf |  | 240 mm | 2·tf moet kleiner zijn dan h |
-| HE | HE 400 B | G ≈ A·ρ | G | 17.113 kg/m | 198 kg/m | G wijkt -98.8 % af van A × 7850 kg/m³ |
-| HE | HE 400 B | i ≈ √(I/A) | iy | 16,27 mm | 171 mm | iy wijkt 951.3 % af van √(Iy/A) |
-| HE | HE 400 B | i ≈ √(I/A) | iz | 7,045 mm | 74 mm | iz wijkt 950.4 % af van √(Iz/A) |
-| HE | HE 400 B | W ≈ I/(h/2) | Wy | 7.428.203 mm³ | 2.884.000 mm³ | Wy wijkt -61.2 % af van Iy/(h/2) |
-| HE | HE 400 B | W ≈ I/(h/2) | Wz | 541.000 mm³ | 721.000 mm³ | Wz wijkt 33.3 % af van Iz/(b/2) |
-| HE | HE 400 M | plausibele maten | tf |  | 400 mm | 2·tf moet kleiner zijn dan h |
-| HE | HE 400 M | G ≈ A·ρ | G | 26.298 kg/m | 326 kg/m | G wijkt -98.8 % af van A × 7850 kg/m³ |
-| HE | HE 400 M | i ≈ √(I/A) | iy | 17,63 mm | 179 mm | iy wijkt 915.4 % af van √(Iy/A) |
-| HE | HE 400 M | i ≈ √(I/A) | iz | 7,598 mm | 77 mm | iz wijkt 913.4 % af van √(Iz/A) |
-| HE | HE 400 M | W ≈ I/(h/2) | Wy | 8.142.354 mm³ | 4.820.000 mm³ | Wy wijkt -40.8 % af van Iy/(h/2) |
-| HE | HE 400 M | W ≈ I/(h/2) | Wz | 895.370 mm³ | 1.260.000 mm³ | Wz wijkt 40.7 % af van Iz/(b/2) |
-| RHS | 50x30 3.2 | G ≈ A·ρ | G | 3,242 kg/m | 3,61 kg/m | G wijkt 11.3 % af van A × 7850 kg/m³ |
-| RHS | 50x30 3.2 | i ≈ √(I/A) | iy | 18,54 mm | 17,6 mm | iy wijkt -5.1 % af van √(Iy/A) |
-| RHS | 50x30 3.2 | i ≈ √(I/A) | iz | 12,25 mm | 11,6 mm | iz wijkt -5.3 % af van √(Iz/A) |
-| RHS | 60x40 3.0 | G ≈ A·ρ | G | 5,456 kg/m | 4,35 kg/m | G wijkt -20.3 % af van A × 7850 kg/m³ |
-| RHS | 60x40 3.0 | i ≈ √(I/A) | iy | 19,53 mm | 21,8 mm | iy wijkt 11.6 % af van √(Iy/A) |
-| RHS | 60x40 3.0 | i ≈ √(I/A) | iz | 14,14 mm | 15,8 mm | iz wijkt 11.7 % af van √(Iz/A) |
-| RHS | 60x40 4.0 | G ≈ A·ρ | G | 6,688 kg/m | 5,64 kg/m | G wijkt -15.7 % af van A × 7850 kg/m³ |
-| RHS | 60x40 4.0 | i ≈ √(I/A) | iy | 19,62 mm | 21,4 mm | iy wijkt 9.1 % af van √(Iy/A) |
-| RHS | 60x40 4.0 | i ≈ √(I/A) | iz | 14,13 mm | 15,4 mm | iz wijkt 9.0 % af van √(Iz/A) |
-| RHS | 60x40 5.0 | G ≈ A·ρ | G | 7,669 kg/m | 6,85 kg/m | G wijkt -10.7 % af van A × 7850 kg/m³ |
-| RHS | 60x40 5.0 | i ≈ √(I/A) | iy | 19,75 mm | 20,9 mm | iy wijkt 5.8 % af van √(Iy/A) |
-| RHS | 60x40 5.0 | i ≈ √(I/A) | iz | 14,13 mm | 15 mm | iz wijkt 6.2 % af van √(Iz/A) |
-| RHS | 80x40 3.2 | G ≈ A·ρ | G | 7,426 kg/m | 5,62 kg/m | G wijkt -24.3 % af van A × 7850 kg/m³ |
-| RHS | 80x40 3.2 | i ≈ √(I/A) | iy | 24,59 mm | 28,3 mm | iy wijkt 15.1 % af van √(Iy/A) |
-| RHS | 80x40 3.2 | i ≈ √(I/A) | iz | 14,13 mm | 16,3 mm | iz wijkt 15.3 % af van √(Iz/A) |
-| RHS | 80x40 4.0 | G ≈ A·ρ | G | 8,714 kg/m | 6,9 kg/m | G wijkt -20.8 % af van A × 7850 kg/m³ |
-| RHS | 80x40 4.0 | i ≈ √(I/A) | iy | 24,79 mm | 27,9 mm | iy wijkt 12.6 % af van √(Iy/A) |
-| RHS | 80x40 4.0 | i ≈ √(I/A) | iz | 14,14 mm | 15,9 mm | iz wijkt 12.4 % af van √(Iz/A) |
-| RHS | 80x40 5.0 | G ≈ A·ρ | G | 10,13 kg/m | 8,42 kg/m | G wijkt -16.9 % af van A × 7850 kg/m³ |
-| RHS | 80x40 5.0 | i ≈ √(I/A) | iy | 24,95 mm | 27,4 mm | iy wijkt 9.8 % af van √(Iy/A) |
-| RHS | 80x40 5.0 | i ≈ √(I/A) | iz | 14,12 mm | 15,5 mm | iz wijkt 9.8 % af van √(Iz/A) |
-| RHS | 80x40 6.3 | G ≈ A·ρ | G | 11,46 kg/m | 10,3 kg/m | G wijkt -10.1 % af van A × 7850 kg/m³ |
-| RHS | 80x40 6.3 | i ≈ √(I/A) | iy | 25,28 mm | 26,7 mm | iy wijkt 5.6 % af van √(Iy/A) |
-| RHS | 80x40 6.3 | i ≈ √(I/A) | iz | 14,14 mm | 14,9 mm | iz wijkt 5.4 % af van √(Iz/A) |
-| RHS | 90x50 3.6 | G ≈ A·ρ | G | 12,17 kg/m | 7,4 kg/m | G wijkt -39.2 % af van A × 7850 kg/m³ |
-| RHS | 90x50 3.6 | i ≈ √(I/A) | iy | 25,18 mm | 32,3 mm | iy wijkt 28.3 % af van √(Iy/A) |
-| RHS | 90x50 3.6 | i ≈ √(I/A) | iz | 15,8 mm | 20,3 mm | iz wijkt 28.5 % af van √(Iz/A) |
-| RHS | 90x50 5.0 | G ≈ A·ρ | G | 15,46 kg/m | 9,99 kg/m | G wijkt -35.4 % af van A × 7850 kg/m³ |
-| RHS | 90x50 5.0 | i ≈ √(I/A) | iy | 25,39 mm | 31,6 mm | iy wijkt 24.5 % af van √(Iy/A) |
-| RHS | 90x50 5.0 | i ≈ √(I/A) | iz | 15,8 mm | 19,7 mm | iz wijkt 24.7 % af van √(Iz/A) |
-| RHS | 90x50 6.3 | G ≈ A·ρ | G | 17,9 kg/m | 12,3 kg/m | G wijkt -31.3 % af van A × 7850 kg/m³ |
-| RHS | 90x50 6.3 | i ≈ √(I/A) | iy | 25,65 mm | 31 mm | iy wijkt 20.9 % af van √(Iy/A) |
-| RHS | 90x50 6.3 | i ≈ √(I/A) | iz | 15,81 mm | 19,1 mm | iz wijkt 20.8 % af van √(Iz/A) |
-| RHS | 100x50 3.0 | G ≈ A·ρ | G | 11,54 kg/m | 6,71 kg/m | G wijkt -41.9 % af van A × 7850 kg/m³ |
-| RHS | 100x50 3.0 | i ≈ √(I/A) | iy | 27,36 mm | 35,8 mm | iy wijkt 30.9 % af van √(Iy/A) |
-| RHS | 100x50 3.0 | i ≈ √(I/A) | iz | 15,82 mm | 20,8 mm | iz wijkt 31.5 % af van √(Iz/A) |
-| RHS | 100x50 3.2 | G ≈ A·ρ | G | 12,17 kg/m | 7,13 kg/m | G wijkt -41.4 % af van A × 7850 kg/m³ |
-| RHS | 100x50 3.2 | i ≈ √(I/A) | iy | 27,36 mm | 35,7 mm | iy wijkt 30.5 % af van √(Iy/A) |
-| RHS | 100x50 3.2 | i ≈ √(I/A) | iz | 15,82 mm | 20,7 mm | iz wijkt 30.8 % af van √(Iz/A) |
-| RHS | 100x50 5.0 | G ≈ A·ρ | G | 17,04 kg/m | 10,8 kg/m | G wijkt -36.6 % af van A × 7850 kg/m³ |
-| RHS | 100x50 5.0 | i ≈ √(I/A) | iy | 27,74 mm | 34,8 mm | iy wijkt 25.4 % af van √(Iy/A) |
-| RHS | 100x50 5.0 | i ≈ √(I/A) | iz | 15,82 mm | 19,9 mm | iz wijkt 25.8 % af van √(Iz/A) |
-| RHS | 100x50 6.3 | G ≈ A·ρ | G | 19,78 kg/m | 13,3 kg/m | G wijkt -32.8 % af van A × 7850 kg/m³ |
-| RHS | 100x50 6.3 | i ≈ √(I/A) | iy | 27,96 mm | 34,2 mm | iy wijkt 22.3 % af van √(Iy/A) |
-| RHS | 100x50 6.3 | i ≈ √(I/A) | iz | 15,81 mm | 19,3 mm | iz wijkt 22.1 % af van √(Iz/A) |
-| RHS | 100x50 8.0 | G ≈ A·ρ | G | 24,65 kg/m | 16,3 kg/m | G wijkt -33.9 % af van A × 7850 kg/m³ |
-| RHS | 100x50 8.0 | i ≈ √(I/A) | iy | 27,06 mm | 33,3 mm | iy wijkt 23.0 % af van √(Iy/A) |
-| RHS | 100x50 8.0 | i ≈ √(I/A) | iz | 15,11 mm | 18,6 mm | iz wijkt 23.1 % af van √(Iz/A) |
-| RHS | 100x50 10.0 | G ≈ A·ρ | G | 29,67 kg/m | 19,6 kg/m | G wijkt -33.9 % af van A × 7850 kg/m³ |
-| RHS | 100x50 10.0 | i ≈ √(I/A) | iy | 26,18 mm | 32,2 mm | iy wijkt 23.0 % af van √(Iy/A) |
-| RHS | 100x50 10.0 | i ≈ √(I/A) | iz | 14,4 mm | 17,7 mm | iz wijkt 22.9 % af van √(Iz/A) |
-| RHS | 100x60 3.6 | G ≈ A·ρ | G | 16,96 kg/m | 8,53 kg/m | G wijkt -49.7 % af van A × 7850 kg/m³ |
-| RHS | 100x60 3.6 | i ≈ √(I/A) | iy | 25,91 mm | 36,5 mm | iy wijkt 40.9 % af van √(Iy/A) |
-| RHS | 100x60 3.6 | i ≈ √(I/A) | iz | 17,32 mm | 24,4 mm | iz wijkt 40.9 % af van √(Iz/A) |
-| RHS | 100x60 5.0 | G ≈ A·ρ | G | 21,9 kg/m | 11,6 kg/m | G wijkt -47.0 % af van A × 7850 kg/m³ |
-| RHS | 100x60 5.0 | i ≈ √(I/A) | iy | 26,03 mm | 35,8 mm | iy wijkt 37.5 % af van √(Iy/A) |
-| RHS | 100x60 5.0 | i ≈ √(I/A) | iz | 17,31 mm | 23,8 mm | iz wijkt 37.5 % af van √(Iz/A) |
-| RHS | 100x60 6.3 | G ≈ A·ρ | G | 25,67 kg/m | 14,2 kg/m | G wijkt -44.7 % af van A × 7850 kg/m³ |
-| RHS | 100x60 6.3 | i ≈ √(I/A) | iy | 26,23 mm | 35,2 mm | iy wijkt 34.2 % af van √(Iy/A) |
-| RHS | 100x60 6.3 | i ≈ √(I/A) | iz | 17,32 mm | 23,3 mm | iz wijkt 34.5 % af van √(Iz/A) |
-| RHS | 100x60 8.0 | G ≈ A·ρ | G | 29,67 kg/m | 17,5 kg/m | G wijkt -41.0 % af van A × 7850 kg/m³ |
-| RHS | 100x60 8.0 | i ≈ √(I/A) | iy | 26,43 mm | 34,4 mm | iy wijkt 30.2 % af van √(Iy/A) |
-| RHS | 100x60 8.0 | i ≈ √(I/A) | iz | 17,29 mm | 22,5 mm | iz wijkt 30.1 % af van √(Iz/A) |
 
 ## Waarschuwingen
 

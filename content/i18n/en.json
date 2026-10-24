@@ -13,7 +13,6 @@
 	"common": {
 		"back": "Back",
 		"close": "Close",
-		"settings": "Settings",
 		"language": "Language",
 		"comingSoon": "This screen is built in a later phase.",
 		"noSource": "No source yet",
@@ -23,7 +22,8 @@
 		"notFound": "This section is not in the data.",
 		"save": "Save",
 		"unsave": "Remove from saved",
-		"remove": "Remove"
+		"remove": "Remove",
+		"about": "About BARCHY"
 	},
 	"info": {
 		"open": "Sources and info",
@@ -80,7 +80,9 @@
 		"tools": "Calculators",
 		"toolsUnit": "tools",
 		"toolsSub": "Calculate and check instantly",
-		"masonry": "Masonry"
+		"masonry": "Masonry",
+		"feedback": "Want to add or request something?",
+		"feedbackSub": "Send a message to the maker"
 	},
 	"search": {
 		"title": "Search",
@@ -341,8 +343,38 @@
 		"stairTool": "Check a stair against the Bbl",
 		"info": "Each value lists its article. Other dwelling types (caravan, students, care) and existing buildings sometimes have other values; they are not shown here."
 	},
-	"settings": {
-		"title": "Settings"
+	"about": {
+		"title": "About BARCHY",
+		"whyLabel": "Why",
+		"whyTitle": "Everything you need, in your pocket",
+		"why": "I am an architecture student. While designing I kept looking up the same data: a section table in the Vademecum, a requirement in the Bbl, a hatch in the drawing instructions. It is all out there, but scattered. BARCHY brings it together in one clear place, so it is always at hand, even offline.",
+		"sourcesLabel": "Sources",
+		"sources": "All data comes from these sources. Values are never made up: anything not yet checked is marked \"Check\". Every value shows its own source.",
+		"disclaimerLabel": "Disclaimer",
+		"disclaimerRead": "Read the disclaimer again",
+		"openLabel": "Open source",
+		"open": "The BARCHY code is public under the MIT licence. The data follows the licence of its source: the Vademecum is CC BY 4.0. Anyone can look along, report errors or contribute.",
+		"repo": "Source code on GitHub",
+		"reportError": "Found an error? Report a correction",
+		"feedbackLabel": "Feedback",
+		"feedbackTitle": "Want to add or request something?",
+		"feedbackIntro": "Missing a table, something not right, or an idea? Let me know. Your message goes straight to the maker.",
+		"message": "Message",
+		"email": "Email (optional, for a reply)",
+		"send": "Send",
+		"sending": "Sending…",
+		"sent": "Thank you! Your message has been sent.",
+		"offline": "Sending only works online. Your text stays here.",
+		"error": "Sending failed. Please try again later.",
+		"noForm": "Share your idea or error on GitHub.",
+		"version": "Version {version}",
+		"madeBy": "Made by"
+	},
+	"disclaimer": {
+		"title": "Before you start",
+		"body": "The information in BARCHY is taken from the TU Delft Vademecum and the Dutch Building Decree (Bbl). It may contain small errors. Always check values in the source before you use them.",
+		"unofficial": "BARCHY is a student project, not an official TU Delft app.",
+		"ok": "Got it"
 	},
 	"dev": {
 		"tokensTitle": "Tokens",

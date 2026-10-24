@@ -29,7 +29,7 @@
 				"en": "Continuous line"
 			},
 			"issues": [],
-			"status": "flagged"
+			"status": "auto_checked"
 		},
 		{
 			"id": "dashed",
@@ -38,7 +38,7 @@
 				"en": "Dashed line"
 			},
 			"issues": [],
-			"status": "flagged"
+			"status": "auto_checked"
 		},
 		{
 			"id": "dashdot",
@@ -47,7 +47,7 @@
 				"en": "Dash-dot line"
 			},
 			"issues": [],
-			"status": "flagged"
+			"status": "auto_checked"
 		},
 		{
 			"id": "dotted",
@@ -56,7 +56,7 @@
 				"en": "Dotted line"
 			},
 			"issues": [],
-			"status": "flagged"
+			"status": "auto_checked"
 		}
 	],
 	"hatches": [
@@ -70,7 +70,7 @@
 			"variant": 1,
 			"scales": [100, 50],
 			"issues": [],
-			"status": "flagged"
+			"status": "auto_checked"
 		},
 		{
 			"id": "baksteen-2",
@@ -82,7 +82,7 @@
 			"variant": 2,
 			"scales": [50, 20, 10, 5, 1],
 			"issues": [],
-			"status": "flagged"
+			"status": "auto_checked"
 		},
 		{
 			"id": "steenachtig",
@@ -93,7 +93,7 @@
 			},
 			"scales": [100, 50, 20, 10, 5, 1],
 			"note": {
-				"nl": "Bijvoorbeeld brandwerend materiaal en dakpannen.",
+				"nl": "Bijvoorbeeld brandbestendig materiaal en dakpannen.",
 				"en": "For example fire-resistant material and roof tiles."
 			},
 			"issues": [
@@ -241,7 +241,7 @@
 			},
 			"scales": [10, 5, 1],
 			"issues": [],
-			"status": "flagged"
+			"status": "auto_checked"
 		},
 		{
 			"id": "lijmverbinding",
@@ -256,7 +256,7 @@
 				"en": "Between timber parts."
 			},
 			"issues": [],
-			"status": "flagged"
+			"status": "auto_checked"
 		},
 		{
 			"id": "staal-1",
@@ -272,7 +272,7 @@
 				"en": "May be left open in structural drawings."
 			},
 			"issues": [],
-			"status": "flagged"
+			"status": "auto_checked"
 		},
 		{
 			"id": "staal-2",
@@ -284,7 +284,7 @@
 			"variant": 2,
 			"scales": [5, 1],
 			"issues": [],
-			"status": "flagged"
+			"status": "auto_checked"
 		},
 		{
 			"id": "metalen-overige",
@@ -295,7 +295,7 @@
 			},
 			"scales": [20, 10, 5, 1],
 			"issues": [],
-			"status": "flagged"
+			"status": "auto_checked"
 		},
 		{
 			"id": "lood",
@@ -310,7 +310,7 @@
 				"en": "State the density."
 			},
 			"issues": [],
-			"status": "flagged"
+			"status": "auto_checked"
 		},
 		{
 			"id": "zink",
@@ -325,7 +325,7 @@
 				"en": "State the material number."
 			},
 			"issues": [],
-			"status": "flagged"
+			"status": "auto_checked"
 		},
 		{
 			"id": "glas",
@@ -336,7 +336,7 @@
 			},
 			"scales": [10, 5, 1],
 			"issues": [],
-			"status": "flagged"
+			"status": "auto_checked"
 		},
 		{
 			"id": "maaiveld",
@@ -351,7 +351,7 @@
 				"en": "In section."
 			},
 			"issues": [],
-			"status": "flagged"
+			"status": "auto_checked"
 		},
 		{
 			"id": "water",
@@ -366,7 +366,7 @@
 				"en": "In section."
 			},
 			"issues": [],
-			"status": "flagged"
+			"status": "auto_checked"
 		},
 		{
 			"id": "zand",
@@ -377,7 +377,7 @@
 			},
 			"scales": [100, 50, 20, 10, 5, 1],
 			"issues": [],
-			"status": "flagged"
+			"status": "auto_checked"
 		}
 	],
 	"guides": [
@@ -676,7 +676,7 @@
 					"part": "lines",
 					"text": {
 						"nl": "Verbind de uiterste punten van de plattegronden met verticale lijnen.",
-						"en": "Connect the outer corners of the plans with vertical lines."
+						"en": "Connect the outermost points of the plans with vertical lines."
 					},
 					"line": "dashed",
 					"weight": 0.2,
@@ -719,7 +719,7 @@
 				}
 			],
 			"issues": [],
-			"status": "flagged"
+			"status": "auto_checked"
 		},
 		{
 			"id": "detail",

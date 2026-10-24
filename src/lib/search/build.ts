@@ -327,7 +327,12 @@ const PAGES: { path: string; title: MessageKey; also: MessageKey[]; extra?: stri
 	},
 	{ path: '/tools', title: 'tools.title', also: ['nav.tools'], extra: 'calculator' },
 	{ path: '/saved', title: 'nav.saved', also: [], extra: 'stuklijst favorieten' },
-	{ path: '/settings', title: 'common.settings', also: ['common.language'] }
+	{
+		path: '/about',
+		title: 'about.title',
+		also: ['about.feedbackLabel', 'about.sourcesLabel', 'about.disclaimerLabel'],
+		extra: 'over about feedback bronnen licentie open source disclaimer contact'
+	}
 ];
 
 /** Extra words per tool, both languages; names only, no values. */

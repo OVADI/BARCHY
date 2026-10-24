@@ -5,7 +5,7 @@ Bron: TU Delft Vademecum (TeachBooks), commit `9a2f70a`
 - `book/instructie/teken_instructies/lijnsoorten_arcering.md` (lijnsoorten en arcering, gebaseerd op NEN 2302)
 - `book/instructie/teken_instructies/constructie_tekeningen.md` (stappen met lijnsoort en lijndikte)
 
-De arceringen zijn opnieuw getekend als SVG naar de afbeeldingen in `Images/`. Namen, schalen, opmerkingen en lijndiktes zijn letterlijk overgenomen; de lijnafstand in de arceringen volgt de afbeeldingen en is geen waarde uit de bron. Alles staat in `content/drawing/conventions.json` op Controleren (`flagged`).
+De arceringen zijn opnieuw getekend als SVG naar de afbeeldingen in `Images/`. Namen, schalen, opmerkingen en lijndiktes zijn letterlijk overgenomen; de lijnafstand in de arceringen volgt de afbeeldingen en is geen waarde uit de bron. In `content/drawing/conventions.json` staan de onderdelen zonder open punt op `auto_checked` (schalen, namen en opmerkingen vergeleken met de bron, lijnsoorten met de afbeeldingen); de onderdelen met een punt hieronder blijven op Controleren (`flagged`). Dit is geen menselijke verificatie.
 
 ## Te controleren
 

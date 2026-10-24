@@ -590,35 +590,34 @@
 			"A": 3330,
 			"Iy": 32900000,
 			"Wy": 278000,
-			"iy": 74.5,
-			"issues": [
+			"iy": 99.4,
+			"issues": [],
+			"corrections": [
 				{
-					"check": "gyration",
-					"severity": "error",
 					"field": "iy",
-					"expected": 99.398,
-					"found": 74.5,
-					"message": "iy wijkt -25.0 % af van √(Iy/A)"
+					"from": 74.5,
+					"to": 99.4,
+					"reason": "In de bron staan iy en iz verschoven: onder iy staat Wpl,z (74.5) en onder iz staat iy; iz zelf ontbreekt. iy = 99.4 mm (bron onder iz); catalogus 9.9 cm.",
+					"source": {
+						"title": "ArcelorMittal Europe – Long Products, Sections and Merchant bars, Sales programme 2024-1",
+						"ref": "IPE, IPE A en IPE O, eigenschappen p. 51",
+						"url": "https://sections.arcelormittal.com/sections/repository/Sections/Sections_MB_ArcelorMittal_FR_EN_DE.pdf"
+					}
 				},
 				{
-					"check": "gyration",
-					"severity": "error",
 					"field": "iz",
-					"expected": 26.846,
-					"found": 99.4,
-					"message": "iz wijkt 270.3 % af van √(Iz/A)"
-				},
-				{
-					"check": "order",
-					"severity": "error",
-					"field": "iz",
-					"found": 99.4,
-					"message": "iy moet groter zijn dan iz"
+					"from": 99.4,
+					"to": 26.8,
+					"reason": "In de bron staan iy en iz verschoven: onder iy staat Wpl,z (74.5) en onder iz staat iy; iz zelf ontbreekt. iz = √(Iz/A) = 26.8 mm uit Iz en A uit de bron; de catalogus geeft 2.6 cm (afgekapt op één decimaal).",
+					"source": {
+						"title": "ArcelorMittal Europe – Long Products, Sections and Merchant bars, Sales programme 2024-1",
+						"ref": "IPE, IPE A en IPE O, eigenschappen p. 51",
+						"url": "https://sections.arcelormittal.com/sections/repository/Sections/Sections_MB_ArcelorMittal_FR_EN_DE.pdf"
+					}
 				}
 			],
-			"corrections": [],
 			"derived": [],
-			"status": "flagged",
+			"status": "auto_checked",
 			"shape": "I",
 			"h": 237,
 			"b": 120,
@@ -626,7 +625,7 @@
 			"tf": 8.3,
 			"Iz": 2400000,
 			"Wz": 40000,
-			"iz": 99.4
+			"iz": 26.8
 		},
 		{
 			"id": "ipe-240",
@@ -643,35 +642,34 @@
 			"A": 3910,
 			"Iy": 38920000,
 			"Wy": 324000,
-			"iy": 74.4,
-			"issues": [
+			"iy": 99.7,
+			"issues": [],
+			"corrections": [
 				{
-					"check": "gyration",
-					"severity": "error",
 					"field": "iy",
-					"expected": 99.77,
-					"found": 74.4,
-					"message": "iy wijkt -25.4 % af van √(Iy/A)"
+					"from": 74.4,
+					"to": 99.7,
+					"reason": "In de bron staan iy en iz verschoven: onder iy staat Wpl,z (74.4) en onder iz staat iy; iz zelf ontbreekt. iy = 99.7 mm (bron onder iz); catalogus 9.9 cm.",
+					"source": {
+						"title": "ArcelorMittal Europe – Long Products, Sections and Merchant bars, Sales programme 2024-1",
+						"ref": "IPE, IPE A en IPE O, eigenschappen p. 51",
+						"url": "https://sections.arcelormittal.com/sections/repository/Sections/Sections_MB_ArcelorMittal_FR_EN_DE.pdf"
+					}
 				},
 				{
-					"check": "gyration",
-					"severity": "error",
 					"field": "iz",
-					"expected": 26.951,
-					"found": 99.7,
-					"message": "iz wijkt 269.9 % af van √(Iz/A)"
-				},
-				{
-					"check": "order",
-					"severity": "error",
-					"field": "iz",
-					"found": 99.7,
-					"message": "iy moet groter zijn dan iz"
+					"from": 99.7,
+					"to": 27,
+					"reason": "In de bron staan iy en iz verschoven: onder iy staat Wpl,z (74.4) en onder iz staat iy; iz zelf ontbreekt. iz = √(Iz/A) = 27.0 mm uit Iz en A uit de bron; de catalogus geeft 2.6 cm (afgekapt op één decimaal).",
+					"source": {
+						"title": "ArcelorMittal Europe – Long Products, Sections and Merchant bars, Sales programme 2024-1",
+						"ref": "IPE, IPE A en IPE O, eigenschappen p. 51",
+						"url": "https://sections.arcelormittal.com/sections/repository/Sections/Sections_MB_ArcelorMittal_FR_EN_DE.pdf"
+					}
 				}
 			],
-			"corrections": [],
 			"derived": [],
-			"status": "flagged",
+			"status": "auto_checked",
 			"shape": "I",
 			"h": 240,
 			"b": 120,
@@ -679,7 +677,7 @@
 			"tf": 9.8,
 			"Iz": 2840000,
 			"Wz": 47300,
-			"iz": 99.7
+			"iz": 27
 		},
 		{
 			"id": "ipe-240-o",
@@ -699,35 +697,34 @@
 			"A": 4370,
 			"Iy": 43690000,
 			"Wy": 361000,
-			"iy": 82.3,
-			"issues": [
+			"iy": 100,
+			"issues": [],
+			"corrections": [
 				{
-					"check": "gyration",
-					"severity": "error",
 					"field": "iy",
-					"expected": 99.989,
-					"found": 82.3,
-					"message": "iy wijkt -17.7 % af van √(Iy/A)"
+					"from": 82.3,
+					"to": 100,
+					"reason": "In de bron staan iy en iz verschoven: onder iy staat Wpl,z (82.3) en onder iz staat iy; iz zelf ontbreekt. iy = 100 mm (bron onder iz); catalogus 9.9 cm.",
+					"source": {
+						"title": "ArcelorMittal Europe – Long Products, Sections and Merchant bars, Sales programme 2024-1",
+						"ref": "IPE, IPE A en IPE O, eigenschappen p. 51",
+						"url": "https://sections.arcelormittal.com/sections/repository/Sections/Sections_MB_ArcelorMittal_FR_EN_DE.pdf"
+					}
 				},
 				{
-					"check": "gyration",
-					"severity": "error",
 					"field": "iz",
-					"expected": 27.438,
-					"found": 100,
-					"message": "iz wijkt 264.5 % af van √(Iz/A)"
-				},
-				{
-					"check": "order",
-					"severity": "error",
-					"field": "iz",
-					"found": 100,
-					"message": "iy moet groter zijn dan iz"
+					"from": 100,
+					"to": 27.4,
+					"reason": "In de bron staan iy en iz verschoven: onder iy staat Wpl,z (82.3) en onder iz staat iy; iz zelf ontbreekt. iz = √(Iz/A) = 27.4 mm uit Iz en A uit de bron; de catalogus geeft 2.7 cm (afgekapt op één decimaal).",
+					"source": {
+						"title": "ArcelorMittal Europe – Long Products, Sections and Merchant bars, Sales programme 2024-1",
+						"ref": "IPE, IPE A en IPE O, eigenschappen p. 51",
+						"url": "https://sections.arcelormittal.com/sections/repository/Sections/Sections_MB_ArcelorMittal_FR_EN_DE.pdf"
+					}
 				}
 			],
-			"corrections": [],
 			"derived": [],
-			"status": "flagged",
+			"status": "auto_checked",
 			"shape": "I",
 			"h": 242,
 			"b": 122,
@@ -735,7 +732,7 @@
 			"tf": 10.8,
 			"Iz": 3290000,
 			"Wz": 53900,
-			"iz": 100
+			"iz": 27.4
 		},
 		{
 			"id": "ipe-240-r",
@@ -811,35 +808,34 @@
 			"A": 3910,
 			"Iy": 49170000,
 			"Wy": 368000,
-			"iy": 83.2,
-			"issues": [
+			"iy": 112,
+			"issues": [],
+			"corrections": [
 				{
-					"check": "gyration",
-					"severity": "error",
 					"field": "iy",
-					"expected": 112.14,
-					"found": 83.2,
-					"message": "iy wijkt -25.8 % af van √(Iy/A)"
+					"from": 83.2,
+					"to": 112,
+					"reason": "In de bron staan iy en iz verschoven: onder iy staat Wpl,z (83.2) en onder iz staat iy; iz zelf ontbreekt. iy = 112 mm (bron onder iz); catalogus 11.2 cm.",
+					"source": {
+						"title": "ArcelorMittal Europe – Long Products, Sections and Merchant bars, Sales programme 2024-1",
+						"ref": "IPE, IPE A en IPE O, eigenschappen p. 51",
+						"url": "https://sections.arcelormittal.com/sections/repository/Sections/Sections_MB_ArcelorMittal_FR_EN_DE.pdf"
+					}
 				},
 				{
-					"check": "gyration",
-					"severity": "error",
 					"field": "iz",
-					"expected": 30.259,
-					"found": 112,
-					"message": "iz wijkt 270.1 % af van √(Iz/A)"
-				},
-				{
-					"check": "order",
-					"severity": "error",
-					"field": "iz",
-					"found": 112,
-					"message": "iy moet groter zijn dan iz"
+					"from": 112,
+					"to": 30.3,
+					"reason": "In de bron staan iy en iz verschoven: onder iy staat Wpl,z (83.2) en onder iz staat iy; iz zelf ontbreekt. iz = √(Iz/A) = 30.3 mm uit Iz en A uit de bron; de catalogus geeft 3.0 cm (afgekapt op één decimaal).",
+					"source": {
+						"title": "ArcelorMittal Europe – Long Products, Sections and Merchant bars, Sales programme 2024-1",
+						"ref": "IPE, IPE A en IPE O, eigenschappen p. 51",
+						"url": "https://sections.arcelormittal.com/sections/repository/Sections/Sections_MB_ArcelorMittal_FR_EN_DE.pdf"
+					}
 				}
 			],
-			"corrections": [],
 			"derived": [],
-			"status": "flagged",
+			"status": "auto_checked",
 			"shape": "I",
 			"h": 267,
 			"b": 135,
@@ -847,7 +843,7 @@
 			"tf": 8.7,
 			"Iz": 3580000,
 			"Wz": 53000,
-			"iz": 112
+			"iz": 30.3
 		},
 		{
 			"id": "ipe-270",
@@ -864,35 +860,34 @@
 			"A": 4590,
 			"Iy": 57900000,
 			"Wy": 429000,
-			"iy": 83.5,
-			"issues": [
+			"iy": 112,
+			"issues": [],
+			"corrections": [
 				{
-					"check": "gyration",
-					"severity": "error",
 					"field": "iy",
-					"expected": 112.314,
-					"found": 83.5,
-					"message": "iy wijkt -25.7 % af van √(Iy/A)"
+					"from": 83.5,
+					"to": 112,
+					"reason": "In de bron staan iy en iz verschoven: onder iy staat Wpl,z (83.5) en onder iz staat iy; iz zelf ontbreekt. iy = 112 mm (bron onder iz); catalogus 11.2 cm.",
+					"source": {
+						"title": "ArcelorMittal Europe – Long Products, Sections and Merchant bars, Sales programme 2024-1",
+						"ref": "IPE, IPE A en IPE O, eigenschappen p. 51",
+						"url": "https://sections.arcelormittal.com/sections/repository/Sections/Sections_MB_ArcelorMittal_FR_EN_DE.pdf"
+					}
 				},
 				{
-					"check": "gyration",
-					"severity": "error",
 					"field": "iz",
-					"expected": 30.25,
-					"found": 112,
-					"message": "iz wijkt 270.3 % af van √(Iz/A)"
-				},
-				{
-					"check": "order",
-					"severity": "error",
-					"field": "iz",
-					"found": 112,
-					"message": "iy moet groter zijn dan iz"
+					"from": 112,
+					"to": 30.2,
+					"reason": "In de bron staan iy en iz verschoven: onder iy staat Wpl,z (83.5) en onder iz staat iy; iz zelf ontbreekt. iz = √(Iz/A) = 30.2 mm uit Iz en A uit de bron; de catalogus geeft 3.0 cm (afgekapt op één decimaal).",
+					"source": {
+						"title": "ArcelorMittal Europe – Long Products, Sections and Merchant bars, Sales programme 2024-1",
+						"ref": "IPE, IPE A en IPE O, eigenschappen p. 51",
+						"url": "https://sections.arcelormittal.com/sections/repository/Sections/Sections_MB_ArcelorMittal_FR_EN_DE.pdf"
+					}
 				}
 			],
-			"corrections": [],
 			"derived": [],
-			"status": "flagged",
+			"status": "auto_checked",
 			"shape": "I",
 			"h": 270,
 			"b": 135,
@@ -900,7 +895,7 @@
 			"tf": 10.2,
 			"Iz": 4200000,
 			"Wz": 62200,
-			"iz": 112
+			"iz": 30.2
 		},
 		{
 			"id": "ipe-270-o",
@@ -920,35 +915,34 @@
 			"A": 5380,
 			"Iy": 69470000,
 			"Wy": 507000,
-			"iy": 90.5,
-			"issues": [
+			"iy": 114,
+			"issues": [],
+			"corrections": [
 				{
-					"check": "gyration",
-					"severity": "error",
 					"field": "iy",
-					"expected": 113.634,
-					"found": 90.5,
-					"message": "iy wijkt -20.4 % af van √(Iy/A)"
+					"from": 90.5,
+					"to": 114,
+					"reason": "In de bron staan iy en iz verschoven: onder iy staat Wpl,z (90.5) en onder iz staat iy; iz zelf ontbreekt. iy = 114 mm (bron onder iz); catalogus 11.3 cm.",
+					"source": {
+						"title": "ArcelorMittal Europe – Long Products, Sections and Merchant bars, Sales programme 2024-1",
+						"ref": "IPE, IPE A en IPE O, eigenschappen p. 51",
+						"url": "https://sections.arcelormittal.com/sections/repository/Sections/Sections_MB_ArcelorMittal_FR_EN_DE.pdf"
+					}
 				},
 				{
-					"check": "gyration",
-					"severity": "error",
 					"field": "iz",
-					"expected": 30.879,
-					"found": 114,
-					"message": "iz wijkt 269.2 % af van √(Iz/A)"
-				},
-				{
-					"check": "order",
-					"severity": "error",
-					"field": "iz",
-					"found": 114,
-					"message": "iy moet groter zijn dan iz"
+					"from": 114,
+					"to": 30.9,
+					"reason": "In de bron staan iy en iz verschoven: onder iy staat Wpl,z (90.5) en onder iz staat iy; iz zelf ontbreekt. iz = √(Iz/A) = 30.9 mm uit Iz en A uit de bron; de catalogus geeft 3.0 cm (afgekapt op één decimaal).",
+					"source": {
+						"title": "ArcelorMittal Europe – Long Products, Sections and Merchant bars, Sales programme 2024-1",
+						"ref": "IPE, IPE A en IPE O, eigenschappen p. 51",
+						"url": "https://sections.arcelormittal.com/sections/repository/Sections/Sections_MB_ArcelorMittal_FR_EN_DE.pdf"
+					}
 				}
 			],
-			"corrections": [],
 			"derived": [],
-			"status": "flagged",
+			"status": "auto_checked",
 			"shape": "I",
 			"h": 274,
 			"b": 136,
@@ -956,7 +950,7 @@
 			"tf": 12.2,
 			"Iz": 5130000,
 			"Wz": 75500,
-			"iz": 114
+			"iz": 30.9
 		},
 		{
 			"id": "ipe-270-r",
@@ -1032,35 +1026,34 @@
 			"A": 4650,
 			"Iy": 71730000,
 			"Wy": 483000,
-			"iy": 91.6,
-			"issues": [
+			"iy": 124,
+			"issues": [],
+			"corrections": [
 				{
-					"check": "gyration",
-					"severity": "error",
 					"field": "iy",
-					"expected": 124.201,
-					"found": 91.6,
-					"message": "iy wijkt -26.2 % af van √(Iy/A)"
+					"from": 91.6,
+					"to": 124,
+					"reason": "In de bron staan iy en iz verschoven: onder iy staat Wpl,z (91.6) en onder iz staat iy; iz zelf ontbreekt. iy = 124 mm (bron onder iz); catalogus 12.4 cm.",
+					"source": {
+						"title": "ArcelorMittal Europe – Long Products, Sections and Merchant bars, Sales programme 2024-1",
+						"ref": "IPE, IPE A en IPE O, eigenschappen p. 51",
+						"url": "https://sections.arcelormittal.com/sections/repository/Sections/Sections_MB_ArcelorMittal_FR_EN_DE.pdf"
+					}
 				},
 				{
-					"check": "gyration",
-					"severity": "error",
 					"field": "iz",
-					"expected": 33.409,
-					"found": 124,
-					"message": "iz wijkt 271.2 % af van √(Iz/A)"
-				},
-				{
-					"check": "order",
-					"severity": "error",
-					"field": "iz",
-					"found": 124,
-					"message": "iy moet groter zijn dan iz"
+					"from": 124,
+					"to": 33.4,
+					"reason": "In de bron staan iy en iz verschoven: onder iy staat Wpl,z (91.6) en onder iz staat iy; iz zelf ontbreekt. iz = √(Iz/A) = 33.4 mm uit Iz en A uit de bron; de catalogus geeft 3.3 cm (afgekapt op één decimaal).",
+					"source": {
+						"title": "ArcelorMittal Europe – Long Products, Sections and Merchant bars, Sales programme 2024-1",
+						"ref": "IPE, IPE A en IPE O, eigenschappen p. 51",
+						"url": "https://sections.arcelormittal.com/sections/repository/Sections/Sections_MB_ArcelorMittal_FR_EN_DE.pdf"
+					}
 				}
 			],
-			"corrections": [],
 			"derived": [],
-			"status": "flagged",
+			"status": "auto_checked",
 			"shape": "I",
 			"h": 297,
 			"b": 150,
@@ -1068,7 +1061,7 @@
 			"tf": 9.2,
 			"Iz": 5190000,
 			"Wz": 69200,
-			"iz": 124
+			"iz": 33.4
 		},
 		{
 			"id": "ipe-300",
@@ -1085,35 +1078,34 @@
 			"A": 5380,
 			"Iy": 83560000,
 			"Wy": 557000,
-			"iy": 92.9,
-			"issues": [
+			"iy": 125,
+			"issues": [],
+			"corrections": [
 				{
-					"check": "gyration",
-					"severity": "error",
 					"field": "iy",
-					"expected": 124.626,
-					"found": 92.9,
-					"message": "iy wijkt -25.5 % af van √(Iy/A)"
+					"from": 92.9,
+					"to": 125,
+					"reason": "In de bron staan iy en iz verschoven: onder iy staat Wpl,z (92.9) en onder iz staat iy; iz zelf ontbreekt. iy = 125 mm (bron onder iz); catalogus 12.4 cm.",
+					"source": {
+						"title": "ArcelorMittal Europe – Long Products, Sections and Merchant bars, Sales programme 2024-1",
+						"ref": "IPE, IPE A en IPE O, eigenschappen p. 51",
+						"url": "https://sections.arcelormittal.com/sections/repository/Sections/Sections_MB_ArcelorMittal_FR_EN_DE.pdf"
+					}
 				},
 				{
-					"check": "gyration",
-					"severity": "error",
 					"field": "iz",
-					"expected": 33.506,
-					"found": 125,
-					"message": "iz wijkt 273.1 % af van √(Iz/A)"
-				},
-				{
-					"check": "order",
-					"severity": "error",
-					"field": "iz",
-					"found": 125,
-					"message": "iy moet groter zijn dan iz"
+					"from": 125,
+					"to": 33.5,
+					"reason": "In de bron staan iy en iz verschoven: onder iy staat Wpl,z (92.9) en onder iz staat iy; iz zelf ontbreekt. iz = √(Iz/A) = 33.5 mm uit Iz en A uit de bron; de catalogus geeft 3.3 cm (afgekapt op één decimaal).",
+					"source": {
+						"title": "ArcelorMittal Europe – Long Products, Sections and Merchant bars, Sales programme 2024-1",
+						"ref": "IPE, IPE A en IPE O, eigenschappen p. 51",
+						"url": "https://sections.arcelormittal.com/sections/repository/Sections/Sections_MB_ArcelorMittal_FR_EN_DE.pdf"
+					}
 				}
 			],
-			"corrections": [],
 			"derived": [],
-			"status": "flagged",
+			"status": "auto_checked",
 			"shape": "I",
 			"h": 300,
 			"b": 150,
@@ -1121,7 +1113,7 @@
 			"tf": 10.7,
 			"Iz": 6040000,
 			"Wz": 80500,
-			"iz": 125
+			"iz": 33.5
 		},
 		{
 			"id": "ipe-300-o",
@@ -1141,28 +1133,34 @@
 			"A": 6280,
 			"Iy": 99940000,
 			"Wy": 658000,
-			"iy": 126.151,
-			"issues": [
+			"iy": 126,
+			"issues": [],
+			"corrections": [
 				{
-					"check": "missing",
-					"severity": "error",
 					"field": "iy",
-					"message": "iy ontbreekt in de bron; berekend als √(Iy/A)"
+					"from": null,
+					"to": 126,
+					"reason": "In de bron staan iy en iz verschoven: onder iy staat Wpl,z (126.151) en onder iz staat iy; iz zelf ontbreekt. iy = 126 mm (bron onder iz); catalogus 12.6 cm.",
+					"source": {
+						"title": "ArcelorMittal Europe – Long Products, Sections and Merchant bars, Sales programme 2024-1",
+						"ref": "IPE, IPE A en IPE O, eigenschappen p. 51",
+						"url": "https://sections.arcelormittal.com/sections/repository/Sections/Sections_MB_ArcelorMittal_FR_EN_DE.pdf"
+					}
 				},
 				{
-					"check": "gyration",
-					"severity": "error",
 					"field": "iz",
-					"expected": 34.466,
-					"found": 126,
-					"message": "iz wijkt 265.6 % af van √(Iz/A)"
+					"from": 126,
+					"to": 34.5,
+					"reason": "In de bron staan iy en iz verschoven: onder iy staat Wpl,z (126.151) en onder iz staat iy; iz zelf ontbreekt. iz = √(Iz/A) = 34.5 mm uit Iz en A uit de bron; de catalogus geeft 3.4 cm (afgekapt op één decimaal).",
+					"source": {
+						"title": "ArcelorMittal Europe – Long Products, Sections and Merchant bars, Sales programme 2024-1",
+						"ref": "IPE, IPE A en IPE O, eigenschappen p. 51",
+						"url": "https://sections.arcelormittal.com/sections/repository/Sections/Sections_MB_ArcelorMittal_FR_EN_DE.pdf"
+					}
 				}
 			],
-			"corrections": [],
-			"derived": [
-				"iy"
-			],
-			"status": "flagged",
+			"derived": [],
+			"status": "auto_checked",
 			"shape": "I",
 			"h": 304,
 			"b": 152,
@@ -1170,7 +1168,7 @@
 			"tf": 12.7,
 			"Iz": 7460000,
 			"Wz": 98100,
-			"iz": 126
+			"iz": 34.5
 		},
 		{
 			"id": "ipe-300-r",
