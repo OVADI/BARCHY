@@ -14,7 +14,8 @@
 	const materials = [
 		{ href: resolve('/steel'), key: 'home.steel', icon: 'I' },
 		{ href: resolve('/timber'), key: 'home.timber', icon: 'grain' },
-		{ href: resolve('/concrete'), key: 'home.concrete', icon: 'dots' }
+		{ href: resolve('/concrete'), key: 'home.concrete', icon: 'dots' },
+		{ href: resolve('/masonry'), key: 'home.masonry', icon: 'brick' }
 	] as const;
 
 	/** Recent pages show only while the search box has focus. */
@@ -78,6 +79,12 @@
 						<g fill="none" stroke="currentColor" stroke-width="3"
 							><rect x="8" y="6" width="40" height="32" rx="3" /><path
 								d="M8 17c10 3 20-3 40 0M8 28c12 3 24-3 40 0"
+							/></g
+						>
+					{:else if m.icon === 'brick'}
+						<g fill="none" stroke="currentColor" stroke-width="3"
+							><rect x="8" y="6" width="40" height="32" rx="1" /><path
+								d="M8 17h40M8 28h40M28 6v11M18 17v11M38 17v11M28 28v10"
 							/></g
 						>
 					{:else}
@@ -223,14 +230,15 @@
 	}
 	.subs {
 		display: grid;
-		grid-template-columns: repeat(3, minmax(0, 1fr));
+		/* Four materials: two by two, so the names fit on a phone. */
+		grid-template-columns: repeat(2, minmax(0, 1fr));
 		gap: var(--tile-gap);
 	}
 	.sub {
 		background: var(--orange-shade);
 		color: var(--paper);
 		border-radius: var(--radius-sm);
-		min-height: 92px;
+		min-height: 76px;
 		padding: var(--space-3);
 		display: flex;
 		flex-direction: column;

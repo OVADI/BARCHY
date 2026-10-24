@@ -79,7 +79,8 @@
 		"drawingTitle": "Line types and hatching",
 		"tools": "Calculators",
 		"toolsUnit": "tools",
-		"toolsSub": "Calculate and check instantly"
+		"toolsSub": "Calculate and check instantly",
+		"masonry": "Masonry"
 	},
 	"search": {
 		"title": "Search",
@@ -262,7 +263,9 @@
 			"Wz": "Section modulus about the weak axis, h·b²/6. Matters when the member lies flat or is loaded sideways.",
 			"Iz": "Second moment of area about the weak axis, h·b³/12. Usually governs buckling of a stud or column, and lateral torsional buckling of slender beams."
 		},
-		"hatch": "Timber hatch from the Vademecum (NEN 2302). The source gives no separate hatch for glulam."
+		"hatch": "Timber hatch from the Vademecum (NEN 2302). The source gives no separate hatch for glulam.",
+		"sawnTab": "Sawn",
+		"glulamTab": "Glulam"
 	},
 	"concrete": {
 		"title": "Concrete",
@@ -274,7 +277,9 @@
 		"table": "Reinforcement area in mm² per number of bars",
 		"tableCaption": "Reinforcement area As in mm² per diameter (rows) and number of bars (columns)",
 		"tableNote": "Rows: diameter in mm. Columns: number of bars.",
-		"rounded": "Values as published in the Vademecum, rounded to whole mm²."
+		"rounded": "Values as published in the Vademecum, rounded to whole mm².",
+		"tabs": "Section",
+		"rebarTab": "Reinforcement"
 	},
 	"drawing": {
 		"title": "Drawing",
@@ -391,5 +396,38 @@
 		},
 		"unitNote": "Unit read here as {unit}. The Vademecum column header is contradictory.",
 		"sigmaNote": "Meaning and unit not explained in the source."
+	},
+	"rules": {
+		"title": "Rules of thumb",
+		"beams": "Beams and frames",
+		"floors": "Floors",
+		"walls": "Walls",
+		"columns": "Columns",
+		"stability": "Stability",
+		"note": "Note",
+		"warning": "Caution",
+		"chart": "Design chart in the source",
+		"chartCount": "{n} design chart(s) in the source",
+		"assumptions": "Applies to",
+		"lines": "Lines in the chart",
+		"chartWhere": "The chart itself is in the source: {ref}.",
+		"openSource": "Open the source",
+		"flagged": "These rules of thumb were copied by hand from the Vademecum and have not been checked yet. Use them for a first estimate and check the source when in doubt.",
+		"method": "Each column of a table in the source is one set of rules with the same range. Charts are referenced, without values read from them."
+	},
+	"masonry": {
+		"title": "Masonry",
+		"heading": "Calcium silicate: minimum wall thickness",
+		"wallType": "Wall type",
+		"endWall": "End wall",
+		"partyWall": "Internal wall",
+		"storeys": "Number of storeys",
+		"bay": "Bay width",
+		"thickness": "Minimum wall thickness",
+		"caption": "Lowest storey, {n} storeys, bay width {l} m, floor thickness {ht} mm",
+		"table": "Minimum wall thickness in mm",
+		"tableCaption": "Minimum structural wall thickness d in mm by number of storeys (rows) and bay width (columns)",
+		"tableNote": "Rows: number of storeys. Columns: bay width in m, with the thickness hₜ of the structural floor in mm. Tap a cell to pick it.",
+		"method": "Tables from the Vademecum, based on NPR 6791. The source only gives bay widths of 4, 5, 6 and 7 m."
 	}
 }

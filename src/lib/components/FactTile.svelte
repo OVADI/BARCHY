@@ -3,6 +3,7 @@
 	import { formatNumber, i18n, t } from '$lib/i18n/index.svelte';
 	import type { Fact } from '$lib/schema/fact';
 	import FlagMark from './FlagMark.svelte';
+	import RuleNotes from './RuleNotes.svelte';
 	import TypeTag from './TypeTag.svelte';
 
 	/** One sourced value in the colour of its type: cobalt = requirement, orange = rule, white = data. */
@@ -44,6 +45,7 @@
 	</h3>
 	<p class="value" class:t-numeral-lg={size === 'lg'} class:t-numeral-md={size === 'md'}>{value}</p>
 	{#if fact.scope}<p class="t-body-sm">{fact.scope[i18n.locale]}</p>{/if}
+	{#if fact.notes}<RuleNotes notes={fact.notes} />{/if}
 </article>
 
 <style>

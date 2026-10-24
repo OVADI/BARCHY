@@ -26,6 +26,7 @@ describe('formatFact', () => {
 
 	it('writes factors as n · symbol', () => {
 		expect(formatFact({ value: 0.25, unit: '', factorOf: 'l' }, nl)).toBe('0,25 · l');
+		expect(formatFact({ value: 0.001, unit: '', factorOf: 'L' }, nl)).toBe('0,001 · L');
 		expect(formatFact({ value: [0.4, 0.67], unit: '', factorOf: 'h_knik' }, en)).toBe(
 			'0.4 · h_knik – 0.67 · h_knik'
 		);

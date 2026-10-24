@@ -156,7 +156,7 @@ Commits `bb379e0`, feedback verwerkt in `2f30b7c` en `31a808d`
 - [x] Hout: `content/facts/timber.json`, 59 regels, 18 groepen, 8 grafiekverwijzingen. Elke kolom van een brontabel is één set regels met hetzelfde bereik. Aandachtspunten in `reports/vuistregels-issues.md`
 - [x] Beton: `content/facts/concrete.json`, 43 regels, 9 groepen, 1 grafiekverwijzing. Inclusief de productgegevens van Dycore-kanaalplaten (hoogte, gewicht, maximale lengte). Aandachtspunten in hetzelfde rapport
 - [x] Metselwerk: `content/facts/masonry.json`, 40 regels (kalkzandsteen, eindgevel en tussenwand, per aantal bouwlagen en beukmaat). Aandachtspunten in hetzelfde rapport
-- [ ] Tab Vuistregels bij Hout en Beton, plek voor metselwerk (groepen en notes tonen, grafiekverwijzingen als kaart)
+- [x] Tab Vuistregels bij Hout en Beton: overzicht per onderdeel (liggers en spanten, vloeren, wanden, kolommen, stabiliteit) met per vorm een eigen pagina `/rules/[materiaal]/[groep]` met regels, toelichtingen en grafiekverwijzingen. Metselwerk heeft een eigen pagina `/masonry` (kies wand, aantal bouwlagen en beukmaat; de hele tabel staat eronder) en een tegel op het startscherm. Precache na deze stap: 215 bestanden, 1978 KiB (was 1328 KiB vóór fase 8)
 - [ ] Ligger-schatter (materiaal, vorm, l → h en overstek, waarschuwing buiten `when`)
 - [ ] Zoekindex (`src/routes/data/search.json/+server.ts` importeert de feitenbestanden één voor één)
 

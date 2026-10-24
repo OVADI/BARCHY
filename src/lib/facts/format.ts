@@ -53,9 +53,10 @@ function formatBare(
 	if (fact.factorOf) {
 		const f = fact.factorOf;
 		if (Array.isArray(fact.value)) {
-			return `${fmt(fact.value[0])} · ${f} – ${fmt(fact.value[1])} · ${f}`;
+			return `${formatValue(fact.value[0], fmt)} · ${f} – ${formatValue(fact.value[1], fmt)} · ${f}`;
 		}
-		return `${prefix}${fmt(fact.value)} · ${f}`;
+		// Factors can be small (toog = 0,001 · L): the default two decimals would round them to 0.
+		return `${prefix}${formatValue(fact.value, fmt)} · ${f}`;
 	}
 	if (fact.divisorOf) {
 		const d = fact.divisorOf;
