@@ -3,8 +3,8 @@
 	import SearchIcon from '@lucide/svelte/icons/search';
 	import X from '@lucide/svelte/icons/x';
 	import { onMount } from 'svelte';
-	import { base } from '$app/paths';
-	import { replaceState } from '$app/navigation';
+	import { base, resolve } from '$app/paths';
+	import { goto, replaceState } from '$app/navigation';
 	import { page } from '$app/state';
 	import FlagMark from '$lib/components/FlagMark.svelte';
 	import InfoFab from '$lib/components/InfoFab.svelte';
@@ -53,6 +53,12 @@
 		replaceState(url, {});
 	}
 
+	/** Back to the previous screen; Home when the page was opened directly. */
+	function back() {
+		if (history.length > 1) history.back();
+		else void goto(resolve('/'));
+	}
+
 	function pick(example: string) {
 		query = example;
 		sync();
@@ -66,7 +72,7 @@
 	}
 </script>
 
-<PageHeader title={t('search.title')} />
+<PageHeader title={t('search.title')} onback={back} />
 
 <form class="box" role="search" onsubmit={(e) => (e.preventDefault(), input.blur())}>
 	<SearchIcon size={20} strokeWidth={1.5} aria-hidden="true" />

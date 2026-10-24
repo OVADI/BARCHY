@@ -9,15 +9,22 @@
 		/** Shows a back button to this href. */
 		back?: string;
 		backLabel?: string;
+		/** Back button that runs a handler instead of linking, e.g. history.back(). */
+		onback?: () => void;
 		/** Buttons on the right. */
 		actions?: Snippet;
 	}
 
-	let { title, back, backLabel, actions }: Props = $props();
+	let { title, back, backLabel, onback, actions }: Props = $props();
 </script>
 
 <header class="header">
-	{#if back}<IconButton icon={ChevronLeft} href={back} label={backLabel ?? t('common.back')} />{/if}
+	{#if back}<IconButton icon={ChevronLeft} href={back} label={backLabel ?? t('common.back')} />
+	{:else if onback}<IconButton
+			icon={ChevronLeft}
+			onclick={onback}
+			label={backLabel ?? t('common.back')}
+		/>{/if}
 	<h1 class="t-heading">{title}</h1>
 	{#if actions}<div class="actions">{@render actions()}</div>{/if}
 </header>
