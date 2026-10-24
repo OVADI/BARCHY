@@ -96,7 +96,7 @@ Commit `9247650`
 
 ### Fase 7: Tekenen
 
-Commit `bb379e0`
+Commits `bb379e0`, feedback verwerkt in `2f30b7c`
 
 - Bron gevonden in het Vademecum zelf: hoofdstuk Tekeninstructies, "Lijnsoorten en arcering" (gebaseerd op NEN 2302) en "Constructie tekeningen". De arceringstabellen verwijzen naar de Lecture Notes Technical Drawings (CT1052-09). Door de gebruiker bevestigd als bron (24-10-2026)
 - Tekenen (`/drawing`) met drie tabbladen:
@@ -107,7 +107,8 @@ Commit `bb379e0`
 - De houtdoorsnede gebruikt nu de arcering Hout uit het Vademecum, voor gezaagd en gelamineerd hout
 - Zoeken vindt arceringen, lijnsoorten en tekeninstructies, bijvoorbeeld "streeplijn", "hardhout" of "axonometrie". Bij gelijke treffers gaan hele woorden nu voor: "beton" vindt beton voor "betonsteen"
 - Rapport `reports/drawing-issues.md`
-- Precache na deze fase: 125 bestanden, 1172 KiB (was 1077 KiB, gemeten op de vorige commit)
+- Feedback verwerkt in `2f30b7c`: Arcering begint met vier materiaalgroepen, elk met een eigen pagina (`/drawing/hatch/[groep]`). Tekeningen begint met drie tegels, elk met een eigen pagina (`/drawing/guide/[id]`). Daar staan de stappen met een korte titel, verdeeld over Aanpak, Lijnen en Tekst; tik op een stap voor de volledige instructie. De korte titels zijn eigen tekst van BARCHY, niet uit de bron
+- Precache na deze fase: 149 bestanden, 1321 KiB (was 1077 KiB, gemeten op de commit vóór fase 7)
 
 **Te controleren door de gebruiker:**
 
