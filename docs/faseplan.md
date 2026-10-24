@@ -9,16 +9,17 @@ Dit is het vaste overzicht van de fases van BARCHY. Verwijs ernaar met "fase N".
 - Alle Bbl-feiten blijven `verify: true` tot ze gecontroleerd zijn.
 - Na het afronden van een fase wordt dit bestand bijgewerkt: status en commit.
 
-| Fase | Onderwerp                  | Status                |
-| ---- | -------------------------- | --------------------- |
-| 1    | Fundament                  | Klaar                 |
-| 2+3  | Staal en content-basis     | Klaar (zie correctie) |
-| 4    | Bbl en ruimte              | Klaar                 |
-| 5    | Hout, beton en staalplaten | Klaar, ter controle   |
-| 6    | Zoeken                     | Klaar, ter controle   |
-| 7    | Tekenen                    | Klaar, ter controle   |
-| 8    | Presentatie-checklist      | Gepland               |
-| 9    | Afronding                  | Gepland               |
+| Fase | Onderwerp                             | Status                |
+| ---- | ------------------------------------- | --------------------- |
+| 1    | Fundament                             | Klaar                 |
+| 2+3  | Staal en content-basis                | Klaar (zie correctie) |
+| 4    | Bbl en ruimte                         | Klaar                 |
+| 5    | Hout, beton en staalplaten            | Klaar, ter controle   |
+| 6    | Zoeken                                | Klaar, ter controle   |
+| 7    | Tekenen                               | Klaar, ter controle   |
+| 8    | Vuistregels hout, beton en metselwerk | Gepland               |
+| 9    | Presentatie-checklist                 | Gepland               |
+| 10   | Afronding                             | Gepland               |
 
 ---
 
@@ -121,6 +122,8 @@ Commits `bb379e0`, feedback verwerkt in `2f30b7c` en `31a808d`
 ### Fase 8: Vuistregels hout, beton en metselwerk
 
 **Doel:** de ontwerp-vuistregels uit de Vademecum opnemen voor hout (hoofdstuk 7), beton (hoofdstuk 8) en metselwerk (hoofdstuk 9), zoals fase 2+3 dat voor staal (hoofdstuk 6) deed.
+
+**Gebruik:** de vuistregels zijn belangrijk voor het ontwerp, vooral die voor overspanningen. Ze komen op handige, overzichtelijke pagina's die makkelijk te gebruiken zijn, zodat ze goed worden toegepast. Wie een overspanning invult of een vorm kiest, ziet direct de bijbehorende regel en waarschuwing, zonder in de bron te hoeven zoeken.
 
 **Bron:** [TeachBooks/vademecum](https://github.com/TeachBooks/vademecum) op dezelfde vaste commit als de staaldata (`9a2f70a…`), map `book/ontwerp/{hout,beton,metselwerk}/`. Licentie CC BY 4.0. Alle waarden blijven `verify: true` tot ze gecontroleerd zijn.
 
