@@ -24,6 +24,22 @@ describe('formatFact', () => {
 		expect(formatFact({ value: [0.8, 1], unit: 'm', bound: 'range' }, en)).toBe('0.8 – 1 m');
 	});
 
+	it('writes factors as n · symbol', () => {
+		expect(formatFact({ value: 0.25, unit: '', factorOf: 'l' }, nl)).toBe('0,25 · l');
+		expect(formatFact({ value: [0.4, 0.67], unit: '', factorOf: 'h_knik' }, en)).toBe(
+			'0.4 · h_knik – 0.67 · h_knik'
+		);
+	});
+
+	it('puts the symbol first when there is one', () => {
+		expect(formatFact({ value: 17, unit: '', divisorOf: 'l', symbol: 'h' }, nl)).toBe('h = l/17');
+		expect(formatFact({ value: 0.5, unit: '', factorOf: 'L', symbol: 'b' }, nl)).toBe(
+			'b = 0,5 · L'
+		);
+		expect(formatFact({ value: 6, unit: 'm', bound: 'min', symbol: 'r' }, nl)).toBe('r ≥ 6 m');
+		expect(formatFact({ value: [3.5, 5], unit: 'm', symbol: 'r' }, nl)).toBe('r = 3,5 – 5 m');
+	});
+
 	it('writes very small numbers with a power of ten', () => {
 		expect(formatValue(0.000012, nl)).toBe('12 · 10⁻⁶');
 		expect(formatValue(0, nl)).toBe('0');
