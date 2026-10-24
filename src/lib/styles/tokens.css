@@ -92,9 +92,17 @@
 	/* Layout */
 	--touch: 44px;
 	--nav-height: 64px;
-	--safe-bottom: env(safe-area-inset-bottom, 0px);
+	/* Alleen in de geïnstalleerde app: Firefox Android meldt in een gewoon tabblad een
+	   te grote inset, waardoor onder de balk een lege strook ontstaat. */
+	--safe-bottom: 0px;
 	--nav-total: calc(var(--nav-height) + var(--safe-bottom));
 	--content-max: 560px;
+}
+
+@media (display-mode: standalone) {
+	:root {
+		--safe-bottom: min(env(safe-area-inset-bottom, 0px), 34px);
+	}
 }
 
 :root[data-theme='light'] {
