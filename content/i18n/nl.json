@@ -141,7 +141,9 @@
 		"properties": "Eigenschappen",
 		"grades": "Staalkwaliteiten",
 		"saveCategory": "Staal bewaren",
-		"allRules": "Alle vuistregels"
+		"allRules": "Alle vuistregels",
+		"sheetTitle": "Staalplaten",
+		"sheetSub": "Geprofileerd"
 	},
 	"profile": {
 		"series": "Reeks",
@@ -222,10 +224,29 @@
 		}
 	},
 	"timber": {
-		"title": "Hout"
+		"title": "Hout",
+		"kinds": "Soort hout",
+		"sawn": "Gezaagd hout",
+		"glulam": "Gelamineerd hout",
+		"width": "Breedte b",
+		"height": "Hoogte h",
+		"section": "Doorsnede",
+		"drawing": "Doorsnede {b} × {h} mm op schaal",
+		"properties": "Doorsnede-eigenschappen",
+		"flagged": "Bij deze maat past geen enkele waarde uit de Vademecum-tabel. Mogelijk hoort de maat niet in de tabel. A, W en I zijn wel exact berekend voor een rechthoek b × h.",
+		"method": "Maten (b × h) uit de tabel; A, W en I exact berekend voor een rechthoek. Elke tabelcel is gecontroleerd tegen deze berekening."
 	},
 	"concrete": {
-		"title": "Beton"
+		"title": "Beton",
+		"rebar": "Betonstaal (wapening)",
+		"diameter": "Diameter Ø",
+		"area": "Oppervlakte wapening",
+		"bars": "{n} × Ø{d} mm",
+		"count": "Aantal staven",
+		"table": "Wapeningsoppervlakte in mm² per aantal staven",
+		"tableCaption": "Wapeningsoppervlakte As in mm² per diameter (rijen) en aantal staven (kolommen)",
+		"tableNote": "Rijen: diameter in mm. Kolommen: aantal staven.",
+		"rounded": "Waarden zoals gepubliceerd in het Vademecum, afgerond op hele mm²."
 	},
 	"drawing": {
 		"title": "Tekenen"
@@ -283,5 +304,16 @@
 		"info": "De calculator rekent met de grenzen uit de Bbl-feiten van deze app. Vrije hoogte, klimlijn, bordes en leuning toetst hij niet; die staan onder Ook van toepassing.",
 		"limitMax": "max. {value}",
 		"limitMin": "min. {value}"
+	},
+	"sheets": {
+		"title": "Geprofileerde staalplaten",
+		"height": "Profielhoogte h",
+		"t": "Plaatdikte",
+		"Iy": "Traagheidsmoment per meter",
+		"Wy": "Weerstandsmoment per meter",
+		"sigma": "Spanning (niet toegelicht in de bron)",
+		"properties": "Eigenschappen",
+		"flagged": "De kolomkop in het Vademecum geeft tegenstrijdige eenheden. Iy en Wy zijn hier gelezen als ×10⁴ mm⁴/m en ×10³ mm³/m, en de bron licht niet toe welke spanning σ is. Gebruik deze waarden niet zonder de bron te raadplegen.",
+		"units": "Iy en Wy per meter plaatbreedte, volgens onze lezing van de kolomkop. Dat is nog niet bevestigd."
 	}
 }

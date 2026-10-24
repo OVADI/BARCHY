@@ -141,7 +141,9 @@
 		"properties": "Properties",
 		"grades": "Steel grades",
 		"saveCategory": "Save steel",
-		"allRules": "All rules of thumb"
+		"allRules": "All rules of thumb",
+		"sheetTitle": "Steel sheets",
+		"sheetSub": "Profiled"
 	},
 	"profile": {
 		"series": "Series",
@@ -222,10 +224,29 @@
 		}
 	},
 	"timber": {
-		"title": "Timber"
+		"title": "Timber",
+		"kinds": "Timber type",
+		"sawn": "Sawn timber",
+		"glulam": "Glulam",
+		"width": "Width b",
+		"height": "Height h",
+		"section": "Cross-section",
+		"drawing": "Cross-section {b} × {h} mm to scale",
+		"properties": "Section properties",
+		"flagged": "No value in the Vademecum table fits this size. The size may not belong in the table. A, W and I are still calculated exactly for a b × h rectangle.",
+		"method": "Sizes (b × h) from the table; A, W and I calculated exactly for a rectangle. Every table cell was checked against this calculation."
 	},
 	"concrete": {
-		"title": "Concrete"
+		"title": "Concrete",
+		"rebar": "Reinforcing steel",
+		"diameter": "Diameter Ø",
+		"area": "Reinforcement area",
+		"bars": "{n} × Ø{d} mm",
+		"count": "Number of bars",
+		"table": "Reinforcement area in mm² per number of bars",
+		"tableCaption": "Reinforcement area As in mm² per diameter (rows) and number of bars (columns)",
+		"tableNote": "Rows: diameter in mm. Columns: number of bars.",
+		"rounded": "Values as published in the Vademecum, rounded to whole mm²."
 	},
 	"drawing": {
 		"title": "Drawing"
@@ -283,5 +304,16 @@
 		"info": "The calculator uses the limits from this app’s Bbl facts. It does not check clear height, walking line, landing or handrail; those are listed under Also applies.",
 		"limitMax": "max {value}",
 		"limitMin": "min {value}"
+	},
+	"sheets": {
+		"title": "Profiled steel sheets",
+		"height": "Profile height h",
+		"t": "Sheet thickness",
+		"Iy": "Second moment of area per metre",
+		"Wy": "Section modulus per metre",
+		"sigma": "Stress (not explained in the source)",
+		"properties": "Properties",
+		"flagged": "The Vademecum column header gives contradictory units. Iy and Wy are read here as ×10⁴ mm⁴/m and ×10³ mm³/m, and the source does not say which stress σ is. Do not use these values without checking the source.",
+		"units": "Iy and Wy per metre of sheet width, according to our reading of the column header. Not yet confirmed."
 	}
 }

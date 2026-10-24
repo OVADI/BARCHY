@@ -113,6 +113,21 @@
 				</span>
 			</a>
 		{/each}
+		<a class="family tone-surface" href={resolve('/steel/sheets')}>
+			<svg width="56" height="44" viewBox="0 0 56 44" aria-hidden="true">
+				<path
+					d="M3 30h8l6-16h8l6 16h8l6-16h8"
+					fill="none"
+					stroke="currentColor"
+					stroke-width="4"
+					stroke-linejoin="round"
+				/>
+			</svg>
+			<span>
+				<span class="t-title title">{t('steel.sheetTitle')}</span>
+				<span class="t-body-sm sub">{t('steel.sheetSub')}</span>
+			</span>
+		</a>
 		{#each ['steel.angleTitle', 'steel.flatTitle'] as const as title (title)}
 			<div class="family tone-surface missing">
 				<span class="t-label t-muted">{t('common.noSource')}</span>
