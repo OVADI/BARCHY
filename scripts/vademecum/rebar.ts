@@ -4,7 +4,7 @@ import type { Issue } from '../../src/lib/schema/source';
 import { RebarFile } from '../../src/lib/schema/concrete';
 import { htmlTables, num } from './parse';
 import type { Report } from './report';
-import { FILES, SOURCE, load, origin } from './source';
+import { FILES, REBAR_SOURCE, load, origin } from './source';
 
 /** Reinforcement bar areas (§13.3). Each cell is checked against n·π·d²/4, rounded. */
 export async function importRebar(
@@ -42,7 +42,11 @@ export async function importRebar(
 	});
 	writeJson(
 		join(content, 'concrete', 'rebar.json'),
-		RebarFile.parse({ source: SOURCE, origin: origin(FILES.rebar, 'Betonstaal (Wapening)'), rows })
+		RebarFile.parse({
+			source: REBAR_SOURCE,
+			origin: origin(FILES.rebar, 'Betonstaal (Wapening)'),
+			rows
+		})
 	);
 	report.count('Betonstaal', rows.length, rows.filter((r) => r.status === 'flagged').length);
 }

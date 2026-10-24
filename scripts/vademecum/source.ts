@@ -13,6 +13,10 @@ export const SOURCE: SourceRef = {
 	license: 'CC BY 4.0'
 };
 
+// Only the intro of staal.md names Bouwen met Staal; hout.md and betonstaal.md name no origin.
+export const TIMBER_SOURCE: SourceRef = { ...SOURCE, ref: 'Dimensietabellen: Hout' };
+export const REBAR_SOURCE: SourceRef = { ...SOURCE, ref: 'Dimensietabellen: Betonstaal' };
+
 export const FILES = {
 	steel: 'book/basis_gegevens/dimensietabellen/staal.md',
 	timber: 'book/basis_gegevens/dimensietabellen/hout.md',

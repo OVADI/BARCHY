@@ -23,7 +23,9 @@
 				"url": "https://github.com/TeachBooks/vademecum/blob/9a2f70afd158b7cee533c119bf4c88ae15106d4a/book/ontwerp/staal/liggers.md",
 				"license": "CC BY 4.0"
 			},
-			"status": "flagged"
+			"status": "human_verified",
+			"verifiedBy": "OVADI",
+			"verifiedOn": "2026-10-24"
 		},
 		{
 			"id": "staal-hoofdligger-vloer-i-u-profiel",
@@ -48,7 +50,9 @@
 				"url": "https://github.com/TeachBooks/vademecum/blob/9a2f70afd158b7cee533c119bf4c88ae15106d4a/book/ontwerp/staal/liggers.md",
 				"license": "CC BY 4.0"
 			},
-			"status": "flagged"
+			"status": "human_verified",
+			"verifiedBy": "OVADI",
+			"verifiedOn": "2026-10-24"
 		},
 		{
 			"id": "staal-hoofdligger-vloer-vakwerk",
@@ -73,7 +77,9 @@
 				"url": "https://github.com/TeachBooks/vademecum/blob/9a2f70afd158b7cee533c119bf4c88ae15106d4a/book/ontwerp/staal/liggers.md",
 				"license": "CC BY 4.0"
 			},
-			"status": "flagged"
+			"status": "human_verified",
+			"verifiedBy": "OVADI",
+			"verifiedOn": "2026-10-24"
 		},
 		{
 			"id": "staal-hoofdligger-dak-h-profiel",
@@ -98,7 +104,9 @@
 				"url": "https://github.com/TeachBooks/vademecum/blob/9a2f70afd158b7cee533c119bf4c88ae15106d4a/book/ontwerp/staal/liggers.md",
 				"license": "CC BY 4.0"
 			},
-			"status": "flagged"
+			"status": "human_verified",
+			"verifiedBy": "OVADI",
+			"verifiedOn": "2026-10-24"
 		},
 		{
 			"id": "staal-dak-vakwerkligger-1",
@@ -123,7 +131,9 @@
 				"url": "https://github.com/TeachBooks/vademecum/blob/9a2f70afd158b7cee533c119bf4c88ae15106d4a/book/ontwerp/staal/liggers.md",
 				"license": "CC BY 4.0"
 			},
-			"status": "flagged"
+			"status": "human_verified",
+			"verifiedBy": "OVADI",
+			"verifiedOn": "2026-10-24"
 		},
 		{
 			"id": "staal-dak-vakwerkligger-2",
@@ -148,7 +158,9 @@
 				"url": "https://github.com/TeachBooks/vademecum/blob/9a2f70afd158b7cee533c119bf4c88ae15106d4a/book/ontwerp/staal/liggers.md",
 				"license": "CC BY 4.0"
 			},
-			"status": "flagged"
+			"status": "human_verified",
+			"verifiedBy": "OVADI",
+			"verifiedOn": "2026-10-24"
 		},
 		{
 			"id": "staal-driehoekdakligger",
@@ -173,7 +185,9 @@
 				"url": "https://github.com/TeachBooks/vademecum/blob/9a2f70afd158b7cee533c119bf4c88ae15106d4a/book/ontwerp/staal/liggers.md",
 				"license": "CC BY 4.0"
 			},
-			"status": "flagged"
+			"status": "human_verified",
+			"verifiedBy": "OVADI",
+			"verifiedOn": "2026-10-24"
 		},
 		{
 			"id": "staal-gording-koudgewalst",
@@ -198,7 +212,9 @@
 				"url": "https://github.com/TeachBooks/vademecum/blob/9a2f70afd158b7cee533c119bf4c88ae15106d4a/book/ontwerp/staal/liggers.md",
 				"license": "CC BY 4.0"
 			},
-			"status": "flagged"
+			"status": "human_verified",
+			"verifiedBy": "OVADI",
+			"verifiedOn": "2026-10-24"
 		},
 		{
 			"id": "staal-gording-warmgewalst",
@@ -223,7 +239,9 @@
 				"url": "https://github.com/TeachBooks/vademecum/blob/9a2f70afd158b7cee533c119bf4c88ae15106d4a/book/ontwerp/staal/liggers.md",
 				"license": "CC BY 4.0"
 			},
-			"status": "flagged"
+			"status": "human_verified",
+			"verifiedBy": "OVADI",
+			"verifiedOn": "2026-10-24"
 		},
 		{
 			"id": "staal-kolom-verdiepingen-1",
@@ -248,7 +266,9 @@
 				"url": "https://github.com/TeachBooks/vademecum/blob/9a2f70afd158b7cee533c119bf4c88ae15106d4a/book/ontwerp/staal/kolommen.md",
 				"license": "CC BY 4.0"
 			},
-			"status": "flagged"
+			"status": "human_verified",
+			"verifiedBy": "OVADI",
+			"verifiedOn": "2026-10-24"
 		},
 		{
 			"id": "staal-kolom-verdiepingen-2-3",
@@ -273,7 +293,9 @@
 				"url": "https://github.com/TeachBooks/vademecum/blob/9a2f70afd158b7cee533c119bf4c88ae15106d4a/book/ontwerp/staal/kolommen.md",
 				"license": "CC BY 4.0"
 			},
-			"status": "flagged"
+			"status": "human_verified",
+			"verifiedBy": "OVADI",
+			"verifiedOn": "2026-10-24"
 		},
 		{
 			"id": "staal-kolom-verdiepingen-4-5",
@@ -298,7 +320,9 @@
 				"url": "https://github.com/TeachBooks/vademecum/blob/9a2f70afd158b7cee533c119bf4c88ae15106d4a/book/ontwerp/staal/kolommen.md",
 				"license": "CC BY 4.0"
 			},
-			"status": "flagged"
+			"status": "human_verified",
+			"verifiedBy": "OVADI",
+			"verifiedOn": "2026-10-24"
 		},
 		{
 			"id": "staal-kolom-verdiepingen-6-8",
@@ -323,7 +347,9 @@
 				"url": "https://github.com/TeachBooks/vademecum/blob/9a2f70afd158b7cee533c119bf4c88ae15106d4a/book/ontwerp/staal/kolommen.md",
 				"license": "CC BY 4.0"
 			},
-			"status": "flagged"
+			"status": "human_verified",
+			"verifiedBy": "OVADI",
+			"verifiedOn": "2026-10-24"
 		},
 		{
 			"id": "staal-kolom-verdiepingen-9-12",
@@ -348,7 +374,9 @@
 				"url": "https://github.com/TeachBooks/vademecum/blob/9a2f70afd158b7cee533c119bf4c88ae15106d4a/book/ontwerp/staal/kolommen.md",
 				"license": "CC BY 4.0"
 			},
-			"status": "flagged"
+			"status": "human_verified",
+			"verifiedBy": "OVADI",
+			"verifiedOn": "2026-10-24"
 		},
 		{
 			"id": "staal-windverband-lengte",
@@ -373,7 +401,9 @@
 				"url": "https://github.com/TeachBooks/vademecum/blob/9a2f70afd158b7cee533c119bf4c88ae15106d4a/book/ontwerp/staal/stabiliteit.md",
 				"license": "CC BY 4.0"
 			},
-			"status": "flagged"
+			"status": "human_verified",
+			"verifiedBy": "OVADI",
+			"verifiedOn": "2026-10-24"
 		},
 		{
 			"id": "staal-volumieke-massa",
@@ -392,7 +422,9 @@
 				"url": "https://github.com/TeachBooks/vademecum/blob/9a2f70afd158b7cee533c119bf4c88ae15106d4a/book/basis_gegevens/materiaaleigenschappen/staal.md",
 				"license": "CC BY 4.0"
 			},
-			"status": "flagged"
+			"status": "human_verified",
+			"verifiedBy": "OVADI",
+			"verifiedOn": "2026-10-24"
 		},
 		{
 			"id": "staal-elasticiteitsmodulus",
@@ -411,7 +443,9 @@
 				"url": "https://github.com/TeachBooks/vademecum/blob/9a2f70afd158b7cee533c119bf4c88ae15106d4a/book/basis_gegevens/materiaaleigenschappen/staal.md",
 				"license": "CC BY 4.0"
 			},
-			"status": "flagged"
+			"status": "human_verified",
+			"verifiedBy": "OVADI",
+			"verifiedOn": "2026-10-24"
 		},
 		{
 			"id": "staal-afschuifmodulus",
@@ -430,7 +464,9 @@
 				"url": "https://github.com/TeachBooks/vademecum/blob/9a2f70afd158b7cee533c119bf4c88ae15106d4a/book/basis_gegevens/materiaaleigenschappen/staal.md",
 				"license": "CC BY 4.0"
 			},
-			"status": "flagged"
+			"status": "human_verified",
+			"verifiedBy": "OVADI",
+			"verifiedOn": "2026-10-24"
 		},
 		{
 			"id": "staal-uitzettingscoefficient",
@@ -449,7 +485,9 @@
 				"url": "https://github.com/TeachBooks/vademecum/blob/9a2f70afd158b7cee533c119bf4c88ae15106d4a/book/basis_gegevens/materiaaleigenschappen/staal.md",
 				"license": "CC BY 4.0"
 			},
-			"status": "flagged"
+			"status": "human_verified",
+			"verifiedBy": "OVADI",
+			"verifiedOn": "2026-10-24"
 		},
 		{
 			"id": "staal-s235-vloeigrens",
@@ -468,7 +506,9 @@
 				"url": "https://github.com/TeachBooks/vademecum/blob/9a2f70afd158b7cee533c119bf4c88ae15106d4a/book/basis_gegevens/materiaaleigenschappen/staal.md",
 				"license": "CC BY 4.0"
 			},
-			"status": "flagged"
+			"status": "human_verified",
+			"verifiedBy": "OVADI",
+			"verifiedOn": "2026-10-24"
 		},
 		{
 			"id": "staal-s235-treksterkte",
@@ -487,7 +527,9 @@
 				"url": "https://github.com/TeachBooks/vademecum/blob/9a2f70afd158b7cee533c119bf4c88ae15106d4a/book/basis_gegevens/materiaaleigenschappen/staal.md",
 				"license": "CC BY 4.0"
 			},
-			"status": "flagged"
+			"status": "human_verified",
+			"verifiedBy": "OVADI",
+			"verifiedOn": "2026-10-24"
 		},
 		{
 			"id": "staal-s235-rek",
@@ -498,15 +540,21 @@
 				"nl": "Rekenwaarde rek bij vloeien ε_y;d, S235",
 				"en": "Design yield strain ε_y;d, S235"
 			},
+			"explain": {
+				"nl": "Het Vademecum geeft 1,12 met eenheid %, maar ε = f_y;d / E = 235 / 210 000 = 1,12 ‰. BARCHY toont daarom promille.",
+				"en": "The Vademecum gives 1.12 with unit %, but ε = f_y;d / E = 235 / 210 000 = 1.12 ‰. BARCHY therefore shows per mille."
+			},
 			"value": 1.12,
-			"unit": "%",
+			"unit": "‰",
 			"source": {
 				"title": "TU Delft Vademecum (TeachBooks)",
 				"ref": "§12.1 Staal, sterkte en stijfheid",
 				"url": "https://github.com/TeachBooks/vademecum/blob/9a2f70afd158b7cee533c119bf4c88ae15106d4a/book/basis_gegevens/materiaaleigenschappen/staal.md",
 				"license": "CC BY 4.0"
 			},
-			"status": "flagged"
+			"status": "human_verified",
+			"verifiedBy": "OVADI",
+			"verifiedOn": "2026-10-24"
 		},
 		{
 			"id": "staal-s275-vloeigrens",
@@ -525,7 +573,9 @@
 				"url": "https://github.com/TeachBooks/vademecum/blob/9a2f70afd158b7cee533c119bf4c88ae15106d4a/book/basis_gegevens/materiaaleigenschappen/staal.md",
 				"license": "CC BY 4.0"
 			},
-			"status": "flagged"
+			"status": "human_verified",
+			"verifiedBy": "OVADI",
+			"verifiedOn": "2026-10-24"
 		},
 		{
 			"id": "staal-s275-treksterkte",
@@ -544,7 +594,9 @@
 				"url": "https://github.com/TeachBooks/vademecum/blob/9a2f70afd158b7cee533c119bf4c88ae15106d4a/book/basis_gegevens/materiaaleigenschappen/staal.md",
 				"license": "CC BY 4.0"
 			},
-			"status": "flagged"
+			"status": "human_verified",
+			"verifiedBy": "OVADI",
+			"verifiedOn": "2026-10-24"
 		},
 		{
 			"id": "staal-s275-rek",
@@ -555,15 +607,21 @@
 				"nl": "Rekenwaarde rek bij vloeien ε_y;d, S275",
 				"en": "Design yield strain ε_y;d, S275"
 			},
+			"explain": {
+				"nl": "Het Vademecum geeft 1,31 met eenheid %, maar ε = f_y;d / E = 275 / 210 000 = 1,31 ‰. BARCHY toont daarom promille.",
+				"en": "The Vademecum gives 1.31 with unit %, but ε = f_y;d / E = 275 / 210 000 = 1.31 ‰. BARCHY therefore shows per mille."
+			},
 			"value": 1.31,
-			"unit": "%",
+			"unit": "‰",
 			"source": {
 				"title": "TU Delft Vademecum (TeachBooks)",
 				"ref": "§12.1 Staal, sterkte en stijfheid",
 				"url": "https://github.com/TeachBooks/vademecum/blob/9a2f70afd158b7cee533c119bf4c88ae15106d4a/book/basis_gegevens/materiaaleigenschappen/staal.md",
 				"license": "CC BY 4.0"
 			},
-			"status": "flagged"
+			"status": "human_verified",
+			"verifiedBy": "OVADI",
+			"verifiedOn": "2026-10-24"
 		},
 		{
 			"id": "staal-s355-vloeigrens",
@@ -582,7 +640,9 @@
 				"url": "https://github.com/TeachBooks/vademecum/blob/9a2f70afd158b7cee533c119bf4c88ae15106d4a/book/basis_gegevens/materiaaleigenschappen/staal.md",
 				"license": "CC BY 4.0"
 			},
-			"status": "flagged"
+			"status": "human_verified",
+			"verifiedBy": "OVADI",
+			"verifiedOn": "2026-10-24"
 		},
 		{
 			"id": "staal-s355-treksterkte",
@@ -601,7 +661,9 @@
 				"url": "https://github.com/TeachBooks/vademecum/blob/9a2f70afd158b7cee533c119bf4c88ae15106d4a/book/basis_gegevens/materiaaleigenschappen/staal.md",
 				"license": "CC BY 4.0"
 			},
-			"status": "flagged"
+			"status": "human_verified",
+			"verifiedBy": "OVADI",
+			"verifiedOn": "2026-10-24"
 		},
 		{
 			"id": "staal-s355-rek",
@@ -612,15 +674,21 @@
 				"nl": "Rekenwaarde rek bij vloeien ε_y;d, S355",
 				"en": "Design yield strain ε_y;d, S355"
 			},
+			"explain": {
+				"nl": "Het Vademecum geeft 1,69 met eenheid %, maar ε = f_y;d / E = 355 / 210 000 = 1,69 ‰. BARCHY toont daarom promille.",
+				"en": "The Vademecum gives 1.69 with unit %, but ε = f_y;d / E = 355 / 210 000 = 1.69 ‰. BARCHY therefore shows per mille."
+			},
 			"value": 1.69,
-			"unit": "%",
+			"unit": "‰",
 			"source": {
 				"title": "TU Delft Vademecum (TeachBooks)",
 				"ref": "§12.1 Staal, sterkte en stijfheid",
 				"url": "https://github.com/TeachBooks/vademecum/blob/9a2f70afd158b7cee533c119bf4c88ae15106d4a/book/basis_gegevens/materiaaleigenschappen/staal.md",
 				"license": "CC BY 4.0"
 			},
-			"status": "flagged"
+			"status": "human_verified",
+			"verifiedBy": "OVADI",
+			"verifiedOn": "2026-10-24"
 		},
 		{
 			"id": "staal-s420-vloeigrens",
@@ -639,7 +707,9 @@
 				"url": "https://github.com/TeachBooks/vademecum/blob/9a2f70afd158b7cee533c119bf4c88ae15106d4a/book/basis_gegevens/materiaaleigenschappen/staal.md",
 				"license": "CC BY 4.0"
 			},
-			"status": "flagged",
+			"status": "human_verified",
+			"verifiedBy": "OVADI",
+			"verifiedOn": "2026-10-24",
 			"scope": {
 				"nl": "Volgens de bron mag zonder extra toetsing geen hogere vloeigrens dan 355 N/mm² worden aangehouden.",
 				"en": "According to the source, no yield strength above 355 N/mm² may be used without additional checks."
@@ -662,7 +732,9 @@
 				"url": "https://github.com/TeachBooks/vademecum/blob/9a2f70afd158b7cee533c119bf4c88ae15106d4a/book/basis_gegevens/materiaaleigenschappen/staal.md",
 				"license": "CC BY 4.0"
 			},
-			"status": "flagged",
+			"status": "human_verified",
+			"verifiedBy": "OVADI",
+			"verifiedOn": "2026-10-24",
 			"scope": {
 				"nl": "Volgens de bron mag zonder extra toetsing geen hogere vloeigrens dan 355 N/mm² worden aangehouden.",
 				"en": "According to the source, no yield strength above 355 N/mm² may be used without additional checks."

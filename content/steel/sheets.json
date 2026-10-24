@@ -29,11 +29,13 @@
 			"issues": [
 				{
 					"check": "scale",
-					"severity": "error",
-					"message": "Eenheden in de kolomkop zijn tegenstrijdig (Wy als ·10⁴ mm⁴); hier gelezen als Iy ×10⁴ mm⁴/m en Wy ×10³ mm³/m. Ook de betekenis van σ is niet toegelicht."
+					"severity": "warning",
+					"message": "Eenheden in de kolomkop zijn tegenstrijdig (Wy als ·10⁴ mm⁴); gelezen als Iy ×10⁴ mm⁴/m en Wy ×10³ mm³/m (gecontroleerd). De bron licht σ niet toe."
 				}
 			],
-			"status": "flagged"
+			"status": "human_verified",
+			"verifiedBy": "OVADI",
+			"verifiedOn": "2026-10-24"
 		},
 		{
 			"id": "sheet-h40-t1",
@@ -45,11 +47,13 @@
 			"issues": [
 				{
 					"check": "scale",
-					"severity": "error",
-					"message": "Eenheden in de kolomkop zijn tegenstrijdig (Wy als ·10⁴ mm⁴); hier gelezen als Iy ×10⁴ mm⁴/m en Wy ×10³ mm³/m. Ook de betekenis van σ is niet toegelicht."
+					"severity": "warning",
+					"message": "Eenheden in de kolomkop zijn tegenstrijdig (Wy als ·10⁴ mm⁴); gelezen als Iy ×10⁴ mm⁴/m en Wy ×10³ mm³/m (gecontroleerd). De bron licht σ niet toe."
 				}
 			],
-			"status": "flagged"
+			"status": "human_verified",
+			"verifiedBy": "OVADI",
+			"verifiedOn": "2026-10-24"
 		},
 		{
 			"id": "sheet-h70-t0-88",
@@ -61,11 +65,13 @@
 			"issues": [
 				{
 					"check": "scale",
-					"severity": "error",
-					"message": "Eenheden in de kolomkop zijn tegenstrijdig (Wy als ·10⁴ mm⁴); hier gelezen als Iy ×10⁴ mm⁴/m en Wy ×10³ mm³/m. Ook de betekenis van σ is niet toegelicht."
+					"severity": "warning",
+					"message": "Eenheden in de kolomkop zijn tegenstrijdig (Wy als ·10⁴ mm⁴); gelezen als Iy ×10⁴ mm⁴/m en Wy ×10³ mm³/m (gecontroleerd). De bron licht σ niet toe."
 				}
 			],
-			"status": "flagged"
+			"status": "human_verified",
+			"verifiedBy": "OVADI",
+			"verifiedOn": "2026-10-24"
 		},
 		{
 			"id": "sheet-h70-t1",
@@ -77,11 +83,13 @@
 			"issues": [
 				{
 					"check": "scale",
-					"severity": "error",
-					"message": "Eenheden in de kolomkop zijn tegenstrijdig (Wy als ·10⁴ mm⁴); hier gelezen als Iy ×10⁴ mm⁴/m en Wy ×10³ mm³/m. Ook de betekenis van σ is niet toegelicht."
+					"severity": "warning",
+					"message": "Eenheden in de kolomkop zijn tegenstrijdig (Wy als ·10⁴ mm⁴); gelezen als Iy ×10⁴ mm⁴/m en Wy ×10³ mm³/m (gecontroleerd). De bron licht σ niet toe."
 				}
 			],
-			"status": "flagged"
+			"status": "human_verified",
+			"verifiedBy": "OVADI",
+			"verifiedOn": "2026-10-24"
 		},
 		{
 			"id": "sheet-h96-t0-88",
@@ -93,11 +101,13 @@
 			"issues": [
 				{
 					"check": "scale",
-					"severity": "error",
-					"message": "Eenheden in de kolomkop zijn tegenstrijdig (Wy als ·10⁴ mm⁴); hier gelezen als Iy ×10⁴ mm⁴/m en Wy ×10³ mm³/m. Ook de betekenis van σ is niet toegelicht."
+					"severity": "warning",
+					"message": "Eenheden in de kolomkop zijn tegenstrijdig (Wy als ·10⁴ mm⁴); gelezen als Iy ×10⁴ mm⁴/m en Wy ×10³ mm³/m (gecontroleerd). De bron licht σ niet toe."
 				}
 			],
-			"status": "flagged"
+			"status": "human_verified",
+			"verifiedBy": "OVADI",
+			"verifiedOn": "2026-10-24"
 		},
 		{
 			"id": "sheet-h96-t1",
@@ -109,11 +119,13 @@
 			"issues": [
 				{
 					"check": "scale",
-					"severity": "error",
-					"message": "Eenheden in de kolomkop zijn tegenstrijdig (Wy als ·10⁴ mm⁴); hier gelezen als Iy ×10⁴ mm⁴/m en Wy ×10³ mm³/m. Ook de betekenis van σ is niet toegelicht."
+					"severity": "warning",
+					"message": "Eenheden in de kolomkop zijn tegenstrijdig (Wy als ·10⁴ mm⁴); gelezen als Iy ×10⁴ mm⁴/m en Wy ×10³ mm³/m (gecontroleerd). De bron licht σ niet toe."
 				}
 			],
-			"status": "flagged"
+			"status": "human_verified",
+			"verifiedBy": "OVADI",
+			"verifiedOn": "2026-10-24"
 		},
 		{
 			"id": "sheet-h106-t0-88",
@@ -125,11 +137,13 @@
 			"issues": [
 				{
 					"check": "scale",
-					"severity": "error",
-					"message": "Eenheden in de kolomkop zijn tegenstrijdig (Wy als ·10⁴ mm⁴); hier gelezen als Iy ×10⁴ mm⁴/m en Wy ×10³ mm³/m. Ook de betekenis van σ is niet toegelicht."
+					"severity": "warning",
+					"message": "Eenheden in de kolomkop zijn tegenstrijdig (Wy als ·10⁴ mm⁴); gelezen als Iy ×10⁴ mm⁴/m en Wy ×10³ mm³/m (gecontroleerd). De bron licht σ niet toe."
 				}
 			],
-			"status": "flagged"
+			"status": "human_verified",
+			"verifiedBy": "OVADI",
+			"verifiedOn": "2026-10-24"
 		},
 		{
 			"id": "sheet-h106-t1",
@@ -141,11 +155,13 @@
 			"issues": [
 				{
 					"check": "scale",
-					"severity": "error",
-					"message": "Eenheden in de kolomkop zijn tegenstrijdig (Wy als ·10⁴ mm⁴); hier gelezen als Iy ×10⁴ mm⁴/m en Wy ×10³ mm³/m. Ook de betekenis van σ is niet toegelicht."
+					"severity": "warning",
+					"message": "Eenheden in de kolomkop zijn tegenstrijdig (Wy als ·10⁴ mm⁴); gelezen als Iy ×10⁴ mm⁴/m en Wy ×10³ mm³/m (gecontroleerd). De bron licht σ niet toe."
 				}
 			],
-			"status": "flagged"
+			"status": "human_verified",
+			"verifiedBy": "OVADI",
+			"verifiedOn": "2026-10-24"
 		},
 		{
 			"id": "sheet-h120-t0-88",
@@ -157,11 +173,13 @@
 			"issues": [
 				{
 					"check": "scale",
-					"severity": "error",
-					"message": "Eenheden in de kolomkop zijn tegenstrijdig (Wy als ·10⁴ mm⁴); hier gelezen als Iy ×10⁴ mm⁴/m en Wy ×10³ mm³/m. Ook de betekenis van σ is niet toegelicht."
+					"severity": "warning",
+					"message": "Eenheden in de kolomkop zijn tegenstrijdig (Wy als ·10⁴ mm⁴); gelezen als Iy ×10⁴ mm⁴/m en Wy ×10³ mm³/m (gecontroleerd). De bron licht σ niet toe."
 				}
 			],
-			"status": "flagged"
+			"status": "human_verified",
+			"verifiedBy": "OVADI",
+			"verifiedOn": "2026-10-24"
 		},
 		{
 			"id": "sheet-h120-t1",
@@ -173,11 +191,13 @@
 			"issues": [
 				{
 					"check": "scale",
-					"severity": "error",
-					"message": "Eenheden in de kolomkop zijn tegenstrijdig (Wy als ·10⁴ mm⁴); hier gelezen als Iy ×10⁴ mm⁴/m en Wy ×10³ mm³/m. Ook de betekenis van σ is niet toegelicht."
+					"severity": "warning",
+					"message": "Eenheden in de kolomkop zijn tegenstrijdig (Wy als ·10⁴ mm⁴); gelezen als Iy ×10⁴ mm⁴/m en Wy ×10³ mm³/m (gecontroleerd). De bron licht σ niet toe."
 				}
 			],
-			"status": "flagged"
+			"status": "human_verified",
+			"verifiedBy": "OVADI",
+			"verifiedOn": "2026-10-24"
 		}
 	]
 }
