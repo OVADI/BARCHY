@@ -192,21 +192,20 @@
 		flex-direction: column;
 		gap: var(--space-1);
 	}
-	/* Material colour from Home: the orange sub-tiles of the structure tile. */
+	/* Material colour from Home: the orange of the structure tile. */
 	.tone-material {
-		background: var(--orange-shade);
-		color: var(--paper);
-	}
-	.tone-material .sub {
-		color: var(--paper);
-		opacity: 0.85;
-	}
-	a.tone-material:hover {
 		background: var(--orange);
 		color: var(--on-tile);
 	}
+	.tone-material .sub {
+		color: var(--on-tile-muted);
+	}
+	a.tone-material:hover {
+		background: var(--orange-shade);
+		color: var(--paper);
+	}
 	a.tone-material:hover .sub {
-		color: var(--on-tile);
+		color: var(--paper);
 	}
 	.tone-surface {
 		background: var(--surface);
