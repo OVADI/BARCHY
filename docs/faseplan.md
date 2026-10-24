@@ -9,15 +9,15 @@ Dit is het vaste overzicht van de fases van BARCHY. Verwijs ernaar met "fase N".
 - Alle Bbl-feiten blijven `verify: true` tot ze gecontroleerd zijn.
 - Na het afronden van een fase wordt dit bestand bijgewerkt: status en commit.
 
-| Fase | Onderwerp | Status |
-| --- | --- | --- |
-| 1 | Fundament | Klaar |
-| 2+3 | Staal en content-basis | Klaar (zie correctie) |
-| 4 | Bbl en ruimte | Klaar |
-| 5 | Hout, beton en staalplaten | Gepland |
-| 6 | Zoeken | Gepland |
-| 7 | Tekenen | Gepland, wacht op bron |
-| 8 | Afronding | Gepland |
+| Fase | Onderwerp                  | Status                 |
+| ---- | -------------------------- | ---------------------- |
+| 1    | Fundament                  | Klaar                  |
+| 2+3  | Staal en content-basis     | Klaar (zie correctie)  |
+| 4    | Bbl en ruimte              | Klaar                  |
+| 5    | Hout, beton en staalplaten | Gepland                |
+| 6    | Zoeken                     | Gepland                |
+| 7    | Tekenen                    | Gepland, wacht op bron |
+| 8    | Afronding                  | Gepland                |
 
 ---
 
