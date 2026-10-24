@@ -14,7 +14,7 @@ Dit is het vaste overzicht van de fases van BARCHY. Verwijs ernaar met "fase N".
 | 1    | Fundament                  | Klaar                  |
 | 2+3  | Staal en content-basis     | Klaar (zie correctie)  |
 | 4    | Bbl en ruimte              | Klaar                  |
-| 5    | Hout, beton en staalplaten | Gepland                |
+| 5    | Hout, beton en staalplaten | Klaar, ter controle    |
 | 6    | Zoeken                     | Gepland                |
 | 7    | Tekenen                    | Gepland, wacht op bron |
 | 8    | Presentatie-checklist      | Gepland                |
@@ -61,14 +61,19 @@ Commit `ce29887`
 
 ### Fase 5: Hout, beton en staalplaten
 
-**Doel:** de schermen bouwen voor data die al in de app staat.
+Commit `a89c0f6`
 
-- Hout (`/timber`): afmetingen uit `content/timber/sections.json`
-- Beton (`/concrete`): wapening uit `content/concrete/rebar.json`
-- Staalplaten (geprofileerd): `content/steel/sheets.json`, met een eigen scherm of als onderdeel van Staal
-- Zelfde patroon als `/steel` en het profielscherm: Tile, Stat en InfoFab met bron
+- Hout (`/timber`): gezaagd en gelamineerd hout uit `content/timber/sections.json`. Je kiest b en h en ziet een doorsnede op schaal met A, Wy, Iy, Wz en Iz. Bij grote liggers schaalt de eenheid mee (×10⁶ of ×10⁹), zodat de getallen passen
+- Beton (`/concrete`): wapeningsoppervlakte uit `content/concrete/rebar.json`. Je kiest Ø en het aantal staven (1–10), plus de volledige tabel
+- Staalplaten (`/steel/sheets`, tegel op het staalscherm): h, t, Iy, Wy en σ uit `content/steel/sheets.json`. Iy, Wy en σ staan op Controleren zolang de eenhedenvraag open is
+- Nieuwe componenten: `ValueGrid` (waardentegels) en `ChoiceRow` (rij keuzepillen)
+- Precache na deze fase: 120 bestanden, 870 KiB
 
-**Voorwaarde:** eerst moet de eenhedenvraag over de staalplaten beantwoord zijn (I, W en σ, zie `reports/vademecum-issues.md`). Zolang die open staat, worden die kolommen als [VERIFY] getoond of weggelaten.
+**Te controleren door de gebruiker:**
+
+- Eenheden en σ van de staalplaten (zie hieronder bij Doorlopend)
+- 14 houtmaten staan op Controleren: geen tabelwaarde in de rij past erbij (bijvoorbeeld gezaagd 58 × 69)
+- De bronregel van hout en beton luidt nu "Oorspronkelijke staaldata: Bouwen met Staal". Dat klopt waarschijnlijk niet voor hout en beton; graag aangeven wat er moet staan
 
 ### Fase 6: Zoeken
 
