@@ -160,7 +160,15 @@ Commits `bb379e0`, feedback verwerkt in `2f30b7c` en `31a808d`
 - [x] Liggerschatter (`/tools/beam`): kies staal, hout of beton, een vorm en een uitvoering, vul l in, en zie h (afgerond op 10 mm) met de andere maten van dezelfde tabelkolom (overstek a, pijl f, straal r …) en een waarschuwing als l buiten het bereik van de regel valt. Regels met (l+g) kunnen niet uit l alleen; dat staat erbij. De staal-liggerregels kregen daarvoor `symbol: "h"` en een bereik `when` (zelfde waarden als hun scope-tekst), dus op de staalpagina staat nu "h = l/15 – l/20". Precache 2089 KiB
 - [x] Vormschema's: per vorm een eigen SVG-schema (`BeamDiagram.svelte`, `src/lib/facts/shapes.ts`), getekend naar de figuren in het Vademecum, met l, h, a, f, r en g. Klein als pictogram in het overzicht Vuistregels, groot op de groepspagina en in de liggerschatter. Uit de figuren bleek wat h1, h2 en g zijn; labels en rapport zijn bijgewerkt. Precache 2127 KiB
 - [x] Liggerschatter: bij het driescharnierenspant met geknikt of gebogen spantbeen vul je ook g in (hoogte spantbeen, van voet tot knik, volgens de bronfiguur). Dan worden h_knik = (l+g)/n, h_nok en h_voet uitgerekend
-- [ ] Zoekindex (`src/routes/data/search.json/+server.ts` importeert de feitenbestanden één voor één)
+- [x] Zoekindex: elke vormpagina, elke vuistregel van hout en beton (met de vorm als tweede regel), de grafiekverwijzingen, de metselwerktabel per wandtype en de liggerschatter. Bijvoorbeeld "zadeldakligger", "toog voorspanning", "kalkzandsteen" of "overspanning". Precache 2203 KiB (was 1328 KiB vóór fase 8)
+
+Alle onderdelen van fase 8 zijn gebouwd. Nog te doen: controle door de gebruiker.
+
+**Te controleren door de gebruiker:**
+
+- De aandachtspunten in `reports/vuistregels-issues.md` (hout 1–9, beton 1–10, metselwerk 1–6), vooral het portaalspant (h.o.h. 10–40 m), de hsb-stijlen (binnen- en buitenmuur verwisseld?), 214 mm bij kalkzandsteen en g in (l+g)
+- De vormschema's naast de figuren in het Vademecum
+- Is de offline-cache van 2203 KiB acceptabel, of moeten de vormpagina's pas laden als je ze opent?
 
 ### Fase 9: Presentatie-checklist
 
