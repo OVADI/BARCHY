@@ -115,7 +115,7 @@
 		stroke-width: 1;
 	}
 	.dim text {
-		font: 500 11px var(--font-mono);
+		font: 500 11px var(--font-sans);
 		letter-spacing: 0.02em;
 		fill: var(--on-tile);
 	}
