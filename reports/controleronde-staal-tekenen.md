@@ -28,4 +28,6 @@ Niets hiervan is menselijk geverifieerd (`human_verified`); gecorrigeerde en gec
 | Hartlijn bij details | Bevestigd: de afbeelding is een gewone streeplijn, de tekst zegt gemengde streeplijn (dezelfde afbeelding wordt ook bij "niet zichtbaar" gebruikt) | Open, de app volgt de tekst |
 | Schoor | Bevestigd: rode streeplijn, geen dikte in de tekst | Open, de app volgt de afbeelding |
 
+Daarna (24-10-2026): de 10 tekenonderdelen die op Controleren stonden zijn door OVADI op `human_verified` gezet. Alleen HE 400 x107 en IPE 240 R, 270 R, 300 R blijven op Controleren en worden voorlopig niet gebruikt.
+
 Status na de ronde: 18 tekenonderdelen op `auto_checked` (4 lijnsoorten, 13 arceringen, de axo-handleiding), 10 blijven op Controleren (8 arceringen, plattegrond en detail).

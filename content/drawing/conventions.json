@@ -103,7 +103,9 @@
 					"message": "In de bron dezelfde kruisarcering als Hardhout, alleen iets verschoven"
 				}
 			],
-			"status": "flagged"
+			"status": "human_verified",
+			"verifiedBy": "OVADI",
+			"verifiedOn": "2026-10-24"
 		},
 		{
 			"id": "metselwerk-overige",
@@ -124,7 +126,9 @@
 					"message": "In de bron dezelfde schuine arcering als Hout, alleen iets verschoven"
 				}
 			],
-			"status": "flagged"
+			"status": "human_verified",
+			"verifiedBy": "OVADI",
+			"verifiedOn": "2026-10-24"
 		},
 		{
 			"id": "beton-1",
@@ -142,7 +146,9 @@
 					"message": "De gedetailleerde arcering (driehoekjes en stippen) staat bij 1:100 en 1:50, het egale grijze vlak bij 1:50 t/m 1:1. Mogelijk zijn de afbeeldingen in de bron verwisseld"
 				}
 			],
-			"status": "flagged"
+			"status": "human_verified",
+			"verifiedBy": "OVADI",
+			"verifiedOn": "2026-10-24"
 		},
 		{
 			"id": "beton-2",
@@ -160,7 +166,9 @@
 					"message": "Egaal grijs vlak bij de grote schalen; zie Beton variant 1"
 				}
 			],
-			"status": "flagged"
+			"status": "human_verified",
+			"verifiedBy": "OVADI",
+			"verifiedOn": "2026-10-24"
 		},
 		{
 			"id": "beton-prefab-1",
@@ -178,7 +186,9 @@
 					"message": "Zelfde volgorde als bij Beton: de gedetailleerde arcering bij de kleine schalen"
 				}
 			],
-			"status": "flagged"
+			"status": "human_verified",
+			"verifiedBy": "OVADI",
+			"verifiedOn": "2026-10-24"
 		},
 		{
 			"id": "beton-prefab-2",
@@ -196,7 +206,9 @@
 					"message": "Zie Beton prefab variant 1"
 				}
 			],
-			"status": "flagged"
+			"status": "human_verified",
+			"verifiedBy": "OVADI",
+			"verifiedOn": "2026-10-24"
 		},
 		{
 			"id": "hout",
@@ -213,7 +225,9 @@
 					"message": "In de bron dezelfde schuine arcering als Metselwerk overige"
 				}
 			],
-			"status": "flagged"
+			"status": "human_verified",
+			"verifiedBy": "OVADI",
+			"verifiedOn": "2026-10-24"
 		},
 		{
 			"id": "hardhout",
@@ -230,7 +244,9 @@
 					"message": "In de bron dezelfde kruisarcering als Steenachtig"
 				}
 			],
-			"status": "flagged"
+			"status": "human_verified",
+			"verifiedBy": "OVADI",
+			"verifiedOn": "2026-10-24"
 		},
 		{
 			"id": "hout-plaatmateriaal",
@@ -617,7 +633,9 @@
 					"message": "Bij de schoor geeft de tekst geen lijnsoort of dikte. De app volgt de afbeelding (rode streeplijn) en noemt geen dikte"
 				}
 			],
-			"status": "flagged"
+			"status": "human_verified",
+			"verifiedBy": "OVADI",
+			"verifiedOn": "2026-10-24"
 		},
 		{
 			"id": "axo",
@@ -817,7 +835,9 @@
 					"message": "Bij de hartlijn noemt de tekst een gemengde streeplijn, maar de afbeelding toont een streeplijn (dezelfde als bij 'niet zichtbaar'). Hier volgt de app de tekst"
 				}
 			],
-			"status": "flagged"
+			"status": "human_verified",
+			"verifiedBy": "OVADI",
+			"verifiedOn": "2026-10-24"
 		}
 	]
 }

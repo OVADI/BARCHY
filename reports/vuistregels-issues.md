@@ -2,7 +2,7 @@
 
 Bron: TU Delft Vademecum (TeachBooks), commit `9a2f70a`, map `book/ontwerp/`. Licentie CC BY 4.0.
 
-De tabellen zijn met de hand overgenomen. Elke kolom van een brontabel wordt één set regels met hetzelfde bereik (`when`). Alle regels en grafiekverwijzingen staan op Controleren (`flagged`). De paragraafnummers (§7.1 t/m §7.5 en §8.1 t/m §8.5) volgen de volgorde in `book/_toc.yml`. Engelse teksten zijn vertaald door BARCHY.
+De tabellen zijn met de hand overgenomen. Elke kolom van een brontabel wordt één set regels met hetzelfde bereik (`when`). Alle regels en grafiekverwijzingen zijn op 24-10-2026 door OVADI als juist overgenomen uit het Vademecum beoordeeld en staan op `human_verified`. De punten hieronder zijn onduidelijkheden in de bron zelf; het Vademecum geldt hier als waar. De paragraafnummers (§7.1 t/m §7.5 en §8.1 t/m §8.5) volgen de volgorde in `book/_toc.yml`. Engelse teksten zijn vertaald door BARCHY.
 
 ## Hout (hoofdstuk 7), `content/facts/timber.json`
 

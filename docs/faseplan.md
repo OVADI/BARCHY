@@ -190,7 +190,7 @@ Branch `claude/fase10-afronding`, gebaseerd op main met fase 8
   - versie 1.0.0
   - README met live-link, deploy en de licentie van de gegevens (CC BY 4.0)
 - **Hosting:** GitHub Pages op `barchy.ovadi.nl`. `static/CNAME` is toegevoegd, de deploy staat weer aan en `BASE_PATH` is leeg.
-- **Controleronde:** `npm run report:status` maakt `reports/controle.md`. Daarin staan nu 165 waarden op Controleren: 151 vuistregels en grafiekverwijzingen uit fase 8 (hout 67, beton 44, metselwerk 40), 10 tekenconventies en 4 staalprofielen (HE 1, IPE 3). De kop van `reports/bbl-issues.md` is bijgewerkt.
+- **Controleronde:** `npm run report:status` maakt `reports/controle.md`. Daarin stonden 165 waarden op Controleren (op 24-10-2026 zijn er 161 door OVADI op `human_verified` gezet; alleen de 4 staalprofielen blijven over): 151 vuistregels en grafiekverwijzingen uit fase 8 (hout 67, beton 44, metselwerk 40), 10 tekenconventies en 4 staalprofielen (HE 1, IPE 3). De kop van `reports/bbl-issues.md` is bijgewerkt.
 - Geen extra rekentools in deze fase.
 - **Na afloop:** nieuw logo (`static/logo.svg`, `Logo.svelte`, app-icoon met alleen het merkteken) en de uitleg "Zet op beginscherm" (`InstallGuide.svelte`, `src/lib/install.ts`). De uitleg verschijnt na de disclaimer en alleen op telefoon of tablet; op Over BARCHY staat een knop om hem opnieuw te openen.
 - Precache na deze fase: 223 bestanden, 2285 KiB (was 2203 KiB na fase 8)
