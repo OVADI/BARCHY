@@ -1,10 +1,12 @@
 <script lang="ts">
 	import Bookmark from '@lucide/svelte/icons/bookmark';
 	import BookmarkCheck from '@lucide/svelte/icons/bookmark-check';
+	import { onMount } from 'svelte';
 	import { resolve } from '$app/paths';
 	import ChoiceRow from '$lib/components/ChoiceRow.svelte';
 	import FlagMark from '$lib/components/FlagMark.svelte';
 	import IconButton from '$lib/components/IconButton.svelte';
+	import { numberParam } from '$lib/deeplink';
 	import InfoFab from '$lib/components/InfoFab.svelte';
 	import PageHeader from '$lib/components/PageHeader.svelte';
 	import Stat from '$lib/components/Stat.svelte';
@@ -26,6 +28,9 @@
 			: diameters[Math.floor(diameters.length / 2)]!
 	);
 	let count = $state(4);
+
+	// Opened from search: /concrete?d=12
+	onMount(() => (pickD = numberParam('d')));
 	const row = $derived(data.rows.find((r) => r.d === d)!);
 	const As = $derived(row.As[count - 1]!);
 	const flagged = $derived(row.status === 'flagged');

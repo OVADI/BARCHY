@@ -1,10 +1,12 @@
 <script lang="ts">
 	import Bookmark from '@lucide/svelte/icons/bookmark';
 	import BookmarkCheck from '@lucide/svelte/icons/bookmark-check';
+	import { onMount } from 'svelte';
 	import { resolve } from '$app/paths';
 	import ChoiceRow from '$lib/components/ChoiceRow.svelte';
 	import FlagMark from '$lib/components/FlagMark.svelte';
 	import IconButton from '$lib/components/IconButton.svelte';
+	import { numberParam } from '$lib/deeplink';
 	import InfoFab from '$lib/components/InfoFab.svelte';
 	import PageHeader from '$lib/components/PageHeader.svelte';
 	import ValueGrid from '$lib/components/ValueGrid.svelte';
@@ -27,6 +29,12 @@
 	let pickT = $state<number | null>(null);
 	const th = $derived(pickT !== null && thicknesses.includes(pickT) ? pickT : thicknesses[0]!);
 	const s = $derived(data.sheets.find((x) => x.h === h && x.t === th)!);
+
+	// Opened from search: /steel/sheets?h=40&t=0.88
+	onMount(() => {
+		pickH = numberParam('h');
+		pickT = numberParam('t');
+	});
 	const flagged = $derived(s.status === 'flagged');
 
 	// Per metre width, interpreted as ×10⁴ mm⁴/m and ×10³ mm³/m (see the issue on each record).

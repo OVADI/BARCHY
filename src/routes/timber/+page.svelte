@@ -1,10 +1,12 @@
 <script lang="ts">
 	import Bookmark from '@lucide/svelte/icons/bookmark';
 	import BookmarkCheck from '@lucide/svelte/icons/bookmark-check';
+	import { onMount } from 'svelte';
 	import { resolve } from '$app/paths';
 	import ChoiceRow from '$lib/components/ChoiceRow.svelte';
 	import FlagMark from '$lib/components/FlagMark.svelte';
 	import IconButton from '$lib/components/IconButton.svelte';
+	import { numberParam, param } from '$lib/deeplink';
 	import InfoFab from '$lib/components/InfoFab.svelte';
 	import PageHeader from '$lib/components/PageHeader.svelte';
 	import Pill from '$lib/components/Pill.svelte';
@@ -42,6 +44,14 @@
 			: heights.reduce((best, x) => (Math.abs(x - pickH!) < Math.abs(best - pickH!) ? x : best))
 	);
 	const s = $derived(ofKind.find((x) => x.b === b && x.h === h)!);
+
+	// Opened from search: /timber?kind=sawn&b=69&h=195
+	onMount(() => {
+		const k = param('kind');
+		if (k === 'sawn' || k === 'glulam') kind = k;
+		pickB = numberParam('b');
+		pickH = numberParam('h');
+	});
 	const flagged = $derived(s.status === 'flagged');
 
 	const values = $derived(

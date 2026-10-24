@@ -1,6 +1,7 @@
 <script lang="ts">
 	import Bookmark from '@lucide/svelte/icons/bookmark';
 	import BookmarkCheck from '@lucide/svelte/icons/bookmark-check';
+	import { onMount } from 'svelte';
 	import { resolve } from '$app/paths';
 	import FactTile from '$lib/components/FactTile.svelte';
 	import IconButton from '$lib/components/IconButton.svelte';
@@ -8,8 +9,9 @@
 	import PageHeader from '$lib/components/PageHeader.svelte';
 	import Pill from '$lib/components/Pill.svelte';
 	import { MISSING_URL } from '$lib/config';
-	import { t, type MessageKey } from '$lib/i18n/index.svelte';
-	import type { Fact } from '$lib/schema/fact';
+	import { param, revealHash } from '$lib/deeplink';
+	import { STEEL_FACT_GROUPS, type SteelTab } from '$lib/facts/groups';
+	import { t } from '$lib/i18n/index.svelte';
 	import type { SourceRef } from '$lib/schema/source';
 	import { source } from '$lib/sources';
 	import { saved } from '$lib/storage/saved.svelte';
@@ -17,21 +19,17 @@
 
 	let { data }: PageProps = $props();
 
-	type Tab = 'profiles' | 'rules' | 'material';
-	let tab = $state<Tab>('profiles');
+	let tab = $state<SteelTab>('profiles');
 
 	const FEATURED = 'staal-hoofdligger-vloer-i-u-profiel';
 	const featured = $derived(data.facts.find((f) => f.id === FEATURED));
 
-	const groups: { key: string; title: MessageKey; type: Fact['type'] }[] = [
-		{ key: 'beams-floor', title: 'steel.beamsFloor', type: 'rule_of_thumb' },
-		{ key: 'beams-roof', title: 'steel.beamsRoof', type: 'rule_of_thumb' },
-		{ key: 'purlins', title: 'steel.purlins', type: 'rule_of_thumb' },
-		{ key: 'columns', title: 'steel.columns', type: 'rule_of_thumb' },
-		{ key: 'stability', title: 'steel.stability', type: 'rule_of_thumb' },
-		{ key: 'material', title: 'steel.properties', type: 'data' },
-		{ key: 'grades', title: 'steel.grades', type: 'data' }
-	];
+	const groups = STEEL_FACT_GROUPS;
+	onMount(() => {
+		const wanted = param('tab');
+		if (wanted === 'rules' || wanted === 'material') tab = wanted;
+		void revealHash();
+	});
 	const shown = $derived(
 		groups.filter((g) => (tab === 'rules' ? g.type === 'rule_of_thumb' : g.type === 'data'))
 	);

@@ -2,6 +2,7 @@
 	import Bookmark from '@lucide/svelte/icons/bookmark';
 	import BookmarkCheck from '@lucide/svelte/icons/bookmark-check';
 	import ChevronRight from '@lucide/svelte/icons/chevron-right';
+	import { onMount } from 'svelte';
 	import { resolve } from '$app/paths';
 	import FactTile from '$lib/components/FactTile.svelte';
 	import FlagMark from '$lib/components/FlagMark.svelte';
@@ -9,7 +10,9 @@
 	import InfoFab from '$lib/components/InfoFab.svelte';
 	import PageHeader from '$lib/components/PageHeader.svelte';
 	import Pill from '$lib/components/Pill.svelte';
-	import { t, type MessageKey } from '$lib/i18n/index.svelte';
+	import { param, revealHash } from '$lib/deeplink';
+	import { SPACE_TABS, type SpaceTab } from '$lib/facts/groups';
+	import { t } from '$lib/i18n/index.svelte';
 	import type { SourceRef } from '$lib/schema/source';
 	import { source } from '$lib/sources';
 	import { saved } from '$lib/storage/saved.svelte';
@@ -17,34 +20,15 @@
 
 	let { data }: PageProps = $props();
 
-	type Tab = 'rooms' | 'circulation' | 'guarding';
-	let tab = $state<Tab>('rooms');
+	let tab = $state<SpaceTab>('rooms');
+	const tabs = SPACE_TABS;
 
-	const tabs: { key: Tab; title: MessageKey; groups: { key: string; title: MessageKey }[] }[] = [
-		{
-			key: 'rooms',
-			title: 'spacePage.rooms',
-			groups: [
-				{ key: 'living', title: 'spacePage.living' },
-				{ key: 'sanitary', title: 'spacePage.sanitary' },
-				{ key: 'outdoor', title: 'spacePage.outdoor' }
-			]
-		},
-		{
-			key: 'circulation',
-			title: 'spacePage.circulation',
-			groups: [
-				{ key: 'stair', title: 'spacePage.stair' },
-				{ key: 'ramp', title: 'spacePage.ramp' },
-				{ key: 'access', title: 'spacePage.access' }
-			]
-		},
-		{
-			key: 'guarding',
-			title: 'spacePage.guarding',
-			groups: [{ key: 'guarding', title: 'spacePage.guarding' }]
-		}
-	];
+	onMount(() => {
+		const wanted = param('tab');
+		const found = tabs.find((x) => x.key === wanted);
+		if (found) tab = found.key;
+		void revealHash();
+	});
 	const current = $derived(tabs.find((x) => x.key === tab)!);
 	const anyFlagged = $derived(data.facts.some((f) => f.status === 'flagged'));
 
