@@ -31,9 +31,19 @@
 	</div>
 </header>
 
-<a class="search" href={resolve('/search')}>
-	<Search size={20} strokeWidth={1.5} aria-hidden="true" />{t('home.searchPlaceholder')}
-</a>
+<form class="search" role="search" action={resolve('/search')} method="get">
+	<Search size={20} strokeWidth={1.5} aria-hidden="true" />
+	<input
+		type="search"
+		name="q"
+		enterkeyhint="search"
+		autocomplete="off"
+		autocapitalize="off"
+		spellcheck="false"
+		aria-label={t('search.label')}
+		placeholder={t('home.searchPlaceholder')}
+	/>
+</form>
 
 {#if saved.recent.length}
 	<section class="recent" aria-label={t('home.recent')}>
@@ -160,6 +170,23 @@
 	}
 	.search:hover {
 		background: var(--surface-raised);
+	}
+	.search:focus-within {
+		outline: 2px solid var(--paper);
+		outline-offset: 2px;
+	}
+	.search input {
+		flex: 1;
+		min-width: 0;
+		min-height: var(--touch);
+		border: 0;
+		background: none;
+		color: var(--ink);
+		font: 400 17px/1.2 var(--font-sans);
+		outline: none;
+	}
+	.search input::placeholder {
+		color: var(--ink-muted);
 	}
 	.recent ul {
 		list-style: none;

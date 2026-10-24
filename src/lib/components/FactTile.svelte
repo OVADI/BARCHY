@@ -22,7 +22,13 @@
 	const value = $derived(formatFact(fact, formatNumber));
 </script>
 
-<article class="fact type-{fact.type}" class:lg={size === 'lg'} class:selected data-fact={fact.id}>
+<article
+	id={fact.id}
+	class="fact type-{fact.type}"
+	class:lg={size === 'lg'}
+	class:selected
+	data-fact={fact.id}
+>
 	<div class="head">
 		<TypeTag type={fact.type} inverse />
 		{#if fact.status === 'flagged'}<FlagMark label={t('status.factFlagged')} />{/if}
@@ -68,6 +74,12 @@
 	.select:focus-visible::after {
 		outline: 3px solid var(--focus);
 		outline-offset: 2px;
+	}
+	/* Opened from search: outline the fact that was looked for. */
+	.fact:global([data-found]) {
+		scroll-margin: var(--space-6);
+		outline: 3px solid var(--paper);
+		outline-offset: 3px;
 	}
 	.lg {
 		padding: var(--space-5);

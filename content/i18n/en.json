@@ -83,7 +83,27 @@
 		"toolsSub": "Calculate and check instantly"
 	},
 	"search": {
-		"title": "Search"
+		"title": "Search",
+		"label": "Search BARCHY",
+		"placeholder": "Section, size, requirement or tool",
+		"clear": "Clear",
+		"submit": "Search",
+		"try": "Try for example",
+		"hint": "Other spellings work too: HE 200 A finds HEA 200, 48.3x4 finds CHS 48.3×4.",
+		"count": "{n} results",
+		"countOne": "1 result",
+		"none": "Nothing found for “{q}”.",
+		"noneHint": "Search for a section name, a size such as 69x195, or a word such as stair or toilet.",
+		"showAll": "Show all {n}",
+		"info": "Search works offline too. The index holds steel sections, timber, rebar, steel sheets, Bbl requirements, rules of thumb and the tools.",
+		"kind": {
+			"tool": "Tool",
+			"page": "Screen",
+			"steel": "Steel section",
+			"timber": "Timber",
+			"rebar": "Rebar",
+			"sheet": "Steel sheet"
+		}
 	},
 	"tools": {
 		"title": "Calculators",

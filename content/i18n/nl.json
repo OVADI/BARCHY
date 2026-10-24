@@ -83,7 +83,27 @@
 		"toolsSub": "Rekenen en direct toetsen"
 	},
 	"search": {
-		"title": "Zoeken"
+		"title": "Zoeken",
+		"label": "Zoek in BARCHY",
+		"placeholder": "Profiel, maat, eis of tool",
+		"clear": "Wissen",
+		"submit": "Zoeken",
+		"try": "Probeer bijvoorbeeld",
+		"hint": "Andere schrijfwijzen werken ook: HE 200 A vindt HEA 200, 48,3x4 vindt CHS 48,3×4.",
+		"count": "{n} resultaten",
+		"countOne": "1 resultaat",
+		"none": "Niets gevonden voor “{q}”.",
+		"noneHint": "Zoek op een profielnaam, een maat zoals 69x195, of een woord zoals trap of toilet.",
+		"showAll": "Toon alle {n}",
+		"info": "Zoeken werkt ook offline. De index bevat staalprofielen, hout, wapening, staalplaten, Bbl-eisen, vuistregels en de tools.",
+		"kind": {
+			"tool": "Tool",
+			"page": "Scherm",
+			"steel": "Staalprofiel",
+			"timber": "Hout",
+			"rebar": "Wapening",
+			"sheet": "Staalplaat"
+		}
 	},
 	"tools": {
 		"title": "Rekentools",
