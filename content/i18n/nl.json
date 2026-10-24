@@ -279,6 +279,16 @@
 	"drawing": {
 		"title": "Tekenen"
 	},
+	"stairDiagram": {
+		"view": "Aanzicht",
+		"section": "Doorsnede",
+		"plan": "Plattegrond",
+		"schematic": "Niet op schaal",
+		"walkingLine": "klimlijn",
+		"hint": "Tik op een waarde om die in de tekening te zien",
+		"sectionLabel": "Doorsnede van een trap met hoogteverschil, optrede, aantrede, tredevlak, vrije hoogte en leuning",
+		"planLabel": "Plattegrond van een kwartslagtrap met breedte, klimlijn, tredevlak bij de spil en vloer bij de bovenste trede"
+	},
 	"spacePage": {
 		"title": "Ruimte & mens",
 		"scope": "Bbl-eisen voor een woonfunctie, nieuwbouw (hoofdstuk 4). Versie geldend vanaf 24-09-2026.",

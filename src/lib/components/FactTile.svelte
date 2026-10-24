@@ -6,17 +6,42 @@
 	import TypeTag from './TypeTag.svelte';
 
 	/** One sourced value in the colour of its type: cobalt = requirement, orange = rule, white = data. */
-	let { fact, size = 'md' }: { fact: Fact; size?: 'md' | 'lg' } = $props();
+	let {
+		fact,
+		size = 'md',
+		selected = false,
+		onselect
+	}: {
+		fact: Fact;
+		size?: 'md' | 'lg';
+		/** Set onselect to make the whole tile a toggle, e.g. to point at it in a diagram. */
+		selected?: boolean;
+		onselect?: () => void;
+	} = $props();
 
 	const value = $derived(formatFact(fact, formatNumber));
 </script>
 
-<article id={fact.id} class="fact type-{fact.type}" class:lg={size === 'lg'}>
+<article
+	id={fact.id}
+	class="fact type-{fact.type}"
+	class:lg={size === 'lg'}
+	class:selected
+	data-fact={fact.id}
+>
 	<div class="head">
 		<TypeTag type={fact.type} inverse />
 		{#if fact.status === 'flagged'}<FlagMark label={t('status.factFlagged')} />{/if}
 	</div>
-	<h3 class="t-body label">{fact.label[i18n.locale]}</h3>
+	<h3 class="t-body label">
+		{#if onselect}
+			<button type="button" class="select" aria-pressed={selected} onclick={onselect}
+				>{fact.label[i18n.locale]}</button
+			>
+		{:else}
+			{fact.label[i18n.locale]}
+		{/if}
+	</h3>
 	<p class="value" class:t-numeral-lg={size === 'lg'} class:t-numeral-md={size === 'md'}>{value}</p>
 	{#if fact.scope}<p class="t-body-sm">{fact.scope[i18n.locale]}</p>{/if}
 </article>
@@ -29,6 +54,26 @@
 		padding: var(--space-4);
 		border-radius: var(--radius-md);
 		min-width: 0;
+		position: relative;
+	}
+	.selected {
+		outline: 3px solid var(--ink);
+		outline-offset: 2px;
+	}
+	.select {
+		all: unset;
+		cursor: pointer;
+	}
+	/* The button covers the whole tile, so the tile is one tap target. */
+	.select::after {
+		content: '';
+		position: absolute;
+		inset: 0;
+		border-radius: inherit;
+	}
+	.select:focus-visible::after {
+		outline: 3px solid var(--focus);
+		outline-offset: 2px;
 	}
 	/* Opened from search: outline the fact that was looked for. */
 	.fact:global([data-found]) {

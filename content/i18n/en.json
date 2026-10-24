@@ -279,6 +279,16 @@
 	"drawing": {
 		"title": "Drawing"
 	},
+	"stairDiagram": {
+		"view": "View",
+		"section": "Section",
+		"plan": "Plan",
+		"schematic": "Not to scale",
+		"walkingLine": "walking line",
+		"hint": "Tap a value to see it in the drawing",
+		"sectionLabel": "Section of a stair showing height difference, riser, going, tread, clear height and handrail",
+		"planLabel": "Plan of a quarter-turn stair showing width, walking line, tread at the inner corner and floor at the top step"
+	},
 	"spacePage": {
 		"title": "Space & people",
 		"scope": "Bbl requirements for a dwelling, new build (chapter 4). Version in force from 24-09-2026.",
