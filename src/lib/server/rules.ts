@@ -14,13 +14,14 @@ export function rulesOf(material: RuleMaterial) {
 
 /**
  * What the Rules tab needs per group: its label, one rule to preview (the depth rule if there is
- * one) and the number of charts. Keeps the material page small; each group page loads the rest.
+ * one, else a rule of thumb before product data) and the number of charts. Keeps the material page small; each group page loads the rest.
  */
 export function rulesOverview(material: RuleMaterial) {
 	const { facts, groups, charts } = rulesOf(material);
 	return groups.map((g) => {
 		const list = facts.filter((f) => f.group === g.id);
-		const lead = list.find((f) => f.symbol === 'h') ?? list[0];
+		const lead =
+			list.find((f) => f.symbol === 'h') ?? list.find((f) => f.type === 'rule_of_thumb') ?? list[0];
 		return {
 			id: g.id,
 			label: g.label,

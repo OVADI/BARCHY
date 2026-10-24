@@ -414,7 +414,8 @@
 		"chartWhere": "The chart itself is in the source: {ref}.",
 		"openSource": "Open the source",
 		"flagged": "These rules of thumb were copied by hand from the Vademecum and have not been checked yet. Use them for a first estimate and check the source when in doubt.",
-		"method": "Each column of a table in the source is one set of rules with the same range. Charts are referenced, without values read from them."
+		"method": "Each column of a table in the source is one set of rules with the same range. Charts are referenced, without values read from them.",
+		"diagram": "Diagram drawn by BARCHY after the figure in the Vademecum."
 	},
 	"masonry": {
 		"title": "Masonry",

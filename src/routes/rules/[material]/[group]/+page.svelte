@@ -1,6 +1,7 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
 	import { resolve } from '$app/paths';
+	import BeamDiagram from '$lib/components/BeamDiagram.svelte';
 	import ChartCard from '$lib/components/ChartCard.svelte';
 	import FactTile from '$lib/components/FactTile.svelte';
 	import InfoFab from '$lib/components/InfoFab.svelte';
@@ -8,6 +9,7 @@
 	import RuleNotes from '$lib/components/RuleNotes.svelte';
 	import { revealHash } from '$lib/deeplink';
 	import { RULE_SECTION_TITLE, RULE_SECTIONS } from '$lib/facts/rules';
+	import { shapeOf } from '$lib/facts/shapes';
 	import { i18n, t } from '$lib/i18n/index.svelte';
 	import type { SourceRef } from '$lib/schema/source';
 	import type { PageProps } from './$types';
@@ -20,6 +22,7 @@
 	const materialTitle = $derived(t(data.material === 'timber' ? 'timber.title' : 'concrete.title'));
 
 	// The header names the section (short); the group label, often long, is the heading below it.
+	const shape = $derived(shapeOf(data.group.id));
 	const section = $derived(
 		RULE_SECTIONS[data.material].find((s) => s.groups.includes(data.group.id))!
 	);
@@ -39,6 +42,13 @@
 
 {#if section.groups.length > 1}
 	<h2 class="t-title heading">{data.group.label[i18n.locale]}</h2>
+{/if}
+
+{#if shape}
+	<figure class="diagram">
+		<BeamDiagram {shape} label={data.group.label[i18n.locale]} />
+		<figcaption class="t-body-sm">{t('rules.diagram')}</figcaption>
+	</figure>
 {/if}
 
 {#if data.group.notes}
@@ -62,6 +72,19 @@
 <style>
 	.heading {
 		margin: 0 0 var(--space-3);
+	}
+	.diagram {
+		display: flex;
+		flex-direction: column;
+		gap: var(--space-2);
+		margin: 0 0 var(--space-3);
+		padding: var(--space-4);
+		border-radius: var(--radius-md);
+		background: var(--paper);
+		color: var(--on-tile);
+	}
+	.diagram figcaption {
+		color: var(--on-tile-muted);
 	}
 	.group-notes {
 		padding: 0 var(--space-1);

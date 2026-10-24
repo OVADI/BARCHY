@@ -1,8 +1,10 @@
 <script lang="ts">
 	import ChevronRight from '@lucide/svelte/icons/chevron-right';
+	import BeamDiagram from './BeamDiagram.svelte';
 	import { resolve } from '$app/paths';
 	import { formatFact } from '$lib/facts/format';
 	import { RULE_SECTION_TITLE, RULE_SECTIONS } from '$lib/facts/rules';
+	import { shapeOf } from '$lib/facts/shapes';
 	import { formatNumber, i18n, t } from '$lib/i18n/index.svelte';
 	import type { RulesOverviewGroup } from '$lib/server/rules';
 
@@ -25,8 +27,14 @@
 			<h2 id="rules-{s.key}" class="t-label t-muted section">{t(RULE_SECTION_TITLE[s.key])}</h2>
 			<ul class="rows">
 				{#each s.groups as g (g)}
+					{@const shape = shapeOf(g)}
 					<li>
-						<a class="row" href={resolve('/rules/[material]/[group]', { material, group: g })}>
+						<a
+							class="row"
+							class:with-shape={shape}
+							href={resolve('/rules/[material]/[group]', { material, group: g })}
+						>
+							{#if shape}<BeamDiagram {shape} labels={false} label={label(g)} />{/if}
 							<span class="what">
 								<span class="title">{label(g)}</span>
 								<span class="t-body-sm sub">{preview(g)}</span>
@@ -59,6 +67,7 @@
 	.row {
 		display: grid;
 		grid-template-columns: 1fr 18px;
+		--diagram-bg: var(--surface);
 		align-items: center;
 		gap: var(--space-3);
 		min-height: 64px;
@@ -67,10 +76,14 @@
 		background: var(--surface);
 		color: var(--ink);
 	}
+	.with-shape {
+		grid-template-columns: 88px 1fr 18px;
+	}
 	.row:hover {
+		--diagram-bg: var(--surface-raised);
 		background: var(--surface-raised);
 	}
-	.row > :global(svg) {
+	.row > :global(svg:last-child) {
 		color: var(--ink-muted);
 	}
 	.what {

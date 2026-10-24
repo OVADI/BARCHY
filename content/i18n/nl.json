@@ -414,7 +414,8 @@
 		"chartWhere": "De grafiek zelf staat in de bron: {ref}.",
 		"openSource": "Open de bron",
 		"flagged": "Deze vuistregels zijn met de hand overgenomen uit het Vademecum en nog niet gecontroleerd. Gebruik ze voor een eerste schatting en raadpleeg bij twijfel de bron.",
-		"method": "Elke kolom van een tabel in de bron is één set regels met hetzelfde bereik. Grafieken staan als verwijzing in de app, zonder afgelezen waarden."
+		"method": "Elke kolom van een tabel in de bron is één set regels met hetzelfde bereik. Grafieken staan als verwijzing in de app, zonder afgelezen waarden.",
+		"diagram": "Schema getekend door BARCHY naar de figuur in het Vademecum."
 	},
 	"masonry": {
 		"title": "Metselwerk",

@@ -280,8 +280,8 @@
 			"type": "rule_of_thumb",
 			"group": "beams-pitched",
 			"label": {
-				"nl": "Hoogte h1 (zie bronfiguur)",
-				"en": "Depth h1 (see source figure)"
+				"nl": "Hoogte bij de nok h1",
+				"en": "Depth at the ridge h1"
 			},
 			"symbol": "h1",
 			"value": [14, 18],
@@ -314,8 +314,8 @@
 			"type": "rule_of_thumb",
 			"group": "beams-pitched",
 			"label": {
-				"nl": "Hoogte h2 (zie bronfiguur)",
-				"en": "Depth h2 (see source figure)"
+				"nl": "Hoogte bij de oplegging h2",
+				"en": "Depth at the support h2"
 			},
 			"symbol": "h2",
 			"value": [18, 22],
@@ -2362,8 +2362,8 @@
 				{
 					"kind": "note",
 					"text": {
-						"nl": "Bij alle varianten is de dakhelling α ongeveer 20°. Het symbool g in (l+g) wordt in de bron niet uitgelegd; zie de bronfiguur.",
-						"en": "In all variants the roof pitch α is about 20°. The source does not explain g in (l+g); see the source figure."
+						"nl": "Bij alle varianten is de dakhelling α ongeveer 20°. In de bronfiguur is g de hoogte van het spantbeen, van de voet tot de knik; de tekst legt g niet uit.",
+						"en": "In all variants the roof pitch α is about 20°. In the source figure g is the height of the leg, from the base to the knee; the text does not explain g."
 					}
 				}
 			]

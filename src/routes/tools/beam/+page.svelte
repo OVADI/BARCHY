@@ -2,6 +2,7 @@
 	import TriangleAlert from '@lucide/svelte/icons/triangle-alert';
 	import { onMount } from 'svelte';
 	import { resolve } from '$app/paths';
+	import BeamDiagram from '$lib/components/BeamDiagram.svelte';
 	import FlagMark from '$lib/components/FlagMark.svelte';
 	import InfoFab from '$lib/components/InfoFab.svelte';
 	import PageHeader from '$lib/components/PageHeader.svelte';
@@ -20,6 +21,7 @@
 	import { numberParam, param } from '$lib/deeplink';
 	import { formatFact } from '$lib/facts/format';
 	import { STEEL_FACT_GROUPS } from '$lib/facts/groups';
+	import { shapeOf } from '$lib/facts/shapes';
 	import { formatNumber, i18n, t } from '$lib/i18n/index.svelte';
 	import type { Condition } from '$lib/schema/fact';
 	import type { SourceRef } from '$lib/schema/source';
@@ -47,6 +49,7 @@
 	let l = $state(8);
 	const estimate = $derived(estimateBeam(variant, l));
 	const lead = $derived(estimate.results[0]!);
+	const shape = $derived(shapeOf(group, variant.key));
 
 	// Opened as /tools/beam?material=steel&group=purlins&l=6
 	onMount(() => {
@@ -139,6 +142,12 @@
 		onchange={(v) => (l = v)}
 	/>
 </Tile>
+
+{#if shape}
+	<figure class="diagram">
+		<BeamDiagram {shape} label={groupLabel(group)} />
+	</figure>
+{/if}
 
 {#if estimate.outside.length}
 	<div class="warning" role="alert">
@@ -238,6 +247,13 @@
 		background: var(--surface-raised);
 		color: var(--ink);
 		font: var(--body);
+	}
+	.diagram {
+		margin: 0;
+		padding: var(--space-3) var(--space-4);
+		border-radius: var(--radius-md);
+		background: var(--paper);
+		color: var(--on-tile);
 	}
 	.warning {
 		display: grid;
