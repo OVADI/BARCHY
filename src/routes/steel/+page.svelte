@@ -240,6 +240,12 @@
 	.featured > .t-label {
 		color: var(--ink-muted);
 	}
+	/* Rules of thumb on the steel screen are white (data white); the orange tag still names the type. */
+	.facts :global(.fact.type-rule_of_thumb),
+	.featured :global(.fact.type-rule_of_thumb) {
+		background: var(--paper);
+		color: var(--on-tile);
+	}
 	.facts {
 		display: flex;
 		flex-direction: column;
