@@ -63,7 +63,8 @@
 	},
 	"stepper": {
 		"decrease": "{label} minus {step}",
-		"increase": "{label} plus {step}"
+		"increase": "{label} plus {step}",
+		"edit": "Enter {label}"
 	},
 	"home": {
 		"searchPlaceholder": "Search: HEA 200, stair, toilet",
