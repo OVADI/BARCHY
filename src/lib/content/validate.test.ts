@@ -36,7 +36,7 @@ describe('validateContent', () => {
 
 	it('rejects a record that has errors but claims to be verified', () => {
 		const root = copy();
-		edit(root, 'steel/rhs.json', (d) => {
+		edit(root, 'steel/ipe.json', (d) => {
 			const flagged = (d.sections as { status: string }[]).find((s) => s.status === 'flagged')!;
 			flagged.status = 'auto_checked';
 		});

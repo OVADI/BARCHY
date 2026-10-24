@@ -1638,85 +1638,87 @@
 				"HE AA 360",
 				"HEAA 360"
 			],
-			"G": 218,
-			"A": 1070000,
+			"G": 83.7,
+			"A": 10660,
 			"Iy": 230400000,
 			"Wy": 1359000,
 			"iy": 147,
-			"issues": [
+			"issues": [],
+			"corrections": [
 				{
-					"check": "mass",
-					"severity": "error",
 					"field": "G",
-					"expected": 8399.5,
-					"found": 218,
-					"message": "G wijkt -97.4 % af van A × 7850 kg/m³"
+					"from": 218,
+					"to": 83.7,
+					"reason": "Deze bronrij wijkt af: de eerste cel (218) komt niet in de catalogus voor, G staat als 837 (×10), b ontbreekt, en h, tw en tf staan één plaats te laag. G = 83,7 kg/m (bron: 837); catalogus komt overeen.",
+					"source": {
+						"title": "ArcelorMittal Europe – Long Products, Sections and Merchant bars, Sales programme 2024-1",
+						"ref": "HE AA, A, B en M, maten p. 56, eigenschappen p. 57",
+						"url": "https://sections.arcelormittal.com/sections/repository/Sections/Sections_MB_ArcelorMittal_FR_EN_DE.pdf"
+					}
 				},
 				{
-					"check": "gyration",
-					"severity": "error",
-					"field": "iy",
-					"expected": 14.674,
-					"found": 147,
-					"message": "iy wijkt 901.8 % af van √(Iy/A)"
+					"field": "h",
+					"from": 837,
+					"to": 339,
+					"reason": "Deze bronrij wijkt af: de eerste cel (218) komt niet in de catalogus voor, G staat als 837 (×10), b ontbreekt, en h, tw en tf staan één plaats te laag. h = 339 mm (bron onder b); catalogus komt overeen.",
+					"source": {
+						"title": "ArcelorMittal Europe – Long Products, Sections and Merchant bars, Sales programme 2024-1",
+						"ref": "HE AA, A, B en M, maten p. 56, eigenschappen p. 57",
+						"url": "https://sections.arcelormittal.com/sections/repository/Sections/Sections_MB_ArcelorMittal_FR_EN_DE.pdf"
+					}
 				},
 				{
-					"check": "gyration",
-					"severity": "error",
-					"field": "iz",
-					"expected": 7.111,
-					"found": 71.2,
-					"message": "iz wijkt 901.3 % af van √(Iz/A)"
+					"field": "b",
+					"from": 339,
+					"to": 300,
+					"reason": "Deze bronrij wijkt af: de eerste cel (218) komt niet in de catalogus voor, G staat als 837 (×10), b ontbreekt, en h, tw en tf staan één plaats te laag. b = 300 mm (ontbreekt in de bron); catalogus komt overeen.",
+					"source": {
+						"title": "ArcelorMittal Europe – Long Products, Sections and Merchant bars, Sales programme 2024-1",
+						"ref": "HE AA, A, B en M, maten p. 56, eigenschappen p. 57",
+						"url": "https://sections.arcelormittal.com/sections/repository/Sections/Sections_MB_ArcelorMittal_FR_EN_DE.pdf"
+					}
 				},
 				{
-					"check": "modulus",
-					"severity": "error",
-					"field": "Wy",
-					"expected": 550537.634,
-					"found": 1359000,
-					"message": "Wy wijkt 146.8 % af van Iy/(h/2)"
+					"field": "tw",
+					"from": 90,
+					"to": 9,
+					"reason": "Deze bronrij wijkt af: de eerste cel (218) komt niet in de catalogus voor, G staat als 837 (×10), b ontbreekt, en h, tw en tf staan één plaats te laag. tw = 9 mm (bron: 90); catalogus komt overeen.",
+					"source": {
+						"title": "ArcelorMittal Europe – Long Products, Sections and Merchant bars, Sales programme 2024-1",
+						"ref": "HE AA, A, B en M, maten p. 56, eigenschappen p. 57",
+						"url": "https://sections.arcelormittal.com/sections/repository/Sections/Sections_MB_ArcelorMittal_FR_EN_DE.pdf"
+					}
 				},
 				{
-					"check": "modulus",
-					"severity": "error",
-					"field": "Wz",
-					"expected": 319174.041,
-					"found": 361000,
-					"message": "Wz wijkt 13.1 % af van Iz/(b/2)"
+					"field": "tf",
+					"from": 120,
+					"to": 12,
+					"reason": "Deze bronrij wijkt af: de eerste cel (218) komt niet in de catalogus voor, G staat als 837 (×10), b ontbreekt, en h, tw en tf staan één plaats te laag. tf = 12 mm (bron: 120); catalogus komt overeen.",
+					"source": {
+						"title": "ArcelorMittal Europe – Long Products, Sections and Merchant bars, Sales programme 2024-1",
+						"ref": "HE AA, A, B en M, maten p. 56, eigenschappen p. 57",
+						"url": "https://sections.arcelormittal.com/sections/repository/Sections/Sections_MB_ArcelorMittal_FR_EN_DE.pdf"
+					}
 				},
 				{
-					"check": "geometry",
-					"severity": "warning",
 					"field": "A",
-					"expected": 135090,
-					"found": 1070000,
-					"message": "A wijkt 692.1 % af van de geometrie (zonder afrondingen (r onbekend))"
-				},
-				{
-					"check": "geometry",
-					"severity": "warning",
-					"field": "Iy",
-					"expected": 12150023557.5,
-					"found": 230400000,
-					"message": "Iy wijkt -98.1 % af van de geometrie (zonder afrondingen (r onbekend))"
-				},
-				{
-					"check": "geometry",
-					"severity": "warning",
-					"field": "Wy",
-					"expected": 29032314.355,
-					"found": 1359000,
-					"message": "Wy wijkt -95.3 % af van de geometrie (zonder afrondingen (r onbekend))"
+					"from": 1070000,
+					"to": 10660,
+					"reason": "Deze bronrij wijkt af: de eerste cel (218) komt niet in de catalogus voor, G staat als 837 (×10), b ontbreekt, en h, tw en tf staan één plaats te laag. A = 106,6 cm² (bron: 107 cm², afgerond); catalogus komt overeen.",
+					"source": {
+						"title": "ArcelorMittal Europe – Long Products, Sections and Merchant bars, Sales programme 2024-1",
+						"ref": "HE AA, A, B en M, maten p. 56, eigenschappen p. 57",
+						"url": "https://sections.arcelormittal.com/sections/repository/Sections/Sections_MB_ArcelorMittal_FR_EN_DE.pdf"
+					}
 				}
 			],
-			"corrections": [],
 			"derived": [],
-			"status": "flagged",
+			"status": "auto_checked",
 			"shape": "I",
-			"h": 837,
-			"b": 339,
-			"tw": 90,
-			"tf": 120,
+			"h": 339,
+			"b": 300,
+			"tw": 9,
+			"tf": 12,
 			"Iz": 54100000,
 			"Wz": 361000,
 			"iz": 71.2
@@ -1735,92 +1737,87 @@
 				"HE A 360",
 				"HEA 360"
 			],
-			"G": 143,
-			"A": 1430000,
+			"G": 112.1,
+			"A": 14280,
 			"Iy": 330900000,
 			"Wy": 1891000,
 			"iy": 152,
-			"issues": [
+			"issues": [],
+			"corrections": [
 				{
-					"check": "plausible",
-					"severity": "error",
-					"field": "h",
-					"expected": 175,
-					"found": 112.1,
-					"message": "h moet groter zijn dan b/2"
-				},
-				{
-					"check": "plausible",
-					"severity": "error",
-					"field": "tf",
-					"found": 175,
-					"message": "2·tf moet kleiner zijn dan h"
-				},
-				{
-					"check": "mass",
-					"severity": "error",
 					"field": "G",
-					"expected": 11225.5,
-					"found": 143,
-					"message": "G wijkt -98.7 % af van A × 7850 kg/m³"
+					"from": 143,
+					"to": 112.1,
+					"reason": "In de bron ontbreekt de kolom b en staan de kolommen één plaats verschoven: onder G staat A [cm²], onder h staat G, onder b staat h, en tw en tf zijn ×10. De kolomvolgorde is voor alle acht HE 360- en HE 400-rijen gelijk. De waarde is hersteld; G = 112.1 kg/m staat in de bron onder h; catalogus 112 kg/m (afgerond).",
+					"source": {
+						"title": "ArcelorMittal Europe – Long Products, Sections and Merchant bars, Sales programme 2024-1",
+						"ref": "HE AA, A, B en M, maten p. 56, eigenschappen p. 57",
+						"url": "https://sections.arcelormittal.com/sections/repository/Sections/Sections_MB_ArcelorMittal_FR_EN_DE.pdf"
+					}
 				},
 				{
-					"check": "gyration",
-					"severity": "error",
-					"field": "iy",
-					"expected": 15.212,
-					"found": 152,
-					"message": "iy wijkt 899.2 % af van √(Iy/A)"
+					"field": "h",
+					"from": 112.1,
+					"to": 350,
+					"reason": "In de bron ontbreekt de kolom b en staan de kolommen één plaats verschoven: onder G staat A [cm²], onder h staat G, onder b staat h, en tw en tf zijn ×10. De kolomvolgorde is voor alle acht HE 360- en HE 400-rijen gelijk. De waarde is hersteld; h = 350 mm staat in de bron onder b; catalogus 350 mm.",
+					"source": {
+						"title": "ArcelorMittal Europe – Long Products, Sections and Merchant bars, Sales programme 2024-1",
+						"ref": "HE AA, A, B en M, maten p. 56, eigenschappen p. 57",
+						"url": "https://sections.arcelormittal.com/sections/repository/Sections/Sections_MB_ArcelorMittal_FR_EN_DE.pdf"
+					}
 				},
 				{
-					"check": "gyration",
-					"severity": "error",
-					"field": "iz",
-					"expected": 7.427,
-					"found": 74.3,
-					"message": "iz wijkt 900.5 % af van √(Iz/A)"
+					"field": "b",
+					"from": 350,
+					"to": 300,
+					"reason": "In de bron ontbreekt de kolom b en staan de kolommen één plaats verschoven: onder G staat A [cm²], onder h staat G, onder b staat h, en tw en tf zijn ×10. De kolomvolgorde is voor alle acht HE 360- en HE 400-rijen gelijk. De waarde is hersteld; b = 300 mm ontbreekt in de bron; catalogus 300 mm.",
+					"source": {
+						"title": "ArcelorMittal Europe – Long Products, Sections and Merchant bars, Sales programme 2024-1",
+						"ref": "HE AA, A, B en M, maten p. 56, eigenschappen p. 57",
+						"url": "https://sections.arcelormittal.com/sections/repository/Sections/Sections_MB_ArcelorMittal_FR_EN_DE.pdf"
+					}
 				},
 				{
-					"check": "modulus",
-					"severity": "error",
-					"field": "Wy",
-					"expected": 5903657.449,
-					"found": 1891000,
-					"message": "Wy wijkt -68.0 % af van Iy/(h/2)"
+					"field": "tw",
+					"from": 100,
+					"to": 10,
+					"reason": "In de bron ontbreekt de kolom b en staan de kolommen één plaats verschoven: onder G staat A [cm²], onder h staat G, onder b staat h, en tw en tf zijn ×10. De kolomvolgorde is voor alle acht HE 360- en HE 400-rijen gelijk. De waarde is hersteld; tw = 10 mm staat in de bron als 100; catalogus 10 mm.",
+					"source": {
+						"title": "ArcelorMittal Europe – Long Products, Sections and Merchant bars, Sales programme 2024-1",
+						"ref": "HE AA, A, B en M, maten p. 56, eigenschappen p. 57",
+						"url": "https://sections.arcelormittal.com/sections/repository/Sections/Sections_MB_ArcelorMittal_FR_EN_DE.pdf"
+					}
 				},
 				{
-					"check": "modulus",
-					"severity": "error",
-					"field": "Wz",
-					"expected": 450685.714,
-					"found": 526000,
-					"message": "Wz wijkt 16.7 % af van Iz/(b/2)"
+					"field": "tf",
+					"from": 175,
+					"to": 17.5,
+					"reason": "In de bron ontbreekt de kolom b en staan de kolommen één plaats verschoven: onder G staat A [cm²], onder h staat G, onder b staat h, en tw en tf zijn ×10. De kolomvolgorde is voor alle acht HE 360- en HE 400-rijen gelijk. De waarde is hersteld; tf = 17.5 mm staat in de bron als 175; catalogus 17.5 mm.",
+					"source": {
+						"title": "ArcelorMittal Europe – Long Products, Sections and Merchant bars, Sales programme 2024-1",
+						"ref": "HE AA, A, B en M, maten p. 56, eigenschappen p. 57",
+						"url": "https://sections.arcelormittal.com/sections/repository/Sections/Sections_MB_ArcelorMittal_FR_EN_DE.pdf"
+					}
 				},
 				{
-					"check": "geometry",
-					"severity": "warning",
 					"field": "A",
-					"expected": 98710,
-					"found": 1430000,
-					"message": "A wijkt 1348.7 % af van de geometrie (zonder afrondingen (r onbekend))"
-				},
-				{
-					"check": "geometry",
-					"severity": "warning",
-					"field": "Wy",
-					"expected": 5737607.168,
-					"found": 1891000,
-					"message": "Wy wijkt -67.0 % af van de geometrie (zonder afrondingen (r onbekend))"
+					"from": 1430000,
+					"to": 14280,
+					"reason": "In de bron ontbreekt de kolom b en staan de kolommen één plaats verschoven: onder G staat A [cm²], onder h staat G, onder b staat h, en tw en tf zijn ×10. De kolomvolgorde is voor alle acht HE 360- en HE 400-rijen gelijk. De waarde is hersteld; A = 142.8 cm² staat in de bron onder G; catalogus 142.8 cm².",
+					"source": {
+						"title": "ArcelorMittal Europe – Long Products, Sections and Merchant bars, Sales programme 2024-1",
+						"ref": "HE AA, A, B en M, maten p. 56, eigenschappen p. 57",
+						"url": "https://sections.arcelormittal.com/sections/repository/Sections/Sections_MB_ArcelorMittal_FR_EN_DE.pdf"
+					}
 				}
 			],
-			"corrections": [],
 			"derived": [],
-			"status": "flagged",
+			"status": "auto_checked",
 			"shape": "I",
-			"h": 112.1,
-			"b": 350,
-			"tw": 100,
-			"tf": 175,
+			"h": 350,
+			"b": 300,
+			"tw": 10,
+			"tf": 17.5,
 			"Iz": 78870000,
 			"Wz": 526000,
 			"iz": 74.3
@@ -1839,100 +1836,87 @@
 				"HE B 360",
 				"HEB 360"
 			],
-			"G": 181,
-			"A": 1810000,
+			"G": 141.8,
+			"A": 18060,
 			"Iy": 431900000,
 			"Wy": 2400000,
 			"iy": 155,
-			"issues": [
+			"issues": [],
+			"corrections": [
 				{
-					"check": "plausible",
-					"severity": "error",
-					"field": "h",
-					"expected": 180,
-					"found": 141.8,
-					"message": "h moet groter zijn dan b/2"
-				},
-				{
-					"check": "plausible",
-					"severity": "error",
-					"field": "tf",
-					"found": 225,
-					"message": "2·tf moet kleiner zijn dan h"
-				},
-				{
-					"check": "mass",
-					"severity": "error",
 					"field": "G",
-					"expected": 14208.5,
-					"found": 181,
-					"message": "G wijkt -98.7 % af van A × 7850 kg/m³"
+					"from": 181,
+					"to": 141.8,
+					"reason": "In de bron ontbreekt de kolom b en staan de kolommen één plaats verschoven: onder G staat A [cm²], onder h staat G, onder b staat h, en tw en tf zijn ×10. De kolomvolgorde is voor alle acht HE 360- en HE 400-rijen gelijk. De waarde is hersteld; G = 141.8 kg/m staat in de bron onder h; catalogus 142 kg/m (afgerond).",
+					"source": {
+						"title": "ArcelorMittal Europe – Long Products, Sections and Merchant bars, Sales programme 2024-1",
+						"ref": "HE AA, A, B en M, maten p. 56, eigenschappen p. 57",
+						"url": "https://sections.arcelormittal.com/sections/repository/Sections/Sections_MB_ArcelorMittal_FR_EN_DE.pdf"
+					}
 				},
 				{
-					"check": "gyration",
-					"severity": "error",
-					"field": "iy",
-					"expected": 15.447,
-					"found": 155,
-					"message": "iy wijkt 903.4 % af van √(Iy/A)"
+					"field": "h",
+					"from": 141.8,
+					"to": 360,
+					"reason": "In de bron ontbreekt de kolom b en staan de kolommen één plaats verschoven: onder G staat A [cm²], onder h staat G, onder b staat h, en tw en tf zijn ×10. De kolomvolgorde is voor alle acht HE 360- en HE 400-rijen gelijk. De waarde is hersteld; h = 360 mm staat in de bron onder b; catalogus 360 mm.",
+					"source": {
+						"title": "ArcelorMittal Europe – Long Products, Sections and Merchant bars, Sales programme 2024-1",
+						"ref": "HE AA, A, B en M, maten p. 56, eigenschappen p. 57",
+						"url": "https://sections.arcelormittal.com/sections/repository/Sections/Sections_MB_ArcelorMittal_FR_EN_DE.pdf"
+					}
 				},
 				{
-					"check": "gyration",
-					"severity": "error",
-					"field": "iz",
-					"expected": 7.485,
-					"found": 74.9,
-					"message": "iz wijkt 900.7 % af van √(Iz/A)"
+					"field": "b",
+					"from": 360,
+					"to": 300,
+					"reason": "In de bron ontbreekt de kolom b en staan de kolommen één plaats verschoven: onder G staat A [cm²], onder h staat G, onder b staat h, en tw en tf zijn ×10. De kolomvolgorde is voor alle acht HE 360- en HE 400-rijen gelijk. De waarde is hersteld; b = 300 mm ontbreekt in de bron; catalogus 300 mm.",
+					"source": {
+						"title": "ArcelorMittal Europe – Long Products, Sections and Merchant bars, Sales programme 2024-1",
+						"ref": "HE AA, A, B en M, maten p. 56, eigenschappen p. 57",
+						"url": "https://sections.arcelormittal.com/sections/repository/Sections/Sections_MB_ArcelorMittal_FR_EN_DE.pdf"
+					}
 				},
 				{
-					"check": "modulus",
-					"severity": "error",
-					"field": "Wy",
-					"expected": 6091678.42,
-					"found": 2400000,
-					"message": "Wy wijkt -60.6 % af van Iy/(h/2)"
+					"field": "tw",
+					"from": 125,
+					"to": 12.5,
+					"reason": "In de bron ontbreekt de kolom b en staan de kolommen één plaats verschoven: onder G staat A [cm²], onder h staat G, onder b staat h, en tw en tf zijn ×10. De kolomvolgorde is voor alle acht HE 360- en HE 400-rijen gelijk. De waarde is hersteld; tw = 12.5 mm staat in de bron als 125; catalogus 12.5 mm.",
+					"source": {
+						"title": "ArcelorMittal Europe – Long Products, Sections and Merchant bars, Sales programme 2024-1",
+						"ref": "HE AA, A, B en M, maten p. 56, eigenschappen p. 57",
+						"url": "https://sections.arcelormittal.com/sections/repository/Sections/Sections_MB_ArcelorMittal_FR_EN_DE.pdf"
+					}
 				},
 				{
-					"check": "modulus",
-					"severity": "error",
-					"field": "Wz",
-					"expected": 563333.333,
-					"found": 676000,
-					"message": "Wz wijkt 20.0 % af van Iz/(b/2)"
+					"field": "tf",
+					"from": 225,
+					"to": 22.5,
+					"reason": "In de bron ontbreekt de kolom b en staan de kolommen één plaats verschoven: onder G staat A [cm²], onder h staat G, onder b staat h, en tw en tf zijn ×10. De kolomvolgorde is voor alle acht HE 360- en HE 400-rijen gelijk. De waarde is hersteld; tf = 22.5 mm staat in de bron als 225; catalogus 22.5 mm.",
+					"source": {
+						"title": "ArcelorMittal Europe – Long Products, Sections and Merchant bars, Sales programme 2024-1",
+						"ref": "HE AA, A, B en M, maten p. 56, eigenschappen p. 57",
+						"url": "https://sections.arcelormittal.com/sections/repository/Sections/Sections_MB_ArcelorMittal_FR_EN_DE.pdf"
+					}
 				},
 				{
-					"check": "geometry",
-					"severity": "warning",
 					"field": "A",
-					"expected": 123475,
-					"found": 1810000,
-					"message": "A wijkt 1365.9 % af van de geometrie (zonder afrondingen (r onbekend))"
-				},
-				{
-					"check": "geometry",
-					"severity": "warning",
-					"field": "Iy",
-					"expected": 658839601.583,
-					"found": 431900000,
-					"message": "Iy wijkt -34.4 % af van de geometrie (zonder afrondingen (r onbekend))"
-				},
-				{
-					"check": "geometry",
-					"severity": "warning",
-					"field": "Wy",
-					"expected": 9292519.063,
-					"found": 2400000,
-					"message": "Wy wijkt -74.2 % af van de geometrie (zonder afrondingen (r onbekend))"
+					"from": 1810000,
+					"to": 18060,
+					"reason": "In de bron ontbreekt de kolom b en staan de kolommen één plaats verschoven: onder G staat A [cm²], onder h staat G, onder b staat h, en tw en tf zijn ×10. De kolomvolgorde is voor alle acht HE 360- en HE 400-rijen gelijk. De waarde is hersteld; A = 180.6 cm² staat in de bron onder G; catalogus 180.6 cm².",
+					"source": {
+						"title": "ArcelorMittal Europe – Long Products, Sections and Merchant bars, Sales programme 2024-1",
+						"ref": "HE AA, A, B en M, maten p. 56, eigenschappen p. 57",
+						"url": "https://sections.arcelormittal.com/sections/repository/Sections/Sections_MB_ArcelorMittal_FR_EN_DE.pdf"
+					}
 				}
 			],
-			"corrections": [],
 			"derived": [],
-			"status": "flagged",
+			"status": "auto_checked",
 			"shape": "I",
-			"h": 141.8,
-			"b": 360,
-			"tw": 125,
-			"tf": 225,
+			"h": 360,
+			"b": 300,
+			"tw": 12.5,
+			"tf": 22.5,
 			"Iz": 101400000,
 			"Wz": 676000,
 			"iz": 74.9
@@ -1951,99 +1935,87 @@
 				"HE M 360",
 				"HEM 360"
 			],
-			"G": 319,
-			"A": 3190000,
+			"G": 250.3,
+			"A": 31880,
 			"Iy": 848700000,
 			"Wy": 4297000,
 			"iy": 163,
-			"issues": [
+			"issues": [],
+			"corrections": [
 				{
-					"check": "plausible",
-					"severity": "error",
-					"field": "tf",
-					"found": 400,
-					"message": "tf moet kleiner zijn dan b"
-				},
-				{
-					"check": "plausible",
-					"severity": "error",
-					"field": "tf",
-					"found": 400,
-					"message": "2·tf moet kleiner zijn dan h"
-				},
-				{
-					"check": "mass",
-					"severity": "error",
 					"field": "G",
-					"expected": 25041.5,
-					"found": 319,
-					"message": "G wijkt -98.7 % af van A × 7850 kg/m³"
+					"from": 319,
+					"to": 250.3,
+					"reason": "In de bron ontbreekt de kolom b en staan de kolommen één plaats verschoven: onder G staat A [cm²], onder h staat G, onder b staat h, en tw en tf zijn ×10. De kolomvolgorde is voor alle acht HE 360- en HE 400-rijen gelijk. De waarde is hersteld; G = 250.3 kg/m staat in de bron onder h; catalogus 250 kg/m (afgerond).",
+					"source": {
+						"title": "ArcelorMittal Europe – Long Products, Sections and Merchant bars, Sales programme 2024-1",
+						"ref": "HE AA, A, B en M, maten p. 56, eigenschappen p. 57",
+						"url": "https://sections.arcelormittal.com/sections/repository/Sections/Sections_MB_ArcelorMittal_FR_EN_DE.pdf"
+					}
 				},
 				{
-					"check": "gyration",
-					"severity": "error",
-					"field": "iy",
-					"expected": 16.311,
-					"found": 163,
-					"message": "iy wijkt 899.3 % af van √(Iy/A)"
+					"field": "h",
+					"from": 250.3,
+					"to": 395,
+					"reason": "In de bron ontbreekt de kolom b en staan de kolommen één plaats verschoven: onder G staat A [cm²], onder h staat G, onder b staat h, en tw en tf zijn ×10. De kolomvolgorde is voor alle acht HE 360- en HE 400-rijen gelijk. De waarde is hersteld; h = 395 mm staat in de bron onder b; catalogus 395 mm.",
+					"source": {
+						"title": "ArcelorMittal Europe – Long Products, Sections and Merchant bars, Sales programme 2024-1",
+						"ref": "HE AA, A, B en M, maten p. 56, eigenschappen p. 57",
+						"url": "https://sections.arcelormittal.com/sections/repository/Sections/Sections_MB_ArcelorMittal_FR_EN_DE.pdf"
+					}
 				},
 				{
-					"check": "gyration",
-					"severity": "error",
-					"field": "iz",
-					"expected": 7.822,
-					"found": 78.3,
-					"message": "iz wijkt 901.0 % af van √(Iz/A)"
+					"field": "b",
+					"from": 395,
+					"to": 308,
+					"reason": "In de bron ontbreekt de kolom b en staan de kolommen één plaats verschoven: onder G staat A [cm²], onder h staat G, onder b staat h, en tw en tf zijn ×10. De kolomvolgorde is voor alle acht HE 360- en HE 400-rijen gelijk. De waarde is hersteld; b = 308 mm ontbreekt in de bron; catalogus 308 mm.",
+					"source": {
+						"title": "ArcelorMittal Europe – Long Products, Sections and Merchant bars, Sales programme 2024-1",
+						"ref": "HE AA, A, B en M, maten p. 56, eigenschappen p. 57",
+						"url": "https://sections.arcelormittal.com/sections/repository/Sections/Sections_MB_ArcelorMittal_FR_EN_DE.pdf"
+					}
 				},
 				{
-					"check": "modulus",
-					"severity": "error",
-					"field": "Wy",
-					"expected": 6781462.245,
-					"found": 4297000,
-					"message": "Wy wijkt -36.6 % af van Iy/(h/2)"
+					"field": "tw",
+					"from": 210,
+					"to": 21,
+					"reason": "In de bron ontbreekt de kolom b en staan de kolommen één plaats verschoven: onder G staat A [cm²], onder h staat G, onder b staat h, en tw en tf zijn ×10. De kolomvolgorde is voor alle acht HE 360- en HE 400-rijen gelijk. De waarde is hersteld; tw = 21 mm staat in de bron als 210; catalogus 21 mm.",
+					"source": {
+						"title": "ArcelorMittal Europe – Long Products, Sections and Merchant bars, Sales programme 2024-1",
+						"ref": "HE AA, A, B en M, maten p. 56, eigenschappen p. 57",
+						"url": "https://sections.arcelormittal.com/sections/repository/Sections/Sections_MB_ArcelorMittal_FR_EN_DE.pdf"
+					}
 				},
 				{
-					"check": "modulus",
-					"severity": "error",
-					"field": "Wz",
-					"expected": 988354.43,
-					"found": 1268000,
-					"message": "Wz wijkt 28.3 % af van Iz/(b/2)"
+					"field": "tf",
+					"from": 400,
+					"to": 40,
+					"reason": "In de bron ontbreekt de kolom b en staan de kolommen één plaats verschoven: onder G staat A [cm²], onder h staat G, onder b staat h, en tw en tf zijn ×10. De kolomvolgorde is voor alle acht HE 360- en HE 400-rijen gelijk. De waarde is hersteld; tf = 40 mm staat in de bron als 400; catalogus 40 mm.",
+					"source": {
+						"title": "ArcelorMittal Europe – Long Products, Sections and Merchant bars, Sales programme 2024-1",
+						"ref": "HE AA, A, B en M, maten p. 56, eigenschappen p. 57",
+						"url": "https://sections.arcelormittal.com/sections/repository/Sections/Sections_MB_ArcelorMittal_FR_EN_DE.pdf"
+					}
 				},
 				{
-					"check": "geometry",
-					"severity": "warning",
 					"field": "A",
-					"expected": 200563,
-					"found": 3190000,
-					"message": "A wijkt 1490.5 % af van de geometrie (zonder afrondingen (r onbekend))"
-				},
-				{
-					"check": "geometry",
-					"severity": "warning",
-					"field": "Iy",
-					"expected": 3076929720.056,
-					"found": 848700000,
-					"message": "Iy wijkt -72.4 % af van de geometrie (zonder afrondingen (r onbekend))"
-				},
-				{
-					"check": "geometry",
-					"severity": "warning",
-					"field": "Wy",
-					"expected": 24585934.639,
-					"found": 4297000,
-					"message": "Wy wijkt -82.5 % af van de geometrie (zonder afrondingen (r onbekend))"
+					"from": 3190000,
+					"to": 31880,
+					"reason": "In de bron ontbreekt de kolom b en staan de kolommen één plaats verschoven: onder G staat A [cm²], onder h staat G, onder b staat h, en tw en tf zijn ×10. De kolomvolgorde is voor alle acht HE 360- en HE 400-rijen gelijk. De waarde is hersteld; A = 318.8 cm² staat in de bron onder G; catalogus 318.8 cm².",
+					"source": {
+						"title": "ArcelorMittal Europe – Long Products, Sections and Merchant bars, Sales programme 2024-1",
+						"ref": "HE AA, A, B en M, maten p. 56, eigenschappen p. 57",
+						"url": "https://sections.arcelormittal.com/sections/repository/Sections/Sections_MB_ArcelorMittal_FR_EN_DE.pdf"
+					}
 				}
 			],
-			"corrections": [],
 			"derived": [],
-			"status": "flagged",
+			"status": "auto_checked",
 			"shape": "I",
-			"h": 250.3,
-			"b": 395,
-			"tw": 210,
-			"tf": 400,
+			"h": 395,
+			"b": 308,
+			"tw": 21,
+			"tf": 40,
 			"Iz": 195200000,
 			"Wz": 1268000,
 			"iz": 78.3
@@ -2062,100 +2034,87 @@
 				"HE AA 400",
 				"HEAA 400"
 			],
-			"G": 118,
-			"A": 1270000,
+			"G": 92.4,
+			"A": 11770,
 			"Iy": 312500000,
 			"Wy": 1654000,
 			"iy": 163,
-			"issues": [
+			"issues": [],
+			"corrections": [
 				{
-					"check": "plausible",
-					"severity": "error",
-					"field": "h",
-					"expected": 189,
-					"found": 92.4,
-					"message": "h moet groter zijn dan b/2"
-				},
-				{
-					"check": "plausible",
-					"severity": "error",
-					"field": "tf",
-					"found": 130,
-					"message": "2·tf moet kleiner zijn dan h"
-				},
-				{
-					"check": "mass",
-					"severity": "error",
 					"field": "G",
-					"expected": 9969.5,
-					"found": 118,
-					"message": "G wijkt -98.8 % af van A × 7850 kg/m³"
+					"from": 118,
+					"to": 92.4,
+					"reason": "In de bron ontbreekt de kolom b en staan de kolommen één plaats verschoven: onder G staat A [cm²], onder h staat G, onder b staat h, en tw en tf zijn ×10. De kolomvolgorde is voor alle acht HE 360- en HE 400-rijen gelijk. De waarde is hersteld; G = 92.4 kg/m staat in de bron onder h; catalogus 92.4 kg/m (afgerond).",
+					"source": {
+						"title": "ArcelorMittal Europe – Long Products, Sections and Merchant bars, Sales programme 2024-1",
+						"ref": "HE AA, A, B en M, maten p. 56, eigenschappen p. 57",
+						"url": "https://sections.arcelormittal.com/sections/repository/Sections/Sections_MB_ArcelorMittal_FR_EN_DE.pdf"
+					}
 				},
 				{
-					"check": "gyration",
-					"severity": "error",
-					"field": "iy",
-					"expected": 15.686,
-					"found": 163,
-					"message": "iy wijkt 939.1 % af van √(Iy/A)"
+					"field": "h",
+					"from": 92.4,
+					"to": 378,
+					"reason": "In de bron ontbreekt de kolom b en staan de kolommen één plaats verschoven: onder G staat A [cm²], onder h staat G, onder b staat h, en tw en tf zijn ×10. De kolomvolgorde is voor alle acht HE 360- en HE 400-rijen gelijk. De waarde is hersteld; h = 378 mm staat in de bron onder b; catalogus 378 mm.",
+					"source": {
+						"title": "ArcelorMittal Europe – Long Products, Sections and Merchant bars, Sales programme 2024-1",
+						"ref": "HE AA, A, B en M, maten p. 56, eigenschappen p. 57",
+						"url": "https://sections.arcelormittal.com/sections/repository/Sections/Sections_MB_ArcelorMittal_FR_EN_DE.pdf"
+					}
 				},
 				{
-					"check": "gyration",
-					"severity": "error",
-					"field": "iz",
-					"expected": 6.793,
-					"found": 70.6,
-					"message": "iz wijkt 939.3 % af van √(Iz/A)"
+					"field": "b",
+					"from": 378,
+					"to": 300,
+					"reason": "In de bron ontbreekt de kolom b en staan de kolommen één plaats verschoven: onder G staat A [cm²], onder h staat G, onder b staat h, en tw en tf zijn ×10. De kolomvolgorde is voor alle acht HE 360- en HE 400-rijen gelijk. De waarde is hersteld; b = 300 mm ontbreekt in de bron; catalogus 300 mm.",
+					"source": {
+						"title": "ArcelorMittal Europe – Long Products, Sections and Merchant bars, Sales programme 2024-1",
+						"ref": "HE AA, A, B en M, maten p. 56, eigenschappen p. 57",
+						"url": "https://sections.arcelormittal.com/sections/repository/Sections/Sections_MB_ArcelorMittal_FR_EN_DE.pdf"
+					}
 				},
 				{
-					"check": "modulus",
-					"severity": "error",
-					"field": "Wy",
-					"expected": 6764069.264,
-					"found": 1654000,
-					"message": "Wy wijkt -75.5 % af van Iy/(h/2)"
+					"field": "tw",
+					"from": 95,
+					"to": 9.5,
+					"reason": "In de bron ontbreekt de kolom b en staan de kolommen één plaats verschoven: onder G staat A [cm²], onder h staat G, onder b staat h, en tw en tf zijn ×10. De kolomvolgorde is voor alle acht HE 360- en HE 400-rijen gelijk. De waarde is hersteld; tw = 9.5 mm staat in de bron als 95; catalogus 9.5 mm.",
+					"source": {
+						"title": "ArcelorMittal Europe – Long Products, Sections and Merchant bars, Sales programme 2024-1",
+						"ref": "HE AA, A, B en M, maten p. 56, eigenschappen p. 57",
+						"url": "https://sections.arcelormittal.com/sections/repository/Sections/Sections_MB_ArcelorMittal_FR_EN_DE.pdf"
+					}
 				},
 				{
-					"check": "modulus",
-					"severity": "error",
-					"field": "Wz",
-					"expected": 310105.82,
-					"found": 391000,
-					"message": "Wz wijkt 26.1 % af van Iz/(b/2)"
+					"field": "tf",
+					"from": 130,
+					"to": 13,
+					"reason": "In de bron ontbreekt de kolom b en staan de kolommen één plaats verschoven: onder G staat A [cm²], onder h staat G, onder b staat h, en tw en tf zijn ×10. De kolomvolgorde is voor alle acht HE 360- en HE 400-rijen gelijk. De waarde is hersteld; tf = 13 mm staat in de bron als 130; catalogus 13 mm.",
+					"source": {
+						"title": "ArcelorMittal Europe – Long Products, Sections and Merchant bars, Sales programme 2024-1",
+						"ref": "HE AA, A, B en M, maten p. 56, eigenschappen p. 57",
+						"url": "https://sections.arcelormittal.com/sections/repository/Sections/Sections_MB_ArcelorMittal_FR_EN_DE.pdf"
+					}
 				},
 				{
-					"check": "geometry",
-					"severity": "warning",
 					"field": "A",
-					"expected": 82358,
-					"found": 1270000,
-					"message": "A wijkt 1442.0 % af van de geometrie (zonder afrondingen (r onbekend))"
-				},
-				{
-					"check": "geometry",
-					"severity": "warning",
-					"field": "Iy",
-					"expected": 135876653.307,
-					"found": 312500000,
-					"message": "Iy wijkt 130.0 % af van de geometrie (zonder afrondingen (r onbekend))"
-				},
-				{
-					"check": "geometry",
-					"severity": "warning",
-					"field": "Wy",
-					"expected": 2941053.102,
-					"found": 1654000,
-					"message": "Wy wijkt -43.8 % af van de geometrie (zonder afrondingen (r onbekend))"
+					"from": 1270000,
+					"to": 11770,
+					"reason": "In de bron ontbreekt de kolom b en staan de kolommen één plaats verschoven: onder G staat A [cm²], onder h staat G, onder b staat h, en tw en tf zijn ×10. De kolomvolgorde is voor alle acht HE 360- en HE 400-rijen gelijk. De waarde is hersteld; A = 117.7 cm² staat in de bron onder G; catalogus 117.7 cm².",
+					"source": {
+						"title": "ArcelorMittal Europe – Long Products, Sections and Merchant bars, Sales programme 2024-1",
+						"ref": "HE AA, A, B en M, maten p. 56, eigenschappen p. 57",
+						"url": "https://sections.arcelormittal.com/sections/repository/Sections/Sections_MB_ArcelorMittal_FR_EN_DE.pdf"
+					}
 				}
 			],
-			"corrections": [],
 			"derived": [],
-			"status": "flagged",
+			"status": "auto_checked",
 			"shape": "I",
-			"h": 92.4,
-			"b": 378,
-			"tw": 95,
-			"tf": 130,
+			"h": 378,
+			"b": 300,
+			"tw": 9.5,
+			"tf": 13,
 			"Iz": 58610000,
 			"Wz": 391000,
 			"iz": 70.6
@@ -2285,92 +2244,87 @@
 				"HE A 400",
 				"HEA 400"
 			],
-			"G": 159,
-			"A": 1590000,
+			"G": 124.8,
+			"A": 15900,
 			"Iy": 450700000,
 			"Wy": 2311000,
 			"iy": 168,
-			"issues": [
+			"issues": [],
+			"corrections": [
 				{
-					"check": "plausible",
-					"severity": "error",
-					"field": "h",
-					"expected": 195,
-					"found": 124.8,
-					"message": "h moet groter zijn dan b/2"
-				},
-				{
-					"check": "plausible",
-					"severity": "error",
-					"field": "tf",
-					"found": 190,
-					"message": "2·tf moet kleiner zijn dan h"
-				},
-				{
-					"check": "mass",
-					"severity": "error",
 					"field": "G",
-					"expected": 12481.5,
-					"found": 159,
-					"message": "G wijkt -98.7 % af van A × 7850 kg/m³"
+					"from": 159,
+					"to": 124.8,
+					"reason": "In de bron ontbreekt de kolom b en staan de kolommen één plaats verschoven: onder G staat A [cm²], onder h staat G, onder b staat h, en tw en tf zijn ×10. De kolomvolgorde is voor alle acht HE 360- en HE 400-rijen gelijk. De waarde is hersteld; G = 124.8 kg/m staat in de bron onder h; catalogus 125 kg/m (afgerond).",
+					"source": {
+						"title": "ArcelorMittal Europe – Long Products, Sections and Merchant bars, Sales programme 2024-1",
+						"ref": "HE AA, A, B en M, maten p. 56, eigenschappen p. 57",
+						"url": "https://sections.arcelormittal.com/sections/repository/Sections/Sections_MB_ArcelorMittal_FR_EN_DE.pdf"
+					}
 				},
 				{
-					"check": "gyration",
-					"severity": "error",
-					"field": "iy",
-					"expected": 16.836,
-					"found": 168,
-					"message": "iy wijkt 897.8 % af van √(Iy/A)"
+					"field": "h",
+					"from": 124.8,
+					"to": 390,
+					"reason": "In de bron ontbreekt de kolom b en staan de kolommen één plaats verschoven: onder G staat A [cm²], onder h staat G, onder b staat h, en tw en tf zijn ×10. De kolomvolgorde is voor alle acht HE 360- en HE 400-rijen gelijk. De waarde is hersteld; h = 390 mm staat in de bron onder b; catalogus 390 mm.",
+					"source": {
+						"title": "ArcelorMittal Europe – Long Products, Sections and Merchant bars, Sales programme 2024-1",
+						"ref": "HE AA, A, B en M, maten p. 56, eigenschappen p. 57",
+						"url": "https://sections.arcelormittal.com/sections/repository/Sections/Sections_MB_ArcelorMittal_FR_EN_DE.pdf"
+					}
 				},
 				{
-					"check": "gyration",
-					"severity": "error",
-					"field": "iz",
-					"expected": 7.339,
-					"found": 73.4,
-					"message": "iz wijkt 900.1 % af van √(Iz/A)"
+					"field": "b",
+					"from": 390,
+					"to": 300,
+					"reason": "In de bron ontbreekt de kolom b en staan de kolommen één plaats verschoven: onder G staat A [cm²], onder h staat G, onder b staat h, en tw en tf zijn ×10. De kolomvolgorde is voor alle acht HE 360- en HE 400-rijen gelijk. De waarde is hersteld; b = 300 mm ontbreekt in de bron; catalogus 300 mm.",
+					"source": {
+						"title": "ArcelorMittal Europe – Long Products, Sections and Merchant bars, Sales programme 2024-1",
+						"ref": "HE AA, A, B en M, maten p. 56, eigenschappen p. 57",
+						"url": "https://sections.arcelormittal.com/sections/repository/Sections/Sections_MB_ArcelorMittal_FR_EN_DE.pdf"
+					}
 				},
 				{
-					"check": "modulus",
-					"severity": "error",
-					"field": "Wy",
-					"expected": 7222756.41,
-					"found": 2311000,
-					"message": "Wy wijkt -68.0 % af van Iy/(h/2)"
+					"field": "tw",
+					"from": 110,
+					"to": 11,
+					"reason": "In de bron ontbreekt de kolom b en staan de kolommen één plaats verschoven: onder G staat A [cm²], onder h staat G, onder b staat h, en tw en tf zijn ×10. De kolomvolgorde is voor alle acht HE 360- en HE 400-rijen gelijk. De waarde is hersteld; tw = 11 mm staat in de bron als 110; catalogus 11 mm.",
+					"source": {
+						"title": "ArcelorMittal Europe – Long Products, Sections and Merchant bars, Sales programme 2024-1",
+						"ref": "HE AA, A, B en M, maten p. 56, eigenschappen p. 57",
+						"url": "https://sections.arcelormittal.com/sections/repository/Sections/Sections_MB_ArcelorMittal_FR_EN_DE.pdf"
+					}
 				},
 				{
-					"check": "modulus",
-					"severity": "error",
-					"field": "Wz",
-					"expected": 439179.487,
-					"found": 571000,
-					"message": "Wz wijkt 30.0 % af van Iz/(b/2)"
+					"field": "tf",
+					"from": 190,
+					"to": 19,
+					"reason": "In de bron ontbreekt de kolom b en staan de kolommen één plaats verschoven: onder G staat A [cm²], onder h staat G, onder b staat h, en tw en tf zijn ×10. De kolomvolgorde is voor alle acht HE 360- en HE 400-rijen gelijk. De waarde is hersteld; tf = 19 mm staat in de bron als 190; catalogus 19 mm.",
+					"source": {
+						"title": "ArcelorMittal Europe – Long Products, Sections and Merchant bars, Sales programme 2024-1",
+						"ref": "HE AA, A, B en M, maten p. 56, eigenschappen p. 57",
+						"url": "https://sections.arcelormittal.com/sections/repository/Sections/Sections_MB_ArcelorMittal_FR_EN_DE.pdf"
+					}
 				},
 				{
-					"check": "geometry",
-					"severity": "warning",
 					"field": "A",
-					"expected": 120128,
-					"found": 1590000,
-					"message": "A wijkt 1223.6 % af van de geometrie (zonder afrondingen (r onbekend))"
-				},
-				{
-					"check": "geometry",
-					"severity": "warning",
-					"field": "Wy",
-					"expected": 7227278.468,
-					"found": 2311000,
-					"message": "Wy wijkt -68.0 % af van de geometrie (zonder afrondingen (r onbekend))"
+					"from": 1590000,
+					"to": 15900,
+					"reason": "In de bron ontbreekt de kolom b en staan de kolommen één plaats verschoven: onder G staat A [cm²], onder h staat G, onder b staat h, en tw en tf zijn ×10. De kolomvolgorde is voor alle acht HE 360- en HE 400-rijen gelijk. De waarde is hersteld; A = 159.0 cm² staat in de bron onder G; catalogus 159.0 cm².",
+					"source": {
+						"title": "ArcelorMittal Europe – Long Products, Sections and Merchant bars, Sales programme 2024-1",
+						"ref": "HE AA, A, B en M, maten p. 56, eigenschappen p. 57",
+						"url": "https://sections.arcelormittal.com/sections/repository/Sections/Sections_MB_ArcelorMittal_FR_EN_DE.pdf"
+					}
 				}
 			],
-			"corrections": [],
 			"derived": [],
-			"status": "flagged",
+			"status": "auto_checked",
 			"shape": "I",
-			"h": 124.8,
-			"b": 390,
-			"tw": 110,
-			"tf": 190,
+			"h": 390,
+			"b": 300,
+			"tw": 11,
+			"tf": 19,
 			"Iz": 85640000,
 			"Wz": 571000,
 			"iz": 73.4
@@ -2389,100 +2343,87 @@
 				"HE B 400",
 				"HEB 400"
 			],
-			"G": 198,
-			"A": 2180000,
+			"G": 155.3,
+			"A": 19780,
 			"Iy": 576800000,
 			"Wy": 2884000,
 			"iy": 171,
-			"issues": [
+			"issues": [],
+			"corrections": [
 				{
-					"check": "plausible",
-					"severity": "error",
-					"field": "h",
-					"expected": 200,
-					"found": 155.3,
-					"message": "h moet groter zijn dan b/2"
-				},
-				{
-					"check": "plausible",
-					"severity": "error",
-					"field": "tf",
-					"found": 240,
-					"message": "2·tf moet kleiner zijn dan h"
-				},
-				{
-					"check": "mass",
-					"severity": "error",
 					"field": "G",
-					"expected": 17113,
-					"found": 198,
-					"message": "G wijkt -98.8 % af van A × 7850 kg/m³"
+					"from": 198,
+					"to": 155.3,
+					"reason": "In de bron ontbreekt de kolom b en staan de kolommen één plaats verschoven: onder G staat A [cm²], onder h staat G, onder b staat h, en tw en tf zijn ×10. De kolomvolgorde is voor alle acht HE 360- en HE 400-rijen gelijk. De waarde is hersteld; G = 155.3 kg/m staat in de bron onder h; catalogus 155 kg/m (afgerond).",
+					"source": {
+						"title": "ArcelorMittal Europe – Long Products, Sections and Merchant bars, Sales programme 2024-1",
+						"ref": "HE AA, A, B en M, maten p. 56, eigenschappen p. 57",
+						"url": "https://sections.arcelormittal.com/sections/repository/Sections/Sections_MB_ArcelorMittal_FR_EN_DE.pdf"
+					}
 				},
 				{
-					"check": "gyration",
-					"severity": "error",
-					"field": "iy",
-					"expected": 16.266,
-					"found": 171,
-					"message": "iy wijkt 951.3 % af van √(Iy/A)"
+					"field": "h",
+					"from": 155.3,
+					"to": 400,
+					"reason": "In de bron ontbreekt de kolom b en staan de kolommen één plaats verschoven: onder G staat A [cm²], onder h staat G, onder b staat h, en tw en tf zijn ×10. De kolomvolgorde is voor alle acht HE 360- en HE 400-rijen gelijk. De waarde is hersteld; h = 400 mm staat in de bron onder b; catalogus 400 mm.",
+					"source": {
+						"title": "ArcelorMittal Europe – Long Products, Sections and Merchant bars, Sales programme 2024-1",
+						"ref": "HE AA, A, B en M, maten p. 56, eigenschappen p. 57",
+						"url": "https://sections.arcelormittal.com/sections/repository/Sections/Sections_MB_ArcelorMittal_FR_EN_DE.pdf"
+					}
 				},
 				{
-					"check": "gyration",
-					"severity": "error",
-					"field": "iz",
-					"expected": 7.045,
-					"found": 74,
-					"message": "iz wijkt 950.4 % af van √(Iz/A)"
+					"field": "b",
+					"from": 400,
+					"to": 300,
+					"reason": "In de bron ontbreekt de kolom b en staan de kolommen één plaats verschoven: onder G staat A [cm²], onder h staat G, onder b staat h, en tw en tf zijn ×10. De kolomvolgorde is voor alle acht HE 360- en HE 400-rijen gelijk. De waarde is hersteld; b = 300 mm ontbreekt in de bron; catalogus 300 mm.",
+					"source": {
+						"title": "ArcelorMittal Europe – Long Products, Sections and Merchant bars, Sales programme 2024-1",
+						"ref": "HE AA, A, B en M, maten p. 56, eigenschappen p. 57",
+						"url": "https://sections.arcelormittal.com/sections/repository/Sections/Sections_MB_ArcelorMittal_FR_EN_DE.pdf"
+					}
 				},
 				{
-					"check": "modulus",
-					"severity": "error",
-					"field": "Wy",
-					"expected": 7428203.477,
-					"found": 2884000,
-					"message": "Wy wijkt -61.2 % af van Iy/(h/2)"
+					"field": "tw",
+					"from": 135,
+					"to": 13.5,
+					"reason": "In de bron ontbreekt de kolom b en staan de kolommen één plaats verschoven: onder G staat A [cm²], onder h staat G, onder b staat h, en tw en tf zijn ×10. De kolomvolgorde is voor alle acht HE 360- en HE 400-rijen gelijk. De waarde is hersteld; tw = 13.5 mm staat in de bron als 135; catalogus 13.5 mm.",
+					"source": {
+						"title": "ArcelorMittal Europe – Long Products, Sections and Merchant bars, Sales programme 2024-1",
+						"ref": "HE AA, A, B en M, maten p. 56, eigenschappen p. 57",
+						"url": "https://sections.arcelormittal.com/sections/repository/Sections/Sections_MB_ArcelorMittal_FR_EN_DE.pdf"
+					}
 				},
 				{
-					"check": "modulus",
-					"severity": "error",
-					"field": "Wz",
-					"expected": 541000,
-					"found": 721000,
-					"message": "Wz wijkt 33.3 % af van Iz/(b/2)"
+					"field": "tf",
+					"from": 240,
+					"to": 24,
+					"reason": "In de bron ontbreekt de kolom b en staan de kolommen één plaats verschoven: onder G staat A [cm²], onder h staat G, onder b staat h, en tw en tf zijn ×10. De kolomvolgorde is voor alle acht HE 360- en HE 400-rijen gelijk. De waarde is hersteld; tf = 24 mm staat in de bron als 240; catalogus 24 mm.",
+					"source": {
+						"title": "ArcelorMittal Europe – Long Products, Sections and Merchant bars, Sales programme 2024-1",
+						"ref": "HE AA, A, B en M, maten p. 56, eigenschappen p. 57",
+						"url": "https://sections.arcelormittal.com/sections/repository/Sections/Sections_MB_ArcelorMittal_FR_EN_DE.pdf"
+					}
 				},
 				{
-					"check": "geometry",
-					"severity": "warning",
 					"field": "A",
-					"expected": 148165.5,
-					"found": 2180000,
-					"message": "A wijkt 1371.3 % af van de geometrie (zonder afrondingen (r onbekend))"
-				},
-				{
-					"check": "geometry",
-					"severity": "warning",
-					"field": "Iy",
-					"expected": 880833379.991,
-					"found": 576800000,
-					"message": "Iy wijkt -34.5 % af van de geometrie (zonder afrondingen (r onbekend))"
-				},
-				{
-					"check": "geometry",
-					"severity": "warning",
-					"field": "Wy",
-					"expected": 11343636.574,
-					"found": 2884000,
-					"message": "Wy wijkt -74.6 % af van de geometrie (zonder afrondingen (r onbekend))"
+					"from": 2180000,
+					"to": 19780,
+					"reason": "In de bron ontbreekt de kolom b en staan de kolommen één plaats verschoven: onder G staat A [cm²], onder h staat G, onder b staat h, en tw en tf zijn ×10. De kolomvolgorde is voor alle acht HE 360- en HE 400-rijen gelijk. De waarde is hersteld; A = 197.8 cm² staat in de bron onder G; catalogus 197.8 cm².",
+					"source": {
+						"title": "ArcelorMittal Europe – Long Products, Sections and Merchant bars, Sales programme 2024-1",
+						"ref": "HE AA, A, B en M, maten p. 56, eigenschappen p. 57",
+						"url": "https://sections.arcelormittal.com/sections/repository/Sections/Sections_MB_ArcelorMittal_FR_EN_DE.pdf"
+					}
 				}
 			],
-			"corrections": [],
 			"derived": [],
-			"status": "flagged",
+			"status": "auto_checked",
 			"shape": "I",
-			"h": 155.3,
-			"b": 400,
-			"tw": 135,
-			"tf": 240,
+			"h": 400,
+			"b": 300,
+			"tw": 13.5,
+			"tf": 24,
 			"Iz": 108200000,
 			"Wz": 721000,
 			"iz": 74
@@ -2501,92 +2442,87 @@
 				"HE M 400",
 				"HEM 400"
 			],
-			"G": 326,
-			"A": 3350000,
+			"G": 255.7,
+			"A": 32580,
 			"Iy": 1041000000,
 			"Wy": 4820000,
 			"iy": 179,
-			"issues": [
+			"issues": [],
+			"corrections": [
 				{
-					"check": "plausible",
-					"severity": "error",
-					"field": "tf",
-					"found": 400,
-					"message": "2·tf moet kleiner zijn dan h"
-				},
-				{
-					"check": "mass",
-					"severity": "error",
 					"field": "G",
-					"expected": 26297.5,
-					"found": 326,
-					"message": "G wijkt -98.8 % af van A × 7850 kg/m³"
+					"from": 326,
+					"to": 255.7,
+					"reason": "In de bron ontbreekt de kolom b en staan de kolommen één plaats verschoven: onder G staat A [cm²], onder h staat G, onder b staat h, en tw en tf zijn ×10. De kolomvolgorde is voor alle acht HE 360- en HE 400-rijen gelijk. De waarde is hersteld; G = 255.7 kg/m staat in de bron onder h; catalogus 256 kg/m (afgerond).",
+					"source": {
+						"title": "ArcelorMittal Europe – Long Products, Sections and Merchant bars, Sales programme 2024-1",
+						"ref": "HE AA, A, B en M, maten p. 56, eigenschappen p. 57",
+						"url": "https://sections.arcelormittal.com/sections/repository/Sections/Sections_MB_ArcelorMittal_FR_EN_DE.pdf"
+					}
 				},
 				{
-					"check": "gyration",
-					"severity": "error",
-					"field": "iy",
-					"expected": 17.628,
-					"found": 179,
-					"message": "iy wijkt 915.4 % af van √(Iy/A)"
+					"field": "h",
+					"from": 255.7,
+					"to": 432,
+					"reason": "In de bron ontbreekt de kolom b en staan de kolommen één plaats verschoven: onder G staat A [cm²], onder h staat G, onder b staat h, en tw en tf zijn ×10. De kolomvolgorde is voor alle acht HE 360- en HE 400-rijen gelijk. De waarde is hersteld; h = 432 mm staat in de bron onder b; catalogus 432 mm.",
+					"source": {
+						"title": "ArcelorMittal Europe – Long Products, Sections and Merchant bars, Sales programme 2024-1",
+						"ref": "HE AA, A, B en M, maten p. 56, eigenschappen p. 57",
+						"url": "https://sections.arcelormittal.com/sections/repository/Sections/Sections_MB_ArcelorMittal_FR_EN_DE.pdf"
+					}
 				},
 				{
-					"check": "gyration",
-					"severity": "error",
-					"field": "iz",
-					"expected": 7.598,
-					"found": 77,
-					"message": "iz wijkt 913.4 % af van √(Iz/A)"
+					"field": "b",
+					"from": 432,
+					"to": 307,
+					"reason": "In de bron ontbreekt de kolom b en staan de kolommen één plaats verschoven: onder G staat A [cm²], onder h staat G, onder b staat h, en tw en tf zijn ×10. De kolomvolgorde is voor alle acht HE 360- en HE 400-rijen gelijk. De waarde is hersteld; b = 307 mm ontbreekt in de bron; catalogus 307 mm.",
+					"source": {
+						"title": "ArcelorMittal Europe – Long Products, Sections and Merchant bars, Sales programme 2024-1",
+						"ref": "HE AA, A, B en M, maten p. 56, eigenschappen p. 57",
+						"url": "https://sections.arcelormittal.com/sections/repository/Sections/Sections_MB_ArcelorMittal_FR_EN_DE.pdf"
+					}
 				},
 				{
-					"check": "modulus",
-					"severity": "error",
-					"field": "Wy",
-					"expected": 8142354.321,
-					"found": 4820000,
-					"message": "Wy wijkt -40.8 % af van Iy/(h/2)"
+					"field": "tw",
+					"from": 210,
+					"to": 21,
+					"reason": "In de bron ontbreekt de kolom b en staan de kolommen één plaats verschoven: onder G staat A [cm²], onder h staat G, onder b staat h, en tw en tf zijn ×10. De kolomvolgorde is voor alle acht HE 360- en HE 400-rijen gelijk. De waarde is hersteld; tw = 21 mm staat in de bron als 210; catalogus 21 mm.",
+					"source": {
+						"title": "ArcelorMittal Europe – Long Products, Sections and Merchant bars, Sales programme 2024-1",
+						"ref": "HE AA, A, B en M, maten p. 56, eigenschappen p. 57",
+						"url": "https://sections.arcelormittal.com/sections/repository/Sections/Sections_MB_ArcelorMittal_FR_EN_DE.pdf"
+					}
 				},
 				{
-					"check": "modulus",
-					"severity": "error",
-					"field": "Wz",
-					"expected": 895370.37,
-					"found": 1260000,
-					"message": "Wz wijkt 40.7 % af van Iz/(b/2)"
+					"field": "tf",
+					"from": 400,
+					"to": 40,
+					"reason": "In de bron ontbreekt de kolom b en staan de kolommen één plaats verschoven: onder G staat A [cm²], onder h staat G, onder b staat h, en tw en tf zijn ×10. De kolomvolgorde is voor alle acht HE 360- en HE 400-rijen gelijk. De waarde is hersteld; tf = 40 mm staat in de bron als 400; catalogus 40 mm.",
+					"source": {
+						"title": "ArcelorMittal Europe – Long Products, Sections and Merchant bars, Sales programme 2024-1",
+						"ref": "HE AA, A, B en M, maten p. 56, eigenschappen p. 57",
+						"url": "https://sections.arcelormittal.com/sections/repository/Sections/Sections_MB_ArcelorMittal_FR_EN_DE.pdf"
+					}
 				},
 				{
-					"check": "geometry",
-					"severity": "warning",
 					"field": "A",
-					"expected": 231297,
-					"found": 3350000,
-					"message": "A wijkt 1348.4 % af van de geometrie (zonder afrondingen (r onbekend))"
-				},
-				{
-					"check": "geometry",
-					"severity": "warning",
-					"field": "Iy",
-					"expected": 3585088853.127,
-					"found": 1041000000,
-					"message": "Iy wijkt -71.0 % af van de geometrie (zonder afrondingen (r onbekend))"
-				},
-				{
-					"check": "geometry",
-					"severity": "warning",
-					"field": "Wy",
-					"expected": 28041367.643,
-					"found": 4820000,
-					"message": "Wy wijkt -82.8 % af van de geometrie (zonder afrondingen (r onbekend))"
+					"from": 3350000,
+					"to": 32580,
+					"reason": "In de bron ontbreekt de kolom b en staan de kolommen één plaats verschoven: onder G staat A [cm²], onder h staat G, onder b staat h, en tw en tf zijn ×10. De kolomvolgorde is voor alle acht HE 360- en HE 400-rijen gelijk. De waarde is hersteld; A = 325.8 cm² staat in de bron onder G; catalogus 325.8 cm².",
+					"source": {
+						"title": "ArcelorMittal Europe – Long Products, Sections and Merchant bars, Sales programme 2024-1",
+						"ref": "HE AA, A, B en M, maten p. 56, eigenschappen p. 57",
+						"url": "https://sections.arcelormittal.com/sections/repository/Sections/Sections_MB_ArcelorMittal_FR_EN_DE.pdf"
+					}
 				}
 			],
-			"corrections": [],
 			"derived": [],
-			"status": "flagged",
+			"status": "auto_checked",
 			"shape": "I",
-			"h": 255.7,
-			"b": 432,
-			"tw": 210,
-			"tf": 400,
+			"h": 432,
+			"b": 307,
+			"tw": 21,
+			"tf": 40,
 			"Iz": 193400000,
 			"Wz": 1260000,
 			"iz": 77
