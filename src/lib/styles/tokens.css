@@ -3,47 +3,20 @@
  * Dark is the default theme; [data-theme='light'] overrides the theme-dependent colours.
  */
 
+/* Satoshi (Fontshare, ITF Free Font License): variable, 300–900 */
 @font-face {
-	font-family: 'Geist';
+	font-family: 'Satoshi';
 	font-style: normal;
 	font-display: swap;
-	font-weight: 100 900;
-	src: url('/fonts/geist-latin-wght-normal.woff2') format('woff2-variations');
-	unicode-range:
-		U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329,
-		U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+	font-weight: 300 900;
+	src: url('/fonts/satoshi-variable.woff2') format('woff2-variations');
 }
 @font-face {
-	font-family: 'Geist';
-	font-style: normal;
+	font-family: 'Satoshi';
+	font-style: italic;
 	font-display: swap;
-	font-weight: 100 900;
-	src: url('/fonts/geist-latin-ext-wght-normal.woff2') format('woff2-variations');
-	unicode-range:
-		U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329,
-		U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F,
-		U+A720-A7FF;
-}
-@font-face {
-	font-family: 'Geist Mono';
-	font-style: normal;
-	font-display: swap;
-	font-weight: 100 900;
-	src: url('/fonts/geist-mono-latin-wght-normal.woff2') format('woff2-variations');
-	unicode-range:
-		U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329,
-		U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-@font-face {
-	font-family: 'Geist Mono';
-	font-style: normal;
-	font-display: swap;
-	font-weight: 100 900;
-	src: url('/fonts/geist-mono-latin-ext-wght-normal.woff2') format('woff2-variations');
-	unicode-range:
-		U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329,
-		U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F,
-		U+A720-A7FF;
+	font-weight: 300 900;
+	src: url('/fonts/satoshi-variable-italic.woff2') format('woff2-variations');
 }
 
 :root {
@@ -80,8 +53,7 @@
 	--type-data-ink: var(--on-tile);
 
 	/* Typography */
-	--font-sans: 'Geist', 'Helvetica Neue', Arial, sans-serif;
-	--font-mono: 'Geist Mono', ui-monospace, Menlo, monospace;
+	--font-sans: 'Satoshi', 'Helvetica Neue', Arial, sans-serif;
 
 	--numeral-xl: 500 120px/0.9 var(--font-sans);
 	--numeral-xl-tracking: -0.05em;
@@ -96,8 +68,8 @@
 	--title-tracking: -0.01em;
 	--body: 400 16px/1.4 var(--font-sans);
 	--body-sm: 400 14px/1.35 var(--font-sans);
-	--label: 500 11px/1.2 var(--font-mono);
-	--label-tracking: 0.04em;
+	--label: 400 11px/1.2 var(--font-sans);
+	--label-tracking: 0.06em;
 
 	/* Spacing */
 	--space-1: 4px;
