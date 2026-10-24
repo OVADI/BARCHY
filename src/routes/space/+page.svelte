@@ -9,10 +9,13 @@
 	import InfoFab from '$lib/components/InfoFab.svelte';
 	import PageHeader from '$lib/components/PageHeader.svelte';
 	import Pill from '$lib/components/Pill.svelte';
+	import StairDiagram from '$lib/components/StairDiagram.svelte';
 	import { t, type MessageKey } from '$lib/i18n/index.svelte';
+	import type { Fact } from '$lib/schema/fact';
 	import type { SourceRef } from '$lib/schema/source';
 	import { source } from '$lib/sources';
 	import { saved } from '$lib/storage/saved.svelte';
+	import type { Component } from 'svelte';
 	import type { PageProps } from './$types';
 
 	let { data }: PageProps = $props();
@@ -46,6 +49,30 @@
 		}
 	];
 	const current = $derived(tabs.find((x) => x.key === tab)!);
+
+	// Groups with a drawing: tapping a tile highlights its dimension there.
+	const diagrams: Record<
+		string,
+		Component<{ facts: Fact[]; selected?: string | null; onselect?: (id: string) => void }>
+	> = {
+		stair: StairDiagram
+	};
+	let selectedFact = $state<string | null>(null);
+
+	// Tapping a value in the drawing selects its tile and scrolls it just below the sticky drawing.
+	function showFact(id: string, diagram: HTMLElement | null) {
+		selectedFact = id;
+		const tile = document.querySelector<HTMLElement>(`[data-fact="${id}"]`);
+		if (!tile) return;
+		const offset = (diagram?.offsetHeight ?? 0) + 8;
+		const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+		window.scrollTo({
+			top: tile.getBoundingClientRect().top + window.scrollY - offset,
+			behavior: reduce ? 'auto' : 'smooth'
+		});
+		tile.querySelector<HTMLElement>('button')?.focus({ preventScroll: true });
+	}
+	let diagramEl = $state<HTMLElement | null>(null);
 	const anyFlagged = $derived(data.facts.some((f) => f.status === 'flagged'));
 
 	// Sources of everything on this screen, once each.
@@ -81,7 +108,14 @@
 
 <div class="tabs" role="tablist" aria-label={t('spacePage.tabs')}>
 	{#each tabs as x (x.key)}
-		<Pill kind="tab" selected={tab === x.key} onclick={() => (tab = x.key)}>{t(x.title)}</Pill>
+		<Pill
+			kind="tab"
+			selected={tab === x.key}
+			onclick={() => {
+				tab = x.key;
+				selectedFact = null;
+			}}>{t(x.title)}</Pill
+		>
 	{/each}
 </div>
 
@@ -97,11 +131,32 @@
 	{/if}
 	{#each current.groups as g (g.key)}
 		{@const list = data.facts.filter((f) => f.group === g.key)}
+		{@const Diagram = diagrams[g.key]}
 		{#if list.length}
-			{#if current.groups.length > 1}<h2 class="t-label t-muted section">{t(g.title)}</h2>{/if}
-			{#each list as fact (fact.id)}
-				<FactTile {fact} />
-			{/each}
+			<section class="group">
+				{#if current.groups.length > 1}<h2 class="t-label t-muted section">{t(g.title)}</h2>{/if}
+				{#if Diagram}
+					<div class="diagram" bind:this={diagramEl}>
+						<Diagram
+							facts={list}
+							selected={selectedFact}
+							onselect={(id) => showFact(id, diagramEl)}
+						/>
+					</div>
+					<p class="t-body-sm t-muted">{t('stairDiagram.hint')}</p>
+				{/if}
+				{#each list as fact (fact.id)}
+					{#if Diagram}
+						<FactTile
+							{fact}
+							selected={selectedFact === fact.id}
+							onselect={() => (selectedFact = selectedFact === fact.id ? null : fact.id)}
+						/>
+					{:else}
+						<FactTile {fact} />
+					{/if}
+				{/each}
+			</section>
 		{/if}
 	{/each}
 </div>
@@ -135,8 +190,21 @@
 		flex-direction: column;
 		gap: var(--tile-gap);
 	}
+	.group {
+		display: flex;
+		flex-direction: column;
+		gap: var(--tile-gap);
+	}
 	.section {
 		margin: var(--space-4) 0 var(--space-1);
+	}
+	/* Stays in view while scrolling this group's tiles, and only those. */
+	.diagram {
+		position: sticky;
+		top: 0;
+		z-index: 1;
+		padding: var(--space-2) 0;
+		background: var(--ground);
 	}
 	.tool {
 		display: flex;
