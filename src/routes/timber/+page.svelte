@@ -11,6 +11,7 @@
 	import InfoFab from '$lib/components/InfoFab.svelte';
 	import PageHeader from '$lib/components/PageHeader.svelte';
 	import Pill from '$lib/components/Pill.svelte';
+	import RulesOverview from '$lib/components/RulesOverview.svelte';
 	import Stat from '$lib/components/Stat.svelte';
 	import Tile from '$lib/components/Tile.svelte';
 	import ValueGrid from '$lib/components/ValueGrid.svelte';
@@ -24,6 +25,8 @@
 
 	type Kind = TimberSection['kind'];
 	let kind = $state<Kind>('sawn');
+	/** The Rules tab replaces the section picker; the kind stays as it was. */
+	let rules = $state(false);
 	const ofKind = $derived(data.sections.filter((s) => s.kind === kind));
 	const widths = $derived([...new Set(ofKind.map((s) => s.b))].sort((x, y) => x - y));
 
@@ -46,8 +49,9 @@
 	);
 	const s = $derived(ofKind.find((x) => x.b === b && x.h === h)!);
 
-	// Opened from search: /timber?kind=sawn&b=69&h=195
+	// Opened from search: /timber?kind=sawn&b=69&h=195, or back from a rule group: /timber?tab=rules
 	onMount(() => {
+		rules = param('tab') === 'rules';
 		const k = param('kind');
 		if (k === 'sawn' || k === 'glulam') kind = k;
 		pickB = numberParam('b');
@@ -97,76 +101,90 @@
 
 <div class="tabs" role="tablist" aria-label={t('timber.kinds')}>
 	{#each ['sawn', 'glulam'] as const as k (k)}
-		<Pill kind="tab" selected={kind === k} onclick={() => (kind = k)}>{t(`timber.${k}`)}</Pill>
-	{/each}
-</div>
-
-<div class="picker" role="tabpanel">
-	<ChoiceRow
-		label={t('timber.width')}
-		options={widths}
-		value={b}
-		unit="mm"
-		onchange={(v) => (pickB = v)}
-	/>
-	<ChoiceRow
-		label={t('timber.height')}
-		options={heights}
-		value={h}
-		unit="mm"
-		onchange={(v) => (pickH = v)}
-	/>
-</div>
-
-{#if flagged}
-	<div class="banner" role="note">
-		<FlagMark label={t('status.flagged')} tone="light" />
-		<p class="t-body-sm">{t('timber.flagged')}</p>
-	</div>
-{/if}
-
-<Tile tone="orange" pad="lg">
-	<span class="t-label">{t('timber.section')}</span>
-	<Stat
-		value={sizeText}
-		unit="mm"
-		size={sizeText.length > 8 ? 'md' : 'lg'}
-		label={t(`timber.${kind}`)}
-	/>
-	<svg
-		width={BOX}
-		height={BOX}
-		viewBox="0 0 {BOX} {BOX}"
-		role="img"
-		aria-label={t('timber.drawing', { b: s.b, h: s.h })}
-	>
-		<!-- Vademecum timber hatch (NEN 2302); the source has no separate hatch for glulam. -->
-		<HatchFill
-			hatch="hout"
-			x={(BOX - s.b * scale) / 2 + 1}
-			y={(BOX - s.h * scale) / 2 + 1}
-			width={s.b * scale - 2}
-			height={s.h * scale - 2}
-		/>
-		<rect
-			x={(BOX - s.b * scale) / 2 + 1}
-			y={(BOX - s.h * scale) / 2 + 1}
-			width={s.b * scale - 2}
-			height={s.h * scale - 2}
-			fill="none"
-			stroke="currentColor"
-			stroke-width="2"
-		/>
-	</svg>
-	<p class="t-body-sm hatch">
-		{t('timber.hatch')}
-		<a href="{resolve('/drawing/hatch/[group]', { group: 'timber' })}#hatch-hout"
-			>{t('drawing.title')} →</a
+		<Pill
+			kind="tab"
+			selected={!rules && kind === k}
+			onclick={() => {
+				kind = k;
+				rules = false;
+			}}>{t(`timber.${k}Tab`)}</Pill
 		>
-	</p>
-</Tile>
+	{/each}
+	<Pill kind="tab" selected={rules} onclick={() => (rules = true)}>{t('rules.title')}</Pill>
+</div>
 
-<ValueGrid {values} label={t('timber.properties')} />
+{#if rules}
+	<div role="tabpanel">
+		<RulesOverview material="timber" groups={data.rules} />
+	</div>
+{:else}
+	<div class="picker" role="tabpanel">
+		<ChoiceRow
+			label={t('timber.width')}
+			options={widths}
+			value={b}
+			unit="mm"
+			onchange={(v) => (pickB = v)}
+		/>
+		<ChoiceRow
+			label={t('timber.height')}
+			options={heights}
+			value={h}
+			unit="mm"
+			onchange={(v) => (pickH = v)}
+		/>
+	</div>
+
+	{#if flagged}
+		<div class="banner" role="note">
+			<FlagMark label={t('status.flagged')} tone="light" />
+			<p class="t-body-sm">{t('timber.flagged')}</p>
+		</div>
+	{/if}
+
+	<Tile tone="orange" pad="lg">
+		<span class="t-label">{t('timber.section')}</span>
+		<Stat
+			value={sizeText}
+			unit="mm"
+			size={sizeText.length > 8 ? 'md' : 'lg'}
+			label={t(`timber.${kind}`)}
+		/>
+		<svg
+			width={BOX}
+			height={BOX}
+			viewBox="0 0 {BOX} {BOX}"
+			role="img"
+			aria-label={t('timber.drawing', { b: s.b, h: s.h })}
+		>
+			<!-- Vademecum timber hatch (NEN 2302); the source has no separate hatch for glulam. -->
+			<HatchFill
+				hatch="hout"
+				x={(BOX - s.b * scale) / 2 + 1}
+				y={(BOX - s.h * scale) / 2 + 1}
+				width={s.b * scale - 2}
+				height={s.h * scale - 2}
+			/>
+			<rect
+				x={(BOX - s.b * scale) / 2 + 1}
+				y={(BOX - s.h * scale) / 2 + 1}
+				width={s.b * scale - 2}
+				height={s.h * scale - 2}
+				fill="none"
+				stroke="currentColor"
+				stroke-width="2"
+			/>
+		</svg>
+		<p class="t-body-sm hatch">
+			{t('timber.hatch')}
+			<a href="{resolve('/drawing/hatch/[group]', { group: 'timber' })}#hatch-hout"
+				>{t('drawing.title')} →</a
+			>
+		</p>
+	</Tile>
+
+	<ValueGrid {values} label={t('timber.properties')} />
+{/if}
 
 <InfoFab sources={[data.source, ...(s.source ? [s.source] : [])]}>
 	<p>{flagged ? t('status.flaggedLong') : t('status.auto_checked')}</p>

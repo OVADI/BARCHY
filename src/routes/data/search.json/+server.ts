@@ -11,6 +11,7 @@ import { FactFile } from '$lib/schema/fact';
 import { ProfiledSheetFile, SteelFile } from '$lib/schema/steel';
 import { TimberFile } from '$lib/schema/timber';
 import { buildSearchIndex } from '$lib/search/build';
+import { rulesOf } from '$lib/server/rules';
 import type { RequestHandler } from './$types';
 
 // Content is validated by the build plugin; parsing again here keeps the types honest.
@@ -26,7 +27,8 @@ const index = buildSearchIndex({
 	sheets: ProfiledSheetFile.parse(sheets),
 	bbl: FactFile.parse(bbl).facts,
 	steelFacts: FactFile.parse(steelFacts).facts,
-	drawing: DrawingFile.parse(drawing)
+	drawing: DrawingFile.parse(drawing),
+	rules: { timber: rulesOf('timber'), concrete: rulesOf('concrete'), masonry: rulesOf('masonry') }
 });
 
 export const prerender = true;

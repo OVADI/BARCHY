@@ -79,7 +79,8 @@
 		"drawingTitle": "Lijnsoorten en arcering",
 		"tools": "Rekentools",
 		"toolsUnit": "tools",
-		"toolsSub": "Rekenen en direct toetsen"
+		"toolsSub": "Rekenen en direct toetsen",
+		"masonry": "Metselwerk"
 	},
 	"search": {
 		"title": "Zoeken",
@@ -108,7 +109,8 @@
 	"tools": {
 		"title": "Rekentools",
 		"stair": "Trapcalculator",
-		"steelWeight": "Gewicht staalprofiel"
+		"steelWeight": "Gewicht staalprofiel",
+		"beam": "Liggerschatter"
 	},
 	"saved": {
 		"title": "Bewaard",
@@ -262,7 +264,9 @@
 			"Wz": "Weerstandsmoment om de zwakke as, h·b²/6. Van belang als de balk plat ligt of zijdelings wordt belast.",
 			"Iz": "Traagheidsmoment om de zwakke as, h·b³/12. Meestal maatgevend voor knik van een stijl of kolom, en voor kippen van slanke balken."
 		},
-		"hatch": "Arcering hout volgens het Vademecum (NEN 2302). Voor gelamineerd hout geeft de bron geen eigen arcering."
+		"hatch": "Arcering hout volgens het Vademecum (NEN 2302). Voor gelamineerd hout geeft de bron geen eigen arcering.",
+		"sawnTab": "Gezaagd",
+		"glulamTab": "Gelamineerd"
 	},
 	"concrete": {
 		"title": "Beton",
@@ -274,7 +278,9 @@
 		"table": "Wapeningsoppervlakte in mm² per aantal staven",
 		"tableCaption": "Wapeningsoppervlakte As in mm² per diameter (rijen) en aantal staven (kolommen)",
 		"tableNote": "Rijen: diameter in mm. Kolommen: aantal staven.",
-		"rounded": "Waarden zoals gepubliceerd in het Vademecum, afgerond op hele mm²."
+		"rounded": "Waarden zoals gepubliceerd in het Vademecum, afgerond op hele mm².",
+		"tabs": "Onderdeel",
+		"rebarTab": "Wapening"
 	},
 	"drawing": {
 		"title": "Tekenen",
@@ -391,5 +397,57 @@
 		},
 		"unitNote": "Eenheid hier gelezen als {unit}. De kolomkop in het Vademecum is tegenstrijdig.",
 		"sigmaNote": "Betekenis en eenheid niet toegelicht in de bron."
+	},
+	"rules": {
+		"title": "Vuistregels",
+		"beams": "Liggers en spanten",
+		"floors": "Vloeren",
+		"walls": "Wanden",
+		"columns": "Kolommen",
+		"stability": "Stabiliteit",
+		"note": "Toelichting",
+		"warning": "Let op",
+		"chart": "Ontwerpgrafiek in de bron",
+		"chartCount": "{n} ontwerpgrafiek(en) in de bron",
+		"assumptions": "Geldt voor",
+		"lines": "Lijnen in de grafiek",
+		"chartWhere": "De grafiek zelf staat in de bron: {ref}.",
+		"openSource": "Open de bron",
+		"flagged": "Deze vuistregels zijn met de hand overgenomen uit het Vademecum en nog niet gecontroleerd. Gebruik ze voor een eerste schatting en raadpleeg bij twijfel de bron.",
+		"method": "Elke kolom van een tabel in de bron is één set regels met hetzelfde bereik. Grafieken staan als verwijzing in de app, zonder afgelezen waarden.",
+		"diagram": "Schema getekend door BARCHY naar de figuur in het Vademecum."
+	},
+	"masonry": {
+		"title": "Metselwerk",
+		"heading": "Kalkzandsteen: minimale wanddikte",
+		"wallType": "Soort wand",
+		"endWall": "Eindgevel",
+		"partyWall": "Tussenwand",
+		"storeys": "Aantal bouwlagen",
+		"bay": "Beukmaat",
+		"thickness": "Minimale wanddikte",
+		"caption": "Onderste bouwlaag, {n} bouwlagen, beukmaat {l} m, vloerdikte {ht} mm",
+		"table": "Minimale wanddikte in mm",
+		"tableCaption": "Minimale constructieve wanddikte d in mm per aantal bouwlagen (rijen) en beukmaat (kolommen)",
+		"tableNote": "Rijen: aantal bouwlagen. Kolommen: beukmaat in m, met de dikte hₜ van de constructieve vloer in mm. Tik op een cel om hem te kiezen.",
+		"method": "Tabellen uit het Vademecum, gebaseerd op NPR 6791. Alleen de beukmaten 4, 5, 6 en 7 m staan in de bron."
+	},
+	"beam": {
+		"scope": "Schat de hoogte van een ligger of spant uit de overspanning, met de vuistregels uit het Vademecum. Een eerste schatting, geen berekening.",
+		"material": "Materiaal",
+		"design": "Ligger",
+		"shape": "Vorm",
+		"variant": "Uitvoering",
+		"span": "Overspanning l",
+		"outside": "l = {l} m valt buiten het bereik van deze vuistregel ({range}). Gebruik de schatting met voorzichtigheid.",
+		"rangeValue": "{lo} tot {hi}",
+		"applies": "Geldt bij",
+		"more": "Overige maten",
+		"unknown": "niet te berekenen uit l alleen; zie de bronfiguur",
+		"allRules": "Alle vuistregels voor deze vorm",
+		"info": "Hoogte = overspanning / n uit de vuistregel, afgerond op 10 mm. Bij een bereik (bijvoorbeeld l/15 – l/20) hoort de kleinste hoogte bij de grootste n.",
+		"rounded": "afgerond op 10 mm",
+		"legHeight": "Hoogte spantbeen g",
+		"legHeightHint": "Van de voet tot de knik, zoals in de bronfiguur. h_knik = (l+g)/n."
 	}
 }

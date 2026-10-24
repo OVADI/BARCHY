@@ -30,14 +30,34 @@ const BOUND: Partial<Record<NonNullable<Fact['bound']>, string>> = { min: '≥ '
 
 /**
  * A fact's value as one string: 'l/15 – l/20', 'L/25', '235 N/mm²', '600 – 630 mm',
- * '≥ 0,9 × 1,2 m', '≤ 0,188 m'. For a divisor range the smaller fraction (larger n) is written last.
+ * '≥ 0,9 × 1,2 m', '≤ 0,188 m', '0,25 · l'. For a divisor range the smaller fraction (larger n) is
+ * written last. With a symbol the quantity comes first: 'h = l/17', 'a = 0,25 · l'.
  */
 export function formatFact(
-	fact: Pick<Fact, 'value' | 'unit' | 'divisorOf' | 'bound' | 'by'>,
+	fact: Pick<Fact, 'value' | 'unit' | 'divisorOf' | 'bound' | 'by'> &
+		Partial<Pick<Fact, 'factorOf' | 'symbol'>>,
+	fmt: NumberFormat
+): string {
+	const value = formatBare(fact, fmt);
+	if (!fact.symbol) return value;
+	// '≤ 1/12' reads as 'x ≤ 1/12', not 'x = ≤ 1/12'.
+	return /^[≤≥]/.test(value) ? `${fact.symbol} ${value}` : `${fact.symbol} = ${value}`;
+}
+
+function formatBare(
+	fact: Pick<Fact, 'value' | 'unit' | 'divisorOf' | 'bound' | 'by' | 'factorOf'>,
 	fmt: NumberFormat
 ): string {
 	const unit = fact.unit ? ` ${fact.unit}` : '';
 	const prefix = (fact.bound && BOUND[fact.bound]) ?? '';
+	if (fact.factorOf) {
+		const f = fact.factorOf;
+		if (Array.isArray(fact.value)) {
+			return `${formatValue(fact.value[0], fmt)} · ${f} – ${formatValue(fact.value[1], fmt)} · ${f}`;
+		}
+		// Factors can be small (toog = 0,001 · L): the default two decimals would round them to 0.
+		return `${prefix}${formatValue(fact.value, fmt)} · ${f}`;
+	}
 	if (fact.divisorOf) {
 		const d = fact.divisorOf;
 		if (Array.isArray(fact.value)) {

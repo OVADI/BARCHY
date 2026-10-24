@@ -147,8 +147,28 @@ Commits `bb379e0`, feedback verwerkt in `2f30b7c` en `31a808d`
 
 **Open punten**
 
-- Gaan de figuren uit de bron mee? Dat vergroot de offline-cache
-- `beton/verbindingen.md` is in de bron leeg
+- ~~Gaan de figuren uit de bron mee?~~ Besloten 24-10-2026: nee. Alleen de waarden, met een verwijzing naar de bronfiguur
+- `beton/verbindingen.md` is in de bron leeg (bevestigd: alleen een kop, er is niets overgenomen)
+
+**Voortgang** (bijgewerkt na elke stap, zodat een nieuwe sessie hier verder kan)
+
+- [x] Feitenmodel uitgebreid (`src/lib/schema/fact.ts`): `symbol` (h, a, f …), `factorOf` (a = 0,25 · l), `when` (bereik voor rekentools), `notes` (toelichting en let op), en per bestand `groups` (bijvoorbeeld een liggervorm) en `charts` (verwijzing naar een ontwerpgrafiek, zonder waarden). `formatFact` schrijft nu "h = l/17" en "a = 0,25 · l"
+- [x] Hout: `content/facts/timber.json`, 59 regels, 18 groepen, 8 grafiekverwijzingen. Elke kolom van een brontabel is één set regels met hetzelfde bereik. Aandachtspunten in `reports/vuistregels-issues.md`
+- [x] Beton: `content/facts/concrete.json`, 43 regels, 9 groepen, 1 grafiekverwijzing. Inclusief de productgegevens van Dycore-kanaalplaten (hoogte, gewicht, maximale lengte). Aandachtspunten in hetzelfde rapport
+- [x] Metselwerk: `content/facts/masonry.json`, 40 regels (kalkzandsteen, eindgevel en tussenwand, per aantal bouwlagen en beukmaat). Aandachtspunten in hetzelfde rapport
+- [x] Tab Vuistregels bij Hout en Beton: overzicht per onderdeel (liggers en spanten, vloeren, wanden, kolommen, stabiliteit) met per vorm een eigen pagina `/rules/[materiaal]/[groep]` met regels, toelichtingen en grafiekverwijzingen. Metselwerk heeft een eigen pagina `/masonry` (kies wand, aantal bouwlagen en beukmaat; de hele tabel staat eronder) en een tegel op het startscherm. Precache na deze stap: 215 bestanden, 1978 KiB (was 1328 KiB vóór fase 8)
+- [x] Liggerschatter (`/tools/beam`): kies staal, hout of beton, een vorm en een uitvoering, vul l in, en zie h (afgerond op 10 mm) met de andere maten van dezelfde tabelkolom (overstek a, pijl f, straal r …) en een waarschuwing als l buiten het bereik van de regel valt. Regels met (l+g) kunnen niet uit l alleen; dat staat erbij. De staal-liggerregels kregen daarvoor `symbol: "h"` en een bereik `when` (zelfde waarden als hun scope-tekst), dus op de staalpagina staat nu "h = l/15 – l/20". Precache 2089 KiB
+- [x] Vormschema's: per vorm een eigen SVG-schema (`BeamDiagram.svelte`, `src/lib/facts/shapes.ts`), getekend naar de figuren in het Vademecum, met l, h, a, f, r en g. Klein als pictogram in het overzicht Vuistregels, groot op de groepspagina en in de liggerschatter. Uit de figuren bleek wat h1, h2 en g zijn; labels en rapport zijn bijgewerkt. Precache 2127 KiB
+- [x] Liggerschatter: bij het driescharnierenspant met geknikt of gebogen spantbeen vul je ook g in (hoogte spantbeen, van voet tot knik, volgens de bronfiguur). Dan worden h_knik = (l+g)/n, h_nok en h_voet uitgerekend
+- [x] Zoekindex: elke vormpagina, elke vuistregel van hout en beton (met de vorm als tweede regel), de grafiekverwijzingen, de metselwerktabel per wandtype en de liggerschatter. Bijvoorbeeld "zadeldakligger", "toog voorspanning", "kalkzandsteen" of "overspanning". Precache 2203 KiB (was 1328 KiB vóór fase 8)
+
+Alle onderdelen van fase 8 zijn gebouwd. Nog te doen: controle door de gebruiker.
+
+**Te controleren door de gebruiker:**
+
+- De aandachtspunten in `reports/vuistregels-issues.md` (hout 1–9, beton 1–10, metselwerk 1–6), vooral het portaalspant (h.o.h. 10–40 m), de hsb-stijlen (binnen- en buitenmuur verwisseld?), 214 mm bij kalkzandsteen en g in (l+g)
+- De vormschema's naast de figuren in het Vademecum
+- Is de offline-cache van 2203 KiB acceptabel, of moeten de vormpagina's pas laden als je ze opent?
 
 ### Fase 9: Presentatie-checklist
 

@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { Fact } from './fact';
+import { Fact, FactFile } from './fact';
 
 const base = {
 	id: 'trap-optrede-test',
@@ -58,8 +58,39 @@ describe('Fact', () => {
 		);
 	});
 
+	it('takes a factor or a divisor, not both', () => {
+		expect(Fact.safeParse({ ...base, value: 0.25, factorOf: 'l', symbol: 'a' }).success).toBe(true);
+		expect(messages({ ...base, factorOf: 'l', divisorOf: 'l' })).toContain(
+			'divisorOf and factorOf exclude each other'
+		);
+	});
+
+	it('checks conditions: a range value exactly with bound range', () => {
+		const when = (c: object) => Fact.safeParse({ ...base, when: [c] }).success;
+		expect(when({ symbol: 'l', value: [6, 30], unit: 'm', bound: 'range' })).toBe(true);
+		expect(when({ symbol: 'h.o.h', value: 5, unit: 'm', bound: 'max' })).toBe(true);
+		expect(when({ symbol: 'l', value: 6, unit: 'm', bound: 'range' })).toBe(false);
+		expect(when({ symbol: 'l', value: [6, 30], unit: 'm', bound: 'max' })).toBe(false);
+	});
+
 	it('rejects an unknown type and a non-kebab id', () => {
 		expect(Fact.safeParse({ ...base, type: 'advice' }).success).toBe(false);
 		expect(Fact.safeParse({ ...base, id: 'Trap Optrede' }).success).toBe(false);
+	});
+});
+
+describe('FactFile', () => {
+	const group = { id: 'beams', label: { nl: 'Liggers', en: 'Beams' } };
+
+	it('needs every fact in a listed group once groups are given', () => {
+		expect(FactFile.safeParse({ facts: [base] }).success).toBe(true);
+		expect(
+			FactFile.safeParse({ facts: [{ ...base, group: 'beams' }], groups: [group] }).success
+		).toBe(true);
+		const issues = FactFile.safeParse({ facts: [{ ...base, group: 'roofs' }], groups: [group] })
+			.error?.issues;
+		expect(issues?.map((i) => i.message)).toContain(
+			'trap-optrede-test: group roofs is not in groups'
+		);
 	});
 });

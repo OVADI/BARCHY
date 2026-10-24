@@ -16,9 +16,17 @@ import { DrawingFile } from '$lib/schema/drawing';
 import { FactFile } from '$lib/schema/fact';
 import { ProfiledSheetFile, SteelFile } from '$lib/schema/steel';
 import { TimberFile } from '$lib/schema/timber';
+import concreteRules from '../../../content/facts/concrete.json';
+import masonryRules from '../../../content/facts/masonry.json';
+import timberRules from '../../../content/facts/timber.json';
 import { buildSearchIndex } from './build';
 import { search } from './match';
 import { normalize } from './normalize';
+
+function rules(raw: unknown) {
+	const { facts, groups = [], charts = [] } = FactFile.parse(raw);
+	return { facts, groups, charts };
+}
 
 const index = buildSearchIndex({
 	steel: [he, ipe, unp, shs, rhs, chs].map((f) => SteelFile.parse(f)),
@@ -27,7 +35,12 @@ const index = buildSearchIndex({
 	sheets: ProfiledSheetFile.parse(sheets),
 	bbl: FactFile.parse(bbl).facts,
 	steelFacts: FactFile.parse(steelFacts).facts,
-	drawing: DrawingFile.parse(drawing)
+	drawing: DrawingFile.parse(drawing),
+	rules: {
+		timber: rules(timberRules),
+		concrete: rules(concreteRules),
+		masonry: rules(masonryRules)
+	}
 });
 
 const { entries } = index;
@@ -110,6 +123,34 @@ describe('search', () => {
 		);
 		expect(search(index, 'toilet').some((h) => h.kind === 'requirement')).toBe(true);
 		expect(search(index, 'doorway')[0]?.path).toBe('/space?tab=circulation#bbl-doorgang-breedte');
+	});
+
+	it('finds timber and concrete rules of thumb, their shape pages and charts', () => {
+		expect(top('zadeldakligger')?.path).toBe('/rules/timber/beams-pitched');
+		expect(top('boogspant')?.path).toBe('/rules/timber/arches');
+		expect(top('kanaalplaatvloer')?.path).toBe('/rules/concrete/floors-hollow-core');
+		const toog = search(index, 'toog voorspanning');
+		expect(toog[0]?.path).toBe('/rules/concrete/floors-hollow-core#beton-kanaalplaat-toog-licht');
+		expect(toog[0]?.sub).toEqual({ nl: 'Kanaalplaatvloer', en: 'Hollow-core floor' });
+		expect(
+			search(index, 'gelamineerde kolom').some((h) =>
+				h.path.endsWith('#hout-grafiek-gelamineerde-kolom')
+			)
+		).toBe(true);
+		expect(
+			search(index, 'stabiliteitswand clt').some((h) =>
+				h.path.startsWith('/rules/timber/stability-clt')
+			)
+		).toBe(true);
+	});
+
+	it('finds the masonry table per wall type and the beam estimator', () => {
+		const hits = search(index, 'kalkzandsteen');
+		expect(hits.some((h) => h.path === '/masonry?wall=calcium-silicate-end-wall')).toBe(true);
+		expect(hits.some((h) => h.path === '/masonry?wall=calcium-silicate-party-wall')).toBe(true);
+		expect(hits.filter((h) => h.path.startsWith('/masonry')).length).toBeLessThanOrEqual(3);
+		expect(top('liggerschatter')?.path).toBe('/tools/beam');
+		expect(search(index, 'overspanning').some((h) => h.path === '/tools/beam')).toBe(true);
 	});
 
 	it('returns nothing for an empty or unknown query', () => {

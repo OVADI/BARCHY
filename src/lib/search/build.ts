@@ -1,9 +1,10 @@
 import { formatFact } from '$lib/facts/format';
 import { SPACE_TABS, STEEL_FACT_GROUPS, steelTabOf } from '$lib/facts/groups';
+import { RULE_SECTION_TITLE, RULE_SECTIONS } from '$lib/facts/rules';
 import { lookup, type Locale, type MessageKey } from '$lib/i18n/messages';
 import type { RebarFile } from '$lib/schema/concrete';
 import type { DrawingFile } from '$lib/schema/drawing';
-import type { Fact } from '$lib/schema/fact';
+import type { Chart, Fact, FactGroup } from '$lib/schema/fact';
 import type { Bilingual } from '$lib/schema/source';
 import type { ProfiledSheetFile, SteelFamily, SteelFile } from '$lib/schema/steel';
 import type { TimberFile } from '$lib/schema/timber';
@@ -24,6 +25,14 @@ export interface SearchContent {
 	bbl: Fact[];
 	steelFacts: Fact[];
 	drawing: DrawingFile;
+	/** Rules of thumb per material, as in content/facts/{timber,concrete,masonry}.json. */
+	rules: Record<'timber' | 'concrete' | 'masonry', RuleFile>;
+}
+
+export interface RuleFile {
+	facts: Fact[];
+	groups: FactGroup[];
+	charts: Chart[];
 }
 
 const INTL: Record<Locale, string> = { nl: 'nl-NL', en: 'en-GB' };
@@ -170,6 +179,78 @@ function steelFactEntries(facts: Fact[]): SearchEntry[] {
 	});
 }
 
+/** Words people use for a material, both languages, so 'vuistregel hout' finds timber rules. */
+const MATERIAL_WORDS = {
+	timber: 'hout houten timber wood',
+	concrete: 'beton betonnen concrete',
+	masonry: 'metselwerk kalkzandsteen muur masonry calcium silicate'
+} as const;
+
+/**
+ * Timber and concrete: one entry per shape page and per rule on it. A rule's label is often
+ * generic ('Liggerhoogte'), so the shape is its second line.
+ */
+function ruleEntries(material: 'timber' | 'concrete', file: RuleFile): SearchEntry[] {
+	const rules = msg('rules.title');
+	const title = msg(`${material}.title`);
+	const extra = `${MATERIAL_WORDS[material]} vuistregel vuistregels rule of thumb`;
+	return RULE_SECTIONS[material].flatMap((section) =>
+		section.groups.flatMap((id): SearchEntry[] => {
+			const group = file.groups.find((g) => g.id === id);
+			if (!group) return [];
+			const sectionTitle = msg(RULE_SECTION_TITLE[section.key]);
+			const path = `/rules/${material}/${id}`;
+			const facts = file.facts.filter((f) => f.group === id);
+			const charts = file.charts.filter((c) => c.group === id);
+			return [
+				{
+					kind: 'page',
+					title: group.label,
+					sub: both((l) => `${lookup(l, 'rules.title')} · ${lookup(l, `${material}.title`)}`),
+					path,
+					names: names(group.label.nl, group.label.en),
+					text: words(sectionTitle, rules, title, ...(group.notes ?? []).map((n) => n.text), extra)
+				},
+				...facts.map((f): SearchEntry => {
+					const entry = factEntry(f, `${path}#${f.id}`, group.label);
+					entry.sub = group.label;
+					entry.text = words(entry.text, sectionTitle, title, extra);
+					return entry;
+				}),
+				...charts.map((c): SearchEntry => ({
+					kind: 'data',
+					title: c.label,
+					sub: both((l) => `${lookup(l, 'rules.chart')} · ${group.label[l]}`),
+					path: `${path}#${c.id}`,
+					names: [],
+					text: words(c.label, c.explain, group.label, title, 'ontwerpgrafiek grafiek chart'),
+					flagged: c.status === 'flagged'
+				}))
+			];
+		})
+	);
+}
+
+/** Masonry: the table per wall type, not its 40 cells, which would all match 'kalkzandsteen'. */
+function masonryEntries(file: RuleFile): SearchEntry[] {
+	return file.groups.map((g) => ({
+		kind: 'rule_of_thumb',
+		title: g.label,
+		sub: msg('masonry.heading'),
+		path: `/masonry?wall=${g.id}`,
+		names: names(g.label.nl, g.label.en),
+		text: words(
+			msg('masonry.title'),
+			msg('masonry.thickness'),
+			msg('masonry.storeys'),
+			msg('masonry.bay'),
+			MATERIAL_WORDS.masonry,
+			'wanddikte eindgevel tussenwand npr 6791 vuistregel'
+		),
+		flagged: file.facts.some((f) => f.group === g.id && f.status === 'flagged')
+	}));
+}
+
 function drawingEntries(file: DrawingFile): SearchEntry[] {
 	const drawing = msg('drawing.title');
 	const scales = (list: number[]) =>
@@ -224,8 +305,19 @@ function drawingEntries(file: DrawingFile): SearchEntry[] {
 const PAGES: { path: string; title: MessageKey; also: MessageKey[]; extra?: string }[] = [
 	{ path: '/steel', title: 'home.steel', also: ['home.structureTitle'], extra: 'staalprofielen' },
 	{ path: '/steel/sheets', title: 'sheets.title', also: [], extra: 'staalplaat' },
-	{ path: '/timber', title: 'home.timber', also: ['timber.sawn', 'timber.glulam'] },
-	{ path: '/concrete', title: 'home.concrete', also: ['concrete.rebar'], extra: 'wapening' },
+	{ path: '/timber', title: 'home.timber', also: ['timber.sawn', 'timber.glulam', 'rules.title'] },
+	{
+		path: '/concrete',
+		title: 'home.concrete',
+		also: ['concrete.rebar', 'rules.title'],
+		extra: 'wapening'
+	},
+	{
+		path: '/masonry',
+		title: 'home.masonry',
+		also: ['masonry.heading'],
+		extra: 'kalkzandsteen muur wanddikte'
+	},
 	{ path: '/space', title: 'spacePage.title', also: ['home.spaceTitle'], extra: 'bbl bouwbesluit' },
 	{
 		path: '/drawing',
@@ -238,6 +330,11 @@ const PAGES: { path: string; title: MessageKey; also: MessageKey[]; extra?: stri
 	{ path: '/settings', title: 'common.settings', also: ['common.language'] }
 ];
 
+/** Extra words per tool, both languages; names only, no values. */
+const TOOL_WORDS: Record<string, string> = {
+	beam: 'ligger balk spant hoogte overspanning vuistregel schatten beam depth span estimate'
+};
+
 function pageEntries(): SearchEntry[] {
 	return [
 		...TOOLS.map((tool): SearchEntry => ({
@@ -245,7 +342,7 @@ function pageEntries(): SearchEntry[] {
 			title: msg(tool.title),
 			path: tool.path,
 			names: names(...Object.values(msg(tool.title))),
-			text: words(msg('tools.title'), 'rekentool calculator')
+			text: words(msg('tools.title'), 'rekentool calculator', TOOL_WORDS[tool.id])
 		})),
 		...PAGES.map((p): SearchEntry => ({
 			kind: 'page',
@@ -271,7 +368,10 @@ export function buildSearchIndex(c: SearchContent): SearchIndex {
 		...sheetEntries(c.sheets),
 		...bblEntries(c.bbl),
 		...steelFactEntries(c.steelFacts),
-		...drawingEntries(c.drawing)
+		...drawingEntries(c.drawing),
+		...ruleEntries('timber', c.rules.timber),
+		...ruleEntries('concrete', c.rules.concrete),
+		...masonryEntries(c.rules.masonry)
 	];
 	return { shared, entries };
 }

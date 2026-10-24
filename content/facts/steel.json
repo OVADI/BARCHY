@@ -9,6 +9,7 @@
 				"nl": "Hoofdligger vloer, H-profiel of koker",
 				"en": "Main floor beam, H-section or hollow section"
 			},
+			"symbol": "h",
 			"value": [18, 28],
 			"unit": "",
 			"divisorOf": "l",
@@ -17,6 +18,14 @@
 				"nl": "l = 4 tot 12 m, h = 100 tot 500 mm",
 				"en": "l = 4 to 12 m, h = 100 to 500 mm"
 			},
+			"when": [
+				{
+					"symbol": "l",
+					"value": [4, 12],
+					"unit": "m",
+					"bound": "range"
+				}
+			],
 			"source": {
 				"title": "TU Delft Vademecum (TeachBooks)",
 				"ref": "§6.3 Liggers",
@@ -36,6 +45,7 @@
 				"nl": "Hoofdligger vloer, I- of U-profiel",
 				"en": "Main floor beam, I- or U-section"
 			},
+			"symbol": "h",
 			"value": [15, 20],
 			"unit": "",
 			"divisorOf": "l",
@@ -44,6 +54,14 @@
 				"nl": "l = 6 tot 30 m, h = 200 tot 500 mm",
 				"en": "l = 6 to 30 m, h = 200 to 500 mm"
 			},
+			"when": [
+				{
+					"symbol": "l",
+					"value": [6, 30],
+					"unit": "m",
+					"bound": "range"
+				}
+			],
 			"source": {
 				"title": "TU Delft Vademecum (TeachBooks)",
 				"ref": "§6.3 Liggers",
@@ -63,6 +81,7 @@
 				"nl": "Vakwerkligger vloer",
 				"en": "Floor truss"
 			},
+			"symbol": "h",
 			"value": [8, 15],
 			"unit": "",
 			"divisorOf": "l",
@@ -71,6 +90,14 @@
 				"nl": "l = 12 à 45 m, h = 1000 tot 4000 mm",
 				"en": "l = 12 to 45 m, h = 1000 to 4000 mm"
 			},
+			"when": [
+				{
+					"symbol": "l",
+					"value": [12, 45],
+					"unit": "m",
+					"bound": "range"
+				}
+			],
 			"source": {
 				"title": "TU Delft Vademecum (TeachBooks)",
 				"ref": "§6.3 Liggers",
@@ -90,6 +117,7 @@
 				"nl": "Hoofdligger dak, H-profiel of koker",
 				"en": "Main roof beam, H-section or hollow section"
 			},
+			"symbol": "h",
 			"value": [20, 30],
 			"unit": "",
 			"divisorOf": "l",
@@ -98,6 +126,14 @@
 				"nl": "l = 6 tot 14 m, h = 100 tot 500 mm",
 				"en": "l = 6 to 14 m, h = 100 to 500 mm"
 			},
+			"when": [
+				{
+					"symbol": "l",
+					"value": [6, 14],
+					"unit": "m",
+					"bound": "range"
+				}
+			],
 			"source": {
 				"title": "TU Delft Vademecum (TeachBooks)",
 				"ref": "§6.3 Liggers",
@@ -117,6 +153,7 @@
 				"nl": "Vakwerkligger dak (I)",
 				"en": "Roof truss (I)"
 			},
+			"symbol": "h",
 			"value": [10, 18],
 			"unit": "",
 			"divisorOf": "l",
@@ -125,6 +162,14 @@
 				"nl": "l = 12 tot 75 m",
 				"en": "l = 12 to 75 m"
 			},
+			"when": [
+				{
+					"symbol": "l",
+					"value": [12, 75],
+					"unit": "m",
+					"bound": "range"
+				}
+			],
 			"source": {
 				"title": "TU Delft Vademecum (TeachBooks)",
 				"ref": "§6.3 Liggers",
@@ -144,6 +189,7 @@
 				"nl": "Vakwerkligger dak (II)",
 				"en": "Roof truss (II)"
 			},
+			"symbol": "h",
 			"value": [15, 25],
 			"unit": "",
 			"divisorOf": "l",
@@ -152,6 +198,14 @@
 				"nl": "l = 5 tot 28 m, h = 300 tot 1000 mm",
 				"en": "l = 5 to 28 m, h = 300 to 1000 mm"
 			},
+			"when": [
+				{
+					"symbol": "l",
+					"value": [5, 28],
+					"unit": "m",
+					"bound": "range"
+				}
+			],
 			"source": {
 				"title": "TU Delft Vademecum (TeachBooks)",
 				"ref": "§6.3 Liggers",
@@ -171,6 +225,7 @@
 				"nl": "Driehoekdakligger",
 				"en": "Triangular roof girder"
 			},
+			"symbol": "h",
 			"value": [5, 10],
 			"unit": "",
 			"divisorOf": "l",
@@ -179,6 +234,14 @@
 				"nl": "l = 8 tot 20 m, h = 300 tot 1000 mm",
 				"en": "l = 8 to 20 m, h = 300 to 1000 mm"
 			},
+			"when": [
+				{
+					"symbol": "l",
+					"value": [8, 20],
+					"unit": "m",
+					"bound": "range"
+				}
+			],
 			"source": {
 				"title": "TU Delft Vademecum (TeachBooks)",
 				"ref": "§6.3 Liggers",
@@ -198,6 +261,7 @@
 				"nl": "Gording, koudgewalst profiel",
 				"en": "Purlin, cold-formed section"
 			},
+			"symbol": "h",
 			"value": [25, 35],
 			"unit": "",
 			"divisorOf": "l",
@@ -206,6 +270,14 @@
 				"nl": "l = 3 tot 12 m, h = 120 tot 300 mm",
 				"en": "l = 3 to 12 m, h = 120 to 300 mm"
 			},
+			"when": [
+				{
+					"symbol": "l",
+					"value": [3, 12],
+					"unit": "m",
+					"bound": "range"
+				}
+			],
 			"source": {
 				"title": "TU Delft Vademecum (TeachBooks)",
 				"ref": "§6.3 Liggers",
@@ -225,6 +297,7 @@
 				"nl": "Gording, warmgewalst profiel",
 				"en": "Purlin, hot-rolled section"
 			},
+			"symbol": "h",
 			"value": [18, 26],
 			"unit": "",
 			"divisorOf": "l",
@@ -233,6 +306,14 @@
 				"nl": "l = 6 tot 40 m, h = 200 tot 1000 mm",
 				"en": "l = 6 to 40 m, h = 200 to 1000 mm"
 			},
+			"when": [
+				{
+					"symbol": "l",
+					"value": [6, 40],
+					"unit": "m",
+					"bound": "range"
+				}
+			],
 			"source": {
 				"title": "TU Delft Vademecum (TeachBooks)",
 				"ref": "§6.3 Liggers",
