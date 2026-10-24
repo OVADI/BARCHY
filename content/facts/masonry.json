@@ -1,0 +1,1598 @@
+{
+	"facts": [
+		{
+			"id": "kzs-eindgevel-1-lagen-4-m",
+			"topic": "masonry",
+			"type": "rule_of_thumb",
+			"group": "calcium-silicate-end-wall",
+			"label": {
+				"nl": "Enkele eindgevel, 1 bouwlaag, beukmaat 4 m",
+				"en": "Single end wall, 1 storey, bay width 4 m"
+			},
+			"symbol": "d",
+			"value": 100,
+			"unit": "mm",
+			"bound": "min",
+			"scope": {
+				"nl": "Onderste bouwlaag; n = 1, l = 4 m, vloerdikte h_t = 180 mm",
+				"en": "Lowest storey; n = 1, l = 4 m, floor thickness h_t = 180 mm"
+			},
+			"when": [
+				{
+					"symbol": "n",
+					"value": 1,
+					"unit": "",
+					"bound": "exact"
+				},
+				{
+					"symbol": "l",
+					"value": 4,
+					"unit": "m",
+					"bound": "exact"
+				}
+			],
+			"source": {
+				"title": "TU Delft Vademecum (TeachBooks)",
+				"ref": "§9.1 Kalkzandsteen (gebaseerd op NPR 6791)",
+				"url": "https://github.com/TeachBooks/vademecum/blob/9a2f70afd158b7cee533c119bf4c88ae15106d4a/book/ontwerp/metselwerk/kalkzandsteen.md",
+				"license": "CC BY 4.0"
+			},
+			"status": "flagged"
+		},
+		{
+			"id": "kzs-eindgevel-1-lagen-5-m",
+			"topic": "masonry",
+			"type": "rule_of_thumb",
+			"group": "calcium-silicate-end-wall",
+			"label": {
+				"nl": "Enkele eindgevel, 1 bouwlaag, beukmaat 5 m",
+				"en": "Single end wall, 1 storey, bay width 5 m"
+			},
+			"symbol": "d",
+			"value": 100,
+			"unit": "mm",
+			"bound": "min",
+			"scope": {
+				"nl": "Onderste bouwlaag; n = 1, l = 5 m, vloerdikte h_t = 200 mm",
+				"en": "Lowest storey; n = 1, l = 5 m, floor thickness h_t = 200 mm"
+			},
+			"when": [
+				{
+					"symbol": "n",
+					"value": 1,
+					"unit": "",
+					"bound": "exact"
+				},
+				{
+					"symbol": "l",
+					"value": 5,
+					"unit": "m",
+					"bound": "exact"
+				}
+			],
+			"source": {
+				"title": "TU Delft Vademecum (TeachBooks)",
+				"ref": "§9.1 Kalkzandsteen (gebaseerd op NPR 6791)",
+				"url": "https://github.com/TeachBooks/vademecum/blob/9a2f70afd158b7cee533c119bf4c88ae15106d4a/book/ontwerp/metselwerk/kalkzandsteen.md",
+				"license": "CC BY 4.0"
+			},
+			"status": "flagged"
+		},
+		{
+			"id": "kzs-eindgevel-1-lagen-6-m",
+			"topic": "masonry",
+			"type": "rule_of_thumb",
+			"group": "calcium-silicate-end-wall",
+			"label": {
+				"nl": "Enkele eindgevel, 1 bouwlaag, beukmaat 6 m",
+				"en": "Single end wall, 1 storey, bay width 6 m"
+			},
+			"symbol": "d",
+			"value": 100,
+			"unit": "mm",
+			"bound": "min",
+			"scope": {
+				"nl": "Onderste bouwlaag; n = 1, l = 6 m, vloerdikte h_t = 220 mm",
+				"en": "Lowest storey; n = 1, l = 6 m, floor thickness h_t = 220 mm"
+			},
+			"when": [
+				{
+					"symbol": "n",
+					"value": 1,
+					"unit": "",
+					"bound": "exact"
+				},
+				{
+					"symbol": "l",
+					"value": 6,
+					"unit": "m",
+					"bound": "exact"
+				}
+			],
+			"source": {
+				"title": "TU Delft Vademecum (TeachBooks)",
+				"ref": "§9.1 Kalkzandsteen (gebaseerd op NPR 6791)",
+				"url": "https://github.com/TeachBooks/vademecum/blob/9a2f70afd158b7cee533c119bf4c88ae15106d4a/book/ontwerp/metselwerk/kalkzandsteen.md",
+				"license": "CC BY 4.0"
+			},
+			"status": "flagged"
+		},
+		{
+			"id": "kzs-eindgevel-1-lagen-7-m",
+			"topic": "masonry",
+			"type": "rule_of_thumb",
+			"group": "calcium-silicate-end-wall",
+			"label": {
+				"nl": "Enkele eindgevel, 1 bouwlaag, beukmaat 7 m",
+				"en": "Single end wall, 1 storey, bay width 7 m"
+			},
+			"symbol": "d",
+			"value": 100,
+			"unit": "mm",
+			"bound": "min",
+			"scope": {
+				"nl": "Onderste bouwlaag; n = 1, l = 7 m, vloerdikte h_t = 240 mm",
+				"en": "Lowest storey; n = 1, l = 7 m, floor thickness h_t = 240 mm"
+			},
+			"when": [
+				{
+					"symbol": "n",
+					"value": 1,
+					"unit": "",
+					"bound": "exact"
+				},
+				{
+					"symbol": "l",
+					"value": 7,
+					"unit": "m",
+					"bound": "exact"
+				}
+			],
+			"source": {
+				"title": "TU Delft Vademecum (TeachBooks)",
+				"ref": "§9.1 Kalkzandsteen (gebaseerd op NPR 6791)",
+				"url": "https://github.com/TeachBooks/vademecum/blob/9a2f70afd158b7cee533c119bf4c88ae15106d4a/book/ontwerp/metselwerk/kalkzandsteen.md",
+				"license": "CC BY 4.0"
+			},
+			"status": "flagged"
+		},
+		{
+			"id": "kzs-eindgevel-2-lagen-4-m",
+			"topic": "masonry",
+			"type": "rule_of_thumb",
+			"group": "calcium-silicate-end-wall",
+			"label": {
+				"nl": "Enkele eindgevel, 2 bouwlagen, beukmaat 4 m",
+				"en": "Single end wall, 2 storeys, bay width 4 m"
+			},
+			"symbol": "d",
+			"value": 100,
+			"unit": "mm",
+			"bound": "min",
+			"scope": {
+				"nl": "Onderste bouwlaag; n = 2, l = 4 m, vloerdikte h_t = 180 mm",
+				"en": "Lowest storey; n = 2, l = 4 m, floor thickness h_t = 180 mm"
+			},
+			"when": [
+				{
+					"symbol": "n",
+					"value": 2,
+					"unit": "",
+					"bound": "exact"
+				},
+				{
+					"symbol": "l",
+					"value": 4,
+					"unit": "m",
+					"bound": "exact"
+				}
+			],
+			"source": {
+				"title": "TU Delft Vademecum (TeachBooks)",
+				"ref": "§9.1 Kalkzandsteen (gebaseerd op NPR 6791)",
+				"url": "https://github.com/TeachBooks/vademecum/blob/9a2f70afd158b7cee533c119bf4c88ae15106d4a/book/ontwerp/metselwerk/kalkzandsteen.md",
+				"license": "CC BY 4.0"
+			},
+			"status": "flagged"
+		},
+		{
+			"id": "kzs-eindgevel-2-lagen-5-m",
+			"topic": "masonry",
+			"type": "rule_of_thumb",
+			"group": "calcium-silicate-end-wall",
+			"label": {
+				"nl": "Enkele eindgevel, 2 bouwlagen, beukmaat 5 m",
+				"en": "Single end wall, 2 storeys, bay width 5 m"
+			},
+			"symbol": "d",
+			"value": 100,
+			"unit": "mm",
+			"bound": "min",
+			"scope": {
+				"nl": "Onderste bouwlaag; n = 2, l = 5 m, vloerdikte h_t = 200 mm",
+				"en": "Lowest storey; n = 2, l = 5 m, floor thickness h_t = 200 mm"
+			},
+			"when": [
+				{
+					"symbol": "n",
+					"value": 2,
+					"unit": "",
+					"bound": "exact"
+				},
+				{
+					"symbol": "l",
+					"value": 5,
+					"unit": "m",
+					"bound": "exact"
+				}
+			],
+			"source": {
+				"title": "TU Delft Vademecum (TeachBooks)",
+				"ref": "§9.1 Kalkzandsteen (gebaseerd op NPR 6791)",
+				"url": "https://github.com/TeachBooks/vademecum/blob/9a2f70afd158b7cee533c119bf4c88ae15106d4a/book/ontwerp/metselwerk/kalkzandsteen.md",
+				"license": "CC BY 4.0"
+			},
+			"status": "flagged"
+		},
+		{
+			"id": "kzs-eindgevel-2-lagen-6-m",
+			"topic": "masonry",
+			"type": "rule_of_thumb",
+			"group": "calcium-silicate-end-wall",
+			"label": {
+				"nl": "Enkele eindgevel, 2 bouwlagen, beukmaat 6 m",
+				"en": "Single end wall, 2 storeys, bay width 6 m"
+			},
+			"symbol": "d",
+			"value": 100,
+			"unit": "mm",
+			"bound": "min",
+			"scope": {
+				"nl": "Onderste bouwlaag; n = 2, l = 6 m, vloerdikte h_t = 220 mm",
+				"en": "Lowest storey; n = 2, l = 6 m, floor thickness h_t = 220 mm"
+			},
+			"when": [
+				{
+					"symbol": "n",
+					"value": 2,
+					"unit": "",
+					"bound": "exact"
+				},
+				{
+					"symbol": "l",
+					"value": 6,
+					"unit": "m",
+					"bound": "exact"
+				}
+			],
+			"source": {
+				"title": "TU Delft Vademecum (TeachBooks)",
+				"ref": "§9.1 Kalkzandsteen (gebaseerd op NPR 6791)",
+				"url": "https://github.com/TeachBooks/vademecum/blob/9a2f70afd158b7cee533c119bf4c88ae15106d4a/book/ontwerp/metselwerk/kalkzandsteen.md",
+				"license": "CC BY 4.0"
+			},
+			"status": "flagged"
+		},
+		{
+			"id": "kzs-eindgevel-2-lagen-7-m",
+			"topic": "masonry",
+			"type": "rule_of_thumb",
+			"group": "calcium-silicate-end-wall",
+			"label": {
+				"nl": "Enkele eindgevel, 2 bouwlagen, beukmaat 7 m",
+				"en": "Single end wall, 2 storeys, bay width 7 m"
+			},
+			"symbol": "d",
+			"value": 100,
+			"unit": "mm",
+			"bound": "min",
+			"scope": {
+				"nl": "Onderste bouwlaag; n = 2, l = 7 m, vloerdikte h_t = 240 mm",
+				"en": "Lowest storey; n = 2, l = 7 m, floor thickness h_t = 240 mm"
+			},
+			"when": [
+				{
+					"symbol": "n",
+					"value": 2,
+					"unit": "",
+					"bound": "exact"
+				},
+				{
+					"symbol": "l",
+					"value": 7,
+					"unit": "m",
+					"bound": "exact"
+				}
+			],
+			"source": {
+				"title": "TU Delft Vademecum (TeachBooks)",
+				"ref": "§9.1 Kalkzandsteen (gebaseerd op NPR 6791)",
+				"url": "https://github.com/TeachBooks/vademecum/blob/9a2f70afd158b7cee533c119bf4c88ae15106d4a/book/ontwerp/metselwerk/kalkzandsteen.md",
+				"license": "CC BY 4.0"
+			},
+			"status": "flagged"
+		},
+		{
+			"id": "kzs-eindgevel-3-lagen-4-m",
+			"topic": "masonry",
+			"type": "rule_of_thumb",
+			"group": "calcium-silicate-end-wall",
+			"label": {
+				"nl": "Enkele eindgevel, 3 bouwlagen, beukmaat 4 m",
+				"en": "Single end wall, 3 storeys, bay width 4 m"
+			},
+			"symbol": "d",
+			"value": 100,
+			"unit": "mm",
+			"bound": "min",
+			"scope": {
+				"nl": "Onderste bouwlaag; n = 3, l = 4 m, vloerdikte h_t = 180 mm",
+				"en": "Lowest storey; n = 3, l = 4 m, floor thickness h_t = 180 mm"
+			},
+			"when": [
+				{
+					"symbol": "n",
+					"value": 3,
+					"unit": "",
+					"bound": "exact"
+				},
+				{
+					"symbol": "l",
+					"value": 4,
+					"unit": "m",
+					"bound": "exact"
+				}
+			],
+			"source": {
+				"title": "TU Delft Vademecum (TeachBooks)",
+				"ref": "§9.1 Kalkzandsteen (gebaseerd op NPR 6791)",
+				"url": "https://github.com/TeachBooks/vademecum/blob/9a2f70afd158b7cee533c119bf4c88ae15106d4a/book/ontwerp/metselwerk/kalkzandsteen.md",
+				"license": "CC BY 4.0"
+			},
+			"status": "flagged"
+		},
+		{
+			"id": "kzs-eindgevel-3-lagen-5-m",
+			"topic": "masonry",
+			"type": "rule_of_thumb",
+			"group": "calcium-silicate-end-wall",
+			"label": {
+				"nl": "Enkele eindgevel, 3 bouwlagen, beukmaat 5 m",
+				"en": "Single end wall, 3 storeys, bay width 5 m"
+			},
+			"symbol": "d",
+			"value": 100,
+			"unit": "mm",
+			"bound": "min",
+			"scope": {
+				"nl": "Onderste bouwlaag; n = 3, l = 5 m, vloerdikte h_t = 200 mm",
+				"en": "Lowest storey; n = 3, l = 5 m, floor thickness h_t = 200 mm"
+			},
+			"when": [
+				{
+					"symbol": "n",
+					"value": 3,
+					"unit": "",
+					"bound": "exact"
+				},
+				{
+					"symbol": "l",
+					"value": 5,
+					"unit": "m",
+					"bound": "exact"
+				}
+			],
+			"source": {
+				"title": "TU Delft Vademecum (TeachBooks)",
+				"ref": "§9.1 Kalkzandsteen (gebaseerd op NPR 6791)",
+				"url": "https://github.com/TeachBooks/vademecum/blob/9a2f70afd158b7cee533c119bf4c88ae15106d4a/book/ontwerp/metselwerk/kalkzandsteen.md",
+				"license": "CC BY 4.0"
+			},
+			"status": "flagged"
+		},
+		{
+			"id": "kzs-eindgevel-3-lagen-6-m",
+			"topic": "masonry",
+			"type": "rule_of_thumb",
+			"group": "calcium-silicate-end-wall",
+			"label": {
+				"nl": "Enkele eindgevel, 3 bouwlagen, beukmaat 6 m",
+				"en": "Single end wall, 3 storeys, bay width 6 m"
+			},
+			"symbol": "d",
+			"value": 120,
+			"unit": "mm",
+			"bound": "min",
+			"scope": {
+				"nl": "Onderste bouwlaag; n = 3, l = 6 m, vloerdikte h_t = 220 mm",
+				"en": "Lowest storey; n = 3, l = 6 m, floor thickness h_t = 220 mm"
+			},
+			"when": [
+				{
+					"symbol": "n",
+					"value": 3,
+					"unit": "",
+					"bound": "exact"
+				},
+				{
+					"symbol": "l",
+					"value": 6,
+					"unit": "m",
+					"bound": "exact"
+				}
+			],
+			"source": {
+				"title": "TU Delft Vademecum (TeachBooks)",
+				"ref": "§9.1 Kalkzandsteen (gebaseerd op NPR 6791)",
+				"url": "https://github.com/TeachBooks/vademecum/blob/9a2f70afd158b7cee533c119bf4c88ae15106d4a/book/ontwerp/metselwerk/kalkzandsteen.md",
+				"license": "CC BY 4.0"
+			},
+			"status": "flagged"
+		},
+		{
+			"id": "kzs-eindgevel-3-lagen-7-m",
+			"topic": "masonry",
+			"type": "rule_of_thumb",
+			"group": "calcium-silicate-end-wall",
+			"label": {
+				"nl": "Enkele eindgevel, 3 bouwlagen, beukmaat 7 m",
+				"en": "Single end wall, 3 storeys, bay width 7 m"
+			},
+			"symbol": "d",
+			"value": 120,
+			"unit": "mm",
+			"bound": "min",
+			"scope": {
+				"nl": "Onderste bouwlaag; n = 3, l = 7 m, vloerdikte h_t = 240 mm",
+				"en": "Lowest storey; n = 3, l = 7 m, floor thickness h_t = 240 mm"
+			},
+			"when": [
+				{
+					"symbol": "n",
+					"value": 3,
+					"unit": "",
+					"bound": "exact"
+				},
+				{
+					"symbol": "l",
+					"value": 7,
+					"unit": "m",
+					"bound": "exact"
+				}
+			],
+			"source": {
+				"title": "TU Delft Vademecum (TeachBooks)",
+				"ref": "§9.1 Kalkzandsteen (gebaseerd op NPR 6791)",
+				"url": "https://github.com/TeachBooks/vademecum/blob/9a2f70afd158b7cee533c119bf4c88ae15106d4a/book/ontwerp/metselwerk/kalkzandsteen.md",
+				"license": "CC BY 4.0"
+			},
+			"status": "flagged"
+		},
+		{
+			"id": "kzs-eindgevel-4-lagen-4-m",
+			"topic": "masonry",
+			"type": "rule_of_thumb",
+			"group": "calcium-silicate-end-wall",
+			"label": {
+				"nl": "Enkele eindgevel, 4 bouwlagen, beukmaat 4 m",
+				"en": "Single end wall, 4 storeys, bay width 4 m"
+			},
+			"symbol": "d",
+			"value": 100,
+			"unit": "mm",
+			"bound": "min",
+			"scope": {
+				"nl": "Onderste bouwlaag; n = 4, l = 4 m, vloerdikte h_t = 180 mm",
+				"en": "Lowest storey; n = 4, l = 4 m, floor thickness h_t = 180 mm"
+			},
+			"when": [
+				{
+					"symbol": "n",
+					"value": 4,
+					"unit": "",
+					"bound": "exact"
+				},
+				{
+					"symbol": "l",
+					"value": 4,
+					"unit": "m",
+					"bound": "exact"
+				}
+			],
+			"source": {
+				"title": "TU Delft Vademecum (TeachBooks)",
+				"ref": "§9.1 Kalkzandsteen (gebaseerd op NPR 6791)",
+				"url": "https://github.com/TeachBooks/vademecum/blob/9a2f70afd158b7cee533c119bf4c88ae15106d4a/book/ontwerp/metselwerk/kalkzandsteen.md",
+				"license": "CC BY 4.0"
+			},
+			"status": "flagged"
+		},
+		{
+			"id": "kzs-eindgevel-4-lagen-5-m",
+			"topic": "masonry",
+			"type": "rule_of_thumb",
+			"group": "calcium-silicate-end-wall",
+			"label": {
+				"nl": "Enkele eindgevel, 4 bouwlagen, beukmaat 5 m",
+				"en": "Single end wall, 4 storeys, bay width 5 m"
+			},
+			"symbol": "d",
+			"value": 120,
+			"unit": "mm",
+			"bound": "min",
+			"scope": {
+				"nl": "Onderste bouwlaag; n = 4, l = 5 m, vloerdikte h_t = 200 mm",
+				"en": "Lowest storey; n = 4, l = 5 m, floor thickness h_t = 200 mm"
+			},
+			"when": [
+				{
+					"symbol": "n",
+					"value": 4,
+					"unit": "",
+					"bound": "exact"
+				},
+				{
+					"symbol": "l",
+					"value": 5,
+					"unit": "m",
+					"bound": "exact"
+				}
+			],
+			"source": {
+				"title": "TU Delft Vademecum (TeachBooks)",
+				"ref": "§9.1 Kalkzandsteen (gebaseerd op NPR 6791)",
+				"url": "https://github.com/TeachBooks/vademecum/blob/9a2f70afd158b7cee533c119bf4c88ae15106d4a/book/ontwerp/metselwerk/kalkzandsteen.md",
+				"license": "CC BY 4.0"
+			},
+			"status": "flagged"
+		},
+		{
+			"id": "kzs-eindgevel-4-lagen-6-m",
+			"topic": "masonry",
+			"type": "rule_of_thumb",
+			"group": "calcium-silicate-end-wall",
+			"label": {
+				"nl": "Enkele eindgevel, 4 bouwlagen, beukmaat 6 m",
+				"en": "Single end wall, 4 storeys, bay width 6 m"
+			},
+			"symbol": "d",
+			"value": 120,
+			"unit": "mm",
+			"bound": "min",
+			"scope": {
+				"nl": "Onderste bouwlaag; n = 4, l = 6 m, vloerdikte h_t = 220 mm",
+				"en": "Lowest storey; n = 4, l = 6 m, floor thickness h_t = 220 mm"
+			},
+			"when": [
+				{
+					"symbol": "n",
+					"value": 4,
+					"unit": "",
+					"bound": "exact"
+				},
+				{
+					"symbol": "l",
+					"value": 6,
+					"unit": "m",
+					"bound": "exact"
+				}
+			],
+			"source": {
+				"title": "TU Delft Vademecum (TeachBooks)",
+				"ref": "§9.1 Kalkzandsteen (gebaseerd op NPR 6791)",
+				"url": "https://github.com/TeachBooks/vademecum/blob/9a2f70afd158b7cee533c119bf4c88ae15106d4a/book/ontwerp/metselwerk/kalkzandsteen.md",
+				"license": "CC BY 4.0"
+			},
+			"status": "flagged"
+		},
+		{
+			"id": "kzs-eindgevel-4-lagen-7-m",
+			"topic": "masonry",
+			"type": "rule_of_thumb",
+			"group": "calcium-silicate-end-wall",
+			"label": {
+				"nl": "Enkele eindgevel, 4 bouwlagen, beukmaat 7 m",
+				"en": "Single end wall, 4 storeys, bay width 7 m"
+			},
+			"symbol": "d",
+			"value": 120,
+			"unit": "mm",
+			"bound": "min",
+			"scope": {
+				"nl": "Onderste bouwlaag; n = 4, l = 7 m, vloerdikte h_t = 240 mm",
+				"en": "Lowest storey; n = 4, l = 7 m, floor thickness h_t = 240 mm"
+			},
+			"when": [
+				{
+					"symbol": "n",
+					"value": 4,
+					"unit": "",
+					"bound": "exact"
+				},
+				{
+					"symbol": "l",
+					"value": 7,
+					"unit": "m",
+					"bound": "exact"
+				}
+			],
+			"source": {
+				"title": "TU Delft Vademecum (TeachBooks)",
+				"ref": "§9.1 Kalkzandsteen (gebaseerd op NPR 6791)",
+				"url": "https://github.com/TeachBooks/vademecum/blob/9a2f70afd158b7cee533c119bf4c88ae15106d4a/book/ontwerp/metselwerk/kalkzandsteen.md",
+				"license": "CC BY 4.0"
+			},
+			"status": "flagged"
+		},
+		{
+			"id": "kzs-eindgevel-5-lagen-4-m",
+			"topic": "masonry",
+			"type": "rule_of_thumb",
+			"group": "calcium-silicate-end-wall",
+			"label": {
+				"nl": "Enkele eindgevel, 5 bouwlagen, beukmaat 4 m",
+				"en": "Single end wall, 5 storeys, bay width 4 m"
+			},
+			"symbol": "d",
+			"value": 150,
+			"unit": "mm",
+			"bound": "min",
+			"scope": {
+				"nl": "Onderste bouwlaag; n = 5, l = 4 m, vloerdikte h_t = 180 mm",
+				"en": "Lowest storey; n = 5, l = 4 m, floor thickness h_t = 180 mm"
+			},
+			"when": [
+				{
+					"symbol": "n",
+					"value": 5,
+					"unit": "",
+					"bound": "exact"
+				},
+				{
+					"symbol": "l",
+					"value": 4,
+					"unit": "m",
+					"bound": "exact"
+				}
+			],
+			"source": {
+				"title": "TU Delft Vademecum (TeachBooks)",
+				"ref": "§9.1 Kalkzandsteen (gebaseerd op NPR 6791)",
+				"url": "https://github.com/TeachBooks/vademecum/blob/9a2f70afd158b7cee533c119bf4c88ae15106d4a/book/ontwerp/metselwerk/kalkzandsteen.md",
+				"license": "CC BY 4.0"
+			},
+			"status": "flagged"
+		},
+		{
+			"id": "kzs-eindgevel-5-lagen-5-m",
+			"topic": "masonry",
+			"type": "rule_of_thumb",
+			"group": "calcium-silicate-end-wall",
+			"label": {
+				"nl": "Enkele eindgevel, 5 bouwlagen, beukmaat 5 m",
+				"en": "Single end wall, 5 storeys, bay width 5 m"
+			},
+			"symbol": "d",
+			"value": 120,
+			"unit": "mm",
+			"bound": "min",
+			"scope": {
+				"nl": "Onderste bouwlaag; n = 5, l = 5 m, vloerdikte h_t = 200 mm",
+				"en": "Lowest storey; n = 5, l = 5 m, floor thickness h_t = 200 mm"
+			},
+			"when": [
+				{
+					"symbol": "n",
+					"value": 5,
+					"unit": "",
+					"bound": "exact"
+				},
+				{
+					"symbol": "l",
+					"value": 5,
+					"unit": "m",
+					"bound": "exact"
+				}
+			],
+			"source": {
+				"title": "TU Delft Vademecum (TeachBooks)",
+				"ref": "§9.1 Kalkzandsteen (gebaseerd op NPR 6791)",
+				"url": "https://github.com/TeachBooks/vademecum/blob/9a2f70afd158b7cee533c119bf4c88ae15106d4a/book/ontwerp/metselwerk/kalkzandsteen.md",
+				"license": "CC BY 4.0"
+			},
+			"status": "flagged"
+		},
+		{
+			"id": "kzs-eindgevel-5-lagen-6-m",
+			"topic": "masonry",
+			"type": "rule_of_thumb",
+			"group": "calcium-silicate-end-wall",
+			"label": {
+				"nl": "Enkele eindgevel, 5 bouwlagen, beukmaat 6 m",
+				"en": "Single end wall, 5 storeys, bay width 6 m"
+			},
+			"symbol": "d",
+			"value": 120,
+			"unit": "mm",
+			"bound": "min",
+			"scope": {
+				"nl": "Onderste bouwlaag; n = 5, l = 6 m, vloerdikte h_t = 220 mm",
+				"en": "Lowest storey; n = 5, l = 6 m, floor thickness h_t = 220 mm"
+			},
+			"when": [
+				{
+					"symbol": "n",
+					"value": 5,
+					"unit": "",
+					"bound": "exact"
+				},
+				{
+					"symbol": "l",
+					"value": 6,
+					"unit": "m",
+					"bound": "exact"
+				}
+			],
+			"source": {
+				"title": "TU Delft Vademecum (TeachBooks)",
+				"ref": "§9.1 Kalkzandsteen (gebaseerd op NPR 6791)",
+				"url": "https://github.com/TeachBooks/vademecum/blob/9a2f70afd158b7cee533c119bf4c88ae15106d4a/book/ontwerp/metselwerk/kalkzandsteen.md",
+				"license": "CC BY 4.0"
+			},
+			"status": "flagged"
+		},
+		{
+			"id": "kzs-eindgevel-5-lagen-7-m",
+			"topic": "masonry",
+			"type": "rule_of_thumb",
+			"group": "calcium-silicate-end-wall",
+			"label": {
+				"nl": "Enkele eindgevel, 5 bouwlagen, beukmaat 7 m",
+				"en": "Single end wall, 5 storeys, bay width 7 m"
+			},
+			"symbol": "d",
+			"value": 120,
+			"unit": "mm",
+			"bound": "min",
+			"scope": {
+				"nl": "Onderste bouwlaag; n = 5, l = 7 m, vloerdikte h_t = 240 mm",
+				"en": "Lowest storey; n = 5, l = 7 m, floor thickness h_t = 240 mm"
+			},
+			"when": [
+				{
+					"symbol": "n",
+					"value": 5,
+					"unit": "",
+					"bound": "exact"
+				},
+				{
+					"symbol": "l",
+					"value": 7,
+					"unit": "m",
+					"bound": "exact"
+				}
+			],
+			"source": {
+				"title": "TU Delft Vademecum (TeachBooks)",
+				"ref": "§9.1 Kalkzandsteen (gebaseerd op NPR 6791)",
+				"url": "https://github.com/TeachBooks/vademecum/blob/9a2f70afd158b7cee533c119bf4c88ae15106d4a/book/ontwerp/metselwerk/kalkzandsteen.md",
+				"license": "CC BY 4.0"
+			},
+			"status": "flagged"
+		},
+		{
+			"id": "kzs-tussenwand-1-lagen-4-m",
+			"topic": "masonry",
+			"type": "rule_of_thumb",
+			"group": "calcium-silicate-party-wall",
+			"label": {
+				"nl": "Enkele tussenwand, 1 bouwlaag, beukmaat 4 m",
+				"en": "Single internal wall, 1 storey, bay width 4 m"
+			},
+			"symbol": "d",
+			"value": 100,
+			"unit": "mm",
+			"bound": "min",
+			"scope": {
+				"nl": "Onderste bouwlaag; n = 1, l = 4 m, vloerdikte h_t = 180 mm",
+				"en": "Lowest storey; n = 1, l = 4 m, floor thickness h_t = 180 mm"
+			},
+			"when": [
+				{
+					"symbol": "n",
+					"value": 1,
+					"unit": "",
+					"bound": "exact"
+				},
+				{
+					"symbol": "l",
+					"value": 4,
+					"unit": "m",
+					"bound": "exact"
+				}
+			],
+			"source": {
+				"title": "TU Delft Vademecum (TeachBooks)",
+				"ref": "§9.1 Kalkzandsteen (gebaseerd op NPR 6791)",
+				"url": "https://github.com/TeachBooks/vademecum/blob/9a2f70afd158b7cee533c119bf4c88ae15106d4a/book/ontwerp/metselwerk/kalkzandsteen.md",
+				"license": "CC BY 4.0"
+			},
+			"status": "flagged"
+		},
+		{
+			"id": "kzs-tussenwand-1-lagen-5-m",
+			"topic": "masonry",
+			"type": "rule_of_thumb",
+			"group": "calcium-silicate-party-wall",
+			"label": {
+				"nl": "Enkele tussenwand, 1 bouwlaag, beukmaat 5 m",
+				"en": "Single internal wall, 1 storey, bay width 5 m"
+			},
+			"symbol": "d",
+			"value": 100,
+			"unit": "mm",
+			"bound": "min",
+			"scope": {
+				"nl": "Onderste bouwlaag; n = 1, l = 5 m, vloerdikte h_t = 200 mm",
+				"en": "Lowest storey; n = 1, l = 5 m, floor thickness h_t = 200 mm"
+			},
+			"when": [
+				{
+					"symbol": "n",
+					"value": 1,
+					"unit": "",
+					"bound": "exact"
+				},
+				{
+					"symbol": "l",
+					"value": 5,
+					"unit": "m",
+					"bound": "exact"
+				}
+			],
+			"source": {
+				"title": "TU Delft Vademecum (TeachBooks)",
+				"ref": "§9.1 Kalkzandsteen (gebaseerd op NPR 6791)",
+				"url": "https://github.com/TeachBooks/vademecum/blob/9a2f70afd158b7cee533c119bf4c88ae15106d4a/book/ontwerp/metselwerk/kalkzandsteen.md",
+				"license": "CC BY 4.0"
+			},
+			"status": "flagged"
+		},
+		{
+			"id": "kzs-tussenwand-1-lagen-6-m",
+			"topic": "masonry",
+			"type": "rule_of_thumb",
+			"group": "calcium-silicate-party-wall",
+			"label": {
+				"nl": "Enkele tussenwand, 1 bouwlaag, beukmaat 6 m",
+				"en": "Single internal wall, 1 storey, bay width 6 m"
+			},
+			"symbol": "d",
+			"value": 100,
+			"unit": "mm",
+			"bound": "min",
+			"scope": {
+				"nl": "Onderste bouwlaag; n = 1, l = 6 m, vloerdikte h_t = 220 mm",
+				"en": "Lowest storey; n = 1, l = 6 m, floor thickness h_t = 220 mm"
+			},
+			"when": [
+				{
+					"symbol": "n",
+					"value": 1,
+					"unit": "",
+					"bound": "exact"
+				},
+				{
+					"symbol": "l",
+					"value": 6,
+					"unit": "m",
+					"bound": "exact"
+				}
+			],
+			"source": {
+				"title": "TU Delft Vademecum (TeachBooks)",
+				"ref": "§9.1 Kalkzandsteen (gebaseerd op NPR 6791)",
+				"url": "https://github.com/TeachBooks/vademecum/blob/9a2f70afd158b7cee533c119bf4c88ae15106d4a/book/ontwerp/metselwerk/kalkzandsteen.md",
+				"license": "CC BY 4.0"
+			},
+			"status": "flagged"
+		},
+		{
+			"id": "kzs-tussenwand-1-lagen-7-m",
+			"topic": "masonry",
+			"type": "rule_of_thumb",
+			"group": "calcium-silicate-party-wall",
+			"label": {
+				"nl": "Enkele tussenwand, 1 bouwlaag, beukmaat 7 m",
+				"en": "Single internal wall, 1 storey, bay width 7 m"
+			},
+			"symbol": "d",
+			"value": 100,
+			"unit": "mm",
+			"bound": "min",
+			"scope": {
+				"nl": "Onderste bouwlaag; n = 1, l = 7 m, vloerdikte h_t = 240 mm",
+				"en": "Lowest storey; n = 1, l = 7 m, floor thickness h_t = 240 mm"
+			},
+			"when": [
+				{
+					"symbol": "n",
+					"value": 1,
+					"unit": "",
+					"bound": "exact"
+				},
+				{
+					"symbol": "l",
+					"value": 7,
+					"unit": "m",
+					"bound": "exact"
+				}
+			],
+			"source": {
+				"title": "TU Delft Vademecum (TeachBooks)",
+				"ref": "§9.1 Kalkzandsteen (gebaseerd op NPR 6791)",
+				"url": "https://github.com/TeachBooks/vademecum/blob/9a2f70afd158b7cee533c119bf4c88ae15106d4a/book/ontwerp/metselwerk/kalkzandsteen.md",
+				"license": "CC BY 4.0"
+			},
+			"status": "flagged"
+		},
+		{
+			"id": "kzs-tussenwand-2-lagen-4-m",
+			"topic": "masonry",
+			"type": "rule_of_thumb",
+			"group": "calcium-silicate-party-wall",
+			"label": {
+				"nl": "Enkele tussenwand, 2 bouwlagen, beukmaat 4 m",
+				"en": "Single internal wall, 2 storeys, bay width 4 m"
+			},
+			"symbol": "d",
+			"value": 120,
+			"unit": "mm",
+			"bound": "min",
+			"scope": {
+				"nl": "Onderste bouwlaag; n = 2, l = 4 m, vloerdikte h_t = 180 mm",
+				"en": "Lowest storey; n = 2, l = 4 m, floor thickness h_t = 180 mm"
+			},
+			"when": [
+				{
+					"symbol": "n",
+					"value": 2,
+					"unit": "",
+					"bound": "exact"
+				},
+				{
+					"symbol": "l",
+					"value": 4,
+					"unit": "m",
+					"bound": "exact"
+				}
+			],
+			"source": {
+				"title": "TU Delft Vademecum (TeachBooks)",
+				"ref": "§9.1 Kalkzandsteen (gebaseerd op NPR 6791)",
+				"url": "https://github.com/TeachBooks/vademecum/blob/9a2f70afd158b7cee533c119bf4c88ae15106d4a/book/ontwerp/metselwerk/kalkzandsteen.md",
+				"license": "CC BY 4.0"
+			},
+			"status": "flagged"
+		},
+		{
+			"id": "kzs-tussenwand-2-lagen-5-m",
+			"topic": "masonry",
+			"type": "rule_of_thumb",
+			"group": "calcium-silicate-party-wall",
+			"label": {
+				"nl": "Enkele tussenwand, 2 bouwlagen, beukmaat 5 m",
+				"en": "Single internal wall, 2 storeys, bay width 5 m"
+			},
+			"symbol": "d",
+			"value": 120,
+			"unit": "mm",
+			"bound": "min",
+			"scope": {
+				"nl": "Onderste bouwlaag; n = 2, l = 5 m, vloerdikte h_t = 200 mm",
+				"en": "Lowest storey; n = 2, l = 5 m, floor thickness h_t = 200 mm"
+			},
+			"when": [
+				{
+					"symbol": "n",
+					"value": 2,
+					"unit": "",
+					"bound": "exact"
+				},
+				{
+					"symbol": "l",
+					"value": 5,
+					"unit": "m",
+					"bound": "exact"
+				}
+			],
+			"source": {
+				"title": "TU Delft Vademecum (TeachBooks)",
+				"ref": "§9.1 Kalkzandsteen (gebaseerd op NPR 6791)",
+				"url": "https://github.com/TeachBooks/vademecum/blob/9a2f70afd158b7cee533c119bf4c88ae15106d4a/book/ontwerp/metselwerk/kalkzandsteen.md",
+				"license": "CC BY 4.0"
+			},
+			"status": "flagged"
+		},
+		{
+			"id": "kzs-tussenwand-2-lagen-6-m",
+			"topic": "masonry",
+			"type": "rule_of_thumb",
+			"group": "calcium-silicate-party-wall",
+			"label": {
+				"nl": "Enkele tussenwand, 2 bouwlagen, beukmaat 6 m",
+				"en": "Single internal wall, 2 storeys, bay width 6 m"
+			},
+			"symbol": "d",
+			"value": 120,
+			"unit": "mm",
+			"bound": "min",
+			"scope": {
+				"nl": "Onderste bouwlaag; n = 2, l = 6 m, vloerdikte h_t = 220 mm",
+				"en": "Lowest storey; n = 2, l = 6 m, floor thickness h_t = 220 mm"
+			},
+			"when": [
+				{
+					"symbol": "n",
+					"value": 2,
+					"unit": "",
+					"bound": "exact"
+				},
+				{
+					"symbol": "l",
+					"value": 6,
+					"unit": "m",
+					"bound": "exact"
+				}
+			],
+			"source": {
+				"title": "TU Delft Vademecum (TeachBooks)",
+				"ref": "§9.1 Kalkzandsteen (gebaseerd op NPR 6791)",
+				"url": "https://github.com/TeachBooks/vademecum/blob/9a2f70afd158b7cee533c119bf4c88ae15106d4a/book/ontwerp/metselwerk/kalkzandsteen.md",
+				"license": "CC BY 4.0"
+			},
+			"status": "flagged"
+		},
+		{
+			"id": "kzs-tussenwand-2-lagen-7-m",
+			"topic": "masonry",
+			"type": "rule_of_thumb",
+			"group": "calcium-silicate-party-wall",
+			"label": {
+				"nl": "Enkele tussenwand, 2 bouwlagen, beukmaat 7 m",
+				"en": "Single internal wall, 2 storeys, bay width 7 m"
+			},
+			"symbol": "d",
+			"value": 120,
+			"unit": "mm",
+			"bound": "min",
+			"scope": {
+				"nl": "Onderste bouwlaag; n = 2, l = 7 m, vloerdikte h_t = 240 mm",
+				"en": "Lowest storey; n = 2, l = 7 m, floor thickness h_t = 240 mm"
+			},
+			"when": [
+				{
+					"symbol": "n",
+					"value": 2,
+					"unit": "",
+					"bound": "exact"
+				},
+				{
+					"symbol": "l",
+					"value": 7,
+					"unit": "m",
+					"bound": "exact"
+				}
+			],
+			"source": {
+				"title": "TU Delft Vademecum (TeachBooks)",
+				"ref": "§9.1 Kalkzandsteen (gebaseerd op NPR 6791)",
+				"url": "https://github.com/TeachBooks/vademecum/blob/9a2f70afd158b7cee533c119bf4c88ae15106d4a/book/ontwerp/metselwerk/kalkzandsteen.md",
+				"license": "CC BY 4.0"
+			},
+			"status": "flagged"
+		},
+		{
+			"id": "kzs-tussenwand-3-lagen-4-m",
+			"topic": "masonry",
+			"type": "rule_of_thumb",
+			"group": "calcium-silicate-party-wall",
+			"label": {
+				"nl": "Enkele tussenwand, 3 bouwlagen, beukmaat 4 m",
+				"en": "Single internal wall, 3 storeys, bay width 4 m"
+			},
+			"symbol": "d",
+			"value": 120,
+			"unit": "mm",
+			"bound": "min",
+			"scope": {
+				"nl": "Onderste bouwlaag; n = 3, l = 4 m, vloerdikte h_t = 180 mm",
+				"en": "Lowest storey; n = 3, l = 4 m, floor thickness h_t = 180 mm"
+			},
+			"when": [
+				{
+					"symbol": "n",
+					"value": 3,
+					"unit": "",
+					"bound": "exact"
+				},
+				{
+					"symbol": "l",
+					"value": 4,
+					"unit": "m",
+					"bound": "exact"
+				}
+			],
+			"source": {
+				"title": "TU Delft Vademecum (TeachBooks)",
+				"ref": "§9.1 Kalkzandsteen (gebaseerd op NPR 6791)",
+				"url": "https://github.com/TeachBooks/vademecum/blob/9a2f70afd158b7cee533c119bf4c88ae15106d4a/book/ontwerp/metselwerk/kalkzandsteen.md",
+				"license": "CC BY 4.0"
+			},
+			"status": "flagged"
+		},
+		{
+			"id": "kzs-tussenwand-3-lagen-5-m",
+			"topic": "masonry",
+			"type": "rule_of_thumb",
+			"group": "calcium-silicate-party-wall",
+			"label": {
+				"nl": "Enkele tussenwand, 3 bouwlagen, beukmaat 5 m",
+				"en": "Single internal wall, 3 storeys, bay width 5 m"
+			},
+			"symbol": "d",
+			"value": 120,
+			"unit": "mm",
+			"bound": "min",
+			"scope": {
+				"nl": "Onderste bouwlaag; n = 3, l = 5 m, vloerdikte h_t = 200 mm",
+				"en": "Lowest storey; n = 3, l = 5 m, floor thickness h_t = 200 mm"
+			},
+			"when": [
+				{
+					"symbol": "n",
+					"value": 3,
+					"unit": "",
+					"bound": "exact"
+				},
+				{
+					"symbol": "l",
+					"value": 5,
+					"unit": "m",
+					"bound": "exact"
+				}
+			],
+			"source": {
+				"title": "TU Delft Vademecum (TeachBooks)",
+				"ref": "§9.1 Kalkzandsteen (gebaseerd op NPR 6791)",
+				"url": "https://github.com/TeachBooks/vademecum/blob/9a2f70afd158b7cee533c119bf4c88ae15106d4a/book/ontwerp/metselwerk/kalkzandsteen.md",
+				"license": "CC BY 4.0"
+			},
+			"status": "flagged"
+		},
+		{
+			"id": "kzs-tussenwand-3-lagen-6-m",
+			"topic": "masonry",
+			"type": "rule_of_thumb",
+			"group": "calcium-silicate-party-wall",
+			"label": {
+				"nl": "Enkele tussenwand, 3 bouwlagen, beukmaat 6 m",
+				"en": "Single internal wall, 3 storeys, bay width 6 m"
+			},
+			"symbol": "d",
+			"value": 150,
+			"unit": "mm",
+			"bound": "min",
+			"scope": {
+				"nl": "Onderste bouwlaag; n = 3, l = 6 m, vloerdikte h_t = 220 mm",
+				"en": "Lowest storey; n = 3, l = 6 m, floor thickness h_t = 220 mm"
+			},
+			"when": [
+				{
+					"symbol": "n",
+					"value": 3,
+					"unit": "",
+					"bound": "exact"
+				},
+				{
+					"symbol": "l",
+					"value": 6,
+					"unit": "m",
+					"bound": "exact"
+				}
+			],
+			"source": {
+				"title": "TU Delft Vademecum (TeachBooks)",
+				"ref": "§9.1 Kalkzandsteen (gebaseerd op NPR 6791)",
+				"url": "https://github.com/TeachBooks/vademecum/blob/9a2f70afd158b7cee533c119bf4c88ae15106d4a/book/ontwerp/metselwerk/kalkzandsteen.md",
+				"license": "CC BY 4.0"
+			},
+			"status": "flagged"
+		},
+		{
+			"id": "kzs-tussenwand-3-lagen-7-m",
+			"topic": "masonry",
+			"type": "rule_of_thumb",
+			"group": "calcium-silicate-party-wall",
+			"label": {
+				"nl": "Enkele tussenwand, 3 bouwlagen, beukmaat 7 m",
+				"en": "Single internal wall, 3 storeys, bay width 7 m"
+			},
+			"symbol": "d",
+			"value": 120,
+			"unit": "mm",
+			"bound": "min",
+			"scope": {
+				"nl": "Onderste bouwlaag; n = 3, l = 7 m, vloerdikte h_t = 240 mm",
+				"en": "Lowest storey; n = 3, l = 7 m, floor thickness h_t = 240 mm"
+			},
+			"when": [
+				{
+					"symbol": "n",
+					"value": 3,
+					"unit": "",
+					"bound": "exact"
+				},
+				{
+					"symbol": "l",
+					"value": 7,
+					"unit": "m",
+					"bound": "exact"
+				}
+			],
+			"source": {
+				"title": "TU Delft Vademecum (TeachBooks)",
+				"ref": "§9.1 Kalkzandsteen (gebaseerd op NPR 6791)",
+				"url": "https://github.com/TeachBooks/vademecum/blob/9a2f70afd158b7cee533c119bf4c88ae15106d4a/book/ontwerp/metselwerk/kalkzandsteen.md",
+				"license": "CC BY 4.0"
+			},
+			"status": "flagged"
+		},
+		{
+			"id": "kzs-tussenwand-4-lagen-4-m",
+			"topic": "masonry",
+			"type": "rule_of_thumb",
+			"group": "calcium-silicate-party-wall",
+			"label": {
+				"nl": "Enkele tussenwand, 4 bouwlagen, beukmaat 4 m",
+				"en": "Single internal wall, 4 storeys, bay width 4 m"
+			},
+			"symbol": "d",
+			"value": 150,
+			"unit": "mm",
+			"bound": "min",
+			"scope": {
+				"nl": "Onderste bouwlaag; n = 4, l = 4 m, vloerdikte h_t = 180 mm",
+				"en": "Lowest storey; n = 4, l = 4 m, floor thickness h_t = 180 mm"
+			},
+			"when": [
+				{
+					"symbol": "n",
+					"value": 4,
+					"unit": "",
+					"bound": "exact"
+				},
+				{
+					"symbol": "l",
+					"value": 4,
+					"unit": "m",
+					"bound": "exact"
+				}
+			],
+			"source": {
+				"title": "TU Delft Vademecum (TeachBooks)",
+				"ref": "§9.1 Kalkzandsteen (gebaseerd op NPR 6791)",
+				"url": "https://github.com/TeachBooks/vademecum/blob/9a2f70afd158b7cee533c119bf4c88ae15106d4a/book/ontwerp/metselwerk/kalkzandsteen.md",
+				"license": "CC BY 4.0"
+			},
+			"status": "flagged"
+		},
+		{
+			"id": "kzs-tussenwand-4-lagen-5-m",
+			"topic": "masonry",
+			"type": "rule_of_thumb",
+			"group": "calcium-silicate-party-wall",
+			"label": {
+				"nl": "Enkele tussenwand, 4 bouwlagen, beukmaat 5 m",
+				"en": "Single internal wall, 4 storeys, bay width 5 m"
+			},
+			"symbol": "d",
+			"value": 150,
+			"unit": "mm",
+			"bound": "min",
+			"scope": {
+				"nl": "Onderste bouwlaag; n = 4, l = 5 m, vloerdikte h_t = 200 mm",
+				"en": "Lowest storey; n = 4, l = 5 m, floor thickness h_t = 200 mm"
+			},
+			"when": [
+				{
+					"symbol": "n",
+					"value": 4,
+					"unit": "",
+					"bound": "exact"
+				},
+				{
+					"symbol": "l",
+					"value": 5,
+					"unit": "m",
+					"bound": "exact"
+				}
+			],
+			"source": {
+				"title": "TU Delft Vademecum (TeachBooks)",
+				"ref": "§9.1 Kalkzandsteen (gebaseerd op NPR 6791)",
+				"url": "https://github.com/TeachBooks/vademecum/blob/9a2f70afd158b7cee533c119bf4c88ae15106d4a/book/ontwerp/metselwerk/kalkzandsteen.md",
+				"license": "CC BY 4.0"
+			},
+			"status": "flagged"
+		},
+		{
+			"id": "kzs-tussenwand-4-lagen-6-m",
+			"topic": "masonry",
+			"type": "rule_of_thumb",
+			"group": "calcium-silicate-party-wall",
+			"label": {
+				"nl": "Enkele tussenwand, 4 bouwlagen, beukmaat 6 m",
+				"en": "Single internal wall, 4 storeys, bay width 6 m"
+			},
+			"symbol": "d",
+			"value": 150,
+			"unit": "mm",
+			"bound": "min",
+			"scope": {
+				"nl": "Onderste bouwlaag; n = 4, l = 6 m, vloerdikte h_t = 220 mm",
+				"en": "Lowest storey; n = 4, l = 6 m, floor thickness h_t = 220 mm"
+			},
+			"when": [
+				{
+					"symbol": "n",
+					"value": 4,
+					"unit": "",
+					"bound": "exact"
+				},
+				{
+					"symbol": "l",
+					"value": 6,
+					"unit": "m",
+					"bound": "exact"
+				}
+			],
+			"source": {
+				"title": "TU Delft Vademecum (TeachBooks)",
+				"ref": "§9.1 Kalkzandsteen (gebaseerd op NPR 6791)",
+				"url": "https://github.com/TeachBooks/vademecum/blob/9a2f70afd158b7cee533c119bf4c88ae15106d4a/book/ontwerp/metselwerk/kalkzandsteen.md",
+				"license": "CC BY 4.0"
+			},
+			"status": "flagged"
+		},
+		{
+			"id": "kzs-tussenwand-4-lagen-7-m",
+			"topic": "masonry",
+			"type": "rule_of_thumb",
+			"group": "calcium-silicate-party-wall",
+			"label": {
+				"nl": "Enkele tussenwand, 4 bouwlagen, beukmaat 7 m",
+				"en": "Single internal wall, 4 storeys, bay width 7 m"
+			},
+			"symbol": "d",
+			"value": 214,
+			"unit": "mm",
+			"bound": "min",
+			"scope": {
+				"nl": "Onderste bouwlaag; n = 4, l = 7 m, vloerdikte h_t = 240 mm",
+				"en": "Lowest storey; n = 4, l = 7 m, floor thickness h_t = 240 mm"
+			},
+			"when": [
+				{
+					"symbol": "n",
+					"value": 4,
+					"unit": "",
+					"bound": "exact"
+				},
+				{
+					"symbol": "l",
+					"value": 7,
+					"unit": "m",
+					"bound": "exact"
+				}
+			],
+			"source": {
+				"title": "TU Delft Vademecum (TeachBooks)",
+				"ref": "§9.1 Kalkzandsteen (gebaseerd op NPR 6791)",
+				"url": "https://github.com/TeachBooks/vademecum/blob/9a2f70afd158b7cee533c119bf4c88ae15106d4a/book/ontwerp/metselwerk/kalkzandsteen.md",
+				"license": "CC BY 4.0"
+			},
+			"status": "flagged"
+		},
+		{
+			"id": "kzs-tussenwand-5-lagen-4-m",
+			"topic": "masonry",
+			"type": "rule_of_thumb",
+			"group": "calcium-silicate-party-wall",
+			"label": {
+				"nl": "Enkele tussenwand, 5 bouwlagen, beukmaat 4 m",
+				"en": "Single internal wall, 5 storeys, bay width 4 m"
+			},
+			"symbol": "d",
+			"value": 150,
+			"unit": "mm",
+			"bound": "min",
+			"scope": {
+				"nl": "Onderste bouwlaag; n = 5, l = 4 m, vloerdikte h_t = 180 mm",
+				"en": "Lowest storey; n = 5, l = 4 m, floor thickness h_t = 180 mm"
+			},
+			"when": [
+				{
+					"symbol": "n",
+					"value": 5,
+					"unit": "",
+					"bound": "exact"
+				},
+				{
+					"symbol": "l",
+					"value": 4,
+					"unit": "m",
+					"bound": "exact"
+				}
+			],
+			"source": {
+				"title": "TU Delft Vademecum (TeachBooks)",
+				"ref": "§9.1 Kalkzandsteen (gebaseerd op NPR 6791)",
+				"url": "https://github.com/TeachBooks/vademecum/blob/9a2f70afd158b7cee533c119bf4c88ae15106d4a/book/ontwerp/metselwerk/kalkzandsteen.md",
+				"license": "CC BY 4.0"
+			},
+			"status": "flagged"
+		},
+		{
+			"id": "kzs-tussenwand-5-lagen-5-m",
+			"topic": "masonry",
+			"type": "rule_of_thumb",
+			"group": "calcium-silicate-party-wall",
+			"label": {
+				"nl": "Enkele tussenwand, 5 bouwlagen, beukmaat 5 m",
+				"en": "Single internal wall, 5 storeys, bay width 5 m"
+			},
+			"symbol": "d",
+			"value": 214,
+			"unit": "mm",
+			"bound": "min",
+			"scope": {
+				"nl": "Onderste bouwlaag; n = 5, l = 5 m, vloerdikte h_t = 200 mm",
+				"en": "Lowest storey; n = 5, l = 5 m, floor thickness h_t = 200 mm"
+			},
+			"when": [
+				{
+					"symbol": "n",
+					"value": 5,
+					"unit": "",
+					"bound": "exact"
+				},
+				{
+					"symbol": "l",
+					"value": 5,
+					"unit": "m",
+					"bound": "exact"
+				}
+			],
+			"source": {
+				"title": "TU Delft Vademecum (TeachBooks)",
+				"ref": "§9.1 Kalkzandsteen (gebaseerd op NPR 6791)",
+				"url": "https://github.com/TeachBooks/vademecum/blob/9a2f70afd158b7cee533c119bf4c88ae15106d4a/book/ontwerp/metselwerk/kalkzandsteen.md",
+				"license": "CC BY 4.0"
+			},
+			"status": "flagged"
+		},
+		{
+			"id": "kzs-tussenwand-5-lagen-6-m",
+			"topic": "masonry",
+			"type": "rule_of_thumb",
+			"group": "calcium-silicate-party-wall",
+			"label": {
+				"nl": "Enkele tussenwand, 5 bouwlagen, beukmaat 6 m",
+				"en": "Single internal wall, 5 storeys, bay width 6 m"
+			},
+			"symbol": "d",
+			"value": 214,
+			"unit": "mm",
+			"bound": "min",
+			"scope": {
+				"nl": "Onderste bouwlaag; n = 5, l = 6 m, vloerdikte h_t = 220 mm",
+				"en": "Lowest storey; n = 5, l = 6 m, floor thickness h_t = 220 mm"
+			},
+			"when": [
+				{
+					"symbol": "n",
+					"value": 5,
+					"unit": "",
+					"bound": "exact"
+				},
+				{
+					"symbol": "l",
+					"value": 6,
+					"unit": "m",
+					"bound": "exact"
+				}
+			],
+			"source": {
+				"title": "TU Delft Vademecum (TeachBooks)",
+				"ref": "§9.1 Kalkzandsteen (gebaseerd op NPR 6791)",
+				"url": "https://github.com/TeachBooks/vademecum/blob/9a2f70afd158b7cee533c119bf4c88ae15106d4a/book/ontwerp/metselwerk/kalkzandsteen.md",
+				"license": "CC BY 4.0"
+			},
+			"status": "flagged"
+		},
+		{
+			"id": "kzs-tussenwand-5-lagen-7-m",
+			"topic": "masonry",
+			"type": "rule_of_thumb",
+			"group": "calcium-silicate-party-wall",
+			"label": {
+				"nl": "Enkele tussenwand, 5 bouwlagen, beukmaat 7 m",
+				"en": "Single internal wall, 5 storeys, bay width 7 m"
+			},
+			"symbol": "d",
+			"value": 214,
+			"unit": "mm",
+			"bound": "min",
+			"scope": {
+				"nl": "Onderste bouwlaag; n = 5, l = 7 m, vloerdikte h_t = 240 mm",
+				"en": "Lowest storey; n = 5, l = 7 m, floor thickness h_t = 240 mm"
+			},
+			"when": [
+				{
+					"symbol": "n",
+					"value": 5,
+					"unit": "",
+					"bound": "exact"
+				},
+				{
+					"symbol": "l",
+					"value": 7,
+					"unit": "m",
+					"bound": "exact"
+				}
+			],
+			"source": {
+				"title": "TU Delft Vademecum (TeachBooks)",
+				"ref": "§9.1 Kalkzandsteen (gebaseerd op NPR 6791)",
+				"url": "https://github.com/TeachBooks/vademecum/blob/9a2f70afd158b7cee533c119bf4c88ae15106d4a/book/ontwerp/metselwerk/kalkzandsteen.md",
+				"license": "CC BY 4.0"
+			},
+			"status": "flagged"
+		}
+	],
+	"groups": [
+		{
+			"id": "calcium-silicate-end-wall",
+			"label": {
+				"nl": "Kalkzandsteen, enkele eindgevel",
+				"en": "Calcium silicate, single end wall"
+			},
+			"notes": [
+				{
+					"kind": "note",
+					"text": {
+						"nl": "Minimale constructieve wanddikte d van de onderste bouwlaag, per aantal bouwlagen en beukmaat l. Bij elke beukmaat hoort een dikte h_t van de constructieve vloer.",
+						"en": "Minimum structural wall thickness d of the lowest storey, by number of storeys and bay width l. Each bay width comes with a thickness h_t of the structural floor."
+					}
+				}
+			]
+		},
+		{
+			"id": "calcium-silicate-party-wall",
+			"label": {
+				"nl": "Kalkzandsteen, enkele tussenwand",
+				"en": "Calcium silicate, single internal wall"
+			},
+			"notes": [
+				{
+					"kind": "note",
+					"text": {
+						"nl": "Minimale constructieve wanddikte d van de onderste bouwlaag, per aantal bouwlagen en beukmaat l. Bij elke beukmaat hoort een dikte h_t van de constructieve vloer.",
+						"en": "Minimum structural wall thickness d of the lowest storey, by number of storeys and bay width l. Each bay width comes with a thickness h_t of the structural floor."
+					}
+				}
+			]
+		}
+	]
+}

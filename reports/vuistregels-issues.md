@@ -50,3 +50,16 @@ De tabellen zijn met de hand overgenomen. Elke kolom van een brontabel wordt é�
 - **Overspanningsgrafiek van Dycore** staat in de app als verwijzing, zonder afgelezen waarden. De figuur "Hoogte" naast de productgegevens staat er niet in.
 - **Verbindingen (§8.6)** is in de bron leeg.
 - **Links naar fabrikanten** (vbi.nl, dycore.nl, belton.nl enzovoort) staan niet in de app. Een deel ervan is waarschijnlijk verouderd.
+
+## Metselwerk (hoofdstuk 9), `content/facts/masonry.json`
+
+40 regels en 2 groepen: de minimale constructieve wanddikte d van kalkzandsteen in de onderste bouwlaag, voor een enkele eindgevel en een enkele tussenwand. Per aantal bouwlagen (1 t/m 5) en beukmaat (4 t/m 7 m). De bron zegt dat de tabellen gebaseerd zijn op NPR 6791.
+
+### Te controleren
+
+1. **Eindgevel, 5 bouwlagen.** Bij een beukmaat van 4 m staat 150 mm, bij 5 tot 7 m 120 mm. De kleinste beuk vraagt hier dus de dikste wand. Klopt dat, of is het een tikfout?
+2. **Tussenwand, 3 bouwlagen.** Bij 6 m staat 150 mm, bij 7 m 120 mm. Ook hier wordt de wand dunner bij een grotere beuk.
+3. **214 mm** (tussenwand, 4 en 5 bouwlagen) is geen gangbare dikte voor kalkzandsteen. Is het een spouwwand van 2 × 100 mm met een voeg, of een tikfout voor 214 → 240 of 250?
+4. **Beukmaten tussen de kolommen** (bijvoorbeeld 5,4 m). De bron geeft alleen 4, 5, 6 en 7 m. Of je dan de waarde van de volgende grotere beukmaat neemt, staat er niet. Een rekentool moet hier voorzichtig mee omgaan.
+5. **Vloerdikte h_t** hoort bij de beukmaat (180 tot 240 mm). Een andere vloerdikte valt buiten de tabel.
+6. **Paragraafnummer §9.1** volgt de volgorde in `book/_toc.yml`.
