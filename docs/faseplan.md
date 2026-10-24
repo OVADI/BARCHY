@@ -98,7 +98,7 @@ Commit `9247650`
 
 Commit `bb379e0`
 
-- Bron gevonden in het Vademecum zelf: hoofdstuk Tekeninstructies, "Lijnsoorten en arcering" (gebaseerd op NEN 2302) en "Constructie tekeningen". De arceringstabellen verwijzen naar de Lecture Notes Technical Drawings (CT1052-09)
+- Bron gevonden in het Vademecum zelf: hoofdstuk Tekeninstructies, "Lijnsoorten en arcering" (gebaseerd op NEN 2302) en "Constructie tekeningen". De arceringstabellen verwijzen naar de Lecture Notes Technical Drawings (CT1052-09). Door de gebruiker bevestigd als bron (24-10-2026)
 - Tekenen (`/drawing`) met drie tabbladen:
   - Arcering: 21 arceringen in vier groepen, met per arcering de schalen (1:100 t/m 1:1) en de opmerking uit de bron. Je kunt filteren op schaal
   - Lijnsoorten: getrokken lijn, streeplijn, gemengde streeplijn en stippellijn, met waarvoor en in welke dikte ze in de tekeninstructies gebruikt worden
@@ -111,7 +111,6 @@ Commit `bb379e0`
 
 **Te controleren door de gebruiker:**
 
-- Bevestig het Vademecum-hoofdstuk Tekeninstructies als bron voor deze fase
 - Vergelijk de getekende arceringen en lijnen met de afbeeldingen in het Vademecum
 - De aandachtspunten 1–7 in `reports/drawing-issues.md`, vooral de volgorde van de schalen bij beton en de arceringen die in de bron gelijk zijn (hout en metselwerk overige, hardhout en steenachtig)
 - Gelamineerd hout: dezelfde arcering als gezaagd hout, of lijmverbindingen tussen de lamellen?
