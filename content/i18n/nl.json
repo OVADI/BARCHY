@@ -304,20 +304,10 @@
 			"grey": "grijs",
 			"black": "zwart"
 		},
-		"relative": "Lijndikte in verhouding getekend, niet op ware grootte.",
 		"issue": "Let op",
 		"hatchSource": "Arceringen in het Vademecum volgens: {ref}",
-		"hatchCount": "{n} arceringen",
 		"stepCount": "{n} stappen",
-		"parts": "Onderdelen",
-		"part": {
-			"general": "Aanpak",
-			"lines": "Lijnen",
-			"labels": "Tekst"
-		},
-		"stepHint": "Tik op een stap voor de volledige instructie. Het nummer is de volgorde uit het Vademecum.",
-		"pickGroup": "Kies een materiaalgroep",
-		"pickGuide": "Kies een tekening"
+		"stepHint": "Tik op een stap voor de volledige instructie."
 	},
 	"stairDiagram": {
 		"view": "Aanzicht",

@@ -384,7 +384,7 @@
 		{
 			"id": "plan",
 			"title": {
-				"nl": "Draagconstructieplattegrond",
+				"nl": "Draagconstructie\u00adplattegrond",
 				"en": "Structural floor plan"
 			},
 			"intro": {
@@ -724,7 +724,7 @@
 		{
 			"id": "detail",
 			"title": {
-				"nl": "Constructiedetail",
+				"nl": "Constructie\u00addetail",
 				"en": "Structural detail"
 			},
 			"intro": {

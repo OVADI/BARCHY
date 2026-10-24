@@ -91,6 +91,7 @@ describe('search', () => {
 		expect(top('streeplijn')?.path).toBe('/drawing?tab=lines#line-dashed');
 		expect(top('dashed line')?.path).toBe('/drawing?tab=lines#line-dashed');
 		expect(top('axonometrie')?.path).toBe('/drawing/guide/axo');
+		expect(top('plattegrond')?.path).toBe('/drawing/guide/plan');
 		expect(top('stramienlijnen')?.path).toBe('/drawing/guide/plan');
 		expect(top('hardhout')?.path).toBe('/drawing/hatch/timber#hatch-hardhout');
 	});

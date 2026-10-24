@@ -304,20 +304,10 @@
 			"grey": "grey",
 			"black": "black"
 		},
-		"relative": "Line weights drawn relative to each other, not at true size.",
 		"issue": "Note",
 		"hatchSource": "Hatches in the Vademecum after: {ref}",
-		"hatchCount": "{n} hatches",
 		"stepCount": "{n} steps",
-		"parts": "Parts",
-		"part": {
-			"general": "Approach",
-			"lines": "Lines",
-			"labels": "Text"
-		},
-		"stepHint": "Tap a step for the full instruction. The number is the order from the Vademecum.",
-		"pickGroup": "Pick a material group",
-		"pickGuide": "Pick a drawing"
+		"stepHint": "Tap a step for the full instruction."
 	},
 	"stairDiagram": {
 		"view": "View",

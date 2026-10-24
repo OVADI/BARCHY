@@ -7,19 +7,14 @@
 	import IssueNotes from '$lib/components/IssueNotes.svelte';
 	import LineSample from '$lib/components/LineSample.svelte';
 	import PageHeader from '$lib/components/PageHeader.svelte';
-	import Pill from '$lib/components/Pill.svelte';
-	import { GUIDE_PARTS } from '$lib/drawing/constants';
 	import { formatNumber, i18n, t } from '$lib/i18n/index.svelte';
 	import type { GuideStep } from '$lib/schema/drawing';
 	import type { PageProps } from './$types';
 
 	let { data }: PageProps = $props();
 
-	type Part = (typeof GUIDE_PARTS)[number];
-	// Steps keep their number from the source, so the drawing order stays visible per part.
+	// All steps in the source order, which is also the drawing order.
 	const steps = $derived(data.guide.steps.map((s, i) => ({ ...s, n: i + 1 })));
-	const parts = $derived(GUIDE_PARTS.filter((p) => steps.some((s) => s.part === p)));
-	let part = $state<Part>('lines');
 	let open = $state<number | null>(null);
 
 	// "Streeplijn · 0,13 mm · grijs": only the parts the source gives.
@@ -48,56 +43,39 @@
 	</div>
 {/if}
 
-<div class="tabs" role="tablist" aria-label={t('drawing.parts')}>
-	{#each parts as p (p)}
-		<Pill
-			kind="tab"
-			selected={part === p}
-			onclick={() => {
-				part = p;
-				open = null;
-			}}
-			>{t(`drawing.part.${p}`)}
-			<span class="count">{steps.filter((s) => s.part === p).length}</span></Pill
-		>
-	{/each}
-</div>
-
 <p class="t-body-sm t-muted">{t('drawing.stepHint')}</p>
 
-<div role="tabpanel">
-	<ol class="steps">
-		{#each steps.filter((s) => s.part === part) as s (s.n)}
-			{@const expanded = open === s.n}
-			<li class="step" class:expanded>
-				<button
-					type="button"
-					class="head"
-					aria-expanded={expanded}
-					onclick={() => (open = expanded ? null : s.n)}
-				>
-					<span class="num t-label">{s.n}</span>
-					<span class="what">
-						<span class="title">{s.title[i18n.locale]}</span>
-						{#if s.line || s.weight}<span class="t-body-sm spec">{specText(s)}</span>{/if}
+<ol class="steps">
+	{#each steps as s (s.n)}
+		{@const expanded = open === s.n}
+		<li class="step" class:expanded>
+			<button
+				type="button"
+				class="head"
+				aria-expanded={expanded}
+				onclick={() => (open = expanded ? null : s.n)}
+			>
+				<span class="num t-label">{s.n}</span>
+				<span class="what">
+					<span class="title">{s.title[i18n.locale]}</span>
+					{#if s.line || s.weight}<span class="t-body-sm spec">{specText(s)}</span>{/if}
+				</span>
+				{#if s.line}
+					<span class="paper sample">
+						<LineSample line={s.line} weight={s.weight} symbol={s.symbol} color={s.color} />
 					</span>
-					{#if s.line}
-						<span class="paper sample">
-							<LineSample line={s.line} weight={s.weight} symbol={s.symbol} color={s.color} />
-						</span>
-					{:else}
-						<!-- Empty slot keeps the chevrons in one column. -->
-						<span class="icon"
-							>{#if s.part === 'labels'}<Type size={20} aria-hidden="true" />{/if}</span
-						>
-					{/if}
-					<span class="chev"><ChevronDown size={18} aria-hidden="true" /></span>
-				</button>
-				{#if expanded}<p class="t-body-sm text">{s.text[i18n.locale]}</p>{/if}
-			</li>
-		{/each}
-	</ol>
-</div>
+				{:else}
+					<!-- Empty slot keeps the chevrons in one column. -->
+					<span class="icon"
+						>{#if s.part === 'labels'}<Type size={20} aria-hidden="true" />{/if}</span
+					>
+				{/if}
+				<span class="chev"><ChevronDown size={18} aria-hidden="true" /></span>
+			</button>
+			{#if expanded}<p class="t-body-sm text">{s.text[i18n.locale]}</p>{/if}
+		</li>
+	{/each}
+</ol>
 
 <IssueNotes issues={data.guide.issues} />
 
@@ -123,17 +101,6 @@
 		border-radius: var(--radius-md);
 		background: var(--surface);
 		margin-bottom: var(--space-3);
-	}
-	.tabs {
-		display: flex;
-		gap: var(--space-2);
-		scrollbar-width: none;
-		overflow-x: auto;
-		margin-bottom: var(--space-2);
-	}
-	.count {
-		opacity: 0.6;
-		margin-left: 2px;
 	}
 	.steps {
 		display: flex;

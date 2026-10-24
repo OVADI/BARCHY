@@ -4,7 +4,6 @@
 	import { onMount } from 'svelte';
 	import { resolve } from '$app/paths';
 	import FlagMark from '$lib/components/FlagMark.svelte';
-	import ChevronRight from '@lucide/svelte/icons/chevron-right';
 	import HatchSwatch from '$lib/components/HatchSwatch.svelte';
 	import IconButton from '$lib/components/IconButton.svelte';
 	import InfoFab from '$lib/components/InfoFab.svelte';
@@ -94,7 +93,6 @@
 
 <div class="panel" role="tabpanel">
 	{#if tab === 'lines'}
-		<p class="t-body-sm t-muted">{t('drawing.relative')}</p>
 		{#each data.lines as l (l.id)}
 			<section class="card" id="line-{l.id}">
 				<div class="paper"><LineSample line={l.id} weight={0.3} label={l.name[i18n.locale]} /></div>
@@ -119,7 +117,6 @@
 			</section>
 		{/each}
 	{:else if tab === 'hatch'}
-		<p class="t-label t-muted">{t('drawing.pickGroup')}</p>
 		<div class="grid">
 			{#each HATCH_GROUPS as g (g)}
 				{@const names = groupNames(g)}
@@ -127,63 +124,58 @@
 					<span class="paper swatch"><HatchSwatch hatch={SAMPLE[g]} /></span>
 					<span class="t-title">{t(`drawing.group.${g}`)}</span>
 					<span class="t-body-sm sub">{names.join(', ')}</span>
-					<span class="t-label sub"
-						>{t('drawing.hatchCount', {
-							n: data.hatches.filter((h) => h.group === g).length
-						})}</span
-					>
 				</a>
 			{/each}
 		</div>
 	{:else}
-		<p class="t-label t-muted">{t('drawing.pickGuide')}</p>
-		{#each data.guides as g (g.id)}
-			<a class="row" href={resolve('/drawing/guide/[id]', { id: g.id })} id="guide-{g.id}">
-				<svg class="icon" width="44" height="44" viewBox="0 0 44 44" aria-hidden="true">
-					{#if g.id === 'plan'}
-						<path d="M6 8h32v28H6z" fill="none" stroke="currentColor" stroke-width="2" />
-						<path
-							d="M22 4v36M2 22h40"
-							stroke="currentColor"
-							stroke-width="1"
-							stroke-dasharray="6 2 1 2"
-						/>
-						{#each [6, 38] as x (x)}{#each [8, 36] as y (y)}<rect
-									x={x - 3}
-									y={y - 3}
-									width="6"
-									height="6"
-									fill="currentColor"
-								/>{/each}{/each}
-					{:else if g.id === 'axo'}
-						{#each [6, 18, 30] as y (y)}
+		<div class="grid">
+			{#each data.guides as g (g.id)}
+				<a class="block" href={resolve('/drawing/guide/[id]', { id: g.id })} id="guide-{g.id}">
+					<svg class="icon" width="56" height="56" viewBox="0 0 44 44" aria-hidden="true">
+						{#if g.id === 'plan'}
+							<path d="M6 8h32v28H6z" fill="none" stroke="currentColor" stroke-width="2" />
 							<path
-								d="M4 {y + 4}l18 -6l18 6l-18 6z"
-								fill="none"
+								d="M22 4v36M2 22h40"
 								stroke="currentColor"
-								stroke-width="2"
-								stroke-linejoin="round"
+								stroke-width="1"
+								stroke-dasharray="6 2 1 2"
 							/>
-						{/each}
-					{:else}
-						<path d="M6 4v36M6 22h34" stroke="currentColor" stroke-width="6" />
-						<path
-							d="M2 22h40M6 2v40"
-							stroke="currentColor"
-							stroke-width="1"
-							stroke-dasharray="6 2 1 2"
-						/>
-						<circle cx="18" cy="16" r="2" fill="currentColor" />
-						<circle cx="28" cy="16" r="2" fill="currentColor" />
-					{/if}
-				</svg>
-				<span class="row-text">
-					<span class="t-title">{g.title[i18n.locale]}</span>
-					<span class="t-body-sm sub">{t('drawing.stepCount', { n: g.steps.length })}</span>
-				</span>
-				<ChevronRight size={24} aria-hidden="true" />
-			</a>
-		{/each}
+							{#each [6, 38] as x (x)}{#each [8, 36] as y (y)}<rect
+										x={x - 3}
+										y={y - 3}
+										width="6"
+										height="6"
+										fill="currentColor"
+									/>{/each}{/each}
+						{:else if g.id === 'axo'}
+							{#each [6, 18, 30] as y (y)}
+								<path
+									d="M4 {y + 4}l18 -6l18 6l-18 6z"
+									fill="none"
+									stroke="currentColor"
+									stroke-width="2"
+									stroke-linejoin="round"
+								/>
+							{/each}
+						{:else}
+							<path d="M6 4v36M6 22h34" stroke="currentColor" stroke-width="6" />
+							<path
+								d="M2 22h40M6 2v40"
+								stroke="currentColor"
+								stroke-width="1"
+								stroke-dasharray="6 2 1 2"
+							/>
+							<circle cx="18" cy="16" r="2" fill="currentColor" />
+							<circle cx="28" cy="16" r="2" fill="currentColor" />
+						{/if}
+					</svg>
+					<span class="block-text">
+						<span class="t-title">{g.title[i18n.locale]}</span>
+						<span class="t-body-sm sub">{t('drawing.stepCount', { n: g.steps.length })}</span>
+					</span>
+				</a>
+			{/each}
+		</div>
 	{/if}
 </div>
 
@@ -235,7 +227,7 @@
 		gap: var(--tile-gap);
 	}
 	.tile,
-	.row,
+	.block,
 	.card {
 		border-radius: var(--radius-lg);
 		background: var(--surface);
@@ -243,7 +235,7 @@
 		min-width: 0;
 	}
 	.tile:hover,
-	.row:hover {
+	.block:hover {
 		background: var(--surface-raised);
 	}
 	.tile {
@@ -255,16 +247,20 @@
 	.sub {
 		color: var(--ink-muted);
 	}
-	.row {
+	.block {
 		display: flex;
-		align-items: center;
-		gap: var(--space-4);
-		min-height: 80px;
+		flex-direction: column;
+		justify-content: space-between;
+		gap: var(--space-3);
+		min-height: 148px;
 		padding: var(--space-4);
 	}
-	.row-text {
+	/* Three drawings: the floor plan (longest name, most steps) gets the full row. */
+	.block:first-child {
+		grid-column: 1 / -1;
+	}
+	.block-text {
 		display: flex;
-		flex: 1;
 		flex-direction: column;
 		gap: var(--space-1);
 	}
