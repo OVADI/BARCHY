@@ -1,10 +1,12 @@
 import { json } from '@sveltejs/kit';
 import bbl from '../../../../content/facts/bbl.json';
 import steelFacts from '../../../../content/facts/steel.json';
+import drawing from '../../../../content/drawing/conventions.json';
 import rebar from '../../../../content/concrete/rebar.json';
 import sheets from '../../../../content/steel/sheets.json';
 import timber from '../../../../content/timber/sections.json';
 import { RebarFile } from '$lib/schema/concrete';
+import { DrawingFile } from '$lib/schema/drawing';
 import { FactFile } from '$lib/schema/fact';
 import { ProfiledSheetFile, SteelFile } from '$lib/schema/steel';
 import { TimberFile } from '$lib/schema/timber';
@@ -23,7 +25,8 @@ const index = buildSearchIndex({
 	rebar: RebarFile.parse(rebar),
 	sheets: ProfiledSheetFile.parse(sheets),
 	bbl: FactFile.parse(bbl).facts,
-	steelFacts: FactFile.parse(steelFacts).facts
+	steelFacts: FactFile.parse(steelFacts).facts,
+	drawing: DrawingFile.parse(drawing)
 });
 
 export const prerender = true;

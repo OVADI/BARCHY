@@ -11,6 +11,8 @@ export function normalize(text: string): string {
 	return (
 		text
 			.toLowerCase()
+			// Soft hyphens only mark where a long title may break.
+			.replace(/\u00ad/g, '')
 			// Ø is a letter of its own in Unicode; keep it, but drop the accents of é, ë and the like.
 			.replace(/⌀/g, 'ø')
 			.normalize('NFD')

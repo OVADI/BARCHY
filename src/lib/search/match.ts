@@ -11,6 +11,8 @@ function score(entry: SearchEntry, shared: string, query: string, tokens: string
 	if (entry.names.some((n) => n.startsWith(q))) return 80;
 
 	const words = `${entry.names.join(' ')} ${entry.text ?? ''} ${shared}`.split(' ');
+	// Whole words first: "beton" finds concrete before "betonsteen".
+	if (tokens.every((t) => words.includes(t))) return 65;
 	if (tokens.every((t) => words.some((w) => w.startsWith(t)))) return 60;
 	const all = words.join(' ');
 	if (tokens.every((t) => all.includes(t))) return 30;
