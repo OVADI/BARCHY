@@ -35,16 +35,16 @@
 	);
 
 	const families = [
-		{ series: 'hea', title: 'steel.iTitle', sub: 'steel.iSub', shape: 'I', tone: 'paper' },
-		{ series: 'shs', title: 'steel.boxTitle', sub: 'steel.boxSub', shape: 'box', tone: 'surface' },
+		{ series: 'hea', title: 'steel.iTitle', sub: 'steel.iSub', shape: 'I', tone: 'material' },
+		{ series: 'shs', title: 'steel.boxTitle', sub: 'steel.boxSub', shape: 'box', tone: 'material' },
 		{
 			series: 'chs',
 			title: 'steel.tubeTitle',
 			sub: 'steel.tubeSub',
 			shape: 'tube',
-			tone: 'surface'
+			tone: 'material'
 		},
-		{ series: 'unp', title: 'steel.uTitle', sub: 'steel.uSub', shape: 'U', tone: 'surface' }
+		{ series: 'unp', title: 'steel.uTitle', sub: 'steel.uSub', shape: 'U', tone: 'material' }
 	] as const;
 
 	// Sources of everything on this screen, once each.
@@ -111,7 +111,7 @@
 				</span>
 			</a>
 		{/each}
-		<a class="family tone-surface" href={resolve('/steel/sheets')}>
+		<a class="family tone-material" href={resolve('/steel/sheets')}>
 			<svg width="56" height="44" viewBox="0 0 56 44" aria-hidden="true">
 				<path
 					d="M3 30h8l6-16h8l6 16h8l6-16h8"
@@ -192,12 +192,21 @@
 		flex-direction: column;
 		gap: var(--space-1);
 	}
-	.tone-paper {
-		background: var(--type-data);
-		color: var(--type-data-ink);
+	/* Material colour from Home: the orange sub-tiles of the structure tile. */
+	.tone-material {
+		background: var(--orange-shade);
+		color: var(--paper);
 	}
-	.tone-paper .sub {
-		color: var(--on-tile-muted);
+	.tone-material .sub {
+		color: var(--paper);
+		opacity: 0.85;
+	}
+	a.tone-material:hover {
+		background: var(--orange);
+		color: var(--on-tile);
+	}
+	a.tone-material:hover .sub {
+		color: var(--on-tile);
 	}
 	.tone-surface {
 		background: var(--surface);

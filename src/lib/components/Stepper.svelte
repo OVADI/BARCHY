@@ -76,7 +76,8 @@
 	}
 	.label,
 	.hint {
-		color: var(--ink-muted);
+		/* Tiles on a coloured ground (orange hero) set --stepper-muted for contrast. */
+		color: var(--stepper-muted, var(--ink-muted));
 	}
 	.value {
 		font: 500 18px/1.2 var(--font-sans);

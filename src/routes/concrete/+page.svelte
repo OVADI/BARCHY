@@ -61,7 +61,7 @@
 	onchange={(v) => (pickD = v)}
 />
 
-<Tile tone="paper" pad="lg">
+<Tile tone="orange" pad="lg">
 	<div class="hero-top">
 		<span class="hero-label"
 			><span class="t-symbol">A<sub>s</sub></span>
@@ -76,14 +76,16 @@
 		label={t('concrete.bars', { n: count, d })}
 		format={{ maximumFractionDigits: 0 }}
 	/>
-	<Stepper
-		label={t('concrete.count')}
-		value={count}
-		step={1}
-		min={1}
-		max={10}
-		onchange={(v) => (count = v)}
-	/>
+	<div class="count">
+		<Stepper
+			label={t('concrete.count')}
+			value={count}
+			step={1}
+			min={1}
+			max={10}
+			onchange={(v) => (count = v)}
+		/>
+	</div>
 </Tile>
 
 <section class="table-tile" aria-labelledby="rebar-table">
@@ -130,6 +132,9 @@
 		align-items: center;
 		gap: var(--space-2);
 	}
+	.count {
+		--stepper-muted: var(--on-tile-muted);
+	}
 	.table-tile {
 		display: flex;
 		flex-direction: column;
@@ -168,7 +173,7 @@
 		color: var(--ink);
 	}
 	tr.current td.hit {
-		background: var(--paper);
+		background: var(--orange);
 		color: var(--on-tile);
 	}
 </style>
