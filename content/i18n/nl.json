@@ -1,0 +1,77 @@
+{
+	"app": {
+		"name": "BARCHY",
+		"tagline": "Bouwkunde, alles bij de hand",
+		"skipToContent": "Naar inhoud"
+	},
+	"nav": {
+		"label": "Hoofdmenu",
+		"home": "Home",
+		"search": "Zoeken",
+		"tools": "Tools",
+		"saved": "Bewaard"
+	},
+	"common": {
+		"back": "Terug",
+		"close": "Sluiten",
+		"settings": "Instellingen",
+		"language": "Taal",
+		"comingSoon": "Dit scherm wordt in een volgende fase gebouwd.",
+		"noSource": "Nog geen bron",
+		"reportMissing": "Meld wat je zocht"
+	},
+	"info": {
+		"open": "Bronnen en info",
+		"heading": "Bronnen & info",
+		"license": "Licentie",
+		"verify": "Nog niet gecontroleerd"
+	},
+	"type": {
+		"requirement": "Bbl",
+		"rule_of_thumb": "Vuistregel",
+		"data": "Data"
+	},
+	"stepper": {
+		"decrease": "{label} min {step}",
+		"increase": "{label} plus {step}"
+	},
+	"home": {
+		"searchPlaceholder": "Zoek: HEA 200, trap, toilet",
+		"recent": "Recent",
+		"structure": "Constructie",
+		"space": "Ruimte & mens",
+		"drawing": "Tekenen",
+		"tools": "Rekentools"
+	},
+	"search": {
+		"title": "Zoeken"
+	},
+	"tools": {
+		"title": "Rekentools",
+		"stair": "Trapcalculator"
+	},
+	"saved": {
+		"title": "Bewaard"
+	},
+	"steel": {
+		"title": "Staal"
+	},
+	"spacePage": {
+		"title": "Ruimte & mens"
+	},
+	"settings": {
+		"title": "Instellingen"
+	},
+	"dev": {
+		"tokensTitle": "Tokens",
+		"colour": "Kleur",
+		"type": "Typografie",
+		"spacing": "Ruimte",
+		"radius": "Radius",
+		"components": "Componenten",
+		"sampleText": "Kies een profiel en reken direct het gewicht uit.",
+		"sampleLength": "Lengte",
+		"sampleTileTitle": "Uitlegkaart",
+		"sampleTileBody": "Het traagheidsmoment zegt hoe stijf een profiel is tegen doorbuigen."
+	}
+}

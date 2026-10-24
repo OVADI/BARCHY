@@ -1,0 +1,77 @@
+{
+	"app": {
+		"name": "BARCHY",
+		"tagline": "Architecture, everything at hand",
+		"skipToContent": "Skip to content"
+	},
+	"nav": {
+		"label": "Main menu",
+		"home": "Home",
+		"search": "Search",
+		"tools": "Tools",
+		"saved": "Saved"
+	},
+	"common": {
+		"back": "Back",
+		"close": "Close",
+		"settings": "Settings",
+		"language": "Language",
+		"comingSoon": "This screen is built in a later phase.",
+		"noSource": "No source yet",
+		"reportMissing": "Tell us what you were looking for"
+	},
+	"info": {
+		"open": "Sources and info",
+		"heading": "Sources & info",
+		"license": "Licence",
+		"verify": "Not yet verified"
+	},
+	"type": {
+		"requirement": "Bbl",
+		"rule_of_thumb": "Rule of thumb",
+		"data": "Data"
+	},
+	"stepper": {
+		"decrease": "{label} minus {step}",
+		"increase": "{label} plus {step}"
+	},
+	"home": {
+		"searchPlaceholder": "Search: HEA 200, stair, toilet",
+		"recent": "Recent",
+		"structure": "Structure",
+		"space": "Space & people",
+		"drawing": "Drawing",
+		"tools": "Calculators"
+	},
+	"search": {
+		"title": "Search"
+	},
+	"tools": {
+		"title": "Calculators",
+		"stair": "Stair calculator"
+	},
+	"saved": {
+		"title": "Saved"
+	},
+	"steel": {
+		"title": "Steel"
+	},
+	"spacePage": {
+		"title": "Space & people"
+	},
+	"settings": {
+		"title": "Settings"
+	},
+	"dev": {
+		"tokensTitle": "Tokens",
+		"colour": "Colour",
+		"type": "Typography",
+		"spacing": "Spacing",
+		"radius": "Radius",
+		"components": "Components",
+		"sampleText": "Pick a section and calculate its weight right away.",
+		"sampleLength": "Length",
+		"sampleTileTitle": "Explainer card",
+		"sampleTileBody": "The second moment of area tells you how stiff a section is against bending."
+	}
+}

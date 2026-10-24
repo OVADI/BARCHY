@@ -1,0 +1,136 @@
+/*
+ * Blok design tokens. Single source for colour, type, spacing and radius.
+ * Dark is the default theme; [data-theme='light'] overrides the theme-dependent colours.
+ */
+
+@font-face {
+	font-family: 'Geist';
+	font-style: normal;
+	font-display: swap;
+	font-weight: 100 900;
+	src: url('/fonts/geist-latin-wght-normal.woff2') format('woff2-variations');
+	unicode-range:
+		U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329,
+		U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+	font-family: 'Geist';
+	font-style: normal;
+	font-display: swap;
+	font-weight: 100 900;
+	src: url('/fonts/geist-latin-ext-wght-normal.woff2') format('woff2-variations');
+	unicode-range:
+		U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329,
+		U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F,
+		U+A720-A7FF;
+}
+@font-face {
+	font-family: 'Geist Mono';
+	font-style: normal;
+	font-display: swap;
+	font-weight: 100 900;
+	src: url('/fonts/geist-mono-latin-wght-normal.woff2') format('woff2-variations');
+	unicode-range:
+		U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329,
+		U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+	font-family: 'Geist Mono';
+	font-style: normal;
+	font-display: swap;
+	font-weight: 100 900;
+	src: url('/fonts/geist-mono-latin-ext-wght-normal.woff2') format('woff2-variations');
+	unicode-range:
+		U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329,
+		U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F,
+		U+A720-A7FF;
+}
+
+:root {
+	/* Colour: theme-dependent (dark default) */
+	--ground: #141414;
+	--surface: #232322;
+	--surface-raised: #323230;
+	--line: #3a3936;
+	--ink: #f4f2ec;
+	--ink-muted: #a3a099;
+	--focus: #f1e45a;
+	--orange-track: #6e2a1c;
+	--cobalt-track: #2a3463;
+
+	/* Colour: fixed */
+	--on-tile: #0e0e0c;
+	--on-tile-muted: #3c3b37; /* secondary text on paper/lavender/lime (10:1 on paper) */
+	--paper: #ffffff;
+	--orange: #ee4b1f;
+	--orange-shade: #b3341a;
+	--cobalt: #4462d8;
+	--on-cobalt: #ffffff;
+	--lavender: #9c94c6;
+	--lime: #8bea5b;
+
+	/* Information type → colour. Components use these, never the raw hues. */
+	--type-requirement: var(--cobalt);
+	--type-requirement-ink: var(--on-cobalt);
+	--type-rule-of-thumb: var(--orange);
+	--type-rule-of-thumb-ink: var(--on-tile);
+	--type-data: var(--paper);
+	--type-data-ink: var(--on-tile);
+
+	/* Typography */
+	--font-sans: 'Geist', 'Helvetica Neue', Arial, sans-serif;
+	--font-mono: 'Geist Mono', ui-monospace, Menlo, monospace;
+
+	--numeral-xl: 500 120px/0.9 var(--font-sans);
+	--numeral-xl-tracking: -0.05em;
+	--numeral-lg: 500 72px/0.9 var(--font-sans);
+	--numeral-lg-tracking: -0.045em;
+	--numeral-md: 500 44px/0.95 var(--font-sans);
+	--numeral-md-tracking: -0.035em;
+
+	--heading: 500 32px/1 var(--font-sans);
+	--heading-tracking: -0.02em;
+	--title: 500 22px/1.1 var(--font-sans);
+	--title-tracking: -0.01em;
+	--body: 400 16px/1.4 var(--font-sans);
+	--body-sm: 400 14px/1.35 var(--font-sans);
+	--label: 500 11px/1.2 var(--font-mono);
+	--label-tracking: 0.04em;
+
+	/* Spacing */
+	--space-1: 4px;
+	--space-2: 8px;
+	--space-3: 12px;
+	--space-4: 16px;
+	--space-5: 24px;
+	--space-6: 32px;
+	--space-7: 48px;
+
+	--gutter: var(--space-5);
+	--tile-gap: var(--space-2);
+
+	/* Radius */
+	--radius-sm: 12px;
+	--radius-md: 20px;
+	--radius-lg: 28px;
+	--radius-pill: 999px;
+
+	/* Layout */
+	--touch: 44px;
+	--nav-height: 64px;
+	--safe-bottom: env(safe-area-inset-bottom, 0px);
+	--nav-total: calc(var(--nav-height) + var(--safe-bottom));
+	--content-max: 560px;
+}
+
+:root[data-theme='light'] {
+	--ground: #f2f0ea;
+	--surface: #e6e3da;
+	--surface-raised: #d6d2c7;
+	--line: #cfcbc0;
+	--ink: #0e0e0c;
+	--ink-muted: #5e5b54;
+	--focus: #4462d8;
+	--orange-track: #f7c3b0;
+	--cobalt-track: #c3cdf3;
+}

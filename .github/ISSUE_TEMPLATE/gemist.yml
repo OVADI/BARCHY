@@ -1,0 +1,14 @@
+name: Ik zocht iets / I was looking for something
+description: Iets wat je zocht en niet vond / something you could not find
+title: 'Gezocht: '
+labels: [missing]
+body:
+  - type: input
+    id: query
+    attributes:
+      label: Waar zocht je op? / What did you search for?
+    validations: { required: true }
+  - type: textarea
+    id: why
+    attributes:
+      label: Waar had je het voor nodig? / What did you need it for?

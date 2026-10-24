@@ -1,0 +1,26 @@
+{
+	"version": "0.0.1",
+	"configurations": [
+		{
+			"name": "barchy",
+			"runtimeExecutable": "npm",
+			"runtimeArgs": ["run", "dev", "--", "--port", "5173", "--strictPort"],
+			"port": 5173
+		},
+		{
+			"name": "barchy-preview",
+			"runtimeExecutable": "env",
+			"runtimeArgs": [
+				"BASE_PATH=/barchy",
+				"npm",
+				"run",
+				"preview",
+				"--",
+				"--port",
+				"4173",
+				"--strictPort"
+			],
+			"port": 4173
+		}
+	]
+}

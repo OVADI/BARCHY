@@ -1,0 +1,27 @@
+name: Correctie / correction
+description: Een waarde of tekst klopt niet / a value or text is wrong
+title: 'Correctie: '
+labels: [content]
+body:
+  - type: input
+    id: topic
+    attributes:
+      label: Werkblad / worksheet
+      placeholder: bijv. Trap in een woning
+    validations: { required: true }
+  - type: input
+    id: wrong
+    attributes:
+      label: Wat staat er nu? / What does it say now?
+    validations: { required: true }
+  - type: input
+    id: right
+    attributes:
+      label: Wat moet het zijn? / What should it be?
+    validations: { required: true }
+  - type: textarea
+    id: source
+    attributes:
+      label: Bron (document, artikel/tabel, datum) / Source (document, article/table, date)
+      placeholder: Bbl art. 4.26, tabel 4.26, gecontroleerd 2026-10-23
+    validations: { required: true }
