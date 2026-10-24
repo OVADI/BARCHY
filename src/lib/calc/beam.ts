@@ -28,6 +28,7 @@ export const BEAM_GROUPS: Record<BeamMaterial, string[]> = {
 	concrete: ['beams', 'floors-ribbed', 'floors-wide-slab', 'floors-composite-deck']
 };
 
+/** Symbols of the span in the rules; conditions on them are checked against l. */
 const SPAN = new Set(['l', 'L']);
 
 /** The leading rule of a variant: the depth when there is one. */
@@ -79,7 +80,7 @@ export interface BeamResult {
 	 * - span: computed from l
 	 * - derived: computed from another result, e.g. h_voet = 0,4 · h_knik
 	 * - fixed: a value of its own, e.g. r ≥ 6 m
-	 * - unknown: needs a quantity the estimator does not have, e.g. g in (l+g)
+	 * - unknown: needs a quantity the estimator was not given, e.g. g in (l+g)
 	 */
 	kind: 'span' | 'derived' | 'fixed' | 'unknown';
 	/** [low, high] in m for span and derived; equal ends for a single value. */
@@ -103,18 +104,44 @@ export function meets(c: Condition, x: number): boolean {
 	return Math.abs(x - lo) < 1e-9;
 }
 
-export function estimateBeam(variant: BeamVariant, l: number): BeamEstimate {
+/**
+ * The length a rule divides or multiplies: the span l (L in the concrete tables), or l + g in the
+ * frames with a kinked leg, where g is the height of the leg (base to knee, per the source figure).
+ */
+const LENGTHS: Record<string, (l: number, g?: number) => number | undefined> = {
+	l: (l) => l,
+	L: (l) => l,
+	'(l+g)': (l, g) => (g === undefined ? undefined : l + g)
+};
+
+/** Whether the variant has a rule in (l+g), so the estimator should ask for g. */
+export const needsLegHeight = (variant: BeamVariant) =>
+	variant.facts.some((f) => f.divisorOf === '(l+g)' || f.factorOf === '(l+g)');
+
+export function estimateBeam(
+	variant: BeamVariant,
+	l: number,
+	{ g }: { g?: number } = {}
+): BeamEstimate {
 	if (!(l > 0)) throw new RangeError('span l must be positive');
+	if (g !== undefined && !(g > 0)) throw new RangeError('leg height g must be positive');
 	const known = new Map<string, [number, number]>();
 	const results = new Map<string, BeamResult>();
+	const length = (symbol?: string) => (symbol ? LENGTHS[symbol]?.(l, g) : undefined);
 
 	for (const f of variant.facts) {
 		const [a, b] = pair(f.value);
-		if (f.divisorOf && SPAN.has(f.divisorOf)) {
+		const over = length(f.divisorOf);
+		const times = length(f.factorOf);
+		if (over !== undefined) {
 			// h = l/15 – l/20: the larger n gives the smaller size.
-			results.set(f.id, { fact: f, kind: 'span', range: [l / Math.max(a, b), l / Math.min(a, b)] });
-		} else if (f.factorOf && SPAN.has(f.factorOf)) {
-			results.set(f.id, { fact: f, kind: 'span', range: [a * l, b * l] });
+			results.set(f.id, {
+				fact: f,
+				kind: 'span',
+				range: [over / Math.max(a, b), over / Math.min(a, b)]
+			});
+		} else if (times !== undefined) {
+			results.set(f.id, { fact: f, kind: 'span', range: [a * times, b * times] });
 		} else if (!f.divisorOf && !f.factorOf) {
 			results.set(f.id, { fact: f, kind: 'fixed' });
 		}

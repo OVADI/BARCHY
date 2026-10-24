@@ -446,6 +446,8 @@
 		"unknown": "cannot be computed from l alone; see the source figure",
 		"allRules": "All rules of thumb for this shape",
 		"info": "Depth = span / n from the rule of thumb, rounded to 10 mm. For a range (e.g. l/15 – l/20) the smallest depth goes with the largest n.",
-		"rounded": "rounded to 10 mm"
+		"rounded": "rounded to 10 mm",
+		"legHeight": "Leg height g",
+		"legHeightHint": "From the base to the knee, as in the source figure. h_knik = (l+g)/n."
 	}
 }

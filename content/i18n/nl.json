@@ -446,6 +446,8 @@
 		"unknown": "niet te berekenen uit l alleen; zie de bronfiguur",
 		"allRules": "Alle vuistregels voor deze vorm",
 		"info": "Hoogte = overspanning / n uit de vuistregel, afgerond op 10 mm. Bij een bereik (bijvoorbeeld l/15 – l/20) hoort de kleinste hoogte bij de grootste n.",
-		"rounded": "afgerond op 10 mm"
+		"rounded": "afgerond op 10 mm",
+		"legHeight": "Hoogte spantbeen g",
+		"legHeightHint": "Van de voet tot de knik, zoals in de bronfiguur. h_knik = (l+g)/n."
 	}
 }

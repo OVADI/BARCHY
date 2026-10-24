@@ -3,7 +3,14 @@ import concreteRaw from '../../../content/facts/concrete.json';
 import steelRaw from '../../../content/facts/steel.json';
 import timberRaw from '../../../content/facts/timber.json';
 import { FactFile } from '../schema/fact';
-import { BEAM_GROUPS, beamVariants, estimateBeam, meets, type BeamMaterial } from './beam';
+import {
+	BEAM_GROUPS,
+	beamVariants,
+	estimateBeam,
+	meets,
+	needsLegHeight,
+	type BeamMaterial
+} from './beam';
 
 const facts = {
 	steel: FactFile.parse(steelRaw).facts,
@@ -68,7 +75,7 @@ describe('estimateBeam', () => {
 		expect(estimateBeam(variant('timber', 'hout-gebogen-ligger'), 7).outside).toEqual([]);
 	});
 
-	it('shows values of their own as fixed and cannot compute (l+g)', () => {
+	it('shows values of their own as fixed and cannot compute (l+g) without g', () => {
 		const curved = estimateBeam(variant('timber', 'hout-gebogen-ligger'), 20).results;
 		expect(curved.find((r) => r.fact.symbol === 'r')!.kind).toBe('fixed');
 		const bent = estimateBeam(variant('timber', 'hout-spant-gebogen-hoh-4-5'), 20).results;
@@ -78,6 +85,24 @@ describe('estimateBeam', () => {
 			['h_voet', 'unknown'],
 			['r', 'fixed']
 		]);
+	});
+
+	it('computes the kinked frame from l + g once g is given', () => {
+		const v = variant('timber', 'hout-spant-gebogen-hoh-4-5');
+		const [knik, nok, voet, r] = estimateBeam(v, 25, { g: 6 }).results;
+		// h_knik = (l+g)/31, h_nok = 0,5 · h_knik, h_voet = 0,67 · h_knik
+		expect(knik!.kind).toBe('span');
+		expect(knik!.range![0]).toBeCloseTo(31 / 31);
+		expect(nok!.kind).toBe('derived');
+		expect(nok!.range![0]).toBeCloseTo(0.5);
+		expect(voet!.range![0]).toBeCloseTo(0.67);
+		expect(r!.kind).toBe('fixed');
+		expect(() => estimateBeam(v, 25, { g: 0 })).toThrow(RangeError);
+	});
+
+	it('asks for g only where a rule uses (l+g)', () => {
+		expect(needsLegHeight(variant('timber', 'hout-spant-geknikt-hoh-4-5'))).toBe(true);
+		expect(needsLegHeight(variant('timber', 'hout-gebogen-ligger'))).toBe(false);
 	});
 
 	it('reads L in the concrete floor tables as the span', () => {

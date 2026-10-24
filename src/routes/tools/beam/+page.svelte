@@ -15,6 +15,7 @@
 		BEAM_GROUPS,
 		beamVariants,
 		estimateBeam,
+		needsLegHeight,
 		type BeamMaterial,
 		type BeamResult
 	} from '$lib/calc/beam';
@@ -47,7 +48,10 @@
 
 	// The span is a starting point for the UI, not a building value.
 	let l = $state(8);
-	const estimate = $derived(estimateBeam(variant, l));
+	// Leg height g (base to knee), only for frames whose rules use l + g; also a UI starting point.
+	let g = $state(4);
+	const askG = $derived(needsLegHeight(variant));
+	const estimate = $derived(estimateBeam(variant, l, askG ? { g } : {}));
 	const lead = $derived(estimate.results[0]!);
 	const shape = $derived(shapeOf(group, variant.key));
 
@@ -57,6 +61,7 @@
 		if (m === 'steel' || m === 'timber' || m === 'concrete') material = m;
 		pickGroup = param('group');
 		l = numberParam('l') ?? l;
+		g = numberParam('g') ?? g;
 	});
 
 	const groupLabel = (id: string): string => {
@@ -75,7 +80,9 @@
 		const [lo, hi] = r.range!.map((m) => Math.round(m * 100) / 100) as [number, number];
 		const inM = hi >= 1;
 		const one = (m: number) =>
-			inM ? formatNumber(m, { maximumFractionDigits: 2 }) : formatNumber(Math.round(m * 1000));
+			inM
+				? formatNumber(m, { minimumFractionDigits: 2, maximumFractionDigits: 2 })
+				: formatNumber(Math.round(m * 1000));
 		return { text: lo === hi ? one(lo) : `${one(lo)} – ${one(hi)}`, unit: inM ? 'm' : 'mm' };
 	};
 	const conditionText = (c: Condition) => {
@@ -141,6 +148,19 @@
 		format={{ maximumFractionDigits: 1 }}
 		onchange={(v) => (l = v)}
 	/>
+	{#if askG}
+		<Stepper
+			label={t('beam.legHeight')}
+			value={g}
+			step={0.25}
+			min={0.5}
+			max={20}
+			unit="m"
+			format={{ maximumFractionDigits: 2 }}
+			onchange={(v) => (g = v)}
+		/>
+		<p class="t-body-sm t-muted hint">{t('beam.legHeightHint')}</p>
+	{/if}
 </Tile>
 
 {#if shape}
@@ -254,6 +274,9 @@
 		border-radius: var(--radius-md);
 		background: var(--paper);
 		color: var(--on-tile);
+	}
+	.hint {
+		margin: 0;
 	}
 	.warning {
 		display: grid;
