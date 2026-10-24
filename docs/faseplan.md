@@ -17,7 +17,8 @@ Dit is het vaste overzicht van de fases van BARCHY. Verwijs ernaar met "fase N".
 | 5    | Hout, beton en staalplaten | Gepland                |
 | 6    | Zoeken                     | Gepland                |
 | 7    | Tekenen                    | Gepland, wacht op bron |
-| 8    | Afronding                  | Gepland                |
+| 8    | Presentatie-checklist      | Gepland                |
+| 9    | Afronding                  | Gepland                |
 
 ---
 
@@ -84,7 +85,23 @@ Commit `ce29887`
 
 **Voorwaarde:** eerst is een bron nodig, zoals een Vademecum-hoofdstuk of een NEN-norm. Die moet worden aangeleverd of bevestigd. Zonder bron start deze fase niet.
 
-### Fase 8: Afronding
+### Fase 8: Presentatie-checklist
+
+**Doel:** per presentatiemoment nalopen of je project compleet is: wat moet erin, wat moet je laten zien, en aan welke eisen heb je het ontwerp getoetst.
+
+- Werkt voor bachelor-midterms en eindpresentaties en voor het master-afstuderen (P1 t/m P5)
+- **Eigen lijsten:** de app bevat geen vaste TU Delft-eisen. Je maakt zelf een lijst per vak of moment en vult de punten in. Zo komt er geen verzonnen inhoud in de app.
+- Per moment een checklist met punten om af te vinken, met per punt een notitie: waarin het zit (tekening, maquette, rapport) en de status
+- Een punt kan verwijzen naar een onderdeel van BARCHY, bijvoorbeeld de trapcalculator of een Bbl-eis, zodat je ziet waaraan je het ontwerp hebt getoetst
+- Lijsten worden lokaal op het apparaat bewaard en werken offline. Exporteren (bijvoorbeeld als CSV) zoals bij de stuklijst
+- Lijst kopiëren naar een nieuw moment (bijvoorbeeld van P2 naar P3)
+
+**Open punten, af te stemmen bij de start van de fase:**
+
+- Komt dit onder Bewaard of krijgt het een eigen tab?
+- Is een voorbeeldlijst gewenst, of start elke lijst leeg?
+
+### Fase 9: Afronding
 
 - Instellingen uitbreiden, zoals licht/donker
 - Eventueel extra rekentools
