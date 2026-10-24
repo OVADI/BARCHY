@@ -2,6 +2,7 @@ import { describe, expect, it } from 'vitest';
 import bbl from '../../../content/facts/bbl.json';
 import steelFacts from '../../../content/facts/steel.json';
 import rebar from '../../../content/concrete/rebar.json';
+import drawing from '../../../content/drawing/conventions.json';
 import sheets from '../../../content/steel/sheets.json';
 import timber from '../../../content/timber/sections.json';
 import chs from '../../../content/steel/chs.json';
@@ -11,6 +12,7 @@ import rhs from '../../../content/steel/rhs.json';
 import shs from '../../../content/steel/shs.json';
 import unp from '../../../content/steel/unp.json';
 import { RebarFile } from '$lib/schema/concrete';
+import { DrawingFile } from '$lib/schema/drawing';
 import { FactFile } from '$lib/schema/fact';
 import { ProfiledSheetFile, SteelFile } from '$lib/schema/steel';
 import { TimberFile } from '$lib/schema/timber';
@@ -24,7 +26,8 @@ const index = buildSearchIndex({
 	rebar: RebarFile.parse(rebar),
 	sheets: ProfiledSheetFile.parse(sheets),
 	bbl: FactFile.parse(bbl).facts,
-	steelFacts: FactFile.parse(steelFacts).facts
+	steelFacts: FactFile.parse(steelFacts).facts,
+	drawing: DrawingFile.parse(drawing)
 });
 
 const { entries } = index;
@@ -42,7 +45,16 @@ describe('normalize', () => {
 describe('search', () => {
 	it('indexes every kind of content', () => {
 		const kinds = new Set(entries.map((e) => e.kind));
-		for (const k of ['tool', 'page', 'steel', 'timber', 'rebar', 'sheet', 'requirement'] as const) {
+		for (const k of [
+			'tool',
+			'page',
+			'steel',
+			'timber',
+			'rebar',
+			'sheet',
+			'drawing',
+			'requirement'
+		] as const) {
 			expect(kinds).toContain(k);
 		}
 		expect(entries.filter((e) => e.kind === 'steel')).toHaveLength(408);
@@ -72,6 +84,16 @@ describe('search', () => {
 		expect(top('ø12')?.path).toBe('/concrete?d=12');
 		expect(top('staalplaat')?.kind).toBe('page');
 		expect(search(index, 'gezaagd 69').every((h) => !h.path.includes('glulam'))).toBe(true);
+	});
+
+	it('finds hatches, line types and drawing guides', () => {
+		expect(top('arcering beton')?.path).toBe('/drawing/hatch/stone#hatch-beton-1');
+		expect(top('streeplijn')?.path).toBe('/drawing?tab=lines#line-dashed');
+		expect(top('dashed line')?.path).toBe('/drawing?tab=lines#line-dashed');
+		expect(top('axonometrie')?.path).toBe('/drawing/guide/axo');
+		expect(top('plattegrond')?.path).toBe('/drawing/guide/plan');
+		expect(top('stramienlijnen')?.path).toBe('/drawing/guide/plan');
+		expect(top('hardhout')?.path).toBe('/drawing/hatch/timber#hatch-hardhout');
 	});
 
 	it('finds the stair tool and the Bbl stair requirements by a word', () => {

@@ -4,6 +4,7 @@ import { z, type ZodType } from 'zod';
 import { keyPaths } from '../i18n/messages';
 import { RebarFile } from '../schema/concrete';
 import { SteelCorrectionsFile } from '../schema/corrections';
+import { DrawingFile } from '../schema/drawing';
 import { FactFile } from '../schema/fact';
 import { SourceRef } from '../schema/source';
 import { ProfiledSheetFile, SteelFile } from '../schema/steel';
@@ -27,6 +28,7 @@ const SCHEMAS: [RegExp, ZodType][] = [
 	[/^steel\/corrections\.json$/, SteelCorrectionsFile],
 	[/^timber\/sections\.json$/, TimberFile],
 	[/^concrete\/rebar\.json$/, RebarFile],
+	[/^drawing\/conventions\.json$/, DrawingFile],
 	[/^facts\/[a-z0-9-]+\.json$/, FactFile]
 ];
 

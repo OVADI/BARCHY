@@ -5,6 +5,7 @@
 	import { resolve } from '$app/paths';
 	import ChoiceRow from '$lib/components/ChoiceRow.svelte';
 	import FlagMark from '$lib/components/FlagMark.svelte';
+	import HatchFill from '$lib/components/HatchFill.svelte';
 	import IconButton from '$lib/components/IconButton.svelte';
 	import { numberParam, param } from '$lib/deeplink';
 	import InfoFab from '$lib/components/InfoFab.svelte';
@@ -139,26 +140,30 @@
 		role="img"
 		aria-label={t('timber.drawing', { b: s.b, h: s.h })}
 	>
-		<defs>
-			<!-- Schematic only: sawn diagonal, glulam horizontal laminations; no drawing standard yet. -->
-			<pattern id="hatch-sawn" width="6" height="6" patternUnits="userSpaceOnUse">
-				<path d="M-1 7 7 -1M-1 1 1 -1M5 7 7 5" stroke="currentColor" stroke-width="1" />
-			</pattern>
-			<pattern id="hatch-glulam" width="6" height="6" patternUnits="userSpaceOnUse">
-				<path d="M0 3h6" stroke="currentColor" stroke-width="1" />
-			</pattern>
-		</defs>
+		<!-- Vademecum timber hatch (NEN 2302); the source has no separate hatch for glulam. -->
+		<HatchFill
+			hatch="hout"
+			x={(BOX - s.b * scale) / 2 + 1}
+			y={(BOX - s.h * scale) / 2 + 1}
+			width={s.b * scale - 2}
+			height={s.h * scale - 2}
+		/>
 		<rect
 			x={(BOX - s.b * scale) / 2 + 1}
 			y={(BOX - s.h * scale) / 2 + 1}
 			width={s.b * scale - 2}
 			height={s.h * scale - 2}
-			fill="url(#hatch-{kind})"
+			fill="none"
 			stroke="currentColor"
 			stroke-width="2"
 		/>
 	</svg>
-	<p class="t-body-sm hatch">{t('timber.hatch')}</p>
+	<p class="t-body-sm hatch">
+		{t('timber.hatch')}
+		<a href="{resolve('/drawing/hatch/[group]', { group: 'timber' })}#hatch-hout"
+			>{t('drawing.title')} →</a
+		>
+	</p>
 </Tile>
 
 <ValueGrid {values} label={t('timber.properties')} />
@@ -200,5 +205,9 @@
 	}
 	.hatch {
 		color: var(--on-tile-muted);
+	}
+	.hatch a {
+		color: var(--on-tile);
+		text-decoration: underline;
 	}
 </style>

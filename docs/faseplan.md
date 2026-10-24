@@ -9,16 +9,16 @@ Dit is het vaste overzicht van de fases van BARCHY. Verwijs ernaar met "fase N".
 - Alle Bbl-feiten blijven `verify: true` tot ze gecontroleerd zijn.
 - Na het afronden van een fase wordt dit bestand bijgewerkt: status en commit.
 
-| Fase | Onderwerp                  | Status                 |
-| ---- | -------------------------- | ---------------------- |
-| 1    | Fundament                  | Klaar                  |
-| 2+3  | Staal en content-basis     | Klaar (zie correctie)  |
-| 4    | Bbl en ruimte              | Klaar                  |
-| 5    | Hout, beton en staalplaten | Klaar, ter controle    |
-| 6    | Zoeken                     | Klaar, ter controle    |
-| 7    | Tekenen                    | Gepland, wacht op bron |
-| 8    | Presentatie-checklist      | Gepland                |
-| 9    | Afronding                  | Gepland                |
+| Fase | Onderwerp                  | Status                |
+| ---- | -------------------------- | --------------------- |
+| 1    | Fundament                  | Klaar                 |
+| 2+3  | Staal en content-basis     | Klaar (zie correctie) |
+| 4    | Bbl en ruimte              | Klaar                 |
+| 5    | Hout, beton en staalplaten | Klaar, ter controle   |
+| 6    | Zoeken                     | Klaar, ter controle   |
+| 7    | Tekenen                    | Klaar, ter controle   |
+| 8    | Presentatie-checklist      | Gepland               |
+| 9    | Afronding                  | Gepland               |
 
 ---
 
@@ -94,13 +94,29 @@ Commit `9247650`
 - Zoekwoorden per profielfamilie (bijvoorbeeld "koker", "buis", "breedflensbalk") staan in `src/lib/search/build.ts`. Kloppen deze benamingen?
 - Groei van de offline-cache: van 870 naar 1057 KiB
 
+### Fase 7: Tekenen
+
+Commits `bb379e0`, feedback verwerkt in `2f30b7c` en `31a808d`
+
+- Bron gevonden in het Vademecum zelf: hoofdstuk Tekeninstructies, "Lijnsoorten en arcering" (gebaseerd op NEN 2302) en "Constructie tekeningen". De arceringstabellen verwijzen naar de Lecture Notes Technical Drawings (CT1052-09). Door de gebruiker bevestigd als bron (24-10-2026)
+- Tekenen (`/drawing`) met drie tabbladen:
+  - Arcering: 21 arceringen in vier groepen, met per arcering de schalen (1:100 t/m 1:1) en de opmerking uit de bron. Je kunt filteren op schaal
+  - Lijnsoorten: getrokken lijn, streeplijn, gemengde streeplijn en stippellijn, met waarvoor en in welke dikte ze in de tekeninstructies gebruikt worden
+  - Constructietekeningen: de stappen voor de DC-plattegrond, de geëxplodeerde axonometrie en het constructiedetail, met lijnsoort, lijndikte en kleur
+- Inhoud in `content/drawing/conventions.json`. De arceringen zijn opnieuw getekend als SVG naar de afbeeldingen in het Vademecum; lijnafstanden volgen de afbeeldingen en zijn geen waarde uit de bron. Alles staat op Controleren
+- De houtdoorsnede gebruikt nu de arcering Hout uit het Vademecum, voor gezaagd en gelamineerd hout
+- Zoeken vindt arceringen, lijnsoorten en tekeninstructies, bijvoorbeeld "streeplijn", "hardhout" of "axonometrie". Bij gelijke treffers gaan hele woorden nu voor: "beton" vindt beton voor "betonsteen"
+- Rapport `reports/drawing-issues.md`
+- Feedback verwerkt: Arcering begint met vier materiaalgroepen, elk met een eigen pagina (`/drawing/hatch/[groep]`). Tekeningen begint met drie blokken, elk met een eigen pagina (`/drawing/guide/[id]`). Daar staan alle stappen onder elkaar in de volgorde van het Vademecum, met een korte titel; tik op een stap voor de volledige instructie. De korte titels zijn eigen tekst van BARCHY, niet uit de bron
+- Precache na deze fase: 149 bestanden, 1328 KiB (was 1077 KiB, gemeten op de commit vóór fase 7)
+
+**Te controleren door de gebruiker:**
+
+- Vergelijk de getekende arceringen en lijnen met de afbeeldingen in het Vademecum
+- De aandachtspunten 1–7 in `reports/drawing-issues.md`, vooral de volgorde van de schalen bij beton en de arceringen die in de bron gelijk zijn (hout en metselwerk overige, hardhout en steenachtig)
+- Gelamineerd hout: dezelfde arcering als gezaagd hout, of lijmverbindingen tussen de lamellen?
+
 ## Gepland
-
-### Fase 7: Tekenen (lijnsoorten en arcering)
-
-**Doel:** de tekenhulp vullen (`/drawing`).
-
-**Voorwaarde:** eerst is een bron nodig, zoals een Vademecum-hoofdstuk of een NEN-norm. Die moet worden aangeleverd of bevestigd. Zonder bron start deze fase niet.
 
 ### Fase 8: Presentatie-checklist
 
