@@ -368,7 +368,10 @@
 		"error": "Versturen lukte niet. Probeer het later opnieuw.",
 		"noForm": "Meld je idee of fout via GitHub.",
 		"version": "Versie {version}",
-		"madeBy": "Gemaakt door"
+		"madeBy": "Gemaakt door",
+		"installLabel": "Zet op beginscherm",
+		"installBody": "Open BARCHY met één tik vanaf je beginscherm, ook zonder internet. Kies hieronder je browser.",
+		"installButton": "Toon de stappen"
 	},
 	"disclaimer": {
 		"title": "Voordat je begint",
@@ -481,5 +484,60 @@
 		"rounded": "afgerond op 10 mm",
 		"legHeight": "Hoogte spantbeen g",
 		"legHeightHint": "Van de voet tot de knik, zoals in de bronfiguur. h_knik = (l+g)/n."
+	},
+	"install": {
+		"title": "Zet BARCHY op je beginscherm",
+		"intro": "Dan open je BARCHY met één tik, net als een gewone app, en werkt het ook offline.",
+		"yours": "Voor jouw browser",
+		"other": "Andere browser",
+		"now": "Nu installeren",
+		"later": "Later",
+		"ok": "Begrepen",
+		"platforms": {
+			"ios-safari": {
+				"name": "iPhone of iPad (Safari)",
+				"s1": "Tik onderaan of bovenaan op de deelknop (vierkantje met pijl omhoog).",
+				"s2": "Scrol en kies ‘Zet op beginscherm’.",
+				"s3": "Tik rechtsboven op ‘Voeg toe’."
+			},
+			"ios-other": {
+				"name": "iPhone of iPad (Chrome, Firefox, Edge)",
+				"s1": "Tik op de deelknop of het menu (⋯) van je browser.",
+				"s2": "Kies ‘Zet op beginscherm’. Staat die er niet? Open BARCHY dan in Safari en volg de stappen daar.",
+				"s3": "Tik op ‘Voeg toe’."
+			},
+			"android-chrome": {
+				"name": "Android (Chrome)",
+				"s1": "Tik rechtsboven op het menu (drie puntjes).",
+				"s2": "Kies ‘App installeren’ of ‘Toevoegen aan startscherm’.",
+				"s3": "Bevestig met ‘Installeren’ of ‘Toevoegen’."
+			},
+			"android-samsung": {
+				"name": "Android (Samsung Internet)",
+				"s1": "Tik onderaan op het menu (drie streepjes).",
+				"s2": "Kies ‘Pagina toevoegen aan’ en dan ‘Startscherm’.",
+				"s3": "Bevestig met ‘Toevoegen’."
+			},
+			"android-other": {
+				"name": "Android (andere browser)",
+				"s1": "Open het menu van je browser (meestal drie puntjes).",
+				"s2": "Kies ‘App installeren’ of ‘Toevoegen aan startscherm’.",
+				"s3": "Lukt dat niet? Open BARCHY dan in Chrome."
+			},
+			"desktop-chromium": {
+				"name": "Computer (Chrome, Edge)",
+				"s1": "Klik rechts in de adresbalk op het installatie-icoon (monitor met pijl).",
+				"s2": "Kies ‘Installeren’."
+			},
+			"desktop-safari": {
+				"name": "Mac (Safari)",
+				"s1": "Klik in de menubalk op ‘Deel’ of ‘Archief’.",
+				"s2": "Kies ‘Zet in Dock’."
+			},
+			"desktop-other": {
+				"name": "Computer (andere browser)",
+				"s1": "Deze browser kan BARCHY niet installeren. Open het in Chrome, Edge of Safari, of zet een bladwijzer."
+			}
+		}
 	}
 }
