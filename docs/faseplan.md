@@ -15,7 +15,7 @@ Dit is het vaste overzicht van de fases van BARCHY. Verwijs ernaar met "fase N".
 | 2+3  | Staal en content-basis     | Klaar (zie correctie)  |
 | 4    | Bbl en ruimte              | Klaar                  |
 | 5    | Hout, beton en staalplaten | Klaar, ter controle    |
-| 6    | Zoeken                     | Gepland                |
+| 6    | Zoeken                     | Klaar, ter controle    |
 | 7    | Tekenen                    | Gepland, wacht op bron |
 | 8    | Presentatie-checklist      | Gepland                |
 | 9    | Afronding                  | Gepland                |
@@ -57,7 +57,7 @@ Commit `ce29887`
 
 ---
 
-## Gepland
+## Ter controle
 
 ### Fase 5: Hout, beton en staalplaten
 
@@ -78,12 +78,23 @@ Commits `a89c0f6`, feedback verwerkt in `99ec1f7`
 
 ### Fase 6: Zoeken
 
-**Doel:** werkend zoeken, ook offline.
+Commit `9247650`
 
-- Eén index over staalprofielen, hout, beton, Bbl-eisen en tools
-- Het zoekveld op Home koppelen aan `/search`
-- Andere schrijfwijzen vinden hetzelfde resultaat, bijvoorbeeld "HE 200 A" → "HEA 200"
-- Komt na fase 5, zodat alle content in de index kan
+- Eén zoekindex over 408 staalprofielen, 207 houtmaten, 8 wapeningsdiameters, 10 staalplaten, 56 Bbl-eisen, 30 staalvuistregels en materiaalwaarden, de tools en de schermen
+- De index wordt bij het bouwen gemaakt (`/data/search.json`) en zit in de offline-cache, dus zoeken werkt ook offline
+- Andere schrijfwijzen vinden hetzelfde resultaat: "HE 200 A", "HEA200" en "HE A 200" → HEA 200; "48,3x4" → CHS 48,3×4; "69 x 195" → gezaagd hout 69 × 195; "Ø12" → wapening Ø12
+- Woorden werken in het Nederlands en Engels, ook artikelnummers zoals "4.163"
+- Het zoekveld op Home stuurt door naar `/search`. De zoekterm staat in de URL, dus terug gaan of een link delen geeft dezelfde resultaten
+- Een resultaat opent direct de juiste maat of eis: hout, beton en staalplaten openen met die maat gekozen, Ruimte en Staal openen het juiste tabblad en markeren de eis
+- Zoekindex: 167 KB (20 KB gecomprimeerd). Precache na deze fase: 124 bestanden, 1057 KiB
+
+**Te controleren door de gebruiker:**
+
+- Zoek een paar profielen in je eigen schrijfwijze en meld wat niet gevonden wordt
+- Zoekwoorden per profielfamilie (bijvoorbeeld "koker", "buis", "breedflensbalk") staan in `src/lib/search/build.ts`. Kloppen deze benamingen?
+- Groei van de offline-cache: van 870 naar 1057 KiB
+
+## Gepland
 
 ### Fase 7: Tekenen (lijnsoorten en arcering)
 
