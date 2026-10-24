@@ -1,0 +1,1313 @@
+{
+	"facts": [
+		{
+			"id": "beton-ligger-prefab-voorgespannen-h",
+			"topic": "concrete",
+			"type": "rule_of_thumb",
+			"group": "beams",
+			"label": {
+				"nl": "Prefab voorgespannen balk, B45",
+				"en": "Precast prestressed beam, B45"
+			},
+			"symbol": "h",
+			"value": 20,
+			"unit": "",
+			"divisorOf": "l",
+			"bound": "exact",
+			"notes": [
+				{
+					"kind": "note",
+					"text": {
+						"nl": "Rechthoekige, I- en T-profielen. Toegepast als hoofdligger bij vloer- en dakconstructies, als latei in metselwerk en in de fundering.",
+						"en": "Rectangular, I and T sections. Used as main beams in floors and roofs, as lintels in masonry and in foundations."
+					}
+				}
+			],
+			"source": {
+				"title": "TU Delft Vademecum (TeachBooks)",
+				"ref": "§8.3 Liggers",
+				"url": "https://github.com/TeachBooks/vademecum/blob/9a2f70afd158b7cee533c119bf4c88ae15106d4a/book/ontwerp/beton/liggers.md",
+				"license": "CC BY 4.0"
+			},
+			"status": "flagged"
+		},
+		{
+			"id": "beton-ligger-iwg-gewapend-h",
+			"topic": "concrete",
+			"type": "rule_of_thumb",
+			"group": "beams",
+			"label": {
+				"nl": "In het werk gestorte gewapende balk, B25",
+				"en": "Cast-in-place reinforced beam, B25"
+			},
+			"symbol": "h",
+			"value": 10,
+			"unit": "",
+			"divisorOf": "l",
+			"bound": "exact",
+			"notes": [
+				{
+					"kind": "note",
+					"text": {
+						"nl": "Vaak toegepast als funderingsbalk en in eenvoudige constructies met kleine overspanningen.",
+						"en": "Often used as foundation beams and in simple structures with small spans."
+					}
+				}
+			],
+			"source": {
+				"title": "TU Delft Vademecum (TeachBooks)",
+				"ref": "§8.3 Liggers",
+				"url": "https://github.com/TeachBooks/vademecum/blob/9a2f70afd158b7cee533c119bf4c88ae15106d4a/book/ontwerp/beton/liggers.md",
+				"license": "CC BY 4.0"
+			},
+			"status": "flagged"
+		},
+		{
+			"id": "beton-ribbenvloer-continu-h",
+			"topic": "concrete",
+			"type": "rule_of_thumb",
+			"group": "floors-ribbed",
+			"label": {
+				"nl": "Hoogte, doorgaand (continu)",
+				"en": "Depth, continuous"
+			},
+			"symbol": "h",
+			"value": 31,
+			"unit": "",
+			"divisorOf": "L",
+			"bound": "exact",
+			"scope": {
+				"nl": "Typische overspanning L = 6 tot 14 m",
+				"en": "Typical span L = 6 to 14 m"
+			},
+			"when": [
+				{
+					"symbol": "L",
+					"value": [6, 14],
+					"unit": "m",
+					"bound": "range"
+				}
+			],
+			"source": {
+				"title": "TU Delft Vademecum (TeachBooks)",
+				"ref": "§8.2 Vloeren",
+				"url": "https://github.com/TeachBooks/vademecum/blob/9a2f70afd158b7cee533c119bf4c88ae15106d4a/book/ontwerp/beton/vloeren.md",
+				"license": "CC BY 4.0"
+			},
+			"status": "flagged"
+		},
+		{
+			"id": "beton-ribbenvloer-vrij-opgelegd-h",
+			"topic": "concrete",
+			"type": "rule_of_thumb",
+			"group": "floors-ribbed",
+			"label": {
+				"nl": "Hoogte, vrij opgelegd",
+				"en": "Depth, simply supported"
+			},
+			"symbol": "h",
+			"value": 23,
+			"unit": "",
+			"divisorOf": "L",
+			"bound": "exact",
+			"scope": {
+				"nl": "Typische overspanning L = 6 tot 14 m",
+				"en": "Typical span L = 6 to 14 m"
+			},
+			"when": [
+				{
+					"symbol": "L",
+					"value": [6, 14],
+					"unit": "m",
+					"bound": "range"
+				}
+			],
+			"source": {
+				"title": "TU Delft Vademecum (TeachBooks)",
+				"ref": "§8.2 Vloeren",
+				"url": "https://github.com/TeachBooks/vademecum/blob/9a2f70afd158b7cee533c119bf4c88ae15106d4a/book/ontwerp/beton/vloeren.md",
+				"license": "CC BY 4.0"
+			},
+			"status": "flagged"
+		},
+		{
+			"id": "beton-ribbenvloer-uitkragend-h",
+			"topic": "concrete",
+			"type": "rule_of_thumb",
+			"group": "floors-ribbed",
+			"label": {
+				"nl": "Hoogte, uitkragend",
+				"en": "Depth, cantilever"
+			},
+			"symbol": "h",
+			"value": 9,
+			"unit": "",
+			"divisorOf": "L",
+			"bound": "exact",
+			"scope": {
+				"nl": "Typische overspanning L = 6 tot 14 m",
+				"en": "Typical span L = 6 to 14 m"
+			},
+			"when": [
+				{
+					"symbol": "L",
+					"value": [6, 14],
+					"unit": "m",
+					"bound": "range"
+				}
+			],
+			"source": {
+				"title": "TU Delft Vademecum (TeachBooks)",
+				"ref": "§8.2 Vloeren",
+				"url": "https://github.com/TeachBooks/vademecum/blob/9a2f70afd158b7cee533c119bf4c88ae15106d4a/book/ontwerp/beton/vloeren.md",
+				"license": "CC BY 4.0"
+			},
+			"status": "flagged"
+		},
+		{
+			"id": "beton-staalplaatbetonvloer-h",
+			"topic": "concrete",
+			"type": "rule_of_thumb",
+			"group": "floors-composite-deck",
+			"label": {
+				"nl": "Hoogte, beton met normaal gewicht",
+				"en": "Depth, normal weight concrete"
+			},
+			"symbol": "h",
+			"value": 25,
+			"unit": "",
+			"divisorOf": "l",
+			"bound": "exact",
+			"scope": {
+				"nl": "l = overspanning",
+				"en": "l = span"
+			},
+			"source": {
+				"title": "TU Delft Vademecum (TeachBooks)",
+				"ref": "§8.2 Vloeren",
+				"url": "https://github.com/TeachBooks/vademecum/blob/9a2f70afd158b7cee533c119bf4c88ae15106d4a/book/ontwerp/beton/vloeren.md",
+				"license": "CC BY 4.0"
+			},
+			"status": "flagged"
+		},
+		{
+			"id": "beton-breedplaatvloer-continu-h",
+			"topic": "concrete",
+			"type": "rule_of_thumb",
+			"group": "floors-wide-slab",
+			"label": {
+				"nl": "Hoogte, enkelvoudige plaat, doorgaand (continu)",
+				"en": "Depth, single slab, continuous"
+			},
+			"symbol": "h",
+			"value": [28, 36],
+			"unit": "",
+			"divisorOf": "L",
+			"bound": "range",
+			"scope": {
+				"nl": "Typische overspanning L = 5 tot 6 m",
+				"en": "Typical span L = 5 to 6 m"
+			},
+			"when": [
+				{
+					"symbol": "L",
+					"value": [5, 6],
+					"unit": "m",
+					"bound": "range"
+				}
+			],
+			"source": {
+				"title": "TU Delft Vademecum (TeachBooks)",
+				"ref": "§8.2 Vloeren",
+				"url": "https://github.com/TeachBooks/vademecum/blob/9a2f70afd158b7cee533c119bf4c88ae15106d4a/book/ontwerp/beton/vloeren.md",
+				"license": "CC BY 4.0"
+			},
+			"status": "flagged"
+		},
+		{
+			"id": "beton-breedplaatvloer-vrij-opgelegd-h",
+			"topic": "concrete",
+			"type": "rule_of_thumb",
+			"group": "floors-wide-slab",
+			"label": {
+				"nl": "Hoogte, enkelvoudige plaat, vrij opgelegd",
+				"en": "Depth, single slab, simply supported"
+			},
+			"symbol": "h",
+			"value": [22, 30],
+			"unit": "",
+			"divisorOf": "L",
+			"bound": "range",
+			"scope": {
+				"nl": "Typische overspanning L = 5 tot 6 m",
+				"en": "Typical span L = 5 to 6 m"
+			},
+			"when": [
+				{
+					"symbol": "L",
+					"value": [5, 6],
+					"unit": "m",
+					"bound": "range"
+				}
+			],
+			"source": {
+				"title": "TU Delft Vademecum (TeachBooks)",
+				"ref": "§8.2 Vloeren",
+				"url": "https://github.com/TeachBooks/vademecum/blob/9a2f70afd158b7cee533c119bf4c88ae15106d4a/book/ontwerp/beton/vloeren.md",
+				"license": "CC BY 4.0"
+			},
+			"status": "flagged"
+		},
+		{
+			"id": "beton-breedplaatvloer-uitkragend-h",
+			"topic": "concrete",
+			"type": "rule_of_thumb",
+			"group": "floors-wide-slab",
+			"label": {
+				"nl": "Hoogte, enkelvoudige plaat, uitkragend",
+				"en": "Depth, single slab, cantilever"
+			},
+			"symbol": "h",
+			"value": 10,
+			"unit": "",
+			"divisorOf": "L",
+			"bound": "exact",
+			"scope": {
+				"nl": "Typische overspanning L = 5 tot 6 m",
+				"en": "Typical span L = 5 to 6 m"
+			},
+			"when": [
+				{
+					"symbol": "L",
+					"value": [5, 6],
+					"unit": "m",
+					"bound": "range"
+				}
+			],
+			"source": {
+				"title": "TU Delft Vademecum (TeachBooks)",
+				"ref": "§8.2 Vloeren",
+				"url": "https://github.com/TeachBooks/vademecum/blob/9a2f70afd158b7cee533c119bf4c88ae15106d4a/book/ontwerp/beton/vloeren.md",
+				"license": "CC BY 4.0"
+			},
+			"status": "flagged"
+		},
+		{
+			"id": "beton-breedplaat-dikte",
+			"topic": "concrete",
+			"type": "data",
+			"group": "floors-wide-slab",
+			"label": {
+				"nl": "Dikte bekistingsplaat (gebruikelijk)",
+				"en": "Precast shell thickness (usual)"
+			},
+			"symbol": "t",
+			"value": [50, 90],
+			"unit": "mm",
+			"bound": "range",
+			"source": {
+				"title": "TU Delft Vademecum (TeachBooks)",
+				"ref": "§8.2 Vloeren",
+				"url": "https://github.com/TeachBooks/vademecum/blob/9a2f70afd158b7cee533c119bf4c88ae15106d4a/book/ontwerp/beton/vloeren.md",
+				"license": "CC BY 4.0"
+			},
+			"status": "flagged"
+		},
+		{
+			"id": "beton-breedplaat-lengte",
+			"topic": "concrete",
+			"type": "data",
+			"group": "floors-wide-slab",
+			"label": {
+				"nl": "Plaatlengte",
+				"en": "Slab length"
+			},
+			"value": 8500,
+			"unit": "mm",
+			"bound": "max",
+			"source": {
+				"title": "TU Delft Vademecum (TeachBooks)",
+				"ref": "§8.2 Vloeren",
+				"url": "https://github.com/TeachBooks/vademecum/blob/9a2f70afd158b7cee533c119bf4c88ae15106d4a/book/ontwerp/beton/vloeren.md",
+				"license": "CC BY 4.0"
+			},
+			"status": "flagged"
+		},
+		{
+			"id": "beton-kanaalplaat-toog-licht",
+			"topic": "concrete",
+			"type": "rule_of_thumb",
+			"group": "floors-hollow-core",
+			"label": {
+				"nl": "Toog bij lichte voorspanning",
+				"en": "Camber with light prestress"
+			},
+			"symbol": "toog",
+			"value": 0.001,
+			"unit": "",
+			"factorOf": "L",
+			"bound": "exact",
+			"notes": [
+				{
+					"kind": "note",
+					"text": {
+						"nl": "De voorspanning buigt de plaat op, vooral bij grote overspanningen.",
+						"en": "The prestress makes the slab camber upwards, especially at large spans."
+					}
+				}
+			],
+			"source": {
+				"title": "TU Delft Vademecum (TeachBooks)",
+				"ref": "§8.2 Vloeren",
+				"url": "https://github.com/TeachBooks/vademecum/blob/9a2f70afd158b7cee533c119bf4c88ae15106d4a/book/ontwerp/beton/vloeren.md",
+				"license": "CC BY 4.0"
+			},
+			"status": "flagged"
+		},
+		{
+			"id": "beton-kanaalplaat-toog-zwaar",
+			"topic": "concrete",
+			"type": "rule_of_thumb",
+			"group": "floors-hollow-core",
+			"label": {
+				"nl": "Toog bij zware voorspanning",
+				"en": "Camber with heavy prestress"
+			},
+			"symbol": "toog",
+			"value": 0.003,
+			"unit": "",
+			"factorOf": "L",
+			"bound": "exact",
+			"source": {
+				"title": "TU Delft Vademecum (TeachBooks)",
+				"ref": "§8.2 Vloeren",
+				"url": "https://github.com/TeachBooks/vademecum/blob/9a2f70afd158b7cee533c119bf4c88ae15106d4a/book/ontwerp/beton/vloeren.md",
+				"license": "CC BY 4.0"
+			},
+			"status": "flagged"
+		},
+		{
+			"id": "beton-kanaalplaat-oplegging-woningbouw",
+			"topic": "concrete",
+			"type": "rule_of_thumb",
+			"group": "floors-hollow-core",
+			"label": {
+				"nl": "Opleglengte, woningbouw",
+				"en": "Bearing length, housing"
+			},
+			"value": 100,
+			"unit": "mm",
+			"bound": "exact",
+			"scope": {
+				"nl": "Zie ook de voorschriften van de leverancier",
+				"en": "See also the supplier's rules"
+			},
+			"source": {
+				"title": "TU Delft Vademecum (TeachBooks)",
+				"ref": "§8.2 Vloeren",
+				"url": "https://github.com/TeachBooks/vademecum/blob/9a2f70afd158b7cee533c119bf4c88ae15106d4a/book/ontwerp/beton/vloeren.md",
+				"license": "CC BY 4.0"
+			},
+			"status": "flagged"
+		},
+		{
+			"id": "beton-kanaalplaat-oplegging-utiliteitsbouw",
+			"topic": "concrete",
+			"type": "rule_of_thumb",
+			"group": "floors-hollow-core",
+			"label": {
+				"nl": "Opleglengte, utiliteitsbouw",
+				"en": "Bearing length, non-residential"
+			},
+			"value": 150,
+			"unit": "mm",
+			"bound": "exact",
+			"scope": {
+				"nl": "Zie ook de voorschriften van de leverancier",
+				"en": "See also the supplier's rules"
+			},
+			"source": {
+				"title": "TU Delft Vademecum (TeachBooks)",
+				"ref": "§8.2 Vloeren",
+				"url": "https://github.com/TeachBooks/vademecum/blob/9a2f70afd158b7cee533c119bf4c88ae15106d4a/book/ontwerp/beton/vloeren.md",
+				"license": "CC BY 4.0"
+			},
+			"status": "flagged"
+		},
+		{
+			"id": "beton-dycore-w-hoogte",
+			"topic": "concrete",
+			"type": "data",
+			"group": "floors-hollow-core-dycore",
+			"label": {
+				"nl": "Dycore, type W, hoogte",
+				"en": "Dycore type W, depth"
+			},
+			"symbol": "h",
+			"value": 150,
+			"unit": "mm",
+			"bound": "exact",
+			"source": {
+				"title": "TU Delft Vademecum (TeachBooks)",
+				"ref": "§8.2 Vloeren",
+				"url": "https://github.com/TeachBooks/vademecum/blob/9a2f70afd158b7cee533c119bf4c88ae15106d4a/book/ontwerp/beton/vloeren.md",
+				"license": "CC BY 4.0"
+			},
+			"status": "flagged"
+		},
+		{
+			"id": "beton-dycore-w-gewicht",
+			"topic": "concrete",
+			"type": "data",
+			"group": "floors-hollow-core-dycore",
+			"label": {
+				"nl": "Dycore, type W, gewicht",
+				"en": "Dycore type W, weight"
+			},
+			"symbol": "G",
+			"value": 2.4,
+			"unit": "kN/m²",
+			"bound": "exact",
+			"source": {
+				"title": "TU Delft Vademecum (TeachBooks)",
+				"ref": "§8.2 Vloeren",
+				"url": "https://github.com/TeachBooks/vademecum/blob/9a2f70afd158b7cee533c119bf4c88ae15106d4a/book/ontwerp/beton/vloeren.md",
+				"license": "CC BY 4.0"
+			},
+			"status": "flagged"
+		},
+		{
+			"id": "beton-dycore-w-lengte",
+			"topic": "concrete",
+			"type": "data",
+			"group": "floors-hollow-core-dycore",
+			"label": {
+				"nl": "Dycore, type W, maximale lengte",
+				"en": "Dycore type W, maximum length"
+			},
+			"value": 6,
+			"unit": "m",
+			"bound": "max",
+			"source": {
+				"title": "TU Delft Vademecum (TeachBooks)",
+				"ref": "§8.2 Vloeren",
+				"url": "https://github.com/TeachBooks/vademecum/blob/9a2f70afd158b7cee533c119bf4c88ae15106d4a/book/ontwerp/beton/vloeren.md",
+				"license": "CC BY 4.0"
+			},
+			"status": "flagged"
+		},
+		{
+			"id": "beton-dycore-n-hoogte",
+			"topic": "concrete",
+			"type": "data",
+			"group": "floors-hollow-core-dycore",
+			"label": {
+				"nl": "Dycore, type N, hoogte",
+				"en": "Dycore type N, depth"
+			},
+			"symbol": "h",
+			"value": 200,
+			"unit": "mm",
+			"bound": "exact",
+			"source": {
+				"title": "TU Delft Vademecum (TeachBooks)",
+				"ref": "§8.2 Vloeren",
+				"url": "https://github.com/TeachBooks/vademecum/blob/9a2f70afd158b7cee533c119bf4c88ae15106d4a/book/ontwerp/beton/vloeren.md",
+				"license": "CC BY 4.0"
+			},
+			"status": "flagged"
+		},
+		{
+			"id": "beton-dycore-n-gewicht",
+			"topic": "concrete",
+			"type": "data",
+			"group": "floors-hollow-core-dycore",
+			"label": {
+				"nl": "Dycore, type N, gewicht",
+				"en": "Dycore type N, weight"
+			},
+			"symbol": "G",
+			"value": 2.7,
+			"unit": "kN/m²",
+			"bound": "exact",
+			"source": {
+				"title": "TU Delft Vademecum (TeachBooks)",
+				"ref": "§8.2 Vloeren",
+				"url": "https://github.com/TeachBooks/vademecum/blob/9a2f70afd158b7cee533c119bf4c88ae15106d4a/book/ontwerp/beton/vloeren.md",
+				"license": "CC BY 4.0"
+			},
+			"status": "flagged"
+		},
+		{
+			"id": "beton-dycore-n-lengte",
+			"topic": "concrete",
+			"type": "data",
+			"group": "floors-hollow-core-dycore",
+			"label": {
+				"nl": "Dycore, type N, maximale lengte",
+				"en": "Dycore type N, maximum length"
+			},
+			"value": 9,
+			"unit": "m",
+			"bound": "max",
+			"source": {
+				"title": "TU Delft Vademecum (TeachBooks)",
+				"ref": "§8.2 Vloeren",
+				"url": "https://github.com/TeachBooks/vademecum/blob/9a2f70afd158b7cee533c119bf4c88ae15106d4a/book/ontwerp/beton/vloeren.md",
+				"license": "CC BY 4.0"
+			},
+			"status": "flagged"
+		},
+		{
+			"id": "beton-dycore-u-hoogte",
+			"topic": "concrete",
+			"type": "data",
+			"group": "floors-hollow-core-dycore",
+			"label": {
+				"nl": "Dycore, type U, hoogte",
+				"en": "Dycore type U, depth"
+			},
+			"symbol": "h",
+			"value": 200,
+			"unit": "mm",
+			"bound": "exact",
+			"source": {
+				"title": "TU Delft Vademecum (TeachBooks)",
+				"ref": "§8.2 Vloeren",
+				"url": "https://github.com/TeachBooks/vademecum/blob/9a2f70afd158b7cee533c119bf4c88ae15106d4a/book/ontwerp/beton/vloeren.md",
+				"license": "CC BY 4.0"
+			},
+			"status": "flagged"
+		},
+		{
+			"id": "beton-dycore-u-gewicht",
+			"topic": "concrete",
+			"type": "data",
+			"group": "floors-hollow-core-dycore",
+			"label": {
+				"nl": "Dycore, type U, gewicht",
+				"en": "Dycore type U, weight"
+			},
+			"symbol": "G",
+			"value": 3.1,
+			"unit": "kN/m²",
+			"bound": "exact",
+			"source": {
+				"title": "TU Delft Vademecum (TeachBooks)",
+				"ref": "§8.2 Vloeren",
+				"url": "https://github.com/TeachBooks/vademecum/blob/9a2f70afd158b7cee533c119bf4c88ae15106d4a/book/ontwerp/beton/vloeren.md",
+				"license": "CC BY 4.0"
+			},
+			"status": "flagged"
+		},
+		{
+			"id": "beton-dycore-u-lengte",
+			"topic": "concrete",
+			"type": "data",
+			"group": "floors-hollow-core-dycore",
+			"label": {
+				"nl": "Dycore, type U, maximale lengte",
+				"en": "Dycore type U, maximum length"
+			},
+			"value": 9,
+			"unit": "m",
+			"bound": "max",
+			"source": {
+				"title": "TU Delft Vademecum (TeachBooks)",
+				"ref": "§8.2 Vloeren",
+				"url": "https://github.com/TeachBooks/vademecum/blob/9a2f70afd158b7cee533c119bf4c88ae15106d4a/book/ontwerp/beton/vloeren.md",
+				"license": "CC BY 4.0"
+			},
+			"status": "flagged"
+		},
+		{
+			"id": "beton-dycore-t-hoogte",
+			"topic": "concrete",
+			"type": "data",
+			"group": "floors-hollow-core-dycore",
+			"label": {
+				"nl": "Dycore, type T, hoogte",
+				"en": "Dycore type T, depth"
+			},
+			"symbol": "h",
+			"value": 255,
+			"unit": "mm",
+			"bound": "exact",
+			"source": {
+				"title": "TU Delft Vademecum (TeachBooks)",
+				"ref": "§8.2 Vloeren",
+				"url": "https://github.com/TeachBooks/vademecum/blob/9a2f70afd158b7cee533c119bf4c88ae15106d4a/book/ontwerp/beton/vloeren.md",
+				"license": "CC BY 4.0"
+			},
+			"status": "flagged"
+		},
+		{
+			"id": "beton-dycore-t-gewicht",
+			"topic": "concrete",
+			"type": "data",
+			"group": "floors-hollow-core-dycore",
+			"label": {
+				"nl": "Dycore, type T, gewicht",
+				"en": "Dycore type T, weight"
+			},
+			"symbol": "G",
+			"value": 3.7,
+			"unit": "kN/m²",
+			"bound": "exact",
+			"source": {
+				"title": "TU Delft Vademecum (TeachBooks)",
+				"ref": "§8.2 Vloeren",
+				"url": "https://github.com/TeachBooks/vademecum/blob/9a2f70afd158b7cee533c119bf4c88ae15106d4a/book/ontwerp/beton/vloeren.md",
+				"license": "CC BY 4.0"
+			},
+			"status": "flagged"
+		},
+		{
+			"id": "beton-dycore-t-lengte",
+			"topic": "concrete",
+			"type": "data",
+			"group": "floors-hollow-core-dycore",
+			"label": {
+				"nl": "Dycore, type T, maximale lengte",
+				"en": "Dycore type T, maximum length"
+			},
+			"value": 12,
+			"unit": "m",
+			"bound": "max",
+			"source": {
+				"title": "TU Delft Vademecum (TeachBooks)",
+				"ref": "§8.2 Vloeren",
+				"url": "https://github.com/TeachBooks/vademecum/blob/9a2f70afd158b7cee533c119bf4c88ae15106d4a/book/ontwerp/beton/vloeren.md",
+				"license": "CC BY 4.0"
+			},
+			"status": "flagged"
+		},
+		{
+			"id": "beton-dycore-h-hoogte",
+			"topic": "concrete",
+			"type": "data",
+			"group": "floors-hollow-core-dycore",
+			"label": {
+				"nl": "Dycore, type H, hoogte",
+				"en": "Dycore type H, depth"
+			},
+			"symbol": "h",
+			"value": 320,
+			"unit": "mm",
+			"bound": "exact",
+			"source": {
+				"title": "TU Delft Vademecum (TeachBooks)",
+				"ref": "§8.2 Vloeren",
+				"url": "https://github.com/TeachBooks/vademecum/blob/9a2f70afd158b7cee533c119bf4c88ae15106d4a/book/ontwerp/beton/vloeren.md",
+				"license": "CC BY 4.0"
+			},
+			"status": "flagged"
+		},
+		{
+			"id": "beton-dycore-h-gewicht",
+			"topic": "concrete",
+			"type": "data",
+			"group": "floors-hollow-core-dycore",
+			"label": {
+				"nl": "Dycore, type H, gewicht",
+				"en": "Dycore type H, weight"
+			},
+			"symbol": "G",
+			"value": 4.3,
+			"unit": "kN/m²",
+			"bound": "exact",
+			"source": {
+				"title": "TU Delft Vademecum (TeachBooks)",
+				"ref": "§8.2 Vloeren",
+				"url": "https://github.com/TeachBooks/vademecum/blob/9a2f70afd158b7cee533c119bf4c88ae15106d4a/book/ontwerp/beton/vloeren.md",
+				"license": "CC BY 4.0"
+			},
+			"status": "flagged"
+		},
+		{
+			"id": "beton-dycore-h-lengte",
+			"topic": "concrete",
+			"type": "data",
+			"group": "floors-hollow-core-dycore",
+			"label": {
+				"nl": "Dycore, type H, maximale lengte",
+				"en": "Dycore type H, maximum length"
+			},
+			"value": 15,
+			"unit": "m",
+			"bound": "max",
+			"source": {
+				"title": "TU Delft Vademecum (TeachBooks)",
+				"ref": "§8.2 Vloeren",
+				"url": "https://github.com/TeachBooks/vademecum/blob/9a2f70afd158b7cee533c119bf4c88ae15106d4a/book/ontwerp/beton/vloeren.md",
+				"license": "CC BY 4.0"
+			},
+			"status": "flagged"
+		},
+		{
+			"id": "beton-dycore-k-hoogte",
+			"topic": "concrete",
+			"type": "data",
+			"group": "floors-hollow-core-dycore",
+			"label": {
+				"nl": "Dycore, type K, hoogte",
+				"en": "Dycore type K, depth"
+			},
+			"symbol": "h",
+			"value": 400,
+			"unit": "mm",
+			"bound": "exact",
+			"source": {
+				"title": "TU Delft Vademecum (TeachBooks)",
+				"ref": "§8.2 Vloeren",
+				"url": "https://github.com/TeachBooks/vademecum/blob/9a2f70afd158b7cee533c119bf4c88ae15106d4a/book/ontwerp/beton/vloeren.md",
+				"license": "CC BY 4.0"
+			},
+			"status": "flagged"
+		},
+		{
+			"id": "beton-dycore-k-gewicht",
+			"topic": "concrete",
+			"type": "data",
+			"group": "floors-hollow-core-dycore",
+			"label": {
+				"nl": "Dycore, type K, gewicht",
+				"en": "Dycore type K, weight"
+			},
+			"symbol": "G",
+			"value": 5.0,
+			"unit": "kN/m²",
+			"bound": "exact",
+			"source": {
+				"title": "TU Delft Vademecum (TeachBooks)",
+				"ref": "§8.2 Vloeren",
+				"url": "https://github.com/TeachBooks/vademecum/blob/9a2f70afd158b7cee533c119bf4c88ae15106d4a/book/ontwerp/beton/vloeren.md",
+				"license": "CC BY 4.0"
+			},
+			"status": "flagged"
+		},
+		{
+			"id": "beton-dycore-k-lengte",
+			"topic": "concrete",
+			"type": "data",
+			"group": "floors-hollow-core-dycore",
+			"label": {
+				"nl": "Dycore, type K, maximale lengte",
+				"en": "Dycore type K, maximum length"
+			},
+			"value": 18,
+			"unit": "m",
+			"bound": "max",
+			"source": {
+				"title": "TU Delft Vademecum (TeachBooks)",
+				"ref": "§8.2 Vloeren",
+				"url": "https://github.com/TeachBooks/vademecum/blob/9a2f70afd158b7cee533c119bf4c88ae15106d4a/book/ontwerp/beton/vloeren.md",
+				"license": "CC BY 4.0"
+			},
+			"status": "flagged"
+		},
+		{
+			"id": "beton-wand-dikte-min",
+			"topic": "concrete",
+			"type": "rule_of_thumb",
+			"group": "walls",
+			"label": {
+				"nl": "Minimale wanddikte (bij voorkeur)",
+				"en": "Minimum wall thickness (preferred)"
+			},
+			"symbol": "t",
+			"value": 120,
+			"unit": "mm",
+			"bound": "min",
+			"source": {
+				"title": "TU Delft Vademecum (TeachBooks)",
+				"ref": "§8.4 Wanden",
+				"url": "https://github.com/TeachBooks/vademecum/blob/9a2f70afd158b7cee533c119bf4c88ae15106d4a/book/ontwerp/beton/wanden.md",
+				"license": "CC BY 4.0"
+			},
+			"status": "flagged"
+		},
+		{
+			"id": "beton-wand-verdiepingshoogte-4",
+			"topic": "concrete",
+			"type": "rule_of_thumb",
+			"group": "walls",
+			"label": {
+				"nl": "Wanddikte, verdiepingshoogte < 4 m",
+				"en": "Wall thickness, storey height < 4 m"
+			},
+			"symbol": "t",
+			"value": 175,
+			"unit": "",
+			"divisorOf": "H",
+			"bound": "exact",
+			"scope": {
+				"nl": "Verdiepingshoogte h_v < 4 m",
+				"en": "Storey height h_v < 4 m"
+			},
+			"when": [
+				{
+					"symbol": "h_v",
+					"value": 4,
+					"unit": "m",
+					"bound": "max"
+				}
+			],
+			"source": {
+				"title": "TU Delft Vademecum (TeachBooks)",
+				"ref": "§8.4 Wanden",
+				"url": "https://github.com/TeachBooks/vademecum/blob/9a2f70afd158b7cee533c119bf4c88ae15106d4a/book/ontwerp/beton/wanden.md",
+				"license": "CC BY 4.0"
+			},
+			"status": "flagged"
+		},
+		{
+			"id": "beton-wand-gebouwhoogte-60",
+			"topic": "concrete",
+			"type": "rule_of_thumb",
+			"group": "walls",
+			"label": {
+				"nl": "Wanddikte, gebouwhoogte > 60 m",
+				"en": "Wall thickness, building height > 60 m"
+			},
+			"symbol": "t",
+			"value": 100,
+			"unit": "",
+			"divisorOf": "H",
+			"bound": "exact",
+			"scope": {
+				"nl": "H > 60 m",
+				"en": "H > 60 m"
+			},
+			"when": [
+				{
+					"symbol": "H",
+					"value": 60,
+					"unit": "m",
+					"bound": "min"
+				}
+			],
+			"source": {
+				"title": "TU Delft Vademecum (TeachBooks)",
+				"ref": "§8.4 Wanden",
+				"url": "https://github.com/TeachBooks/vademecum/blob/9a2f70afd158b7cee533c119bf4c88ae15106d4a/book/ontwerp/beton/wanden.md",
+				"license": "CC BY 4.0"
+			},
+			"status": "flagged"
+		},
+		{
+			"id": "beton-stabiliteitswand-lang",
+			"topic": "concrete",
+			"type": "rule_of_thumb",
+			"group": "stability",
+			"label": {
+				"nl": "Wanddikte, wandlengte > H/6",
+				"en": "Wall thickness, wall length > H/6"
+			},
+			"symbol": "t",
+			"value": 100,
+			"unit": "",
+			"divisorOf": "H",
+			"bound": "exact",
+			"scope": {
+				"nl": "Wandlengte groter dan H/6",
+				"en": "Wall length greater than H/6"
+			},
+			"source": {
+				"title": "TU Delft Vademecum (TeachBooks)",
+				"ref": "§8.1 Stabiliteit",
+				"url": "https://github.com/TeachBooks/vademecum/blob/9a2f70afd158b7cee533c119bf4c88ae15106d4a/book/ontwerp/beton/stabiliteit.md",
+				"license": "CC BY 4.0"
+			},
+			"status": "flagged"
+		},
+		{
+			"id": "beton-stabiliteitswand-kort",
+			"topic": "concrete",
+			"type": "rule_of_thumb",
+			"group": "stability",
+			"label": {
+				"nl": "Wanddikte, wandlengte < H/6",
+				"en": "Wall thickness, wall length < H/6"
+			},
+			"symbol": "t",
+			"value": 75,
+			"unit": "",
+			"divisorOf": "H",
+			"bound": "exact",
+			"scope": {
+				"nl": "Wandlengte kleiner dan H/6",
+				"en": "Wall length less than H/6"
+			},
+			"source": {
+				"title": "TU Delft Vademecum (TeachBooks)",
+				"ref": "§8.1 Stabiliteit",
+				"url": "https://github.com/TeachBooks/vademecum/blob/9a2f70afd158b7cee533c119bf4c88ae15106d4a/book/ontwerp/beton/stabiliteit.md",
+				"license": "CC BY 4.0"
+			},
+			"status": "flagged"
+		},
+		{
+			"id": "beton-kolom-1-verdiepingen",
+			"topic": "concrete",
+			"type": "rule_of_thumb",
+			"group": "columns",
+			"label": {
+				"nl": "Betonkolom, 1 verdieping",
+				"en": "Concrete column, 1 storey"
+			},
+			"value": 300,
+			"unit": "mm",
+			"by": 300,
+			"bound": "exact",
+			"scope": {
+				"nl": "n = 1 (aantal verdiepingen)",
+				"en": "n = 1 (number of storeys)"
+			},
+			"when": [
+				{
+					"symbol": "n",
+					"value": 1,
+					"unit": "",
+					"bound": "exact"
+				}
+			],
+			"source": {
+				"title": "TU Delft Vademecum (TeachBooks)",
+				"ref": "§8.5 Kolommen",
+				"url": "https://github.com/TeachBooks/vademecum/blob/9a2f70afd158b7cee533c119bf4c88ae15106d4a/book/ontwerp/beton/kolommen.md",
+				"license": "CC BY 4.0"
+			},
+			"status": "flagged"
+		},
+		{
+			"id": "beton-kolom-6-verdiepingen",
+			"topic": "concrete",
+			"type": "rule_of_thumb",
+			"group": "columns",
+			"label": {
+				"nl": "Betonkolom, 6 verdiepingen",
+				"en": "Concrete column, 6 storeys"
+			},
+			"value": 700,
+			"unit": "mm",
+			"by": 700,
+			"bound": "exact",
+			"scope": {
+				"nl": "n = 6 (aantal verdiepingen)",
+				"en": "n = 6 (number of storeys)"
+			},
+			"when": [
+				{
+					"symbol": "n",
+					"value": 6,
+					"unit": "",
+					"bound": "exact"
+				}
+			],
+			"source": {
+				"title": "TU Delft Vademecum (TeachBooks)",
+				"ref": "§8.5 Kolommen",
+				"url": "https://github.com/TeachBooks/vademecum/blob/9a2f70afd158b7cee533c119bf4c88ae15106d4a/book/ontwerp/beton/kolommen.md",
+				"license": "CC BY 4.0"
+			},
+			"status": "flagged"
+		},
+		{
+			"id": "beton-kolom-11-verdiepingen",
+			"topic": "concrete",
+			"type": "rule_of_thumb",
+			"group": "columns",
+			"label": {
+				"nl": "Betonkolom, 11 verdiepingen",
+				"en": "Concrete column, 11 storeys"
+			},
+			"value": 1000,
+			"unit": "mm",
+			"by": 1000,
+			"bound": "exact",
+			"scope": {
+				"nl": "n = 11 (aantal verdiepingen)",
+				"en": "n = 11 (number of storeys)"
+			},
+			"when": [
+				{
+					"symbol": "n",
+					"value": 11,
+					"unit": "",
+					"bound": "exact"
+				}
+			],
+			"source": {
+				"title": "TU Delft Vademecum (TeachBooks)",
+				"ref": "§8.5 Kolommen",
+				"url": "https://github.com/TeachBooks/vademecum/blob/9a2f70afd158b7cee533c119bf4c88ae15106d4a/book/ontwerp/beton/kolommen.md",
+				"license": "CC BY 4.0"
+			},
+			"status": "flagged"
+		},
+		{
+			"id": "beton-kolom-16-verdiepingen",
+			"topic": "concrete",
+			"type": "rule_of_thumb",
+			"group": "columns",
+			"label": {
+				"nl": "Betonkolom, 16 verdiepingen",
+				"en": "Concrete column, 16 storeys"
+			},
+			"value": 1200,
+			"unit": "mm",
+			"by": 1200,
+			"bound": "exact",
+			"scope": {
+				"nl": "n = 16 (aantal verdiepingen)",
+				"en": "n = 16 (number of storeys)"
+			},
+			"when": [
+				{
+					"symbol": "n",
+					"value": 16,
+					"unit": "",
+					"bound": "exact"
+				}
+			],
+			"source": {
+				"title": "TU Delft Vademecum (TeachBooks)",
+				"ref": "§8.5 Kolommen",
+				"url": "https://github.com/TeachBooks/vademecum/blob/9a2f70afd158b7cee533c119bf4c88ae15106d4a/book/ontwerp/beton/kolommen.md",
+				"license": "CC BY 4.0"
+			},
+			"status": "flagged"
+		},
+		{
+			"id": "beton-kolom-prefab-breedte",
+			"topic": "concrete",
+			"type": "rule_of_thumb",
+			"group": "columns",
+			"label": {
+				"nl": "Prefab kolom, breedte",
+				"en": "Precast column, width"
+			},
+			"symbol": "b",
+			"value": 10,
+			"unit": "",
+			"divisorOf": "h_v",
+			"bound": "exact",
+			"scope": {
+				"nl": "h_v = verdiepingshoogte; prefab bouwsystemen van 0 tot 2 verdiepingen",
+				"en": "h_v = storey height; precast systems of 0 to 2 storeys"
+			},
+			"when": [
+				{
+					"symbol": "n",
+					"value": 2,
+					"unit": "",
+					"bound": "max"
+				}
+			],
+			"notes": [
+				{
+					"kind": "note",
+					"text": {
+						"nl": "Toegepast met prefab (voorgespannen) balken en kanaalplaat- of breedplaatvloeren; oplegging op neopreen met aangegoten ankers.",
+						"en": "Used with precast (prestressed) beams and hollow-core or wide-slab floors; bearing on neoprene with grouted anchors."
+					}
+				}
+			],
+			"source": {
+				"title": "TU Delft Vademecum (TeachBooks)",
+				"ref": "§8.5 Kolommen",
+				"url": "https://github.com/TeachBooks/vademecum/blob/9a2f70afd158b7cee533c119bf4c88ae15106d4a/book/ontwerp/beton/kolommen.md",
+				"license": "CC BY 4.0"
+			},
+			"status": "flagged"
+		}
+	],
+	"groups": [
+		{
+			"id": "beams",
+			"label": {
+				"nl": "Liggers",
+				"en": "Beams"
+			}
+		},
+		{
+			"id": "floors-ribbed",
+			"label": {
+				"nl": "Ribbenvloer",
+				"en": "Ribbed floor"
+			},
+			"notes": [
+				{
+					"kind": "note",
+					"text": {
+						"nl": "Prefab, met geïntegreerde isolatie; de naden worden aangestort met betonmortel. Toegepast als begane grondvloer boven kruipruimten.",
+						"en": "Precast, with integrated insulation; the joints are filled with mortar. Used as ground floor above crawl spaces."
+					}
+				}
+			]
+		},
+		{
+			"id": "floors-composite-deck",
+			"label": {
+				"nl": "Staalplaatbetonvloer",
+				"en": "Composite steel deck floor"
+			},
+			"notes": [
+				{
+					"kind": "note",
+					"text": {
+						"nl": "De geprofileerde staalplaten zijn werkvloer, bekisting en uiteindelijk wapening. Veel gebruikt bij (hoogbouw) staalconstructies.",
+						"en": "The profiled steel sheets act as working platform, formwork and finally reinforcement. Common in (high-rise) steel structures."
+					}
+				}
+			]
+		},
+		{
+			"id": "floors-wide-slab",
+			"label": {
+				"nl": "Bekistingsplaatvloer (breedplaatvloer)",
+				"en": "Precast lattice-girder slab (wide slab floor)"
+			},
+			"notes": [
+				{
+					"kind": "note",
+					"text": {
+						"nl": "Een dunne prefab betonnen schil met wapening en tralieliggers, in het werk afgewerkt met een constructieve druklaag van minimaal B25. De onderstempeling volgt een door de producent goedgekeurd legplan.",
+						"en": "A thin precast concrete shell with reinforcement and lattice girders, finished on site with a structural topping of at least B25. Propping follows a layout approved by the manufacturer."
+					}
+				}
+			]
+		},
+		{
+			"id": "floors-hollow-core",
+			"label": {
+				"nl": "Kanaalplaatvloer",
+				"en": "Hollow-core floor"
+			},
+			"notes": [
+				{
+					"kind": "note",
+					"text": {
+						"nl": "Uitgangspunten: geen sparingen, geen geconcentreerde lasten, vrije opleggingen (geen inklemming), standaard brandwerendheid en een bijkomende doorbuiging van maximaal 0,003 · l.",
+						"en": "Assumptions: no openings, no point loads, simple supports (no fixity), standard fire resistance and an additional deflection of at most 0.003 · l."
+					}
+				},
+				{
+					"kind": "note",
+					"text": {
+						"nl": "Voor veranderlijke belastingen tot 3 kN/m² en overspanningen tot 6,5 m zijn bij lagere gebouwen alle oplegvarianten mogelijk (koud, in de specie, op vilt, op een elastomeren strip). In alle andere gevallen wordt een elastomeren oplegstrip aanbevolen.",
+						"en": "For imposed loads up to 3 kN/m² and spans up to 6.5 m, all bearing options are possible in lower buildings (dry, in mortar, on felt, on an elastomeric strip). In all other cases an elastomeric bearing strip is recommended."
+					}
+				}
+			]
+		},
+		{
+			"id": "floors-hollow-core-dycore",
+			"label": {
+				"nl": "Kanaalplaten van Dycore (productgegevens)",
+				"en": "Dycore hollow-core slabs (product data)"
+			},
+			"notes": [
+				{
+					"kind": "note",
+					"text": {
+						"nl": "Productspecificaties van één fabrikant, zoals in de bron. Andere fabrikanten hebben andere typen en maten.",
+						"en": "Product data of one manufacturer, as in the source. Other manufacturers have other types and sizes."
+					}
+				},
+				{
+					"kind": "note",
+					"text": {
+						"nl": "Brandwerendheid 60 tot 90 minuten, volumieke massa 2400 kg/m³, voorspanstaal FeP 1860.",
+						"en": "Fire resistance 60 to 90 minutes, density 2400 kg/m³, prestressing steel FeP 1860."
+					}
+				}
+			]
+		},
+		{
+			"id": "walls",
+			"label": {
+				"nl": "Wanden",
+				"en": "Walls"
+			},
+			"notes": [
+				{
+					"kind": "note",
+					"text": {
+						"nl": "Voor dragende betonwanden geldt hetzelfde als voor kolommen, maar de scheidende functie (akoestiek, brandwerendheid) bepaalt vaak de dikte. H is de hoogte van het hele gebouw.",
+						"en": "Load-bearing concrete walls follow the same rules as columns, but the separating function (acoustics, fire resistance) often decides the thickness. H is the height of the whole building."
+					}
+				}
+			]
+		},
+		{
+			"id": "stability",
+			"label": {
+				"nl": "Stabiliteitswanden (schijven)",
+				"en": "Shear walls"
+			},
+			"notes": [
+				{
+					"kind": "note",
+					"text": {
+						"nl": "Voor rechthoekige wanden zonder flenzen aan de uiteinden, geplaatst om de 8 m. H is de hoogte van het hele gebouw.",
+						"en": "For rectangular walls without flanges at the ends, placed every 8 m. H is the height of the whole building."
+					}
+				}
+			]
+		},
+		{
+			"id": "columns",
+			"label": {
+				"nl": "Kolommen",
+				"en": "Columns"
+			},
+			"notes": [
+				{
+					"kind": "note",
+					"text": {
+						"nl": "Schattingsregels voor kolommen zijn minder nauwkeurig dan voor vloeren en liggers: de belasting hangt sterk af van de h.o.h.-afstand en het aantal gedragen verdiepingen, en de kniklengte bepaalt mede de doorsnede.",
+						"en": "Estimates for columns are less accurate than for floors and beams: the load depends strongly on the spacing and the number of storeys carried, and the buckling length also drives the section."
+					}
+				},
+				{
+					"kind": "note",
+					"text": {
+						"nl": "De tabel geldt voor kolommen van gewapend beton, een kolomgrid van 8 × 8 m, een verdiepingshoogte van niet meer dan 5 m en een geschoorde constructie (stabiliteit uit wanden of windverbanden, niet uit momentvaste verbindingen).",
+						"en": "The table applies to reinforced concrete columns, a column grid of 8 × 8 m, a storey height of no more than 5 m and a braced structure (stability from walls or bracing, not from moment connections)."
+					}
+				}
+			]
+		}
+	],
+	"charts": [
+		{
+			"id": "beton-grafiek-kanaalplaat-overspanning",
+			"topic": "concrete",
+			"group": "floors-hollow-core-dycore",
+			"label": {
+				"nl": "Overspanningen kanaalplaten (Dycore)",
+				"en": "Hollow-core spans (Dycore)"
+			},
+			"explain": {
+				"nl": "Indicatie van de toelaatbare gelijkmatig verdeelde belasting in kN/m² boven het eigen gewicht, voor platen op twee steunpunten bij verschillende overspanningen.",
+				"en": "Indication of the permissible uniformly distributed load in kN/m² above self-weight, for slabs on two supports at different spans."
+			},
+			"assumptions": [
+				{
+					"nl": "Platen op twee steunpunten",
+					"en": "Slabs on two supports"
+				}
+			],
+			"lines": [],
+			"source": {
+				"title": "TU Delft Vademecum (TeachBooks)",
+				"ref": "§8.2 Vloeren",
+				"url": "https://github.com/TeachBooks/vademecum/blob/9a2f70afd158b7cee533c119bf4c88ae15106d4a/book/ontwerp/beton/vloeren.md",
+				"license": "CC BY 4.0"
+			},
+			"status": "flagged"
+		}
+	]
+}

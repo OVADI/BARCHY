@@ -2,7 +2,7 @@
 
 Bron: TU Delft Vademecum (TeachBooks), commit `9a2f70a`, map `book/ontwerp/`. Licentie CC BY 4.0.
 
-De tabellen zijn met de hand overgenomen. Elke kolom van een brontabel wordt één set regels met hetzelfde bereik (`when`). Alle regels en grafiekverwijzingen staan op Controleren (`flagged`). De paragraafnummers (§7.1 t/m §7.5) volgen de volgorde in `book/_toc.yml`. Engelse teksten zijn vertaald door BARCHY.
+De tabellen zijn met de hand overgenomen. Elke kolom van een brontabel wordt één set regels met hetzelfde bereik (`when`). Alle regels en grafiekverwijzingen staan op Controleren (`flagged`). De paragraafnummers (§7.1 t/m §7.5 en §8.1 t/m §8.5) volgen de volgorde in `book/_toc.yml`. Engelse teksten zijn vertaald door BARCHY.
 
 ## Hout (hoofdstuk 7), `content/facts/timber.json`
 
@@ -26,3 +26,27 @@ De tabellen zijn met de hand overgenomen. Elke kolom van een brontabel wordt é�
 - **Grafieken van Swedish Wood** (CLT-vloer, CLT-wand 80, 100 en 120 mm) hebben een eigen copyright (© Swedish Wood), los van de CC BY-licentie van het Vademecum. Ze staan alleen als verwijzing in de app.
 - **Verbindingen (§7.6)** bestaat alleen uit voorbeeldfiguren, zonder vuistregels. Er staat niets van in de app.
 - **Detailtabellen per vorm** (verschijningsvorm en detail van opleggingen en verbindingen) zijn figuren en staan niet in de app.
+
+## Beton (hoofdstuk 8), `content/facts/concrete.json`
+
+43 regels, 9 groepen en 1 grafiekverwijzing.
+
+### Te controleren
+
+1. **Liggers, "1/20" en "1/10".** De bron noemt geen symbool. De app leest het als h = l/20 (prefab voorgespannen, B45) en h = l/10 (in het werk gestort, B25), zoals bij staal en hout.
+2. **Vloeren, hoogte.** De tabellen voor de ribbenvloer en de breedplaatvloer noemen geen symbool voor de waarde, alleen "L/31" enzovoort. Bij de staalplaatbetonvloer staat "diepte = overspanning/25". De app gebruikt overal h.
+3. **Uitkragende vloer.** Bij de ribbenvloer (L/9) en de breedplaatvloer (L/10) staat niet of L hier de lengte van de uitkraging is of de typische overspanning uit dezelfde rij.
+4. **Breedplaatvloer, plaatlengte.** De tekst zegt maximaal 8500 mm, maar de productgegevens van Dycore noemen elementlengtes tot ongeveer 10 m. De app neemt 8500 mm over uit de tekst. De productgegevens van de bekistingsplaat (breedte, dikte en massa) staan er niet in.
+5. **Betonwand: H/175 bij een verdiepingshoogte < 4 m, H/100 bij een gebouwhoogte > 60 m.** Bij een gebouw hoger dan 60 m met verdiepingen lager dan 4 m gelden beide regels. Welke gaat dan voor? De bron zegt het niet.
+6. **Stabiliteitswand: H/100 of H/75** hangt af van de wandlengte ten opzichte van H/6. Dat is geen vast getal, dus het staat alleen in de tekst en niet in `when`.
+7. **Betonkolommen.** De tabel geeft alleen waarden bij 1, 6, 11 en 16 verdiepingen. Mag je daartussen interpoleren? De bron zegt het niet.
+8. **Prefab kolom, breedte = verdiepingshoogte/10.** Het bijschrift zegt "< 2 vrd." en de tekst "0 tot 2 verdiepingen". Voor de rekentools is maximaal 2 aangehouden.
+9. **Kanaalplaat, doorbuiging "0.003 lt".** De app schrijft 0,003 · l. Wat "lt" betekent staat niet in de bron.
+10. **Kanaalplaten van Dycore.** Dit zijn productgegevens van één fabrikant. Overgenomen zijn alleen hoogte, gewicht en maximale lengte per type. Voegen, doorsnede A, I_zz, M_br en de maximale lengte van pasplaten staan er niet in.
+
+### Niet als waarde overgenomen
+
+- **Combinatievloer, TT-platen en infra-balken** hebben in de bron geen getallen, alleen een beschrijving en een figuur.
+- **Overspanningsgrafiek van Dycore** staat in de app als verwijzing, zonder afgelezen waarden. De figuur "Hoogte" naast de productgegevens staat er niet in.
+- **Verbindingen (§8.6)** is in de bron leeg.
+- **Links naar fabrikanten** (vbi.nl, dycore.nl, belton.nl enzovoort) staan niet in de app. Een deel ervan is waarschijnlijk verouderd.

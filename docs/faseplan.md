@@ -148,13 +148,13 @@ Commits `bb379e0`, feedback verwerkt in `2f30b7c` en `31a808d`
 **Open punten**
 
 - ~~Gaan de figuren uit de bron mee?~~ Besloten 24-10-2026: nee. Alleen de waarden, met een verwijzing naar de bronfiguur
-- `beton/verbindingen.md` is in de bron leeg
+- `beton/verbindingen.md` is in de bron leeg (bevestigd: alleen een kop, er is niets overgenomen)
 
 **Voortgang** (bijgewerkt na elke stap, zodat een nieuwe sessie hier verder kan)
 
 - [x] Feitenmodel uitgebreid (`src/lib/schema/fact.ts`): `symbol` (h, a, f …), `factorOf` (a = 0,25 · l), `when` (bereik voor rekentools), `notes` (toelichting en let op), en per bestand `groups` (bijvoorbeeld een liggervorm) en `charts` (verwijzing naar een ontwerpgrafiek, zonder waarden). `formatFact` schrijft nu "h = l/17" en "a = 0,25 · l"
 - [x] Hout: `content/facts/timber.json`, 59 regels, 18 groepen, 8 grafiekverwijzingen. Elke kolom van een brontabel is één set regels met hetzelfde bereik. Aandachtspunten in `reports/vuistregels-issues.md`
-- [ ] Beton: `content/facts/concrete.json` (hoofdstuk 8)
+- [x] Beton: `content/facts/concrete.json`, 43 regels, 9 groepen, 1 grafiekverwijzing. Inclusief de productgegevens van Dycore-kanaalplaten (hoogte, gewicht, maximale lengte). Aandachtspunten in hetzelfde rapport
 - [ ] Metselwerk: `content/facts/masonry.json` (hoofdstuk 9, kalkzandsteen)
 - [ ] Tab Vuistregels bij Hout en Beton, plek voor metselwerk (groepen en notes tonen, grafiekverwijzingen als kaart)
 - [ ] Ligger-schatter (materiaal, vorm, l → h en overstek, waarschuwing buiten `when`)
