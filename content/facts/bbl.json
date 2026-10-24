@@ -27,7 +27,9 @@
 				"license": "Wettekst, geen auteursrecht (Auteurswet art. 11)"
 			},
 			"validFrom": "2026-09-24",
-			"status": "flagged"
+			"status": "human_verified",
+			"verifiedBy": "OVADI",
+			"verifiedOn": "2026-10-24"
 		},
 		{
 			"id": "bbl-verblijfsgebied-aandeel",
@@ -52,7 +54,9 @@
 				"license": "Wettekst, geen auteursrecht (Auteurswet art. 11)"
 			},
 			"validFrom": "2026-09-24",
-			"status": "flagged"
+			"status": "human_verified",
+			"verifiedBy": "OVADI",
+			"verifiedOn": "2026-10-24"
 		},
 		{
 			"id": "bbl-verblijfsgebied-oppervlakte",
@@ -77,7 +81,9 @@
 				"license": "Wettekst, geen auteursrecht (Auteurswet art. 11)"
 			},
 			"validFrom": "2026-09-24",
-			"status": "flagged"
+			"status": "human_verified",
+			"verifiedBy": "OVADI",
+			"verifiedOn": "2026-10-24"
 		},
 		{
 			"id": "bbl-verblijfsgebied-breedte",
@@ -102,7 +108,9 @@
 				"license": "Wettekst, geen auteursrecht (Auteurswet art. 11)"
 			},
 			"validFrom": "2026-09-24",
-			"status": "flagged"
+			"status": "human_verified",
+			"verifiedBy": "OVADI",
+			"verifiedOn": "2026-10-24"
 		},
 		{
 			"id": "bbl-verblijfsruimte-groot-oppervlakte",
@@ -127,7 +135,9 @@
 				"license": "Wettekst, geen auteursrecht (Auteurswet art. 11)"
 			},
 			"validFrom": "2026-09-24",
-			"status": "flagged"
+			"status": "human_verified",
+			"verifiedBy": "OVADI",
+			"verifiedOn": "2026-10-24"
 		},
 		{
 			"id": "bbl-verblijfsruimte-groot-breedte",
@@ -152,7 +162,9 @@
 				"license": "Wettekst, geen auteursrecht (Auteurswet art. 11)"
 			},
 			"validFrom": "2026-09-24",
-			"status": "flagged"
+			"status": "human_verified",
+			"verifiedBy": "OVADI",
+			"verifiedOn": "2026-10-24"
 		},
 		{
 			"id": "bbl-verblijfsgebied-hoogte",
@@ -181,7 +193,9 @@
 				"license": "Wettekst, geen auteursrecht (Auteurswet art. 11)"
 			},
 			"validFrom": "2026-09-24",
-			"status": "flagged"
+			"status": "human_verified",
+			"verifiedBy": "OVADI",
+			"verifiedOn": "2026-10-24"
 		},
 		{
 			"id": "bbl-toilet-vloer",
@@ -207,7 +221,9 @@
 				"license": "Wettekst, geen auteursrecht (Auteurswet art. 11)"
 			},
 			"validFrom": "2026-09-24",
-			"status": "flagged"
+			"status": "human_verified",
+			"verifiedBy": "OVADI",
+			"verifiedOn": "2026-10-24"
 		},
 		{
 			"id": "bbl-toilet-hoogte",
@@ -236,7 +252,9 @@
 				"license": "Wettekst, geen auteursrecht (Auteurswet art. 11)"
 			},
 			"validFrom": "2026-09-24",
-			"status": "flagged"
+			"status": "human_verified",
+			"verifiedBy": "OVADI",
+			"verifiedOn": "2026-10-24"
 		},
 		{
 			"id": "bbl-bad-oppervlakte",
@@ -261,7 +279,9 @@
 				"license": "Wettekst, geen auteursrecht (Auteurswet art. 11)"
 			},
 			"validFrom": "2026-09-24",
-			"status": "flagged"
+			"status": "human_verified",
+			"verifiedBy": "OVADI",
+			"verifiedOn": "2026-10-24"
 		},
 		{
 			"id": "bbl-bad-breedte",
@@ -286,7 +306,9 @@
 				"license": "Wettekst, geen auteursrecht (Auteurswet art. 11)"
 			},
 			"validFrom": "2026-09-24",
-			"status": "flagged"
+			"status": "human_verified",
+			"verifiedBy": "OVADI",
+			"verifiedOn": "2026-10-24"
 		},
 		{
 			"id": "bbl-bad-toilet-oppervlakte",
@@ -311,7 +333,9 @@
 				"license": "Wettekst, geen auteursrecht (Auteurswet art. 11)"
 			},
 			"validFrom": "2026-09-24",
-			"status": "flagged"
+			"status": "human_verified",
+			"verifiedBy": "OVADI",
+			"verifiedOn": "2026-10-24"
 		},
 		{
 			"id": "bbl-bad-toilet-breedte",
@@ -336,7 +360,9 @@
 				"license": "Wettekst, geen auteursrecht (Auteurswet art. 11)"
 			},
 			"validFrom": "2026-09-24",
-			"status": "flagged"
+			"status": "human_verified",
+			"verifiedBy": "OVADI",
+			"verifiedOn": "2026-10-24"
 		},
 		{
 			"id": "bbl-bad-hoogte",
@@ -365,7 +391,9 @@
 				"license": "Wettekst, geen auteursrecht (Auteurswet art. 11)"
 			},
 			"validFrom": "2026-09-24",
-			"status": "flagged"
+			"status": "human_verified",
+			"verifiedBy": "OVADI",
+			"verifiedOn": "2026-10-24"
 		},
 		{
 			"id": "bbl-berging-oppervlakte",
@@ -394,7 +422,9 @@
 				"license": "Wettekst, geen auteursrecht (Auteurswet art. 11)"
 			},
 			"validFrom": "2026-09-24",
-			"status": "flagged"
+			"status": "human_verified",
+			"verifiedBy": "OVADI",
+			"verifiedOn": "2026-10-24"
 		},
 		{
 			"id": "bbl-berging-breedte",
@@ -423,7 +453,9 @@
 				"license": "Wettekst, geen auteursrecht (Auteurswet art. 11)"
 			},
 			"validFrom": "2026-09-24",
-			"status": "flagged"
+			"status": "human_verified",
+			"verifiedBy": "OVADI",
+			"verifiedOn": "2026-10-24"
 		},
 		{
 			"id": "bbl-berging-hoogte",
@@ -452,7 +484,9 @@
 				"license": "Wettekst, geen auteursrecht (Auteurswet art. 11)"
 			},
 			"validFrom": "2026-09-24",
-			"status": "flagged"
+			"status": "human_verified",
+			"verifiedBy": "OVADI",
+			"verifiedOn": "2026-10-24"
 		},
 		{
 			"id": "bbl-berging-gemeenschappelijk",
@@ -481,7 +515,9 @@
 				"license": "Wettekst, geen auteursrecht (Auteurswet art. 11)"
 			},
 			"validFrom": "2026-09-24",
-			"status": "flagged"
+			"status": "human_verified",
+			"verifiedBy": "OVADI",
+			"verifiedOn": "2026-10-24"
 		},
 		{
 			"id": "bbl-buitenruimte-oppervlakte",
@@ -510,7 +546,9 @@
 				"license": "Wettekst, geen auteursrecht (Auteurswet art. 11)"
 			},
 			"validFrom": "2026-09-24",
-			"status": "flagged"
+			"status": "human_verified",
+			"verifiedBy": "OVADI",
+			"verifiedOn": "2026-10-24"
 		},
 		{
 			"id": "bbl-buitenruimte-breedte",
@@ -539,7 +577,9 @@
 				"license": "Wettekst, geen auteursrecht (Auteurswet art. 11)"
 			},
 			"validFrom": "2026-09-24",
-			"status": "flagged"
+			"status": "human_verified",
+			"verifiedBy": "OVADI",
+			"verifiedOn": "2026-10-24"
 		},
 		{
 			"id": "bbl-doorgang-breedte",
@@ -568,7 +608,9 @@
 				"license": "Wettekst, geen auteursrecht (Auteurswet art. 11)"
 			},
 			"validFrom": "2026-09-24",
-			"status": "flagged"
+			"status": "human_verified",
+			"verifiedBy": "OVADI",
+			"verifiedOn": "2026-10-24"
 		},
 		{
 			"id": "bbl-doorgang-hoogte",
@@ -597,7 +639,9 @@
 				"license": "Wettekst, geen auteursrecht (Auteurswet art. 11)"
 			},
 			"validFrom": "2026-09-24",
-			"status": "flagged"
+			"status": "human_verified",
+			"verifiedBy": "OVADI",
+			"verifiedOn": "2026-10-24"
 		},
 		{
 			"id": "bbl-verkeersroute-breedte",
@@ -626,7 +670,9 @@
 				"license": "Wettekst, geen auteursrecht (Auteurswet art. 11)"
 			},
 			"validFrom": "2026-09-24",
-			"status": "flagged"
+			"status": "human_verified",
+			"verifiedBy": "OVADI",
+			"verifiedOn": "2026-10-24"
 		},
 		{
 			"id": "bbl-verkeersroute-hoogte",
@@ -655,7 +701,9 @@
 				"license": "Wettekst, geen auteursrecht (Auteurswet art. 11)"
 			},
 			"validFrom": "2026-09-24",
-			"status": "flagged"
+			"status": "human_verified",
+			"verifiedBy": "OVADI",
+			"verifiedOn": "2026-10-24"
 		},
 		{
 			"id": "bbl-gemeenschappelijke-verkeersruimte-breedte",
@@ -680,7 +728,9 @@
 				"license": "Wettekst, geen auteursrecht (Auteurswet art. 11)"
 			},
 			"validFrom": "2026-09-24",
-			"status": "flagged"
+			"status": "human_verified",
+			"verifiedBy": "OVADI",
+			"verifiedOn": "2026-10-24"
 		},
 		{
 			"id": "bbl-hoofdtoegang-vrije-doorgang",
@@ -710,7 +760,9 @@
 				"license": "Wettekst, geen auteursrecht (Auteurswet art. 11)"
 			},
 			"validFrom": "2026-09-24",
-			"status": "flagged"
+			"status": "human_verified",
+			"verifiedBy": "OVADI",
+			"verifiedOn": "2026-10-24"
 		},
 		{
 			"id": "bbl-liftdoorgang-ruimte",
@@ -736,7 +788,9 @@
 				"license": "Wettekst, geen auteursrecht (Auteurswet art. 11)"
 			},
 			"validFrom": "2026-09-24",
-			"status": "flagged"
+			"status": "human_verified",
+			"verifiedBy": "OVADI",
+			"verifiedOn": "2026-10-24"
 		},
 		{
 			"id": "bbl-trap-nodig",
@@ -764,7 +818,9 @@
 				"license": "Wettekst, geen auteursrecht (Auteurswet art. 11)"
 			},
 			"validFrom": "2026-09-24",
-			"status": "flagged"
+			"status": "human_verified",
+			"verifiedBy": "OVADI",
+			"verifiedOn": "2026-10-24"
 		},
 		{
 			"id": "bbl-trap-breedte",
@@ -789,7 +845,9 @@
 				"license": "Wettekst, geen auteursrecht (Auteurswet art. 11)"
 			},
 			"validFrom": "2026-09-24",
-			"status": "flagged"
+			"status": "human_verified",
+			"verifiedBy": "OVADI",
+			"verifiedOn": "2026-10-24"
 		},
 		{
 			"id": "bbl-trap-vrije-hoogte",
@@ -814,7 +872,9 @@
 				"license": "Wettekst, geen auteursrecht (Auteurswet art. 11)"
 			},
 			"validFrom": "2026-09-24",
-			"status": "flagged"
+			"status": "human_verified",
+			"verifiedBy": "OVADI",
+			"verifiedOn": "2026-10-24"
 		},
 		{
 			"id": "bbl-trap-aantrede",
@@ -843,7 +903,9 @@
 				"license": "Wettekst, geen auteursrecht (Auteurswet art. 11)"
 			},
 			"validFrom": "2026-09-24",
-			"status": "flagged"
+			"status": "human_verified",
+			"verifiedBy": "OVADI",
+			"verifiedOn": "2026-10-24"
 		},
 		{
 			"id": "bbl-trap-optrede",
@@ -868,7 +930,9 @@
 				"license": "Wettekst, geen auteursrecht (Auteurswet art. 11)"
 			},
 			"validFrom": "2026-09-24",
-			"status": "flagged"
+			"status": "human_verified",
+			"verifiedBy": "OVADI",
+			"verifiedOn": "2026-10-24"
 		},
 		{
 			"id": "bbl-trap-tredevlak",
@@ -897,7 +961,9 @@
 				"license": "Wettekst, geen auteursrecht (Auteurswet art. 11)"
 			},
 			"validFrom": "2026-09-24",
-			"status": "flagged"
+			"status": "human_verified",
+			"verifiedBy": "OVADI",
+			"verifiedOn": "2026-10-24"
 		},
 		{
 			"id": "bbl-trap-tredevlak-klimlijn",
@@ -926,7 +992,9 @@
 				"license": "Wettekst, geen auteursrecht (Auteurswet art. 11)"
 			},
 			"validFrom": "2026-09-24",
-			"status": "flagged"
+			"status": "human_verified",
+			"verifiedBy": "OVADI",
+			"verifiedOn": "2026-10-24"
 		},
 		{
 			"id": "bbl-trap-klimlijn-zijkant",
@@ -951,7 +1019,9 @@
 				"license": "Wettekst, geen auteursrecht (Auteurswet art. 11)"
 			},
 			"validFrom": "2026-09-24",
-			"status": "flagged"
+			"status": "human_verified",
+			"verifiedBy": "OVADI",
+			"verifiedOn": "2026-10-24"
 		},
 		{
 			"id": "bbl-trap-hoogteverschil",
@@ -976,7 +1046,9 @@
 				"license": "Wettekst, geen auteursrecht (Auteurswet art. 11)"
 			},
 			"validFrom": "2026-09-24",
-			"status": "flagged"
+			"status": "human_verified",
+			"verifiedBy": "OVADI",
+			"verifiedOn": "2026-10-24"
 		},
 		{
 			"id": "bbl-trapbordes",
@@ -1006,7 +1078,9 @@
 				"license": "Wettekst, geen auteursrecht (Auteurswet art. 11)"
 			},
 			"validFrom": "2026-09-24",
-			"status": "flagged"
+			"status": "human_verified",
+			"verifiedBy": "OVADI",
+			"verifiedOn": "2026-10-24"
 		},
 		{
 			"id": "bbl-leuning-hoogte",
@@ -1035,7 +1109,9 @@
 				"license": "Wettekst, geen auteursrecht (Auteurswet art. 11)"
 			},
 			"validFrom": "2026-09-24",
-			"status": "flagged"
+			"status": "human_verified",
+			"verifiedBy": "OVADI",
+			"verifiedOn": "2026-10-24"
 		},
 		{
 			"id": "bbl-hellingbaan-breedte",
@@ -1060,7 +1136,9 @@
 				"license": "Wettekst, geen auteursrecht (Auteurswet art. 11)"
 			},
 			"validFrom": "2026-09-24",
-			"status": "flagged"
+			"status": "human_verified",
+			"verifiedBy": "OVADI",
+			"verifiedOn": "2026-10-24"
 		},
 		{
 			"id": "bbl-hellingbaan-hoogte",
@@ -1085,7 +1163,9 @@
 				"license": "Wettekst, geen auteursrecht (Auteurswet art. 11)"
 			},
 			"validFrom": "2026-09-24",
-			"status": "flagged"
+			"status": "human_verified",
+			"verifiedBy": "OVADI",
+			"verifiedOn": "2026-10-24"
 		},
 		{
 			"id": "bbl-hellingbaan-helling-1-6",
@@ -1115,7 +1195,9 @@
 				"license": "Wettekst, geen auteursrecht (Auteurswet art. 11)"
 			},
 			"validFrom": "2026-09-24",
-			"status": "flagged"
+			"status": "human_verified",
+			"verifiedBy": "OVADI",
+			"verifiedOn": "2026-10-24"
 		},
 		{
 			"id": "bbl-hellingbaan-helling-1-10",
@@ -1145,7 +1227,9 @@
 				"license": "Wettekst, geen auteursrecht (Auteurswet art. 11)"
 			},
 			"validFrom": "2026-09-24",
-			"status": "flagged"
+			"status": "human_verified",
+			"verifiedBy": "OVADI",
+			"verifiedOn": "2026-10-24"
 		},
 		{
 			"id": "bbl-hellingbaan-helling-1-12",
@@ -1175,7 +1259,9 @@
 				"license": "Wettekst, geen auteursrecht (Auteurswet art. 11)"
 			},
 			"validFrom": "2026-09-24",
-			"status": "flagged"
+			"status": "human_verified",
+			"verifiedBy": "OVADI",
+			"verifiedOn": "2026-10-24"
 		},
 		{
 			"id": "bbl-hellingbaan-helling-1-16",
@@ -1205,7 +1291,9 @@
 				"license": "Wettekst, geen auteursrecht (Auteurswet art. 11)"
 			},
 			"validFrom": "2026-09-24",
-			"status": "flagged"
+			"status": "human_verified",
+			"verifiedBy": "OVADI",
+			"verifiedOn": "2026-10-24"
 		},
 		{
 			"id": "bbl-hellingbaan-helling-1-20",
@@ -1235,7 +1323,9 @@
 				"license": "Wettekst, geen auteursrecht (Auteurswet art. 11)"
 			},
 			"validFrom": "2026-09-24",
-			"status": "flagged"
+			"status": "human_verified",
+			"verifiedBy": "OVADI",
+			"verifiedOn": "2026-10-24"
 		},
 		{
 			"id": "bbl-hellingbaanbordes",
@@ -1265,7 +1355,9 @@
 				"license": "Wettekst, geen auteursrecht (Auteurswet art. 11)"
 			},
 			"validFrom": "2026-09-24",
-			"status": "flagged"
+			"status": "human_verified",
+			"verifiedBy": "OVADI",
+			"verifiedOn": "2026-10-24"
 		},
 		{
 			"id": "bbl-afscheiding-nodig",
@@ -1293,7 +1385,9 @@
 				"license": "Wettekst, geen auteursrecht (Auteurswet art. 11)"
 			},
 			"validFrom": "2026-09-24",
-			"status": "flagged"
+			"status": "human_verified",
+			"verifiedBy": "OVADI",
+			"verifiedOn": "2026-10-24"
 		},
 		{
 			"id": "bbl-vloerafscheiding-hoogte",
@@ -1318,7 +1412,9 @@
 				"license": "Wettekst, geen auteursrecht (Auteurswet art. 11)"
 			},
 			"validFrom": "2026-09-24",
-			"status": "flagged"
+			"status": "human_verified",
+			"verifiedBy": "OVADI",
+			"verifiedOn": "2026-10-24"
 		},
 		{
 			"id": "bbl-vloerafscheiding-hoogte-13m",
@@ -1343,7 +1439,9 @@
 				"license": "Wettekst, geen auteursrecht (Auteurswet art. 11)"
 			},
 			"validFrom": "2026-09-24",
-			"status": "flagged"
+			"status": "human_verified",
+			"verifiedBy": "OVADI",
+			"verifiedOn": "2026-10-24"
 		},
 		{
 			"id": "bbl-afscheiding-raam",
@@ -1372,7 +1470,9 @@
 				"license": "Wettekst, geen auteursrecht (Auteurswet art. 11)"
 			},
 			"validFrom": "2026-09-24",
-			"status": "flagged"
+			"status": "human_verified",
+			"verifiedBy": "OVADI",
+			"verifiedOn": "2026-10-24"
 		},
 		{
 			"id": "bbl-afscheiding-trap",
@@ -1401,7 +1501,9 @@
 				"license": "Wettekst, geen auteursrecht (Auteurswet art. 11)"
 			},
 			"validFrom": "2026-09-24",
-			"status": "flagged"
+			"status": "human_verified",
+			"verifiedBy": "OVADI",
+			"verifiedOn": "2026-10-24"
 		},
 		{
 			"id": "bbl-afscheiding-openingen",
@@ -1426,7 +1528,9 @@
 				"license": "Wettekst, geen auteursrecht (Auteurswet art. 11)"
 			},
 			"validFrom": "2026-09-24",
-			"status": "flagged"
+			"status": "human_verified",
+			"verifiedBy": "OVADI",
+			"verifiedOn": "2026-10-24"
 		},
 		{
 			"id": "bbl-afscheiding-openingen-laag",
@@ -1455,7 +1559,9 @@
 				"license": "Wettekst, geen auteursrecht (Auteurswet art. 11)"
 			},
 			"validFrom": "2026-09-24",
-			"status": "flagged"
+			"status": "human_verified",
+			"verifiedBy": "OVADI",
+			"verifiedOn": "2026-10-24"
 		},
 		{
 			"id": "bbl-afscheiding-afstand",
@@ -1480,7 +1586,9 @@
 				"license": "Wettekst, geen auteursrecht (Auteurswet art. 11)"
 			},
 			"validFrom": "2026-09-24",
-			"status": "flagged"
+			"status": "human_verified",
+			"verifiedBy": "OVADI",
+			"verifiedOn": "2026-10-24"
 		},
 		{
 			"id": "bbl-afscheiding-bovenregel",
@@ -1505,7 +1613,9 @@
 				"license": "Wettekst, geen auteursrecht (Auteurswet art. 11)"
 			},
 			"validFrom": "2026-09-24",
-			"status": "flagged"
+			"status": "human_verified",
+			"verifiedBy": "OVADI",
+			"verifiedOn": "2026-10-24"
 		},
 		{
 			"id": "bbl-afscheiding-overklauteren",
@@ -1533,7 +1643,9 @@
 				"license": "Wettekst, geen auteursrecht (Auteurswet art. 11)"
 			},
 			"validFrom": "2026-09-24",
-			"status": "flagged"
+			"status": "human_verified",
+			"verifiedBy": "OVADI",
+			"verifiedOn": "2026-10-24"
 		}
 	]
 }

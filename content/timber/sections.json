@@ -1,7 +1,7 @@
 {
 	"source": {
 		"title": "TU Delft Vademecum (TeachBooks)",
-		"ref": "Oorspronkelijke staaldata: Bouwen met Staal",
+		"ref": "Dimensietabellen: Hout",
 		"url": "https://github.com/TeachBooks/vademecum",
 		"license": "CC BY 4.0"
 	},
@@ -2567,11 +2567,11 @@
 				},
 				{
 					"check": "table",
-					"severity": "error",
-					"message": "geen tabelwaarde in deze rij hoort bij 58×69: staat deze maat terecht in de tabel?"
+					"severity": "warning",
+					"message": "geen tabelwaarde in deze rij hoort bij 58×69; de maat zelf klopt (gecontroleerd), A, W en I zijn berekend"
 				}
 			],
-			"status": "flagged"
+			"status": "auto_checked"
 		},
 		{
 			"id": "sawn-58x95",
@@ -2647,11 +2647,11 @@
 				},
 				{
 					"check": "table",
-					"severity": "error",
-					"message": "geen tabelwaarde in deze rij hoort bij 58×120: staat deze maat terecht in de tabel?"
+					"severity": "warning",
+					"message": "geen tabelwaarde in deze rij hoort bij 58×120; de maat zelf klopt (gecontroleerd), A, W en I zijn berekend"
 				}
 			],
-			"status": "flagged"
+			"status": "auto_checked"
 		},
 		{
 			"id": "sawn-58x133",
@@ -2687,11 +2687,11 @@
 				},
 				{
 					"check": "table",
-					"severity": "error",
-					"message": "geen tabelwaarde in deze rij hoort bij 58×133: staat deze maat terecht in de tabel?"
+					"severity": "warning",
+					"message": "geen tabelwaarde in deze rij hoort bij 58×133; de maat zelf klopt (gecontroleerd), A, W en I zijn berekend"
 				}
 			],
-			"status": "flagged"
+			"status": "auto_checked"
 		},
 		{
 			"id": "sawn-58x145",
@@ -2762,11 +2762,11 @@
 				},
 				{
 					"check": "table",
-					"severity": "error",
-					"message": "geen tabelwaarde in deze rij hoort bij 58×170: staat deze maat terecht in de tabel?"
+					"severity": "warning",
+					"message": "geen tabelwaarde in deze rij hoort bij 58×170; de maat zelf klopt (gecontroleerd), A, W en I zijn berekend"
 				}
 			],
-			"status": "flagged"
+			"status": "auto_checked"
 		},
 		{
 			"id": "sawn-58x195",
@@ -2802,11 +2802,11 @@
 				},
 				{
 					"check": "table",
-					"severity": "error",
-					"message": "geen tabelwaarde in deze rij hoort bij 58×195: staat deze maat terecht in de tabel?"
+					"severity": "warning",
+					"message": "geen tabelwaarde in deze rij hoort bij 58×195; de maat zelf klopt (gecontroleerd), A, W en I zijn berekend"
 				}
 			],
-			"status": "flagged"
+			"status": "auto_checked"
 		},
 		{
 			"id": "sawn-58x220",
@@ -2842,11 +2842,11 @@
 				},
 				{
 					"check": "table",
-					"severity": "error",
-					"message": "geen tabelwaarde in deze rij hoort bij 58×220: staat deze maat terecht in de tabel?"
+					"severity": "warning",
+					"message": "geen tabelwaarde in deze rij hoort bij 58×220; de maat zelf klopt (gecontroleerd), A, W en I zijn berekend"
 				}
 			],
-			"status": "flagged"
+			"status": "auto_checked"
 		},
 		{
 			"id": "sawn-58x245",
@@ -3205,11 +3205,11 @@
 				},
 				{
 					"check": "table",
-					"severity": "error",
-					"message": "geen tabelwaarde in deze rij hoort bij 95×95: staat deze maat terecht in de tabel?"
+					"severity": "warning",
+					"message": "geen tabelwaarde in deze rij hoort bij 95×95; de maat zelf klopt (gecontroleerd), A, W en I zijn berekend"
 				}
 			],
-			"status": "flagged"
+			"status": "auto_checked"
 		},
 		{
 			"id": "sawn-95x120",
@@ -3238,11 +3238,11 @@
 				},
 				{
 					"check": "table",
-					"severity": "error",
-					"message": "geen tabelwaarde in deze rij hoort bij 95×120: staat deze maat terecht in de tabel?"
+					"severity": "warning",
+					"message": "geen tabelwaarde in deze rij hoort bij 95×120; de maat zelf klopt (gecontroleerd), A, W en I zijn berekend"
 				}
 			],
-			"status": "flagged"
+			"status": "auto_checked"
 		},
 		{
 			"id": "sawn-95x133",
@@ -3337,11 +3337,11 @@
 				},
 				{
 					"check": "table",
-					"severity": "error",
-					"message": "geen tabelwaarde in deze rij hoort bij 95×170: staat deze maat terecht in de tabel?"
+					"severity": "warning",
+					"message": "geen tabelwaarde in deze rij hoort bij 95×170; de maat zelf klopt (gecontroleerd), A, W en I zijn berekend"
 				}
 			],
-			"status": "flagged"
+			"status": "auto_checked"
 		},
 		{
 			"id": "sawn-95x195",
@@ -3482,11 +3482,11 @@
 				},
 				{
 					"check": "table",
-					"severity": "error",
-					"message": "geen tabelwaarde in deze rij hoort bij 95×270: staat deze maat terecht in de tabel?"
+					"severity": "warning",
+					"message": "geen tabelwaarde in deze rij hoort bij 95×270; de maat zelf klopt (gecontroleerd), A, W en I zijn berekend"
 				}
 			],
-			"status": "flagged"
+			"status": "auto_checked"
 		},
 		{
 			"id": "sawn-120x195",
@@ -3515,11 +3515,11 @@
 				},
 				{
 					"check": "table",
-					"severity": "error",
-					"message": "geen tabelwaarde in deze rij hoort bij 120×195: staat deze maat terecht in de tabel?"
+					"severity": "warning",
+					"message": "geen tabelwaarde in deze rij hoort bij 120×195; de maat zelf klopt (gecontroleerd), A, W en I zijn berekend"
 				}
 			],
-			"status": "flagged"
+			"status": "auto_checked"
 		},
 		{
 			"id": "sawn-120x220",
@@ -3548,11 +3548,11 @@
 				},
 				{
 					"check": "table",
-					"severity": "error",
-					"message": "geen tabelwaarde in deze rij hoort bij 120×220: staat deze maat terecht in de tabel?"
+					"severity": "warning",
+					"message": "geen tabelwaarde in deze rij hoort bij 120×220; de maat zelf klopt (gecontroleerd), A, W en I zijn berekend"
 				}
 			],
-			"status": "flagged"
+			"status": "auto_checked"
 		},
 		{
 			"id": "sawn-120x245",
@@ -3581,11 +3581,11 @@
 				},
 				{
 					"check": "table",
-					"severity": "error",
-					"message": "geen tabelwaarde in deze rij hoort bij 120×245: staat deze maat terecht in de tabel?"
+					"severity": "warning",
+					"message": "geen tabelwaarde in deze rij hoort bij 120×245; de maat zelf klopt (gecontroleerd), A, W en I zijn berekend"
 				}
 			],
-			"status": "flagged"
+			"status": "auto_checked"
 		},
 		{
 			"id": "sawn-120x270",
@@ -3614,11 +3614,11 @@
 				},
 				{
 					"check": "table",
-					"severity": "error",
-					"message": "geen tabelwaarde in deze rij hoort bij 120×270: staat deze maat terecht in de tabel?"
+					"severity": "warning",
+					"message": "geen tabelwaarde in deze rij hoort bij 120×270; de maat zelf klopt (gecontroleerd), A, W en I zijn berekend"
 				}
 			],
-			"status": "flagged"
+			"status": "auto_checked"
 		}
 	]
 }

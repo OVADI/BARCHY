@@ -23,11 +23,12 @@ export async function importSheets(
 		const hCell = num(cells[1] ?? '', 'en');
 		if (hCell !== null) h = hCell;
 		const t = num(cells[2]!, 'en')!;
+		// Reading of the units checked on 2026-10-24: I = 30 at h 40 gives W ≈ I/e ≈ 9,1·10³ mm³/m.
 		const issue: Issue = {
 			check: 'scale',
-			severity: 'error',
+			severity: 'warning',
 			message:
-				'Eenheden in de kolomkop zijn tegenstrijdig (Wy als ·10⁴ mm⁴); hier gelezen als Iy ×10⁴ mm⁴/m en Wy ×10³ mm³/m. Ook de betekenis van σ is niet toegelicht.'
+				'Eenheden in de kolomkop zijn tegenstrijdig (Wy als ·10⁴ mm⁴); gelezen als Iy ×10⁴ mm⁴/m en Wy ×10³ mm³/m (gecontroleerd). De bron licht σ niet toe.'
 		};
 		return {
 			id: slug('sheet', `h${short(h)}`, `t${short(t)}`),
@@ -37,7 +38,9 @@ export async function importSheets(
 			Iy: num(cells[4]!, 'en', 4)!,
 			Wy: num(cells[5]!, 'en', 3)!,
 			issues: [issue],
-			status: 'flagged' as const
+			status: 'human_verified' as const,
+			verifiedBy: 'OVADI',
+			verifiedOn: '2026-10-24'
 		};
 	});
 	const file = ProfiledSheetFile.parse({
@@ -47,9 +50,9 @@ export async function importSheets(
 		sheets
 	});
 	writeJson(join(content, 'steel', 'sheets.json'), file);
-	report.count('Platen', sheets.length, sheets.length);
+	report.count('Platen', sheets.length, 0);
 	report.note(
 		'Geprofileerde staalplaten',
-		`De kolomkop geeft I<sub>y</sub> in [mm⁴] en W<sub>y;el</sub> als "·10⁴ [mm⁴]". Een weerstandsmoment heeft eenheid mm³, en de getallen (bijv. h = 40, t = 0,88: I = 30, W = 9,1) passen bij I ×10⁴ mm⁴/m en W ×10³ mm³/m. Graag bevestigen. De kolom σ [N/mm²] wordt niet toegelicht: welke spanning is dit?`
+		`De kolomkop geeft I<sub>y</sub> in [mm⁴] en W<sub>y;el</sub> als "·10⁴ [mm⁴]". Een weerstandsmoment heeft eenheid mm³, en de getallen (bijv. h = 40, t = 0,88: I = 30, W = 9,1) passen bij I ×10⁴ mm⁴/m en W ×10³ mm³/m. Die lezing is op 24-10-2026 gecontroleerd. De kolom σ [N/mm²] wordt in de bron niet toegelicht.`
 	);
 }

@@ -13,8 +13,8 @@ Alle waarden hieronder in basiseenheden (mm, mm², mm³, mm⁴, kg/m); de bron g
 | SHS | 84 | 0 |
 | RHS | 79 | 21 |
 | UNP | 16 | 0 |
-| Platen | 10 | 10 |
-| Hout | 207 | 14 |
+| Platen | 10 | 0 |
+| Hout | 207 | 0 |
 | Betonstaal | 8 | 0 |
 
 - 157 fouten (blokkerend: het record krijgt status `flagged` in BARCHY)
@@ -214,7 +214,7 @@ Geen.
 
 ## Geprofileerde staalplaten
 
-De kolomkop geeft I<sub>y</sub> in [mm⁴] en W<sub>y;el</sub> als "·10⁴ [mm⁴]". Een weerstandsmoment heeft eenheid mm³, en de getallen (bijv. h = 40, t = 0,88: I = 30, W = 9,1) passen bij I ×10⁴ mm⁴/m en W ×10³ mm³/m. Graag bevestigen. De kolom σ [N/mm²] wordt niet toegelicht: welke spanning is dit?
+De kolomkop geeft I<sub>y</sub> in [mm⁴] en W<sub>y;el</sub> als "·10⁴ [mm⁴]". Een weerstandsmoment heeft eenheid mm³, en de getallen (bijv. h = 40, t = 0,88: I = 30, W = 9,1) passen bij I ×10⁴ mm⁴/m en W ×10³ mm³/m. Die lezing is op 24-10-2026 gecontroleerd. De kolom σ [N/mm²] wordt in de bron niet toegelicht.
 
 ## Hout (dimensietabellen)
 
@@ -225,7 +225,7 @@ Van de 612 gevulde cellen passen er 504 bij hun eigen kolom (op een macht van ti
 - In de gezaagde tabellen lijken per breedte vijf waarden te staan (A, W<sub>y</sub>, I<sub>y</sub>, W<sub>z</sub>, I<sub>z</sub>) onder een kop met drie kolommen, waardoor alles na de eerste breedte verschuift.
 - Een deel van de waarden hoort bij b + 1 mm (bijv. 70 in plaats van 69): mogelijk berekend met de ongeschaafde maat.
 
-14 maten krijgen status `flagged` omdat geen enkele cel in hun rij bij die maat hoort: 58×69, 58×120, 58×133, 58×170, 58×195, 58×220, 95×95, 95×120, 95×170, 95×270, 120×195, 120×220, 120×245, 120×270.
+Bij 14 maten hoort geen enkele cel in hun rij bij die maat: 58×69, 58×120, 58×133, 58×170, 58×195, 58×220, 95×95, 95×120, 95×170, 95×270, 120×195, 120×220, 120×245, 120×270. Op 24-10-2026 is gecontroleerd dat deze maten wel kloppen; ze krijgen daarom alleen een waarschuwing.
 
 <details><summary>108 cellen die niet bij hun kolom passen</summary>
 

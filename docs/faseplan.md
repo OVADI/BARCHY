@@ -6,7 +6,7 @@ Dit is het vaste overzicht van de fases van BARCHY. Verwijs ernaar met "fase N".
 
 - Na elke fase stopt het werk met een korte samenvatting en een controlelijst.
 - Bouwwaarden worden nooit verzonnen. Een onzekere waarde krijgt `verify: true` en [VERIFY].
-- Alle Bbl-feiten blijven `verify: true` tot ze gecontroleerd zijn.
+- Een waarde die gecontroleerd is en in het Vademecum (of de Bbl) staat, is goed genoeg. Een formele controle per persoon is niet nodig.
 - Na het afronden van een fase wordt dit bestand bijgewerkt: status en commit.
 
 | Fase | Onderwerp                             | Status                |
@@ -75,7 +75,7 @@ Commits `a89c0f6`, feedback verwerkt in `99ec1f7`
 
 - Eenheden en σ van de staalplaten (zie hieronder bij Doorlopend)
 - 14 houtmaten staan op Controleren: geen tabelwaarde in de rij past erbij (bijvoorbeeld gezaagd 58 × 69)
-- De bronregel van hout en beton luidt nu "Oorspronkelijke staaldata: Bouwen met Staal". Dat klopt waarschijnlijk niet voor hout en beton; graag aangeven wat er moet staan
+- Bronregel hout en beton aangepast naar "Dimensietabellen: Hout" en "Dimensietabellen: Betonstaal". Alleen `staal.md` noemt Bouwen met Staal; `hout.md` en `betonstaal.md` noemen geen oorspronkelijke bron
 
 ### Fase 6: Zoeken
 
@@ -172,13 +172,22 @@ Commits `bb379e0`, feedback verwerkt in `2f30b7c` en `31a808d`
 - Eventueel extra rekentools
 - De grootte van de offline-cache (PWA precache) meten en rapporteren
 - Volledige controleronde over alle [VERIFY]-waarden
+- Disclaimer, alleen bij de eerste keer openen: de informatie is overgenomen uit het Vademecum (en de Bbl), er kunnen kleine fouten in zitten, controleer altijd zelf
+- Feedback: een blok op Home ("Wil je iets toevoegen of aanvragen?") met een invulveld. Een verzonden bericht komt als e-mail bij de maker binnen. Versturen werkt alleen online
 - Release
+
+> **Notitie feedback:** de app heeft geen eigen server en kan dus zelf geen e-mail versturen. Daarvoor is een formulierdienst nodig, zoals Web3Forms of Formspree: het formulier stuurt het bericht naar de dienst, die het naar de maker mailt. De rest van de app blijft offline werken. Keuze van de dienst volgt bij de start van fase 9.
 
 ---
 
 ## Doorlopend: controle door de gebruiker
 
-- [ ] 56 Bbl-eisen nalopen (`content/facts/bbl.json`). Zie de aandachtspunten 1–5 in `reports/bbl-issues.md`
-- [ ] Eenheden van I en W bij de staalplaten bevestigen, en vastleggen welke spanning σ is (`reports/vademecum-issues.md`)
-- [ ] Correctie HE 160 M (iz) controleren (`content/steel/corrections.json`)
-- [ ] Correctie UNP 150 → 160 controleren (`content/steel/corrections.json`)
+Op 24-10-2026 gecontroleerd met een externe controleronde:
+
+- [x] 56 Bbl-eisen nagelopen (`content/facts/bbl.json`)
+- [x] 30 staalfeiten en vuistregels (`content/facts/steel.json`). Vloeirek S235/S275/S355 gecorrigeerd van % naar ‰ (het Vademecum schrijft %)
+- [x] Eenheden van I en W bij de staalplaten bevestigd. De bron licht σ niet toe
+- [x] 14 houtmaten zonder passende tabelwaarde: de maten kloppen
+- [x] Correcties UNP 150 → 160, HE 160 M (iz) en HE 1000 AA
+- [x] Bronregel hout en beton aangepast
+- [ ] 42 staalprofielen staan nog op Controleren (IPE, HE, RHS); zie `reports/vademecum-issues.md`

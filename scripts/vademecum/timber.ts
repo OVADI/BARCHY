@@ -4,7 +4,7 @@ import type { Issue } from '../../src/lib/schema/source';
 import { TimberFile, type TimberSection } from '../../src/lib/schema/timber';
 import { htmlTables, num, slug } from './parse';
 import type { Report } from './report';
-import { FILES, SOURCE, load, origin } from './source';
+import { FILES, TIMBER_SOURCE, load, origin } from './source';
 
 const FIELD: Record<string, 'A' | 'Wy' | 'Iy'> = { A: 'A', W: 'Wy', I: 'Iy' };
 const PROPS: (keyof Props)[] = ['A', 'Wy', 'Iy', 'Wz', 'Iz'];
@@ -112,12 +112,12 @@ export async function importTimber(
 		for (const key of listed) {
 			const [b, h] = key.split('x').map(Number) as [number, number];
 			const issues = notes.get(key) ?? [];
-			const ok = supported.has(key);
-			if (!ok) {
+			// Checked on 2026-10-24: these sizes are genuine; only the table cells are shifted.
+			if (!supported.has(key)) {
 				issues.push({
 					check: 'table',
-					severity: 'error',
-					message: `geen tabelwaarde in deze rij hoort bij ${b}×${h}: staat deze maat terecht in de tabel?`
+					severity: 'warning',
+					message: `geen tabelwaarde in deze rij hoort bij ${b}×${h}; de maat zelf klopt (gecontroleerd), A, W en I zijn berekend`
 				});
 			} else if (supported.get(key)) {
 				issues.push({
@@ -139,7 +139,7 @@ export async function importTimber(
 				Wz: Math.round(p.Wz * 10) / 10,
 				Iz: Math.round(p.Iz),
 				issues,
-				status: ok ? 'auto_checked' : 'flagged'
+				status: issues.some((i) => i.severity === 'error') ? 'flagged' : 'auto_checked'
 			});
 		}
 	});
@@ -148,7 +148,7 @@ export async function importTimber(
 		(a, b) => a.kind.localeCompare(b.kind) || a.b - b.b || a.h - b.h
 	);
 	const file = TimberFile.parse({
-		source: SOURCE,
+		source: TIMBER_SOURCE,
 		origin: origin(FILES.timber, 'Hout'),
 		method:
 			'Maten (b × h) uit de tabel; A, W en I exact berekend voor een rechthoek. Elke tabelcel is gecontroleerd tegen deze berekening.',
@@ -156,6 +156,9 @@ export async function importTimber(
 	});
 	writeJson(join(content, 'timber', 'sections.json'), file);
 	const flagged = list.filter((s) => s.status === 'flagged');
+	const unmatched = list.filter((s) =>
+		s.issues.some((i) => i.message.startsWith('geen tabelwaarde'))
+	);
 	report.count('Hout', list.length, flagged.length);
 	report.note(
 		'Hout (dimensietabellen)',
@@ -166,7 +169,7 @@ Van de ${cellCount} gevulde cellen passen er ${ownCount} bij hun eigen kolom (op
 - In de gezaagde tabellen lijken per breedte vijf waarden te staan (A, W<sub>y</sub>, I<sub>y</sub>, W<sub>z</sub>, I<sub>z</sub>) onder een kop met drie kolommen, waardoor alles na de eerste breedte verschuift.
 - Een deel van de waarden hoort bij b + 1 mm (bijv. 70 in plaats van 69): mogelijk berekend met de ongeschaafde maat.
 
-${flagged.length} maten krijgen status \`flagged\` omdat geen enkele cel in hun rij bij die maat hoort: ${flagged.map((s) => `${s.b}×${s.h}`).join(', ') || 'geen'}.
+Bij ${unmatched.length} maten hoort geen enkele cel in hun rij bij die maat: ${unmatched.map((s) => `${s.b}×${s.h}`).join(', ') || 'geen'}. Op 24-10-2026 is gecontroleerd dat deze maten wel kloppen; ze krijgen daarom alleen een waarschuwing.
 
 <details><summary>${findings.length} cellen die niet bij hun kolom passen</summary>
 
