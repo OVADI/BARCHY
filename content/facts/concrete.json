@@ -29,7 +29,9 @@
 				"url": "https://github.com/TeachBooks/vademecum/blob/9a2f70afd158b7cee533c119bf4c88ae15106d4a/book/ontwerp/beton/liggers.md",
 				"license": "CC BY 4.0"
 			},
-			"status": "flagged"
+			"status": "human_verified",
+			"verifiedBy": "OVADI",
+			"verifiedOn": "2026-10-24"
 		},
 		{
 			"id": "beton-ligger-iwg-gewapend-h",
@@ -60,7 +62,9 @@
 				"url": "https://github.com/TeachBooks/vademecum/blob/9a2f70afd158b7cee533c119bf4c88ae15106d4a/book/ontwerp/beton/liggers.md",
 				"license": "CC BY 4.0"
 			},
-			"status": "flagged"
+			"status": "human_verified",
+			"verifiedBy": "OVADI",
+			"verifiedOn": "2026-10-24"
 		},
 		{
 			"id": "beton-ribbenvloer-continu-h",
@@ -94,7 +98,9 @@
 				"url": "https://github.com/TeachBooks/vademecum/blob/9a2f70afd158b7cee533c119bf4c88ae15106d4a/book/ontwerp/beton/vloeren.md",
 				"license": "CC BY 4.0"
 			},
-			"status": "flagged"
+			"status": "human_verified",
+			"verifiedBy": "OVADI",
+			"verifiedOn": "2026-10-24"
 		},
 		{
 			"id": "beton-ribbenvloer-vrij-opgelegd-h",
@@ -128,7 +134,9 @@
 				"url": "https://github.com/TeachBooks/vademecum/blob/9a2f70afd158b7cee533c119bf4c88ae15106d4a/book/ontwerp/beton/vloeren.md",
 				"license": "CC BY 4.0"
 			},
-			"status": "flagged"
+			"status": "human_verified",
+			"verifiedBy": "OVADI",
+			"verifiedOn": "2026-10-24"
 		},
 		{
 			"id": "beton-ribbenvloer-uitkragend-h",
@@ -162,7 +170,9 @@
 				"url": "https://github.com/TeachBooks/vademecum/blob/9a2f70afd158b7cee533c119bf4c88ae15106d4a/book/ontwerp/beton/vloeren.md",
 				"license": "CC BY 4.0"
 			},
-			"status": "flagged"
+			"status": "human_verified",
+			"verifiedBy": "OVADI",
+			"verifiedOn": "2026-10-24"
 		},
 		{
 			"id": "beton-staalplaatbetonvloer-h",
@@ -188,7 +198,9 @@
 				"url": "https://github.com/TeachBooks/vademecum/blob/9a2f70afd158b7cee533c119bf4c88ae15106d4a/book/ontwerp/beton/vloeren.md",
 				"license": "CC BY 4.0"
 			},
-			"status": "flagged"
+			"status": "human_verified",
+			"verifiedBy": "OVADI",
+			"verifiedOn": "2026-10-24"
 		},
 		{
 			"id": "beton-breedplaatvloer-continu-h",
@@ -222,7 +234,9 @@
 				"url": "https://github.com/TeachBooks/vademecum/blob/9a2f70afd158b7cee533c119bf4c88ae15106d4a/book/ontwerp/beton/vloeren.md",
 				"license": "CC BY 4.0"
 			},
-			"status": "flagged"
+			"status": "human_verified",
+			"verifiedBy": "OVADI",
+			"verifiedOn": "2026-10-24"
 		},
 		{
 			"id": "beton-breedplaatvloer-vrij-opgelegd-h",
@@ -256,7 +270,9 @@
 				"url": "https://github.com/TeachBooks/vademecum/blob/9a2f70afd158b7cee533c119bf4c88ae15106d4a/book/ontwerp/beton/vloeren.md",
 				"license": "CC BY 4.0"
 			},
-			"status": "flagged"
+			"status": "human_verified",
+			"verifiedBy": "OVADI",
+			"verifiedOn": "2026-10-24"
 		},
 		{
 			"id": "beton-breedplaatvloer-uitkragend-h",
@@ -290,7 +306,9 @@
 				"url": "https://github.com/TeachBooks/vademecum/blob/9a2f70afd158b7cee533c119bf4c88ae15106d4a/book/ontwerp/beton/vloeren.md",
 				"license": "CC BY 4.0"
 			},
-			"status": "flagged"
+			"status": "human_verified",
+			"verifiedBy": "OVADI",
+			"verifiedOn": "2026-10-24"
 		},
 		{
 			"id": "beton-breedplaat-dikte",
@@ -311,7 +329,9 @@
 				"url": "https://github.com/TeachBooks/vademecum/blob/9a2f70afd158b7cee533c119bf4c88ae15106d4a/book/ontwerp/beton/vloeren.md",
 				"license": "CC BY 4.0"
 			},
-			"status": "flagged"
+			"status": "human_verified",
+			"verifiedBy": "OVADI",
+			"verifiedOn": "2026-10-24"
 		},
 		{
 			"id": "beton-breedplaat-lengte",
@@ -331,7 +351,9 @@
 				"url": "https://github.com/TeachBooks/vademecum/blob/9a2f70afd158b7cee533c119bf4c88ae15106d4a/book/ontwerp/beton/vloeren.md",
 				"license": "CC BY 4.0"
 			},
-			"status": "flagged"
+			"status": "human_verified",
+			"verifiedBy": "OVADI",
+			"verifiedOn": "2026-10-24"
 		},
 		{
 			"id": "beton-kanaalplaat-toog-licht",
@@ -362,7 +384,9 @@
 				"url": "https://github.com/TeachBooks/vademecum/blob/9a2f70afd158b7cee533c119bf4c88ae15106d4a/book/ontwerp/beton/vloeren.md",
 				"license": "CC BY 4.0"
 			},
-			"status": "flagged"
+			"status": "human_verified",
+			"verifiedBy": "OVADI",
+			"verifiedOn": "2026-10-24"
 		},
 		{
 			"id": "beton-kanaalplaat-toog-zwaar",
@@ -384,7 +408,9 @@
 				"url": "https://github.com/TeachBooks/vademecum/blob/9a2f70afd158b7cee533c119bf4c88ae15106d4a/book/ontwerp/beton/vloeren.md",
 				"license": "CC BY 4.0"
 			},
-			"status": "flagged"
+			"status": "human_verified",
+			"verifiedBy": "OVADI",
+			"verifiedOn": "2026-10-24"
 		},
 		{
 			"id": "beton-kanaalplaat-oplegging-woningbouw",
@@ -408,7 +434,9 @@
 				"url": "https://github.com/TeachBooks/vademecum/blob/9a2f70afd158b7cee533c119bf4c88ae15106d4a/book/ontwerp/beton/vloeren.md",
 				"license": "CC BY 4.0"
 			},
-			"status": "flagged"
+			"status": "human_verified",
+			"verifiedBy": "OVADI",
+			"verifiedOn": "2026-10-24"
 		},
 		{
 			"id": "beton-kanaalplaat-oplegging-utiliteitsbouw",
@@ -432,7 +460,9 @@
 				"url": "https://github.com/TeachBooks/vademecum/blob/9a2f70afd158b7cee533c119bf4c88ae15106d4a/book/ontwerp/beton/vloeren.md",
 				"license": "CC BY 4.0"
 			},
-			"status": "flagged"
+			"status": "human_verified",
+			"verifiedBy": "OVADI",
+			"verifiedOn": "2026-10-24"
 		},
 		{
 			"id": "beton-dycore-w-hoogte",
@@ -453,7 +483,9 @@
 				"url": "https://github.com/TeachBooks/vademecum/blob/9a2f70afd158b7cee533c119bf4c88ae15106d4a/book/ontwerp/beton/vloeren.md",
 				"license": "CC BY 4.0"
 			},
-			"status": "flagged"
+			"status": "human_verified",
+			"verifiedBy": "OVADI",
+			"verifiedOn": "2026-10-24"
 		},
 		{
 			"id": "beton-dycore-w-gewicht",
@@ -474,7 +506,9 @@
 				"url": "https://github.com/TeachBooks/vademecum/blob/9a2f70afd158b7cee533c119bf4c88ae15106d4a/book/ontwerp/beton/vloeren.md",
 				"license": "CC BY 4.0"
 			},
-			"status": "flagged"
+			"status": "human_verified",
+			"verifiedBy": "OVADI",
+			"verifiedOn": "2026-10-24"
 		},
 		{
 			"id": "beton-dycore-w-lengte",
@@ -494,7 +528,9 @@
 				"url": "https://github.com/TeachBooks/vademecum/blob/9a2f70afd158b7cee533c119bf4c88ae15106d4a/book/ontwerp/beton/vloeren.md",
 				"license": "CC BY 4.0"
 			},
-			"status": "flagged"
+			"status": "human_verified",
+			"verifiedBy": "OVADI",
+			"verifiedOn": "2026-10-24"
 		},
 		{
 			"id": "beton-dycore-n-hoogte",
@@ -515,7 +551,9 @@
 				"url": "https://github.com/TeachBooks/vademecum/blob/9a2f70afd158b7cee533c119bf4c88ae15106d4a/book/ontwerp/beton/vloeren.md",
 				"license": "CC BY 4.0"
 			},
-			"status": "flagged"
+			"status": "human_verified",
+			"verifiedBy": "OVADI",
+			"verifiedOn": "2026-10-24"
 		},
 		{
 			"id": "beton-dycore-n-gewicht",
@@ -536,7 +574,9 @@
 				"url": "https://github.com/TeachBooks/vademecum/blob/9a2f70afd158b7cee533c119bf4c88ae15106d4a/book/ontwerp/beton/vloeren.md",
 				"license": "CC BY 4.0"
 			},
-			"status": "flagged"
+			"status": "human_verified",
+			"verifiedBy": "OVADI",
+			"verifiedOn": "2026-10-24"
 		},
 		{
 			"id": "beton-dycore-n-lengte",
@@ -556,7 +596,9 @@
 				"url": "https://github.com/TeachBooks/vademecum/blob/9a2f70afd158b7cee533c119bf4c88ae15106d4a/book/ontwerp/beton/vloeren.md",
 				"license": "CC BY 4.0"
 			},
-			"status": "flagged"
+			"status": "human_verified",
+			"verifiedBy": "OVADI",
+			"verifiedOn": "2026-10-24"
 		},
 		{
 			"id": "beton-dycore-u-hoogte",
@@ -577,7 +619,9 @@
 				"url": "https://github.com/TeachBooks/vademecum/blob/9a2f70afd158b7cee533c119bf4c88ae15106d4a/book/ontwerp/beton/vloeren.md",
 				"license": "CC BY 4.0"
 			},
-			"status": "flagged"
+			"status": "human_verified",
+			"verifiedBy": "OVADI",
+			"verifiedOn": "2026-10-24"
 		},
 		{
 			"id": "beton-dycore-u-gewicht",
@@ -598,7 +642,9 @@
 				"url": "https://github.com/TeachBooks/vademecum/blob/9a2f70afd158b7cee533c119bf4c88ae15106d4a/book/ontwerp/beton/vloeren.md",
 				"license": "CC BY 4.0"
 			},
-			"status": "flagged"
+			"status": "human_verified",
+			"verifiedBy": "OVADI",
+			"verifiedOn": "2026-10-24"
 		},
 		{
 			"id": "beton-dycore-u-lengte",
@@ -618,7 +664,9 @@
 				"url": "https://github.com/TeachBooks/vademecum/blob/9a2f70afd158b7cee533c119bf4c88ae15106d4a/book/ontwerp/beton/vloeren.md",
 				"license": "CC BY 4.0"
 			},
-			"status": "flagged"
+			"status": "human_verified",
+			"verifiedBy": "OVADI",
+			"verifiedOn": "2026-10-24"
 		},
 		{
 			"id": "beton-dycore-t-hoogte",
@@ -639,7 +687,9 @@
 				"url": "https://github.com/TeachBooks/vademecum/blob/9a2f70afd158b7cee533c119bf4c88ae15106d4a/book/ontwerp/beton/vloeren.md",
 				"license": "CC BY 4.0"
 			},
-			"status": "flagged"
+			"status": "human_verified",
+			"verifiedBy": "OVADI",
+			"verifiedOn": "2026-10-24"
 		},
 		{
 			"id": "beton-dycore-t-gewicht",
@@ -660,7 +710,9 @@
 				"url": "https://github.com/TeachBooks/vademecum/blob/9a2f70afd158b7cee533c119bf4c88ae15106d4a/book/ontwerp/beton/vloeren.md",
 				"license": "CC BY 4.0"
 			},
-			"status": "flagged"
+			"status": "human_verified",
+			"verifiedBy": "OVADI",
+			"verifiedOn": "2026-10-24"
 		},
 		{
 			"id": "beton-dycore-t-lengte",
@@ -680,7 +732,9 @@
 				"url": "https://github.com/TeachBooks/vademecum/blob/9a2f70afd158b7cee533c119bf4c88ae15106d4a/book/ontwerp/beton/vloeren.md",
 				"license": "CC BY 4.0"
 			},
-			"status": "flagged"
+			"status": "human_verified",
+			"verifiedBy": "OVADI",
+			"verifiedOn": "2026-10-24"
 		},
 		{
 			"id": "beton-dycore-h-hoogte",
@@ -701,7 +755,9 @@
 				"url": "https://github.com/TeachBooks/vademecum/blob/9a2f70afd158b7cee533c119bf4c88ae15106d4a/book/ontwerp/beton/vloeren.md",
 				"license": "CC BY 4.0"
 			},
-			"status": "flagged"
+			"status": "human_verified",
+			"verifiedBy": "OVADI",
+			"verifiedOn": "2026-10-24"
 		},
 		{
 			"id": "beton-dycore-h-gewicht",
@@ -722,7 +778,9 @@
 				"url": "https://github.com/TeachBooks/vademecum/blob/9a2f70afd158b7cee533c119bf4c88ae15106d4a/book/ontwerp/beton/vloeren.md",
 				"license": "CC BY 4.0"
 			},
-			"status": "flagged"
+			"status": "human_verified",
+			"verifiedBy": "OVADI",
+			"verifiedOn": "2026-10-24"
 		},
 		{
 			"id": "beton-dycore-h-lengte",
@@ -742,7 +800,9 @@
 				"url": "https://github.com/TeachBooks/vademecum/blob/9a2f70afd158b7cee533c119bf4c88ae15106d4a/book/ontwerp/beton/vloeren.md",
 				"license": "CC BY 4.0"
 			},
-			"status": "flagged"
+			"status": "human_verified",
+			"verifiedBy": "OVADI",
+			"verifiedOn": "2026-10-24"
 		},
 		{
 			"id": "beton-dycore-k-hoogte",
@@ -763,7 +823,9 @@
 				"url": "https://github.com/TeachBooks/vademecum/blob/9a2f70afd158b7cee533c119bf4c88ae15106d4a/book/ontwerp/beton/vloeren.md",
 				"license": "CC BY 4.0"
 			},
-			"status": "flagged"
+			"status": "human_verified",
+			"verifiedBy": "OVADI",
+			"verifiedOn": "2026-10-24"
 		},
 		{
 			"id": "beton-dycore-k-gewicht",
@@ -784,7 +846,9 @@
 				"url": "https://github.com/TeachBooks/vademecum/blob/9a2f70afd158b7cee533c119bf4c88ae15106d4a/book/ontwerp/beton/vloeren.md",
 				"license": "CC BY 4.0"
 			},
-			"status": "flagged"
+			"status": "human_verified",
+			"verifiedBy": "OVADI",
+			"verifiedOn": "2026-10-24"
 		},
 		{
 			"id": "beton-dycore-k-lengte",
@@ -804,7 +868,9 @@
 				"url": "https://github.com/TeachBooks/vademecum/blob/9a2f70afd158b7cee533c119bf4c88ae15106d4a/book/ontwerp/beton/vloeren.md",
 				"license": "CC BY 4.0"
 			},
-			"status": "flagged"
+			"status": "human_verified",
+			"verifiedBy": "OVADI",
+			"verifiedOn": "2026-10-24"
 		},
 		{
 			"id": "beton-wand-dikte-min",
@@ -825,7 +891,9 @@
 				"url": "https://github.com/TeachBooks/vademecum/blob/9a2f70afd158b7cee533c119bf4c88ae15106d4a/book/ontwerp/beton/wanden.md",
 				"license": "CC BY 4.0"
 			},
-			"status": "flagged"
+			"status": "human_verified",
+			"verifiedBy": "OVADI",
+			"verifiedOn": "2026-10-24"
 		},
 		{
 			"id": "beton-wand-verdiepingshoogte-4",
@@ -859,7 +927,9 @@
 				"url": "https://github.com/TeachBooks/vademecum/blob/9a2f70afd158b7cee533c119bf4c88ae15106d4a/book/ontwerp/beton/wanden.md",
 				"license": "CC BY 4.0"
 			},
-			"status": "flagged"
+			"status": "human_verified",
+			"verifiedBy": "OVADI",
+			"verifiedOn": "2026-10-24"
 		},
 		{
 			"id": "beton-wand-gebouwhoogte-60",
@@ -893,7 +963,9 @@
 				"url": "https://github.com/TeachBooks/vademecum/blob/9a2f70afd158b7cee533c119bf4c88ae15106d4a/book/ontwerp/beton/wanden.md",
 				"license": "CC BY 4.0"
 			},
-			"status": "flagged"
+			"status": "human_verified",
+			"verifiedBy": "OVADI",
+			"verifiedOn": "2026-10-24"
 		},
 		{
 			"id": "beton-stabiliteitswand-lang",
@@ -919,7 +991,9 @@
 				"url": "https://github.com/TeachBooks/vademecum/blob/9a2f70afd158b7cee533c119bf4c88ae15106d4a/book/ontwerp/beton/stabiliteit.md",
 				"license": "CC BY 4.0"
 			},
-			"status": "flagged"
+			"status": "human_verified",
+			"verifiedBy": "OVADI",
+			"verifiedOn": "2026-10-24"
 		},
 		{
 			"id": "beton-stabiliteitswand-kort",
@@ -945,7 +1019,9 @@
 				"url": "https://github.com/TeachBooks/vademecum/blob/9a2f70afd158b7cee533c119bf4c88ae15106d4a/book/ontwerp/beton/stabiliteit.md",
 				"license": "CC BY 4.0"
 			},
-			"status": "flagged"
+			"status": "human_verified",
+			"verifiedBy": "OVADI",
+			"verifiedOn": "2026-10-24"
 		},
 		{
 			"id": "beton-kolom-1-verdiepingen",
@@ -978,7 +1054,9 @@
 				"url": "https://github.com/TeachBooks/vademecum/blob/9a2f70afd158b7cee533c119bf4c88ae15106d4a/book/ontwerp/beton/kolommen.md",
 				"license": "CC BY 4.0"
 			},
-			"status": "flagged"
+			"status": "human_verified",
+			"verifiedBy": "OVADI",
+			"verifiedOn": "2026-10-24"
 		},
 		{
 			"id": "beton-kolom-6-verdiepingen",
@@ -1011,7 +1089,9 @@
 				"url": "https://github.com/TeachBooks/vademecum/blob/9a2f70afd158b7cee533c119bf4c88ae15106d4a/book/ontwerp/beton/kolommen.md",
 				"license": "CC BY 4.0"
 			},
-			"status": "flagged"
+			"status": "human_verified",
+			"verifiedBy": "OVADI",
+			"verifiedOn": "2026-10-24"
 		},
 		{
 			"id": "beton-kolom-11-verdiepingen",
@@ -1044,7 +1124,9 @@
 				"url": "https://github.com/TeachBooks/vademecum/blob/9a2f70afd158b7cee533c119bf4c88ae15106d4a/book/ontwerp/beton/kolommen.md",
 				"license": "CC BY 4.0"
 			},
-			"status": "flagged"
+			"status": "human_verified",
+			"verifiedBy": "OVADI",
+			"verifiedOn": "2026-10-24"
 		},
 		{
 			"id": "beton-kolom-16-verdiepingen",
@@ -1077,7 +1159,9 @@
 				"url": "https://github.com/TeachBooks/vademecum/blob/9a2f70afd158b7cee533c119bf4c88ae15106d4a/book/ontwerp/beton/kolommen.md",
 				"license": "CC BY 4.0"
 			},
-			"status": "flagged"
+			"status": "human_verified",
+			"verifiedBy": "OVADI",
+			"verifiedOn": "2026-10-24"
 		},
 		{
 			"id": "beton-kolom-prefab-breedte",
@@ -1120,7 +1204,9 @@
 				"url": "https://github.com/TeachBooks/vademecum/blob/9a2f70afd158b7cee533c119bf4c88ae15106d4a/book/ontwerp/beton/kolommen.md",
 				"license": "CC BY 4.0"
 			},
-			"status": "flagged"
+			"status": "human_verified",
+			"verifiedBy": "OVADI",
+			"verifiedOn": "2026-10-24"
 		}
 	],
 	"groups": [
@@ -1307,7 +1393,9 @@
 				"url": "https://github.com/TeachBooks/vademecum/blob/9a2f70afd158b7cee533c119bf4c88ae15106d4a/book/ontwerp/beton/vloeren.md",
 				"license": "CC BY 4.0"
 			},
-			"status": "flagged"
+			"status": "human_verified",
+			"verifiedBy": "OVADI",
+			"verifiedOn": "2026-10-24"
 		}
 	]
 }
