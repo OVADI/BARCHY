@@ -109,7 +109,8 @@
 	"tools": {
 		"title": "Calculators",
 		"stair": "Stair calculator",
-		"steelWeight": "Steel section weight"
+		"steelWeight": "Steel section weight",
+		"beam": "Beam estimator"
 	},
 	"saved": {
 		"title": "Saved",
@@ -429,5 +430,21 @@
 		"tableCaption": "Minimum structural wall thickness d in mm by number of storeys (rows) and bay width (columns)",
 		"tableNote": "Rows: number of storeys. Columns: bay width in m, with the thickness hₜ of the structural floor in mm. Tap a cell to pick it.",
 		"method": "Tables from the Vademecum, based on NPR 6791. The source only gives bay widths of 4, 5, 6 and 7 m."
+	},
+	"beam": {
+		"scope": "Estimate the depth of a beam or frame from its span, with the rules of thumb from the Vademecum. A first estimate, not a calculation.",
+		"material": "Material",
+		"design": "Beam",
+		"shape": "Shape",
+		"variant": "Variant",
+		"span": "Span l",
+		"outside": "l = {l} m is outside the range of this rule of thumb ({range}). Use the estimate with care.",
+		"rangeValue": "{lo} to {hi}",
+		"applies": "Applies at",
+		"more": "Other sizes",
+		"unknown": "cannot be computed from l alone; see the source figure",
+		"allRules": "All rules of thumb for this shape",
+		"info": "Depth = span / n from the rule of thumb, rounded to 10 mm. For a range (e.g. l/15 – l/20) the smallest depth goes with the largest n.",
+		"rounded": "rounded to 10 mm"
 	}
 }

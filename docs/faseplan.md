@@ -157,7 +157,7 @@ Commits `bb379e0`, feedback verwerkt in `2f30b7c` en `31a808d`
 - [x] Beton: `content/facts/concrete.json`, 43 regels, 9 groepen, 1 grafiekverwijzing. Inclusief de productgegevens van Dycore-kanaalplaten (hoogte, gewicht, maximale lengte). Aandachtspunten in hetzelfde rapport
 - [x] Metselwerk: `content/facts/masonry.json`, 40 regels (kalkzandsteen, eindgevel en tussenwand, per aantal bouwlagen en beukmaat). Aandachtspunten in hetzelfde rapport
 - [x] Tab Vuistregels bij Hout en Beton: overzicht per onderdeel (liggers en spanten, vloeren, wanden, kolommen, stabiliteit) met per vorm een eigen pagina `/rules/[materiaal]/[groep]` met regels, toelichtingen en grafiekverwijzingen. Metselwerk heeft een eigen pagina `/masonry` (kies wand, aantal bouwlagen en beukmaat; de hele tabel staat eronder) en een tegel op het startscherm. Precache na deze stap: 215 bestanden, 1978 KiB (was 1328 KiB vóór fase 8)
-- [ ] Ligger-schatter (materiaal, vorm, l → h en overstek, waarschuwing buiten `when`)
+- [x] Liggerschatter (`/tools/beam`): kies staal, hout of beton, een vorm en een uitvoering, vul l in, en zie h (afgerond op 10 mm) met de andere maten van dezelfde tabelkolom (overstek a, pijl f, straal r …) en een waarschuwing als l buiten het bereik van de regel valt. Regels met (l+g) kunnen niet uit l alleen; dat staat erbij. De staal-liggerregels kregen daarvoor `symbol: "h"` en een bereik `when` (zelfde waarden als hun scope-tekst), dus op de staalpagina staat nu "h = l/15 – l/20". Precache 2089 KiB
 - [ ] Zoekindex (`src/routes/data/search.json/+server.ts` importeert de feitenbestanden één voor één)
 
 ### Fase 9: Presentatie-checklist
