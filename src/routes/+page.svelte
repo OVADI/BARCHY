@@ -13,7 +13,7 @@
 
 <header class="header">
 	<div class="titles">
-		<h1 class="t-heading">{t('app.name')}</h1>
+		<h1 class="t-heading brand">{t('app.name')}</h1>
 		<p class="t-body-sm t-muted">{t('app.tagline')}</p>
 	</div>
 	<div class="actions">
@@ -47,6 +47,9 @@
 		flex-direction: column;
 		gap: var(--space-2);
 		min-width: 0;
+	}
+	.brand {
+		font-weight: 900;
 	}
 	.actions {
 		display: flex;
