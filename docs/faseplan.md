@@ -108,7 +108,7 @@ Commits `bb379e0`, feedback verwerkt in `2f30b7c` en `31a808d`
 - Zoeken vindt arceringen, lijnsoorten en tekeninstructies, bijvoorbeeld "streeplijn", "hardhout" of "axonometrie". Bij gelijke treffers gaan hele woorden nu voor: "beton" vindt beton voor "betonsteen"
 - Rapport `reports/drawing-issues.md`
 - Feedback verwerkt: Arcering begint met vier materiaalgroepen, elk met een eigen pagina (`/drawing/hatch/[groep]`). Tekeningen begint met drie blokken, elk met een eigen pagina (`/drawing/guide/[id]`). Daar staan alle stappen onder elkaar in de volgorde van het Vademecum, met een korte titel; tik op een stap voor de volledige instructie. De korte titels zijn eigen tekst van BARCHY, niet uit de bron
-- Precache na deze fase: 149 bestanden, 1321 KiB (was 1077 KiB, gemeten op de commit vóór fase 7)
+- Precache na deze fase: 149 bestanden, 1328 KiB (was 1077 KiB, gemeten op de commit vóór fase 7)
 
 **Te controleren door de gebruiker:**
 
