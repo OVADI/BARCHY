@@ -200,13 +200,6 @@
 	.tone-material .sub {
 		color: var(--on-tile-muted);
 	}
-	a.tone-material:hover {
-		background: var(--orange-shade);
-		color: var(--paper);
-	}
-	a.tone-material:hover .sub {
-		color: var(--paper);
-	}
 	.tone-surface {
 		background: var(--surface);
 		color: var(--ink);
