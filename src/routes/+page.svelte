@@ -16,15 +16,15 @@
 		{ href: resolve('/timber'), key: 'home.timber', icon: 'grain' },
 		{ href: resolve('/concrete'), key: 'home.concrete', icon: 'dots' }
 	] as const;
+
+	/** Recent pages show only while the search box has focus. */
+	let focused = $state(false);
 </script>
 
 <svelte:head><title>BARCHY</title></svelte:head>
 
 <header class="header">
-	<div class="titles">
-		<h1 class="t-heading brand">{t('app.name')}</h1>
-		<p class="t-body-sm t-muted">{t('app.tagline')}</p>
-	</div>
+	<h1 class="t-heading brand">{t('app.name')}</h1>
 	<div class="actions">
 		<LanguageToggle />
 		<IconButton icon={SlidersHorizontal} label={t('common.settings')} href={resolve('/settings')} />
@@ -42,11 +42,14 @@
 		spellcheck="false"
 		aria-label={t('search.label')}
 		placeholder={t('home.searchPlaceholder')}
+		onfocus={() => (focused = true)}
+		onblur={() => (focused = false)}
 	/>
 </form>
 
-{#if saved.recent.length}
-	<section class="recent" aria-label={t('home.recent')}>
+{#if focused && saved.recent.length}
+	<!-- Keeps focus in the search box, so the list is still there when a link is clicked. -->
+	<section class="recent" aria-label={t('home.recent')} onpointerdown={(e) => e.preventDefault()}>
 		<h2 class="sr-only">{t('home.recent')}</h2>
 		<ul>
 			{#each saved.recent as r, i (r.path)}
@@ -143,12 +146,6 @@
 		align-items: flex-start;
 		gap: var(--space-2);
 		margin-bottom: var(--space-4);
-	}
-	.titles {
-		display: flex;
-		flex-direction: column;
-		gap: var(--space-2);
-		min-width: 0;
 	}
 	.brand {
 		font-weight: 900;
