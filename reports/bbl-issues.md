@@ -2,7 +2,7 @@
 
 Bron: Besluit bouwwerken leefomgeving (BWBR0041297), geconsolideerde versie geldend vanaf 24-09-2026,
 opgehaald van https://wetten.overheid.nl/BWBR0041297/2026-09-24 op 24-10-2026.
-Alle 56 feiten in `content/facts/bbl.json` zijn met de hand uit de wettekst overgenomen en staan op `status: flagged`.
+Alle 56 feiten in `content/facts/bbl.json` zijn met de hand uit de wettekst overgenomen. Ze zijn op 24-10-2026 nagelopen en staan op `status: human_verified` (zie `reports/controle.md`).
 
 ## Scope
 

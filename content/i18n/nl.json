@@ -13,7 +13,6 @@
 	"common": {
 		"back": "Terug",
 		"close": "Sluiten",
-		"settings": "Instellingen",
 		"language": "Taal",
 		"comingSoon": "Dit scherm wordt in een volgende fase gebouwd.",
 		"noSource": "Nog geen bron",
@@ -23,7 +22,8 @@
 		"notFound": "Dit profiel bestaat niet in de gegevens.",
 		"save": "Bewaren",
 		"unsave": "Niet meer bewaren",
-		"remove": "Verwijderen"
+		"remove": "Verwijderen",
+		"about": "Over BARCHY"
 	},
 	"info": {
 		"open": "Bronnen en info",
@@ -80,7 +80,9 @@
 		"tools": "Rekentools",
 		"toolsUnit": "tools",
 		"toolsSub": "Rekenen en direct toetsen",
-		"masonry": "Metselwerk"
+		"masonry": "Metselwerk",
+		"feedback": "Wil je iets toevoegen of aanvragen?",
+		"feedbackSub": "Stuur een bericht naar de maker"
 	},
 	"search": {
 		"title": "Zoeken",
@@ -341,8 +343,38 @@
 		"stairTool": "Toets een trap aan de Bbl",
 		"info": "Bij elke waarde staat het artikel. Andere woonfuncties (woonwagen, studenten, zorg) en bestaande bouw hebben soms andere waarden; die staan hier niet."
 	},
-	"settings": {
-		"title": "Instellingen"
+	"about": {
+		"title": "Over BARCHY",
+		"whyLabel": "Waarom",
+		"whyTitle": "Alles wat je nodig hebt, in je broekzak",
+		"why": "Ik ben student bouwkunde. Tijdens het ontwerpen zocht ik steeds dezelfde gegevens op: een profieltabel in het Vademecum, een eis in de Bbl, een arcering in de tekeninstructies. Het staat allemaal ergens, maar overal een beetje verspreid. BARCHY zet het overzichtelijk bij elkaar, zodat het altijd bij de hand is, ook offline.",
+		"sourcesLabel": "Bronnen",
+		"sources": "Alle gegevens komen uit deze bronnen. Waarden worden niet verzonnen: wat nog niet is nagelopen, staat op \"Controleren\". Elke waarde toont haar eigen bron.",
+		"disclaimerLabel": "Disclaimer",
+		"disclaimerRead": "Disclaimer opnieuw lezen",
+		"openLabel": "Open source",
+		"open": "De code van BARCHY is openbaar onder de MIT-licentie. De gegevens volgen de licentie van hun bron: het Vademecum is CC BY 4.0. Iedereen kan meekijken, fouten melden of bijdragen.",
+		"repo": "Broncode op GitHub",
+		"reportError": "Fout gevonden? Meld een correctie",
+		"feedbackLabel": "Feedback",
+		"feedbackTitle": "Wil je iets toevoegen of aanvragen?",
+		"feedbackIntro": "Mis je een tabel, klopt er iets niet of heb je een idee? Laat het weten. Je bericht komt rechtstreeks bij de maker binnen.",
+		"message": "Bericht",
+		"email": "E-mail (optioneel, voor een antwoord)",
+		"send": "Versturen",
+		"sending": "Versturen…",
+		"sent": "Bedankt! Je bericht is verstuurd.",
+		"offline": "Versturen kan alleen online. Je tekst blijft staan.",
+		"error": "Versturen lukte niet. Probeer het later opnieuw.",
+		"noForm": "Meld je idee of fout via GitHub.",
+		"version": "Versie {version}",
+		"madeBy": "Gemaakt door"
+	},
+	"disclaimer": {
+		"title": "Voordat je begint",
+		"body": "De informatie in BARCHY is overgenomen uit het TU Delft Vademecum en het Besluit bouwwerken leefomgeving (Bbl). Er kunnen kleine fouten in zitten. Controleer waarden altijd zelf in de bron voordat je ze gebruikt.",
+		"unofficial": "BARCHY is een studentenproject en geen officiële app van de TU Delft.",
+		"ok": "Begrepen"
 	},
 	"dev": {
 		"tokensTitle": "Tokens",

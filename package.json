@@ -1,6 +1,6 @@
 {
 	"name": "barchy",
-	"version": "0.1.0",
+	"version": "1.0.0",
 	"private": true,
 	"description": "Offline-first vademecum voor architectuur- en bouwkundestudenten",
 	"license": "MIT",
@@ -22,7 +22,8 @@
 		"icons": "pwa-assets-generator",
 		"import:vademecum": "tsx scripts/import-vademecum.ts",
 		"validate": "tsx scripts/validate-content.ts",
-		"serve:pages": "tsx scripts/serve-pages.ts"
+		"serve:pages": "tsx scripts/serve-pages.ts",
+		"report:status": "tsx scripts/status-report.ts"
 	},
 	"devDependencies": {
 		"@eslint/js": "9.39.5",

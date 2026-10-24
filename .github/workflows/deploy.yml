@@ -30,10 +30,7 @@ jobs:
 
   deploy:
     needs: test
-    # Uitgezet zolang de repo privé is (GitHub Pages vereist dan een betaald plan).
-    # Zet de volgende regel terug om te deployen:
-    # if: github.event_name == 'push' && github.ref == 'refs/heads/main'
-    if: false
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
     environment:
       name: github-pages
@@ -47,9 +44,11 @@ jobs:
       - run: npm ci
       - run: npm run build
         env:
-          # Project page: https://<user>.github.io/<repo>/. Use '' for a custom domain.
-          BASE_PATH: /${{ github.event.repository.name }}
+          # Custom domain (static/CNAME: barchy.ovadi.nl), so no base path.
+          BASE_PATH: ''
           VITE_REPO_URL: https://github.com/${{ github.repository }}
+          # Repository variable (Settings → Secrets and variables → Actions → Variables).
+          VITE_WEB3FORMS_KEY: ${{ vars.WEB3FORMS_KEY }}
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:
