@@ -7,6 +7,7 @@
 	import IconButton from '$lib/components/IconButton.svelte';
 	import InfoFab from '$lib/components/InfoFab.svelte';
 	import LanguageToggle from '$lib/components/LanguageToggle.svelte';
+	import Logo from '$lib/components/Logo.svelte';
 	import { formatNumber, t } from '$lib/i18n/index.svelte';
 	import { source } from '$lib/sources';
 	import { saved } from '$lib/storage/saved.svelte';
@@ -26,7 +27,7 @@
 <svelte:head><title>BARCHY</title></svelte:head>
 
 <header class="header">
-	<h1 class="t-heading brand">{t('app.name')}</h1>
+	<h1 class="brand"><Logo height={26} /></h1>
 	<div class="actions">
 		<LanguageToggle />
 		<IconButton icon={HeartHandshake} label={t('common.about')} href={resolve('/about')} />
@@ -166,7 +167,15 @@
 		margin-bottom: var(--space-4);
 	}
 	.brand {
-		font-weight: 900;
+		margin: 0;
+		min-height: var(--touch);
+		display: flex;
+		align-items: center;
+		min-width: 0;
+	}
+	.brand :global(svg) {
+		max-width: 100%;
+		height: auto;
 	}
 	.actions {
 		display: flex;

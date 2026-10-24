@@ -5,8 +5,10 @@
 	import { pwaInfo } from 'virtual:pwa-info';
 	import BottomNav from '$lib/components/BottomNav.svelte';
 	import Disclaimer from '$lib/components/Disclaimer.svelte';
+	import InstallGuide from '$lib/components/InstallGuide.svelte';
 	import { initDisclaimer } from '$lib/disclaimer.svelte';
 	import { initLocale, t } from '$lib/i18n/index.svelte';
+	import { initInstall } from '$lib/install.svelte';
 	import { initSaved } from '$lib/storage/saved.svelte';
 
 	let { children }: { children: Snippet } = $props();
@@ -17,6 +19,7 @@
 		// After hydration, so the prerendered (NL) markup is never mismatched.
 		initLocale();
 		initDisclaimer();
+		initInstall();
 		void initSaved();
 		if (pwaInfo) {
 			const { registerSW } = await import('virtual:pwa-register');
@@ -39,6 +42,7 @@
 <BottomNav />
 
 <Disclaimer />
+<InstallGuide />
 
 <style>
 	.page {

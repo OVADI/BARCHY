@@ -368,7 +368,10 @@
 		"error": "Sending failed. Please try again later.",
 		"noForm": "Share your idea or error on GitHub.",
 		"version": "Version {version}",
-		"madeBy": "Made by"
+		"madeBy": "Made by",
+		"installLabel": "Add to home screen",
+		"installBody": "Open BARCHY with one tap from your home screen, even without internet. Pick your browser below.",
+		"installButton": "Show the steps"
 	},
 	"disclaimer": {
 		"title": "Before you start",
@@ -481,5 +484,60 @@
 		"rounded": "rounded to 10 mm",
 		"legHeight": "Leg height g",
 		"legHeightHint": "From the base to the knee, as in the source figure. h_knik = (l+g)/n."
+	},
+	"install": {
+		"title": "Add BARCHY to your home screen",
+		"intro": "Then you open BARCHY with one tap, like any app, and it works offline too.",
+		"yours": "For your browser",
+		"other": "Other browser",
+		"now": "Install now",
+		"later": "Later",
+		"ok": "Got it",
+		"platforms": {
+			"ios-safari": {
+				"name": "iPhone or iPad (Safari)",
+				"s1": "Tap the share button (square with an arrow pointing up) at the bottom or top.",
+				"s2": "Scroll and choose ‘Add to Home Screen’.",
+				"s3": "Tap ‘Add’ at the top right."
+			},
+			"ios-other": {
+				"name": "iPhone or iPad (Chrome, Firefox, Edge)",
+				"s1": "Tap the share button or the menu (⋯) of your browser.",
+				"s2": "Choose ‘Add to Home Screen’. Not there? Open BARCHY in Safari and follow the steps there.",
+				"s3": "Tap ‘Add’."
+			},
+			"android-chrome": {
+				"name": "Android (Chrome)",
+				"s1": "Tap the menu at the top right (three dots).",
+				"s2": "Choose ‘Install app’ or ‘Add to Home screen’.",
+				"s3": "Confirm with ‘Install’ or ‘Add’."
+			},
+			"android-samsung": {
+				"name": "Android (Samsung Internet)",
+				"s1": "Tap the menu at the bottom (three lines).",
+				"s2": "Choose ‘Add page to’ and then ‘Home screen’.",
+				"s3": "Confirm with ‘Add’."
+			},
+			"android-other": {
+				"name": "Android (other browser)",
+				"s1": "Open your browser's menu (usually three dots).",
+				"s2": "Choose ‘Install app’ or ‘Add to Home screen’.",
+				"s3": "Does not work? Open BARCHY in Chrome."
+			},
+			"desktop-chromium": {
+				"name": "Computer (Chrome, Edge)",
+				"s1": "Click the install icon (monitor with an arrow) at the right of the address bar.",
+				"s2": "Choose ‘Install’."
+			},
+			"desktop-safari": {
+				"name": "Mac (Safari)",
+				"s1": "Click ‘Share’ or ‘File’ in the menu bar.",
+				"s2": "Choose ‘Add to Dock’."
+			},
+			"desktop-other": {
+				"name": "Computer (other browser)",
+				"s1": "This browser cannot install BARCHY. Open it in Chrome, Edge or Safari, or bookmark it."
+			}
+		}
 	}
 }

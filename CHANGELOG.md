@@ -1,5 +1,10 @@
 # Changelog
 
+## Ongepubliceerd
+
+- Nieuw logo: in de kop van Home en als app-icoon.
+- Uitleg "Zet op beginscherm" per browser: een venster bij het eerste bezoek op telefoon of tablet, en een knop op Over BARCHY.
+
 ## 1.0.0 (2026-10-24)
 
 Eerste publieke versie, op [barchy.ovadi.nl](https://barchy.ovadi.nl).

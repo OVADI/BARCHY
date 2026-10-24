@@ -7,6 +7,7 @@
 	import Tile from '$lib/components/Tile.svelte';
 	import { CORRECTION_URL, MISSING_URL, REPO_URL, WEB3FORMS_KEY } from '$lib/config';
 	import { disclaimer } from '$lib/disclaimer.svelte';
+	import { install } from '$lib/install.svelte';
 	import { t } from '$lib/i18n/index.svelte';
 	import { sources } from '$lib/sources';
 </script>
@@ -38,6 +39,14 @@
 	<p class="t-body">{t('disclaimer.body')} {t('disclaimer.unofficial')}</p>
 	<button type="button" class="pill" onclick={() => disclaimer.show()}>
 		{t('about.disclaimerRead')}
+	</button>
+</Tile>
+
+<Tile as="section" pad="lg">
+	<h2 class="t-label t-muted">{t('about.installLabel')}</h2>
+	<p class="t-body">{t('about.installBody')}</p>
+	<button type="button" class="pill" onclick={() => install.show()}>
+		{t('about.installButton')}
 	</button>
 </Tile>
 
