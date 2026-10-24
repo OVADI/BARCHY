@@ -118,7 +118,36 @@ Commits `bb379e0`, feedback verwerkt in `2f30b7c` en `31a808d`
 
 ## Gepland
 
-### Fase 8: Presentatie-checklist
+### Fase 8: Vuistregels hout, beton en metselwerk
+
+**Doel:** de ontwerp-vuistregels uit de Vademecum opnemen voor hout (hoofdstuk 7), beton (hoofdstuk 8) en metselwerk (hoofdstuk 9), zoals fase 2+3 dat voor staal (hoofdstuk 6) deed.
+
+**Bron:** [TeachBooks/vademecum](https://github.com/TeachBooks/vademecum) op dezelfde vaste commit als de staaldata (`9a2f70a…`), map `book/ontwerp/{hout,beton,metselwerk}/`. Licentie CC BY 4.0. Alle waarden blijven `verify: true` tot ze gecontroleerd zijn.
+
+**Inhoud**
+
+- **Liggers:** overspanning `l`, hoogte `h = l/x`, hart-op-hart `h.o.h`, overstek `a` (bijvoorbeeld 0,25·l of 0,4·l), pijl `f` en straal `r`, per vorm: rechte ligger, ligger met overstek, zadeldak, gebogen, op meerdere steunpunten, vakwerk, onderspannen, portaalspant, drie-scharnierenspant en boogspant. Daarbij wanneer een ligger buigt of krom wordt en hoe de vorm de regel verandert
+- **Beton-liggers:** prefab voorgespannen (1/20) en in het werk gestort gewapend (1/10)
+- **Vloeren, kolommen, wanden, stabiliteit en verbindingen** voor hout en beton, waaronder houten kanaalplaat en CLT, en stabiliteitswanden van HSB en CLT per aantal bouwlagen
+- **Metselwerk:** minimale wanddikte kalkzandsteen voor eindgevel en tussenwand, per aantal bouwlagen en beukmaat (gebaseerd op NPR 6791)
+- Toelichtingen en waarschuwingen uit de bron horen bij de regel, bijvoorbeeld de zijdelingse steun van bovenranden en de trekspanning loodrecht op de vezel bij gebogen liggers
+
+**Grafieken:** een deel van de regels staat in de bron als ontwerpgrafiek, niet als getal. Waarden die van een grafiek zijn afgelezen krijgen `verify: true` en [VERIFY], met een verwijzing naar de bronfiguur.
+
+**Voorlopige aanpak, af te stemmen bij de start van de fase**
+
+- Het feitenmodel uitbreiden: factor-vormen (`a = 0,25·l`), tabelwaarden, afgelezen grafiekpunten en een toelichting per regel
+- Nieuwe `content/facts/timber.json`, `concrete.json` en `masonry.json`
+- Een tab Vuistregels bij Hout en Beton, en een plek voor metselwerk
+- Een ligger-schatter naar voorbeeld van de trapcalculator: kies materiaal en vorm, vul `l` in, en zie `h`, overstek en een waarschuwing buiten het bereik
+- Opnemen in de zoekindex en een rapport `reports/vuistregels-issues.md`
+
+**Open punten**
+
+- Gaan de figuren uit de bron mee? Dat vergroot de offline-cache
+- `beton/verbindingen.md` is in de bron leeg
+
+### Fase 9: Presentatie-checklist
 
 **Doel:** per presentatiemoment nalopen of je project compleet is: wat moet erin, wat moet je laten zien, en aan welke eisen heb je het ontwerp getoetst.
 
@@ -134,7 +163,7 @@ Commits `bb379e0`, feedback verwerkt in `2f30b7c` en `31a808d`
 - Komt dit onder Bewaard of krijgt het een eigen tab?
 - Is een voorbeeldlijst gewenst, of start elke lijst leeg?
 
-### Fase 9: Afronding
+### Fase 10: Afronding
 
 - Instellingen uitbreiden, zoals licht/donker
 - Eventueel extra rekentools
