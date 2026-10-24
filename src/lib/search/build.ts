@@ -2,6 +2,7 @@ import { formatFact } from '$lib/facts/format';
 import { SPACE_TABS, STEEL_FACT_GROUPS, steelTabOf } from '$lib/facts/groups';
 import { lookup, type Locale, type MessageKey } from '$lib/i18n/messages';
 import type { RebarFile } from '$lib/schema/concrete';
+import type { DrawingFile } from '$lib/schema/drawing';
 import type { Fact } from '$lib/schema/fact';
 import type { Bilingual } from '$lib/schema/source';
 import type { ProfiledSheetFile, SteelFamily, SteelFile } from '$lib/schema/steel';
@@ -22,6 +23,7 @@ export interface SearchContent {
 	sheets: ProfiledSheetFile;
 	bbl: Fact[];
 	steelFacts: Fact[];
+	drawing: DrawingFile;
 }
 
 const INTL: Record<Locale, string> = { nl: 'nl-NL', en: 'en-GB' };
@@ -168,6 +170,50 @@ function steelFactEntries(facts: Fact[]): SearchEntry[] {
 	});
 }
 
+function drawingEntries(file: DrawingFile): SearchEntry[] {
+	const drawing = msg('drawing.title');
+	const scales = (list: number[]) =>
+		list.length === 6 ? '' : ` · ${list.map((n) => `1:${n}`).join(', ')}`;
+	return [
+		...file.hatches.map((h) => ({
+			kind: 'drawing' as const,
+			title: h.name,
+			sub: both((l) => `${lookup(l, `drawing.group.${h.group}`)}${scales(h.scales)}`),
+			path: `/drawing?tab=hatch#hatch-${h.id}`,
+			names: names(h.name.nl, h.name.en),
+			text: words(
+				drawing,
+				msg('drawing.hatch'),
+				h.note,
+				'arcering arceren hatch hatching nen 2302'
+			),
+			flagged: h.status === 'flagged'
+		})),
+		...file.lines.map((l) => ({
+			kind: 'drawing' as const,
+			title: l.name,
+			sub: msg('drawing.lines'),
+			path: `/drawing?tab=lines#line-${l.id}`,
+			names: names(l.name.nl, l.name.en),
+			text: words(
+				drawing,
+				msg('drawing.lines'),
+				'lijn lijnsoort lijndikte line type weight nen 2302'
+			),
+			flagged: l.status === 'flagged'
+		})),
+		...file.guides.map((g) => ({
+			kind: 'drawing' as const,
+			title: g.title,
+			sub: msg('drawing.guides'),
+			path: `/drawing?tab=guides#guide-${g.id}`,
+			names: names(g.title.nl, g.title.en),
+			text: words(drawing, msg('drawing.guides'), g.intro, 'tekening tekeninstructie drawing'),
+			flagged: g.status === 'flagged'
+		}))
+	];
+}
+
 /** Screens, with the messages and extra words people may type for them. */
 const PAGES: { path: string; title: MessageKey; also: MessageKey[]; extra?: string }[] = [
 	{ path: '/steel', title: 'home.steel', also: ['home.structureTitle'], extra: 'staalprofielen' },
@@ -175,7 +221,12 @@ const PAGES: { path: string; title: MessageKey; also: MessageKey[]; extra?: stri
 	{ path: '/timber', title: 'home.timber', also: ['timber.sawn', 'timber.glulam'] },
 	{ path: '/concrete', title: 'home.concrete', also: ['concrete.rebar'], extra: 'wapening' },
 	{ path: '/space', title: 'spacePage.title', also: ['home.spaceTitle'], extra: 'bbl bouwbesluit' },
-	{ path: '/drawing', title: 'home.drawing', also: ['home.drawingTitle'] },
+	{
+		path: '/drawing',
+		title: 'home.drawing',
+		also: ['home.drawingTitle'],
+		extra: 'tekenen arcering nen 2302'
+	},
 	{ path: '/tools', title: 'tools.title', also: ['nav.tools'], extra: 'calculator' },
 	{ path: '/saved', title: 'nav.saved', also: [], extra: 'stuklijst favorieten' },
 	{ path: '/settings', title: 'common.settings', also: ['common.language'] }
@@ -213,7 +264,8 @@ export function buildSearchIndex(c: SearchContent): SearchIndex {
 		...rebarEntries(c.rebar),
 		...sheetEntries(c.sheets),
 		...bblEntries(c.bbl),
-		...steelFactEntries(c.steelFacts)
+		...steelFactEntries(c.steelFacts),
+		...drawingEntries(c.drawing)
 	];
 	return { shared, entries };
 }

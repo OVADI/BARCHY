@@ -8,6 +8,7 @@ export const SEARCH_KINDS = [
 	'timber',
 	'rebar',
 	'sheet',
+	'drawing',
 	'requirement',
 	'rule_of_thumb',
 	'data'

@@ -102,7 +102,8 @@
 			"steel": "Staalprofiel",
 			"timber": "Hout",
 			"rebar": "Wapening",
-			"sheet": "Staalplaat"
+			"sheet": "Staalplaat",
+			"drawing": "Tekenen"
 		}
 	},
 	"tools": {
@@ -262,7 +263,7 @@
 			"Wz": "Weerstandsmoment om de zwakke as, h·b²/6. Van belang als de balk plat ligt of zijdelings wordt belast.",
 			"Iz": "Traagheidsmoment om de zwakke as, h·b³/12. Meestal maatgevend voor knik van een stijl of kolom, en voor kippen van slanke balken."
 		},
-		"hatch": "Schematische arcering: schuine lijnen voor gezaagd hout, liggende lijnen voor de lamellen van gelamineerd hout. Nog niet volgens een tekennorm; dat volgt in fase 7."
+		"hatch": "Arcering hout volgens het Vademecum (NEN 2302). Voor gelamineerd hout geeft de bron geen eigen arcering."
 	},
 	"concrete": {
 		"title": "Beton",
@@ -277,7 +278,35 @@
 		"rounded": "Waarden zoals gepubliceerd in het Vademecum, afgerond op hele mm²."
 	},
 	"drawing": {
-		"title": "Tekenen"
+		"title": "Tekenen",
+		"tabs": "Onderdelen",
+		"lines": "Lijnsoorten",
+		"hatch": "Arcering",
+		"guides": "Constructietekeningen",
+		"intro": "Benamingen en arceringen voor constructietekeningen uit het Vademecum, gebaseerd op NEN 2302.",
+		"flagged": "De arceringen en lijnen zijn opnieuw getekend naar de afbeeldingen in het Vademecum en nog niet door een persoon gecontroleerd. Vergelijk ze met de bron voordat je ze gebruikt.",
+		"usedFor": "Gebruikt voor",
+		"notUsed": "De tekeninstructies noemen deze lijn niet bij een stap.",
+		"scale": "Schaal",
+		"allScales": "Alle",
+		"scaleValue": "1:{n}",
+		"noHatch": "Geen arcering voor deze schaal in deze groep.",
+		"variant": "Variant {n}",
+		"group": {
+			"stone": "Steenachtig",
+			"timber": "Hout",
+			"steel": "Staal en metalen",
+			"other": "Overig"
+		},
+		"weight": "{w} mm",
+		"color": {
+			"accent": "eventueel andere kleur",
+			"grey": "grijs",
+			"black": "zwart"
+		},
+		"relative": "Lijndikte in verhouding getekend, niet op ware grootte.",
+		"issue": "Let op",
+		"hatchSource": "Arceringen in het Vademecum volgens: {ref}"
 	},
 	"stairDiagram": {
 		"view": "Aanzicht",
