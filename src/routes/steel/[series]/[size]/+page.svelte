@@ -84,7 +84,7 @@
 	</div>
 {/if}
 
-<Tile tone="paper" pad="lg">
+<Tile tone="orange" pad="lg">
 	<div class="hero-top">
 		<span class="hero-label"
 			><span class="t-symbol">G</span> <span class="t-label">{t('quantity.G.name')}</span></span

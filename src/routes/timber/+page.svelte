@@ -125,7 +125,7 @@
 	</div>
 {/if}
 
-<Tile tone="paper" pad="lg">
+<Tile tone="orange" pad="lg">
 	<span class="t-label">{t('timber.section')}</span>
 	<Stat
 		value={sizeText}
@@ -204,7 +204,7 @@
 		align-self: center;
 	}
 	.hatch {
-		color: var(--on-tile-muted);
+		color: var(--on-tile);
 	}
 	.hatch a {
 		color: var(--on-tile);
