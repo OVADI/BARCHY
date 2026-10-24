@@ -33,23 +33,41 @@
 	const IY: Quantity = { field: 'Iy', pow: 4, unit: 'mm⁴/m' };
 	const WY: Quantity = { field: 'Wy', pow: 3, unit: 'mm³/m' };
 	const values = $derived([
-		{ symbol: 'h', name: t('quantity.h.name'), value: s.h, unit: 'mm' },
-		{ symbol: 't', name: t('sheets.t'), value: s.t, unit: 'mm' },
+		{
+			symbol: 'h',
+			name: t('quantity.h.name'),
+			explain: t('sheets.explain.h'),
+			value: s.h,
+			unit: 'mm'
+		},
+		{ symbol: 't', name: t('sheets.t'), explain: t('sheets.explain.t'), value: s.t, unit: 'mm' },
 		{
 			symbol: 'Iy',
 			name: t('sheets.Iy'),
+			explain: t('sheets.explain.Iy'),
 			value: scaled(s.Iy, IY),
 			unit: unitLabel(IY),
-			flagged
+			flagged,
+			note: t('sheets.unitNote', { unit: unitLabel(IY) })
 		},
 		{
 			symbol: 'Wy',
 			name: t('sheets.Wy'),
+			explain: t('sheets.explain.Wy'),
 			value: scaled(s.Wy, WY),
 			unit: unitLabel(WY),
-			flagged
+			flagged,
+			note: t('sheets.unitNote', { unit: unitLabel(WY) })
 		},
-		{ symbol: 'σ', name: t('sheets.sigma'), value: s.sigma, unit: 'N/mm²', flagged }
+		{
+			symbol: 'σ',
+			name: t('sheets.sigma'),
+			explain: t('sheets.explain.sigma'),
+			value: s.sigma,
+			unit: 'N/mm²',
+			flagged,
+			note: t('sheets.sigmaNote')
+		}
 	]);
 
 	const PATH = '/steel/sheets';

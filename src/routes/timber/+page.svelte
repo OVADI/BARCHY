@@ -53,6 +53,7 @@
 			return {
 				symbol: f,
 				name: t(`quantity.${f}.name`),
+				explain: t(`timber.explain.${f}`),
 				value: scaled(s[f], q),
 				unit: unitLabel(q),
 				// Exact rectangle values have long tails; one decimal at this scale is plenty.
@@ -128,16 +129,26 @@
 		role="img"
 		aria-label={t('timber.drawing', { b: s.b, h: s.h })}
 	>
+		<defs>
+			<!-- Schematic only: sawn diagonal, glulam horizontal laminations; no drawing standard yet. -->
+			<pattern id="hatch-sawn" width="6" height="6" patternUnits="userSpaceOnUse">
+				<path d="M-1 7 7 -1M-1 1 1 -1M5 7 7 5" stroke="currentColor" stroke-width="1" />
+			</pattern>
+			<pattern id="hatch-glulam" width="6" height="6" patternUnits="userSpaceOnUse">
+				<path d="M0 3h6" stroke="currentColor" stroke-width="1" />
+			</pattern>
+		</defs>
 		<rect
 			x={(BOX - s.b * scale) / 2 + 1}
 			y={(BOX - s.h * scale) / 2 + 1}
 			width={s.b * scale - 2}
 			height={s.h * scale - 2}
-			fill="none"
+			fill="url(#hatch-{kind})"
 			stroke="currentColor"
 			stroke-width="2"
 		/>
 	</svg>
+	<p class="t-body-sm hatch">{t('timber.hatch')}</p>
 </Tile>
 
 <ValueGrid {values} label={t('timber.properties')} />
@@ -176,5 +187,8 @@
 	}
 	svg {
 		align-self: center;
+	}
+	.hatch {
+		color: var(--on-tile-muted);
 	}
 </style>

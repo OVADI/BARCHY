@@ -234,7 +234,15 @@
 		"drawing": "Cross-section {b} × {h} mm to scale",
 		"properties": "Section properties",
 		"flagged": "No value in the Vademecum table fits this size. The size may not belong in the table. A, W and I are still calculated exactly for a b × h rectangle.",
-		"method": "Sizes (b × h) from the table; A, W and I calculated exactly for a rectangle. Every table cell was checked against this calculation."
+		"method": "Sizes (b × h) from the table; A, W and I calculated exactly for a rectangle. Every table cell was checked against this calculation.",
+		"explain": {
+			"A": "The area of the cross-section, b × h. Sets how much tension or compression the member can carry and, with the density of the timber, the weight per metre.",
+			"Wy": "Section modulus about the strong axis, b·h²/6. Links bending moment to stress: stress = moment / W. Use it to check whether a beam on edge is strong enough.",
+			"Iy": "Second moment of area about the strong axis, b·h³/12. Says how stiff the beam is against deflection. Because h counts to the third power, a deeper beam helps far more than a wider one.",
+			"Wz": "Section modulus about the weak axis, h·b²/6. Matters when the member lies flat or is loaded sideways.",
+			"Iz": "Second moment of area about the weak axis, h·b³/12. Usually governs buckling of a stud or column, and lateral torsional buckling of slender beams."
+		},
+		"hatch": "Schematic hatching: diagonal lines for sawn timber, horizontal lines for the laminations of glulam. Not yet to a drawing standard; that follows in phase 7."
 	},
 	"concrete": {
 		"title": "Concrete",
@@ -314,6 +322,15 @@
 		"sigma": "Stress (not explained in the source)",
 		"properties": "Properties",
 		"flagged": "The Vademecum column header gives contradictory units. Iy and Wy are read here as ×10⁴ mm⁴/m and ×10³ mm³/m, and the source does not say which stress σ is. Do not use these values without checking the source.",
-		"units": "Iy and Wy per metre of sheet width, according to our reading of the column header. Not yet confirmed."
+		"units": "Iy and Wy per metre of sheet width, according to our reading of the column header. Not yet confirmed.",
+		"explain": {
+			"h": "The height of the profile, from the bottom to the top of the rib. A deeper sheet is stiffer and can span further.",
+			"t": "The thickness of the steel the sheet is formed from. A thicker sheet is stronger and stiffer, but also heavier.",
+			"Iy": "Second moment of area per metre of sheet width. Says how stiff the sheet is against deflection between supports.",
+			"Wy": "Section modulus per metre of sheet width. Links bending moment to stress: stress = moment / W.",
+			"sigma": "The source does not say which stress this is. Do not use this value until its meaning is clear."
+		},
+		"unitNote": "Unit read here as {unit}. The Vademecum column header is contradictory.",
+		"sigmaNote": "Meaning and unit not explained in the source."
 	}
 }
