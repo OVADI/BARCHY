@@ -1,12 +1,14 @@
 import { sveltekit } from '@sveltejs/kit/vite';
 import { SvelteKitPWA } from '@vite-pwa/sveltekit';
 import { defineConfig } from 'vitest/config';
+import { contentValidation } from './src/lib/content/vite-plugin';
 
 const base = process.env.BASE_PATH ?? '';
 const scope = `${base}/`;
 
 export default defineConfig({
 	plugins: [
+		contentValidation(import.meta.dirname),
 		sveltekit(),
 		SvelteKitPWA({
 			registerType: 'autoUpdate',
@@ -45,10 +47,11 @@ export default defineConfig({
 					'prerendered/**/*.{html,json}'
 				],
 				globIgnores: ['**/dev/**'],
-				navigateFallback: null,
+				// Profile URLs (/steel/hea/200) are not prerendered: offline they open the precached SPA shell.
+				navigateFallbackDenylist: [/\/data\//],
 				cleanupOutdatedCaches: true
 			},
-			kit: { includeVersionFile: true }
+			kit: { includeVersionFile: true, adapterFallback: '404.html', spa: true }
 		})
 	],
 	test: {

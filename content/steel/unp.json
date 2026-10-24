@@ -1,0 +1,542 @@
+{
+	"family": "UNP",
+	"source": {
+		"title": "TU Delft Vademecum (TeachBooks)",
+		"ref": "Oorspronkelijke staaldata: Bouwen met Staal",
+		"url": "https://github.com/TeachBooks/vademecum",
+		"license": "CC BY 4.0"
+	},
+	"origin": {
+		"repo": "https://github.com/TeachBooks/vademecum",
+		"commit": "9a2f70afd158b7cee533c119bf4c88ae15106d4a",
+		"path": "book/basis_gegevens/dimensietabellen/staal.md",
+		"section": "UNP sections"
+	},
+	"sections": [
+		{
+			"id": "unp-80",
+			"family": "UNP",
+			"series": "UNP",
+			"size": "80",
+			"name": "UNP 80",
+			"sourceName": "80x45",
+			"aliases": [
+				"UNP 80",
+				"UNP80",
+				"U 80"
+			],
+			"G": 8.7,
+			"A": 1100,
+			"Iy": 1059000,
+			"Wy": 26500,
+			"iy": 31.028,
+			"issues": [],
+			"corrections": [],
+			"derived": [
+				"iy",
+				"iz"
+			],
+			"status": "auto_checked",
+			"shape": "U",
+			"h": 80,
+			"b": 45,
+			"tw": 6,
+			"Iz": 193600,
+			"Wz": 6360,
+			"iz": 13.266
+		},
+		{
+			"id": "unp-100",
+			"family": "UNP",
+			"series": "UNP",
+			"size": "100",
+			"name": "UNP 100",
+			"sourceName": "100x50",
+			"aliases": [
+				"UNP 100",
+				"UNP100",
+				"U 100"
+			],
+			"G": 10.6,
+			"A": 1350,
+			"Iy": 2053000,
+			"Wy": 41200,
+			"iy": 38.997,
+			"issues": [],
+			"corrections": [],
+			"derived": [
+				"iy",
+				"iz"
+			],
+			"status": "auto_checked",
+			"shape": "U",
+			"h": 100,
+			"b": 50,
+			"tw": 6,
+			"Iz": 291500,
+			"Wz": 8490,
+			"iz": 14.694
+		},
+		{
+			"id": "unp-120",
+			"family": "UNP",
+			"series": "UNP",
+			"size": "120",
+			"name": "UNP 120",
+			"sourceName": "120x55",
+			"aliases": [
+				"UNP 120",
+				"UNP120",
+				"U 120"
+			],
+			"G": 13.4,
+			"A": 1700,
+			"Iy": 3643000,
+			"Wy": 60700,
+			"iy": 46.292,
+			"issues": [],
+			"corrections": [],
+			"derived": [
+				"iy",
+				"iz"
+			],
+			"status": "auto_checked",
+			"shape": "U",
+			"h": 120,
+			"b": 55,
+			"tw": 7,
+			"Iz": 430600,
+			"Wz": 11100,
+			"iz": 15.915
+		},
+		{
+			"id": "unp-140",
+			"family": "UNP",
+			"series": "UNP",
+			"size": "140",
+			"name": "UNP 140",
+			"sourceName": "140x60",
+			"aliases": [
+				"UNP 140",
+				"UNP140",
+				"U 140"
+			],
+			"G": 16,
+			"A": 2040,
+			"Iy": 6048000,
+			"Wy": 86400,
+			"iy": 54.449,
+			"issues": [],
+			"corrections": [],
+			"derived": [
+				"iy",
+				"iz"
+			],
+			"status": "auto_checked",
+			"shape": "U",
+			"h": 140,
+			"b": 60,
+			"tw": 7,
+			"Iz": 624800,
+			"Wz": 14800,
+			"iz": 17.501
+		},
+		{
+			"id": "unp-160",
+			"family": "UNP",
+			"series": "UNP",
+			"size": "160",
+			"name": "UNP 160",
+			"sourceName": "150x65",
+			"aliases": [
+				"UNP 160",
+				"UNP160",
+				"U 160",
+				"UPN 160"
+			],
+			"G": 18.8,
+			"A": 2400,
+			"Iy": 9247000,
+			"Wy": 116000,
+			"iy": 62.072,
+			"issues": [],
+			"corrections": [
+				{
+					"field": "h",
+					"from": 150,
+					"to": 160,
+					"reason": "Alle waarden in deze rij (G 18,8 kg/m, A 24,0 cm², Iy 925 cm⁴, Wy 116 cm³, Iz 85,3 cm⁴, Wz 18,3 cm³) horen bij UPN 160; Wy = Iy/(h/2) klopt alleen met h = 160. Een UPN 150 komt in de catalogus niet voor. Alleen de maat is gecorrigeerd, niet de waarden.",
+					"source": {
+						"title": "ArcelorMittal Europe – Long Products, Sections and Merchant bars, Sales programme 2024-1",
+						"ref": "UPN, p. 100–101",
+						"url": "https://sections.arcelormittal.com/sections/repository/Sections/Sections_MB_ArcelorMittal_FR_EN_DE.pdf"
+					}
+				}
+			],
+			"derived": [
+				"iy",
+				"iz"
+			],
+			"status": "auto_checked",
+			"shape": "U",
+			"h": 160,
+			"b": 65,
+			"tw": 7.5,
+			"Iz": 850400,
+			"Wz": 18300,
+			"iz": 18.824
+		},
+		{
+			"id": "unp-180",
+			"family": "UNP",
+			"series": "UNP",
+			"size": "180",
+			"name": "UNP 180",
+			"sourceName": "180x70",
+			"aliases": [
+				"UNP 180",
+				"UNP180",
+				"U 180"
+			],
+			"G": 22,
+			"A": 2800,
+			"Iy": 13500000,
+			"Wy": 150000,
+			"iy": 69.437,
+			"issues": [],
+			"corrections": [],
+			"derived": [
+				"iy",
+				"iz"
+			],
+			"status": "auto_checked",
+			"shape": "U",
+			"h": 180,
+			"b": 70,
+			"tw": 8,
+			"Iz": 1135000,
+			"Wz": 22400,
+			"iz": 20.133
+		},
+		{
+			"id": "unp-200",
+			"family": "UNP",
+			"series": "UNP",
+			"size": "200",
+			"name": "UNP 200",
+			"sourceName": "200x75",
+			"aliases": [
+				"UNP 200",
+				"UNP200",
+				"U 200"
+			],
+			"G": 25.3,
+			"A": 3220,
+			"Iy": 19100000,
+			"Wy": 191000,
+			"iy": 77.017,
+			"issues": [],
+			"corrections": [],
+			"derived": [
+				"iy",
+				"iz"
+			],
+			"status": "auto_checked",
+			"shape": "U",
+			"h": 200,
+			"b": 75,
+			"tw": 8.5,
+			"Iz": 1477000,
+			"Wz": 27000,
+			"iz": 21.417
+		},
+		{
+			"id": "unp-220",
+			"family": "UNP",
+			"series": "UNP",
+			"size": "220",
+			"name": "UNP 220",
+			"sourceName": "220x80",
+			"aliases": [
+				"UNP 220",
+				"UNP220",
+				"U 220"
+			],
+			"G": 29.4,
+			"A": 3740,
+			"Iy": 26900000,
+			"Wy": 245000,
+			"iy": 84.809,
+			"issues": [],
+			"corrections": [],
+			"derived": [
+				"iy",
+				"iz"
+			],
+			"status": "auto_checked",
+			"shape": "U",
+			"h": 220,
+			"b": 80,
+			"tw": 9,
+			"Iz": 1955000,
+			"Wz": 33600,
+			"iz": 22.863
+		},
+		{
+			"id": "unp-240",
+			"family": "UNP",
+			"series": "UNP",
+			"size": "240",
+			"name": "UNP 240",
+			"sourceName": "240x85",
+			"aliases": [
+				"UNP 240",
+				"UNP240",
+				"U 240"
+			],
+			"G": 33.2,
+			"A": 4230,
+			"Iy": 36000000,
+			"Wy": 300000,
+			"iy": 92.253,
+			"issues": [],
+			"corrections": [],
+			"derived": [
+				"iy",
+				"iz"
+			],
+			"status": "auto_checked",
+			"shape": "U",
+			"h": 240,
+			"b": 85,
+			"tw": 9.5,
+			"Iz": 2474000,
+			"Wz": 39600,
+			"iz": 24.184
+		},
+		{
+			"id": "unp-260",
+			"family": "UNP",
+			"series": "UNP",
+			"size": "260",
+			"name": "UNP 260",
+			"sourceName": "260x90",
+			"aliases": [
+				"UNP 260",
+				"UNP260",
+				"U 260"
+			],
+			"G": 37.9,
+			"A": 4830,
+			"Iy": 48200000,
+			"Wy": 371000,
+			"iy": 99.896,
+			"issues": [],
+			"corrections": [],
+			"derived": [
+				"iy",
+				"iz"
+			],
+			"status": "auto_checked",
+			"shape": "U",
+			"h": 260,
+			"b": 90,
+			"tw": 10,
+			"Iz": 3173000,
+			"Wz": 47700,
+			"iz": 25.631
+		},
+		{
+			"id": "unp-280",
+			"family": "UNP",
+			"series": "UNP",
+			"size": "280",
+			"name": "UNP 280",
+			"sourceName": "280x95",
+			"aliases": [
+				"UNP 280",
+				"UNP280",
+				"U 280"
+			],
+			"G": 41.8,
+			"A": 5340,
+			"Iy": 62800000,
+			"Wy": 448000,
+			"iy": 108.445,
+			"issues": [],
+			"corrections": [],
+			"derived": [
+				"iy",
+				"iz"
+			],
+			"status": "auto_checked",
+			"shape": "U",
+			"h": 280,
+			"b": 95,
+			"tw": 10,
+			"Iz": 3982000,
+			"Wz": 57200,
+			"iz": 27.307
+		},
+		{
+			"id": "unp-300",
+			"family": "UNP",
+			"series": "UNP",
+			"size": "300",
+			"name": "UNP 300",
+			"sourceName": "300x100",
+			"aliases": [
+				"UNP 300",
+				"UNP300",
+				"U 300"
+			],
+			"G": 46.2,
+			"A": 5880,
+			"Iy": 80300000,
+			"Wy": 535000,
+			"iy": 116.861,
+			"issues": [],
+			"corrections": [],
+			"derived": [
+				"iy",
+				"iz"
+			],
+			"status": "auto_checked",
+			"shape": "U",
+			"h": 300,
+			"b": 100,
+			"tw": 10,
+			"Iz": 4931000,
+			"Wz": 67800,
+			"iz": 28.959
+		},
+		{
+			"id": "unp-320",
+			"family": "UNP",
+			"series": "UNP",
+			"size": "320",
+			"name": "UNP 320",
+			"sourceName": "320x100",
+			"aliases": [
+				"UNP 320",
+				"UNP320",
+				"U 320"
+			],
+			"G": 59.5,
+			"A": 7580,
+			"Iy": 108700000,
+			"Wy": 679000,
+			"iy": 119.751,
+			"issues": [],
+			"corrections": [],
+			"derived": [
+				"iy",
+				"iz"
+			],
+			"status": "auto_checked",
+			"shape": "U",
+			"h": 320,
+			"b": 100,
+			"tw": 14,
+			"Iz": 5966000,
+			"Wz": 80600,
+			"iz": 28.055
+		},
+		{
+			"id": "unp-350",
+			"family": "UNP",
+			"series": "UNP",
+			"size": "350",
+			"name": "UNP 350",
+			"sourceName": "350x100",
+			"aliases": [
+				"UNP 350",
+				"UNP350",
+				"U 350"
+			],
+			"G": 60.6,
+			"A": 7730,
+			"Iy": 128400000,
+			"Wy": 734000,
+			"iy": 128.882,
+			"issues": [],
+			"corrections": [],
+			"derived": [
+				"iy",
+				"iz"
+			],
+			"status": "auto_checked",
+			"shape": "U",
+			"h": 350,
+			"b": 100,
+			"tw": 14,
+			"Iz": 5709000,
+			"Wz": 75000,
+			"iz": 27.176
+		},
+		{
+			"id": "unp-380",
+			"family": "UNP",
+			"series": "UNP",
+			"size": "380",
+			"name": "UNP 380",
+			"sourceName": "380x102",
+			"aliases": [
+				"UNP 380",
+				"UNP380",
+				"U 380"
+			],
+			"G": 63.1,
+			"A": 8040,
+			"Iy": 157600000,
+			"Wy": 829000,
+			"iy": 140.007,
+			"issues": [],
+			"corrections": [],
+			"derived": [
+				"iy",
+				"iz"
+			],
+			"status": "auto_checked",
+			"shape": "U",
+			"h": 380,
+			"b": 102,
+			"tw": 13.5,
+			"Iz": 6152000,
+			"Wz": 78700,
+			"iz": 27.662
+		},
+		{
+			"id": "unp-400",
+			"family": "UNP",
+			"series": "UNP",
+			"size": "400",
+			"name": "UNP 400",
+			"sourceName": "400x110",
+			"aliases": [
+				"UNP 400",
+				"UNP400",
+				"U 400"
+			],
+			"G": 71.8,
+			"A": 9150,
+			"Iy": 203500000,
+			"Wy": 1020000,
+			"iy": 149.132,
+			"issues": [],
+			"corrections": [],
+			"derived": [
+				"iy",
+				"iz"
+			],
+			"status": "auto_checked",
+			"shape": "U",
+			"h": 400,
+			"b": 110,
+			"tw": 14,
+			"Iz": 8510000,
+			"Wz": 102000,
+			"iz": 30.497
+		}
+	]
+}

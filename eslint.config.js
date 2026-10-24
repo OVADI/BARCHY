@@ -13,7 +13,8 @@ export default ts.config(
 			'dev-dist/',
 			'node_modules/',
 			'test-results/',
-			'playwright-report/'
+			'playwright-report/',
+			'.claude/worktrees/'
 		]
 	},
 	js.configs.recommended,

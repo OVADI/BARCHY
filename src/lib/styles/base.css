@@ -97,6 +97,10 @@ svg {
 	letter-spacing: var(--label-tracking);
 	text-transform: uppercase;
 }
+.t-symbol {
+	/* Quantity symbols are case-sensitive (Iy ≠ IY): mono like labels, never uppercased */
+	font: 500 13px/1.2 var(--font-mono);
+}
 .t-muted {
 	color: var(--ink-muted);
 }

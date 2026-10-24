@@ -53,7 +53,7 @@
 		gap: var(--space-2);
 		flex-shrink: 0;
 		min-height: var(--touch);
-		padding: 0 18px;
+		padding: 0 16px;
 		border-radius: var(--radius-pill);
 		font: 500 15px/1 var(--font-sans);
 		white-space: nowrap;

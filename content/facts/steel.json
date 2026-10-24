@@ -1,0 +1,672 @@
+{
+	"facts": [
+		{
+			"id": "staal-hoofdligger-vloer-h-profiel",
+			"topic": "steel",
+			"type": "rule_of_thumb",
+			"group": "beams-floor",
+			"label": {
+				"nl": "Hoofdligger vloer, H-profiel of koker",
+				"en": "Main floor beam, H-section or hollow section"
+			},
+			"value": [18, 28],
+			"unit": "",
+			"divisorOf": "l",
+			"bound": "range",
+			"scope": {
+				"nl": "l = 4 tot 12 m, h = 100 tot 500 mm",
+				"en": "l = 4 to 12 m, h = 100 to 500 mm"
+			},
+			"source": {
+				"title": "TU Delft Vademecum (TeachBooks)",
+				"ref": "§6.3 Liggers",
+				"url": "https://github.com/TeachBooks/vademecum/blob/9a2f70afd158b7cee533c119bf4c88ae15106d4a/book/ontwerp/staal/liggers.md",
+				"license": "CC BY 4.0"
+			},
+			"status": "flagged"
+		},
+		{
+			"id": "staal-hoofdligger-vloer-i-u-profiel",
+			"topic": "steel",
+			"type": "rule_of_thumb",
+			"group": "beams-floor",
+			"label": {
+				"nl": "Hoofdligger vloer, I- of U-profiel",
+				"en": "Main floor beam, I- or U-section"
+			},
+			"value": [15, 20],
+			"unit": "",
+			"divisorOf": "l",
+			"bound": "range",
+			"scope": {
+				"nl": "l = 6 tot 30 m, h = 200 tot 500 mm",
+				"en": "l = 6 to 30 m, h = 200 to 500 mm"
+			},
+			"source": {
+				"title": "TU Delft Vademecum (TeachBooks)",
+				"ref": "§6.3 Liggers",
+				"url": "https://github.com/TeachBooks/vademecum/blob/9a2f70afd158b7cee533c119bf4c88ae15106d4a/book/ontwerp/staal/liggers.md",
+				"license": "CC BY 4.0"
+			},
+			"status": "flagged"
+		},
+		{
+			"id": "staal-hoofdligger-vloer-vakwerk",
+			"topic": "steel",
+			"type": "rule_of_thumb",
+			"group": "beams-floor",
+			"label": {
+				"nl": "Vakwerkligger vloer",
+				"en": "Floor truss"
+			},
+			"value": [8, 15],
+			"unit": "",
+			"divisorOf": "l",
+			"bound": "range",
+			"scope": {
+				"nl": "l = 12 à 45 m, h = 1000 tot 4000 mm",
+				"en": "l = 12 to 45 m, h = 1000 to 4000 mm"
+			},
+			"source": {
+				"title": "TU Delft Vademecum (TeachBooks)",
+				"ref": "§6.3 Liggers",
+				"url": "https://github.com/TeachBooks/vademecum/blob/9a2f70afd158b7cee533c119bf4c88ae15106d4a/book/ontwerp/staal/liggers.md",
+				"license": "CC BY 4.0"
+			},
+			"status": "flagged"
+		},
+		{
+			"id": "staal-hoofdligger-dak-h-profiel",
+			"topic": "steel",
+			"type": "rule_of_thumb",
+			"group": "beams-roof",
+			"label": {
+				"nl": "Hoofdligger dak, H-profiel of koker",
+				"en": "Main roof beam, H-section or hollow section"
+			},
+			"value": [20, 30],
+			"unit": "",
+			"divisorOf": "l",
+			"bound": "range",
+			"scope": {
+				"nl": "l = 6 tot 14 m, h = 100 tot 500 mm",
+				"en": "l = 6 to 14 m, h = 100 to 500 mm"
+			},
+			"source": {
+				"title": "TU Delft Vademecum (TeachBooks)",
+				"ref": "§6.3 Liggers",
+				"url": "https://github.com/TeachBooks/vademecum/blob/9a2f70afd158b7cee533c119bf4c88ae15106d4a/book/ontwerp/staal/liggers.md",
+				"license": "CC BY 4.0"
+			},
+			"status": "flagged"
+		},
+		{
+			"id": "staal-dak-vakwerkligger-1",
+			"topic": "steel",
+			"type": "rule_of_thumb",
+			"group": "beams-roof",
+			"label": {
+				"nl": "Vakwerkligger dak (I)",
+				"en": "Roof truss (I)"
+			},
+			"value": [10, 18],
+			"unit": "",
+			"divisorOf": "l",
+			"bound": "range",
+			"scope": {
+				"nl": "l = 12 tot 75 m",
+				"en": "l = 12 to 75 m"
+			},
+			"source": {
+				"title": "TU Delft Vademecum (TeachBooks)",
+				"ref": "§6.3 Liggers",
+				"url": "https://github.com/TeachBooks/vademecum/blob/9a2f70afd158b7cee533c119bf4c88ae15106d4a/book/ontwerp/staal/liggers.md",
+				"license": "CC BY 4.0"
+			},
+			"status": "flagged"
+		},
+		{
+			"id": "staal-dak-vakwerkligger-2",
+			"topic": "steel",
+			"type": "rule_of_thumb",
+			"group": "beams-roof",
+			"label": {
+				"nl": "Vakwerkligger dak (II)",
+				"en": "Roof truss (II)"
+			},
+			"value": [15, 25],
+			"unit": "",
+			"divisorOf": "l",
+			"bound": "range",
+			"scope": {
+				"nl": "l = 5 tot 28 m, h = 300 tot 1000 mm",
+				"en": "l = 5 to 28 m, h = 300 to 1000 mm"
+			},
+			"source": {
+				"title": "TU Delft Vademecum (TeachBooks)",
+				"ref": "§6.3 Liggers",
+				"url": "https://github.com/TeachBooks/vademecum/blob/9a2f70afd158b7cee533c119bf4c88ae15106d4a/book/ontwerp/staal/liggers.md",
+				"license": "CC BY 4.0"
+			},
+			"status": "flagged"
+		},
+		{
+			"id": "staal-driehoekdakligger",
+			"topic": "steel",
+			"type": "rule_of_thumb",
+			"group": "beams-roof",
+			"label": {
+				"nl": "Driehoekdakligger",
+				"en": "Triangular roof girder"
+			},
+			"value": [5, 10],
+			"unit": "",
+			"divisorOf": "l",
+			"bound": "range",
+			"scope": {
+				"nl": "l = 8 tot 20 m, h = 300 tot 1000 mm",
+				"en": "l = 8 to 20 m, h = 300 to 1000 mm"
+			},
+			"source": {
+				"title": "TU Delft Vademecum (TeachBooks)",
+				"ref": "§6.3 Liggers",
+				"url": "https://github.com/TeachBooks/vademecum/blob/9a2f70afd158b7cee533c119bf4c88ae15106d4a/book/ontwerp/staal/liggers.md",
+				"license": "CC BY 4.0"
+			},
+			"status": "flagged"
+		},
+		{
+			"id": "staal-gording-koudgewalst",
+			"topic": "steel",
+			"type": "rule_of_thumb",
+			"group": "purlins",
+			"label": {
+				"nl": "Gording, koudgewalst profiel",
+				"en": "Purlin, cold-formed section"
+			},
+			"value": [25, 35],
+			"unit": "",
+			"divisorOf": "l",
+			"bound": "range",
+			"scope": {
+				"nl": "l = 3 tot 12 m, h = 120 tot 300 mm",
+				"en": "l = 3 to 12 m, h = 120 to 300 mm"
+			},
+			"source": {
+				"title": "TU Delft Vademecum (TeachBooks)",
+				"ref": "§6.3 Liggers",
+				"url": "https://github.com/TeachBooks/vademecum/blob/9a2f70afd158b7cee533c119bf4c88ae15106d4a/book/ontwerp/staal/liggers.md",
+				"license": "CC BY 4.0"
+			},
+			"status": "flagged"
+		},
+		{
+			"id": "staal-gording-warmgewalst",
+			"topic": "steel",
+			"type": "rule_of_thumb",
+			"group": "purlins",
+			"label": {
+				"nl": "Gording, warmgewalst profiel",
+				"en": "Purlin, hot-rolled section"
+			},
+			"value": [18, 26],
+			"unit": "",
+			"divisorOf": "l",
+			"bound": "range",
+			"scope": {
+				"nl": "l = 6 tot 40 m, h = 200 tot 1000 mm",
+				"en": "l = 6 to 40 m, h = 200 to 1000 mm"
+			},
+			"source": {
+				"title": "TU Delft Vademecum (TeachBooks)",
+				"ref": "§6.3 Liggers",
+				"url": "https://github.com/TeachBooks/vademecum/blob/9a2f70afd158b7cee533c119bf4c88ae15106d4a/book/ontwerp/staal/liggers.md",
+				"license": "CC BY 4.0"
+			},
+			"status": "flagged"
+		},
+		{
+			"id": "staal-kolom-verdiepingen-1",
+			"topic": "steel",
+			"type": "rule_of_thumb",
+			"group": "columns",
+			"label": {
+				"nl": "Kolom, 1 verdieping",
+				"en": "Column, 1 storey"
+			},
+			"value": 25,
+			"unit": "",
+			"divisorOf": "L",
+			"bound": "exact",
+			"scope": {
+				"nl": "v = 1, L ≤ 8 m; geschoorde constructie, grid tot 8 × 8 m, kokers of HEA en zwaarder. v = gedragen verdiepingen, L = kolomlengte; maat in de kniklengterichting.",
+				"en": "v = 1, L ≤ 8 m; braced structure, grid up to 8 × 8 m, hollow sections or HEA and heavier. v = storeys carried, L = column length; size in the buckling direction."
+			},
+			"source": {
+				"title": "TU Delft Vademecum (TeachBooks)",
+				"ref": "§6.5 Kolommen",
+				"url": "https://github.com/TeachBooks/vademecum/blob/9a2f70afd158b7cee533c119bf4c88ae15106d4a/book/ontwerp/staal/kolommen.md",
+				"license": "CC BY 4.0"
+			},
+			"status": "flagged"
+		},
+		{
+			"id": "staal-kolom-verdiepingen-2-3",
+			"topic": "steel",
+			"type": "rule_of_thumb",
+			"group": "columns",
+			"label": {
+				"nl": "Kolom, 2 tot 3 verdiepingen",
+				"en": "Column, 2 to 3 storeys"
+			},
+			"value": 20,
+			"unit": "",
+			"divisorOf": "L",
+			"bound": "exact",
+			"scope": {
+				"nl": "1 < v ≤ 3, L ≤ 4 m; geschoorde constructie, grid tot 8 × 8 m, kokers of HEA en zwaarder. v = gedragen verdiepingen, L = kolomlengte; maat in de kniklengterichting.",
+				"en": "1 < v ≤ 3, L ≤ 4 m; braced structure, grid up to 8 × 8 m, hollow sections or HEA and heavier. v = storeys carried, L = column length; size in the buckling direction."
+			},
+			"source": {
+				"title": "TU Delft Vademecum (TeachBooks)",
+				"ref": "§6.5 Kolommen",
+				"url": "https://github.com/TeachBooks/vademecum/blob/9a2f70afd158b7cee533c119bf4c88ae15106d4a/book/ontwerp/staal/kolommen.md",
+				"license": "CC BY 4.0"
+			},
+			"status": "flagged"
+		},
+		{
+			"id": "staal-kolom-verdiepingen-4-5",
+			"topic": "steel",
+			"type": "rule_of_thumb",
+			"group": "columns",
+			"label": {
+				"nl": "Kolom, 4 tot 5 verdiepingen",
+				"en": "Column, 4 to 5 storeys"
+			},
+			"value": 16,
+			"unit": "",
+			"divisorOf": "L",
+			"bound": "exact",
+			"scope": {
+				"nl": "3 < v ≤ 5, L ≤ 4 m; geschoorde constructie, grid tot 8 × 8 m, kokers of HEA en zwaarder. v = gedragen verdiepingen, L = kolomlengte; maat in de kniklengterichting.",
+				"en": "3 < v ≤ 5, L ≤ 4 m; braced structure, grid up to 8 × 8 m, hollow sections or HEA and heavier. v = storeys carried, L = column length; size in the buckling direction."
+			},
+			"source": {
+				"title": "TU Delft Vademecum (TeachBooks)",
+				"ref": "§6.5 Kolommen",
+				"url": "https://github.com/TeachBooks/vademecum/blob/9a2f70afd158b7cee533c119bf4c88ae15106d4a/book/ontwerp/staal/kolommen.md",
+				"license": "CC BY 4.0"
+			},
+			"status": "flagged"
+		},
+		{
+			"id": "staal-kolom-verdiepingen-6-8",
+			"topic": "steel",
+			"type": "rule_of_thumb",
+			"group": "columns",
+			"label": {
+				"nl": "Kolom, 6 tot 8 verdiepingen",
+				"en": "Column, 6 to 8 storeys"
+			},
+			"value": 13,
+			"unit": "",
+			"divisorOf": "L",
+			"bound": "exact",
+			"scope": {
+				"nl": "5 < v ≤ 8, L ≤ 4 m; geschoorde constructie, grid tot 8 × 8 m, kokers of HEA en zwaarder. v = gedragen verdiepingen, L = kolomlengte; maat in de kniklengterichting.",
+				"en": "5 < v ≤ 8, L ≤ 4 m; braced structure, grid up to 8 × 8 m, hollow sections or HEA and heavier. v = storeys carried, L = column length; size in the buckling direction."
+			},
+			"source": {
+				"title": "TU Delft Vademecum (TeachBooks)",
+				"ref": "§6.5 Kolommen",
+				"url": "https://github.com/TeachBooks/vademecum/blob/9a2f70afd158b7cee533c119bf4c88ae15106d4a/book/ontwerp/staal/kolommen.md",
+				"license": "CC BY 4.0"
+			},
+			"status": "flagged"
+		},
+		{
+			"id": "staal-kolom-verdiepingen-9-12",
+			"topic": "steel",
+			"type": "rule_of_thumb",
+			"group": "columns",
+			"label": {
+				"nl": "Kolom, 9 tot 12 verdiepingen",
+				"en": "Column, 9 to 12 storeys"
+			},
+			"value": 11,
+			"unit": "",
+			"divisorOf": "L",
+			"bound": "exact",
+			"scope": {
+				"nl": "8 < v ≤ 12, L ≤ 4 m; geschoorde constructie, grid tot 8 × 8 m, kokers of HEA en zwaarder. v = gedragen verdiepingen, L = kolomlengte; maat in de kniklengterichting.",
+				"en": "8 < v ≤ 12, L ≤ 4 m; braced structure, grid up to 8 × 8 m, hollow sections or HEA and heavier. v = storeys carried, L = column length; size in the buckling direction."
+			},
+			"source": {
+				"title": "TU Delft Vademecum (TeachBooks)",
+				"ref": "§6.5 Kolommen",
+				"url": "https://github.com/TeachBooks/vademecum/blob/9a2f70afd158b7cee533c119bf4c88ae15106d4a/book/ontwerp/staal/kolommen.md",
+				"license": "CC BY 4.0"
+			},
+			"status": "flagged"
+		},
+		{
+			"id": "staal-windverband-lengte",
+			"topic": "steel",
+			"type": "rule_of_thumb",
+			"group": "stability",
+			"label": {
+				"nl": "Lengte windverband",
+				"en": "Length of a bracing bay"
+			},
+			"value": 6,
+			"unit": "",
+			"divisorOf": "H",
+			"bound": "exact",
+			"scope": {
+				"nl": "Horizontale afstand tussen de stijlen; H = gebouwhoogte",
+				"en": "Horizontal distance between the posts; H = building height"
+			},
+			"source": {
+				"title": "TU Delft Vademecum (TeachBooks)",
+				"ref": "§6.1 Stabiliteit",
+				"url": "https://github.com/TeachBooks/vademecum/blob/9a2f70afd158b7cee533c119bf4c88ae15106d4a/book/ontwerp/staal/stabiliteit.md",
+				"license": "CC BY 4.0"
+			},
+			"status": "flagged"
+		},
+		{
+			"id": "staal-volumieke-massa",
+			"topic": "steel",
+			"type": "data",
+			"group": "material",
+			"label": {
+				"nl": "Volumieke massa ρ",
+				"en": "Density ρ"
+			},
+			"value": 7850,
+			"unit": "kg/m³",
+			"source": {
+				"title": "TU Delft Vademecum (TeachBooks)",
+				"ref": "§12.1 Staal, sterkte en stijfheid",
+				"url": "https://github.com/TeachBooks/vademecum/blob/9a2f70afd158b7cee533c119bf4c88ae15106d4a/book/basis_gegevens/materiaaleigenschappen/staal.md",
+				"license": "CC BY 4.0"
+			},
+			"status": "flagged"
+		},
+		{
+			"id": "staal-elasticiteitsmodulus",
+			"topic": "steel",
+			"type": "data",
+			"group": "material",
+			"label": {
+				"nl": "Elasticiteitsmodulus E",
+				"en": "Modulus of elasticity E"
+			},
+			"value": 210000,
+			"unit": "N/mm²",
+			"source": {
+				"title": "TU Delft Vademecum (TeachBooks)",
+				"ref": "§12.1 Staal, sterkte en stijfheid",
+				"url": "https://github.com/TeachBooks/vademecum/blob/9a2f70afd158b7cee533c119bf4c88ae15106d4a/book/basis_gegevens/materiaaleigenschappen/staal.md",
+				"license": "CC BY 4.0"
+			},
+			"status": "flagged"
+		},
+		{
+			"id": "staal-afschuifmodulus",
+			"topic": "steel",
+			"type": "data",
+			"group": "material",
+			"label": {
+				"nl": "Afschuifmodulus G",
+				"en": "Shear modulus G"
+			},
+			"value": 81000,
+			"unit": "N/mm²",
+			"source": {
+				"title": "TU Delft Vademecum (TeachBooks)",
+				"ref": "§12.1 Staal, sterkte en stijfheid",
+				"url": "https://github.com/TeachBooks/vademecum/blob/9a2f70afd158b7cee533c119bf4c88ae15106d4a/book/basis_gegevens/materiaaleigenschappen/staal.md",
+				"license": "CC BY 4.0"
+			},
+			"status": "flagged"
+		},
+		{
+			"id": "staal-uitzettingscoefficient",
+			"topic": "steel",
+			"type": "data",
+			"group": "material",
+			"label": {
+				"nl": "Uitzettingscoëfficiënt α",
+				"en": "Coefficient of thermal expansion α"
+			},
+			"value": 1.2e-5,
+			"unit": "1/K",
+			"source": {
+				"title": "TU Delft Vademecum (TeachBooks)",
+				"ref": "§12.1 Staal, sterkte en stijfheid",
+				"url": "https://github.com/TeachBooks/vademecum/blob/9a2f70afd158b7cee533c119bf4c88ae15106d4a/book/basis_gegevens/materiaaleigenschappen/staal.md",
+				"license": "CC BY 4.0"
+			},
+			"status": "flagged"
+		},
+		{
+			"id": "staal-s235-vloeigrens",
+			"topic": "steel",
+			"type": "data",
+			"group": "grades",
+			"label": {
+				"nl": "Rekenwaarde vloeigrens f_y;d, S235",
+				"en": "Design yield strength f_y;d, S235"
+			},
+			"value": 235,
+			"unit": "N/mm²",
+			"source": {
+				"title": "TU Delft Vademecum (TeachBooks)",
+				"ref": "§12.1 Staal, sterkte en stijfheid",
+				"url": "https://github.com/TeachBooks/vademecum/blob/9a2f70afd158b7cee533c119bf4c88ae15106d4a/book/basis_gegevens/materiaaleigenschappen/staal.md",
+				"license": "CC BY 4.0"
+			},
+			"status": "flagged"
+		},
+		{
+			"id": "staal-s235-treksterkte",
+			"topic": "steel",
+			"type": "data",
+			"group": "grades",
+			"label": {
+				"nl": "Rekenwaarde treksterkte f_t;d, S235",
+				"en": "Design tensile strength f_t;d, S235"
+			},
+			"value": 360,
+			"unit": "N/mm²",
+			"source": {
+				"title": "TU Delft Vademecum (TeachBooks)",
+				"ref": "§12.1 Staal, sterkte en stijfheid",
+				"url": "https://github.com/TeachBooks/vademecum/blob/9a2f70afd158b7cee533c119bf4c88ae15106d4a/book/basis_gegevens/materiaaleigenschappen/staal.md",
+				"license": "CC BY 4.0"
+			},
+			"status": "flagged"
+		},
+		{
+			"id": "staal-s235-rek",
+			"topic": "steel",
+			"type": "data",
+			"group": "grades",
+			"label": {
+				"nl": "Rekenwaarde rek bij vloeien ε_y;d, S235",
+				"en": "Design yield strain ε_y;d, S235"
+			},
+			"value": 1.12,
+			"unit": "%",
+			"source": {
+				"title": "TU Delft Vademecum (TeachBooks)",
+				"ref": "§12.1 Staal, sterkte en stijfheid",
+				"url": "https://github.com/TeachBooks/vademecum/blob/9a2f70afd158b7cee533c119bf4c88ae15106d4a/book/basis_gegevens/materiaaleigenschappen/staal.md",
+				"license": "CC BY 4.0"
+			},
+			"status": "flagged"
+		},
+		{
+			"id": "staal-s275-vloeigrens",
+			"topic": "steel",
+			"type": "data",
+			"group": "grades",
+			"label": {
+				"nl": "Rekenwaarde vloeigrens f_y;d, S275",
+				"en": "Design yield strength f_y;d, S275"
+			},
+			"value": 275,
+			"unit": "N/mm²",
+			"source": {
+				"title": "TU Delft Vademecum (TeachBooks)",
+				"ref": "§12.1 Staal, sterkte en stijfheid",
+				"url": "https://github.com/TeachBooks/vademecum/blob/9a2f70afd158b7cee533c119bf4c88ae15106d4a/book/basis_gegevens/materiaaleigenschappen/staal.md",
+				"license": "CC BY 4.0"
+			},
+			"status": "flagged"
+		},
+		{
+			"id": "staal-s275-treksterkte",
+			"topic": "steel",
+			"type": "data",
+			"group": "grades",
+			"label": {
+				"nl": "Rekenwaarde treksterkte f_t;d, S275",
+				"en": "Design tensile strength f_t;d, S275"
+			},
+			"value": 430,
+			"unit": "N/mm²",
+			"source": {
+				"title": "TU Delft Vademecum (TeachBooks)",
+				"ref": "§12.1 Staal, sterkte en stijfheid",
+				"url": "https://github.com/TeachBooks/vademecum/blob/9a2f70afd158b7cee533c119bf4c88ae15106d4a/book/basis_gegevens/materiaaleigenschappen/staal.md",
+				"license": "CC BY 4.0"
+			},
+			"status": "flagged"
+		},
+		{
+			"id": "staal-s275-rek",
+			"topic": "steel",
+			"type": "data",
+			"group": "grades",
+			"label": {
+				"nl": "Rekenwaarde rek bij vloeien ε_y;d, S275",
+				"en": "Design yield strain ε_y;d, S275"
+			},
+			"value": 1.31,
+			"unit": "%",
+			"source": {
+				"title": "TU Delft Vademecum (TeachBooks)",
+				"ref": "§12.1 Staal, sterkte en stijfheid",
+				"url": "https://github.com/TeachBooks/vademecum/blob/9a2f70afd158b7cee533c119bf4c88ae15106d4a/book/basis_gegevens/materiaaleigenschappen/staal.md",
+				"license": "CC BY 4.0"
+			},
+			"status": "flagged"
+		},
+		{
+			"id": "staal-s355-vloeigrens",
+			"topic": "steel",
+			"type": "data",
+			"group": "grades",
+			"label": {
+				"nl": "Rekenwaarde vloeigrens f_y;d, S355",
+				"en": "Design yield strength f_y;d, S355"
+			},
+			"value": 355,
+			"unit": "N/mm²",
+			"source": {
+				"title": "TU Delft Vademecum (TeachBooks)",
+				"ref": "§12.1 Staal, sterkte en stijfheid",
+				"url": "https://github.com/TeachBooks/vademecum/blob/9a2f70afd158b7cee533c119bf4c88ae15106d4a/book/basis_gegevens/materiaaleigenschappen/staal.md",
+				"license": "CC BY 4.0"
+			},
+			"status": "flagged"
+		},
+		{
+			"id": "staal-s355-treksterkte",
+			"topic": "steel",
+			"type": "data",
+			"group": "grades",
+			"label": {
+				"nl": "Rekenwaarde treksterkte f_t;d, S355",
+				"en": "Design tensile strength f_t;d, S355"
+			},
+			"value": 510,
+			"unit": "N/mm²",
+			"source": {
+				"title": "TU Delft Vademecum (TeachBooks)",
+				"ref": "§12.1 Staal, sterkte en stijfheid",
+				"url": "https://github.com/TeachBooks/vademecum/blob/9a2f70afd158b7cee533c119bf4c88ae15106d4a/book/basis_gegevens/materiaaleigenschappen/staal.md",
+				"license": "CC BY 4.0"
+			},
+			"status": "flagged"
+		},
+		{
+			"id": "staal-s355-rek",
+			"topic": "steel",
+			"type": "data",
+			"group": "grades",
+			"label": {
+				"nl": "Rekenwaarde rek bij vloeien ε_y;d, S355",
+				"en": "Design yield strain ε_y;d, S355"
+			},
+			"value": 1.69,
+			"unit": "%",
+			"source": {
+				"title": "TU Delft Vademecum (TeachBooks)",
+				"ref": "§12.1 Staal, sterkte en stijfheid",
+				"url": "https://github.com/TeachBooks/vademecum/blob/9a2f70afd158b7cee533c119bf4c88ae15106d4a/book/basis_gegevens/materiaaleigenschappen/staal.md",
+				"license": "CC BY 4.0"
+			},
+			"status": "flagged"
+		},
+		{
+			"id": "staal-s420-vloeigrens",
+			"topic": "steel",
+			"type": "data",
+			"group": "grades",
+			"label": {
+				"nl": "Rekenwaarde vloeigrens f_y;d, S420",
+				"en": "Design yield strength f_y;d, S420"
+			},
+			"value": 420,
+			"unit": "N/mm²",
+			"source": {
+				"title": "TU Delft Vademecum (TeachBooks)",
+				"ref": "§12.1 Staal, sterkte en stijfheid",
+				"url": "https://github.com/TeachBooks/vademecum/blob/9a2f70afd158b7cee533c119bf4c88ae15106d4a/book/basis_gegevens/materiaaleigenschappen/staal.md",
+				"license": "CC BY 4.0"
+			},
+			"status": "flagged",
+			"scope": {
+				"nl": "Volgens de bron mag zonder extra toetsing geen hogere vloeigrens dan 355 N/mm² worden aangehouden.",
+				"en": "According to the source, no yield strength above 355 N/mm² may be used without additional checks."
+			}
+		},
+		{
+			"id": "staal-s460-vloeigrens",
+			"topic": "steel",
+			"type": "data",
+			"group": "grades",
+			"label": {
+				"nl": "Rekenwaarde vloeigrens f_y;d, S460",
+				"en": "Design yield strength f_y;d, S460"
+			},
+			"value": 460,
+			"unit": "N/mm²",
+			"source": {
+				"title": "TU Delft Vademecum (TeachBooks)",
+				"ref": "§12.1 Staal, sterkte en stijfheid",
+				"url": "https://github.com/TeachBooks/vademecum/blob/9a2f70afd158b7cee533c119bf4c88ae15106d4a/book/basis_gegevens/materiaaleigenschappen/staal.md",
+				"license": "CC BY 4.0"
+			},
+			"status": "flagged",
+			"scope": {
+				"nl": "Volgens de bron mag zonder extra toetsing geen hogere vloeigrens dan 355 N/mm² worden aangehouden.",
+				"en": "According to the source, no yield strength above 355 N/mm² may be used without additional checks."
+			}
+		}
+	]
+}

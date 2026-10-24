@@ -18,13 +18,44 @@
 		"language": "Taal",
 		"comingSoon": "Dit scherm wordt in een volgende fase gebouwd.",
 		"noSource": "Nog geen bron",
-		"reportMissing": "Meld wat je zocht"
+		"reportMissing": "Meld wat je zocht",
+		"loading": "Laden…",
+		"loadError": "De gegevens konden niet worden geladen.",
+		"notFound": "Dit profiel bestaat niet in de gegevens.",
+		"save": "Bewaren",
+		"unsave": "Niet meer bewaren",
+		"remove": "Verwijderen"
 	},
 	"info": {
 		"open": "Bronnen en info",
 		"heading": "Bronnen & info",
 		"license": "Licentie",
-		"verify": "Nog niet gecontroleerd"
+		"verify": "Nog niet gecontroleerd",
+		"origin": "Geïmporteerd uit {path}, commit {commit}",
+		"corrected": "Gecorrigeerd: {field} {from} → {to}",
+		"checkedAgainst": "Gecontroleerd tegen",
+		"homeNote": "Elke waarde toont haar eigen bron op het detailscherm.",
+		"savedNote": "De stuklijst staat alleen op dit apparaat.",
+		"calcNote": "Massa = G × lengte × aantal."
+	},
+	"status": {
+		"flagged": "Controleren",
+		"flaggedLong": "Deze waarde haalt een controle niet of is nog niet nagekeken. Gebruik haar niet zonder de bron te raadplegen.",
+		"recordFlagged": "Dit profiel bevat een fout in de bron. Controleer de waarden.",
+		"auto_checked": "Automatisch gecontroleerd op onderlinge samenhang",
+		"human_verified": "Gecontroleerd door {by} op {on}",
+		"factFlagged": "Nog niet gecontroleerd"
+	},
+	"check": {
+		"mass": "G past niet bij A",
+		"gyration": "i past niet bij √(I/A)",
+		"modulus": "W past niet bij I",
+		"order": "sterke en zwakke as verwisseld",
+		"plausible": "maat niet plausibel",
+		"duplicate": "naam komt dubbel voor in de bron",
+		"missing": "ontbreekt in de bron, berekend",
+		"geometry": "wijkt af van de geometrie",
+		"expected": "verwacht ongeveer {value}"
 	},
 	"type": {
 		"requirement": "Bbl",
@@ -39,22 +70,165 @@
 		"searchPlaceholder": "Zoek: HEA 200, trap, toilet",
 		"recent": "Recent",
 		"structure": "Constructie",
+		"structureTitle": "Profielen, vuistregels en materialen",
+		"steel": "Staal",
+		"timber": "Hout",
+		"concrete": "Beton",
 		"space": "Ruimte & mens",
+		"spaceTitle": "Trappen, sanitair, deuren en Bbl-eisen",
 		"drawing": "Tekenen",
-		"tools": "Rekentools"
+		"drawingTitle": "Lijnsoorten en arcering",
+		"tools": "Rekentools",
+		"toolsUnit": "tools",
+		"toolsSub": "Rekenen en direct toetsen"
 	},
 	"search": {
 		"title": "Zoeken"
 	},
 	"tools": {
 		"title": "Rekentools",
-		"stair": "Trapcalculator"
+		"stair": "Trapcalculator",
+		"steelWeight": "Gewicht staalprofiel"
 	},
 	"saved": {
-		"title": "Bewaard"
+		"title": "Bewaard",
+		"bom": "Stuklijst",
+		"favorites": "Favorieten",
+		"total": "Totaal",
+		"positions": "{n} posities",
+		"pieces": "{n} stuks",
+		"emptyBom": "Nog niets op de stuklijst. Voeg profielen toe vanaf een profielscherm.",
+		"emptyFavorites": "Nog geen favorieten. Tik op de bladwijzer bij een profiel of categorie.",
+		"line": "{count} × {length} mm",
+		"share": "Delen",
+		"csv": "CSV",
+		"csvFile": "barchy-stuklijst.csv",
+		"csvName": "Profiel",
+		"csvCount": "Aantal",
+		"csvLength": "Lengte (mm)",
+		"csvG": "G (kg/m)",
+		"csvMass": "Massa (kg)",
+		"shareTitle": "Stuklijst BARCHY",
+		"copied": "Stuklijst gekopieerd",
+		"clear": "Stuklijst leegmaken",
+		"clearConfirm": "Weet je het zeker? De stuklijst wordt geleegd.",
+		"removeLine": "{name} verwijderen",
+		"positionsOne": "{n} positie",
+		"piecesOne": "{n} stuk"
 	},
 	"steel": {
-		"title": "Staal"
+		"title": "Staal",
+		"profiles": "Profielen",
+		"rules": "Vuistregels",
+		"material": "Materiaal",
+		"tabs": "Onderdeel",
+		"iTitle": "I-profielen",
+		"iSub": "HEA, HEB, HEM, IPE",
+		"boxTitle": "Kokers",
+		"boxSub": "SHS, RHS",
+		"tubeTitle": "Buizen",
+		"tubeSub": "CHS, warmgewalst",
+		"uTitle": "U-profielen",
+		"uSub": "UNP",
+		"angleTitle": "Hoekstaal",
+		"flatTitle": "Strip en staf",
+		"featured": "Profielhoogte bij overspanning l",
+		"beamsFloor": "Liggers in vloeren",
+		"beamsRoof": "Liggers in daken",
+		"purlins": "Gordingen",
+		"columns": "Kolommen",
+		"stability": "Stabiliteit",
+		"properties": "Eigenschappen",
+		"grades": "Staalkwaliteiten",
+		"saveCategory": "Staal bewaren",
+		"allRules": "Alle vuistregels"
+	},
+	"profile": {
+		"series": "Reeks",
+		"sizes": "Maat",
+		"picker": "Kies een profiel",
+		"moreVariants": "Meer varianten",
+		"fewerVariants": "Minder varianten",
+		"section": "Doorsnede van {name}",
+		"schematic": "Op schaal, afrondingen niet getekend",
+		"schematicU": "Schematisch: flensdikte onbekend",
+		"weight": "Gewicht",
+		"length": "Lengte",
+		"count": "Aantal",
+		"total": "Totaal",
+		"addToBom": "Stuklijst",
+		"addToBomLabel": "{name} toevoegen aan de stuklijst",
+		"added": "{name} toegevoegd aan de stuklijst",
+		"explain": "Uitleg bij {name}",
+		"properties": "Doorsnedegrootheden",
+		"dimensions": "Afmetingen"
+	},
+	"quantity": {
+		"G": {
+			"name": "Massa per meter",
+			"explain": "Hoeveel een meter profiel weegt. Bepaalt het eigen gewicht in je constructie en een groot deel van de kosten; staal wordt per kilo ingekocht."
+		},
+		"h": {
+			"name": "Hoogte",
+			"explain": "De totale hoogte van het profiel. Bepaalt de constructiehoogte van vloer of dak en dus de verdiepingshoogte. Hoger profiel: stijver tegen doorbuigen."
+		},
+		"b": {
+			"name": "Breedte",
+			"explain": "De breedte van de flens. Telt mee in de stijfheid om de zwakke as en bepaalt hoeveel ruimte je hebt voor opleggingen en aansluitingen."
+		},
+		"tw": {
+			"name": "Lijfdikte",
+			"explain": "De dikte van het verticale lijf. Het lijf neemt vooral de dwarskracht op; dikker lijf: meer weerstand bij opleggingen en geconcentreerde lasten."
+		},
+		"tf": {
+			"name": "Flensdikte",
+			"explain": "De dikte van de horizontale flenzen. De flenzen nemen het grootste deel van het buigend moment op; let op de flensdikte bij boutgaten en lassen."
+		},
+		"t": {
+			"name": "Wanddikte",
+			"explain": "De dikte van de wand van een koker of buis. Bij gelijke buitenmaat geeft een dikkere wand meer sterkte en stijfheid, maar ook meer gewicht."
+		},
+		"D": {
+			"name": "Buitendiameter",
+			"explain": "De buitenmaat van een ronde buis. Een buis is in alle richtingen even stijf; handig voor kolommen en vakwerken."
+		},
+		"A": {
+			"name": "Oppervlakte",
+			"explain": "De oppervlakte van de doorsnede. Bepaalt hoeveel normaalkracht (trek of druk) het profiel kan dragen en, met de dichtheid, het gewicht."
+		},
+		"Iy": {
+			"name": "Traagheidsmoment, sterke as",
+			"explain": "Zegt hoe stijf het profiel is tegen doorbuigen om de sterke as. Gebruik je om de doorbuiging van een ligger te schatten: twee keer zo groot is half zoveel doorbuiging."
+		},
+		"Iz": {
+			"name": "Traagheidsmoment, zwakke as",
+			"explain": "De stijfheid om de zwakke as. Belangrijk bij kolommen, die meestal om deze as uitknikken."
+		},
+		"Wy": {
+			"name": "Weerstandsmoment, sterke as",
+			"explain": "Koppelt buigend moment aan spanning: spanning = moment / W. Gebruik je om te toetsen of een ligger sterk genoeg is."
+		},
+		"Wz": {
+			"name": "Weerstandsmoment, zwakke as",
+			"explain": "Als W om de sterke as, maar voor buiging om de zwakke as, bijvoorbeeld door wind op de flens."
+		},
+		"iy": {
+			"name": "Traagheidsstraal, sterke as",
+			"explain": "√(I/A): hoe ver het materiaal gemiddeld van de as ligt. Nodig voor de slankheid en dus voor knik om de sterke as."
+		},
+		"iz": {
+			"name": "Traagheidsstraal, zwakke as",
+			"explain": "√(I/A) om de zwakke as. Meestal maatgevend voor knik van een kolom: kleinere i, eerder knik."
+		}
+	},
+	"timber": {
+		"title": "Hout"
+	},
+	"concrete": {
+		"title": "Beton"
+	},
+	"drawing": {
+		"title": "Tekenen"
 	},
 	"spacePage": {
 		"title": "Ruimte & mens"

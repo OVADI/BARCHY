@@ -1,0 +1,43 @@
+{
+	"$comment": "Explicit corrections and human verifications on top of the Vademecum import. Each correction needs a reason and a source. Applied by scripts/import-vademecum.ts, then all checks run again.",
+	"corrections": [
+		{
+			"family": "UNP",
+			"sourceName": "150x65",
+			"field": "h",
+			"to": 160,
+			"reason": "Alle waarden in deze rij (G 18,8 kg/m, A 24,0 cm², Iy 925 cm⁴, Wy 116 cm³, Iz 85,3 cm⁴, Wz 18,3 cm³) horen bij UPN 160; Wy = Iy/(h/2) klopt alleen met h = 160. Een UPN 150 komt in de catalogus niet voor. Alleen de maat is gecorrigeerd, niet de waarden.",
+			"source": {
+				"title": "ArcelorMittal Europe – Long Products, Sections and Merchant bars, Sales programme 2024-1",
+				"ref": "UPN, p. 100–101",
+				"url": "https://sections.arcelormittal.com/sections/repository/Sections/Sections_MB_ArcelorMittal_FR_EN_DE.pdf"
+			}
+		},
+		{
+			"family": "HE",
+			"sourceName": "HE 160 M",
+			"field": "iz",
+			"to": 42.6,
+			"reason": "√(Iz/A) met Iz = 1758 cm⁴ en A = 97,1 cm² uit de catalogus geeft 42,55 mm. De catalogus drukt iz af als 4,2 cm (afgekapt op één decimaal, zoals ook bij andere profielen); 41,1 mm uit het Vademecum past daar niet bij.",
+			"source": {
+				"title": "ArcelorMittal Europe – Long Products, Sections and Merchant bars, Sales programme 2024-1",
+				"ref": "HE M, p. 60–61",
+				"url": "https://sections.arcelormittal.com/sections/repository/Sections/Sections_MB_ArcelorMittal_FR_EN_DE.pdf"
+			}
+		},
+		{
+			"family": "HE",
+			"sourceName": "HE 1000 A",
+			"occurrence": 1,
+			"field": "variant",
+			"to": "AA",
+			"reason": "De eerste van de twee rijen 'HE 1000 A' komt overeen met HE 1000 AA in de catalogus (G 222 kg/m, h 970, b 300, tw 16, tf 21 mm, A 282,2 cm², Iy 406 450 cm⁴). De tweede rij is de echte HE 1000 A.",
+			"source": {
+				"title": "ArcelorMittal Europe – Long Products, Sections and Merchant bars, Sales programme 2024-1",
+				"ref": "HE AA en HE A, p. 54–55",
+				"url": "https://sections.arcelormittal.com/sections/repository/Sections/Sections_MB_ArcelorMittal_FR_EN_DE.pdf"
+			}
+		}
+	],
+	"verifications": []
+}

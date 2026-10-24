@@ -1,0 +1,3624 @@
+{
+	"source": {
+		"title": "TU Delft Vademecum (TeachBooks)",
+		"ref": "Oorspronkelijke staaldata: Bouwen met Staal",
+		"url": "https://github.com/TeachBooks/vademecum",
+		"license": "CC BY 4.0"
+	},
+	"origin": {
+		"repo": "https://github.com/TeachBooks/vademecum",
+		"commit": "9a2f70afd158b7cee533c119bf4c88ae15106d4a",
+		"path": "book/basis_gegevens/dimensietabellen/hout.md",
+		"section": "Hout"
+	},
+	"method": "Maten (b × h) uit de tabel; A, W en I exact berekend voor een rechthoek. Elke tabelcel is gecontroleerd tegen deze berekening.",
+	"sections": [
+		{
+			"id": "glulam-55x200",
+			"kind": "glulam",
+			"b": 55,
+			"h": 200,
+			"A": 11000,
+			"Wy": 366666.7,
+			"Iy": 36666667,
+			"Wz": 100833.3,
+			"Iz": 2772917,
+			"issues": [
+				{
+					"check": "table",
+					"severity": "warning",
+					"field": "Wy",
+					"found": 0.36,
+					"message": "tabelcel 0,36 onder Wy past bij geen maat in deze rij"
+				}
+			],
+			"status": "auto_checked"
+		},
+		{
+			"id": "glulam-55x250",
+			"kind": "glulam",
+			"b": 55,
+			"h": 250,
+			"A": 13750,
+			"Wy": 572916.7,
+			"Iy": 71614583,
+			"Wz": 126041.7,
+			"Iz": 3466146,
+			"issues": [],
+			"status": "auto_checked"
+		},
+		{
+			"id": "glulam-55x300",
+			"kind": "glulam",
+			"b": 55,
+			"h": 300,
+			"A": 16500,
+			"Wy": 825000,
+			"Iy": 123750000,
+			"Wz": 151250,
+			"Iz": 4159375,
+			"issues": [],
+			"status": "auto_checked"
+		},
+		{
+			"id": "glulam-55x350",
+			"kind": "glulam",
+			"b": 55,
+			"h": 350,
+			"A": 19250,
+			"Wy": 1122916.7,
+			"Iy": 196510417,
+			"Wz": 176458.3,
+			"Iz": 4852604,
+			"issues": [],
+			"status": "auto_checked"
+		},
+		{
+			"id": "glulam-55x400",
+			"kind": "glulam",
+			"b": 55,
+			"h": 400,
+			"A": 22000,
+			"Wy": 1466666.7,
+			"Iy": 293333333,
+			"Wz": 201666.7,
+			"Iz": 5545833,
+			"issues": [],
+			"status": "auto_checked"
+		},
+		{
+			"id": "glulam-55x450",
+			"kind": "glulam",
+			"b": 55,
+			"h": 450,
+			"A": 24750,
+			"Wy": 1856250,
+			"Iy": 417656250,
+			"Wz": 226875,
+			"Iz": 6239063,
+			"issues": [],
+			"status": "auto_checked"
+		},
+		{
+			"id": "glulam-55x500",
+			"kind": "glulam",
+			"b": 55,
+			"h": 500,
+			"A": 27500,
+			"Wy": 2291666.7,
+			"Iy": 572916667,
+			"Wz": 252083.3,
+			"Iz": 6932292,
+			"issues": [],
+			"status": "auto_checked"
+		},
+		{
+			"id": "glulam-55x550",
+			"kind": "glulam",
+			"b": 55,
+			"h": 550,
+			"A": 30250,
+			"Wy": 2772916.7,
+			"Iy": 762552083,
+			"Wz": 277291.7,
+			"Iz": 7625521,
+			"issues": [],
+			"status": "auto_checked"
+		},
+		{
+			"id": "glulam-85x200",
+			"kind": "glulam",
+			"b": 85,
+			"h": 200,
+			"A": 17000,
+			"Wy": 566666.7,
+			"Iy": 56666667,
+			"Wz": 240833.3,
+			"Iz": 10235417,
+			"issues": [
+				{
+					"check": "table",
+					"severity": "warning",
+					"field": "Wy",
+					"found": 0.56,
+					"message": "tabelcel 0,56 onder Wy past bij geen maat in deze rij"
+				}
+			],
+			"status": "auto_checked"
+		},
+		{
+			"id": "glulam-85x250",
+			"kind": "glulam",
+			"b": 85,
+			"h": 250,
+			"A": 21250,
+			"Wy": 885416.7,
+			"Iy": 110677083,
+			"Wz": 301041.7,
+			"Iz": 12794271,
+			"issues": [],
+			"status": "auto_checked"
+		},
+		{
+			"id": "glulam-85x300",
+			"kind": "glulam",
+			"b": 85,
+			"h": 300,
+			"A": 25500,
+			"Wy": 1275000,
+			"Iy": 191250000,
+			"Wz": 361250,
+			"Iz": 15353125,
+			"issues": [],
+			"status": "auto_checked"
+		},
+		{
+			"id": "glulam-85x350",
+			"kind": "glulam",
+			"b": 85,
+			"h": 350,
+			"A": 29750,
+			"Wy": 1735416.7,
+			"Iy": 303697917,
+			"Wz": 421458.3,
+			"Iz": 17911979,
+			"issues": [],
+			"status": "auto_checked"
+		},
+		{
+			"id": "glulam-85x400",
+			"kind": "glulam",
+			"b": 85,
+			"h": 400,
+			"A": 34000,
+			"Wy": 2266666.7,
+			"Iy": 453333333,
+			"Wz": 481666.7,
+			"Iz": 20470833,
+			"issues": [],
+			"status": "auto_checked"
+		},
+		{
+			"id": "glulam-85x450",
+			"kind": "glulam",
+			"b": 85,
+			"h": 450,
+			"A": 38250,
+			"Wy": 2868750,
+			"Iy": 645468750,
+			"Wz": 541875,
+			"Iz": 23029688,
+			"issues": [],
+			"status": "auto_checked"
+		},
+		{
+			"id": "glulam-85x500",
+			"kind": "glulam",
+			"b": 85,
+			"h": 500,
+			"A": 42500,
+			"Wy": 3541666.7,
+			"Iy": 885416667,
+			"Wz": 602083.3,
+			"Iz": 25588542,
+			"issues": [],
+			"status": "auto_checked"
+		},
+		{
+			"id": "glulam-85x550",
+			"kind": "glulam",
+			"b": 85,
+			"h": 550,
+			"A": 46750,
+			"Wy": 4285416.7,
+			"Iy": 1178489583,
+			"Wz": 662291.7,
+			"Iz": 28147396,
+			"issues": [],
+			"status": "auto_checked"
+		},
+		{
+			"id": "glulam-85x600",
+			"kind": "glulam",
+			"b": 85,
+			"h": 600,
+			"A": 51000,
+			"Wy": 5100000,
+			"Iy": 1530000000,
+			"Wz": 722500,
+			"Iz": 30706250,
+			"issues": [],
+			"status": "auto_checked"
+		},
+		{
+			"id": "glulam-85x650",
+			"kind": "glulam",
+			"b": 85,
+			"h": 650,
+			"A": 55250,
+			"Wy": 5985416.7,
+			"Iy": 1945260417,
+			"Wz": 782708.3,
+			"Iz": 33265104,
+			"issues": [],
+			"status": "auto_checked"
+		},
+		{
+			"id": "glulam-85x700",
+			"kind": "glulam",
+			"b": 85,
+			"h": 700,
+			"A": 59500,
+			"Wy": 6941666.7,
+			"Iy": 2429583333,
+			"Wz": 842916.7,
+			"Iz": 35823958,
+			"issues": [],
+			"status": "auto_checked"
+		},
+		{
+			"id": "glulam-85x750",
+			"kind": "glulam",
+			"b": 85,
+			"h": 750,
+			"A": 63750,
+			"Wy": 7968750,
+			"Iy": 2988281250,
+			"Wz": 903125,
+			"Iz": 38382813,
+			"issues": [],
+			"status": "auto_checked"
+		},
+		{
+			"id": "glulam-85x800",
+			"kind": "glulam",
+			"b": 85,
+			"h": 800,
+			"A": 68000,
+			"Wy": 9066666.7,
+			"Iy": 3626666667,
+			"Wz": 963333.3,
+			"Iz": 40941667,
+			"issues": [],
+			"status": "auto_checked"
+		},
+		{
+			"id": "glulam-85x850",
+			"kind": "glulam",
+			"b": 85,
+			"h": 850,
+			"A": 72250,
+			"Wy": 10235416.7,
+			"Iy": 4350052083,
+			"Wz": 1023541.7,
+			"Iz": 43500521,
+			"issues": [],
+			"status": "auto_checked"
+		},
+		{
+			"id": "glulam-110x200",
+			"kind": "glulam",
+			"b": 110,
+			"h": 200,
+			"A": 22000,
+			"Wy": 733333.3,
+			"Iy": 73333333,
+			"Wz": 403333.3,
+			"Iz": 22183333,
+			"issues": [],
+			"status": "auto_checked"
+		},
+		{
+			"id": "glulam-110x250",
+			"kind": "glulam",
+			"b": 110,
+			"h": 250,
+			"A": 27500,
+			"Wy": 1145833.3,
+			"Iy": 143229167,
+			"Wz": 504166.7,
+			"Iz": 27729167,
+			"issues": [],
+			"status": "auto_checked"
+		},
+		{
+			"id": "glulam-110x300",
+			"kind": "glulam",
+			"b": 110,
+			"h": 300,
+			"A": 33000,
+			"Wy": 1650000,
+			"Iy": 247500000,
+			"Wz": 605000,
+			"Iz": 33275000,
+			"issues": [],
+			"status": "auto_checked"
+		},
+		{
+			"id": "glulam-110x350",
+			"kind": "glulam",
+			"b": 110,
+			"h": 350,
+			"A": 38500,
+			"Wy": 2245833.3,
+			"Iy": 393020833,
+			"Wz": 705833.3,
+			"Iz": 38820833,
+			"issues": [],
+			"status": "auto_checked"
+		},
+		{
+			"id": "glulam-110x400",
+			"kind": "glulam",
+			"b": 110,
+			"h": 400,
+			"A": 44000,
+			"Wy": 2933333.3,
+			"Iy": 586666667,
+			"Wz": 806666.7,
+			"Iz": 44366667,
+			"issues": [],
+			"status": "auto_checked"
+		},
+		{
+			"id": "glulam-110x450",
+			"kind": "glulam",
+			"b": 110,
+			"h": 450,
+			"A": 49500,
+			"Wy": 3712500,
+			"Iy": 835312500,
+			"Wz": 907500,
+			"Iz": 49912500,
+			"issues": [],
+			"status": "auto_checked"
+		},
+		{
+			"id": "glulam-110x500",
+			"kind": "glulam",
+			"b": 110,
+			"h": 500,
+			"A": 55000,
+			"Wy": 4583333.3,
+			"Iy": 1145833333,
+			"Wz": 1008333.3,
+			"Iz": 55458333,
+			"issues": [],
+			"status": "auto_checked"
+		},
+		{
+			"id": "glulam-110x550",
+			"kind": "glulam",
+			"b": 110,
+			"h": 550,
+			"A": 60500,
+			"Wy": 5545833.3,
+			"Iy": 1525104167,
+			"Wz": 1109166.7,
+			"Iz": 61004167,
+			"issues": [],
+			"status": "auto_checked"
+		},
+		{
+			"id": "glulam-110x600",
+			"kind": "glulam",
+			"b": 110,
+			"h": 600,
+			"A": 66000,
+			"Wy": 6600000,
+			"Iy": 1980000000,
+			"Wz": 1210000,
+			"Iz": 66550000,
+			"issues": [],
+			"status": "auto_checked"
+		},
+		{
+			"id": "glulam-110x650",
+			"kind": "glulam",
+			"b": 110,
+			"h": 650,
+			"A": 71500,
+			"Wy": 7745833.3,
+			"Iy": 2517395833,
+			"Wz": 1310833.3,
+			"Iz": 72095833,
+			"issues": [],
+			"status": "auto_checked"
+		},
+		{
+			"id": "glulam-110x700",
+			"kind": "glulam",
+			"b": 110,
+			"h": 700,
+			"A": 77000,
+			"Wy": 8983333.3,
+			"Iy": 3144166667,
+			"Wz": 1411666.7,
+			"Iz": 77641667,
+			"issues": [],
+			"status": "auto_checked"
+		},
+		{
+			"id": "glulam-110x750",
+			"kind": "glulam",
+			"b": 110,
+			"h": 750,
+			"A": 82500,
+			"Wy": 10312500,
+			"Iy": 3867187500,
+			"Wz": 1512500,
+			"Iz": 83187500,
+			"issues": [],
+			"status": "auto_checked"
+		},
+		{
+			"id": "glulam-110x800",
+			"kind": "glulam",
+			"b": 110,
+			"h": 800,
+			"A": 88000,
+			"Wy": 11733333.3,
+			"Iy": 4693333333,
+			"Wz": 1613333.3,
+			"Iz": 88733333,
+			"issues": [],
+			"status": "auto_checked"
+		},
+		{
+			"id": "glulam-110x850",
+			"kind": "glulam",
+			"b": 110,
+			"h": 850,
+			"A": 93500,
+			"Wy": 13245833.3,
+			"Iy": 5629479167,
+			"Wz": 1714166.7,
+			"Iz": 94279167,
+			"issues": [],
+			"status": "auto_checked"
+		},
+		{
+			"id": "glulam-110x900",
+			"kind": "glulam",
+			"b": 110,
+			"h": 900,
+			"A": 99000,
+			"Wy": 14850000,
+			"Iy": 6682500000,
+			"Wz": 1815000,
+			"Iz": 99825000,
+			"issues": [],
+			"status": "auto_checked"
+		},
+		{
+			"id": "glulam-110x950",
+			"kind": "glulam",
+			"b": 110,
+			"h": 950,
+			"A": 104500,
+			"Wy": 16545833.3,
+			"Iy": 7859270833,
+			"Wz": 1915833.3,
+			"Iz": 105370833,
+			"issues": [],
+			"status": "auto_checked"
+		},
+		{
+			"id": "glulam-110x1000",
+			"kind": "glulam",
+			"b": 110,
+			"h": 1000,
+			"A": 110000,
+			"Wy": 18333333.3,
+			"Iy": 9166666667,
+			"Wz": 2016666.7,
+			"Iz": 110916667,
+			"issues": [],
+			"status": "auto_checked"
+		},
+		{
+			"id": "glulam-110x1050",
+			"kind": "glulam",
+			"b": 110,
+			"h": 1050,
+			"A": 115500,
+			"Wy": 20212500,
+			"Iy": 10611562500,
+			"Wz": 2117500,
+			"Iz": 116462500,
+			"issues": [],
+			"status": "auto_checked"
+		},
+		{
+			"id": "glulam-110x1100",
+			"kind": "glulam",
+			"b": 110,
+			"h": 1100,
+			"A": 121000,
+			"Wy": 22183333.3,
+			"Iy": 12200833333,
+			"Wz": 2218333.3,
+			"Iz": 122008333,
+			"issues": [],
+			"status": "auto_checked"
+		},
+		{
+			"id": "glulam-135x200",
+			"kind": "glulam",
+			"b": 135,
+			"h": 200,
+			"A": 27000,
+			"Wy": 900000,
+			"Iy": 90000000,
+			"Wz": 607500,
+			"Iz": 41006250,
+			"issues": [],
+			"status": "auto_checked"
+		},
+		{
+			"id": "glulam-135x250",
+			"kind": "glulam",
+			"b": 135,
+			"h": 250,
+			"A": 33750,
+			"Wy": 1406250,
+			"Iy": 175781250,
+			"Wz": 759375,
+			"Iz": 51257813,
+			"issues": [],
+			"status": "auto_checked"
+		},
+		{
+			"id": "glulam-135x300",
+			"kind": "glulam",
+			"b": 135,
+			"h": 300,
+			"A": 40500,
+			"Wy": 2025000,
+			"Iy": 303750000,
+			"Wz": 911250,
+			"Iz": 61509375,
+			"issues": [],
+			"status": "auto_checked"
+		},
+		{
+			"id": "glulam-135x350",
+			"kind": "glulam",
+			"b": 135,
+			"h": 350,
+			"A": 47250,
+			"Wy": 2756250,
+			"Iy": 482343750,
+			"Wz": 1063125,
+			"Iz": 71760938,
+			"issues": [],
+			"status": "auto_checked"
+		},
+		{
+			"id": "glulam-135x400",
+			"kind": "glulam",
+			"b": 135,
+			"h": 400,
+			"A": 54000,
+			"Wy": 3600000,
+			"Iy": 720000000,
+			"Wz": 1215000,
+			"Iz": 82012500,
+			"issues": [],
+			"status": "auto_checked"
+		},
+		{
+			"id": "glulam-135x450",
+			"kind": "glulam",
+			"b": 135,
+			"h": 450,
+			"A": 60750,
+			"Wy": 4556250,
+			"Iy": 1025156250,
+			"Wz": 1366875,
+			"Iz": 92264063,
+			"issues": [],
+			"status": "auto_checked"
+		},
+		{
+			"id": "glulam-135x500",
+			"kind": "glulam",
+			"b": 135,
+			"h": 500,
+			"A": 67500,
+			"Wy": 5625000,
+			"Iy": 1406250000,
+			"Wz": 1518750,
+			"Iz": 102515625,
+			"issues": [],
+			"status": "auto_checked"
+		},
+		{
+			"id": "glulam-135x550",
+			"kind": "glulam",
+			"b": 135,
+			"h": 550,
+			"A": 74250,
+			"Wy": 6806250,
+			"Iy": 1871718750,
+			"Wz": 1670625,
+			"Iz": 112767188,
+			"issues": [],
+			"status": "auto_checked"
+		},
+		{
+			"id": "glulam-135x600",
+			"kind": "glulam",
+			"b": 135,
+			"h": 600,
+			"A": 81000,
+			"Wy": 8100000,
+			"Iy": 2430000000,
+			"Wz": 1822500,
+			"Iz": 123018750,
+			"issues": [],
+			"status": "auto_checked"
+		},
+		{
+			"id": "glulam-135x650",
+			"kind": "glulam",
+			"b": 135,
+			"h": 650,
+			"A": 87750,
+			"Wy": 9506250,
+			"Iy": 3089531250,
+			"Wz": 1974375,
+			"Iz": 133270313,
+			"issues": [],
+			"status": "auto_checked"
+		},
+		{
+			"id": "glulam-135x700",
+			"kind": "glulam",
+			"b": 135,
+			"h": 700,
+			"A": 94500,
+			"Wy": 11025000,
+			"Iy": 3858750000,
+			"Wz": 2126250,
+			"Iz": 143521875,
+			"issues": [],
+			"status": "auto_checked"
+		},
+		{
+			"id": "glulam-135x750",
+			"kind": "glulam",
+			"b": 135,
+			"h": 750,
+			"A": 101250,
+			"Wy": 12656250,
+			"Iy": 4746093750,
+			"Wz": 2278125,
+			"Iz": 153773438,
+			"issues": [],
+			"status": "auto_checked"
+		},
+		{
+			"id": "glulam-135x800",
+			"kind": "glulam",
+			"b": 135,
+			"h": 800,
+			"A": 108000,
+			"Wy": 14400000,
+			"Iy": 5760000000,
+			"Wz": 2430000,
+			"Iz": 164025000,
+			"issues": [],
+			"status": "auto_checked"
+		},
+		{
+			"id": "glulam-135x850",
+			"kind": "glulam",
+			"b": 135,
+			"h": 850,
+			"A": 114750,
+			"Wy": 16256250,
+			"Iy": 6908906250,
+			"Wz": 2581875,
+			"Iz": 174276563,
+			"issues": [],
+			"status": "auto_checked"
+		},
+		{
+			"id": "glulam-135x900",
+			"kind": "glulam",
+			"b": 135,
+			"h": 900,
+			"A": 121500,
+			"Wy": 18225000,
+			"Iy": 8201250000,
+			"Wz": 2733750,
+			"Iz": 184528125,
+			"issues": [],
+			"status": "auto_checked"
+		},
+		{
+			"id": "glulam-135x950",
+			"kind": "glulam",
+			"b": 135,
+			"h": 950,
+			"A": 128250,
+			"Wy": 20306250,
+			"Iy": 9645468750,
+			"Wz": 2885625,
+			"Iz": 194779688,
+			"issues": [],
+			"status": "auto_checked"
+		},
+		{
+			"id": "glulam-135x1000",
+			"kind": "glulam",
+			"b": 135,
+			"h": 1000,
+			"A": 135000,
+			"Wy": 22500000,
+			"Iy": 11250000000,
+			"Wz": 3037500,
+			"Iz": 205031250,
+			"issues": [],
+			"status": "auto_checked"
+		},
+		{
+			"id": "glulam-135x1050",
+			"kind": "glulam",
+			"b": 135,
+			"h": 1050,
+			"A": 141750,
+			"Wy": 24806250,
+			"Iy": 13023281250,
+			"Wz": 3189375,
+			"Iz": 215282813,
+			"issues": [],
+			"status": "auto_checked"
+		},
+		{
+			"id": "glulam-135x1100",
+			"kind": "glulam",
+			"b": 135,
+			"h": 1100,
+			"A": 148500,
+			"Wy": 27225000,
+			"Iy": 14973750000,
+			"Wz": 3341250,
+			"Iz": 225534375,
+			"issues": [],
+			"status": "auto_checked"
+		},
+		{
+			"id": "glulam-135x1150",
+			"kind": "glulam",
+			"b": 135,
+			"h": 1150,
+			"A": 155250,
+			"Wy": 29756250,
+			"Iy": 17109843750,
+			"Wz": 3493125,
+			"Iz": 235785938,
+			"issues": [],
+			"status": "auto_checked"
+		},
+		{
+			"id": "glulam-135x1200",
+			"kind": "glulam",
+			"b": 135,
+			"h": 1200,
+			"A": 162000,
+			"Wy": 32400000,
+			"Iy": 19440000000,
+			"Wz": 3645000,
+			"Iz": 246037500,
+			"issues": [],
+			"status": "auto_checked"
+		},
+		{
+			"id": "glulam-135x1250",
+			"kind": "glulam",
+			"b": 135,
+			"h": 1250,
+			"A": 168750,
+			"Wy": 35156250,
+			"Iy": 21972656250,
+			"Wz": 3796875,
+			"Iz": 256289063,
+			"issues": [],
+			"status": "auto_checked"
+		},
+		{
+			"id": "glulam-135x1300",
+			"kind": "glulam",
+			"b": 135,
+			"h": 1300,
+			"A": 175500,
+			"Wy": 38025000,
+			"Iy": 24716250000,
+			"Wz": 3948750,
+			"Iz": 266540625,
+			"issues": [],
+			"status": "auto_checked"
+		},
+		{
+			"id": "glulam-135x1350",
+			"kind": "glulam",
+			"b": 135,
+			"h": 1350,
+			"A": 182250,
+			"Wy": 41006250,
+			"Iy": 27679218750,
+			"Wz": 4100625,
+			"Iz": 276792188,
+			"issues": [],
+			"status": "auto_checked"
+		},
+		{
+			"id": "glulam-160x200",
+			"kind": "glulam",
+			"b": 160,
+			"h": 200,
+			"A": 32000,
+			"Wy": 1066666.7,
+			"Iy": 106666667,
+			"Wz": 853333.3,
+			"Iz": 68266667,
+			"issues": [],
+			"status": "auto_checked"
+		},
+		{
+			"id": "glulam-160x250",
+			"kind": "glulam",
+			"b": 160,
+			"h": 250,
+			"A": 40000,
+			"Wy": 1666666.7,
+			"Iy": 208333333,
+			"Wz": 1066666.7,
+			"Iz": 85333333,
+			"issues": [],
+			"status": "auto_checked"
+		},
+		{
+			"id": "glulam-160x300",
+			"kind": "glulam",
+			"b": 160,
+			"h": 300,
+			"A": 48000,
+			"Wy": 2400000,
+			"Iy": 360000000,
+			"Wz": 1280000,
+			"Iz": 102400000,
+			"issues": [],
+			"status": "auto_checked"
+		},
+		{
+			"id": "glulam-160x350",
+			"kind": "glulam",
+			"b": 160,
+			"h": 350,
+			"A": 56000,
+			"Wy": 3266666.7,
+			"Iy": 571666667,
+			"Wz": 1493333.3,
+			"Iz": 119466667,
+			"issues": [],
+			"status": "auto_checked"
+		},
+		{
+			"id": "glulam-160x400",
+			"kind": "glulam",
+			"b": 160,
+			"h": 400,
+			"A": 64000,
+			"Wy": 4266666.7,
+			"Iy": 853333333,
+			"Wz": 1706666.7,
+			"Iz": 136533333,
+			"issues": [],
+			"status": "auto_checked"
+		},
+		{
+			"id": "glulam-160x450",
+			"kind": "glulam",
+			"b": 160,
+			"h": 450,
+			"A": 72000,
+			"Wy": 5400000,
+			"Iy": 1215000000,
+			"Wz": 1920000,
+			"Iz": 153600000,
+			"issues": [],
+			"status": "auto_checked"
+		},
+		{
+			"id": "glulam-160x500",
+			"kind": "glulam",
+			"b": 160,
+			"h": 500,
+			"A": 80000,
+			"Wy": 6666666.7,
+			"Iy": 1666666667,
+			"Wz": 2133333.3,
+			"Iz": 170666667,
+			"issues": [],
+			"status": "auto_checked"
+		},
+		{
+			"id": "glulam-160x550",
+			"kind": "glulam",
+			"b": 160,
+			"h": 550,
+			"A": 88000,
+			"Wy": 8066666.7,
+			"Iy": 2218333333,
+			"Wz": 2346666.7,
+			"Iz": 187733333,
+			"issues": [],
+			"status": "auto_checked"
+		},
+		{
+			"id": "glulam-160x600",
+			"kind": "glulam",
+			"b": 160,
+			"h": 600,
+			"A": 96000,
+			"Wy": 9600000,
+			"Iy": 2880000000,
+			"Wz": 2560000,
+			"Iz": 204800000,
+			"issues": [],
+			"status": "auto_checked"
+		},
+		{
+			"id": "glulam-160x650",
+			"kind": "glulam",
+			"b": 160,
+			"h": 650,
+			"A": 104000,
+			"Wy": 11266666.7,
+			"Iy": 3661666667,
+			"Wz": 2773333.3,
+			"Iz": 221866667,
+			"issues": [],
+			"status": "auto_checked"
+		},
+		{
+			"id": "glulam-160x700",
+			"kind": "glulam",
+			"b": 160,
+			"h": 700,
+			"A": 112000,
+			"Wy": 13066666.7,
+			"Iy": 4573333333,
+			"Wz": 2986666.7,
+			"Iz": 238933333,
+			"issues": [],
+			"status": "auto_checked"
+		},
+		{
+			"id": "glulam-160x750",
+			"kind": "glulam",
+			"b": 160,
+			"h": 750,
+			"A": 120000,
+			"Wy": 15000000,
+			"Iy": 5625000000,
+			"Wz": 3200000,
+			"Iz": 256000000,
+			"issues": [],
+			"status": "auto_checked"
+		},
+		{
+			"id": "glulam-160x800",
+			"kind": "glulam",
+			"b": 160,
+			"h": 800,
+			"A": 128000,
+			"Wy": 17066666.7,
+			"Iy": 6826666667,
+			"Wz": 3413333.3,
+			"Iz": 273066667,
+			"issues": [],
+			"status": "auto_checked"
+		},
+		{
+			"id": "glulam-160x850",
+			"kind": "glulam",
+			"b": 160,
+			"h": 850,
+			"A": 136000,
+			"Wy": 19266666.7,
+			"Iy": 8188333333,
+			"Wz": 3626666.7,
+			"Iz": 290133333,
+			"issues": [],
+			"status": "auto_checked"
+		},
+		{
+			"id": "glulam-160x900",
+			"kind": "glulam",
+			"b": 160,
+			"h": 900,
+			"A": 144000,
+			"Wy": 21600000,
+			"Iy": 9720000000,
+			"Wz": 3840000,
+			"Iz": 307200000,
+			"issues": [],
+			"status": "auto_checked"
+		},
+		{
+			"id": "glulam-160x950",
+			"kind": "glulam",
+			"b": 160,
+			"h": 950,
+			"A": 152000,
+			"Wy": 24066666.7,
+			"Iy": 11431666667,
+			"Wz": 4053333.3,
+			"Iz": 324266667,
+			"issues": [],
+			"status": "auto_checked"
+		},
+		{
+			"id": "glulam-160x1000",
+			"kind": "glulam",
+			"b": 160,
+			"h": 1000,
+			"A": 160000,
+			"Wy": 26666666.7,
+			"Iy": 13333333333,
+			"Wz": 4266666.7,
+			"Iz": 341333333,
+			"issues": [],
+			"status": "auto_checked"
+		},
+		{
+			"id": "glulam-160x1050",
+			"kind": "glulam",
+			"b": 160,
+			"h": 1050,
+			"A": 168000,
+			"Wy": 29400000,
+			"Iy": 15435000000,
+			"Wz": 4480000,
+			"Iz": 358400000,
+			"issues": [],
+			"status": "auto_checked"
+		},
+		{
+			"id": "glulam-160x1100",
+			"kind": "glulam",
+			"b": 160,
+			"h": 1100,
+			"A": 176000,
+			"Wy": 32266666.7,
+			"Iy": 17746666667,
+			"Wz": 4693333.3,
+			"Iz": 375466667,
+			"issues": [],
+			"status": "auto_checked"
+		},
+		{
+			"id": "glulam-160x1150",
+			"kind": "glulam",
+			"b": 160,
+			"h": 1150,
+			"A": 184000,
+			"Wy": 35266666.7,
+			"Iy": 20278333333,
+			"Wz": 4906666.7,
+			"Iz": 392533333,
+			"issues": [],
+			"status": "auto_checked"
+		},
+		{
+			"id": "glulam-160x1200",
+			"kind": "glulam",
+			"b": 160,
+			"h": 1200,
+			"A": 192000,
+			"Wy": 38400000,
+			"Iy": 23040000000,
+			"Wz": 5120000,
+			"Iz": 409600000,
+			"issues": [],
+			"status": "auto_checked"
+		},
+		{
+			"id": "glulam-160x1250",
+			"kind": "glulam",
+			"b": 160,
+			"h": 1250,
+			"A": 200000,
+			"Wy": 41666666.7,
+			"Iy": 26041666667,
+			"Wz": 5333333.3,
+			"Iz": 426666667,
+			"issues": [],
+			"status": "auto_checked"
+		},
+		{
+			"id": "glulam-160x1300",
+			"kind": "glulam",
+			"b": 160,
+			"h": 1300,
+			"A": 208000,
+			"Wy": 45066666.7,
+			"Iy": 29293333333,
+			"Wz": 5546666.7,
+			"Iz": 443733333,
+			"issues": [],
+			"status": "auto_checked"
+		},
+		{
+			"id": "glulam-160x1350",
+			"kind": "glulam",
+			"b": 160,
+			"h": 1350,
+			"A": 216000,
+			"Wy": 48600000,
+			"Iy": 32805000000,
+			"Wz": 5760000,
+			"Iz": 460800000,
+			"issues": [],
+			"status": "auto_checked"
+		},
+		{
+			"id": "glulam-160x1400",
+			"kind": "glulam",
+			"b": 160,
+			"h": 1400,
+			"A": 224000,
+			"Wy": 52266666.7,
+			"Iy": 36586666667,
+			"Wz": 5973333.3,
+			"Iz": 477866667,
+			"issues": [],
+			"status": "auto_checked"
+		},
+		{
+			"id": "glulam-160x1450",
+			"kind": "glulam",
+			"b": 160,
+			"h": 1450,
+			"A": 232000,
+			"Wy": 56066666.7,
+			"Iy": 40648333333,
+			"Wz": 6186666.7,
+			"Iz": 494933333,
+			"issues": [],
+			"status": "auto_checked"
+		},
+		{
+			"id": "glulam-160x1500",
+			"kind": "glulam",
+			"b": 160,
+			"h": 1500,
+			"A": 240000,
+			"Wy": 60000000,
+			"Iy": 45000000000,
+			"Wz": 6400000,
+			"Iz": 512000000,
+			"issues": [],
+			"status": "auto_checked"
+		},
+		{
+			"id": "glulam-160x1550",
+			"kind": "glulam",
+			"b": 160,
+			"h": 1550,
+			"A": 248000,
+			"Wy": 64066666.7,
+			"Iy": 49651666667,
+			"Wz": 6613333.3,
+			"Iz": 529066667,
+			"issues": [],
+			"status": "auto_checked"
+		},
+		{
+			"id": "glulam-160x1600",
+			"kind": "glulam",
+			"b": 160,
+			"h": 1600,
+			"A": 256000,
+			"Wy": 68266666.7,
+			"Iy": 54613333333,
+			"Wz": 6826666.7,
+			"Iz": 546133333,
+			"issues": [],
+			"status": "auto_checked"
+		},
+		{
+			"id": "glulam-185x200",
+			"kind": "glulam",
+			"b": 185,
+			"h": 200,
+			"A": 37000,
+			"Wy": 1233333.3,
+			"Iy": 123333333,
+			"Wz": 1140833.3,
+			"Iz": 105527083,
+			"issues": [],
+			"status": "auto_checked"
+		},
+		{
+			"id": "glulam-185x250",
+			"kind": "glulam",
+			"b": 185,
+			"h": 250,
+			"A": 46250,
+			"Wy": 1927083.3,
+			"Iy": 240885417,
+			"Wz": 1426041.7,
+			"Iz": 131908854,
+			"issues": [],
+			"status": "auto_checked"
+		},
+		{
+			"id": "glulam-185x300",
+			"kind": "glulam",
+			"b": 185,
+			"h": 300,
+			"A": 55500,
+			"Wy": 2775000,
+			"Iy": 416250000,
+			"Wz": 1711250,
+			"Iz": 158290625,
+			"issues": [],
+			"status": "auto_checked"
+		},
+		{
+			"id": "glulam-185x350",
+			"kind": "glulam",
+			"b": 185,
+			"h": 350,
+			"A": 64750,
+			"Wy": 3777083.3,
+			"Iy": 660989583,
+			"Wz": 1996458.3,
+			"Iz": 184672396,
+			"issues": [],
+			"status": "auto_checked"
+		},
+		{
+			"id": "glulam-185x400",
+			"kind": "glulam",
+			"b": 185,
+			"h": 400,
+			"A": 74000,
+			"Wy": 4933333.3,
+			"Iy": 986666667,
+			"Wz": 2281666.7,
+			"Iz": 211054167,
+			"issues": [],
+			"status": "auto_checked"
+		},
+		{
+			"id": "glulam-185x450",
+			"kind": "glulam",
+			"b": 185,
+			"h": 450,
+			"A": 83250,
+			"Wy": 6243750,
+			"Iy": 1404843750,
+			"Wz": 2566875,
+			"Iz": 237435938,
+			"issues": [],
+			"status": "auto_checked"
+		},
+		{
+			"id": "glulam-185x500",
+			"kind": "glulam",
+			"b": 185,
+			"h": 500,
+			"A": 92500,
+			"Wy": 7708333.3,
+			"Iy": 1927083333,
+			"Wz": 2852083.3,
+			"Iz": 263817708,
+			"issues": [],
+			"status": "auto_checked"
+		},
+		{
+			"id": "glulam-185x550",
+			"kind": "glulam",
+			"b": 185,
+			"h": 550,
+			"A": 101750,
+			"Wy": 9327083.3,
+			"Iy": 2564947917,
+			"Wz": 3137291.7,
+			"Iz": 290199479,
+			"issues": [],
+			"status": "auto_checked"
+		},
+		{
+			"id": "glulam-185x600",
+			"kind": "glulam",
+			"b": 185,
+			"h": 600,
+			"A": 111000,
+			"Wy": 11100000,
+			"Iy": 3330000000,
+			"Wz": 3422500,
+			"Iz": 316581250,
+			"issues": [],
+			"status": "auto_checked"
+		},
+		{
+			"id": "glulam-185x650",
+			"kind": "glulam",
+			"b": 185,
+			"h": 650,
+			"A": 120250,
+			"Wy": 13027083.3,
+			"Iy": 4233802083,
+			"Wz": 3707708.3,
+			"Iz": 342963021,
+			"issues": [],
+			"status": "auto_checked"
+		},
+		{
+			"id": "glulam-185x700",
+			"kind": "glulam",
+			"b": 185,
+			"h": 700,
+			"A": 129500,
+			"Wy": 15108333.3,
+			"Iy": 5287916667,
+			"Wz": 3992916.7,
+			"Iz": 369344792,
+			"issues": [],
+			"status": "auto_checked"
+		},
+		{
+			"id": "glulam-185x750",
+			"kind": "glulam",
+			"b": 185,
+			"h": 750,
+			"A": 138750,
+			"Wy": 17343750,
+			"Iy": 6503906250,
+			"Wz": 4278125,
+			"Iz": 395726563,
+			"issues": [],
+			"status": "auto_checked"
+		},
+		{
+			"id": "glulam-185x800",
+			"kind": "glulam",
+			"b": 185,
+			"h": 800,
+			"A": 148000,
+			"Wy": 19733333.3,
+			"Iy": 7893333333,
+			"Wz": 4563333.3,
+			"Iz": 422108333,
+			"issues": [],
+			"status": "auto_checked"
+		},
+		{
+			"id": "glulam-185x850",
+			"kind": "glulam",
+			"b": 185,
+			"h": 850,
+			"A": 157250,
+			"Wy": 22277083.3,
+			"Iy": 9467760417,
+			"Wz": 4848541.7,
+			"Iz": 448490104,
+			"issues": [],
+			"status": "auto_checked"
+		},
+		{
+			"id": "glulam-185x900",
+			"kind": "glulam",
+			"b": 185,
+			"h": 900,
+			"A": 166500,
+			"Wy": 24975000,
+			"Iy": 11238750000,
+			"Wz": 5133750,
+			"Iz": 474871875,
+			"issues": [],
+			"status": "auto_checked"
+		},
+		{
+			"id": "glulam-185x950",
+			"kind": "glulam",
+			"b": 185,
+			"h": 950,
+			"A": 175750,
+			"Wy": 27827083.3,
+			"Iy": 13217864583,
+			"Wz": 5418958.3,
+			"Iz": 501253646,
+			"issues": [],
+			"status": "auto_checked"
+		},
+		{
+			"id": "glulam-185x1000",
+			"kind": "glulam",
+			"b": 185,
+			"h": 1000,
+			"A": 185000,
+			"Wy": 30833333.3,
+			"Iy": 15416666667,
+			"Wz": 5704166.7,
+			"Iz": 527635417,
+			"issues": [],
+			"status": "auto_checked"
+		},
+		{
+			"id": "glulam-185x1050",
+			"kind": "glulam",
+			"b": 185,
+			"h": 1050,
+			"A": 194250,
+			"Wy": 33993750,
+			"Iy": 17846718750,
+			"Wz": 5989375,
+			"Iz": 554017188,
+			"issues": [],
+			"status": "auto_checked"
+		},
+		{
+			"id": "glulam-185x1100",
+			"kind": "glulam",
+			"b": 185,
+			"h": 1100,
+			"A": 203500,
+			"Wy": 37308333.3,
+			"Iy": 20519583333,
+			"Wz": 6274583.3,
+			"Iz": 580398958,
+			"issues": [],
+			"status": "auto_checked"
+		},
+		{
+			"id": "glulam-185x1150",
+			"kind": "glulam",
+			"b": 185,
+			"h": 1150,
+			"A": 212750,
+			"Wy": 40777083.3,
+			"Iy": 23446822917,
+			"Wz": 6559791.7,
+			"Iz": 606780729,
+			"issues": [],
+			"status": "auto_checked"
+		},
+		{
+			"id": "glulam-185x1200",
+			"kind": "glulam",
+			"b": 185,
+			"h": 1200,
+			"A": 222000,
+			"Wy": 44400000,
+			"Iy": 26640000000,
+			"Wz": 6845000,
+			"Iz": 633162500,
+			"issues": [],
+			"status": "auto_checked"
+		},
+		{
+			"id": "glulam-185x1250",
+			"kind": "glulam",
+			"b": 185,
+			"h": 1250,
+			"A": 231250,
+			"Wy": 48177083.3,
+			"Iy": 30110677083,
+			"Wz": 7130208.3,
+			"Iz": 659544271,
+			"issues": [],
+			"status": "auto_checked"
+		},
+		{
+			"id": "glulam-185x1300",
+			"kind": "glulam",
+			"b": 185,
+			"h": 1300,
+			"A": 240500,
+			"Wy": 52108333.3,
+			"Iy": 33870416667,
+			"Wz": 7415416.7,
+			"Iz": 685926042,
+			"issues": [],
+			"status": "auto_checked"
+		},
+		{
+			"id": "glulam-185x1350",
+			"kind": "glulam",
+			"b": 185,
+			"h": 1350,
+			"A": 249750,
+			"Wy": 56193750,
+			"Iy": 37930781250,
+			"Wz": 7700625,
+			"Iz": 712307813,
+			"issues": [],
+			"status": "auto_checked"
+		},
+		{
+			"id": "glulam-185x1400",
+			"kind": "glulam",
+			"b": 185,
+			"h": 1400,
+			"A": 259000,
+			"Wy": 60433333.3,
+			"Iy": 42303333333,
+			"Wz": 7985833.3,
+			"Iz": 738689583,
+			"issues": [],
+			"status": "auto_checked"
+		},
+		{
+			"id": "glulam-185x1450",
+			"kind": "glulam",
+			"b": 185,
+			"h": 1450,
+			"A": 268250,
+			"Wy": 64827083.3,
+			"Iy": 46999635417,
+			"Wz": 8271041.7,
+			"Iz": 765071354,
+			"issues": [],
+			"status": "auto_checked"
+		},
+		{
+			"id": "glulam-185x1500",
+			"kind": "glulam",
+			"b": 185,
+			"h": 1500,
+			"A": 277500,
+			"Wy": 69375000,
+			"Iy": 52031250000,
+			"Wz": 8556250,
+			"Iz": 791453125,
+			"issues": [],
+			"status": "auto_checked"
+		},
+		{
+			"id": "glulam-185x1550",
+			"kind": "glulam",
+			"b": 185,
+			"h": 1550,
+			"A": 286750,
+			"Wy": 74077083.3,
+			"Iy": 57409739583,
+			"Wz": 8841458.3,
+			"Iz": 817834896,
+			"issues": [],
+			"status": "auto_checked"
+		},
+		{
+			"id": "glulam-185x1600",
+			"kind": "glulam",
+			"b": 185,
+			"h": 1600,
+			"A": 296000,
+			"Wy": 78933333.3,
+			"Iy": 63146666667,
+			"Wz": 9126666.7,
+			"Iz": 844216667,
+			"issues": [],
+			"status": "auto_checked"
+		},
+		{
+			"id": "glulam-185x1650",
+			"kind": "glulam",
+			"b": 185,
+			"h": 1650,
+			"A": 305250,
+			"Wy": 83943750,
+			"Iy": 69253593750,
+			"Wz": 9411875,
+			"Iz": 870598438,
+			"issues": [],
+			"status": "auto_checked"
+		},
+		{
+			"id": "glulam-185x1700",
+			"kind": "glulam",
+			"b": 185,
+			"h": 1700,
+			"A": 314500,
+			"Wy": 89108333.3,
+			"Iy": 75742083333,
+			"Wz": 9697083.3,
+			"Iz": 896980208,
+			"issues": [],
+			"status": "auto_checked"
+		},
+		{
+			"id": "glulam-185x1750",
+			"kind": "glulam",
+			"b": 185,
+			"h": 1750,
+			"A": 323750,
+			"Wy": 94427083.3,
+			"Iy": 82623697917,
+			"Wz": 9982291.7,
+			"Iz": 923361979,
+			"issues": [],
+			"status": "auto_checked"
+		},
+		{
+			"id": "glulam-185x1800",
+			"kind": "glulam",
+			"b": 185,
+			"h": 1800,
+			"A": 333000,
+			"Wy": 99900000,
+			"Iy": 89910000000,
+			"Wz": 10267500,
+			"Iz": 949743750,
+			"issues": [],
+			"status": "auto_checked"
+		},
+		{
+			"id": "glulam-205x200",
+			"kind": "glulam",
+			"b": 205,
+			"h": 200,
+			"A": 41000,
+			"Wy": 1366666.7,
+			"Iy": 136666667,
+			"Wz": 1400833.3,
+			"Iz": 143585417,
+			"issues": [],
+			"status": "auto_checked"
+		},
+		{
+			"id": "glulam-205x250",
+			"kind": "glulam",
+			"b": 205,
+			"h": 250,
+			"A": 51250,
+			"Wy": 2135416.7,
+			"Iy": 266927083,
+			"Wz": 1751041.7,
+			"Iz": 179481771,
+			"issues": [],
+			"status": "auto_checked"
+		},
+		{
+			"id": "glulam-205x300",
+			"kind": "glulam",
+			"b": 205,
+			"h": 300,
+			"A": 61500,
+			"Wy": 3075000,
+			"Iy": 461250000,
+			"Wz": 2101250,
+			"Iz": 215378125,
+			"issues": [],
+			"status": "auto_checked"
+		},
+		{
+			"id": "glulam-205x350",
+			"kind": "glulam",
+			"b": 205,
+			"h": 350,
+			"A": 71750,
+			"Wy": 4185416.7,
+			"Iy": 732447917,
+			"Wz": 2451458.3,
+			"Iz": 251274479,
+			"issues": [],
+			"status": "auto_checked"
+		},
+		{
+			"id": "glulam-205x400",
+			"kind": "glulam",
+			"b": 205,
+			"h": 400,
+			"A": 82000,
+			"Wy": 5466666.7,
+			"Iy": 1093333333,
+			"Wz": 2801666.7,
+			"Iz": 287170833,
+			"issues": [],
+			"status": "auto_checked"
+		},
+		{
+			"id": "glulam-205x450",
+			"kind": "glulam",
+			"b": 205,
+			"h": 450,
+			"A": 92250,
+			"Wy": 6918750,
+			"Iy": 1556718750,
+			"Wz": 3151875,
+			"Iz": 323067188,
+			"issues": [],
+			"status": "auto_checked"
+		},
+		{
+			"id": "glulam-205x500",
+			"kind": "glulam",
+			"b": 205,
+			"h": 500,
+			"A": 102500,
+			"Wy": 8541666.7,
+			"Iy": 2135416667,
+			"Wz": 3502083.3,
+			"Iz": 358963542,
+			"issues": [],
+			"status": "auto_checked"
+		},
+		{
+			"id": "glulam-205x550",
+			"kind": "glulam",
+			"b": 205,
+			"h": 550,
+			"A": 112750,
+			"Wy": 10335416.7,
+			"Iy": 2842239583,
+			"Wz": 3852291.7,
+			"Iz": 394859896,
+			"issues": [],
+			"status": "auto_checked"
+		},
+		{
+			"id": "glulam-205x600",
+			"kind": "glulam",
+			"b": 205,
+			"h": 600,
+			"A": 123000,
+			"Wy": 12300000,
+			"Iy": 3690000000,
+			"Wz": 4202500,
+			"Iz": 430756250,
+			"issues": [],
+			"status": "auto_checked"
+		},
+		{
+			"id": "glulam-205x650",
+			"kind": "glulam",
+			"b": 205,
+			"h": 650,
+			"A": 133250,
+			"Wy": 14435416.7,
+			"Iy": 4691510417,
+			"Wz": 4552708.3,
+			"Iz": 466652604,
+			"issues": [],
+			"status": "auto_checked"
+		},
+		{
+			"id": "glulam-205x700",
+			"kind": "glulam",
+			"b": 205,
+			"h": 700,
+			"A": 143500,
+			"Wy": 16741666.7,
+			"Iy": 5859583333,
+			"Wz": 4902916.7,
+			"Iz": 502548958,
+			"issues": [],
+			"status": "auto_checked"
+		},
+		{
+			"id": "glulam-205x750",
+			"kind": "glulam",
+			"b": 205,
+			"h": 750,
+			"A": 153750,
+			"Wy": 19218750,
+			"Iy": 7207031250,
+			"Wz": 5253125,
+			"Iz": 538445313,
+			"issues": [],
+			"status": "auto_checked"
+		},
+		{
+			"id": "glulam-205x800",
+			"kind": "glulam",
+			"b": 205,
+			"h": 800,
+			"A": 164000,
+			"Wy": 21866666.7,
+			"Iy": 8746666667,
+			"Wz": 5603333.3,
+			"Iz": 574341667,
+			"issues": [],
+			"status": "auto_checked"
+		},
+		{
+			"id": "glulam-205x850",
+			"kind": "glulam",
+			"b": 205,
+			"h": 850,
+			"A": 174250,
+			"Wy": 24685416.7,
+			"Iy": 10491302083,
+			"Wz": 5953541.7,
+			"Iz": 610238021,
+			"issues": [],
+			"status": "auto_checked"
+		},
+		{
+			"id": "glulam-205x900",
+			"kind": "glulam",
+			"b": 205,
+			"h": 900,
+			"A": 184500,
+			"Wy": 27675000,
+			"Iy": 12453750000,
+			"Wz": 6303750,
+			"Iz": 646134375,
+			"issues": [],
+			"status": "auto_checked"
+		},
+		{
+			"id": "glulam-205x950",
+			"kind": "glulam",
+			"b": 205,
+			"h": 950,
+			"A": 194750,
+			"Wy": 30835416.7,
+			"Iy": 14646822917,
+			"Wz": 6653958.3,
+			"Iz": 682030729,
+			"issues": [],
+			"status": "auto_checked"
+		},
+		{
+			"id": "glulam-205x1000",
+			"kind": "glulam",
+			"b": 205,
+			"h": 1000,
+			"A": 205000,
+			"Wy": 34166666.7,
+			"Iy": 17083333333,
+			"Wz": 7004166.7,
+			"Iz": 717927083,
+			"issues": [],
+			"status": "auto_checked"
+		},
+		{
+			"id": "glulam-205x1050",
+			"kind": "glulam",
+			"b": 205,
+			"h": 1050,
+			"A": 215250,
+			"Wy": 37668750,
+			"Iy": 19776093750,
+			"Wz": 7354375,
+			"Iz": 753823438,
+			"issues": [],
+			"status": "auto_checked"
+		},
+		{
+			"id": "glulam-205x1100",
+			"kind": "glulam",
+			"b": 205,
+			"h": 1100,
+			"A": 225500,
+			"Wy": 41341666.7,
+			"Iy": 22737916667,
+			"Wz": 7704583.3,
+			"Iz": 789719792,
+			"issues": [],
+			"status": "auto_checked"
+		},
+		{
+			"id": "glulam-205x1150",
+			"kind": "glulam",
+			"b": 205,
+			"h": 1150,
+			"A": 235750,
+			"Wy": 45185416.7,
+			"Iy": 25981614583,
+			"Wz": 8054791.7,
+			"Iz": 825616146,
+			"issues": [],
+			"status": "auto_checked"
+		},
+		{
+			"id": "glulam-205x1200",
+			"kind": "glulam",
+			"b": 205,
+			"h": 1200,
+			"A": 246000,
+			"Wy": 49200000,
+			"Iy": 29520000000,
+			"Wz": 8405000,
+			"Iz": 861512500,
+			"issues": [],
+			"status": "auto_checked"
+		},
+		{
+			"id": "glulam-205x1250",
+			"kind": "glulam",
+			"b": 205,
+			"h": 1250,
+			"A": 256250,
+			"Wy": 53385416.7,
+			"Iy": 33365885417,
+			"Wz": 8755208.3,
+			"Iz": 897408854,
+			"issues": [],
+			"status": "auto_checked"
+		},
+		{
+			"id": "glulam-205x1300",
+			"kind": "glulam",
+			"b": 205,
+			"h": 1300,
+			"A": 266500,
+			"Wy": 57741666.7,
+			"Iy": 37532083333,
+			"Wz": 9105416.7,
+			"Iz": 933305208,
+			"issues": [],
+			"status": "auto_checked"
+		},
+		{
+			"id": "glulam-205x1350",
+			"kind": "glulam",
+			"b": 205,
+			"h": 1350,
+			"A": 276750,
+			"Wy": 62268750,
+			"Iy": 42031406250,
+			"Wz": 9455625,
+			"Iz": 969201563,
+			"issues": [],
+			"status": "auto_checked"
+		},
+		{
+			"id": "glulam-205x1400",
+			"kind": "glulam",
+			"b": 205,
+			"h": 1400,
+			"A": 287000,
+			"Wy": 66966666.7,
+			"Iy": 46876666667,
+			"Wz": 9805833.3,
+			"Iz": 1005097917,
+			"issues": [],
+			"status": "auto_checked"
+		},
+		{
+			"id": "glulam-205x1450",
+			"kind": "glulam",
+			"b": 205,
+			"h": 1450,
+			"A": 297250,
+			"Wy": 71835416.7,
+			"Iy": 52080677083,
+			"Wz": 10156041.7,
+			"Iz": 1040994271,
+			"issues": [],
+			"status": "auto_checked"
+		},
+		{
+			"id": "glulam-205x1500",
+			"kind": "glulam",
+			"b": 205,
+			"h": 1500,
+			"A": 307500,
+			"Wy": 76875000,
+			"Iy": 57656250000,
+			"Wz": 10506250,
+			"Iz": 1076890625,
+			"issues": [],
+			"status": "auto_checked"
+		},
+		{
+			"id": "glulam-205x1550",
+			"kind": "glulam",
+			"b": 205,
+			"h": 1550,
+			"A": 317750,
+			"Wy": 82085416.7,
+			"Iy": 63616197917,
+			"Wz": 10856458.3,
+			"Iz": 1112786979,
+			"issues": [],
+			"status": "auto_checked"
+		},
+		{
+			"id": "glulam-205x1600",
+			"kind": "glulam",
+			"b": 205,
+			"h": 1600,
+			"A": 328000,
+			"Wy": 87466666.7,
+			"Iy": 69973333333,
+			"Wz": 11206666.7,
+			"Iz": 1148683333,
+			"issues": [],
+			"status": "auto_checked"
+		},
+		{
+			"id": "glulam-205x1650",
+			"kind": "glulam",
+			"b": 205,
+			"h": 1650,
+			"A": 338250,
+			"Wy": 93018750,
+			"Iy": 76740468750,
+			"Wz": 11556875,
+			"Iz": 1184579688,
+			"issues": [],
+			"status": "auto_checked"
+		},
+		{
+			"id": "glulam-205x1700",
+			"kind": "glulam",
+			"b": 205,
+			"h": 1700,
+			"A": 348500,
+			"Wy": 98741666.7,
+			"Iy": 83930416667,
+			"Wz": 11907083.3,
+			"Iz": 1220476042,
+			"issues": [],
+			"status": "auto_checked"
+		},
+		{
+			"id": "glulam-205x1750",
+			"kind": "glulam",
+			"b": 205,
+			"h": 1750,
+			"A": 358750,
+			"Wy": 104635416.7,
+			"Iy": 91555989583,
+			"Wz": 12257291.7,
+			"Iz": 1256372396,
+			"issues": [],
+			"status": "auto_checked"
+		},
+		{
+			"id": "glulam-205x1800",
+			"kind": "glulam",
+			"b": 205,
+			"h": 1800,
+			"A": 369000,
+			"Wy": 110700000,
+			"Iy": 99630000000,
+			"Wz": 12607500,
+			"Iz": 1292268750,
+			"issues": [],
+			"status": "auto_checked"
+		},
+		{
+			"id": "sawn-33x69",
+			"kind": "sawn",
+			"b": 33,
+			"h": 69,
+			"A": 2277,
+			"Wy": 26185.5,
+			"Iy": 903400,
+			"Wz": 12523.5,
+			"Iz": 206638,
+			"issues": [
+				{
+					"check": "table",
+					"severity": "warning",
+					"field": "A",
+					"found": 2.2,
+					"message": "tabelcel 2,20 onder A past bij geen maat in deze rij"
+				}
+			],
+			"status": "auto_checked"
+		},
+		{
+			"id": "sawn-33x95",
+			"kind": "sawn",
+			"b": 33,
+			"h": 95,
+			"A": 3135,
+			"Wy": 49637.5,
+			"Iy": 2357781,
+			"Wz": 17242.5,
+			"Iz": 284501,
+			"issues": [
+				{
+					"check": "table",
+					"severity": "warning",
+					"field": "A",
+					"found": 3.1,
+					"message": "tabelcel 3,10 onder A past bij Iz van 34×95"
+				}
+			],
+			"status": "auto_checked"
+		},
+		{
+			"id": "sawn-33x120",
+			"kind": "sawn",
+			"b": 33,
+			"h": 120,
+			"A": 3960,
+			"Wy": 79200,
+			"Iy": 4752000,
+			"Wz": 21780,
+			"Iz": 359370,
+			"issues": [
+				{
+					"check": "table",
+					"severity": "warning",
+					"field": "A",
+					"found": 3.9,
+					"message": "tabelcel 3,90 onder A past bij Iz van 34×120"
+				}
+			],
+			"status": "auto_checked"
+		},
+		{
+			"id": "sawn-33x133",
+			"kind": "sawn",
+			"b": 33,
+			"h": 133,
+			"A": 4389,
+			"Wy": 97289.5,
+			"Iy": 6469752,
+			"Wz": 24139.5,
+			"Iz": 398302,
+			"issues": [
+				{
+					"check": "table",
+					"severity": "warning",
+					"field": "A",
+					"found": 4.3,
+					"message": "tabelcel 4,30 onder A past bij geen maat in deze rij"
+				}
+			],
+			"status": "auto_checked"
+		},
+		{
+			"id": "sawn-33x145",
+			"kind": "sawn",
+			"b": 33,
+			"h": 145,
+			"A": 4785,
+			"Wy": 115637.5,
+			"Iy": 8383719,
+			"Wz": 26317.5,
+			"Iz": 434239,
+			"issues": [
+				{
+					"check": "table",
+					"severity": "warning",
+					"field": "A",
+					"found": 4.7,
+					"message": "tabelcel 4,70 onder A past bij geen maat in deze rij"
+				}
+			],
+			"status": "auto_checked"
+		},
+		{
+			"id": "sawn-33x170",
+			"kind": "sawn",
+			"b": 33,
+			"h": 170,
+			"A": 5610,
+			"Wy": 158950,
+			"Iy": 13510750,
+			"Wz": 30855,
+			"Iz": 509108,
+			"issues": [],
+			"status": "auto_checked"
+		},
+		{
+			"id": "sawn-33x195",
+			"kind": "sawn",
+			"b": 33,
+			"h": 195,
+			"A": 6435,
+			"Wy": 209137.5,
+			"Iy": 20390906,
+			"Wz": 35392.5,
+			"Iz": 583976,
+			"issues": [],
+			"status": "auto_checked"
+		},
+		{
+			"id": "sawn-33x220",
+			"kind": "sawn",
+			"b": 33,
+			"h": 220,
+			"A": 7260,
+			"Wy": 266200,
+			"Iy": 29282000,
+			"Wz": 39930,
+			"Iz": 658845,
+			"issues": [],
+			"status": "auto_checked"
+		},
+		{
+			"id": "sawn-45x69",
+			"kind": "sawn",
+			"b": 45,
+			"h": 69,
+			"A": 3105,
+			"Wy": 35707.5,
+			"Iy": 1231909,
+			"Wz": 23287.5,
+			"Iz": 523969,
+			"issues": [
+				{
+					"check": "table",
+					"severity": "warning",
+					"field": "A",
+					"found": 12.5,
+					"message": "tabelcel 12,5 onder A past bij Wz van 33×69"
+				},
+				{
+					"check": "table",
+					"severity": "warning",
+					"field": "Wy",
+					"found": 0.21,
+					"message": "tabelcel 0,21 onder Wy past bij geen maat in deze rij"
+				},
+				{
+					"check": "table",
+					"severity": "warning",
+					"field": "Iy",
+					"found": 3.1,
+					"message": "tabelcel 3,10 onder Iy past bij A van 45×69"
+				}
+			],
+			"status": "auto_checked"
+		},
+		{
+			"id": "sawn-45x95",
+			"kind": "sawn",
+			"b": 45,
+			"h": 95,
+			"A": 4275,
+			"Wy": 67687.5,
+			"Iy": 3215156,
+			"Wz": 32062.5,
+			"Iz": 721406,
+			"issues": [
+				{
+					"check": "table",
+					"severity": "warning",
+					"field": "A",
+					"found": 17.2,
+					"message": "tabelcel 17,2 onder A past bij Wz van 33×95"
+				},
+				{
+					"check": "table",
+					"severity": "warning",
+					"field": "Wy",
+					"found": 0.28,
+					"message": "tabelcel 0,28 onder Wy past bij geen maat in deze rij"
+				},
+				{
+					"check": "table",
+					"severity": "warning",
+					"field": "Iy",
+					"found": 4.2,
+					"message": "tabelcel 4,20 onder Iy past bij Iy van 59×95"
+				}
+			],
+			"status": "auto_checked"
+		},
+		{
+			"id": "sawn-45x120",
+			"kind": "sawn",
+			"b": 45,
+			"h": 120,
+			"A": 5400,
+			"Wy": 108000,
+			"Iy": 6480000,
+			"Wz": 40500,
+			"Iz": 911250,
+			"issues": [
+				{
+					"check": "table",
+					"severity": "warning",
+					"field": "A",
+					"found": 21.7,
+					"message": "tabelcel 21,7 onder A past bij Wz van 33×120"
+				},
+				{
+					"check": "table",
+					"severity": "warning",
+					"field": "Wy",
+					"found": 0.36,
+					"message": "tabelcel 0,36 onder Wy past bij Iz van 33×120"
+				},
+				{
+					"check": "table",
+					"severity": "warning",
+					"field": "Iy",
+					"found": 5.4,
+					"message": "tabelcel 5,40 onder Iy past bij A van 45×120"
+				}
+			],
+			"status": "auto_checked"
+		},
+		{
+			"id": "sawn-45x133",
+			"kind": "sawn",
+			"b": 45,
+			"h": 133,
+			"A": 5985,
+			"Wy": 132667.5,
+			"Iy": 8822389,
+			"Wz": 44887.5,
+			"Iz": 1009969,
+			"issues": [
+				{
+					"check": "table",
+					"severity": "warning",
+					"field": "A",
+					"found": 24.1,
+					"message": "tabelcel 24,1 onder A past bij Wz van 33×133"
+				},
+				{
+					"check": "table",
+					"severity": "warning",
+					"field": "Wy",
+					"found": 0.4,
+					"message": "tabelcel 0,40 onder Wy past bij Iz van 33×133"
+				},
+				{
+					"check": "table",
+					"severity": "warning",
+					"field": "Iy",
+					"found": 5.9,
+					"message": "tabelcel 5,90 onder Iy past bij geen maat in deze rij"
+				}
+			],
+			"status": "auto_checked"
+		},
+		{
+			"id": "sawn-45x145",
+			"kind": "sawn",
+			"b": 45,
+			"h": 145,
+			"A": 6525,
+			"Wy": 157687.5,
+			"Iy": 11432344,
+			"Wz": 48937.5,
+			"Iz": 1101094,
+			"issues": [
+				{
+					"check": "table",
+					"severity": "warning",
+					"field": "A",
+					"found": 26.3,
+					"message": "tabelcel 26,3 onder A past bij Wz van 33×145"
+				},
+				{
+					"check": "table",
+					"severity": "warning",
+					"field": "Wy",
+					"found": 0.43,
+					"message": "tabelcel 0,43 onder Wy past bij Iz van 33×145"
+				},
+				{
+					"check": "table",
+					"severity": "warning",
+					"field": "Iy",
+					"found": 6.5,
+					"message": "tabelcel 6,50 onder Iy past bij A van 45×145"
+				}
+			],
+			"status": "auto_checked"
+		},
+		{
+			"id": "sawn-45x170",
+			"kind": "sawn",
+			"b": 45,
+			"h": 170,
+			"A": 7650,
+			"Wy": 216750,
+			"Iy": 18423750,
+			"Wz": 57375,
+			"Iz": 1290938,
+			"issues": [
+				{
+					"check": "table",
+					"severity": "warning",
+					"field": "A",
+					"found": 30.8,
+					"message": "tabelcel 30,8 onder A past bij Wz van 33×170"
+				},
+				{
+					"check": "table",
+					"severity": "warning",
+					"field": "Wy",
+					"found": 0.51,
+					"message": "tabelcel 0,51 onder Wy past bij Iz van 33×170"
+				},
+				{
+					"check": "table",
+					"severity": "warning",
+					"field": "Iy",
+					"found": 7.6,
+					"message": "tabelcel 7,60 onder Iy past bij A van 45×170"
+				}
+			],
+			"status": "auto_checked"
+		},
+		{
+			"id": "sawn-45x195",
+			"kind": "sawn",
+			"b": 45,
+			"h": 195,
+			"A": 8775,
+			"Wy": 285187.5,
+			"Iy": 27805781,
+			"Wz": 65812.5,
+			"Iz": 1480781,
+			"issues": [
+				{
+					"check": "table",
+					"severity": "warning",
+					"field": "A",
+					"found": 35.3,
+					"message": "tabelcel 35,3 onder A past bij Wz van 33×195"
+				},
+				{
+					"check": "table",
+					"severity": "warning",
+					"field": "Wy",
+					"found": 0.58,
+					"message": "tabelcel 0,58 onder Wy past bij Iz van 33×195"
+				},
+				{
+					"check": "table",
+					"severity": "warning",
+					"field": "Iy",
+					"found": 8.7,
+					"message": "tabelcel 8,70 onder Iy past bij A van 45×195"
+				}
+			],
+			"status": "auto_checked"
+		},
+		{
+			"id": "sawn-45x220",
+			"kind": "sawn",
+			"b": 45,
+			"h": 220,
+			"A": 9900,
+			"Wy": 363000,
+			"Iy": 39930000,
+			"Wz": 74250,
+			"Iz": 1670625,
+			"issues": [
+				{
+					"check": "table",
+					"severity": "warning",
+					"field": "A",
+					"found": 39.9,
+					"message": "tabelcel 39,9 onder A past bij Wz van 33×220 of Iy van 45×220"
+				},
+				{
+					"check": "table",
+					"severity": "warning",
+					"field": "Wy",
+					"found": 0.66,
+					"message": "tabelcel 0,66 onder Wy past bij Iz van 33×220"
+				},
+				{
+					"check": "table",
+					"severity": "warning",
+					"field": "Iy",
+					"found": 9.9,
+					"message": "tabelcel 9,90 onder Iy past bij A van 45×220"
+				}
+			],
+			"status": "auto_checked"
+		},
+		{
+			"id": "sawn-58x69",
+			"kind": "sawn",
+			"b": 58,
+			"h": 69,
+			"A": 4002,
+			"Wy": 46023,
+			"Iy": 1587794,
+			"Wz": 38686,
+			"Iz": 1121894,
+			"issues": [
+				{
+					"check": "table",
+					"severity": "warning",
+					"field": "A",
+					"found": 35.7,
+					"message": "tabelcel 35,7 onder A past bij Wy van 45×69"
+				},
+				{
+					"check": "table",
+					"severity": "warning",
+					"field": "Wy",
+					"found": 1.23,
+					"message": "tabelcel 1,23 onder Wy past bij Iy van 45×69"
+				},
+				{
+					"check": "table",
+					"severity": "warning",
+					"field": "Iy",
+					"found": 23.2,
+					"message": "tabelcel 23,2 onder Iy past bij Wz van 45×69"
+				},
+				{
+					"check": "table",
+					"severity": "error",
+					"message": "geen tabelwaarde in deze rij hoort bij 58×69: staat deze maat terecht in de tabel?"
+				}
+			],
+			"status": "flagged"
+		},
+		{
+			"id": "sawn-58x95",
+			"kind": "sawn",
+			"b": 58,
+			"h": 95,
+			"A": 5510,
+			"Wy": 87241.7,
+			"Iy": 4143979,
+			"Wz": 53263.3,
+			"Iz": 1544637,
+			"issues": [
+				{
+					"check": "table",
+					"severity": "warning",
+					"field": "A",
+					"found": 67.6,
+					"message": "tabelcel 67,6 onder A past bij Wy van 45×95"
+				},
+				{
+					"check": "table",
+					"severity": "warning",
+					"field": "Wy",
+					"found": 3.21,
+					"message": "tabelcel 3,21 onder Wy past bij Iy van 45×95 of Wz van 45×95"
+				},
+				{
+					"check": "table",
+					"severity": "warning",
+					"field": "Iy",
+					"found": 32,
+					"message": "tabelcel 32,0 onder Iy past bij Iy van 45×95 of Wz van 45×95"
+				},
+				{
+					"check": "table",
+					"severity": "warning",
+					"message": "de tabelwaarden horen bij 59×95, niet bij 58×95"
+				}
+			],
+			"status": "auto_checked"
+		},
+		{
+			"id": "sawn-58x120",
+			"kind": "sawn",
+			"b": 58,
+			"h": 120,
+			"A": 6960,
+			"Wy": 139200,
+			"Iy": 8352000,
+			"Wz": 67280,
+			"Iz": 1951120,
+			"issues": [
+				{
+					"check": "table",
+					"severity": "warning",
+					"field": "A",
+					"found": 108,
+					"message": "tabelcel 108,0 onder A past bij Wy van 45×120"
+				},
+				{
+					"check": "table",
+					"severity": "warning",
+					"field": "Wy",
+					"found": 6.48,
+					"message": "tabelcel 6,48 onder Wy past bij Iy van 45×120"
+				},
+				{
+					"check": "table",
+					"severity": "warning",
+					"field": "Iy",
+					"found": 40.5,
+					"message": "tabelcel 40,5 onder Iy past bij Wz van 45×120"
+				},
+				{
+					"check": "table",
+					"severity": "error",
+					"message": "geen tabelwaarde in deze rij hoort bij 58×120: staat deze maat terecht in de tabel?"
+				}
+			],
+			"status": "flagged"
+		},
+		{
+			"id": "sawn-58x133",
+			"kind": "sawn",
+			"b": 58,
+			"h": 133,
+			"A": 7714,
+			"Wy": 170993.7,
+			"Iy": 11371079,
+			"Wz": 74568.7,
+			"Iz": 2162491,
+			"issues": [
+				{
+					"check": "table",
+					"severity": "warning",
+					"field": "A",
+					"found": 132.6,
+					"message": "tabelcel 132,6 onder A past bij Wy van 45×133"
+				},
+				{
+					"check": "table",
+					"severity": "warning",
+					"field": "Wy",
+					"found": 8.82,
+					"message": "tabelcel 8,82 onder Wy past bij Iy van 45×133"
+				},
+				{
+					"check": "table",
+					"severity": "warning",
+					"field": "Iy",
+					"found": 44.8,
+					"message": "tabelcel 44,8 onder Iy past bij Wz van 45×133"
+				},
+				{
+					"check": "table",
+					"severity": "error",
+					"message": "geen tabelwaarde in deze rij hoort bij 58×133: staat deze maat terecht in de tabel?"
+				}
+			],
+			"status": "flagged"
+		},
+		{
+			"id": "sawn-58x145",
+			"kind": "sawn",
+			"b": 58,
+			"h": 145,
+			"A": 8410,
+			"Wy": 203241.7,
+			"Iy": 14735021,
+			"Wz": 81296.7,
+			"Iz": 2357603,
+			"issues": [
+				{
+					"check": "table",
+					"severity": "warning",
+					"field": "A",
+					"found": 157.6,
+					"message": "tabelcel 157,6 onder A past bij Wy van 45×145"
+				},
+				{
+					"check": "table",
+					"severity": "warning",
+					"field": "Wy",
+					"found": 11.43,
+					"message": "tabelcel 11,43 onder Wy past bij Iy van 45×145"
+				},
+				{
+					"check": "table",
+					"severity": "warning",
+					"field": "Iy",
+					"found": 48.9,
+					"message": "tabelcel 48,9 onder Iy past bij Wz van 45×145"
+				}
+			],
+			"status": "auto_checked"
+		},
+		{
+			"id": "sawn-58x170",
+			"kind": "sawn",
+			"b": 58,
+			"h": 170,
+			"A": 9860,
+			"Wy": 279366.7,
+			"Iy": 23746167,
+			"Wz": 95313.3,
+			"Iz": 2764087,
+			"issues": [
+				{
+					"check": "table",
+					"severity": "warning",
+					"field": "A",
+					"found": 216.7,
+					"message": "tabelcel 216,7 onder A past bij Wy van 45×170"
+				},
+				{
+					"check": "table",
+					"severity": "warning",
+					"field": "Wy",
+					"found": 18.42,
+					"message": "tabelcel 18,42 onder Wy past bij Iy van 45×170"
+				},
+				{
+					"check": "table",
+					"severity": "warning",
+					"field": "Iy",
+					"found": 57.3,
+					"message": "tabelcel 57,3 onder Iy past bij Wz van 45×170"
+				},
+				{
+					"check": "table",
+					"severity": "error",
+					"message": "geen tabelwaarde in deze rij hoort bij 58×170: staat deze maat terecht in de tabel?"
+				}
+			],
+			"status": "flagged"
+		},
+		{
+			"id": "sawn-58x195",
+			"kind": "sawn",
+			"b": 58,
+			"h": 195,
+			"A": 11310,
+			"Wy": 367575,
+			"Iy": 35838563,
+			"Wz": 109330,
+			"Iz": 3170570,
+			"issues": [
+				{
+					"check": "table",
+					"severity": "warning",
+					"field": "A",
+					"found": 285.1,
+					"message": "tabelcel 285,1 onder A past bij Wy van 45×195"
+				},
+				{
+					"check": "table",
+					"severity": "warning",
+					"field": "Wy",
+					"found": 27.8,
+					"message": "tabelcel 27,80 onder Wy past bij Iy van 45×195"
+				},
+				{
+					"check": "table",
+					"severity": "warning",
+					"field": "Iy",
+					"found": 65.8,
+					"message": "tabelcel 65,8 onder Iy past bij Wz van 45×195"
+				},
+				{
+					"check": "table",
+					"severity": "error",
+					"message": "geen tabelwaarde in deze rij hoort bij 58×195: staat deze maat terecht in de tabel?"
+				}
+			],
+			"status": "flagged"
+		},
+		{
+			"id": "sawn-58x220",
+			"kind": "sawn",
+			"b": 58,
+			"h": 220,
+			"A": 12760,
+			"Wy": 467866.7,
+			"Iy": 51465333,
+			"Wz": 123346.7,
+			"Iz": 3577053,
+			"issues": [
+				{
+					"check": "table",
+					"severity": "warning",
+					"field": "A",
+					"found": 363,
+					"message": "tabelcel 363,0 onder A past bij Wy van 45×220"
+				},
+				{
+					"check": "table",
+					"severity": "warning",
+					"field": "Wy",
+					"found": 39.93,
+					"message": "tabelcel 39,93 onder Wy past bij Wz van 33×220 of Iy van 45×220"
+				},
+				{
+					"check": "table",
+					"severity": "warning",
+					"field": "Iy",
+					"found": 74.2,
+					"message": "tabelcel 74,2 onder Iy past bij Wz van 45×220"
+				},
+				{
+					"check": "table",
+					"severity": "error",
+					"message": "geen tabelwaarde in deze rij hoort bij 58×220: staat deze maat terecht in de tabel?"
+				}
+			],
+			"status": "flagged"
+		},
+		{
+			"id": "sawn-58x245",
+			"kind": "sawn",
+			"b": 58,
+			"h": 245,
+			"A": 14210,
+			"Wy": 580241.7,
+			"Iy": 71079604,
+			"Wz": 137363.3,
+			"Iz": 3983537,
+			"issues": [],
+			"status": "auto_checked"
+		},
+		{
+			"id": "sawn-69x95",
+			"kind": "sawn",
+			"b": 69,
+			"h": 95,
+			"A": 6555,
+			"Wy": 103787.5,
+			"Iy": 4929906,
+			"Wz": 75382.5,
+			"Iz": 2600696,
+			"issues": [
+				{
+					"check": "table",
+					"severity": "warning",
+					"field": "Wy",
+					"found": 105.2,
+					"message": "tabelcel 105,2 onder Wy past bij Wy van 70×95"
+				},
+				{
+					"check": "table",
+					"severity": "warning",
+					"field": "Iy",
+					"found": 5,
+					"message": "tabelcel 5,00 onder Iy past bij Iy van 70×95"
+				}
+			],
+			"status": "auto_checked"
+		},
+		{
+			"id": "sawn-69x120",
+			"kind": "sawn",
+			"b": 69,
+			"h": 120,
+			"A": 8280,
+			"Wy": 165600,
+			"Iy": 9936000,
+			"Wz": 95220,
+			"Iz": 3285090,
+			"issues": [
+				{
+					"check": "table",
+					"severity": "warning",
+					"field": "A",
+					"found": 8.4,
+					"message": "tabelcel 8,40 onder A past bij A van 70×120"
+				},
+				{
+					"check": "table",
+					"severity": "warning",
+					"field": "Wy",
+					"found": 168,
+					"message": "tabelcel 168,0 onder Wy past bij Wy van 70×120"
+				},
+				{
+					"check": "table",
+					"severity": "warning",
+					"field": "Iy",
+					"found": 10.08,
+					"message": "tabelcel 10,08 onder Iy past bij Iy van 70×120"
+				},
+				{
+					"check": "table",
+					"severity": "warning",
+					"message": "de tabelwaarden horen bij 70×120, niet bij 69×120"
+				}
+			],
+			"status": "auto_checked"
+		},
+		{
+			"id": "sawn-69x133",
+			"kind": "sawn",
+			"b": 69,
+			"h": 133,
+			"A": 9177,
+			"Wy": 203423.5,
+			"Iy": 13527663,
+			"Wz": 105535.5,
+			"Iz": 3640975,
+			"issues": [
+				{
+					"check": "table",
+					"severity": "warning",
+					"field": "A",
+					"found": 9.3,
+					"message": "tabelcel 9,30 onder A past bij A van 70×133"
+				},
+				{
+					"check": "table",
+					"severity": "warning",
+					"field": "Wy",
+					"found": 206.3,
+					"message": "tabelcel 206,3 onder Wy past bij Wy van 70×133 of Wz van 96×133"
+				},
+				{
+					"check": "table",
+					"severity": "warning",
+					"field": "Iy",
+					"found": 13.72,
+					"message": "tabelcel 13,72 onder Iy past bij Iy van 70×133"
+				},
+				{
+					"check": "table",
+					"severity": "warning",
+					"message": "de tabelwaarden horen bij 70×133, niet bij 69×133"
+				}
+			],
+			"status": "auto_checked"
+		},
+		{
+			"id": "sawn-69x145",
+			"kind": "sawn",
+			"b": 69,
+			"h": 145,
+			"A": 10005,
+			"Wy": 241787.5,
+			"Iy": 17529594,
+			"Wz": 115057.5,
+			"Iz": 3969484,
+			"issues": [
+				{
+					"check": "table",
+					"severity": "warning",
+					"field": "Wy",
+					"found": 245.2,
+					"message": "tabelcel 245,2 onder Wy past bij Wy van 70×145 of Iy van 96×145"
+				},
+				{
+					"check": "table",
+					"severity": "warning",
+					"field": "Iy",
+					"found": 17.78,
+					"message": "tabelcel 17,78 onder Iy past bij Iy van 70×145"
+				}
+			],
+			"status": "auto_checked"
+		},
+		{
+			"id": "sawn-69x170",
+			"kind": "sawn",
+			"b": 69,
+			"h": 170,
+			"A": 11730,
+			"Wy": 332350,
+			"Iy": 28249750,
+			"Wz": 134895,
+			"Iz": 4653878,
+			"issues": [
+				{
+					"check": "table",
+					"severity": "warning",
+					"field": "A",
+					"found": 11.9,
+					"message": "tabelcel 11,90 onder A past bij A van 70×170"
+				},
+				{
+					"check": "table",
+					"severity": "warning",
+					"field": "Wy",
+					"found": 337.1,
+					"message": "tabelcel 337,1 onder Wy past bij Wy van 70×170"
+				},
+				{
+					"check": "table",
+					"severity": "warning",
+					"field": "Iy",
+					"found": 28.65,
+					"message": "tabelcel 28,65 onder Iy past bij Iy van 70×170"
+				},
+				{
+					"check": "table",
+					"severity": "warning",
+					"message": "de tabelwaarden horen bij 70×170, niet bij 69×170"
+				}
+			],
+			"status": "auto_checked"
+		},
+		{
+			"id": "sawn-69x195",
+			"kind": "sawn",
+			"b": 69,
+			"h": 195,
+			"A": 13455,
+			"Wy": 437287.5,
+			"Iy": 42635531,
+			"Wz": 154732.5,
+			"Iz": 5338271,
+			"issues": [
+				{
+					"check": "table",
+					"severity": "warning",
+					"field": "A",
+					"found": 13.6,
+					"message": "tabelcel 13,60 onder A past bij A van 70×195"
+				},
+				{
+					"check": "table",
+					"severity": "warning",
+					"field": "Wy",
+					"found": 443.6,
+					"message": "tabelcel 443,6 onder Wy past bij Wy van 70×195"
+				},
+				{
+					"check": "table",
+					"severity": "warning",
+					"field": "Iy",
+					"found": 43.25,
+					"message": "tabelcel 43,25 onder Iy past bij Iy van 70×195"
+				},
+				{
+					"check": "table",
+					"severity": "warning",
+					"message": "de tabelwaarden horen bij 70×195, niet bij 69×195"
+				}
+			],
+			"status": "auto_checked"
+		},
+		{
+			"id": "sawn-69x220",
+			"kind": "sawn",
+			"b": 69,
+			"h": 220,
+			"A": 15180,
+			"Wy": 556600,
+			"Iy": 61226000,
+			"Wz": 174570,
+			"Iz": 6022665,
+			"issues": [
+				{
+					"check": "table",
+					"severity": "warning",
+					"field": "A",
+					"found": 15.4,
+					"message": "tabelcel 15,40 onder A past bij A van 70×220"
+				},
+				{
+					"check": "table",
+					"severity": "warning",
+					"field": "Wy",
+					"found": 564.6,
+					"message": "tabelcel 564,6 onder Wy past bij Wy van 70×220"
+				},
+				{
+					"check": "table",
+					"severity": "warning",
+					"field": "Iy",
+					"found": 62.11,
+					"message": "tabelcel 62,11 onder Iy past bij Iy van 70×220"
+				},
+				{
+					"check": "table",
+					"severity": "warning",
+					"message": "de tabelwaarden horen bij 70×220, niet bij 69×220"
+				}
+			],
+			"status": "auto_checked"
+		},
+		{
+			"id": "sawn-69x245",
+			"kind": "sawn",
+			"b": 69,
+			"h": 245,
+			"A": 16905,
+			"Wy": 690287.5,
+			"Iy": 84560219,
+			"Wz": 194407.5,
+			"Iz": 6707059,
+			"issues": [
+				{
+					"check": "table",
+					"severity": "warning",
+					"field": "A",
+					"found": 17.1,
+					"message": "tabelcel 17,10 onder A past bij A van 70×245"
+				},
+				{
+					"check": "table",
+					"severity": "warning",
+					"field": "Wy",
+					"found": 700.2,
+					"message": "tabelcel 700,2 onder Wy past bij Wy van 70×245 of Iz van 70×245"
+				},
+				{
+					"check": "table",
+					"severity": "warning",
+					"field": "Iy",
+					"found": 85.78,
+					"message": "tabelcel 85,78 onder Iy past bij Iy van 70×245"
+				},
+				{
+					"check": "table",
+					"severity": "warning",
+					"message": "de tabelwaarden horen bij 70×245, niet bij 69×245"
+				}
+			],
+			"status": "auto_checked"
+		},
+		{
+			"id": "sawn-69x270",
+			"kind": "sawn",
+			"b": 69,
+			"h": 270,
+			"A": 18630,
+			"Wy": 838350,
+			"Iy": 113177250,
+			"Wz": 214245,
+			"Iz": 7391453,
+			"issues": [
+				{
+					"check": "table",
+					"severity": "warning",
+					"field": "A",
+					"found": 18.9,
+					"message": "tabelcel 18,90 onder A past bij A van 70×270"
+				}
+			],
+			"status": "auto_checked"
+		},
+		{
+			"id": "sawn-95x95",
+			"kind": "sawn",
+			"b": 95,
+			"h": 95,
+			"A": 9025,
+			"Wy": 142895.8,
+			"Iy": 6787552,
+			"Wz": 142895.8,
+			"Iz": 6787552,
+			"issues": [
+				{
+					"check": "table",
+					"severity": "warning",
+					"field": "A",
+					"found": 77.5,
+					"message": "tabelcel 77,5 onder A past bij Wz van 70×95"
+				},
+				{
+					"check": "table",
+					"severity": "warning",
+					"field": "Wy",
+					"found": 2.72,
+					"message": "tabelcel 2,72 onder Wy past bij Iz van 70×95"
+				},
+				{
+					"check": "table",
+					"severity": "error",
+					"message": "geen tabelwaarde in deze rij hoort bij 95×95: staat deze maat terecht in de tabel?"
+				}
+			],
+			"status": "flagged"
+		},
+		{
+			"id": "sawn-95x120",
+			"kind": "sawn",
+			"b": 95,
+			"h": 120,
+			"A": 11400,
+			"Wy": 228000,
+			"Iy": 13680000,
+			"Wz": 180500,
+			"Iz": 8573750,
+			"issues": [
+				{
+					"check": "table",
+					"severity": "warning",
+					"field": "A",
+					"found": 98,
+					"message": "tabelcel 98,0 onder A past bij Wz van 70×120"
+				},
+				{
+					"check": "table",
+					"severity": "warning",
+					"field": "Wy",
+					"found": 3.43,
+					"message": "tabelcel 3,43 onder Wy past bij Iz van 70×120"
+				},
+				{
+					"check": "table",
+					"severity": "error",
+					"message": "geen tabelwaarde in deze rij hoort bij 95×120: staat deze maat terecht in de tabel?"
+				}
+			],
+			"status": "flagged"
+		},
+		{
+			"id": "sawn-95x133",
+			"kind": "sawn",
+			"b": 95,
+			"h": 133,
+			"A": 12635,
+			"Wy": 280075.8,
+			"Iy": 18625043,
+			"Wz": 200054.2,
+			"Iz": 9502573,
+			"issues": [
+				{
+					"check": "table",
+					"severity": "warning",
+					"field": "A",
+					"found": 108.6,
+					"message": "tabelcel 108,6 onder A past bij Wz van 70×133"
+				},
+				{
+					"check": "table",
+					"severity": "warning",
+					"field": "Wy",
+					"found": 3.8,
+					"message": "tabelcel 3,80 onder Wy past bij Iz van 70×133"
+				},
+				{
+					"check": "table",
+					"severity": "warning",
+					"message": "de tabelwaarden horen bij 96×133, niet bij 95×133"
+				}
+			],
+			"status": "auto_checked"
+		},
+		{
+			"id": "sawn-95x145",
+			"kind": "sawn",
+			"b": 95,
+			"h": 145,
+			"A": 13775,
+			"Wy": 332895.8,
+			"Iy": 24134948,
+			"Wz": 218104.2,
+			"Iz": 10359948,
+			"issues": [
+				{
+					"check": "table",
+					"severity": "warning",
+					"field": "A",
+					"found": 118.4,
+					"message": "tabelcel 118,4 onder A past bij Wz van 70×145"
+				},
+				{
+					"check": "table",
+					"severity": "warning",
+					"field": "Wy",
+					"found": 4.14,
+					"message": "tabelcel 4,14 onder Wy past bij Iz van 70×145"
+				},
+				{
+					"check": "table",
+					"severity": "warning",
+					"message": "de tabelwaarden horen bij 96×145, niet bij 95×145"
+				}
+			],
+			"status": "auto_checked"
+		},
+		{
+			"id": "sawn-95x170",
+			"kind": "sawn",
+			"b": 95,
+			"h": 170,
+			"A": 16150,
+			"Wy": 457583.3,
+			"Iy": 38894583,
+			"Wz": 255708.3,
+			"Iz": 12146146,
+			"issues": [
+				{
+					"check": "table",
+					"severity": "warning",
+					"field": "A",
+					"found": 138.8,
+					"message": "tabelcel 138,8 onder A past bij Wz van 70×170"
+				},
+				{
+					"check": "table",
+					"severity": "warning",
+					"field": "Wy",
+					"found": 4.86,
+					"message": "tabelcel 4,86 onder Wy past bij Iz van 70×170"
+				},
+				{
+					"check": "table",
+					"severity": "error",
+					"message": "geen tabelwaarde in deze rij hoort bij 95×170: staat deze maat terecht in de tabel?"
+				}
+			],
+			"status": "flagged"
+		},
+		{
+			"id": "sawn-95x195",
+			"kind": "sawn",
+			"b": 95,
+			"h": 195,
+			"A": 18525,
+			"Wy": 602062.5,
+			"Iy": 58701094,
+			"Wz": 293312.5,
+			"Iz": 13932344,
+			"issues": [
+				{
+					"check": "table",
+					"severity": "warning",
+					"field": "A",
+					"found": 159.2,
+					"message": "tabelcel 159,2 onder A past bij Wz van 70×195"
+				},
+				{
+					"check": "table",
+					"severity": "warning",
+					"field": "Wy",
+					"found": 5.57,
+					"message": "tabelcel 5,57 onder Wy past bij Iz van 70×195"
+				},
+				{
+					"check": "table",
+					"severity": "warning",
+					"field": "Iy",
+					"found": 18.5,
+					"message": "tabelcel 18,50 onder Iy past bij A van 95×195"
+				}
+			],
+			"status": "auto_checked"
+		},
+		{
+			"id": "sawn-95x220",
+			"kind": "sawn",
+			"b": 95,
+			"h": 220,
+			"A": 20900,
+			"Wy": 766333.3,
+			"Iy": 84296667,
+			"Wz": 330916.7,
+			"Iz": 15718542,
+			"issues": [
+				{
+					"check": "table",
+					"severity": "warning",
+					"field": "A",
+					"found": 179.6,
+					"message": "tabelcel 179,6 onder A past bij Wz van 70×220"
+				},
+				{
+					"check": "table",
+					"severity": "warning",
+					"field": "Wy",
+					"found": 6.29,
+					"message": "tabelcel 6,29 onder Wy past bij Iz van 70×220"
+				},
+				{
+					"check": "table",
+					"severity": "warning",
+					"field": "Iy",
+					"found": 20.9,
+					"message": "tabelcel 20,90 onder Iy past bij A van 95×220"
+				}
+			],
+			"status": "auto_checked"
+		},
+		{
+			"id": "sawn-95x245",
+			"kind": "sawn",
+			"b": 95,
+			"h": 245,
+			"A": 23275,
+			"Wy": 950395.8,
+			"Iy": 116423490,
+			"Wz": 368520.8,
+			"Iz": 17504740,
+			"issues": [
+				{
+					"check": "table",
+					"severity": "warning",
+					"field": "A",
+					"found": 200,
+					"message": "tabelcel 200,0 onder A past bij Wz van 70×245"
+				},
+				{
+					"check": "table",
+					"severity": "warning",
+					"field": "Wy",
+					"found": 7.06,
+					"message": "tabelcel 7,06 onder Wy past bij Wy van 70×245 of Iz van 70×245"
+				},
+				{
+					"check": "table",
+					"severity": "warning",
+					"field": "Iy",
+					"found": 23.3,
+					"message": "tabelcel 23,30 onder Iy past bij A van 95×245"
+				}
+			],
+			"status": "auto_checked"
+		},
+		{
+			"id": "sawn-95x270",
+			"kind": "sawn",
+			"b": 95,
+			"h": 270,
+			"A": 25650,
+			"Wy": 1154250,
+			"Iy": 155823750,
+			"Wz": 406125,
+			"Iz": 19290938,
+			"issues": [
+				{
+					"check": "table",
+					"severity": "warning",
+					"field": "A",
+					"found": 220.2,
+					"message": "tabelcel 220,2 onder A past bij Wz van 70×270"
+				},
+				{
+					"check": "table",
+					"severity": "warning",
+					"field": "Wy",
+					"found": 7.84,
+					"message": "tabelcel 7,84 onder Wy past bij geen maat in deze rij"
+				},
+				{
+					"check": "table",
+					"severity": "warning",
+					"field": "Iy",
+					"found": 26.5,
+					"message": "tabelcel 26,50 onder Iy past bij geen maat in deze rij"
+				},
+				{
+					"check": "table",
+					"severity": "error",
+					"message": "geen tabelwaarde in deze rij hoort bij 95×270: staat deze maat terecht in de tabel?"
+				}
+			],
+			"status": "flagged"
+		},
+		{
+			"id": "sawn-120x195",
+			"kind": "sawn",
+			"b": 120,
+			"h": 195,
+			"A": 23400,
+			"Wy": 760500,
+			"Iy": 74148750,
+			"Wz": 468000,
+			"Iz": 28080000,
+			"issues": [
+				{
+					"check": "table",
+					"severity": "warning",
+					"field": "A",
+					"found": 602,
+					"message": "tabelcel 602,0 onder A past bij Wy van 95×195"
+				},
+				{
+					"check": "table",
+					"severity": "warning",
+					"field": "Wy",
+					"found": 58.7,
+					"message": "tabelcel 58,70 onder Wy past bij Iy van 95×195"
+				},
+				{
+					"check": "table",
+					"severity": "error",
+					"message": "geen tabelwaarde in deze rij hoort bij 120×195: staat deze maat terecht in de tabel?"
+				}
+			],
+			"status": "flagged"
+		},
+		{
+			"id": "sawn-120x220",
+			"kind": "sawn",
+			"b": 120,
+			"h": 220,
+			"A": 26400,
+			"Wy": 968000,
+			"Iy": 106480000,
+			"Wz": 528000,
+			"Iz": 31680000,
+			"issues": [
+				{
+					"check": "table",
+					"severity": "warning",
+					"field": "A",
+					"found": 766.3,
+					"message": "tabelcel 766,3 onder A past bij Wy van 95×220"
+				},
+				{
+					"check": "table",
+					"severity": "warning",
+					"field": "Wy",
+					"found": 84.29,
+					"message": "tabelcel 84,29 onder Wy past bij Iy van 95×220"
+				},
+				{
+					"check": "table",
+					"severity": "error",
+					"message": "geen tabelwaarde in deze rij hoort bij 120×220: staat deze maat terecht in de tabel?"
+				}
+			],
+			"status": "flagged"
+		},
+		{
+			"id": "sawn-120x245",
+			"kind": "sawn",
+			"b": 120,
+			"h": 245,
+			"A": 29400,
+			"Wy": 1200500,
+			"Iy": 147061250,
+			"Wz": 588000,
+			"Iz": 35280000,
+			"issues": [
+				{
+					"check": "table",
+					"severity": "warning",
+					"field": "A",
+					"found": 889.8,
+					"message": "tabelcel 889,8 onder A past bij geen maat in deze rij"
+				},
+				{
+					"check": "table",
+					"severity": "warning",
+					"field": "Wy",
+					"found": 106,
+					"message": "tabelcel 106,0 onder Wy past bij geen maat in deze rij"
+				},
+				{
+					"check": "table",
+					"severity": "error",
+					"message": "geen tabelwaarde in deze rij hoort bij 120×245: staat deze maat terecht in de tabel?"
+				}
+			],
+			"status": "flagged"
+		},
+		{
+			"id": "sawn-120x270",
+			"kind": "sawn",
+			"b": 120,
+			"h": 270,
+			"A": 32400,
+			"Wy": 1458000,
+			"Iy": 196830000,
+			"Wz": 648000,
+			"Iz": 38880000,
+			"issues": [
+				{
+					"check": "table",
+					"severity": "warning",
+					"field": "A",
+					"found": 1020,
+					"message": "tabelcel 1.020,0 onder A past bij geen maat in deze rij"
+				},
+				{
+					"check": "table",
+					"severity": "warning",
+					"field": "Wy",
+					"found": 130.2,
+					"message": "tabelcel 130,2 onder Wy past bij geen maat in deze rij"
+				},
+				{
+					"check": "table",
+					"severity": "error",
+					"message": "geen tabelwaarde in deze rij hoort bij 120×270: staat deze maat terecht in de tabel?"
+				}
+			],
+			"status": "flagged"
+		}
+	]
+}

@@ -21,6 +21,12 @@
 				"--strictPort"
 			],
 			"port": 4173
+		},
+		{
+			"name": "barchy-pages",
+			"runtimeExecutable": "npm",
+			"runtimeArgs": ["run", "serve:pages"],
+			"port": 4174
 		}
 	]
 }

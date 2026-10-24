@@ -1,0 +1,152 @@
+{
+	"source": {
+		"title": "TU Delft Vademecum (TeachBooks)",
+		"ref": "Oorspronkelijke staaldata: Bouwen met Staal",
+		"url": "https://github.com/TeachBooks/vademecum",
+		"license": "CC BY 4.0"
+	},
+	"origin": {
+		"repo": "https://github.com/TeachBooks/vademecum",
+		"commit": "9a2f70afd158b7cee533c119bf4c88ae15106d4a",
+		"path": "book/basis_gegevens/dimensietabellen/betonstaal.md",
+		"section": "Betonstaal (Wapening)"
+	},
+	"rows": [
+		{
+			"d": 6,
+			"As": [
+				28,
+				57,
+				85,
+				113,
+				141,
+				170,
+				198,
+				226,
+				254,
+				283
+			],
+			"issues": [],
+			"status": "auto_checked"
+		},
+		{
+			"d": 8,
+			"As": [
+				50,
+				101,
+				151,
+				201,
+				251,
+				302,
+				352,
+				402,
+				452,
+				503
+			],
+			"issues": [],
+			"status": "auto_checked"
+		},
+		{
+			"d": 10,
+			"As": [
+				79,
+				157,
+				236,
+				314,
+				393,
+				471,
+				550,
+				628,
+				707,
+				785
+			],
+			"issues": [],
+			"status": "auto_checked"
+		},
+		{
+			"d": 12,
+			"As": [
+				113,
+				226,
+				339,
+				452,
+				565,
+				679,
+				792,
+				905,
+				1018,
+				1131
+			],
+			"issues": [],
+			"status": "auto_checked"
+		},
+		{
+			"d": 16,
+			"As": [
+				201,
+				402,
+				603,
+				804,
+				1005,
+				1206,
+				1407,
+				1608,
+				1810,
+				2011
+			],
+			"issues": [],
+			"status": "auto_checked"
+		},
+		{
+			"d": 20,
+			"As": [
+				314,
+				628,
+				942,
+				1257,
+				1571,
+				1885,
+				2199,
+				2513,
+				2827,
+				3142
+			],
+			"issues": [],
+			"status": "auto_checked"
+		},
+		{
+			"d": 25,
+			"As": [
+				491,
+				982,
+				1473,
+				1963,
+				2454,
+				2945,
+				3436,
+				3927,
+				4418,
+				4909
+			],
+			"issues": [],
+			"status": "auto_checked"
+		},
+		{
+			"d": 32,
+			"As": [
+				804,
+				1608,
+				2413,
+				3217,
+				4021,
+				4825,
+				5630,
+				6434,
+				7238,
+				8042
+			],
+			"issues": [],
+			"status": "auto_checked"
+		}
+	]
+}

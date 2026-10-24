@@ -68,6 +68,8 @@
 	--on-cobalt: #ffffff;
 	--lavender: #9c94c6;
 	--lime: #8bea5b;
+	/* Warning marker on flagged values (Blok 'yellow'), always with a word */
+	--warn: #f1e45a;
 
 	/* Information type → colour. Components use these, never the raw hues. */
 	--type-requirement: var(--cobalt);

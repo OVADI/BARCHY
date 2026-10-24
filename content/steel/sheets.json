@@ -1,0 +1,183 @@
+{
+	"source": {
+		"title": "TU Delft Vademecum (TeachBooks)",
+		"ref": "Oorspronkelijke staaldata: Bouwen met Staal",
+		"url": "https://github.com/TeachBooks/vademecum",
+		"license": "CC BY 4.0"
+	},
+	"origin": {
+		"repo": "https://github.com/TeachBooks/vademecum",
+		"commit": "9a2f70afd158b7cee533c119bf4c88ae15106d4a",
+		"path": "book/basis_gegevens/dimensietabellen/staal.md",
+		"section": "Geprofileerde staalplaten"
+	},
+	"units": {
+		"h": "mm",
+		"t": "mm",
+		"sigma": "N/mm²",
+		"Iy": "mm⁴/m",
+		"Wy": "mm³/m"
+	},
+	"sheets": [
+		{
+			"id": "sheet-h40-t0-88",
+			"h": 40,
+			"t": 0.88,
+			"sigma": 94,
+			"Iy": 300000,
+			"Wy": 9100,
+			"issues": [
+				{
+					"check": "scale",
+					"severity": "error",
+					"message": "Eenheden in de kolomkop zijn tegenstrijdig (Wy als ·10⁴ mm⁴); hier gelezen als Iy ×10⁴ mm⁴/m en Wy ×10³ mm³/m. Ook de betekenis van σ is niet toegelicht."
+				}
+			],
+			"status": "flagged"
+		},
+		{
+			"id": "sheet-h40-t1",
+			"h": 40,
+			"t": 1,
+			"sigma": 107,
+			"Iy": 330000,
+			"Wy": 10400,
+			"issues": [
+				{
+					"check": "scale",
+					"severity": "error",
+					"message": "Eenheden in de kolomkop zijn tegenstrijdig (Wy als ·10⁴ mm⁴); hier gelezen als Iy ×10⁴ mm⁴/m en Wy ×10³ mm³/m. Ook de betekenis van σ is niet toegelicht."
+				}
+			],
+			"status": "flagged"
+		},
+		{
+			"id": "sheet-h70-t0-88",
+			"h": 70,
+			"t": 0.88,
+			"sigma": 107,
+			"Iy": 960000,
+			"Wy": 22700,
+			"issues": [
+				{
+					"check": "scale",
+					"severity": "error",
+					"message": "Eenheden in de kolomkop zijn tegenstrijdig (Wy als ·10⁴ mm⁴); hier gelezen als Iy ×10⁴ mm⁴/m en Wy ×10³ mm³/m. Ook de betekenis van σ is niet toegelicht."
+				}
+			],
+			"status": "flagged"
+		},
+		{
+			"id": "sheet-h70-t1",
+			"h": 70,
+			"t": 1,
+			"sigma": 122,
+			"Iy": 1100000,
+			"Wy": 26600,
+			"issues": [
+				{
+					"check": "scale",
+					"severity": "error",
+					"message": "Eenheden in de kolomkop zijn tegenstrijdig (Wy als ·10⁴ mm⁴); hier gelezen als Iy ×10⁴ mm⁴/m en Wy ×10³ mm³/m. Ook de betekenis van σ is niet toegelicht."
+				}
+			],
+			"status": "flagged"
+		},
+		{
+			"id": "sheet-h96-t0-88",
+			"h": 96,
+			"t": 0.88,
+			"sigma": 121,
+			"Iy": 1950000,
+			"Wy": 21700,
+			"issues": [
+				{
+					"check": "scale",
+					"severity": "error",
+					"message": "Eenheden in de kolomkop zijn tegenstrijdig (Wy als ·10⁴ mm⁴); hier gelezen als Iy ×10⁴ mm⁴/m en Wy ×10³ mm³/m. Ook de betekenis van σ is niet toegelicht."
+				}
+			],
+			"status": "flagged"
+		},
+		{
+			"id": "sheet-h96-t1",
+			"h": 96,
+			"t": 1,
+			"sigma": 138,
+			"Iy": 2230000,
+			"Wy": 24800,
+			"issues": [
+				{
+					"check": "scale",
+					"severity": "error",
+					"message": "Eenheden in de kolomkop zijn tegenstrijdig (Wy als ·10⁴ mm⁴); hier gelezen als Iy ×10⁴ mm⁴/m en Wy ×10³ mm³/m. Ook de betekenis van σ is niet toegelicht."
+				}
+			],
+			"status": "flagged"
+		},
+		{
+			"id": "sheet-h106-t0-88",
+			"h": 106,
+			"t": 0.88,
+			"sigma": 115,
+			"Iy": 2130000,
+			"Wy": 26900,
+			"issues": [
+				{
+					"check": "scale",
+					"severity": "error",
+					"message": "Eenheden in de kolomkop zijn tegenstrijdig (Wy als ·10⁴ mm⁴); hier gelezen als Iy ×10⁴ mm⁴/m en Wy ×10³ mm³/m. Ook de betekenis van σ is niet toegelicht."
+				}
+			],
+			"status": "flagged"
+		},
+		{
+			"id": "sheet-h106-t1",
+			"h": 106,
+			"t": 1,
+			"sigma": 130,
+			"Iy": 2430000,
+			"Wy": 31800,
+			"issues": [
+				{
+					"check": "scale",
+					"severity": "error",
+					"message": "Eenheden in de kolomkop zijn tegenstrijdig (Wy als ·10⁴ mm⁴); hier gelezen als Iy ×10⁴ mm⁴/m en Wy ×10³ mm³/m. Ook de betekenis van σ is niet toegelicht."
+				}
+			],
+			"status": "flagged"
+		},
+		{
+			"id": "sheet-h120-t0-88",
+			"h": 120,
+			"t": 0.88,
+			"sigma": 136,
+			"Iy": 3200000,
+			"Wy": 43000,
+			"issues": [
+				{
+					"check": "scale",
+					"severity": "error",
+					"message": "Eenheden in de kolomkop zijn tegenstrijdig (Wy als ·10⁴ mm⁴); hier gelezen als Iy ×10⁴ mm⁴/m en Wy ×10³ mm³/m. Ook de betekenis van σ is niet toegelicht."
+				}
+			],
+			"status": "flagged"
+		},
+		{
+			"id": "sheet-h120-t1",
+			"h": 120,
+			"t": 1,
+			"sigma": 154,
+			"Iy": 3650000,
+			"Wy": 55000,
+			"issues": [
+				{
+					"check": "scale",
+					"severity": "error",
+					"message": "Eenheden in de kolomkop zijn tegenstrijdig (Wy als ·10⁴ mm⁴); hier gelezen als Iy ×10⁴ mm⁴/m en Wy ×10³ mm³/m. Ook de betekenis van σ is niet toegelicht."
+				}
+			],
+			"status": "flagged"
+		}
+	]
+}

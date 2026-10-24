@@ -5,6 +5,7 @@
 	import { pwaInfo } from 'virtual:pwa-info';
 	import BottomNav from '$lib/components/BottomNav.svelte';
 	import { initLocale, t } from '$lib/i18n/index.svelte';
+	import { initSaved } from '$lib/storage/saved.svelte';
 
 	let { children }: { children: Snippet } = $props();
 
@@ -13,6 +14,7 @@
 	onMount(async () => {
 		// After hydration, so the prerendered (NL) markup is never mismatched.
 		initLocale();
+		void initSaved();
 		if (pwaInfo) {
 			const { registerSW } = await import('virtual:pwa-register');
 			registerSW({ immediate: true });

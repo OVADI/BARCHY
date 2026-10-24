@@ -7,3 +7,8 @@ static/
 reports/
 test-results/
 playwright-report/
+content/steel/*.json
+!content/steel/corrections.json
+content/timber/
+content/concrete/
+.claude/worktrees/

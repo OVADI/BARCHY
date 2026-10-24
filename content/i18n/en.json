@@ -18,13 +18,44 @@
 		"language": "Language",
 		"comingSoon": "This screen is built in a later phase.",
 		"noSource": "No source yet",
-		"reportMissing": "Tell us what you were looking for"
+		"reportMissing": "Tell us what you were looking for",
+		"loading": "Loading…",
+		"loadError": "The data could not be loaded.",
+		"notFound": "This section is not in the data.",
+		"save": "Save",
+		"unsave": "Remove from saved",
+		"remove": "Remove"
 	},
 	"info": {
 		"open": "Sources and info",
 		"heading": "Sources & info",
 		"license": "Licence",
-		"verify": "Not yet verified"
+		"verify": "Not yet verified",
+		"origin": "Imported from {path}, commit {commit}",
+		"corrected": "Corrected: {field} {from} → {to}",
+		"checkedAgainst": "Checked against",
+		"homeNote": "Every value shows its own source on the detail screen.",
+		"savedNote": "The bill of materials is stored on this device only.",
+		"calcNote": "Mass = G × length × count."
+	},
+	"status": {
+		"flagged": "Check",
+		"flaggedLong": "This value fails a check or has not been reviewed. Do not use it without consulting the source.",
+		"recordFlagged": "This section contains an error in the source. Check the values.",
+		"auto_checked": "Automatically checked for internal consistency",
+		"human_verified": "Verified by {by} on {on}",
+		"factFlagged": "Not yet verified"
+	},
+	"check": {
+		"mass": "G does not match A",
+		"gyration": "i does not match √(I/A)",
+		"modulus": "W does not match I",
+		"order": "strong and weak axis swapped",
+		"plausible": "implausible dimension",
+		"duplicate": "name appears twice in the source",
+		"missing": "missing in the source, calculated",
+		"geometry": "deviates from the geometry",
+		"expected": "expected about {value}"
 	},
 	"type": {
 		"requirement": "Bbl",
@@ -39,22 +70,165 @@
 		"searchPlaceholder": "Search: HEA 200, stair, toilet",
 		"recent": "Recent",
 		"structure": "Structure",
+		"structureTitle": "Sections, rules of thumb and materials",
+		"steel": "Steel",
+		"timber": "Timber",
+		"concrete": "Concrete",
 		"space": "Space & people",
+		"spaceTitle": "Stairs, sanitary, doors and Bbl requirements",
 		"drawing": "Drawing",
-		"tools": "Calculators"
+		"drawingTitle": "Line types and hatching",
+		"tools": "Calculators",
+		"toolsUnit": "tools",
+		"toolsSub": "Calculate and check instantly"
 	},
 	"search": {
 		"title": "Search"
 	},
 	"tools": {
 		"title": "Calculators",
-		"stair": "Stair calculator"
+		"stair": "Stair calculator",
+		"steelWeight": "Steel section weight"
 	},
 	"saved": {
-		"title": "Saved"
+		"title": "Saved",
+		"bom": "Bill of materials",
+		"favorites": "Favourites",
+		"total": "Total",
+		"positions": "{n} positions",
+		"pieces": "{n} pieces",
+		"emptyBom": "Nothing on the list yet. Add sections from a section screen.",
+		"emptyFavorites": "No favourites yet. Tap the bookmark on a section or category.",
+		"line": "{count} × {length} mm",
+		"share": "Share",
+		"csv": "CSV",
+		"csvFile": "barchy-bill-of-materials.csv",
+		"csvName": "Section",
+		"csvCount": "Count",
+		"csvLength": "Length (mm)",
+		"csvG": "G (kg/m)",
+		"csvMass": "Mass (kg)",
+		"shareTitle": "BARCHY bill of materials",
+		"copied": "Bill of materials copied",
+		"clear": "Clear the list",
+		"clearConfirm": "Are you sure? The bill of materials will be cleared.",
+		"removeLine": "Remove {name}",
+		"positionsOne": "{n} position",
+		"piecesOne": "{n} piece"
 	},
 	"steel": {
-		"title": "Steel"
+		"title": "Steel",
+		"profiles": "Sections",
+		"rules": "Rules of thumb",
+		"material": "Material",
+		"tabs": "Part",
+		"iTitle": "I-sections",
+		"iSub": "HEA, HEB, HEM, IPE",
+		"boxTitle": "Hollow sections",
+		"boxSub": "SHS, RHS",
+		"tubeTitle": "Tubes",
+		"tubeSub": "CHS, hot-finished",
+		"uTitle": "Channels",
+		"uSub": "UNP",
+		"angleTitle": "Angles",
+		"flatTitle": "Flats and bars",
+		"featured": "Section depth for span l",
+		"beamsFloor": "Floor beams",
+		"beamsRoof": "Roof beams",
+		"purlins": "Purlins",
+		"columns": "Columns",
+		"stability": "Stability",
+		"properties": "Properties",
+		"grades": "Steel grades",
+		"saveCategory": "Save steel",
+		"allRules": "All rules of thumb"
+	},
+	"profile": {
+		"series": "Series",
+		"sizes": "Size",
+		"picker": "Choose a section",
+		"moreVariants": "More variants",
+		"fewerVariants": "Fewer variants",
+		"section": "Cross-section of {name}",
+		"schematic": "To scale, root radii not drawn",
+		"schematicU": "Schematic: flange thickness unknown",
+		"weight": "Weight",
+		"length": "Length",
+		"count": "Count",
+		"total": "Total",
+		"addToBom": "List",
+		"addToBomLabel": "Add {name} to the bill of materials",
+		"added": "{name} added to the bill of materials",
+		"explain": "About {name}",
+		"properties": "Section properties",
+		"dimensions": "Dimensions"
+	},
+	"quantity": {
+		"G": {
+			"name": "Mass per metre",
+			"explain": "How much one metre of section weighs. Sets the self-weight in your structure and much of the cost; steel is bought by the kilo."
+		},
+		"h": {
+			"name": "Depth",
+			"explain": "The overall depth of the section. Sets the structural depth of a floor or roof and so the storey height. Deeper section: stiffer against deflection."
+		},
+		"b": {
+			"name": "Width",
+			"explain": "The flange width. Adds to the stiffness about the weak axis and sets how much room you have for bearings and connections."
+		},
+		"tw": {
+			"name": "Web thickness",
+			"explain": "The thickness of the vertical web. The web mainly carries shear; a thicker web resists more at supports and under point loads."
+		},
+		"tf": {
+			"name": "Flange thickness",
+			"explain": "The thickness of the horizontal flanges. The flanges carry most of the bending moment; mind the flange thickness for bolt holes and welds."
+		},
+		"t": {
+			"name": "Wall thickness",
+			"explain": "The wall thickness of a hollow section or tube. At the same outer size a thicker wall gives more strength and stiffness, and more weight."
+		},
+		"D": {
+			"name": "Outside diameter",
+			"explain": "The outer size of a round tube. A tube is equally stiff in every direction; useful for columns and trusses."
+		},
+		"A": {
+			"name": "Area",
+			"explain": "The cross-sectional area. Sets how much axial force (tension or compression) the section can carry and, with the density, its weight."
+		},
+		"Iy": {
+			"name": "Second moment of area, strong axis",
+			"explain": "How stiff the section is against bending about the strong axis. Use it to estimate beam deflection: twice as large means half the deflection."
+		},
+		"Iz": {
+			"name": "Second moment of area, weak axis",
+			"explain": "The stiffness about the weak axis. Important for columns, which usually buckle about this axis."
+		},
+		"Wy": {
+			"name": "Section modulus, strong axis",
+			"explain": "Links bending moment to stress: stress = moment / W. Use it to check whether a beam is strong enough."
+		},
+		"Wz": {
+			"name": "Section modulus, weak axis",
+			"explain": "Like W about the strong axis, but for bending about the weak axis, for example wind on the flange."
+		},
+		"iy": {
+			"name": "Radius of gyration, strong axis",
+			"explain": "√(I/A): how far, on average, the material lies from the axis. Needed for slenderness and so for buckling about the strong axis."
+		},
+		"iz": {
+			"name": "Radius of gyration, weak axis",
+			"explain": "√(I/A) about the weak axis. Usually governs column buckling: smaller i, earlier buckling."
+		}
+	},
+	"timber": {
+		"title": "Timber"
+	},
+	"concrete": {
+		"title": "Concrete"
+	},
+	"drawing": {
+		"title": "Drawing"
 	},
 	"spacePage": {
 		"title": "Space & people"

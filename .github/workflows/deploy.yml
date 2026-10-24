@@ -46,6 +46,7 @@ jobs:
         env:
           # Project page: https://<user>.github.io/<repo>/. Use '' for a custom domain.
           BASE_PATH: /${{ github.event.repository.name }}
+          VITE_REPO_URL: https://github.com/${{ github.repository }}
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:
