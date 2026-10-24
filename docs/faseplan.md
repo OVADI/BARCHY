@@ -125,8 +125,10 @@ Commit `9247650`
 - De grootte van de offline-cache (PWA precache) meten en rapporteren
 - Volledige controleronde over alle [VERIFY]-waarden
 - Disclaimer, alleen bij de eerste keer openen: de informatie is overgenomen uit het Vademecum (en de Bbl), er kunnen kleine fouten in zitten, controleer altijd zelf
-- Feedback: een blok op Home ("Wil je iets toevoegen of aanvragen?") met een invulveld. Een verzonden bericht komt als e-mail bij de maker binnen. Nog af te stemmen: via welke dienst, want de app is statisch en heeft geen eigen server (bijvoorbeeld een formulierdienst). Versturen werkt alleen online
+- Feedback: een blok op Home ("Wil je iets toevoegen of aanvragen?") met een invulveld. Een verzonden bericht komt als e-mail bij de maker binnen. Versturen werkt alleen online
 - Release
+
+> **Notitie feedback:** de app heeft geen eigen server en kan dus zelf geen e-mail versturen. Daarvoor is een formulierdienst nodig, zoals Web3Forms of Formspree: het formulier stuurt het bericht naar de dienst, die het naar de maker mailt. De rest van de app blijft offline werken. Keuze van de dienst volgt bij de start van fase 9.
 
 ---
 
