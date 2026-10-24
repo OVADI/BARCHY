@@ -26,25 +26,29 @@ export function formatValue(value: number, fmt: NumberFormat): string {
 	return fmt(value, { maximumFractionDigits: 3 });
 }
 
+const BOUND: Partial<Record<NonNullable<Fact['bound']>, string>> = { min: '≥ ', max: '≤ ' };
+
 /**
- * A fact's value as one string: 'l/15 – l/20', 'L/25', '235 N/mm²', '600 – 630 mm'.
- * For a divisor range the smaller fraction (larger n) is written last.
+ * A fact's value as one string: 'l/15 – l/20', 'L/25', '235 N/mm²', '600 – 630 mm',
+ * '≥ 0,9 × 1,2 m', '≤ 0,188 m'. For a divisor range the smaller fraction (larger n) is written last.
  */
 export function formatFact(
-	fact: Pick<Fact, 'value' | 'unit' | 'divisorOf'>,
+	fact: Pick<Fact, 'value' | 'unit' | 'divisorOf' | 'bound' | 'by'>,
 	fmt: NumberFormat
 ): string {
 	const unit = fact.unit ? ` ${fact.unit}` : '';
+	const prefix = (fact.bound && BOUND[fact.bound]) ?? '';
 	if (fact.divisorOf) {
 		const d = fact.divisorOf;
 		if (Array.isArray(fact.value)) {
 			const [lo, hi] = fact.value;
 			return `${d}/${fmt(lo)} – ${d}/${fmt(hi)}`;
 		}
-		return `${d}/${fmt(fact.value)}`;
+		return `${prefix}${d}/${fmt(fact.value)}`;
 	}
 	if (Array.isArray(fact.value)) {
 		return `${formatValue(fact.value[0], fmt)} – ${formatValue(fact.value[1], fmt)}${unit}`;
 	}
-	return `${formatValue(fact.value, fmt)}${unit}`;
+	const by = fact.by !== undefined ? ` × ${formatValue(fact.by, fmt)}` : '';
+	return `${prefix}${formatValue(fact.value, fmt)}${by}${unit}`;
 }

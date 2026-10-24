@@ -1,3 +1,4 @@
+import { untrack } from 'svelte';
 import { read, write } from './kv';
 
 /** One line of the bill of materials. G is copied so the list stays readable if data changes. */
@@ -90,9 +91,11 @@ export const saved = {
 		void write('favorites', state.favorites);
 	},
 
-	/** Most recent first, no duplicates. */
+	/** Most recent first, no duplicates. Untracked, so calling it from an $effect does not loop. */
 	visit(b: Bookmark) {
-		state.recent = [b, ...state.recent.filter((r) => r.path !== b.path)].slice(0, RECENT_MAX);
-		void write('recent', state.recent);
+		untrack(() => {
+			state.recent = [b, ...state.recent.filter((r) => r.path !== b.path)].slice(0, RECENT_MAX);
+			void write('recent', state.recent);
+		});
 	}
 };

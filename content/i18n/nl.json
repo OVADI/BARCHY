@@ -231,7 +231,21 @@
 		"title": "Tekenen"
 	},
 	"spacePage": {
-		"title": "Ruimte & mens"
+		"title": "Ruimte & mens",
+		"scope": "Bbl-eisen voor een woonfunctie, nieuwbouw (hoofdstuk 4). Versie geldend vanaf 24-09-2026.",
+		"flagged": "Deze eisen zijn letterlijk uit de Bbl-tekst overgenomen, maar nog niet door een persoon gecontroleerd. Raadpleeg het artikel voordat je ze gebruikt.",
+		"tabs": "Onderwerpen",
+		"rooms": "Ruimten",
+		"circulation": "Trap, helling, doorgang",
+		"guarding": "Afscheiding",
+		"living": "Verblijfsgebied",
+		"sanitary": "Toilet en badruimte",
+		"outdoor": "Berging en buitenruimte",
+		"stair": "Trap",
+		"ramp": "Hellingbaan",
+		"access": "Doorgang en verkeersroute",
+		"stairTool": "Toets een trap aan de Bbl",
+		"info": "Bij elke waarde staat het artikel. Andere woonfuncties (woonwagen, studenten, zorg) en bestaande bouw hebben soms andere waarden; die staan hier niet."
 	},
 	"settings": {
 		"title": "Instellingen"
@@ -247,5 +261,27 @@
 		"sampleLength": "Lengte",
 		"sampleTileTitle": "Uitlegkaart",
 		"sampleTileBody": "Het traagheidsmoment zegt hoe stijf een profiel is tegen doorbuigen."
+	},
+	"stair": {
+		"scope": "Rechte trap in een woonfunctie, nieuwbouw. Grenzen uit Bbl art. 4.26, tabel 4.26.",
+		"design": "Ontwerp",
+		"rise": "Hoogteverschil",
+		"risers": "Aantal optreden",
+		"auto": "(automatisch)",
+		"autoRisers": "Terug naar automatisch ({n})",
+		"going": "Aantrede",
+		"width": "Breedte",
+		"riser": "Optrede",
+		"riserResult": "Hoogte per optrede",
+		"run": "Lengte rechte trap, (n − 1) × aantrede",
+		"checks": "Toetsing Bbl",
+		"ok": "Voldoet",
+		"notOk": "Voldoet niet",
+		"allOk": "Voldoet aan deze vier eisen. Controleer ook de overige eisen hieronder.",
+		"someFail": "Voldoet niet aan alle eisen.",
+		"alsoApplies": "Ook van toepassing",
+		"info": "De calculator rekent met de grenzen uit de Bbl-feiten van deze app. Vrije hoogte, klimlijn, bordes en leuning toetst hij niet; die staan onder Ook van toepassing.",
+		"limitMax": "max. {value}",
+		"limitMin": "min. {value}"
 	}
 }

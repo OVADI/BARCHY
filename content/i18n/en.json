@@ -231,7 +231,21 @@
 		"title": "Drawing"
 	},
 	"spacePage": {
-		"title": "Space & people"
+		"title": "Space & people",
+		"scope": "Bbl requirements for a dwelling, new build (chapter 4). Version in force from 24-09-2026.",
+		"flagged": "These requirements are taken word for word from the Bbl text but have not yet been checked by a person. Consult the article before using them.",
+		"tabs": "Topics",
+		"rooms": "Rooms",
+		"circulation": "Stair, ramp, doorway",
+		"guarding": "Guarding",
+		"living": "Habitable area",
+		"sanitary": "Toilet and bathroom",
+		"outdoor": "Storage and outdoor space",
+		"stair": "Stair",
+		"ramp": "Ramp",
+		"access": "Doorway and circulation route",
+		"stairTool": "Check a stair against the Bbl",
+		"info": "Each value lists its article. Other dwelling types (caravan, students, care) and existing buildings sometimes have other values; they are not shown here."
 	},
 	"settings": {
 		"title": "Settings"
@@ -247,5 +261,27 @@
 		"sampleLength": "Length",
 		"sampleTileTitle": "Explainer card",
 		"sampleTileBody": "The second moment of area tells you how stiff a section is against bending."
+	},
+	"stair": {
+		"scope": "Straight stair in a dwelling, new build. Limits from Bbl art. 4.26, table 4.26.",
+		"design": "Design",
+		"rise": "Height difference",
+		"risers": "Number of risers",
+		"auto": "(automatic)",
+		"autoRisers": "Back to automatic ({n})",
+		"going": "Going",
+		"width": "Width",
+		"riser": "Riser",
+		"riserResult": "Height per riser",
+		"run": "Length of straight stair, (n − 1) × going",
+		"checks": "Bbl check",
+		"ok": "Meets",
+		"notOk": "Does not meet",
+		"allOk": "Meets these four requirements. Also check the other requirements below.",
+		"someFail": "Does not meet every requirement.",
+		"alsoApplies": "Also applies",
+		"info": "The calculator uses the limits from this app’s Bbl facts. It does not check clear height, walking line, landing or handrail; those are listed under Also applies.",
+		"limitMax": "max {value}",
+		"limitMin": "min {value}"
 	}
 }

@@ -17,6 +17,13 @@ describe('formatFact', () => {
 		expect(formatFact({ value: [600, 630], unit: 'mm' }, en)).toBe('600 – 630 mm');
 	});
 
+	it('marks limits and writes rectangles as a × b', () => {
+		expect(formatFact({ value: 0.188, unit: 'm', bound: 'max' }, nl)).toBe('≤ 0,188 m');
+		expect(formatFact({ value: 0.9, by: 1.2, unit: 'm', bound: 'min' }, nl)).toBe('≥ 0,9 × 1,2 m');
+		expect(formatFact({ value: 12, unit: '', divisorOf: '1', bound: 'max' }, nl)).toBe('≤ 1/12');
+		expect(formatFact({ value: [0.8, 1], unit: 'm', bound: 'range' }, en)).toBe('0.8 – 1 m');
+	});
+
 	it('writes very small numbers with a power of ten', () => {
 		expect(formatValue(0.000012, nl)).toBe('12 · 10⁻⁶');
 		expect(formatValue(0, nl)).toBe('0');

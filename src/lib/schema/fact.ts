@@ -17,6 +17,8 @@ export const Fact = z
 		explain: Bilingual.optional(),
 		value: Value,
 		unit: z.string(),
+		/** Second side of a rectangle, as the source writes it: 0,9 m x 1,2 m is value 0.9, by 1.2. */
+		by: z.number().optional(),
 		/** The value is n in "symbol / n", e.g. h = l/20: divisorOf 'l', value 20 (or [15, 20]). */
 		divisorOf: z.string().min(1).optional(),
 		/** Where the value applies, as written in the source (may contain numbers from that source). */
@@ -44,6 +46,13 @@ export const Fact = z
 				code: 'custom',
 				message: "bound 'range' needs a [low, high] value",
 				path: ['value']
+			});
+		}
+		if (fact.by !== undefined && (Array.isArray(fact.value) || fact.divisorOf)) {
+			ctx.addIssue({
+				code: 'custom',
+				message: "'by' needs a single value without divisorOf",
+				path: ['by']
 			});
 		}
 		if (fact.type === 'requirement' && !fact.validFrom) {

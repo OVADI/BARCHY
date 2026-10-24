@@ -4,5 +4,11 @@
 		"ref": "Oorspronkelijke staaldata: Bouwen met Staal",
 		"url": "https://github.com/TeachBooks/vademecum",
 		"license": "CC BY 4.0"
+	},
+	"bbl": {
+		"title": "Besluit bouwwerken leefomgeving (Bbl)",
+		"ref": "Hoofdstuk 4 Nieuwbouw, geldend vanaf 24-09-2026",
+		"url": "https://wetten.overheid.nl/BWBR0041297/2026-09-24",
+		"license": "Wettekst, geen auteursrecht (Auteurswet art. 11)"
 	}
 }

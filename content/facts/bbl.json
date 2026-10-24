@@ -1,0 +1,1539 @@
+{
+	"facts": [
+		{
+			"id": "bbl-verblijfsgebied-totaal",
+			"topic": "bbl",
+			"type": "requirement",
+			"group": "living",
+			"label": {
+				"nl": "Niet-gemeenschappelijk verblijfsgebied per woning",
+				"en": "Private habitable area per dwelling"
+			},
+			"value": 18,
+			"unit": "m²",
+			"bound": "min",
+			"scope": {
+				"nl": "Woonfunctie, niet voor studenten en geen woonwagen",
+				"en": "Dwelling, not student housing or caravan"
+			},
+			"conditions": {
+				"use": "woonfunctie",
+				"build": "new"
+			},
+			"source": {
+				"title": "Besluit bouwwerken leefomgeving (Bbl)",
+				"ref": "Bbl art. 4.163 lid 1, tabel 4.162",
+				"url": "https://wetten.overheid.nl/jci1.3:c:BWBR0041297&hoofdstuk=4&afdeling=4.5&paragraaf=4.5.2&artikel=4.163&z=2026-09-24&g=2026-09-24",
+				"license": "Wettekst, geen auteursrecht (Auteurswet art. 11)"
+			},
+			"validFrom": "2026-09-24",
+			"status": "flagged"
+		},
+		{
+			"id": "bbl-verblijfsgebied-aandeel",
+			"topic": "bbl",
+			"type": "requirement",
+			"group": "living",
+			"label": {
+				"nl": "Aandeel verblijfsgebied in de gebruiksoppervlakte",
+				"en": "Share of habitable area in the usable floor area"
+			},
+			"value": 55,
+			"unit": "%",
+			"bound": "min",
+			"conditions": {
+				"use": "woonfunctie",
+				"build": "new"
+			},
+			"source": {
+				"title": "Besluit bouwwerken leefomgeving (Bbl)",
+				"ref": "Bbl art. 4.163 lid 2",
+				"url": "https://wetten.overheid.nl/jci1.3:c:BWBR0041297&hoofdstuk=4&afdeling=4.5&paragraaf=4.5.2&artikel=4.163&z=2026-09-24&g=2026-09-24",
+				"license": "Wettekst, geen auteursrecht (Auteurswet art. 11)"
+			},
+			"validFrom": "2026-09-24",
+			"status": "flagged"
+		},
+		{
+			"id": "bbl-verblijfsgebied-oppervlakte",
+			"topic": "bbl",
+			"type": "requirement",
+			"group": "living",
+			"label": {
+				"nl": "Vloeroppervlakte van een verblijfsgebied",
+				"en": "Floor area of a habitable area"
+			},
+			"value": 5,
+			"unit": "m²",
+			"bound": "min",
+			"conditions": {
+				"use": "woonfunctie",
+				"build": "new"
+			},
+			"source": {
+				"title": "Besluit bouwwerken leefomgeving (Bbl)",
+				"ref": "Bbl art. 4.164 lid 1",
+				"url": "https://wetten.overheid.nl/jci1.3:c:BWBR0041297&hoofdstuk=4&afdeling=4.5&paragraaf=4.5.2&artikel=4.164&z=2026-09-24&g=2026-09-24",
+				"license": "Wettekst, geen auteursrecht (Auteurswet art. 11)"
+			},
+			"validFrom": "2026-09-24",
+			"status": "flagged"
+		},
+		{
+			"id": "bbl-verblijfsgebied-breedte",
+			"topic": "bbl",
+			"type": "requirement",
+			"group": "living",
+			"label": {
+				"nl": "Breedte van een verblijfsgebied of verblijfsruimte",
+				"en": "Width of a habitable area or room"
+			},
+			"value": 1.8,
+			"unit": "m",
+			"bound": "min",
+			"conditions": {
+				"use": "woonfunctie",
+				"build": "new"
+			},
+			"source": {
+				"title": "Besluit bouwwerken leefomgeving (Bbl)",
+				"ref": "Bbl art. 4.164 lid 2",
+				"url": "https://wetten.overheid.nl/jci1.3:c:BWBR0041297&hoofdstuk=4&afdeling=4.5&paragraaf=4.5.2&artikel=4.164&z=2026-09-24&g=2026-09-24",
+				"license": "Wettekst, geen auteursrecht (Auteurswet art. 11)"
+			},
+			"validFrom": "2026-09-24",
+			"status": "flagged"
+		},
+		{
+			"id": "bbl-verblijfsruimte-groot-oppervlakte",
+			"topic": "bbl",
+			"type": "requirement",
+			"group": "living",
+			"label": {
+				"nl": "Ten minste één verblijfsruimte met vloeroppervlakte",
+				"en": "At least one habitable room with floor area"
+			},
+			"value": 11,
+			"unit": "m²",
+			"bound": "min",
+			"conditions": {
+				"use": "woonfunctie",
+				"build": "new"
+			},
+			"source": {
+				"title": "Besluit bouwwerken leefomgeving (Bbl)",
+				"ref": "Bbl art. 4.164 lid 3",
+				"url": "https://wetten.overheid.nl/jci1.3:c:BWBR0041297&hoofdstuk=4&afdeling=4.5&paragraaf=4.5.2&artikel=4.164&z=2026-09-24&g=2026-09-24",
+				"license": "Wettekst, geen auteursrecht (Auteurswet art. 11)"
+			},
+			"validFrom": "2026-09-24",
+			"status": "flagged"
+		},
+		{
+			"id": "bbl-verblijfsruimte-groot-breedte",
+			"topic": "bbl",
+			"type": "requirement",
+			"group": "living",
+			"label": {
+				"nl": "Breedte van die verblijfsruimte",
+				"en": "Width of that habitable room"
+			},
+			"value": 3,
+			"unit": "m",
+			"bound": "min",
+			"conditions": {
+				"use": "woonfunctie",
+				"build": "new"
+			},
+			"source": {
+				"title": "Besluit bouwwerken leefomgeving (Bbl)",
+				"ref": "Bbl art. 4.164 lid 3",
+				"url": "https://wetten.overheid.nl/jci1.3:c:BWBR0041297&hoofdstuk=4&afdeling=4.5&paragraaf=4.5.2&artikel=4.164&z=2026-09-24&g=2026-09-24",
+				"license": "Wettekst, geen auteursrecht (Auteurswet art. 11)"
+			},
+			"validFrom": "2026-09-24",
+			"status": "flagged"
+		},
+		{
+			"id": "bbl-verblijfsgebied-hoogte",
+			"topic": "bbl",
+			"type": "requirement",
+			"group": "living",
+			"label": {
+				"nl": "Hoogte boven de vloer van verblijfsgebied en verblijfsruimte",
+				"en": "Height above the floor of habitable area and room"
+			},
+			"value": 2.6,
+			"unit": "m",
+			"bound": "min",
+			"scope": {
+				"nl": "Woonfunctie, geen woonwagen",
+				"en": "Dwelling, not a caravan"
+			},
+			"conditions": {
+				"use": "woonfunctie",
+				"build": "new"
+			},
+			"source": {
+				"title": "Besluit bouwwerken leefomgeving (Bbl)",
+				"ref": "Bbl art. 4.164 lid 4, tabel 4.162",
+				"url": "https://wetten.overheid.nl/jci1.3:c:BWBR0041297&hoofdstuk=4&afdeling=4.5&paragraaf=4.5.2&artikel=4.164&z=2026-09-24&g=2026-09-24",
+				"license": "Wettekst, geen auteursrecht (Auteurswet art. 11)"
+			},
+			"validFrom": "2026-09-24",
+			"status": "flagged"
+		},
+		{
+			"id": "bbl-toilet-vloer",
+			"topic": "bbl",
+			"type": "requirement",
+			"group": "sanitary",
+			"label": {
+				"nl": "Vloeroppervlakte toiletruimte",
+				"en": "Floor area of a toilet room"
+			},
+			"value": 0.9,
+			"unit": "m",
+			"by": 1.2,
+			"bound": "min",
+			"conditions": {
+				"use": "woonfunctie",
+				"build": "new"
+			},
+			"source": {
+				"title": "Besluit bouwwerken leefomgeving (Bbl)",
+				"ref": "Bbl art. 4.167 lid 1",
+				"url": "https://wetten.overheid.nl/jci1.3:c:BWBR0041297&hoofdstuk=4&afdeling=4.5&paragraaf=4.5.3&artikel=4.167&z=2026-09-24&g=2026-09-24",
+				"license": "Wettekst, geen auteursrecht (Auteurswet art. 11)"
+			},
+			"validFrom": "2026-09-24",
+			"status": "flagged"
+		},
+		{
+			"id": "bbl-toilet-hoogte",
+			"topic": "bbl",
+			"type": "requirement",
+			"group": "sanitary",
+			"label": {
+				"nl": "Hoogte boven die vloer van de toiletruimte",
+				"en": "Height above that floor of the toilet room"
+			},
+			"value": 2.3,
+			"unit": "m",
+			"bound": "min",
+			"scope": {
+				"nl": "Woonfunctie, geen woonwagen",
+				"en": "Dwelling, not a caravan"
+			},
+			"conditions": {
+				"use": "woonfunctie",
+				"build": "new"
+			},
+			"source": {
+				"title": "Besluit bouwwerken leefomgeving (Bbl)",
+				"ref": "Bbl art. 4.167 lid 2, tabel 4.165",
+				"url": "https://wetten.overheid.nl/jci1.3:c:BWBR0041297&hoofdstuk=4&afdeling=4.5&paragraaf=4.5.3&artikel=4.167&z=2026-09-24&g=2026-09-24",
+				"license": "Wettekst, geen auteursrecht (Auteurswet art. 11)"
+			},
+			"validFrom": "2026-09-24",
+			"status": "flagged"
+		},
+		{
+			"id": "bbl-bad-oppervlakte",
+			"topic": "bbl",
+			"type": "requirement",
+			"group": "sanitary",
+			"label": {
+				"nl": "Vloeroppervlakte badruimte",
+				"en": "Floor area of a bathroom"
+			},
+			"value": 1.6,
+			"unit": "m²",
+			"bound": "min",
+			"conditions": {
+				"use": "woonfunctie",
+				"build": "new"
+			},
+			"source": {
+				"title": "Besluit bouwwerken leefomgeving (Bbl)",
+				"ref": "Bbl art. 4.170 lid 1",
+				"url": "https://wetten.overheid.nl/jci1.3:c:BWBR0041297&hoofdstuk=4&afdeling=4.5&paragraaf=4.5.4&artikel=4.170&z=2026-09-24&g=2026-09-24",
+				"license": "Wettekst, geen auteursrecht (Auteurswet art. 11)"
+			},
+			"validFrom": "2026-09-24",
+			"status": "flagged"
+		},
+		{
+			"id": "bbl-bad-breedte",
+			"topic": "bbl",
+			"type": "requirement",
+			"group": "sanitary",
+			"label": {
+				"nl": "Breedte badruimte",
+				"en": "Width of a bathroom"
+			},
+			"value": 0.8,
+			"unit": "m",
+			"bound": "min",
+			"conditions": {
+				"use": "woonfunctie",
+				"build": "new"
+			},
+			"source": {
+				"title": "Besluit bouwwerken leefomgeving (Bbl)",
+				"ref": "Bbl art. 4.170 lid 1",
+				"url": "https://wetten.overheid.nl/jci1.3:c:BWBR0041297&hoofdstuk=4&afdeling=4.5&paragraaf=4.5.4&artikel=4.170&z=2026-09-24&g=2026-09-24",
+				"license": "Wettekst, geen auteursrecht (Auteurswet art. 11)"
+			},
+			"validFrom": "2026-09-24",
+			"status": "flagged"
+		},
+		{
+			"id": "bbl-bad-toilet-oppervlakte",
+			"topic": "bbl",
+			"type": "requirement",
+			"group": "sanitary",
+			"label": {
+				"nl": "Vloeroppervlakte badruimte met toilet",
+				"en": "Floor area of a bathroom with toilet"
+			},
+			"value": 2.2,
+			"unit": "m²",
+			"bound": "min",
+			"conditions": {
+				"use": "woonfunctie",
+				"build": "new"
+			},
+			"source": {
+				"title": "Besluit bouwwerken leefomgeving (Bbl)",
+				"ref": "Bbl art. 4.170 lid 2",
+				"url": "https://wetten.overheid.nl/jci1.3:c:BWBR0041297&hoofdstuk=4&afdeling=4.5&paragraaf=4.5.4&artikel=4.170&z=2026-09-24&g=2026-09-24",
+				"license": "Wettekst, geen auteursrecht (Auteurswet art. 11)"
+			},
+			"validFrom": "2026-09-24",
+			"status": "flagged"
+		},
+		{
+			"id": "bbl-bad-toilet-breedte",
+			"topic": "bbl",
+			"type": "requirement",
+			"group": "sanitary",
+			"label": {
+				"nl": "Breedte badruimte met toilet",
+				"en": "Width of a bathroom with toilet"
+			},
+			"value": 0.9,
+			"unit": "m",
+			"bound": "min",
+			"conditions": {
+				"use": "woonfunctie",
+				"build": "new"
+			},
+			"source": {
+				"title": "Besluit bouwwerken leefomgeving (Bbl)",
+				"ref": "Bbl art. 4.170 lid 2",
+				"url": "https://wetten.overheid.nl/jci1.3:c:BWBR0041297&hoofdstuk=4&afdeling=4.5&paragraaf=4.5.4&artikel=4.170&z=2026-09-24&g=2026-09-24",
+				"license": "Wettekst, geen auteursrecht (Auteurswet art. 11)"
+			},
+			"validFrom": "2026-09-24",
+			"status": "flagged"
+		},
+		{
+			"id": "bbl-bad-hoogte",
+			"topic": "bbl",
+			"type": "requirement",
+			"group": "sanitary",
+			"label": {
+				"nl": "Hoogte boven de vloer van de badruimte",
+				"en": "Height above the floor of the bathroom"
+			},
+			"value": 2.3,
+			"unit": "m",
+			"bound": "min",
+			"scope": {
+				"nl": "Woonfunctie, geen woonwagen",
+				"en": "Dwelling, not a caravan"
+			},
+			"conditions": {
+				"use": "woonfunctie",
+				"build": "new"
+			},
+			"source": {
+				"title": "Besluit bouwwerken leefomgeving (Bbl)",
+				"ref": "Bbl art. 4.170 lid 3, tabel 4.168",
+				"url": "https://wetten.overheid.nl/jci1.3:c:BWBR0041297&hoofdstuk=4&afdeling=4.5&paragraaf=4.5.4&artikel=4.170&z=2026-09-24&g=2026-09-24",
+				"license": "Wettekst, geen auteursrecht (Auteurswet art. 11)"
+			},
+			"validFrom": "2026-09-24",
+			"status": "flagged"
+		},
+		{
+			"id": "bbl-berging-oppervlakte",
+			"topic": "bbl",
+			"type": "requirement",
+			"group": "outdoor",
+			"label": {
+				"nl": "Vloeroppervlakte eigen buitenberging",
+				"en": "Floor area of private outdoor storage"
+			},
+			"value": 5,
+			"unit": "m²",
+			"bound": "min",
+			"scope": {
+				"nl": "Woonfunctie, niet voor zorg of studenten",
+				"en": "Dwelling, not for care or students"
+			},
+			"conditions": {
+				"use": "woonfunctie",
+				"build": "new"
+			},
+			"source": {
+				"title": "Besluit bouwwerken leefomgeving (Bbl)",
+				"ref": "Bbl art. 4.172 lid 1, tabel 4.171",
+				"url": "https://wetten.overheid.nl/jci1.3:c:BWBR0041297&hoofdstuk=4&afdeling=4.5&paragraaf=4.5.5&artikel=4.172&z=2026-09-24&g=2026-09-24",
+				"license": "Wettekst, geen auteursrecht (Auteurswet art. 11)"
+			},
+			"validFrom": "2026-09-24",
+			"status": "flagged"
+		},
+		{
+			"id": "bbl-berging-breedte",
+			"topic": "bbl",
+			"type": "requirement",
+			"group": "outdoor",
+			"label": {
+				"nl": "Breedte buitenberging",
+				"en": "Width of outdoor storage"
+			},
+			"value": 1.8,
+			"unit": "m",
+			"bound": "min",
+			"scope": {
+				"nl": "Woonfunctie, niet voor zorg of studenten",
+				"en": "Dwelling, not for care or students"
+			},
+			"conditions": {
+				"use": "woonfunctie",
+				"build": "new"
+			},
+			"source": {
+				"title": "Besluit bouwwerken leefomgeving (Bbl)",
+				"ref": "Bbl art. 4.172 lid 1, tabel 4.171",
+				"url": "https://wetten.overheid.nl/jci1.3:c:BWBR0041297&hoofdstuk=4&afdeling=4.5&paragraaf=4.5.5&artikel=4.172&z=2026-09-24&g=2026-09-24",
+				"license": "Wettekst, geen auteursrecht (Auteurswet art. 11)"
+			},
+			"validFrom": "2026-09-24",
+			"status": "flagged"
+		},
+		{
+			"id": "bbl-berging-hoogte",
+			"topic": "bbl",
+			"type": "requirement",
+			"group": "outdoor",
+			"label": {
+				"nl": "Hoogte boven de vloer van de buitenberging",
+				"en": "Height above the floor of outdoor storage"
+			},
+			"value": 2.3,
+			"unit": "m",
+			"bound": "min",
+			"scope": {
+				"nl": "Woonfunctie, niet voor zorg of studenten",
+				"en": "Dwelling, not for care or students"
+			},
+			"conditions": {
+				"use": "woonfunctie",
+				"build": "new"
+			},
+			"source": {
+				"title": "Besluit bouwwerken leefomgeving (Bbl)",
+				"ref": "Bbl art. 4.172 lid 1, tabel 4.171",
+				"url": "https://wetten.overheid.nl/jci1.3:c:BWBR0041297&hoofdstuk=4&afdeling=4.5&paragraaf=4.5.5&artikel=4.172&z=2026-09-24&g=2026-09-24",
+				"license": "Wettekst, geen auteursrecht (Auteurswet art. 11)"
+			},
+			"validFrom": "2026-09-24",
+			"status": "flagged"
+		},
+		{
+			"id": "bbl-berging-gemeenschappelijk",
+			"topic": "bbl",
+			"type": "requirement",
+			"group": "outdoor",
+			"label": {
+				"nl": "Gemeenschappelijke berging, per woning",
+				"en": "Shared storage, per dwelling"
+			},
+			"value": 1.5,
+			"unit": "m²",
+			"bound": "min",
+			"scope": {
+				"nl": "Alleen bij woningen met een gebruiksoppervlakte van niet meer dan 50 m²",
+				"en": "Only for dwellings with a usable floor area of no more than 50 m²"
+			},
+			"conditions": {
+				"use": "woonfunctie",
+				"build": "new"
+			},
+			"source": {
+				"title": "Besluit bouwwerken leefomgeving (Bbl)",
+				"ref": "Bbl art. 4.172 lid 2, tabel 4.171",
+				"url": "https://wetten.overheid.nl/jci1.3:c:BWBR0041297&hoofdstuk=4&afdeling=4.5&paragraaf=4.5.5&artikel=4.172&z=2026-09-24&g=2026-09-24",
+				"license": "Wettekst, geen auteursrecht (Auteurswet art. 11)"
+			},
+			"validFrom": "2026-09-24",
+			"status": "flagged"
+		},
+		{
+			"id": "bbl-buitenruimte-oppervlakte",
+			"topic": "bbl",
+			"type": "requirement",
+			"group": "outdoor",
+			"label": {
+				"nl": "Vloeroppervlakte eigen buitenruimte",
+				"en": "Floor area of private outdoor space"
+			},
+			"value": 4,
+			"unit": "m²",
+			"bound": "min",
+			"scope": {
+				"nl": "Woonfunctie, niet voor studenten",
+				"en": "Dwelling, not student housing"
+			},
+			"conditions": {
+				"use": "woonfunctie",
+				"build": "new"
+			},
+			"source": {
+				"title": "Besluit bouwwerken leefomgeving (Bbl)",
+				"ref": "Bbl art. 4.175 lid 1, tabel 4.174",
+				"url": "https://wetten.overheid.nl/jci1.3:c:BWBR0041297&hoofdstuk=4&afdeling=4.5&paragraaf=4.5.6&artikel=4.175&z=2026-09-24&g=2026-09-24",
+				"license": "Wettekst, geen auteursrecht (Auteurswet art. 11)"
+			},
+			"validFrom": "2026-09-24",
+			"status": "flagged"
+		},
+		{
+			"id": "bbl-buitenruimte-breedte",
+			"topic": "bbl",
+			"type": "requirement",
+			"group": "outdoor",
+			"label": {
+				"nl": "Breedte buitenruimte",
+				"en": "Width of outdoor space"
+			},
+			"value": 1.5,
+			"unit": "m",
+			"bound": "min",
+			"scope": {
+				"nl": "Woonfunctie, niet voor studenten",
+				"en": "Dwelling, not student housing"
+			},
+			"conditions": {
+				"use": "woonfunctie",
+				"build": "new"
+			},
+			"source": {
+				"title": "Besluit bouwwerken leefomgeving (Bbl)",
+				"ref": "Bbl art. 4.175 lid 1, tabel 4.174",
+				"url": "https://wetten.overheid.nl/jci1.3:c:BWBR0041297&hoofdstuk=4&afdeling=4.5&paragraaf=4.5.6&artikel=4.175&z=2026-09-24&g=2026-09-24",
+				"license": "Wettekst, geen auteursrecht (Auteurswet art. 11)"
+			},
+			"validFrom": "2026-09-24",
+			"status": "flagged"
+		},
+		{
+			"id": "bbl-doorgang-breedte",
+			"topic": "bbl",
+			"type": "requirement",
+			"group": "access",
+			"label": {
+				"nl": "Vrije breedte van een doorgang",
+				"en": "Clear width of a doorway"
+			},
+			"value": 0.85,
+			"unit": "m",
+			"bound": "min",
+			"scope": {
+				"nl": "Doorgang naar verblijfsgebied, verblijfsruimte, toilet, badruimte, berging of buitenruimte",
+				"en": "Doorway to a habitable area or room, toilet, bathroom, storage or outdoor space"
+			},
+			"conditions": {
+				"use": "woonfunctie",
+				"build": "new"
+			},
+			"source": {
+				"title": "Besluit bouwwerken leefomgeving (Bbl)",
+				"ref": "Bbl art. 4.180 lid 1",
+				"url": "https://wetten.overheid.nl/jci1.3:c:BWBR0041297&hoofdstuk=4&afdeling=4.6&paragraaf=4.6.1&artikel=4.180&z=2026-09-24&g=2026-09-24",
+				"license": "Wettekst, geen auteursrecht (Auteurswet art. 11)"
+			},
+			"validFrom": "2026-09-24",
+			"status": "flagged"
+		},
+		{
+			"id": "bbl-doorgang-hoogte",
+			"topic": "bbl",
+			"type": "requirement",
+			"group": "access",
+			"label": {
+				"nl": "Vrije hoogte van een doorgang",
+				"en": "Clear height of a doorway"
+			},
+			"value": 2.3,
+			"unit": "m",
+			"bound": "min",
+			"scope": {
+				"nl": "Woonfunctie, geen woonwagen",
+				"en": "Dwelling, not a caravan"
+			},
+			"conditions": {
+				"use": "woonfunctie",
+				"build": "new"
+			},
+			"source": {
+				"title": "Besluit bouwwerken leefomgeving (Bbl)",
+				"ref": "Bbl art. 4.180 lid 1, tabel 4.179",
+				"url": "https://wetten.overheid.nl/jci1.3:c:BWBR0041297&hoofdstuk=4&afdeling=4.6&paragraaf=4.6.1&artikel=4.180&z=2026-09-24&g=2026-09-24",
+				"license": "Wettekst, geen auteursrecht (Auteurswet art. 11)"
+			},
+			"validFrom": "2026-09-24",
+			"status": "flagged"
+		},
+		{
+			"id": "bbl-verkeersroute-breedte",
+			"topic": "bbl",
+			"type": "requirement",
+			"group": "access",
+			"label": {
+				"nl": "Vrije breedte van een verkeersroute",
+				"en": "Clear width of a circulation route"
+			},
+			"value": 0.85,
+			"unit": "m",
+			"bound": "min",
+			"scope": {
+				"nl": "Niet voor zover de route over een trap voert",
+				"en": "Not where the route runs over a stair"
+			},
+			"conditions": {
+				"use": "woonfunctie",
+				"build": "new"
+			},
+			"source": {
+				"title": "Besluit bouwwerken leefomgeving (Bbl)",
+				"ref": "Bbl art. 4.181 lid 1",
+				"url": "https://wetten.overheid.nl/jci1.3:c:BWBR0041297&hoofdstuk=4&afdeling=4.6&paragraaf=4.6.1&artikel=4.181&z=2026-09-24&g=2026-09-24",
+				"license": "Wettekst, geen auteursrecht (Auteurswet art. 11)"
+			},
+			"validFrom": "2026-09-24",
+			"status": "flagged"
+		},
+		{
+			"id": "bbl-verkeersroute-hoogte",
+			"topic": "bbl",
+			"type": "requirement",
+			"group": "access",
+			"label": {
+				"nl": "Vrije hoogte van een verkeersroute",
+				"en": "Clear height of a circulation route"
+			},
+			"value": 2.3,
+			"unit": "m",
+			"bound": "min",
+			"scope": {
+				"nl": "Woonfunctie, geen woonwagen",
+				"en": "Dwelling, not a caravan"
+			},
+			"conditions": {
+				"use": "woonfunctie",
+				"build": "new"
+			},
+			"source": {
+				"title": "Besluit bouwwerken leefomgeving (Bbl)",
+				"ref": "Bbl art. 4.181 lid 1, tabel 4.179",
+				"url": "https://wetten.overheid.nl/jci1.3:c:BWBR0041297&hoofdstuk=4&afdeling=4.6&paragraaf=4.6.1&artikel=4.181&z=2026-09-24&g=2026-09-24",
+				"license": "Wettekst, geen auteursrecht (Auteurswet art. 11)"
+			},
+			"validFrom": "2026-09-24",
+			"status": "flagged"
+		},
+		{
+			"id": "bbl-gemeenschappelijke-verkeersruimte-breedte",
+			"topic": "bbl",
+			"type": "requirement",
+			"group": "access",
+			"label": {
+				"nl": "Vrije breedte van een gemeenschappelijke verkeersruimte",
+				"en": "Clear width of a shared circulation space"
+			},
+			"value": 1.2,
+			"unit": "m",
+			"bound": "min",
+			"conditions": {
+				"use": "woonfunctie",
+				"build": "new"
+			},
+			"source": {
+				"title": "Besluit bouwwerken leefomgeving (Bbl)",
+				"ref": "Bbl art. 4.181 lid 2",
+				"url": "https://wetten.overheid.nl/jci1.3:c:BWBR0041297&hoofdstuk=4&afdeling=4.6&paragraaf=4.6.1&artikel=4.181&z=2026-09-24&g=2026-09-24",
+				"license": "Wettekst, geen auteursrecht (Auteurswet art. 11)"
+			},
+			"validFrom": "2026-09-24",
+			"status": "flagged"
+		},
+		{
+			"id": "bbl-hoofdtoegang-vrije-doorgang",
+			"topic": "bbl",
+			"type": "requirement",
+			"group": "access",
+			"label": {
+				"nl": "Vrije doorgang bij de hoofdtoegang van een woongebouw",
+				"en": "Clear passage at the main entrance of an apartment building"
+			},
+			"value": 1.5,
+			"unit": "m",
+			"by": 1.5,
+			"bound": "min",
+			"scope": {
+				"nl": "Breedte × lengte",
+				"en": "Width × length"
+			},
+			"conditions": {
+				"use": "woonfunctie",
+				"build": "new"
+			},
+			"source": {
+				"title": "Besluit bouwwerken leefomgeving (Bbl)",
+				"ref": "Bbl art. 4.181 lid 3",
+				"url": "https://wetten.overheid.nl/jci1.3:c:BWBR0041297&hoofdstuk=4&afdeling=4.6&paragraaf=4.6.1&artikel=4.181&z=2026-09-24&g=2026-09-24",
+				"license": "Wettekst, geen auteursrecht (Auteurswet art. 11)"
+			},
+			"validFrom": "2026-09-24",
+			"status": "flagged"
+		},
+		{
+			"id": "bbl-liftdoorgang-ruimte",
+			"topic": "bbl",
+			"type": "requirement",
+			"group": "access",
+			"label": {
+				"nl": "Vloer naast de doorgang van een liftschacht",
+				"en": "Floor next to a lift shaft door"
+			},
+			"value": 1.5,
+			"unit": "m",
+			"by": 1.5,
+			"bound": "min",
+			"conditions": {
+				"use": "woonfunctie",
+				"build": "new"
+			},
+			"source": {
+				"title": "Besluit bouwwerken leefomgeving (Bbl)",
+				"ref": "Bbl art. 4.181 lid 4",
+				"url": "https://wetten.overheid.nl/jci1.3:c:BWBR0041297&hoofdstuk=4&afdeling=4.6&paragraaf=4.6.1&artikel=4.181&z=2026-09-24&g=2026-09-24",
+				"license": "Wettekst, geen auteursrecht (Auteurswet art. 11)"
+			},
+			"validFrom": "2026-09-24",
+			"status": "flagged"
+		},
+		{
+			"id": "bbl-trap-nodig",
+			"topic": "bbl",
+			"type": "requirement",
+			"group": "stair",
+			"label": {
+				"nl": "Vaste trap of hellingbaan nodig bij een hoogteverschil van meer dan",
+				"en": "Fixed stair or ramp required for a height difference of more than"
+			},
+			"value": 0.21,
+			"unit": "m",
+			"scope": {
+				"nl": "Tussen vloeren van verblijfsgebieden, verblijfsruimten, toilet- en badruimten, vluchtroutes en de verkeersroutes daartussen",
+				"en": "Between floors of habitable areas and rooms, toilets and bathrooms, escape routes and the circulation routes between them"
+			},
+			"conditions": {
+				"use": "woonfunctie",
+				"build": "new"
+			},
+			"source": {
+				"title": "Besluit bouwwerken leefomgeving (Bbl)",
+				"ref": "Bbl art. 4.25 lid 1",
+				"url": "https://wetten.overheid.nl/jci1.3:c:BWBR0041297&hoofdstuk=4&afdeling=4.2&paragraaf=4.2.4&artikel=4.25&z=2026-09-24&g=2026-09-24",
+				"license": "Wettekst, geen auteursrecht (Auteurswet art. 11)"
+			},
+			"validFrom": "2026-09-24",
+			"status": "flagged"
+		},
+		{
+			"id": "bbl-trap-breedte",
+			"topic": "bbl",
+			"type": "requirement",
+			"group": "stair",
+			"label": {
+				"nl": "Breedte van de trap",
+				"en": "Width of the stair"
+			},
+			"value": 0.8,
+			"unit": "m",
+			"bound": "min",
+			"conditions": {
+				"use": "woonfunctie",
+				"build": "new"
+			},
+			"source": {
+				"title": "Besluit bouwwerken leefomgeving (Bbl)",
+				"ref": "Bbl art. 4.26 lid 1, tabel 4.26",
+				"url": "https://wetten.overheid.nl/jci1.3:c:BWBR0041297&hoofdstuk=4&afdeling=4.2&paragraaf=4.2.4&artikel=4.26&z=2026-09-24&g=2026-09-24",
+				"license": "Wettekst, geen auteursrecht (Auteurswet art. 11)"
+			},
+			"validFrom": "2026-09-24",
+			"status": "flagged"
+		},
+		{
+			"id": "bbl-trap-vrije-hoogte",
+			"topic": "bbl",
+			"type": "requirement",
+			"group": "stair",
+			"label": {
+				"nl": "Vrije hoogte boven de trap",
+				"en": "Clear height above the stair"
+			},
+			"value": 2.3,
+			"unit": "m",
+			"bound": "min",
+			"conditions": {
+				"use": "woonfunctie",
+				"build": "new"
+			},
+			"source": {
+				"title": "Besluit bouwwerken leefomgeving (Bbl)",
+				"ref": "Bbl art. 4.26 lid 1, tabel 4.26",
+				"url": "https://wetten.overheid.nl/jci1.3:c:BWBR0041297&hoofdstuk=4&afdeling=4.2&paragraaf=4.2.4&artikel=4.26&z=2026-09-24&g=2026-09-24",
+				"license": "Wettekst, geen auteursrecht (Auteurswet art. 11)"
+			},
+			"validFrom": "2026-09-24",
+			"status": "flagged"
+		},
+		{
+			"id": "bbl-trap-aantrede",
+			"topic": "bbl",
+			"type": "requirement",
+			"group": "stair",
+			"label": {
+				"nl": "Aantrede op de klimlijn",
+				"en": "Going on the walking line"
+			},
+			"value": 0.22,
+			"unit": "m",
+			"bound": "min",
+			"scope": {
+				"nl": "Gemeten loodrecht op de voorkant van de trede",
+				"en": "Measured perpendicular to the nosing"
+			},
+			"conditions": {
+				"use": "woonfunctie",
+				"build": "new"
+			},
+			"source": {
+				"title": "Besluit bouwwerken leefomgeving (Bbl)",
+				"ref": "Bbl art. 4.26 lid 1, tabel 4.26",
+				"url": "https://wetten.overheid.nl/jci1.3:c:BWBR0041297&hoofdstuk=4&afdeling=4.2&paragraaf=4.2.4&artikel=4.26&z=2026-09-24&g=2026-09-24",
+				"license": "Wettekst, geen auteursrecht (Auteurswet art. 11)"
+			},
+			"validFrom": "2026-09-24",
+			"status": "flagged"
+		},
+		{
+			"id": "bbl-trap-optrede",
+			"topic": "bbl",
+			"type": "requirement",
+			"group": "stair",
+			"label": {
+				"nl": "Hoogte van een optrede",
+				"en": "Height of a riser"
+			},
+			"value": 0.188,
+			"unit": "m",
+			"bound": "max",
+			"conditions": {
+				"use": "woonfunctie",
+				"build": "new"
+			},
+			"source": {
+				"title": "Besluit bouwwerken leefomgeving (Bbl)",
+				"ref": "Bbl art. 4.26 lid 1, tabel 4.26",
+				"url": "https://wetten.overheid.nl/jci1.3:c:BWBR0041297&hoofdstuk=4&afdeling=4.2&paragraaf=4.2.4&artikel=4.26&z=2026-09-24&g=2026-09-24",
+				"license": "Wettekst, geen auteursrecht (Auteurswet art. 11)"
+			},
+			"validFrom": "2026-09-24",
+			"status": "flagged"
+		},
+		{
+			"id": "bbl-trap-tredevlak",
+			"topic": "bbl",
+			"type": "requirement",
+			"group": "stair",
+			"label": {
+				"nl": "Breedte van het tredevlak",
+				"en": "Depth of the tread"
+			},
+			"value": 0.05,
+			"unit": "m",
+			"bound": "min",
+			"scope": {
+				"nl": "Overal, gemeten loodrecht op de voorkant van dat vlak",
+				"en": "Anywhere, measured perpendicular to its front edge"
+			},
+			"conditions": {
+				"use": "woonfunctie",
+				"build": "new"
+			},
+			"source": {
+				"title": "Besluit bouwwerken leefomgeving (Bbl)",
+				"ref": "Bbl art. 4.26 lid 1, tabel 4.26",
+				"url": "https://wetten.overheid.nl/jci1.3:c:BWBR0041297&hoofdstuk=4&afdeling=4.2&paragraaf=4.2.4&artikel=4.26&z=2026-09-24&g=2026-09-24",
+				"license": "Wettekst, geen auteursrecht (Auteurswet art. 11)"
+			},
+			"validFrom": "2026-09-24",
+			"status": "flagged"
+		},
+		{
+			"id": "bbl-trap-tredevlak-klimlijn",
+			"topic": "bbl",
+			"type": "requirement",
+			"group": "stair",
+			"label": {
+				"nl": "Breedte van het tredevlak op de klimlijn",
+				"en": "Depth of the tread on the walking line"
+			},
+			"value": 0.23,
+			"unit": "m",
+			"bound": "min",
+			"scope": {
+				"nl": "Gemeten loodrecht op de voorkant van dat vlak",
+				"en": "Measured perpendicular to its front edge"
+			},
+			"conditions": {
+				"use": "woonfunctie",
+				"build": "new"
+			},
+			"source": {
+				"title": "Besluit bouwwerken leefomgeving (Bbl)",
+				"ref": "Bbl art. 4.26 lid 1, tabel 4.26",
+				"url": "https://wetten.overheid.nl/jci1.3:c:BWBR0041297&hoofdstuk=4&afdeling=4.2&paragraaf=4.2.4&artikel=4.26&z=2026-09-24&g=2026-09-24",
+				"license": "Wettekst, geen auteursrecht (Auteurswet art. 11)"
+			},
+			"validFrom": "2026-09-24",
+			"status": "flagged"
+		},
+		{
+			"id": "bbl-trap-klimlijn-zijkant",
+			"topic": "bbl",
+			"type": "requirement",
+			"group": "stair",
+			"label": {
+				"nl": "Afstand van de klimlijn tot de zijkanten van de trap",
+				"en": "Distance from the walking line to the sides of the stair"
+			},
+			"value": 0.3,
+			"unit": "m",
+			"bound": "min",
+			"conditions": {
+				"use": "woonfunctie",
+				"build": "new"
+			},
+			"source": {
+				"title": "Besluit bouwwerken leefomgeving (Bbl)",
+				"ref": "Bbl art. 4.26 lid 1, tabel 4.26",
+				"url": "https://wetten.overheid.nl/jci1.3:c:BWBR0041297&hoofdstuk=4&afdeling=4.2&paragraaf=4.2.4&artikel=4.26&z=2026-09-24&g=2026-09-24",
+				"license": "Wettekst, geen auteursrecht (Auteurswet art. 11)"
+			},
+			"validFrom": "2026-09-24",
+			"status": "flagged"
+		},
+		{
+			"id": "bbl-trap-hoogteverschil",
+			"topic": "bbl",
+			"type": "requirement",
+			"group": "stair",
+			"label": {
+				"nl": "Hoogteverschil dat één trap overbrugt",
+				"en": "Height difference bridged by one stair"
+			},
+			"value": 4,
+			"unit": "m",
+			"bound": "max",
+			"conditions": {
+				"use": "woonfunctie",
+				"build": "new"
+			},
+			"source": {
+				"title": "Besluit bouwwerken leefomgeving (Bbl)",
+				"ref": "Bbl art. 4.26 lid 2",
+				"url": "https://wetten.overheid.nl/jci1.3:c:BWBR0041297&hoofdstuk=4&afdeling=4.2&paragraaf=4.2.4&artikel=4.26&z=2026-09-24&g=2026-09-24",
+				"license": "Wettekst, geen auteursrecht (Auteurswet art. 11)"
+			},
+			"validFrom": "2026-09-24",
+			"status": "flagged"
+		},
+		{
+			"id": "bbl-trapbordes",
+			"topic": "bbl",
+			"type": "requirement",
+			"group": "stair",
+			"label": {
+				"nl": "Vloer bij de bovenste trede",
+				"en": "Floor at the top step"
+			},
+			"value": 0.8,
+			"unit": "m",
+			"by": 0.8,
+			"bound": "min",
+			"scope": {
+				"nl": "Over de breedte van de trap",
+				"en": "Across the width of the stair"
+			},
+			"conditions": {
+				"use": "woonfunctie",
+				"build": "new"
+			},
+			"source": {
+				"title": "Besluit bouwwerken leefomgeving (Bbl)",
+				"ref": "Bbl art. 4.27",
+				"url": "https://wetten.overheid.nl/jci1.3:c:BWBR0041297&hoofdstuk=4&afdeling=4.2&paragraaf=4.2.4&artikel=4.27&z=2026-09-24&g=2026-09-24",
+				"license": "Wettekst, geen auteursrecht (Auteurswet art. 11)"
+			},
+			"validFrom": "2026-09-24",
+			"status": "flagged"
+		},
+		{
+			"id": "bbl-leuning-hoogte",
+			"topic": "bbl",
+			"type": "requirement",
+			"group": "stair",
+			"label": {
+				"nl": "Hoogte bovenkant leuning boven de voorkant van een tredevlak",
+				"en": "Height of the top of the handrail above the tread nosing"
+			},
+			"value": [0.8, 1],
+			"unit": "m",
+			"bound": "range",
+			"scope": {
+				"nl": "Leuning aan ten minste één zijkant bij een hoogteverschil van meer dan 1 m en een helling op de klimlijn groter dan 2:3",
+				"en": "Handrail on at least one side for a height difference of more than 1 m and a slope on the walking line steeper than 2:3"
+			},
+			"conditions": {
+				"use": "woonfunctie",
+				"build": "new"
+			},
+			"source": {
+				"title": "Besluit bouwwerken leefomgeving (Bbl)",
+				"ref": "Bbl art. 4.28 lid 1",
+				"url": "https://wetten.overheid.nl/jci1.3:c:BWBR0041297&hoofdstuk=4&afdeling=4.2&paragraaf=4.2.4&artikel=4.28&z=2026-09-24&g=2026-09-24",
+				"license": "Wettekst, geen auteursrecht (Auteurswet art. 11)"
+			},
+			"validFrom": "2026-09-24",
+			"status": "flagged"
+		},
+		{
+			"id": "bbl-hellingbaan-breedte",
+			"topic": "bbl",
+			"type": "requirement",
+			"group": "ramp",
+			"label": {
+				"nl": "Breedte van de hellingbaan",
+				"en": "Width of the ramp"
+			},
+			"value": 1.1,
+			"unit": "m",
+			"bound": "min",
+			"conditions": {
+				"use": "woonfunctie",
+				"build": "new"
+			},
+			"source": {
+				"title": "Besluit bouwwerken leefomgeving (Bbl)",
+				"ref": "Bbl art. 4.30",
+				"url": "https://wetten.overheid.nl/jci1.3:c:BWBR0041297&hoofdstuk=4&afdeling=4.2&paragraaf=4.2.4&artikel=4.30&z=2026-09-24&g=2026-09-24",
+				"license": "Wettekst, geen auteursrecht (Auteurswet art. 11)"
+			},
+			"validFrom": "2026-09-24",
+			"status": "flagged"
+		},
+		{
+			"id": "bbl-hellingbaan-hoogte",
+			"topic": "bbl",
+			"type": "requirement",
+			"group": "ramp",
+			"label": {
+				"nl": "Hoogte die één hellingbaan overbrugt",
+				"en": "Height bridged by one ramp"
+			},
+			"value": 1,
+			"unit": "m",
+			"bound": "max",
+			"conditions": {
+				"use": "woonfunctie",
+				"build": "new"
+			},
+			"source": {
+				"title": "Besluit bouwwerken leefomgeving (Bbl)",
+				"ref": "Bbl art. 4.30",
+				"url": "https://wetten.overheid.nl/jci1.3:c:BWBR0041297&hoofdstuk=4&afdeling=4.2&paragraaf=4.2.4&artikel=4.30&z=2026-09-24&g=2026-09-24",
+				"license": "Wettekst, geen auteursrecht (Auteurswet art. 11)"
+			},
+			"validFrom": "2026-09-24",
+			"status": "flagged"
+		},
+		{
+			"id": "bbl-hellingbaan-helling-1-6",
+			"topic": "bbl",
+			"type": "requirement",
+			"group": "ramp",
+			"label": {
+				"nl": "Helling van de hellingbaan",
+				"en": "Slope of the ramp"
+			},
+			"value": 6,
+			"unit": "",
+			"divisorOf": "1",
+			"bound": "max",
+			"scope": {
+				"nl": "Hoogteverschil niet groter dan 0,05 m",
+				"en": "Height difference no more than 0.05 m"
+			},
+			"conditions": {
+				"use": "woonfunctie",
+				"build": "new"
+			},
+			"source": {
+				"title": "Besluit bouwwerken leefomgeving (Bbl)",
+				"ref": "Bbl art. 4.30 onder a",
+				"url": "https://wetten.overheid.nl/jci1.3:c:BWBR0041297&hoofdstuk=4&afdeling=4.2&paragraaf=4.2.4&artikel=4.30&z=2026-09-24&g=2026-09-24",
+				"license": "Wettekst, geen auteursrecht (Auteurswet art. 11)"
+			},
+			"validFrom": "2026-09-24",
+			"status": "flagged"
+		},
+		{
+			"id": "bbl-hellingbaan-helling-1-10",
+			"topic": "bbl",
+			"type": "requirement",
+			"group": "ramp",
+			"label": {
+				"nl": "Helling van de hellingbaan",
+				"en": "Slope of the ramp"
+			},
+			"value": 10,
+			"unit": "",
+			"divisorOf": "1",
+			"bound": "max",
+			"scope": {
+				"nl": "Hoogteverschil groter dan 0,05 m, niet groter dan 0,10 m",
+				"en": "Height difference over 0.05 m, no more than 0.10 m"
+			},
+			"conditions": {
+				"use": "woonfunctie",
+				"build": "new"
+			},
+			"source": {
+				"title": "Besluit bouwwerken leefomgeving (Bbl)",
+				"ref": "Bbl art. 4.30 onder b",
+				"url": "https://wetten.overheid.nl/jci1.3:c:BWBR0041297&hoofdstuk=4&afdeling=4.2&paragraaf=4.2.4&artikel=4.30&z=2026-09-24&g=2026-09-24",
+				"license": "Wettekst, geen auteursrecht (Auteurswet art. 11)"
+			},
+			"validFrom": "2026-09-24",
+			"status": "flagged"
+		},
+		{
+			"id": "bbl-hellingbaan-helling-1-12",
+			"topic": "bbl",
+			"type": "requirement",
+			"group": "ramp",
+			"label": {
+				"nl": "Helling van de hellingbaan",
+				"en": "Slope of the ramp"
+			},
+			"value": 12,
+			"unit": "",
+			"divisorOf": "1",
+			"bound": "max",
+			"scope": {
+				"nl": "Hoogteverschil groter dan 0,10 m, niet groter dan 0,25 m",
+				"en": "Height difference over 0.10 m, no more than 0.25 m"
+			},
+			"conditions": {
+				"use": "woonfunctie",
+				"build": "new"
+			},
+			"source": {
+				"title": "Besluit bouwwerken leefomgeving (Bbl)",
+				"ref": "Bbl art. 4.30 onder c",
+				"url": "https://wetten.overheid.nl/jci1.3:c:BWBR0041297&hoofdstuk=4&afdeling=4.2&paragraaf=4.2.4&artikel=4.30&z=2026-09-24&g=2026-09-24",
+				"license": "Wettekst, geen auteursrecht (Auteurswet art. 11)"
+			},
+			"validFrom": "2026-09-24",
+			"status": "flagged"
+		},
+		{
+			"id": "bbl-hellingbaan-helling-1-16",
+			"topic": "bbl",
+			"type": "requirement",
+			"group": "ramp",
+			"label": {
+				"nl": "Helling van de hellingbaan",
+				"en": "Slope of the ramp"
+			},
+			"value": 16,
+			"unit": "",
+			"divisorOf": "1",
+			"bound": "max",
+			"scope": {
+				"nl": "Hoogteverschil groter dan 0,25 m, niet groter dan 0,5 m",
+				"en": "Height difference over 0.25 m, no more than 0.5 m"
+			},
+			"conditions": {
+				"use": "woonfunctie",
+				"build": "new"
+			},
+			"source": {
+				"title": "Besluit bouwwerken leefomgeving (Bbl)",
+				"ref": "Bbl art. 4.30 onder d",
+				"url": "https://wetten.overheid.nl/jci1.3:c:BWBR0041297&hoofdstuk=4&afdeling=4.2&paragraaf=4.2.4&artikel=4.30&z=2026-09-24&g=2026-09-24",
+				"license": "Wettekst, geen auteursrecht (Auteurswet art. 11)"
+			},
+			"validFrom": "2026-09-24",
+			"status": "flagged"
+		},
+		{
+			"id": "bbl-hellingbaan-helling-1-20",
+			"topic": "bbl",
+			"type": "requirement",
+			"group": "ramp",
+			"label": {
+				"nl": "Helling van de hellingbaan",
+				"en": "Slope of the ramp"
+			},
+			"value": 20,
+			"unit": "",
+			"divisorOf": "1",
+			"bound": "max",
+			"scope": {
+				"nl": "Hoogteverschil groter dan 0,5 m",
+				"en": "Height difference over 0.5 m"
+			},
+			"conditions": {
+				"use": "woonfunctie",
+				"build": "new"
+			},
+			"source": {
+				"title": "Besluit bouwwerken leefomgeving (Bbl)",
+				"ref": "Bbl art. 4.30 onder e",
+				"url": "https://wetten.overheid.nl/jci1.3:c:BWBR0041297&hoofdstuk=4&afdeling=4.2&paragraaf=4.2.4&artikel=4.30&z=2026-09-24&g=2026-09-24",
+				"license": "Wettekst, geen auteursrecht (Auteurswet art. 11)"
+			},
+			"validFrom": "2026-09-24",
+			"status": "flagged"
+		},
+		{
+			"id": "bbl-hellingbaanbordes",
+			"topic": "bbl",
+			"type": "requirement",
+			"group": "ramp",
+			"label": {
+				"nl": "Vloer aan de bovenzijde van de hellingbaan",
+				"en": "Floor at the top of the ramp"
+			},
+			"value": 1.4,
+			"unit": "m",
+			"by": 1.4,
+			"bound": "min",
+			"scope": {
+				"nl": "Niet nodig bij een hoogteverschil kleiner dan 0,03 m",
+				"en": "Not needed for a height difference under 0.03 m"
+			},
+			"conditions": {
+				"use": "woonfunctie",
+				"build": "new"
+			},
+			"source": {
+				"title": "Besluit bouwwerken leefomgeving (Bbl)",
+				"ref": "Bbl art. 4.31",
+				"url": "https://wetten.overheid.nl/jci1.3:c:BWBR0041297&hoofdstuk=4&afdeling=4.2&paragraaf=4.2.4&artikel=4.31&z=2026-09-24&g=2026-09-24",
+				"license": "Wettekst, geen auteursrecht (Auteurswet art. 11)"
+			},
+			"validFrom": "2026-09-24",
+			"status": "flagged"
+		},
+		{
+			"id": "bbl-afscheiding-nodig",
+			"topic": "bbl",
+			"type": "requirement",
+			"group": "guarding",
+			"label": {
+				"nl": "Afscheiding nodig bij een rand die hoger ligt dan",
+				"en": "Guarding required at an edge higher than"
+			},
+			"value": 1,
+			"unit": "m",
+			"scope": {
+				"nl": "Boven een aansluitende vloer, het terrein of water; ook aan de zijkant van trap en hellingbaan",
+				"en": "Above an adjoining floor, ground or water; also at the side of stairs and ramps"
+			},
+			"conditions": {
+				"use": "woonfunctie",
+				"build": "new"
+			},
+			"source": {
+				"title": "Besluit bouwwerken leefomgeving (Bbl)",
+				"ref": "Bbl art. 4.20 lid 1 tot en met 3",
+				"url": "https://wetten.overheid.nl/jci1.3:c:BWBR0041297&hoofdstuk=4&afdeling=4.2&paragraaf=4.2.3&artikel=4.20&z=2026-09-24&g=2026-09-24",
+				"license": "Wettekst, geen auteursrecht (Auteurswet art. 11)"
+			},
+			"validFrom": "2026-09-24",
+			"status": "flagged"
+		},
+		{
+			"id": "bbl-vloerafscheiding-hoogte",
+			"topic": "bbl",
+			"type": "requirement",
+			"group": "guarding",
+			"label": {
+				"nl": "Hoogte vloerafscheiding",
+				"en": "Height of floor guarding"
+			},
+			"value": 1,
+			"unit": "m",
+			"bound": "min",
+			"conditions": {
+				"use": "woonfunctie",
+				"build": "new"
+			},
+			"source": {
+				"title": "Besluit bouwwerken leefomgeving (Bbl)",
+				"ref": "Bbl art. 4.21 lid 1",
+				"url": "https://wetten.overheid.nl/jci1.3:c:BWBR0041297&hoofdstuk=4&afdeling=4.2&paragraaf=4.2.3&artikel=4.21&z=2026-09-24&g=2026-09-24",
+				"license": "Wettekst, geen auteursrecht (Auteurswet art. 11)"
+			},
+			"validFrom": "2026-09-24",
+			"status": "flagged"
+		},
+		{
+			"id": "bbl-vloerafscheiding-hoogte-13m",
+			"topic": "bbl",
+			"type": "requirement",
+			"group": "guarding",
+			"label": {
+				"nl": "Hoogte vloerafscheiding, vloer hoger dan 13 m",
+				"en": "Height of floor guarding, floor higher than 13 m"
+			},
+			"value": 1.2,
+			"unit": "m",
+			"bound": "min",
+			"conditions": {
+				"use": "woonfunctie",
+				"build": "new"
+			},
+			"source": {
+				"title": "Besluit bouwwerken leefomgeving (Bbl)",
+				"ref": "Bbl art. 4.21 lid 2",
+				"url": "https://wetten.overheid.nl/jci1.3:c:BWBR0041297&hoofdstuk=4&afdeling=4.2&paragraaf=4.2.3&artikel=4.21&z=2026-09-24&g=2026-09-24",
+				"license": "Wettekst, geen auteursrecht (Auteurswet art. 11)"
+			},
+			"validFrom": "2026-09-24",
+			"status": "flagged"
+		},
+		{
+			"id": "bbl-afscheiding-raam",
+			"topic": "bbl",
+			"type": "requirement",
+			"group": "guarding",
+			"label": {
+				"nl": "Hoogte afscheiding bij een raam",
+				"en": "Height of guarding at a window"
+			},
+			"value": 0.85,
+			"unit": "m",
+			"bound": "min",
+			"scope": {
+				"nl": "Ook bij een beweegbaar raam; gemeten vanaf de vloer",
+				"en": "Also at an opening window; measured from the floor"
+			},
+			"conditions": {
+				"use": "woonfunctie",
+				"build": "new"
+			},
+			"source": {
+				"title": "Besluit bouwwerken leefomgeving (Bbl)",
+				"ref": "Bbl art. 4.21 lid 3",
+				"url": "https://wetten.overheid.nl/jci1.3:c:BWBR0041297&hoofdstuk=4&afdeling=4.2&paragraaf=4.2.3&artikel=4.21&z=2026-09-24&g=2026-09-24",
+				"license": "Wettekst, geen auteursrecht (Auteurswet art. 11)"
+			},
+			"validFrom": "2026-09-24",
+			"status": "flagged"
+		},
+		{
+			"id": "bbl-afscheiding-trap",
+			"topic": "bbl",
+			"type": "requirement",
+			"group": "guarding",
+			"label": {
+				"nl": "Hoogte afscheiding langs trap of hellingbaan",
+				"en": "Height of guarding along a stair or ramp"
+			},
+			"value": 0.85,
+			"unit": "m",
+			"bound": "min",
+			"scope": {
+				"nl": "Gemeten vanaf de voorkant van de tredevlakken of de vloer van de hellingbaan",
+				"en": "Measured from the tread nosings or the ramp surface"
+			},
+			"conditions": {
+				"use": "woonfunctie",
+				"build": "new"
+			},
+			"source": {
+				"title": "Besluit bouwwerken leefomgeving (Bbl)",
+				"ref": "Bbl art. 4.21 lid 5",
+				"url": "https://wetten.overheid.nl/jci1.3:c:BWBR0041297&hoofdstuk=4&afdeling=4.2&paragraaf=4.2.3&artikel=4.21&z=2026-09-24&g=2026-09-24",
+				"license": "Wettekst, geen auteursrecht (Auteurswet art. 11)"
+			},
+			"validFrom": "2026-09-24",
+			"status": "flagged"
+		},
+		{
+			"id": "bbl-afscheiding-openingen",
+			"topic": "bbl",
+			"type": "requirement",
+			"group": "guarding",
+			"label": {
+				"nl": "Openingen in een afscheiding, bol met doorsnede",
+				"en": "Openings in guarding, sphere diameter"
+			},
+			"value": 0.2,
+			"unit": "m",
+			"bound": "max",
+			"conditions": {
+				"use": "woonfunctie",
+				"build": "new"
+			},
+			"source": {
+				"title": "Besluit bouwwerken leefomgeving (Bbl)",
+				"ref": "Bbl art. 4.22 lid 1, tabel 4.19",
+				"url": "https://wetten.overheid.nl/jci1.3:c:BWBR0041297&hoofdstuk=4&afdeling=4.2&paragraaf=4.2.3&artikel=4.22&z=2026-09-24&g=2026-09-24",
+				"license": "Wettekst, geen auteursrecht (Auteurswet art. 11)"
+			},
+			"validFrom": "2026-09-24",
+			"status": "flagged"
+		},
+		{
+			"id": "bbl-afscheiding-openingen-laag",
+			"topic": "bbl",
+			"type": "requirement",
+			"group": "guarding",
+			"label": {
+				"nl": "Openingen tot 0,7 m hoogte, bol met doorsnede",
+				"en": "Openings up to 0.7 m height, sphere diameter"
+			},
+			"value": 0.1,
+			"unit": "m",
+			"bound": "max",
+			"scope": {
+				"nl": "Boven een vloer of tredevlak",
+				"en": "Above a floor or tread"
+			},
+			"conditions": {
+				"use": "woonfunctie",
+				"build": "new"
+			},
+			"source": {
+				"title": "Besluit bouwwerken leefomgeving (Bbl)",
+				"ref": "Bbl art. 4.22 lid 2",
+				"url": "https://wetten.overheid.nl/jci1.3:c:BWBR0041297&hoofdstuk=4&afdeling=4.2&paragraaf=4.2.3&artikel=4.22&z=2026-09-24&g=2026-09-24",
+				"license": "Wettekst, geen auteursrecht (Auteurswet art. 11)"
+			},
+			"validFrom": "2026-09-24",
+			"status": "flagged"
+		},
+		{
+			"id": "bbl-afscheiding-afstand",
+			"topic": "bbl",
+			"type": "requirement",
+			"group": "guarding",
+			"label": {
+				"nl": "Horizontale afstand tussen vloer, trap of hellingbaan en afscheiding",
+				"en": "Horizontal gap between floor, stair or ramp and guarding"
+			},
+			"value": 0.05,
+			"unit": "m",
+			"bound": "max",
+			"conditions": {
+				"use": "woonfunctie",
+				"build": "new"
+			},
+			"source": {
+				"title": "Besluit bouwwerken leefomgeving (Bbl)",
+				"ref": "Bbl art. 4.22 lid 3",
+				"url": "https://wetten.overheid.nl/jci1.3:c:BWBR0041297&hoofdstuk=4&afdeling=4.2&paragraaf=4.2.3&artikel=4.22&z=2026-09-24&g=2026-09-24",
+				"license": "Wettekst, geen auteursrecht (Auteurswet art. 11)"
+			},
+			"validFrom": "2026-09-24",
+			"status": "flagged"
+		},
+		{
+			"id": "bbl-afscheiding-bovenregel",
+			"topic": "bbl",
+			"type": "requirement",
+			"group": "guarding",
+			"label": {
+				"nl": "Onderbreking in de bovenregel",
+				"en": "Gap in the top rail"
+			},
+			"value": 0.1,
+			"unit": "m",
+			"bound": "max",
+			"conditions": {
+				"use": "woonfunctie",
+				"build": "new"
+			},
+			"source": {
+				"title": "Besluit bouwwerken leefomgeving (Bbl)",
+				"ref": "Bbl art. 4.22 lid 4",
+				"url": "https://wetten.overheid.nl/jci1.3:c:BWBR0041297&hoofdstuk=4&afdeling=4.2&paragraaf=4.2.3&artikel=4.22&z=2026-09-24&g=2026-09-24",
+				"license": "Wettekst, geen auteursrecht (Auteurswet art. 11)"
+			},
+			"validFrom": "2026-09-24",
+			"status": "flagged"
+		},
+		{
+			"id": "bbl-afscheiding-overklauteren",
+			"topic": "bbl",
+			"type": "requirement",
+			"group": "guarding",
+			"label": {
+				"nl": "Geen opstapmogelijkheden tussen",
+				"en": "No footholds between"
+			},
+			"value": [0.2, 0.7],
+			"unit": "m",
+			"scope": {
+				"nl": "Boven een vloer of tredevlak, om overklauteren te voorkomen",
+				"en": "Above a floor or tread, to prevent climbing"
+			},
+			"conditions": {
+				"use": "woonfunctie",
+				"build": "new"
+			},
+			"source": {
+				"title": "Besluit bouwwerken leefomgeving (Bbl)",
+				"ref": "Bbl art. 4.23 lid 1",
+				"url": "https://wetten.overheid.nl/jci1.3:c:BWBR0041297&hoofdstuk=4&afdeling=4.2&paragraaf=4.2.3&artikel=4.23&z=2026-09-24&g=2026-09-24",
+				"license": "Wettekst, geen auteursrecht (Auteurswet art. 11)"
+			},
+			"validFrom": "2026-09-24",
+			"status": "flagged"
+		}
+	]
+}
