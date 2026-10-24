@@ -160,7 +160,9 @@
 	</svg>
 	<p class="t-body-sm hatch">
 		{t('timber.hatch')}
-		<a href="{resolve('/drawing')}?tab=hatch#hatch-hout">{t('drawing.title')} →</a>
+		<a href="{resolve('/drawing/hatch/[group]', { group: 'timber' })}#hatch-hout"
+			>{t('drawing.title')} →</a
+		>
 	</p>
 </Tile>
 

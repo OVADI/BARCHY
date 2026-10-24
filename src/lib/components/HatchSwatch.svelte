@@ -4,7 +4,8 @@
 
 	interface Props {
 		hatch: string;
-		label: string;
+		/** Accessible name; without it the swatch is decoration. */
+		label?: string;
 	}
 
 	/** A hatch sample as in the Vademecum table: a framed area, or the symbol for strips and lines. */
@@ -19,7 +20,13 @@
 	const groundLines = Array.from({ length: 11 }, (_, i) => 5 + i * 10);
 </script>
 
-<svg viewBox="0 0 {W} {H}" role="img" aria-label={label} class="swatch">
+<svg
+	viewBox="0 0 {W} {H}"
+	role={label ? 'img' : undefined}
+	aria-label={label}
+	aria-hidden={label ? undefined : 'true'}
+	class="swatch"
+>
 	{#if hatch in AREA}
 		<HatchFill {hatch} x={2} y={2} width={W - 4} height={H - 4} />
 		<rect x="2" y="2" width={W - 4} height={H - 4} fill="none" stroke="currentColor" />

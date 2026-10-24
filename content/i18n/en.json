@@ -282,7 +282,7 @@
 		"tabs": "Topics",
 		"lines": "Line types",
 		"hatch": "Hatching",
-		"guides": "Structural drawings",
+		"guides": "Drawings",
 		"intro": "Names and hatches for structural drawings from the Vademecum, based on NEN 2302.",
 		"flagged": "The hatches and lines are redrawn from the images in the Vademecum and not yet checked by a person. Compare them with the source before you use them.",
 		"usedFor": "Used for",
@@ -306,7 +306,18 @@
 		},
 		"relative": "Line weights drawn relative to each other, not at true size.",
 		"issue": "Note",
-		"hatchSource": "Hatches in the Vademecum after: {ref}"
+		"hatchSource": "Hatches in the Vademecum after: {ref}",
+		"hatchCount": "{n} hatches",
+		"stepCount": "{n} steps",
+		"parts": "Parts",
+		"part": {
+			"general": "Approach",
+			"lines": "Lines",
+			"labels": "Text"
+		},
+		"stepHint": "Tap a step for the full instruction. The number is the order from the Vademecum.",
+		"pickGroup": "Pick a material group",
+		"pickGuide": "Pick a drawing"
 	},
 	"stairDiagram": {
 		"view": "View",

@@ -87,11 +87,12 @@ describe('search', () => {
 	});
 
 	it('finds hatches, line types and drawing guides', () => {
-		expect(top('arcering beton')?.path).toBe('/drawing?tab=hatch#hatch-beton-1');
+		expect(top('arcering beton')?.path).toBe('/drawing/hatch/stone#hatch-beton-1');
 		expect(top('streeplijn')?.path).toBe('/drawing?tab=lines#line-dashed');
 		expect(top('dashed line')?.path).toBe('/drawing?tab=lines#line-dashed');
-		expect(top('axonometrie')?.path).toBe('/drawing?tab=guides#guide-axo');
-		expect(top('hardhout')?.path).toBe('/drawing?tab=hatch#hatch-hardhout');
+		expect(top('axonometrie')?.path).toBe('/drawing/guide/axo');
+		expect(top('stramienlijnen')?.path).toBe('/drawing/guide/plan');
+		expect(top('hardhout')?.path).toBe('/drawing/hatch/timber#hatch-hardhout');
 	});
 
 	it('finds the stair tool and the Bbl stair requirements by a word', () => {

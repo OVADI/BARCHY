@@ -4,6 +4,7 @@
 	import { onMount } from 'svelte';
 	import { resolve } from '$app/paths';
 	import FlagMark from '$lib/components/FlagMark.svelte';
+	import ChevronRight from '@lucide/svelte/icons/chevron-right';
 	import HatchSwatch from '$lib/components/HatchSwatch.svelte';
 	import IconButton from '$lib/components/IconButton.svelte';
 	import InfoFab from '$lib/components/InfoFab.svelte';
@@ -12,9 +13,9 @@
 	import Pill from '$lib/components/Pill.svelte';
 	import { param, revealHash } from '$lib/deeplink';
 	import { formatNumber, i18n, t } from '$lib/i18n/index.svelte';
-	import { HATCH_GROUPS, SCALES } from '$lib/drawing/constants';
-	import type { GuideStep, Hatch, LineType, Scale } from '$lib/schema/drawing';
-	import type { Issue } from '$lib/schema/source';
+	import IssueNotes from '$lib/components/IssueNotes.svelte';
+	import { HATCH_GROUPS } from '$lib/drawing/constants';
+	import type { GuideStep, LineType } from '$lib/schema/drawing';
 	import { saved } from '$lib/storage/saved.svelte';
 	import type { PageProps } from './$types';
 
@@ -23,9 +24,8 @@
 	const TABS = ['hatch', 'lines', 'guides'] as const;
 	type Tab = (typeof TABS)[number];
 	let tab = $state<Tab>('hatch');
-	let scale = $state<Scale | null>(null);
 
-	// Opened from search: /drawing?tab=hatch#hatch-beton-1
+	// Opened from search or back from a group: /drawing?tab=lines#line-dashed
 	onMount(() => {
 		const wanted = param('tab');
 		if (TABS.includes(wanted as Tab)) tab = wanted as Tab;
@@ -36,18 +36,18 @@
 		[...data.lines, ...data.hatches, ...data.guides].some((r) => r.status === 'flagged')
 	);
 
-	const shown = (h: Hatch) => scale === null || h.scales.includes(scale);
-	const scaleText = (n: number) => t('drawing.scaleValue', { n });
 	const weightText = (w: number) => t('drawing.weight', { w: formatNumber(w) });
-	// "Streeplijn · 0,13 mm · grijs": only the parts the source gives.
-	const specText = (s: GuideStep) =>
-		[
-			s.line && data.lines.find((l) => l.id === s.line)?.name[i18n.locale],
-			s.weight && weightText(s.weight),
-			s.color && t(`drawing.color.${s.color}`)
-		]
-			.filter(Boolean)
-			.join(' · ');
+
+	// Group tiles show one typical hatch and the material names in the group.
+	const SAMPLE: Record<(typeof HATCH_GROUPS)[number], string> = {
+		stone: 'beton-1',
+		timber: 'hout',
+		steel: 'staal-2',
+		other: 'zand'
+	};
+	const groupNames = (g: string) => [
+		...new Set(data.hatches.filter((h) => h.group === g).map((h) => h.name[i18n.locale]))
+	];
 
 	// Where each line type is used in the guides, so the line tab shows it in context.
 	const usage = $derived(
@@ -64,15 +64,6 @@
 	const PATH = '/drawing';
 	const favorite = $derived(saved.isFavorite(PATH));
 </script>
-
-{#snippet issues(list: Issue[])}
-	{#each list as issue (issue.check)}
-		<p class="issue t-body-sm">
-			<FlagMark label={t('drawing.issue')} />
-			<span>{issue.message}</span>
-		</p>
-	{/each}
-{/snippet}
 
 <PageHeader title={t('drawing.title')} back={resolve('/')}>
 	{#snippet actions()}
@@ -124,74 +115,74 @@
 				{:else}
 					<p class="t-body-sm t-muted">{t('drawing.notUsed')}</p>
 				{/if}
-				{@render issues(l.issues)}
+				<IssueNotes issues={l.issues} />
 			</section>
 		{/each}
 	{:else if tab === 'hatch'}
-		<div class="scales" role="group" aria-label={t('drawing.scale')}>
-			<Pill selected={scale === null} onclick={() => (scale = null)}>{t('drawing.allScales')}</Pill>
-			{#each SCALES as s (s)}
-				<Pill selected={scale === s} onclick={() => (scale = s)}>{scaleText(s)}</Pill>
+		<p class="t-label t-muted">{t('drawing.pickGroup')}</p>
+		<div class="grid">
+			{#each HATCH_GROUPS as g (g)}
+				{@const names = groupNames(g)}
+				<a class="tile" href={resolve('/drawing/hatch/[group]', { group: g })}>
+					<span class="paper swatch"><HatchSwatch hatch={SAMPLE[g]} /></span>
+					<span class="t-title">{t(`drawing.group.${g}`)}</span>
+					<span class="t-body-sm sub">{names.join(', ')}</span>
+					<span class="t-label sub"
+						>{t('drawing.hatchCount', {
+							n: data.hatches.filter((h) => h.group === g).length
+						})}</span
+					>
+				</a>
 			{/each}
 		</div>
-		{#each HATCH_GROUPS as g (g)}
-			{@const list = data.hatches.filter((h) => h.group === g)}
-			<section class="group">
-				<h2 class="t-label t-muted">{t(`drawing.group.${g}`)}</h2>
-				{#if list.some(shown)}
-					<div class="grid">
-						{#each list.filter(shown) as h (h.id)}
-							<article class="card hatch" id="hatch-{h.id}">
-								<div class="paper">
-									<HatchSwatch hatch={h.id} label={h.name[i18n.locale]} />
-								</div>
-								<h3 class="name">
-									{h.name[i18n.locale]}
-									{#if h.variant}<span class="t-label t-muted"
-											>{t('drawing.variant', { n: h.variant })}</span
-										>{/if}
-								</h3>
-								<ul class="marks" aria-label={t('drawing.scale')}>
-									{#each SCALES as s (s)}
-										<li class:on={h.scales.includes(s)} aria-hidden={!h.scales.includes(s)}>
-											{scaleText(s)}
-										</li>
-									{/each}
-								</ul>
-								{#if h.note}<p class="t-body-sm t-muted">{h.note[i18n.locale]}</p>{/if}
-								{@render issues(h.issues)}
-							</article>
-						{/each}
-					</div>
-				{:else}
-					<p class="t-body-sm t-muted">{t('drawing.noHatch')}</p>
-				{/if}
-			</section>
-		{/each}
 	{:else}
-		<p class="t-body-sm t-muted">{t('drawing.relative')}</p>
+		<p class="t-label t-muted">{t('drawing.pickGuide')}</p>
 		{#each data.guides as g (g.id)}
-			<section class="card" id="guide-{g.id}">
-				<h2 class="t-title">{g.title[i18n.locale]}</h2>
-				<p class="t-body-sm">{g.intro[i18n.locale]}</p>
-				<ol class="steps">
-					{#each g.steps as s, i (i)}
-						<li>
-							<span class="num t-label t-muted">{i + 1}</span>
-							<span class="text t-body-sm">
-								{s.text[i18n.locale]}
-								{#if s.line || s.weight}<span class="spec">{specText(s)}</span>{/if}
-							</span>
-							{#if s.line}
-								<span class="paper sample">
-									<LineSample line={s.line} weight={s.weight} symbol={s.symbol} color={s.color} />
-								</span>
-							{/if}
-						</li>
-					{/each}
-				</ol>
-				{@render issues(g.issues)}
-			</section>
+			<a class="row" href={resolve('/drawing/guide/[id]', { id: g.id })} id="guide-{g.id}">
+				<svg class="icon" width="44" height="44" viewBox="0 0 44 44" aria-hidden="true">
+					{#if g.id === 'plan'}
+						<path d="M6 8h32v28H6z" fill="none" stroke="currentColor" stroke-width="2" />
+						<path
+							d="M22 4v36M2 22h40"
+							stroke="currentColor"
+							stroke-width="1"
+							stroke-dasharray="6 2 1 2"
+						/>
+						{#each [6, 38] as x (x)}{#each [8, 36] as y (y)}<rect
+									x={x - 3}
+									y={y - 3}
+									width="6"
+									height="6"
+									fill="currentColor"
+								/>{/each}{/each}
+					{:else if g.id === 'axo'}
+						{#each [6, 18, 30] as y (y)}
+							<path
+								d="M4 {y + 4}l18 -6l18 6l-18 6z"
+								fill="none"
+								stroke="currentColor"
+								stroke-width="2"
+								stroke-linejoin="round"
+							/>
+						{/each}
+					{:else}
+						<path d="M6 4v36M6 22h34" stroke="currentColor" stroke-width="6" />
+						<path
+							d="M2 22h40M6 2v40"
+							stroke="currentColor"
+							stroke-width="1"
+							stroke-dasharray="6 2 1 2"
+						/>
+						<circle cx="18" cy="16" r="2" fill="currentColor" />
+						<circle cx="28" cy="16" r="2" fill="currentColor" />
+					{/if}
+				</svg>
+				<span class="row-text">
+					<span class="t-title">{g.title[i18n.locale]}</span>
+					<span class="t-body-sm sub">{t('drawing.stepCount', { n: g.steps.length })}</span>
+				</span>
+				<ChevronRight size={24} aria-hidden="true" />
+			</a>
 		{/each}
 	{/if}
 </div>
@@ -226,44 +217,66 @@
 		background: var(--surface);
 		margin-bottom: var(--space-3);
 	}
-	.tabs,
-	.scales {
+	.tabs {
 		display: flex;
 		gap: var(--space-2);
 		scrollbar-width: none;
 		overflow-x: auto;
-	}
-	.tabs {
 		margin-bottom: var(--space-2);
 	}
-	.panel,
-	.group {
+	.panel {
 		display: flex;
 		flex-direction: column;
 		gap: var(--tile-gap);
-	}
-	.group > h2 {
-		margin: var(--space-4) 0 var(--space-1);
 	}
 	.grid {
 		display: grid;
 		grid-template-columns: repeat(2, minmax(0, 1fr));
 		gap: var(--tile-gap);
 	}
+	.tile,
+	.row,
+	.card {
+		border-radius: var(--radius-lg);
+		background: var(--surface);
+		color: var(--ink);
+		min-width: 0;
+	}
+	.tile:hover,
+	.row:hover {
+		background: var(--surface-raised);
+	}
+	.tile {
+		display: flex;
+		flex-direction: column;
+		gap: var(--space-2);
+		padding: var(--space-3);
+	}
+	.sub {
+		color: var(--ink-muted);
+	}
+	.row {
+		display: flex;
+		align-items: center;
+		gap: var(--space-4);
+		min-height: 80px;
+		padding: var(--space-4);
+	}
+	.row-text {
+		display: flex;
+		flex: 1;
+		flex-direction: column;
+		gap: var(--space-1);
+	}
+	.icon {
+		flex-shrink: 0;
+	}
 	.card {
 		display: flex;
 		flex-direction: column;
 		gap: var(--space-3);
 		padding: var(--space-4);
-		border-radius: var(--radius-lg);
-		background: var(--surface);
-		min-width: 0;
 		scroll-margin: var(--space-6);
-	}
-	.card.hatch {
-		gap: var(--space-2);
-		padding: var(--space-3);
-		border-radius: var(--radius-md);
 	}
 	/* Opened from search: outline the item that was looked for. */
 	.card:global([data-found]) {
@@ -272,39 +285,10 @@
 	}
 	/* Samples sit on white, as on a drawing. */
 	.paper {
+		display: block;
 		background: var(--paper);
 		border-radius: var(--radius-sm);
 		padding: var(--space-2);
-	}
-	.name {
-		margin: 0;
-		font: var(--body);
-		display: flex;
-		flex-wrap: wrap;
-		align-items: baseline;
-		gap: var(--space-2);
-	}
-	.marks {
-		display: flex;
-		flex-wrap: wrap;
-		gap: 4px;
-		margin: 0;
-		padding: 0;
-		list-style: none;
-	}
-	.marks li {
-		font: var(--label);
-		padding: 3px 6px;
-		border-radius: var(--radius-pill);
-		color: var(--ink-muted);
-		opacity: 0.45;
-		text-decoration: line-through;
-	}
-	.marks li.on {
-		background: var(--surface-raised);
-		color: var(--ink);
-		opacity: 1;
-		text-decoration: none;
 	}
 	.uses {
 		display: flex;
@@ -326,46 +310,6 @@
 	}
 	.weight {
 		font-variant-numeric: tabular-nums;
-		color: var(--ink-muted);
-	}
-	.steps {
-		display: flex;
-		flex-direction: column;
-		gap: var(--space-3);
-		margin: 0;
-		padding: 0;
-		list-style: none;
-	}
-	.steps li {
-		display: grid;
-		grid-template-columns: 20px 1fr 88px;
-		gap: var(--space-2);
-		align-items: start;
-	}
-	.num {
-		padding-top: 2px;
-	}
-	.text {
-		display: flex;
-		flex-direction: column;
-		gap: 2px;
-		grid-column: 2 / span 1;
-	}
-	.steps li:not(:has(.sample)) .text {
-		grid-column: 2 / span 2;
-	}
-	.spec {
-		color: var(--ink-muted);
-	}
-	.sample {
-		padding: 4px;
-	}
-	.issue {
-		display: flex;
-		flex-direction: column;
-		align-items: flex-start;
-		gap: var(--space-1);
-		margin: 0;
 		color: var(--ink-muted);
 	}
 </style>

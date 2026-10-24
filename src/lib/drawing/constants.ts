@@ -6,3 +6,7 @@ export const LINE_TYPES = ['solid', 'dashed', 'dashdot', 'dotted'] as const;
 export const SCALES = [100, 50, 20, 10, 5, 1] as const;
 
 export const HATCH_GROUPS = ['stone', 'timber', 'steel', 'other'] as const;
+
+export const GUIDE_IDS = ['plan', 'axo', 'detail'] as const;
+
+export const GUIDE_PARTS = ['general', 'lines', 'labels'] as const;

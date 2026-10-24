@@ -1,5 +1,5 @@
 import { z } from 'zod';
-import { HATCH_GROUPS, LINE_TYPES, SCALES } from '../drawing/constants';
+import { GUIDE_IDS, GUIDE_PARTS, HATCH_GROUPS, LINE_TYPES, SCALES } from '../drawing/constants';
 import { Bilingual, checkReview, ImportOrigin, Issue, Review, SourceRef } from './source';
 
 /**
@@ -37,6 +37,10 @@ export type Hatch = z.infer<typeof Hatch>;
 
 /** One step of a drawing guide. Line type, weight (mm) and colour only where the source gives them. */
 export const GuideStep = z.object({
+	/** Short name for the step list; BARCHY's own wording, the source only has the sentence. */
+	title: Bilingual,
+	/** Approach, line work or text and dimensions: how the guide screen groups the steps. */
+	part: z.enum(GUIDE_PARTS),
 	text: Bilingual,
 	line: LineType.optional(),
 	weight: z.number().positive().optional(),
@@ -49,7 +53,7 @@ export type GuideStep = z.infer<typeof GuideStep>;
 
 export const Guide = z
 	.object({
-		id: z.enum(['plan', 'axo', 'detail']),
+		id: z.enum(GUIDE_IDS),
 		title: Bilingual,
 		intro: Bilingual,
 		steps: z.array(GuideStep).min(1),

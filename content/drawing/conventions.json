@@ -24,25 +24,37 @@
 	"lines": [
 		{
 			"id": "solid",
-			"name": { "nl": "Getrokken lijn", "en": "Continuous line" },
+			"name": {
+				"nl": "Getrokken lijn",
+				"en": "Continuous line"
+			},
 			"issues": [],
 			"status": "flagged"
 		},
 		{
 			"id": "dashed",
-			"name": { "nl": "Streeplijn", "en": "Dashed line" },
+			"name": {
+				"nl": "Streeplijn",
+				"en": "Dashed line"
+			},
 			"issues": [],
 			"status": "flagged"
 		},
 		{
 			"id": "dashdot",
-			"name": { "nl": "Gemengde streeplijn", "en": "Dash-dot line" },
+			"name": {
+				"nl": "Gemengde streeplijn",
+				"en": "Dash-dot line"
+			},
 			"issues": [],
 			"status": "flagged"
 		},
 		{
 			"id": "dotted",
-			"name": { "nl": "Stippellijn", "en": "Dotted line" },
+			"name": {
+				"nl": "Stippellijn",
+				"en": "Dotted line"
+			},
 			"issues": [],
 			"status": "flagged"
 		}
@@ -51,7 +63,10 @@
 		{
 			"id": "baksteen-1",
 			"group": "stone",
-			"name": { "nl": "Baksteen", "en": "Brick" },
+			"name": {
+				"nl": "Baksteen",
+				"en": "Brick"
+			},
 			"variant": 1,
 			"scales": [100, 50],
 			"issues": [],
@@ -60,7 +75,10 @@
 		{
 			"id": "baksteen-2",
 			"group": "stone",
-			"name": { "nl": "Baksteen", "en": "Brick" },
+			"name": {
+				"nl": "Baksteen",
+				"en": "Brick"
+			},
 			"variant": 2,
 			"scales": [50, 20, 10, 5, 1],
 			"issues": [],
@@ -69,7 +87,10 @@
 		{
 			"id": "steenachtig",
 			"group": "stone",
-			"name": { "nl": "Steenachtig", "en": "Stone-like" },
+			"name": {
+				"nl": "Steenachtig",
+				"en": "Stone-like"
+			},
 			"scales": [100, 50, 20, 10, 5, 1],
 			"note": {
 				"nl": "Bijvoorbeeld brandwerend materiaal en dakpannen.",
@@ -87,7 +108,10 @@
 		{
 			"id": "metselwerk-overige",
 			"group": "stone",
-			"name": { "nl": "Metselwerk overige", "en": "Other masonry" },
+			"name": {
+				"nl": "Metselwerk overige",
+				"en": "Other masonry"
+			},
 			"scales": [100, 50, 20, 10, 5, 1],
 			"note": {
 				"nl": "Bijvoorbeeld kalkzandsteen en betonsteen.",
@@ -105,7 +129,10 @@
 		{
 			"id": "beton-1",
 			"group": "stone",
-			"name": { "nl": "Beton", "en": "Concrete" },
+			"name": {
+				"nl": "Beton",
+				"en": "Concrete"
+			},
 			"variant": 1,
 			"scales": [100, 50],
 			"issues": [
@@ -120,7 +147,10 @@
 		{
 			"id": "beton-2",
 			"group": "stone",
-			"name": { "nl": "Beton", "en": "Concrete" },
+			"name": {
+				"nl": "Beton",
+				"en": "Concrete"
+			},
 			"variant": 2,
 			"scales": [50, 20, 10, 5, 1],
 			"issues": [
@@ -135,7 +165,10 @@
 		{
 			"id": "beton-prefab-1",
 			"group": "stone",
-			"name": { "nl": "Beton prefab", "en": "Precast concrete" },
+			"name": {
+				"nl": "Beton prefab",
+				"en": "Precast concrete"
+			},
 			"variant": 1,
 			"scales": [100, 50],
 			"issues": [
@@ -150,7 +183,10 @@
 		{
 			"id": "beton-prefab-2",
 			"group": "stone",
-			"name": { "nl": "Beton prefab", "en": "Precast concrete" },
+			"name": {
+				"nl": "Beton prefab",
+				"en": "Precast concrete"
+			},
 			"variant": 2,
 			"scales": [50, 20, 10, 5, 1],
 			"issues": [
@@ -165,7 +201,10 @@
 		{
 			"id": "hout",
 			"group": "timber",
-			"name": { "nl": "Hout", "en": "Timber" },
+			"name": {
+				"nl": "Hout",
+				"en": "Timber"
+			},
 			"scales": [100, 50, 20, 10, 5, 1],
 			"issues": [
 				{
@@ -179,7 +218,10 @@
 		{
 			"id": "hardhout",
 			"group": "timber",
-			"name": { "nl": "Hardhout", "en": "Hardwood" },
+			"name": {
+				"nl": "Hardhout",
+				"en": "Hardwood"
+			},
 			"scales": [20, 10, 5, 1],
 			"issues": [
 				{
@@ -193,7 +235,10 @@
 		{
 			"id": "hout-plaatmateriaal",
 			"group": "timber",
-			"name": { "nl": "Hout plaatmateriaal", "en": "Wood-based board" },
+			"name": {
+				"nl": "Hout plaatmateriaal",
+				"en": "Wood-based board"
+			},
 			"scales": [10, 5, 1],
 			"issues": [],
 			"status": "flagged"
@@ -201,16 +246,25 @@
 		{
 			"id": "lijmverbinding",
 			"group": "timber",
-			"name": { "nl": "Lijmverbinding", "en": "Glued joint" },
+			"name": {
+				"nl": "Lijmverbinding",
+				"en": "Glued joint"
+			},
 			"scales": [10, 5, 1],
-			"note": { "nl": "Tussen houten onderdelen.", "en": "Between timber parts." },
+			"note": {
+				"nl": "Tussen houten onderdelen.",
+				"en": "Between timber parts."
+			},
 			"issues": [],
 			"status": "flagged"
 		},
 		{
 			"id": "staal-1",
 			"group": "steel",
-			"name": { "nl": "Staal", "en": "Steel" },
+			"name": {
+				"nl": "Staal",
+				"en": "Steel"
+			},
 			"variant": 1,
 			"scales": [100, 50, 20, 10, 5, 1],
 			"note": {
@@ -223,7 +277,10 @@
 		{
 			"id": "staal-2",
 			"group": "steel",
-			"name": { "nl": "Staal", "en": "Steel" },
+			"name": {
+				"nl": "Staal",
+				"en": "Steel"
+			},
 			"variant": 2,
 			"scales": [5, 1],
 			"issues": [],
@@ -232,7 +289,10 @@
 		{
 			"id": "metalen-overige",
 			"group": "steel",
-			"name": { "nl": "Metalen overige", "en": "Other metals" },
+			"name": {
+				"nl": "Metalen overige",
+				"en": "Other metals"
+			},
 			"scales": [20, 10, 5, 1],
 			"issues": [],
 			"status": "flagged"
@@ -240,25 +300,40 @@
 		{
 			"id": "lood",
 			"group": "steel",
-			"name": { "nl": "Lood", "en": "Lead" },
+			"name": {
+				"nl": "Lood",
+				"en": "Lead"
+			},
 			"scales": [20, 10, 5, 1],
-			"note": { "nl": "Dichtheid benoemen.", "en": "State the density." },
+			"note": {
+				"nl": "Dichtheid benoemen.",
+				"en": "State the density."
+			},
 			"issues": [],
 			"status": "flagged"
 		},
 		{
 			"id": "zink",
 			"group": "steel",
-			"name": { "nl": "Zink", "en": "Zinc" },
+			"name": {
+				"nl": "Zink",
+				"en": "Zinc"
+			},
 			"scales": [20, 10, 5, 1],
-			"note": { "nl": "Materiaalnummer vermelden.", "en": "State the material number." },
+			"note": {
+				"nl": "Materiaalnummer vermelden.",
+				"en": "State the material number."
+			},
 			"issues": [],
 			"status": "flagged"
 		},
 		{
 			"id": "glas",
 			"group": "other",
-			"name": { "nl": "Glas", "en": "Glass" },
+			"name": {
+				"nl": "Glas",
+				"en": "Glass"
+			},
 			"scales": [10, 5, 1],
 			"issues": [],
 			"status": "flagged"
@@ -266,25 +341,40 @@
 		{
 			"id": "maaiveld",
 			"group": "other",
-			"name": { "nl": "Maaiveld", "en": "Ground level" },
+			"name": {
+				"nl": "Maaiveld",
+				"en": "Ground level"
+			},
 			"scales": [100, 50, 20, 10, 5, 1],
-			"note": { "nl": "In doorsnede.", "en": "In section." },
+			"note": {
+				"nl": "In doorsnede.",
+				"en": "In section."
+			},
 			"issues": [],
 			"status": "flagged"
 		},
 		{
 			"id": "water",
 			"group": "other",
-			"name": { "nl": "Water", "en": "Water" },
+			"name": {
+				"nl": "Water",
+				"en": "Water"
+			},
 			"scales": [100, 50, 20, 10, 5, 1],
-			"note": { "nl": "In doorsnede.", "en": "In section." },
+			"note": {
+				"nl": "In doorsnede.",
+				"en": "In section."
+			},
 			"issues": [],
 			"status": "flagged"
 		},
 		{
 			"id": "zand",
 			"group": "other",
-			"name": { "nl": "Zand", "en": "Sand" },
+			"name": {
+				"nl": "Zand",
+				"en": "Sand"
+			},
 			"scales": [100, 50, 20, 10, 5, 1],
 			"issues": [],
 			"status": "flagged"
@@ -293,13 +383,21 @@
 	"guides": [
 		{
 			"id": "plan",
-			"title": { "nl": "Draagconstructieplattegrond", "en": "Structural floor plan" },
+			"title": {
+				"nl": "Draagconstructieplattegrond",
+				"en": "Structural floor plan"
+			},
 			"intro": {
 				"nl": "Teken alleen de hoofddraagconstructie: vloeren, balken, kolommen, dragende wanden en windverbanden. Je snijdt op ongeveer 1 meter boven de vloer, zoals bij een gewone plattegrond, maar je tekent vooral ook de constructie onder de vloer. Die zie je niet direct, dus die krijgt een streeplijn.",
 				"en": "Draw only the main load-bearing structure: floors, beams, columns, load-bearing walls and wind bracing. You cut at about 1 metre above the floor, as in a regular plan, but you mainly also draw the structure below the floor. You cannot see it directly, so it gets a dashed line."
 			},
 			"steps": [
 				{
+					"title": {
+						"nl": "Vloeromtrek",
+						"en": "Floor outline"
+					},
+					"part": "lines",
 					"text": {
 						"nl": "Omtrek van de vloer, inclusief trap- en liftgaten en vides.",
 						"en": "Outline of the floor, including stair and lift openings and voids."
@@ -308,6 +406,11 @@
 					"weight": 0.3
 				},
 				{
+					"title": {
+						"nl": "Stramienlijnen",
+						"en": "Grid lines"
+					},
+					"part": "lines",
 					"text": {
 						"nl": "Stramienlijnen, eventueel in een andere kleur. Geef ze een letter of nummer.",
 						"en": "Grid lines, optionally in another colour. Give them a letter or number."
@@ -317,6 +420,11 @@
 					"color": "accent"
 				},
 				{
+					"title": {
+						"nl": "Kolommen en muren op de vloer",
+						"en": "Columns and walls on the floor"
+					},
+					"part": "lines",
 					"text": {
 						"nl": "Kolommen en muren op de vloer.",
 						"en": "Columns and walls on the floor."
@@ -325,6 +433,11 @@
 					"weight": 0.3
 				},
 				{
+					"title": {
+						"nl": "Arcering kolommen en muren",
+						"en": "Hatching columns and walls"
+					},
+					"part": "lines",
 					"text": {
 						"nl": "Arceer de kolommen en muren op de vloer, met een 0,1 mm pen of ingekleurd met stift.",
 						"en": "Hatch the columns and walls on the floor, with a 0.1 mm pen or filled in with a marker."
@@ -332,6 +445,11 @@
 					"weight": 0.1
 				},
 				{
+					"title": {
+						"nl": "Kolommen en muren onder de vloer",
+						"en": "Columns and walls below the floor"
+					},
+					"part": "lines",
 					"text": {
 						"nl": "Kolommen en muren onder de vloer.",
 						"en": "Columns and walls below the floor."
@@ -340,6 +458,11 @@
 					"weight": 0.13
 				},
 				{
+					"title": {
+						"nl": "Balken onder de vloer",
+						"en": "Beams below the floor"
+					},
+					"part": "lines",
 					"text": {
 						"nl": "Dragende balken onder de vloer, met een dubbele lijn voor de dikte.",
 						"en": "Load-bearing beams below the floor, with a double line for the width."
@@ -349,6 +472,11 @@
 					"symbol": "double"
 				},
 				{
+					"title": {
+						"nl": "Overspanningspijlen",
+						"en": "Span arrows"
+					},
+					"part": "lines",
 					"text": {
 						"nl": "Overspanningspijlen in de vloervelden. Een lijn met één pijlkop geeft een uitkraging aan.",
 						"en": "Span arrows in the floor bays. A line with a single arrowhead marks a cantilever."
@@ -358,6 +486,11 @@
 					"symbol": "arrow"
 				},
 				{
+					"title": {
+						"nl": "Gaten in de vloer",
+						"en": "Floor openings"
+					},
+					"part": "lines",
 					"text": {
 						"nl": "Een kruis in gaten in de vloer.",
 						"en": "A cross in openings in the floor."
@@ -367,6 +500,11 @@
 					"symbol": "cross"
 				},
 				{
+					"title": {
+						"nl": "Stabiliteitskruizen",
+						"en": "Bracing crosses"
+					},
+					"part": "lines",
 					"text": {
 						"nl": "Stabiliteitskruizen als andreaskruis naast het vak waarin ze zitten, eventueel in een andere kleur.",
 						"en": "Bracing crosses as a saltire next to the bay they are in, optionally in another colour."
@@ -377,6 +515,11 @@
 					"color": "accent"
 				},
 				{
+					"title": {
+						"nl": "Schoren",
+						"en": "Struts"
+					},
+					"part": "lines",
 					"text": {
 						"nl": "Een schoor teken je als één schuine lijn.",
 						"en": "Draw a strut as a single diagonal line."
@@ -386,30 +529,55 @@
 					"color": "accent"
 				},
 				{
+					"title": {
+						"nl": "Stabiliteitselementen",
+						"en": "Stability elements"
+					},
+					"part": "labels",
 					"text": {
 						"nl": "Tekst bij stabiliteitselementen: w.v.b. of schoor, materiaal en sterkteklasse, profielaanduiding.",
 						"en": "Label stability elements: wind bracing or strut, material and strength class, section designation."
 					}
 				},
 				{
+					"title": {
+						"nl": "Vloeroverspanningen",
+						"en": "Floor spans"
+					},
+					"part": "labels",
 					"text": {
 						"nl": "Tekst bij vloeroverspanningen: materiaal en type, dikte, peil, gebruiksfunctie en veranderlijke belasting.",
 						"en": "Label floor spans: material and type, thickness, level, use and imposed load."
 					}
 				},
 				{
+					"title": {
+						"nl": "Balken en kolommen",
+						"en": "Beams and columns"
+					},
+					"part": "labels",
 					"text": {
 						"nl": "Tekst bij balken en kolommen: materiaal en sterkteklasse, profielaanduiding.",
 						"en": "Label beams and columns: material and strength class, section designation."
 					}
 				},
 				{
+					"title": {
+						"nl": "Muren",
+						"en": "Walls"
+					},
+					"part": "labels",
 					"text": {
 						"nl": "Tekst bij muren: materiaal en sterkteklasse, dikte.",
 						"en": "Label walls: material and strength class, thickness."
 					}
 				},
 				{
+					"title": {
+						"nl": "Maten tussen stramienen",
+						"en": "Grid dimensions"
+					},
+					"part": "labels",
 					"text": {
 						"nl": "Maten tussen de stramienlijnen.",
 						"en": "Dimensions between the grid lines."
@@ -418,12 +586,22 @@
 					"weight": 0.13
 				},
 				{
+					"title": {
+						"nl": "Uitzonderlijke elementen",
+						"en": "Exceptional elements"
+					},
+					"part": "general",
 					"text": {
 						"nl": "Uitzonderlijke elementen, zoals hangkolommen, naar eigen inzicht zo duidelijk mogelijk, met extra tekst.",
 						"en": "Exceptional elements, such as hanging columns, as clearly as you can, with extra text."
 					}
 				},
 				{
+					"title": {
+						"nl": "Schaal en verdieping",
+						"en": "Scale and floor"
+					},
+					"part": "labels",
 					"text": {
 						"nl": "Schaal van de tekening en verdiepingsnummer.",
 						"en": "Scale of the drawing and floor number."
@@ -443,19 +621,32 @@
 		},
 		{
 			"id": "axo",
-			"title": { "nl": "Geëxplodeerde axonometrie", "en": "Exploded axonometric" },
+			"title": {
+				"nl": "Geëxplodeerde axonometrie",
+				"en": "Exploded axonometric"
+			},
 			"intro": {
 				"nl": "Een overzicht van de hele draagconstructie. Je ziet de krachtsafdracht en hoe de constructie past bij het ontwerp; daarom staat de axo vaak op de presentatieposter.",
 				"en": "An overview of the whole load-bearing structure. It shows the load path and how the structure fits the design; that is why the axo often goes on the presentation poster."
 			},
 			"steps": [
 				{
+					"title": {
+						"nl": "Opbouw",
+						"en": "Layout"
+					},
+					"part": "general",
 					"text": {
 						"nl": "Plaats de plattegronden van de draagconstructie boven elkaar, met genoeg ruimte ertussen (geen overlap).",
 						"en": "Stack the structural floor plans with enough space between them (no overlap)."
 					}
 				},
 				{
+					"title": {
+						"nl": "Verticale elementen",
+						"en": "Vertical members"
+					},
+					"part": "lines",
 					"text": {
 						"nl": "Verticale onderdelen onder elke vloer: kolommen, wanden.",
 						"en": "Vertical members below each floor: columns, walls."
@@ -464,6 +655,11 @@
 					"weight": 0.13
 				},
 				{
+					"title": {
+						"nl": "Vloeren en overspanningen",
+						"en": "Floors and spans"
+					},
+					"part": "lines",
 					"text": {
 						"nl": "Dichte vloeren half transparant in kleur, met overspanningspijlen in de vloervelden.",
 						"en": "Solid floors semi-transparent in colour, with span arrows in the floor bays."
@@ -473,6 +669,11 @@
 					"symbol": "arrow"
 				},
 				{
+					"title": {
+						"nl": "Verbindingslijnen",
+						"en": "Connecting lines"
+					},
+					"part": "lines",
 					"text": {
 						"nl": "Verbind de uiterste punten van de plattegronden met verticale lijnen.",
 						"en": "Connect the outer corners of the plans with vertical lines."
@@ -482,6 +683,11 @@
 					"color": "black"
 				},
 				{
+					"title": {
+						"nl": "Stramienlijnen",
+						"en": "Grid lines"
+					},
+					"part": "lines",
 					"text": {
 						"nl": "Stramienlijnen alleen op de plattegrond van de begane grond.",
 						"en": "Grid lines on the ground floor plan only."
@@ -490,12 +696,22 @@
 					"weight": 0.13
 				},
 				{
+					"title": {
+						"nl": "Fundering",
+						"en": "Foundation"
+					},
+					"part": "general",
 					"text": {
 						"nl": "Eventueel de fundering onder de begane grond.",
 						"en": "Optionally the foundation below the ground floor."
 					}
 				},
 				{
+					"title": {
+						"nl": "Benoemen",
+						"en": "Labels"
+					},
+					"part": "labels",
 					"text": {
 						"nl": "Benoem alle constructieve elementen met tekst.",
 						"en": "Label all structural elements."
@@ -507,19 +723,32 @@
 		},
 		{
 			"id": "detail",
-			"title": { "nl": "Constructiedetail", "en": "Structural detail" },
+			"title": {
+				"nl": "Constructiedetail",
+				"en": "Structural detail"
+			},
 			"intro": {
 				"nl": "Teken alleen de constructieve delen, in 3D of in een aantal 2D-tekeningen. Standaardverbindingen per materiaal staan in het Vademecum onder Ontwerp.",
 				"en": "Draw only the structural parts, in 3D or as a few 2D drawings. Standard connections per material are in the Vademecum under Design."
 			},
 			"steps": [
 				{
+					"title": {
+						"nl": "Scharnierend of ingeklemd",
+						"en": "Pinned or fixed"
+					},
+					"part": "general",
 					"text": {
 						"nl": "Bepaal of de verbinding scharnierend of ingeklemd is.",
 						"en": "Decide whether the connection is pinned or fixed."
 					}
 				},
 				{
+					"title": {
+						"nl": "Hartlijnen",
+						"en": "Centre lines"
+					},
+					"part": "lines",
 					"text": {
 						"nl": "Hartlijn van de te verbinden delen, vaak de stramienlijn.",
 						"en": "Centre line of the members to connect, often the grid line."
@@ -528,6 +757,11 @@
 					"weight": 0.3
 				},
 				{
+					"title": {
+						"nl": "Constructiedelen",
+						"en": "Structural members"
+					},
+					"part": "lines",
 					"text": {
 						"nl": "Constructiedelen op schaal met de juiste afmetingen; laat niet-constructieve delen weg.",
 						"en": "Structural members to scale with the right dimensions; leave out non-structural parts."
@@ -536,6 +770,11 @@
 					"weight": 0.8
 				},
 				{
+					"title": {
+						"nl": "Verbindingsmiddelen",
+						"en": "Fasteners and joints"
+					},
+					"part": "lines",
 					"text": {
 						"nl": "Hoe de delen verbonden zijn: lassen, bouten, lijmen, stortnaden.",
 						"en": "How the parts are joined: welds, bolts, glue, construction joints."
@@ -544,6 +783,11 @@
 					"weight": 0.8
 				},
 				{
+					"title": {
+						"nl": "Verborgen delen",
+						"en": "Hidden parts"
+					},
+					"part": "lines",
 					"text": {
 						"nl": "Onderdelen die niet zichtbaar zijn.",
 						"en": "Parts that are not visible."
@@ -553,6 +797,11 @@
 					"color": "grey"
 				},
 				{
+					"title": {
+						"nl": "Materialen en maten",
+						"en": "Materials and dimensions"
+					},
+					"part": "labels",
 					"text": {
 						"nl": "Benoem relevante materialen en afmetingen.",
 						"en": "Label relevant materials and dimensions."

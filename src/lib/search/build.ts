@@ -179,7 +179,7 @@ function drawingEntries(file: DrawingFile): SearchEntry[] {
 			kind: 'drawing' as const,
 			title: h.name,
 			sub: both((l) => `${lookup(l, `drawing.group.${h.group}`)}${scales(h.scales)}`),
-			path: `/drawing?tab=hatch#hatch-${h.id}`,
+			path: `/drawing/hatch/${h.group}#hatch-${h.id}`,
 			names: names(h.name.nl, h.name.en),
 			text: words(
 				drawing,
@@ -206,9 +206,15 @@ function drawingEntries(file: DrawingFile): SearchEntry[] {
 			kind: 'drawing' as const,
 			title: g.title,
 			sub: msg('drawing.guides'),
-			path: `/drawing?tab=guides#guide-${g.id}`,
+			path: `/drawing/guide/${g.id}`,
 			names: names(g.title.nl, g.title.en),
-			text: words(drawing, msg('drawing.guides'), g.intro, 'tekening tekeninstructie drawing'),
+			text: words(
+				drawing,
+				msg('drawing.guides'),
+				g.intro,
+				...g.steps.map((s) => s.title),
+				'tekening tekeninstructie drawing'
+			),
 			flagged: g.status === 'flagged'
 		}))
 	];
