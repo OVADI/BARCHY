@@ -92,9 +92,16 @@
 	/* Layout */
 	--touch: 44px;
 	--nav-height: 64px;
-	--safe-bottom: env(safe-area-inset-bottom, 0px);
+	/* Alleen in geïnstalleerde modus; Firefox Android meldt in een tab een foute inset */
+	--safe-bottom: 0px;
 	--nav-total: calc(var(--nav-height) + var(--safe-bottom));
 	--content-max: 560px;
+}
+
+@media (display-mode: standalone), (display-mode: fullscreen) {
+	:root {
+		--safe-bottom: env(safe-area-inset-bottom, 0px);
+	}
 }
 
 :root[data-theme='light'] {
