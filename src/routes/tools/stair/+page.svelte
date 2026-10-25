@@ -209,11 +209,16 @@
 		gap: var(--space-3);
 		padding: var(--space-3) var(--space-4);
 		border-radius: var(--radius-md);
-		background: var(--surface);
-		border-left: 4px solid var(--type-requirement);
+		background: var(--type-requirement);
+		color: var(--type-requirement-ink);
 	}
 	li.fail {
-		border-left-color: var(--orange);
+		background: var(--orange);
+		color: var(--on-tile);
+	}
+	li :global(.t-muted) {
+		color: inherit;
+		opacity: 0.8;
 	}
 	.mark {
 		flex: none;
