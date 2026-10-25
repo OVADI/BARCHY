@@ -412,7 +412,8 @@
 		"alsoApplies": "Also applies",
 		"info": "The calculator uses the limits from this app’s Bbl facts. It does not check clear height, walking line, landing or handrail; those are listed under Also applies.",
 		"limitMax": "max {value}",
-		"limitMin": "min {value}"
+		"limitMin": "min {value}",
+		"sketchLabel": "Section of the stair with the dimensions from the calculator, drawn to the entered values."
 	},
 	"sheets": {
 		"title": "Profiled steel sheets",

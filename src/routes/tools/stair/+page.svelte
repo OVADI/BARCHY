@@ -6,6 +6,7 @@
 	import FlagMark from '$lib/components/FlagMark.svelte';
 	import InfoFab from '$lib/components/InfoFab.svelte';
 	import PageHeader from '$lib/components/PageHeader.svelte';
+	import StairSketch from '$lib/components/StairSketch.svelte';
 	import Stat from '$lib/components/Stat.svelte';
 	import Stepper from '$lib/components/Stepper.svelte';
 	import Tile from '$lib/components/Tile.svelte';
@@ -46,6 +47,13 @@
 	};
 	const mm = (v: number, digits = 0) => `${formatNumber(v, { maximumFractionDigits: digits })} mm`;
 
+	const FAILED_TERM = { riserMax: 'riser', goingMin: 'going', riseMax: 'rise' } as const;
+	const failed = $derived(
+		result.checks.flatMap((c) =>
+			!c.ok && c.id in FAILED_TERM ? [FAILED_TERM[c.id as keyof typeof FAILED_TERM]] : []
+		)
+	);
+
 	const used = new Set<string>(Object.values(STAIR_FACTS));
 	const other = $derived(data.facts.filter((f) => !used.has(f.id)));
 
@@ -64,10 +72,13 @@
 
 <p class="t-body-sm t-muted scope">{t('stair.scope')}</p>
 
+<StairSketch {rise} {risers} {going} riser={result.riser} run={result.run} {failed} />
+
 <Tile tone="surface" pad="md" as="section" label={t('stair.design')}>
 	<h2 class="t-label t-muted">{t('stair.design')}</h2>
 	<Stepper
 		label={t('stair.rise')}
+		badge={1}
 		value={rise}
 		step={10}
 		min={300}
@@ -77,6 +88,7 @@
 	/>
 	<Stepper
 		label={t('stair.risers')}
+		badge={2}
 		value={risers}
 		step={1}
 		min={2}
@@ -91,6 +103,7 @@
 	{/if}
 	<Stepper
 		label={t('stair.going')}
+		badge={4}
 		value={going}
 		step={5}
 		min={100}
@@ -116,9 +129,10 @@
 			unit="mm"
 			size="lg"
 			label={t('stair.riserResult')}
+			badge={3}
 			format={{ maximumFractionDigits: 1 }}
 		/>
-		<Stat value={result.run} unit="mm" size="md" label={t('stair.run')} />
+		<Stat value={result.run} unit="mm" size="md" label={t('stair.run')} badge={5} />
 	</div>
 </Tile>
 

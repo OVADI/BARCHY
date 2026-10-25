@@ -412,7 +412,8 @@
 		"alsoApplies": "Ook van toepassing",
 		"info": "De calculator rekent met de grenzen uit de Bbl-feiten van deze app. Vrije hoogte, klimlijn, bordes en leuning toetst hij niet; die staan onder Ook van toepassing.",
 		"limitMax": "max. {value}",
-		"limitMin": "min. {value}"
+		"limitMin": "min. {value}",
+		"sketchLabel": "Doorsnede van de trap met de maten uit de calculator, getekend naar de ingevoerde waarden."
 	},
 	"sheets": {
 		"title": "Geprofileerde staalplaten",
