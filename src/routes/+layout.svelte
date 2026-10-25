@@ -6,6 +6,7 @@
 	import BottomNav from '$lib/components/BottomNav.svelte';
 	import Disclaimer from '$lib/components/Disclaimer.svelte';
 	import InstallGuide from '$lib/components/InstallGuide.svelte';
+	import { initAnalytics } from '$lib/analytics';
 	import { initDisclaimer } from '$lib/disclaimer.svelte';
 	import { initLocale, t } from '$lib/i18n/index.svelte';
 	import { initInstall } from '$lib/install.svelte';
@@ -21,6 +22,7 @@
 		initDisclaimer();
 		initInstall();
 		void initSaved();
+		initAnalytics();
 		if (pwaInfo) {
 			const { registerSW } = await import('virtual:pwa-register');
 			registerSW({ immediate: true });
