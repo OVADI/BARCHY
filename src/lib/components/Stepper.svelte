@@ -2,10 +2,13 @@
 	import Minus from '@lucide/svelte/icons/minus';
 	import Plus from '@lucide/svelte/icons/plus';
 	import { formatNumber, t } from '$lib/i18n/index.svelte';
+	import NumberBadge from './NumberBadge.svelte';
 	import IconButton from './IconButton.svelte';
 
 	interface Props {
 		label: string;
+		/** Number that matches a marker in a drawing. */
+		badge?: number;
 		value: number;
 		step: number;
 		unit?: string;
@@ -20,6 +23,7 @@
 
 	let {
 		label,
+		badge,
 		value,
 		step,
 		unit = '',
@@ -63,7 +67,9 @@
 
 <div class="stepper">
 	<div class="text">
-		<span class="label t-body-sm">{label}</span>
+		<span class="label t-body-sm"
+			>{#if badge}<NumberBadge n={badge} />{/if}{label}</span
+		>
 		{#if editing}
 			<span class="edit">
 				<input
