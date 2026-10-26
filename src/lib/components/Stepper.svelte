@@ -2,10 +2,13 @@
 	import Minus from '@lucide/svelte/icons/minus';
 	import Plus from '@lucide/svelte/icons/plus';
 	import { formatNumber, t } from '$lib/i18n/index.svelte';
+	import NumberBadge from './NumberBadge.svelte';
 	import IconButton from './IconButton.svelte';
 
 	interface Props {
 		label: string;
+		/** Number that matches a marker in a drawing. */
+		badge?: number;
 		value: number;
 		step: number;
 		unit?: string;
@@ -20,6 +23,7 @@
 
 	let {
 		label,
+		badge,
 		value,
 		step,
 		unit = '',
@@ -34,15 +38,63 @@
 	const stepText = $derived(`${formatNumber(step)}${unit ? ` ${unit}` : ''}`);
 	// Round away floating point noise from repeated steps (0.1 + 0.2).
 	const clamp = (v: number) => Math.min(max, Math.max(min, Math.round(v * 1e6) / 1e6));
+
+	let editing = $state(false);
+	let draft = $state('');
+
+	function startEdit() {
+		draft = String(value).replace('.', ',');
+		editing = true;
+	}
+	function focusSelect(node: HTMLInputElement) {
+		node.focus();
+		node.select();
+	}
+	function commit() {
+		if (!editing) return;
+		editing = false;
+		const parsed = Number(draft.trim().replace(',', '.'));
+		if (draft.trim() !== '' && Number.isFinite(parsed)) {
+			const next = clamp(parsed);
+			if (next !== value) onchange(next);
+		}
+	}
+	function onkeydown(e: KeyboardEvent) {
+		if (e.key === 'Enter') commit();
+		else if (e.key === 'Escape') editing = false;
+	}
 </script>
 
 <div class="stepper">
 	<div class="text">
-		<span class="label t-body-sm">{label}</span>
-		<output class="value" aria-live="polite">
-			{formatNumber(value, format)}{unit ? ` ${unit}` : ''}
-			{#if hint}<span class="hint t-body-sm">{hint}</span>{/if}
-		</output>
+		<span class="label t-body-sm"
+			>{#if badge}<NumberBadge n={badge} />{/if}{label}</span
+		>
+		{#if editing}
+			<span class="edit">
+				<input
+					class="value input"
+					type="text"
+					inputmode="decimal"
+					aria-label={t('stepper.edit', { label })}
+					bind:value={draft}
+					use:focusSelect
+					onblur={commit}
+					{onkeydown}
+				/>
+				{#if unit}<span class="unit">{unit}</span>{/if}
+			</span>
+		{:else}
+			<button
+				type="button"
+				class="value display"
+				aria-label={t('stepper.edit', { label })}
+				onclick={startEdit}
+			>
+				<output aria-live="polite">{formatNumber(value, format)}{unit ? ` ${unit}` : ''}</output>
+				{#if hint}<span class="hint t-body-sm">{hint}</span>{/if}
+			</button>
+		{/if}
 	</div>
 	<IconButton
 		icon={Minus}
@@ -82,5 +134,30 @@
 	.value {
 		font: 500 18px/1.2 var(--font-sans);
 		font-variant-numeric: tabular-nums;
+	}
+	.display {
+		align-self: flex-start;
+		padding: 2px 0;
+		background: none;
+		border: 0;
+		color: inherit;
+		text-align: left;
+		cursor: text;
+		text-decoration: underline dotted;
+		text-underline-offset: 4px;
+	}
+	.edit {
+		display: flex;
+		align-items: baseline;
+		gap: var(--space-1, 4px);
+	}
+	.input {
+		width: 6em;
+		min-width: 0;
+		padding: 2px 4px;
+		color: inherit;
+		background: transparent;
+		border: 1px solid currentColor;
+		border-radius: 4px;
 	}
 </style>

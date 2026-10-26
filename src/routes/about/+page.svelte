@@ -53,19 +53,24 @@
 <Tile as="section" pad="lg">
 	<h2 class="t-label t-muted">{t('about.openLabel')}</h2>
 	<p class="t-body">{t('about.open')}</p>
-	{#if REPO_URL}
-		<ul class="list">
+	<ul class="list">
+		{#if REPO_URL}
 			<li>
 				<ExtLink href={REPO_URL}>{t('about.repo')}</ExtLink>
 			</li>
+		{/if}
+		{#if WEB3FORMS_KEY}
+			<li><a class="link" href="#feedback">{t('about.reportError')}</a></li>
+			<li><a class="link" href="#feedback">{t('common.reportMissing')}</a></li>
+		{:else}
 			{#if CORRECTION_URL}<li>
 					<ExtLink href={CORRECTION_URL}>{t('about.reportError')}</ExtLink>
 				</li>{/if}
 			{#if MISSING_URL}<li>
 					<ExtLink href={MISSING_URL}>{t('common.reportMissing')}</ExtLink>
 				</li>{/if}
-		</ul>
-	{/if}
+		{/if}
+	</ul>
 </Tile>
 
 <Tile as="section" pad="lg">
@@ -105,6 +110,11 @@
 		display: flex;
 		flex-direction: column;
 		gap: 2px;
+	}
+	.link {
+		align-self: flex-start;
+		text-decoration: underline;
+		text-underline-offset: 2px;
 	}
 	.anchor {
 		display: flex;

@@ -11,3 +11,14 @@ node_modules/
 !.env.example
 /scripts/.cache/
 /.claude/worktrees/
+
+# Secrets and local credentials
+*.pem
+*.key
+*.p12
+*.pfx
+.dev.vars
+.npmrc.local
+secrets.*
+credentials.*
+/.claude/settings.local.json
